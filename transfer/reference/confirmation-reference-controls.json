@@ -1,0 +1,12 @@
+{
+  "all_pass": true,
+  "controls": {
+    "unchanged_reference": true,
+    "missing_control": true,
+    "changed_qualification": true,
+    "changed_forecast": true,
+    "nonfinite_interval": true,
+    "beyond_tolerance": true
+  },
+  "scope": "Disposable corrupted copies of the closed reference test rejection paths only; no orbit integration, simulated data or independent reproduction claim."
+}

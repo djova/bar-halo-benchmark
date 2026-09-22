@@ -11,6 +11,10 @@
   "scripts/noise_sweep/analyze_transfer.py": "5b48ba01c1df990f84acc58bf0d3e6927cdb5786b4c42ce87ee571a3a5c44611",
   "forecast.json": "d455a54900fb1ffb190e906554afc25ee02719e12c4989995d3240c7913e54a4",
   "INDEPENDENT_CADENCE_CONFIRMATION.md": "0712277e2cac2209adbf4393d833a6b3304c663d6a50b7cd3f4eb826d81f2198",
-  "reproduce_confirmation.py": "0271c6eb7ada1b62a9c36e6b3d480a8ec5116ff34e9d4854a54a4fa3c05a3814",
-  "check_confirmation.py": "fd47d6fad8b0ca824986d81177b9f740ebb66c5ddaf5010474c36fd066ec6cb4"
+  "reproduce_confirmation.py": "25a5fb73bc53d0b913d100eca206a16927f82ef438868a5d6bb26af9d3f3f027",
+  "check_confirmation.py": "fd47d6fad8b0ca824986d81177b9f740ebb66c5ddaf5010474c36fd066ec6cb4",
+  "verify_confirmation_reference.py": "6cc1a5dbafbfc5e538302490a7066ff5adb594addfd07f81e274d140e6e1ee6a",
+  "reference/independent-cadence-analysis.json": "9fd2b6fa554801065a53a5402ec79aeea4b8d6634c8a2289d45c5bf5b17e31bb",
+  "INDEPENDENT_CADENCE_OUTCOME.md": "92a46167fe572eb3b11c1ae56afef7f8963941cc3c19a87a58ded19053c52693",
+  "INDEPENDENT_CONFIRMATION_REPRODUCTION.md": "58b42b6062a5dad7eab833c47fa57c24fca716f2df246bda66d307d493839960"
 }

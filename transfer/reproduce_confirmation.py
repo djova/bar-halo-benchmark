@@ -78,6 +78,7 @@ def main():
     p.add_argument('--workers', type=int, choices=[1, 2, 3], default=1)
     p.add_argument('--smoke', action='store_true')
     p.add_argument('--show-design', action='store_true')
+    p.add_argument('--stop-utc', help='Optional timezone-aware ISO deadline; may only shorten the default stop')
     a = p.parse_args()
     if a.show_design:
         print(json.dumps(design(a.smoke), indent=2))
@@ -89,6 +90,16 @@ def main():
     library = a.agama.resolve()
     if not (library/'agama.so').is_file():
         p.error('Build the pinned, fully patched dependency first; see transfer/README.md')
+    now = dt.datetime.now(dt.timezone.utc)
+    stop = now+dt.timedelta(hours=2 if a.smoke else 41)
+    if a.stop_utc:
+        try:
+            requested = dt.datetime.fromisoformat(a.stop_utc.replace('Z', '+00:00'))
+            if requested.tzinfo is None or requested <= now:
+                raise ValueError('Deadline must have a timezone and be in the future')
+            stop = min(stop, requested)
+        except ValueError as error:
+            p.error(str(error))
     source_manifest = json.loads((ROOT/'confirmation-manifest.json').read_text())
     for name, expected in source_manifest.items():
         if sha(ROOT/name) != expected:
@@ -105,10 +116,9 @@ def main():
     cases = design(a.smoke)
     for case in cases:
         case['arguments'] += ['--agama-path', str(library)]
-    now = dt.datetime.now(dt.timezone.utc)
     spec = dict(protocol='INDEPENDENT_CADENCE_CONFIRMATION.md', workers=a.workers,
                 cpu_ceiling_seconds=300 if a.smoke else 14*3600,
-                stop_utc=(now+dt.timedelta(hours=2 if a.smoke else 41)).isoformat(),
+                stop_utc=stop.isoformat(),
                 source_sha256=sources, external_sources={DEPENDENCY: str(library/'agama.so')},
                 cases=cases)
     spec_path = out/'execution-spec.json'
@@ -138,18 +148,25 @@ def main():
                 raise RuntimeError('Changed short unforced control: '+case['id'])
         local[case['id']] = result['all_pass']
     analysis = None
+    comparison = None
     if not a.smoke:
         subprocess.run([sys.executable, str(ROOT/ANALYZER), '--root', str(out/'cases'),
                         '--forecast', str(ROOT/'forecast.json'), '--out', str(out/'analysis')],
                        cwd=ROOT, env=env, check=True, timeout=600)
         analysis = json.loads((out/'analysis/result.json').read_text())
+        reference = ROOT/'reference/independent-cadence-analysis.json'
+        if reference.exists():
+            from verify_confirmation_reference import verify
+            comparison = verify(analysis, json.loads(reference.read_text()))
+            (out/'reference-comparison.json').write_text(json.dumps(comparison, indent=2)+'\n')
     receipt = dict(smoke_only=a.smoke, cases=len(cases), all_local_checks_pass=all(local.values()),
                    local_checks=local, scientific_cpu_seconds=ledger['completed_cpu_seconds'],
                    source_manifest=source_manifest, analysis_sha256=sha(out/'analysis/result.json') if analysis else None,
                    numerical_qualification=analysis['numerically_qualified'] if analysis else None,
-                   reference_comparison=None,
+                   reference_comparison=comparison,
                    scope='Same-seed reproduction of the fixed amended sample; no old-sample pooling or physical extension. '
-                         'Smoke checks are short and unforced. No full-matrix reference comparison is claimed by this receipt.')
+                         'Smoke checks are short and unforced. A null reference comparison is not a passing reproduction. '
+                         'A reproduced failed numerical decision remains failed.')
     (out/'reproduction.json').write_text(json.dumps(receipt, indent=2)+'\n')
     print(json.dumps(receipt, indent=2))
     if not all(local.values()):

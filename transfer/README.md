@@ -113,6 +113,14 @@ into passes.
 
 ## Reproduce the fixed independent cadence confirmation
 
+The original full twenty-case calculation has finished and **fails** the unchanged
+noise-cadence interval criterion. Both timestep intervals and all local/unforced
+checks pass. See [the outcome and stopping decision](INDEPENDENT_CADENCE_OUTCOME.md)
+and [the full-precision reference](reference/independent-cadence-analysis.json).
+The conditional physical extension will not run. The new complete standalone
+rerun is pending; only its previously documented smoke/control execution is
+verified at present.
+
 On Linux, using the same pinned environment and patched dependency:
 
 ```sh
@@ -155,3 +163,19 @@ comparison, and a failed numerical qualification remains failed.
 The [unforced domain readback](calibration/domain/README.md) regenerates the coefficient ranges, initial-gradient comparison and retained harmonic spectrum from the original public inputs in about one CPU second. It introduces no new trajectory or physical qualification.
 
 The [conditional full-population estimator](PHYSICAL_ANALYSIS.md) is also public. Its complete assembly pathway can be checked with disposable known-value fixtures; no full physical sample or qualification is claimed before the confirmation and resource decision.
+
+The confirmation command now compares every aggregate, refinement and paired
+chunk/control estimate against the complete reference. It requires the same
+failed qualification and unchanged scientific margin. A successful reproduction
+does not turn this into a qualified physical forecast. `--stop-utc` can shorten
+the default stop using an explicit timezone-aware ISO timestamp.
+
+After a complete rerun, regenerate the comparison and variance figures with:
+
+```sh
+python transfer/scripts/noise_sweep/plot_cadence_confirmation.py --analysis reproduced-confirmation/analysis/result.json --original-analysis transfer/reference/final-numerical-analysis.json --root reproduced-confirmation/cases --out reproduced-confirmation-figures
+```
+
+The two comparison panels use the same normalized horizontal scale. Original
+and independent samples stay separate; no path is removed from the variance
+curves. The archived figures are in `reference/confirmation-figures/`.

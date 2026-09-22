@@ -1,0 +1,106 @@
+{
+  "analysis_sha256": "9fd2b6fa554801065a53a5402ec79aeea4b8d6634c8a2289d45c5bf5b17e31bb",
+  "original_analysis_sha256": "da259c799ac012f9544a5e2d6356b156e49bfce325234775f99f583a1eb9888f",
+  "source_sha256": "f67deec605835b87038bf9712bf04c3b66de2111d80c9c892e9be55f1f857622",
+  "numerical_margin": 1.8126730139721574e-07,
+  "records": [
+    {
+      "sample": "original",
+      "setting": "halfstep",
+      "estimator": "raw_3D_shift",
+      "n": 16384,
+      "mean_over_margin": 0.002352960632944547,
+      "interval_over_margin": [
+        -0.006746021049656619,
+        0.011451942315545713
+      ],
+      "interval_pass": true
+    },
+    {
+      "sample": "independent",
+      "setting": "halfstep",
+      "estimator": "raw_3D_shift",
+      "n": 16384,
+      "mean_over_margin": 0.0032400103413871228,
+      "interval_over_margin": [
+        -0.0009187870224974599,
+        0.007398807705271706
+      ],
+      "interval_pass": true
+    },
+    {
+      "sample": "original",
+      "setting": "halfcadence",
+      "estimator": "raw_3D_shift",
+      "n": 16384,
+      "mean_over_margin": -0.032461386830706526,
+      "interval_over_margin": [
+        -1.0479330757516943,
+        0.983010302090281
+      ],
+      "interval_pass": false
+    },
+    {
+      "sample": "independent",
+      "setting": "halfcadence",
+      "estimator": "raw_3D_shift",
+      "n": 131072,
+      "mean_over_margin": 0.36302690994798903,
+      "interval_over_margin": [
+        -0.5310993991050244,
+        1.2571532190010024
+      ],
+      "interval_pass": false
+    },
+    {
+      "sample": "original",
+      "setting": "halfstep",
+      "estimator": "discrepancy_shift",
+      "n": 16384,
+      "mean_over_margin": 0.002352960632945304,
+      "interval_over_margin": [
+        -0.006746021049655874,
+        0.011451942315546481
+      ],
+      "interval_pass": true
+    },
+    {
+      "sample": "independent",
+      "setting": "halfstep",
+      "estimator": "discrepancy_shift",
+      "n": 16384,
+      "mean_over_margin": 0.003240010341387595,
+      "interval_over_margin": [
+        -0.0009187870224971216,
+        0.007398807705272312
+      ],
+      "interval_pass": true
+    },
+    {
+      "sample": "original",
+      "setting": "halfcadence",
+      "estimator": "discrepancy_shift",
+      "n": 16384,
+      "mean_over_margin": -0.6589985036377559,
+      "interval_over_margin": [
+        -2.2328599339636095,
+        0.9148629266880979
+      ],
+      "interval_pass": false
+    },
+    {
+      "sample": "independent",
+      "setting": "halfcadence",
+      "estimator": "discrepancy_shift",
+      "n": 131072,
+      "mean_over_margin": 0.07071931879247245,
+      "interval_over_margin": [
+        -0.9760674481669449,
+        1.1175060857518897
+      ],
+      "interval_pass": false
+    }
+  ],
+  "numerically_qualified": false,
+  "scope": "Display only: unchanged complete-sample estimates and criteria. Original failure retained; no physical qualification or rigorous error bound."
+}
