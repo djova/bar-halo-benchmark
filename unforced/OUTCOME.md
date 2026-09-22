@@ -59,8 +59,9 @@ as if it contained the complete grid. Stochastic moments and final budgets were
 recomputed from every individual recorded action and Brownian endpoint.
 
 Canonical readback: `unforced-review-01/result.json`. Canonical figures:
-`unforced-figures-02`. Version01 uses the same data; version02 adds standalone
-interval/sampling captions, clearer ticks and shading behind the points.
+`unforced-figures-03`. Versions01 and02 use the same data; version02 adds
+standalone captions and clearer ticks. Version03 retains the desktop figures
+and adds mobile renderings with larger labels and fewer ticks, after phone review.
 The full table retains all44controls, all prior decisions and every input hash.
 The source and exact analytic equations are supplied with the public benchmark.
 Recreating a figure from the reference table is arithmetic reproduction;

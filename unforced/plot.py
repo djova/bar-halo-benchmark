@@ -52,6 +52,19 @@ def main():
                   'Rows reuse seeds; they are not independent conditions.', fontsize=8)
     for ext in ['png', 'pdf']:
         fig.savefig(args.out/f'unforced-noise-moments.{ext}', dpi=128)
+    # A separate rendering of the same points keeps labels readable on phones.
+    fig.set_size_inches(3.5, 7.4)
+    fig.suptitle('Recorded kicks against\nthe specified noise law', fontsize=12)
+    axes[0].set(title='Do the kicks add\nan average push?',
+                xlabel='Mean kick / expected\nsampling error', xticks=[-2, 0, 2])
+    axes[1].set(title='Does the scatter match\nthe specified strength?',
+                xlabel='Measured / specified variance', xticks=[.99, 1., 1.01],
+                xticklabels=['0.99', '1', '1.01'])
+    for ax in axes:
+        ax.set_yticklabels([f"s={r['s']:g}\nη={r['eta']:g}" for r in rows])
+    fig.supxlabel('Each row: 262,144 paths; 8 seeds.\nBars: pointwise 95% intervals.\n'
+                  'Normal mean; chi-square variance.\nRows reuse seeds; not independent.', fontsize=8)
+    fig.savefig(args.out/'unforced-noise-moments-mobile.png', dpi=128)
     plt.close(fig)
 
     fig, ax = plt.subplots(figsize=(7, 5), layout='constrained')
@@ -78,6 +91,14 @@ def main():
                   fontsize=8)
     for ext in ['png', 'pdf']:
         fig.savefig(args.out/f'unforced-boundary-check.{ext}', dpi=128)
+    fig.set_size_inches(3.5, 5.6)
+    ax.set(title='', xlabel='Variance error / original tolerance\n(log scale)',
+           xticks=[.001, .1, 1., 100.], xticklabels=['0.001', '0.1', '1', '100'])
+    ax.legend(loc='lower left', bbox_to_anchor=(0., 1.), fontsize=8.5, frameon=False)
+    fig.suptitle('Moving the boundary\nreduces variance error', fontsize=12)
+    fig.supxlabel('Bar-free η=1. Original tolerance: 10⁻⁷.\n'
+                  'Shade: within variance criterion.\nOriginal failures remain failed.', fontsize=8)
+    fig.savefig(args.out/'unforced-boundary-check-mobile.png', dpi=128)
     plt.close(fig)
     result = dict(input_sha256=hashlib.sha256(args.result.read_bytes()).hexdigest(),
                   plot_source_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
