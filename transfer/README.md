@@ -153,3 +153,5 @@ physical qualification is claimed. `reference_comparison: null` means no such
 comparison, and a failed numerical qualification remains failed.
 
 The [unforced domain readback](calibration/domain/README.md) regenerates the coefficient ranges, initial-gradient comparison and retained harmonic spectrum from the original public inputs in about one CPU second. It introduces no new trajectory or physical qualification.
+
+The [conditional full-population estimator](PHYSICAL_ANALYSIS.md) is also public. Its complete assembly pathway can be checked with disposable known-value fixtures; no full physical sample or qualification is claimed before the confirmation and resource decision.

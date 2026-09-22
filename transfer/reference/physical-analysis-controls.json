@@ -1,0 +1,30 @@
+{
+  "primitive_controls": {
+    "known_decisions": true,
+    "numerical_failure_preserved": true,
+    "duplicate_gap_and_order_refused": true,
+    "mixed_operator_refused": true,
+    "mismatched_initial_states_refused": true,
+    "nonfinite_refused": true,
+    "scope": "Disposable known-value and corrupted-input controls. Does not verify an unrun full physical population."
+  },
+  "complete_fixed_id_assembly": true,
+  "primary_and_disjoint_known_means": true,
+  "failed_numerical_confirmation_refused": true,
+  "changed_queue_source_refused": true,
+  "mutually_matching_but_wrong_seeded_states_refused": true,
+  "source_sha256": {
+    "scripts/noise_sweep/analyze_physical_transfer.py": "f3e7c7ae771d50094da00439d3f1aef567ee985fa10f74ffee220bd67b452828",
+    "scripts/noise_sweep/check_physical_assembly.py": "5c0888dd26be8830bbec07095b4f692dcf5c4a306e0256ed84e059cdabe3c9e3",
+    "scripts/noise_sweep/analyze_transfer.py": "5b48ba01c1df990f84acc58bf0d3e6927cdb5786b4c42ce87ee571a3a5c44611",
+    "scripts/noise_sweep/analyze_cadence_confirmation.py": "17e965d754bdf28db8c88fd2de0f0ceb20650fe6d54e63444619d968ae06116a",
+    "reproduce_confirmation.py": "0271c6eb7ada1b62a9c36e6b3d480a8ec5116ff34e9d4854a54a4fa3c05a3814",
+    "confirmation-manifest.json": "da15b49dc4cce0b7ee942c369af87a5b9737850ecf95a66a39af3b06d7ea1003",
+    "PHYSICAL_TRANSFER_ASSEMBLY.md": "b433a2f2fc7cf39236728de1f21671839fd4bcec075668db319908d94b197c11",
+    "check_physical.py": "f876dcc940f8dcc6267d9c6f699d79b644e701cafbd1eb2e39fa3ea3fd4dd194",
+    "forecast.json": "d455a54900fb1ffb190e906554afc25ee02719e12c4989995d3240c7913e54a4"
+  },
+  "wall_seconds": 4.783485529012978,
+  "cpu_seconds": 5.278525,
+  "scope": "Disposable mathematical fixtures only. No force solver, simulation, physical qualification, full-population reproduction or actual reference comparison. Temporary arrays deleted."
+}
