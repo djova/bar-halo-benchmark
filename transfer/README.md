@@ -103,3 +103,10 @@ The command writes the generated table and full verification, marks
 This does not change the original forecasts or establish their physical adequacy.
 See `calibration/clean-comparison.json` for the complete readback and
 `calibration/PROTOCOL.md` for the unchanged criteria and correspondence repair.
+
+A shared-input arithmetic diagnosis retains the discrepancy even with50-digit
+logarithms: the dominant difference is already in the returned DF values, rather
+than logarithm subtraction. See [the measured outcome and limits](calibration/arithmetic/OUTCOME.md),
+its protocol, raw binary64 values, scripts and figure. This does not identify the
+internal dependency calculation responsible, or turn the original failed checks
+into passes.

@@ -1,0 +1,59 @@
+{
+  "rows": [
+    {
+      "h": 1e-05,
+      "n": 136,
+      "maximum_cross_build_slope_difference": 1.9539925233402755e-09,
+      "maximum_cross_build_precise_log_difference": 1.9567796272212945e-09,
+      "maximum_differential_log_arithmetic_error": 1.2089677635186006e-11,
+      "maximum_df_relative_difference": 4.656091956481544e-11,
+      "same_df_pair_count": 0,
+      "maximum_original_vs_archived_slope_difference": 0.0,
+      "maximum_decomposition_residual": 1.6615149090026617e-15
+    },
+    {
+      "h": 2e-05,
+      "n": 136,
+      "maximum_cross_build_slope_difference": 1.9095836023552692e-09,
+      "maximum_cross_build_precise_log_difference": 1.912360048095252e-09,
+      "maximum_differential_log_arithmetic_error": 6.477448094060405e-12,
+      "maximum_df_relative_difference": 4.6559268834797747e-11,
+      "same_df_pair_count": 0,
+      "maximum_original_vs_archived_slope_difference": null,
+      "maximum_decomposition_residual": 1.68592927314864e-15
+    },
+    {
+      "h": 4e-05,
+      "n": 136,
+      "maximum_cross_build_slope_difference": 1.887379141862766e-09,
+      "maximum_cross_build_precise_log_difference": 1.88941129408704e-09,
+      "maximum_differential_log_arithmetic_error": 3.324903608485536e-12,
+      "maximum_df_relative_difference": 4.6561010929642125e-11,
+      "same_df_pair_count": 0,
+      "maximum_original_vs_archived_slope_difference": null,
+      "maximum_decomposition_residual": 1.6627111643450083e-15
+    },
+    {
+      "h": 8e-05,
+      "n": 136,
+      "maximum_cross_build_slope_difference": 1.8818280267396403e-09,
+      "maximum_cross_build_precise_log_difference": 1.8815722313547667e-09,
+      "maximum_differential_log_arithmetic_error": 1.5784066315165777e-12,
+      "maximum_df_relative_difference": 4.6563768298015697e-11,
+      "same_df_pair_count": 0,
+      "maximum_original_vs_archived_slope_difference": null,
+      "maximum_decomposition_residual": 1.5426838085777723e-15
+    }
+  ],
+  "source_sha256": "aab4001daa3c810799bb9caf67ab968fb5351bc505cf4cc5912e8a9556c3df46",
+  "input_sha256": {
+    "original": "88ba9517b9c37e6fd81a9ae638993c9a4509044d213b5e6f1d67885aca430076",
+    "rebuilt": "a52c409c6cc8029fdee5b1149037c2115810b8544c5bdc9ebdd7461ec85868d8"
+  },
+  "original_library_sha256": "f6c04e4941aff3538d3bb08f6446d731b788d85406af94092cf856fbd139d000",
+  "rebuilt_library_sha256": "cf674dd10a4d148a305da88fbbf989aff85ca3dd95dfe8e47e8035e4ffbb3a16",
+  "evaluation_cpu_seconds": 0.055093777,
+  "analysis_cpu_seconds": 0.675456057,
+  "conclusion": "On identical action inputs, the full original slope discrepancy repeats. Using50-digit logs retains it; subtraction roundoff is a small contribution. The dominant difference is already in the returned DF values. This does not isolate its origin inside the dependency.",
+  "limitations": "Original100/1304failed checks remain failed. Larger offsets change truncation error. High precision applies only to logs of binary64 DF values, not to the DF construction. No original forecast or trajectory changes."
+}
