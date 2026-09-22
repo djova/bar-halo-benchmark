@@ -62,10 +62,14 @@ It uses one nice10single-core worker by default; `--workers2` permits two. Each
 case has a7200s limit. Allow roughly2.6CPUhours for the full matrix. `--smoke`
 runs only two short unforced checks; those pass in a fresh pinned environment.
 The compiled force kernel matches the original binary. The original final matrix is complete: both timestep intervals pass, but both
-noise-cadence intervals miss the unchanged numerical allowance. The complete
-clean matrix is still being rerun with the previously independently built
-AGAMA/GSL dependency; its reference comparison is **not yet verified**. No new physical parameters,
-particle sample or numerical margin are introduced.
+noise-cadence intervals miss the unchanged numerical allowance. The complete clean six-case matrix now reproduces every scientific decision,
+including the failed cadence qualification. It uses2.636scientific core-hours.
+The largest compared scalar difference is1.44e-13, below the unchanged1e-9
+reproduction tolerance. Exact IDs, initial action–angle states, reduced torques and Brownian
+streams match; Cartesian trajectories retain the documented small differences.
+See `reference/clean-final-reproduction.json` for all array and scalar checks.
+This fresh source/environment reuses the previously independently built AGAMA/GSL;
+it is not a third dependency build or an independent physical sample.
 
 The helper checks source manifests, records every case and supports `--resume`
 after incomplete attempts have been preserved elsewhere. It runs the published

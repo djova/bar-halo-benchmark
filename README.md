@@ -10,7 +10,7 @@ unqualified; the package preserves that unresolved outcome.
 **Regenerate the central matched figure:**
 
 ```sh
-python3 -m venv .venv
+python3.11 -m venv .venv
 .venv/bin/python -m pip install -r requirements.lock.txt
 .venv/bin/python reproduce_matched.py --out reproduced-matched
 ```
@@ -112,3 +112,8 @@ coordinate test, short unforced smoke and complete eight-case clean rerun pass.
 All declared scalar differences are below1.66e-13 and every decision agrees;
 individual state arrays retain small differences documented in the receipt.
 This is a numerical and physical-model benchmark, not a live-halo or SIDM result.
+
+The separate six-case timestep/cadence rerun also reproduces all decisions in
+2.636CPUhours. Its small timestep shifts pass; its cadence intervals still fail.
+See the transfer README and full clean numerical receipt. Reproducing the result
+does not turn that numerical qualification into a pass.
