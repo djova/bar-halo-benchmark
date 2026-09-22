@@ -48,3 +48,29 @@ identical: the largest final Cartesian-component difference is1.93e-6. See
 checker rejects missing cases or controls, not just disagreeing means. The first archived3D experiment
 is numerically unqualified: reproducing that failure is an intended outcome,
 not something this command silently repairs.
+
+## Reproduce the final timestep and noise-cadence matrix
+
+The separate command below regenerates six16384-particle cases using the exact
+fourth-order kernel and nested noise source:
+
+```
+python transfer/reproduce_numerical.py --agama PATH_TO_PATCHED_AGAMA --out reproduced-numerical
+```
+
+It uses one nice10single-core worker by default; `--workers2` permits two. Each
+case has a7200s limit. Allow roughly2.6CPUhours for the full matrix. `--smoke`
+runs only two short unforced checks; those pass in a fresh pinned environment.
+The compiled force kernel matches the original binary. The complete clean matrix
+is now being rerun with the previously independently built AGAMA/GSL dependency;
+its reference comparison is **not yet verified**. No new physical parameters,
+particle sample or numerical margin are introduced.
+
+The helper checks source manifests, records every case and supports `--resume`
+after incomplete attempts have been preserved elsewhere. It runs the published
+readback and compares against `reference/final-numerical-analysis.json` when that
+terminal reference is available. An absent comparison is recorded as null; it is
+not a passing reproduction claim. `--reference` can name an explicit published
+reference. Numerical qualification is separate from reproducibility, and a
+faithfully reproduced failure remains a failure. Original protocols and the
+clean-reproduction criteria are included alongside the source.
