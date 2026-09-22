@@ -1,12 +1,34 @@
 # Bar–halo response benchmark
 
-A standalone numerical benchmark. No private repository, particle files, AGAMA,
-compiled gravity engine or API credential is required. Python 3.11 is the tested
-interpreter. Install dependencies once, then the reproduction is offline:
+A runnable controlled experiment in how imposed action noise changes bar torque.
+At the same positive initial population, noise strength and elapsed time, the
+reduced model resolves increased transfer at a stationary resonance and decreased
+transfer at sweep s=.25. This is a finite local tracer population, not a full-halo
+or dark-matter result. The independently frozen3D prediction remains numerically
+unqualified; the package preserves that unresolved outcome.
+
+**Regenerate the central matched figure:**
 
 ```sh
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.lock.txt
+.venv/bin/python reproduce_matched.py --out reproduced-matched
+```
+
+Python3.11 is the tested interpreter. The final command runs offline, generates
+all initial conditions from seeds, and takes about45minutes on one CPU. It checks
+both distribution estimates and all independent trajectory batches against the
+reference. A clean isolated28-case rerun passes. No private files or credentials
+are needed. Details and the full-precision receipt appear below.
+
+[Interactive result, recorded paths and limitations](https://djova.ca/galaxy-bar/noise-sweep).
+
+## Verify the finite-lag and collision-generator limits
+
+The separate known-limit command also needs no private repository, particle
+files, AGAMA, compiled gravity engine or API credential. In the same environment:
+
+```sh
 .venv/bin/python reproduce.py --out reproduced
 ```
 
