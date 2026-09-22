@@ -156,13 +156,14 @@ gate even when the raw 3D shift passes. They are software checks, never simulati
 evidence. An isolated public-source copy passes both real short unforced checks,
 using the previously independently rebuilt dependency and pinned environment.
 This is not a full twenty-case clean reproduction or a new dependency build.
-The original confirmation is still running; no terminal reference comparison or
-physical qualification is claimed. `reference_comparison: null` means no such
-comparison, and a failed numerical qualification remains failed.
+The original confirmation is complete and failed its numerical qualification;
+the complete same-sample standalone reproduction is now running. Its terminal
+reference comparison is still pending. `reference_comparison: null` means no such
+comparison, and reproducing a failed qualification does not change that decision.
 
 The [unforced domain readback](calibration/domain/README.md) regenerates the coefficient ranges, initial-gradient comparison and retained harmonic spectrum from the original public inputs in about one CPU second. It introduces no new trajectory or physical qualification.
 
-The [conditional full-population estimator](PHYSICAL_ANALYSIS.md) is also public. Its complete assembly pathway can be checked with disposable known-value fixtures; no full physical sample or qualification is claimed before the confirmation and resource decision.
+The [conditional full-population estimator](PHYSICAL_ANALYSIS.md) is also public. Its assembly pathway can be checked with disposable known-value fixtures. The original confirmation did not meet its prerequisite, so the physical extension will not run; those fixtures are not a physical sample.
 
 The confirmation command now compares every aggregate, refinement and paired
 chunk/control estimate against the complete reference. It requires the same
