@@ -49,3 +49,13 @@ tolerance. The command reproduces that reported estimate; it does not turn the
 failed refinement into a success. The full map, population-width check and new
 3D transfer have their own protocols. These finite Gaussian tracer populations
 are not full halo DFs, and the imposed white action noise is not physical SIDM.
+
+## Frozen prospective 3D forecasts
+
+The records in `forecasts/2026-09-22/` were committed before inspecting any
+held-out Cartesian outcome. Case B predicts a noise-induced mean bar-Lz contrast
+of-9.06336507e-6, with a fixed +/-20% operational approximation band. Its local,
+refinement and independent reduced-trajectory checks pass. Case A narrowly fails
+its independent-sampling prerequisite and remains unqualified; its3Dseed is
+unused. The3Dtest is running, so this release contains no claimed transfer result.
+The exact conditions, failed check and rules are preserved alongside the values.
