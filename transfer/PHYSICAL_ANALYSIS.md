@@ -1,8 +1,10 @@
 # Inspect the conditional full-population estimator
 
-This is analysis preparation. The independent numerical confirmation is still
-running, and the complete 524,288-ID physical sample has not been run or qualified.
-No physical reference result or full-population reproduction is claimed here.
+This is analysis preparation. The original independent numerical confirmation
+is complete and failed its noise-cadence interval criteria. The conditional
+524,288-ID physical extension will not run in this campaign. The separate
+same-sample reproduction of that confirmation is still running. No physical
+reference result or full-population reproduction is claimed here.
 
 The unchanged prepared analyzer and its original assembly contract are now public:
 `scripts/noise_sweep/analyze_physical_transfer.py` and
@@ -51,7 +53,18 @@ python transfer/scripts/noise_sweep/analyze_physical_transfer.py \
 Those directory arguments must contain real recorded output with the exact
 configuration and source identities required by the assembly contract. This
 command does not generate missing trajectories or relax a failed prerequisite.
-The additional physical production queue remains conditional on the terminal
-confirmation and a measured resource decision; it is not launched by this
-package check. The already published commands reproduce the earlier numerical
-matrix and the fixed independent confirmation separately.
+The original confirmation did not meet the prerequisite for additional physical
+production. This package check does not launch it or supply the missing sample.
+The already published commands reproduce the earlier numerical matrix and the
+fixed independent confirmation separately.
+
+Packaging correction, 22 September 2026: this check's manifest retained two older
+hashes after the confirmation driver's deadline/reference-comparison update.
+The manifest now names the current driver and its unchanged packaged manifest.
+The scientific analyzers, forecast, fixed-ID design and acceptance criteria are
+unchanged. The earlier successful fixture receipt remains historical evidence;
+the corrected package passes separately with the same disposable fixtures.
+An isolated copy containing only the tracked source files passes the full
+assembly and refusal checks in 4.35 CPU seconds using the existing pinned
+environment. [Current fixture receipt](reference/physical-analysis-controls-current.json).
+This does not repeat a scientific calculation or rebuild the dependency.
