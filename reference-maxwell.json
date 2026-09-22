@@ -1,0 +1,32 @@
+{
+  "columns": [
+    "rate",
+    "gaussian_fourth_generator",
+    "exact_jump_fourth_generator",
+    "gaussian_second_generator",
+    "exact_jump_second_generator"
+  ],
+  "pooled_mean": [
+    0.4514249224142041,
+    14.430239343575384,
+    0.004680802263281653,
+    0.000217515493623661,
+    0.0002175154936236585
+  ],
+  "pooled_se": [
+    0.00018589402876325827,
+    0.03644238650769694,
+    0.014231948654308341,
+    0.0010705156177393733,
+    0.0010705156177393735
+  ],
+  "analytical": [
+    0.4513516668382051,
+    14.443253338822563,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "n_total": 1048576,
+  "scope": "Initial homogeneous Maxwell generator check, not a time-evolved halo or held-out bar prediction. Finite-jump truncation limitation, not a novelty claim."
+}

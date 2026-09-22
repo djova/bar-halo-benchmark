@@ -1,0 +1,2098 @@
+{
+  "finite_lag": {
+    "config": {
+      "paths_per_batch": 4096,
+      "dt": 0.05,
+      "end": 40.0,
+      "seeds": [
+        8101,
+        8102,
+        8103,
+        8104
+      ],
+      "lags": [
+        1.0,
+        2.0,
+        4.0
+      ],
+      "windows": [
+        [
+          0.0,
+          10.0
+        ],
+        [
+          10.0,
+          20.0
+        ],
+        [
+          20.0,
+          32.0
+        ]
+      ],
+      "gamma": 0.25,
+      "D": 1.0,
+      "mu": 0.1,
+      "sigma": 0.3
+    },
+    "batches": [
+      {
+        "seed": 8101,
+        "model": "brownian",
+        "rows": [
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 1.0,
+            "mean_increment": 6.689791924248074e-05,
+            "variance_rate": 1.0021849443260549,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 0.35439972682519844
+            }
+          },
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 2.0,
+            "mean_increment": -0.0004900247513185038,
+            "variance_rate": 1.003360537287634,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 0.4684895887962193
+            }
+          },
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 4.0,
+            "mean_increment": -0.00161631785191462,
+            "variance_rate": 1.0095833708673005,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 0.7976837860668949
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 1.0,
+            "mean_increment": 0.0046257107903328485,
+            "variance_rate": 0.999483404840912,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 6.616139344000633
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 2.0,
+            "mean_increment": 0.013013093174471193,
+            "variance_rate": 1.0033255592670745,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 8.902678966414026
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 4.0,
+            "mean_increment": 0.026000189110582977,
+            "variance_rate": 0.9959884477924268,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 15.455232850313706
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 1.0,
+            "mean_increment": 0.008129341847701069,
+            "variance_rate": 0.998503442948536,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 185.75862375167554
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 2.0,
+            "mean_increment": 0.01406888969020208,
+            "variance_rate": 0.9956963959487215,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 251.87794732971204
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 4.0,
+            "mean_increment": 0.027027263153765746,
+            "variance_rate": 0.993980187392652,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 440.84236156826375
+            }
+          }
+        ],
+        "flatness_spread": 0.015599532680186164,
+        "true_diffusion": 1.0,
+        "flatness_pass": true
+      },
+      {
+        "seed": 8101,
+        "model": "ou",
+        "rows": [
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 1.0,
+            "mean_increment": 0.0012154430491460543,
+            "variance_rate": 0.8780387810388729,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 0.35439972682519844
+            }
+          },
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 2.0,
+            "mean_increment": 0.001130940828729875,
+            "variance_rate": 0.7799866979882404,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 0.4684895887962193
+            }
+          },
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 4.0,
+            "mean_increment": 0.005266530170603167,
+            "variance_rate": 0.6303581718684675,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 0.7976837860668949
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 1.0,
+            "mean_increment": -0.0012145063577198227,
+            "variance_rate": 0.8837483972371132,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 6.616139344000633
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 2.0,
+            "mean_increment": -0.0041842516366096625,
+            "variance_rate": 0.7861652926221805,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 8.902678966414026
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 4.0,
+            "mean_increment": -0.015102349342514882,
+            "variance_rate": 0.6326429054826442,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 15.455232850313706
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 1.0,
+            "mean_increment": -0.0006333539924721202,
+            "variance_rate": 0.8808282345437984,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 185.75862375167554
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 2.0,
+            "mean_increment": 0.0005716968161013585,
+            "variance_rate": 0.7815063888475768,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 251.87794732971204
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 4.0,
+            "mean_increment": 0.012674472317340209,
+            "variance_rate": 0.6267395241802863,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 440.84236156826375
+            }
+          }
+        ],
+        "flatness_spread": 0.3362027642838672,
+        "true_diffusion": 1.0,
+        "flatness_pass": false,
+        "first_window_fit": {
+          "gamma": 0.247660383714811,
+          "D": 0.9913097337507082,
+          "rho": 0.7806250112312297,
+          "future_stationary_variance_rate": [
+            0.8780918386945422,
+            0.7817761450687603,
+            0.6290856512797988
+          ]
+        }
+      },
+      {
+        "seed": 8101,
+        "model": "geometric",
+        "rows": [
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 1.0,
+            "mean_increment": 0.18246024937996708,
+            "variance_rate": 0.35516260424738777,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 0.35439972682519844
+            }
+          },
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 2.0,
+            "mean_increment": 0.3871162578137902,
+            "variance_rate": 0.4864884698761597,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 0.4684895887962193
+            }
+          },
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 4.0,
+            "mean_increment": 0.8520459238779609,
+            "variance_rate": 0.8236214964038331,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 0.7976837860668949
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 1.0,
+            "mean_increment": 0.5042768118489384,
+            "variance_rate": 6.279000036623721,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 6.616139344000633
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 2.0,
+            "mean_increment": 1.0527962716175763,
+            "variance_rate": 8.507070416638475,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 8.902678966414026
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 4.0,
+            "mean_increment": 2.323961222734975,
+            "variance_rate": 15.521686761796776,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 15.455232850313706
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 1.0,
+            "mean_increment": 1.4319385325015344,
+            "variance_rate": 133.12156063029587,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 185.75862375167554
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 2.0,
+            "mean_increment": 3.012801929662665,
+            "variance_rate": 150.95741638459262,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 251.87794732971204
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 4.0,
+            "mean_increment": 6.705735612482772,
+            "variance_rate": 241.7607041405502,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 440.84236156826375
+            }
+          }
+        ],
+        "flatness_spread": 3.894945079615494,
+        "true_diffusion": "0.045 J^2",
+        "flatness_pass": false
+      },
+      {
+        "seed": 8102,
+        "model": "brownian",
+        "rows": [
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 1.0,
+            "mean_increment": 0.007659722664664021,
+            "variance_rate": 1.005396718999367,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 0.35439972682519844
+            }
+          },
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 2.0,
+            "mean_increment": 0.017535591186770713,
+            "variance_rate": 1.0088651201744927,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 0.4684895887962193
+            }
+          },
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 4.0,
+            "mean_increment": 0.033126287078678165,
+            "variance_rate": 1.0071932598164057,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 0.7976837860668949
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 1.0,
+            "mean_increment": 0.002050317431663809,
+            "variance_rate": 0.9949376353169977,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 6.616139344000633
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 2.0,
+            "mean_increment": 0.0015041157075414307,
+            "variance_rate": 0.9900252006685136,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 8.902678966414026
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 4.0,
+            "mean_increment": 0.008578927570333688,
+            "variance_rate": 0.9877416013500375,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 15.455232850313706
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 1.0,
+            "mean_increment": 0.012793969703787222,
+            "variance_rate": 1.0067230770609843,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 185.75862375167554
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 2.0,
+            "mean_increment": 0.02817351096376453,
+            "variance_rate": 1.0086731089717196,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 251.87794732971204
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 4.0,
+            "mean_increment": 0.05830653039668487,
+            "variance_rate": 1.0136356764380205,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 440.84236156826375
+            }
+          }
+        ],
+        "flatness_spread": 0.025827522158393942,
+        "true_diffusion": 1.0,
+        "flatness_pass": true
+      },
+      {
+        "seed": 8102,
+        "model": "ou",
+        "rows": [
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 1.0,
+            "mean_increment": -0.0016247400562864078,
+            "variance_rate": 0.8881316800920526,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 0.35439972682519844
+            }
+          },
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 2.0,
+            "mean_increment": -0.0011616528198778405,
+            "variance_rate": 0.7952094368990623,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 0.4684895887962193
+            }
+          },
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 4.0,
+            "mean_increment": 0.00285627981772775,
+            "variance_rate": 0.63535217427511,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 0.7976837860668949
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 1.0,
+            "mean_increment": -0.003104658554665257,
+            "variance_rate": 0.8932748751914339,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 6.616139344000633
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 2.0,
+            "mean_increment": -0.008928370754183856,
+            "variance_rate": 0.8014905945991105,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 8.902678966414026
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 4.0,
+            "mean_increment": -0.015688439870975547,
+            "variance_rate": 0.6408369685719585,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 15.455232850313706
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 1.0,
+            "mean_increment": 3.7785822305199354e-05,
+            "variance_rate": 0.8805816927514661,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 185.75862375167554
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 2.0,
+            "mean_increment": -0.0018309628388052232,
+            "variance_rate": 0.7777042971539424,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 251.87794732971204
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 4.0,
+            "mean_increment": -0.011224248360851174,
+            "variance_rate": 0.6162691145069747,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 440.84236156826375
+            }
+          }
+        ],
+        "flatness_spread": 0.35980740614473733,
+        "true_diffusion": 1.0,
+        "flatness_pass": false,
+        "first_window_fit": {
+          "gamma": 0.2503870539661331,
+          "D": 1.0032779734353379,
+          "rho": 0.7784994034683373,
+          "future_stationary_variance_rate": [
+            0.8875325863814945,
+            0.7892380877190992,
+            0.6337823829519689
+          ]
+        }
+      },
+      {
+        "seed": 8102,
+        "model": "geometric",
+        "rows": [
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 1.0,
+            "mean_increment": 0.1802999259333092,
+            "variance_rate": 0.3317445144131446,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 0.35439972682519844
+            }
+          },
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 2.0,
+            "mean_increment": 0.38146571803192425,
+            "variance_rate": 0.4381514099478194,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 0.4684895887962193
+            }
+          },
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 4.0,
+            "mean_increment": 0.857311165174589,
+            "variance_rate": 0.7824162546642097,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 0.7976837860668949
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 1.0,
+            "mean_increment": 0.4933550472304594,
+            "variance_rate": 8.000033793277382,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 6.616139344000633
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 2.0,
+            "mean_increment": 1.0382590373998617,
+            "variance_rate": 10.707089856899392,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 8.902678966414026
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 4.0,
+            "mean_increment": 2.3395168255136567,
+            "variance_rate": 23.120125548928787,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 15.455232850313706
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 1.0,
+            "mean_increment": 1.4677466883825168,
+            "variance_rate": 147.27794950457783,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 185.75862375167554
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 2.0,
+            "mean_increment": 3.061097717207066,
+            "variance_rate": 179.5874364667209,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 251.87794732971204
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 4.0,
+            "mean_increment": 6.816548764832845,
+            "variance_rate": 310.6024717607607,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 440.84236156826375
+            }
+          }
+        ],
+        "flatness_spread": 4.101413131398231,
+        "true_diffusion": "0.045 J^2",
+        "flatness_pass": false
+      },
+      {
+        "seed": 8103,
+        "model": "brownian",
+        "rows": [
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 1.0,
+            "mean_increment": -0.0027584751015355237,
+            "variance_rate": 1.000484601438315,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 0.35439972682519844
+            }
+          },
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 2.0,
+            "mean_increment": -0.004718106443698153,
+            "variance_rate": 1.0055526899580665,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 0.4684895887962193
+            }
+          },
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 4.0,
+            "mean_increment": -0.0004199111653973651,
+            "variance_rate": 1.0124618204789875,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 0.7976837860668949
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 1.0,
+            "mean_increment": -0.0005180417086864526,
+            "variance_rate": 1.0020266604791856,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 6.616139344000633
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 2.0,
+            "mean_increment": -0.0018470415234983178,
+            "variance_rate": 1.0042671797664346,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 8.902678966414026
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 4.0,
+            "mean_increment": -0.014468549595827553,
+            "variance_rate": 1.0059625009984785,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 15.455232850313706
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 1.0,
+            "mean_increment": -0.008443973287798752,
+            "variance_rate": 1.0063075277742675,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 185.75862375167554
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 2.0,
+            "mean_increment": -0.01820577095246847,
+            "variance_rate": 1.0090949957666817,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 251.87794732971204
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 4.0,
+            "mean_increment": -0.035256792995841175,
+            "variance_rate": 1.0142118126869841,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 440.84236156826375
+            }
+          }
+        ],
+        "flatness_spread": 0.01363574601373087,
+        "true_diffusion": 1.0,
+        "flatness_pass": true
+      },
+      {
+        "seed": 8103,
+        "model": "ou",
+        "rows": [
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 1.0,
+            "mean_increment": -0.008978458017661717,
+            "variance_rate": 0.8831263481859506,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 0.35439972682519844
+            }
+          },
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 2.0,
+            "mean_increment": -0.015377287484466293,
+            "variance_rate": 0.7788977958413486,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 0.4684895887962193
+            }
+          },
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 4.0,
+            "mean_increment": -0.02771051730073094,
+            "variance_rate": 0.6259505896365332,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 0.7976837860668949
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 1.0,
+            "mean_increment": 0.003076969679380458,
+            "variance_rate": 0.8815126934156481,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 6.616139344000633
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 2.0,
+            "mean_increment": 0.006034327989128651,
+            "variance_rate": 0.7856739009819103,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 8.902678966414026
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 4.0,
+            "mean_increment": 0.015485735142230323,
+            "variance_rate": 0.6377385309713549,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 15.455232850313706
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 1.0,
+            "mean_increment": 0.0018288383301753876,
+            "variance_rate": 0.886875948871273,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 185.75862375167554
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 2.0,
+            "mean_increment": 0.0014422692995463824,
+            "variance_rate": 0.7949781026463004,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 251.87794732971204
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 4.0,
+            "mean_increment": -0.0012182016663951475,
+            "variance_rate": 0.6391819518319255,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 440.84236156826375
+            }
+          }
+        ],
+        "flatness_spread": 0.3396514344151763,
+        "true_diffusion": 1.0,
+        "flatness_pass": false,
+        "first_window_fit": {
+          "gamma": 0.2555369677673387,
+          "D": 1.000162226929713,
+          "rho": 0.7745005044768385,
+          "future_stationary_variance_rate": [
+            0.8825966731330949,
+            0.7830841208621282,
+            0.6264089692307749
+          ]
+        }
+      },
+      {
+        "seed": 8103,
+        "model": "geometric",
+        "rows": [
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 1.0,
+            "mean_increment": 0.18742865728881153,
+            "variance_rate": 0.3815392467827337,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 0.35439972682519844
+            }
+          },
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 2.0,
+            "mean_increment": 0.3963730536535915,
+            "variance_rate": 0.507802145796353,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 0.4684895887962193
+            }
+          },
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 4.0,
+            "mean_increment": 0.8823540351913235,
+            "variance_rate": 0.8817489210455645,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 0.7976837860668949
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 1.0,
+            "mean_increment": 0.5224485795029294,
+            "variance_rate": 6.837280486372142,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 6.616139344000633
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 2.0,
+            "mean_increment": 1.0935239796258514,
+            "variance_rate": 8.244893757401258,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 8.902678966414026
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 4.0,
+            "mean_increment": 2.463317329737395,
+            "variance_rate": 13.979548066657417,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 15.455232850313706
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 1.0,
+            "mean_increment": 1.7452079675343912,
+            "variance_rate": 220.7546657538839,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 185.75862375167554
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 2.0,
+            "mean_increment": 3.7524530445950024,
+            "variance_rate": 411.2840218694182,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 251.87794732971204
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 4.0,
+            "mean_increment": 8.392263388467448,
+            "variance_rate": 705.1267429128116,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 440.84236156826375
+            }
+          }
+        ],
+        "flatness_spread": 4.636487557427102,
+        "true_diffusion": "0.045 J^2",
+        "flatness_pass": false
+      },
+      {
+        "seed": 8104,
+        "model": "brownian",
+        "rows": [
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 1.0,
+            "mean_increment": 0.00881975750801208,
+            "variance_rate": 1.0011526701434097,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 0.35439972682519844
+            }
+          },
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 2.0,
+            "mean_increment": 0.017397129033382336,
+            "variance_rate": 1.0009765355220346,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 0.4684895887962193
+            }
+          },
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 4.0,
+            "mean_increment": 0.016837743748951584,
+            "variance_rate": 1.0130081038862102,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 0.7976837860668949
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 1.0,
+            "mean_increment": -0.010755673930644147,
+            "variance_rate": 1.0163168678567827,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 6.616139344000633
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 2.0,
+            "mean_increment": -0.022517403835452424,
+            "variance_rate": 1.0185281405948114,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 8.902678966414026
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 4.0,
+            "mean_increment": -0.04189235881703314,
+            "variance_rate": 1.0179553573873725,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 15.455232850313706
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 1.0,
+            "mean_increment": 0.008068237418071613,
+            "variance_rate": 1.0053134671020494,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 185.75862375167554
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 2.0,
+            "mean_increment": 0.016161156460125052,
+            "variance_rate": 1.0059482109830922,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 251.87794732971204
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 4.0,
+            "mean_increment": 0.04211001247938142,
+            "variance_rate": 1.0130037881434835,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 440.84236156826375
+            }
+          }
+        ],
+        "flatness_spread": 0.017373615964640626,
+        "true_diffusion": 1.0,
+        "flatness_pass": true
+      },
+      {
+        "seed": 8104,
+        "model": "ou",
+        "rows": [
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 1.0,
+            "mean_increment": -0.00876118182204025,
+            "variance_rate": 0.8904774209282009,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 0.35439972682519844
+            }
+          },
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 2.0,
+            "mean_increment": -0.013804566605882545,
+            "variance_rate": 0.7901367784865042,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 0.4684895887962193
+            }
+          },
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 4.0,
+            "mean_increment": -0.013369290894732799,
+            "variance_rate": 0.6381257107959065,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 0.7976837860668949
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 1.0,
+            "mean_increment": 0.007339152373569611,
+            "variance_rate": 0.8876408875924027,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 6.616139344000633
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 2.0,
+            "mean_increment": 0.013163603514537795,
+            "variance_rate": 0.7874175178281624,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 8.902678966414026
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 4.0,
+            "mean_increment": 0.013662638415925634,
+            "variance_rate": 0.6311266355158616,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 15.455232850313706
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 1.0,
+            "mean_increment": 0.004507982909318384,
+            "variance_rate": 0.8862538965316453,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 185.75862375167554
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 2.0,
+            "mean_increment": 0.006268097746558459,
+            "variance_rate": 0.7846126773918909,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 251.87794732971204
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 4.0,
+            "mean_increment": 0.00733536141196368,
+            "variance_rate": 0.6211046851401334,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 440.84236156826375
+            }
+          }
+        ],
+        "flatness_spread": 0.35049747002330045,
+        "true_diffusion": 1.0,
+        "flatness_pass": false,
+        "first_window_fit": {
+          "gamma": 0.25223697614271584,
+          "D": 1.0063875062091752,
+          "rho": 0.777060571431384,
+          "future_stationary_variance_rate": [
+            0.8894947084440272,
+            0.7903429874363676,
+            0.633785182603101
+          ]
+        }
+      },
+      {
+        "seed": 8104,
+        "model": "geometric",
+        "rows": [
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 1.0,
+            "mean_increment": 0.1755029446480933,
+            "variance_rate": 0.34746082619794366,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 0.35439972682519844
+            }
+          },
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 2.0,
+            "mean_increment": 0.37253279401456413,
+            "variance_rate": 0.4626932212630716,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 0.4684895887962193
+            }
+          },
+          {
+            "window": [
+              0.0,
+              10.0
+            ],
+            "lag": 4.0,
+            "mean_increment": 0.8327678659551048,
+            "variance_rate": 0.7269369163711744,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 0.7976837860668949
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 1.0,
+            "mean_increment": 0.5054823187798959,
+            "variance_rate": 6.631842472555601,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 6.616139344000633
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 2.0,
+            "mean_increment": 1.065107102705805,
+            "variance_rate": 9.563432684003986,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 8.902678966414026
+            }
+          },
+          {
+            "window": [
+              10.0,
+              20.0
+            ],
+            "lag": 4.0,
+            "mean_increment": 2.3456267738704737,
+            "variance_rate": 15.52010573143554,
+            "starts": 200,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 15.455232850313706
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 1.0,
+            "mean_increment": 1.4227777264058998,
+            "variance_rate": 129.29031110799428,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.8847968677143805,
+              "geometric": 185.75862375167554
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 2.0,
+            "mean_increment": 3.0067685905421984,
+            "variance_rate": 172.60243823346025,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.7869386805747332,
+              "geometric": 251.87794732971204
+            }
+          },
+          {
+            "window": [
+              20.0,
+              32.0
+            ],
+            "lag": 4.0,
+            "mean_increment": 6.676733569006582,
+            "variance_rate": 313.7715856236618,
+            "starts": 240,
+            "exact": {
+              "brownian": 1.0,
+              "ou": 0.6321205588285577,
+              "geometric": 440.84236156826375
+            }
+          }
+        ],
+        "flatness_spread": 4.346962651520465,
+        "true_diffusion": "0.045 J^2",
+        "flatness_pass": false
+      }
+    ],
+    "summaries": [
+      {
+        "model": "brownian",
+        "mean": [
+          1.0023047337267865,
+          1.0046887207355568,
+          1.010561638762226,
+          1.0031911421234696,
+          1.0040365200742085,
+          1.0019119768820788,
+          1.0042118787214593,
+          1.0048531779175538,
+          1.008707866165285
+        ],
+        "batch_se": [
+          0.0010883800835056383,
+          0.001676632175469057,
+          0.0013508906616399672,
+          0.004614365105181277,
+          0.005822963205880525,
+          0.006517185890974481,
+          0.0019256513613755577,
+          0.003130903029520329,
+          0.004915419692749492
+        ],
+        "exact": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "exact_flatness_spread": 0.0,
+        "max_relative_mean_error": 0.010561638762226044
+      },
+      {
+        "model": "ou",
+        "mean": [
+          0.8849435575612693,
+          0.7860576773037888,
+          0.6324466616440043,
+          0.8865442133591495,
+          0.7901868265078409,
+          0.6355862601354547,
+          0.8836349431745457,
+          0.7847003665099277,
+          0.62582381891483
+        ],
+        "batch_se": [
+          0.002765350456589823,
+          0.003963526024414407,
+          0.002696515405543606,
+          0.002576128940298829,
+          0.00378575702711998,
+          0.002250070317348268,
+          0.0016971295888653848,
+          0.0037056941456322387,
+          0.0049399800190971215
+        ],
+        "exact": [
+          0.8847968677143805,
+          0.7869386805747332,
+          0.6321205588285577,
+          0.8847968677143805,
+          0.7869386805747332,
+          0.6321205588285577,
+          0.8847968677143805,
+          0.7869386805747332,
+          0.6321205588285577
+        ],
+        "exact_flatness_spread": 0.32902615936627655,
+        "max_relative_mean_error": 0.009961295872731646
+      },
+      {
+        "model": "geometric",
+        "mean": [
+          0.35397679791030245,
+          0.47378381172085093,
+          0.8036808971211954,
+          6.937039197207212,
+          9.255621678735778,
+          17.03536652720463,
+          157.611121749188,
+          228.607828238548,
+          392.8153761094461
+        ],
+        "batch_se": [
+          0.010399627562917478,
+          0.015031424430540619,
+          0.032703296800411445,
+          0.3726112685339056,
+          0.5615015145526094,
+          2.0605331132111298,
+          21.40032810745366,
+          61.196255808421725,
+          105.42089696941164
+        ],
+        "exact": [
+          0.35439972682519844,
+          0.4684895887962193,
+          0.7976837860668949,
+          6.616139344000633,
+          8.902678966414026,
+          15.455232850313706,
+          185.75862375167554,
+          251.87794732971204,
+          440.84236156826375
+        ],
+        "exact_flatness_spread": 4.35134092795931,
+        "max_relative_mean_error": 0.15152729619764782
+      }
+    ],
+    "gates": {
+      "total_variance_identity": true,
+      "brownian_accuracy": true,
+      "ou_accuracy": true,
+      "brownian_flatness": true,
+      "constant_diffusion_ou_fails_flatness": true,
+      "geometric_transition_five_se": true
+    },
+    "all_pass": true,
+    "geometric_transition": {
+      "mean": [
+        0.2219353113194416,
+        0.344533323842543
+      ],
+      "se": [
+        0.0005306593567125775,
+        0.0008609920798164515
+      ],
+      "exact": [
+        0.22140275816016985,
+        0.3432329144297337
+      ]
+    },
+    "scope": "Known Markov controls. OU has constant diffusion despite non-flat finite-lag variance rate. No model is inferred for the halo from this counterexample."
+  },
+  "maxwell": {
+    "columns": [
+      "rate",
+      "gaussian_fourth_generator",
+      "exact_jump_fourth_generator",
+      "gaussian_second_generator",
+      "exact_jump_second_generator"
+    ],
+    "pooled_mean": [
+      0.4514249224142041,
+      14.430239343575384,
+      0.004680802263281653,
+      0.000217515493623661,
+      0.0002175154936236585
+    ],
+    "pooled_se": [
+      0.00018589402876325827,
+      0.03644238650769694,
+      0.014231948654308341,
+      0.0010705156177393733,
+      0.0010705156177393735
+    ],
+    "analytical": [
+      0.4513516668382051,
+      14.443253338822563,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "blocks": [
+      {
+        "seed": 7141,
+        "mean": [
+          0.4514805106007086,
+          14.452863971264446,
+          -0.03706583147446456,
+          -0.0030027461978111877,
+          -0.0030027461978111994
+        ],
+        "se": [
+          0.00037201347186623833,
+          0.07318511484003438,
+          0.028275821950165606,
+          0.0021388069884011774,
+          0.0021388069884011774
+        ]
+      },
+      {
+        "seed": 7142,
+        "mean": [
+          0.45153510110602646,
+          14.44519077537939,
+          0.04126964414411014,
+          0.002056762021543585,
+          0.002056762021543575
+        ],
+        "se": [
+          0.0003713699793302412,
+          0.07335257506788183,
+          0.028218522807258686,
+          0.002138434962369113,
+          0.002138434962369113
+        ]
+      },
+      {
+        "seed": 7143,
+        "mean": [
+          0.4510961845408935,
+          14.338765486209281,
+          0.018589792666179796,
+          0.0013719739676961848,
+          0.0013719739676961871
+        ],
+        "se": [
+          0.00037124570574941526,
+          0.07215645735770954,
+          0.028818032082938972,
+          0.0021407717170291115,
+          0.0021407717170291115
+        ]
+      },
+      {
+        "seed": 7144,
+        "mean": [
+          0.4515878934091364,
+          14.484137141448059,
+          -0.004070396282698741,
+          0.0004440721830660994,
+          0.0004440721830661139
+        ],
+        "se": [
+          0.00037252300635015904,
+          0.07283927440106942,
+          0.028539169174378487,
+          0.0021461012920104506,
+          0.002146101292010451
+        ]
+      }
+    ],
+    "algebra": [
+      {
+        "gaussian": 3.0532686828218324e-16,
+        "jump": 2.740606997990976e-16,
+        "second": 4.125009609900931e-16
+      },
+      {
+        "gaussian": 3.061879211229064e-16,
+        "jump": 2.8128515564454e-16,
+        "second": 4.137272337347747e-16
+      },
+      {
+        "gaussian": 3.101162545980437e-16,
+        "jump": 2.7401220523395394e-16,
+        "second": 4.1036080377754227e-16
+      },
+      {
+        "gaussian": 3.077989949239941e-16,
+        "jump": 2.775728735386976e-16,
+        "second": 4.1329380660599894e-16
+      }
+    ],
+    "gates": {
+      "algebra": true,
+      "analytical_five_se": true,
+      "precision": true,
+      "reproduces_archived_mean": true
+    },
+    "all_pass": true,
+    "reproduction_error": 0.0,
+    "n_total": 1048576,
+    "rho": 1.0,
+    "cross_section_per_mass": 0.2,
+    "sigma_1d": 1.0,
+    "scope": "Verification of a known finite-jump limitation at initial Maxwell equilibrium, not a time-evolved halo or a novel SIDM prediction."
+  },
+  "all_pass": true,
+  "versions": {
+    "python": "3.11.14",
+    "numpy": "1.26.4",
+    "matplotlib": "3.11.2"
+  },
+  "cpu_seconds": 1.7873447489999998,
+  "wall_seconds": 1.7876475700177252,
+  "sources": {
+    "README.md": "2f3259ab0f1c0dd238858c79627bcfcd3651b3adc1f94647ae6b9068e035a29b",
+    "requirements.txt": "3c4d15e5cea3a4706c4ed8fae523ab28b7fd5f1f63fee83eb1fde8f5d0b7b703",
+    "reference-maxwell.json": "06c89b2507a382036e12c13b31fd75e568eea585f6262d8bc6c4c1bde77a3d21",
+    "FINITE_LAG_CONTROLS.md": "5b6b2586f1fe93163c57d8db453065d14f3bf2c439bf2deabec50156b8c70ae7",
+    "reproduce.py": "705797819196d4b170676341be67d51444cf198f3a58a8fc516188ed957632b5"
+  }
+}

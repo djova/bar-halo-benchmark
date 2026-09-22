@@ -1,0 +1,12 @@
+{
+  "all_pass": true,
+  "scientific_results_identical": true,
+  "isolated_dependencies": {
+    "python": "3.11.14",
+    "numpy": "1.26.4",
+    "matplotlib": "3.11.2"
+  },
+  "source_result_sha256": "e0a13b1f6ccb15aca01262340dda20dbf6b2b4e66269079749983fc56f487b2e",
+  "isolated_result_sha256": "237f4e72df0d655755334b0743a5b461e471fd8b74006df86e5f1ff63fde99b7",
+  "scope": "Clean copied source, separately installed dependencies, working directory outside project, no scientific project imports or raw arrays. CPU timings differ; all scientific values are identical."
+}
