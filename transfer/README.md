@@ -61,15 +61,16 @@ python transfer/reproduce_numerical.py --agama PATH_TO_PATCHED_AGAMA --out repro
 It uses one nice10single-core worker by default; `--workers2` permits two. Each
 case has a7200s limit. Allow roughly2.6CPUhours for the full matrix. `--smoke`
 runs only two short unforced checks; those pass in a fresh pinned environment.
-The compiled force kernel matches the original binary. The complete clean matrix
-is now being rerun with the previously independently built AGAMA/GSL dependency;
-its reference comparison is **not yet verified**. No new physical parameters,
+The compiled force kernel matches the original binary. The original final matrix is complete: both timestep intervals pass, but both
+noise-cadence intervals miss the unchanged numerical allowance. The complete
+clean matrix is still being rerun with the previously independently built
+AGAMA/GSL dependency; its reference comparison is **not yet verified**. No new physical parameters,
 particle sample or numerical margin are introduced.
 
 The helper checks source manifests, records every case and supports `--resume`
 after incomplete attempts have been preserved elsewhere. It runs the published
 readback and compares against `reference/final-numerical-analysis.json` when that
-terminal reference is available. An absent comparison is recorded as null; it is
+terminal reference is available (now included). An absent comparison is recorded as null; it is
 not a passing reproduction claim. `--reference` can name an explicit published
 reference. Numerical qualification is separate from reproducibility, and a
 faithfully reproduced failure remains a failure. Original protocols and the

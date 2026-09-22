@@ -1,0 +1,272 @@
+{
+  "n": 16384,
+  "numerical_margin": 1.8126730139721574e-07,
+  "gates": {
+    "local": true,
+    "paired_identity": true,
+    "raw_points": true,
+    "raw_intervals": false,
+    "discrepancy_points": true,
+    "discrepancy_intervals": false
+  },
+  "numerically_qualified": false,
+  "candidate_raw_3D": {
+    "n": 16384,
+    "mean": 1.8459138383550364e-06,
+    "se": 1.2474611828853183e-05,
+    "ci95": [
+      -2.260568253206596e-05,
+      2.6297510208776035e-05
+    ],
+    "half_width": 2.4451596370420997e-05
+  },
+  "candidate_reduced": {
+    "n": 16384,
+    "mean": 2.0995209898371563e-06,
+    "se": 1.2581340653809786e-05,
+    "ci95": [
+      -2.2561275489150914e-05,
+      2.6760317468825227e-05
+    ],
+    "half_width": 2.466079647898807e-05
+  },
+  "candidate_discrepancy": {
+    "n": 16384,
+    "mean": -2.536071514821192e-07,
+    "se": 3.3283071122297737e-06,
+    "ci95": [
+      -6.7774511974195056e-06,
+      6.270236894455267e-06
+    ],
+    "half_width": 6.5238440459373865e-06
+  },
+  "refinements": [
+    {
+      "setting": "halfstep",
+      "raw_3D_shift": {
+        "n": 16384,
+        "mean": 4.265148242277427e-10,
+        "se": 8.414573000072913e-10,
+        "ci95": [
+          -1.222833030840068e-09,
+          2.0758626792955534e-09
+        ],
+        "half_width": 1.6493478550678106e-09,
+        "largest20_ids": [
+          10590,
+          8768,
+          9231,
+          12464,
+          3567,
+          8904,
+          15453,
+          14202,
+          5943,
+          15204,
+          13768,
+          15305,
+          5330,
+          6146,
+          7880,
+          13401,
+          13576,
+          10786,
+          13669,
+          6439
+        ],
+        "largest20_variance_fraction": 0.9777715272878311,
+        "maximum_absolute_individual_change": 9.869111025079995e-06,
+        "point_pass": true,
+        "interval_pass": true
+      },
+      "discrepancy_shift": {
+        "n": 16384,
+        "mean": 4.2651482422788e-10,
+        "se": 8.414573000072924e-10,
+        "ci95": [
+          -1.222833030839933e-09,
+          2.0758626792956928e-09
+        ],
+        "half_width": 1.6493478550678128e-09,
+        "largest20_ids": [
+          10590,
+          8768,
+          9231,
+          12464,
+          3567,
+          8904,
+          15453,
+          14202,
+          5943,
+          15204,
+          13768,
+          15305,
+          5330,
+          6146,
+          7880,
+          13401,
+          13576,
+          10786,
+          13669,
+          6439
+        ],
+        "largest20_variance_fraction": 0.9777715272878335,
+        "maximum_absolute_individual_change": 9.869111025079995e-06,
+        "point_pass": true,
+        "interval_pass": true
+      },
+      "reduced_shift": {
+        "n": 16384,
+        "mean": 0.0,
+        "se": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "half_width": 0.0
+      },
+      "brownian_endpoint_difference": 0.0
+    },
+    {
+      "setting": "halfcadence",
+      "raw_3D_shift": {
+        "n": 16384,
+        "mean": -5.88418799041329e-09,
+        "se": 9.390897744383913e-08,
+        "ci95": [
+          -1.8995600068639366e-07,
+          1.7818762470556706e-07
+        ],
+        "half_width": 1.8407181269598036e-07,
+        "largest20_ids": [
+          13401,
+          8768,
+          3318,
+          3567,
+          13779,
+          10049,
+          13497,
+          10703,
+          14202,
+          8904,
+          10999,
+          5943,
+          14024,
+          15204,
+          5278,
+          13768,
+          3966,
+          13314,
+          508,
+          10637
+        ],
+        "largest20_variance_fraction": 0.9568072668173403,
+        "maximum_absolute_individual_change": 0.001191083468716941,
+        "point_pass": true,
+        "interval_pass": false
+      },
+      "discrepancy_shift": {
+        "n": 16384,
+        "mean": -1.1945488037921927e-07,
+        "se": 1.4554784655517763e-07,
+        "ci95": [
+          -4.047444946275489e-07,
+          1.6583473386911032e-07
+        ],
+        "half_width": 2.852896142483296e-07,
+        "largest20_ids": [
+          13401,
+          597,
+          508,
+          12752,
+          10461,
+          12294,
+          10550,
+          8768,
+          8139,
+          3318,
+          13497,
+          2984,
+          13779,
+          7608,
+          10049,
+          3567,
+          13576,
+          10703,
+          5278,
+          13314
+        ],
+        "largest20_variance_fraction": 0.9197591727651433,
+        "maximum_absolute_individual_change": 0.001259383604057209,
+        "point_pass": true,
+        "interval_pass": false
+      },
+      "reduced_shift": {
+        "n": 16384,
+        "mean": 1.1357069238880603e-07,
+        "se": 1.0680318863021176e-07,
+        "ci95": [
+          -9.577517706899789e-08,
+          3.2291656184660996e-07
+        ],
+        "half_width": 2.0934586945780392e-07
+      },
+      "brownian_endpoint_difference": 7.28583859910259e-17
+    }
+  ],
+  "actual_settings": {
+    "candidate": {
+      "actual_microstep": 0.009999411986774766,
+      "noise_cadence": 0.4999705993387383,
+      "maximum_work_residual": 1.7390930340775712e-10
+    },
+    "halfstep": {
+      "actual_microstep": 0.004999705993387383,
+      "noise_cadence": 0.4999705993387383,
+      "maximum_work_residual": 1.091567312342008e-11
+    },
+    "halfcadence": {
+      "actual_microstep": 0.00961481921805266,
+      "noise_cadence": 0.24998529966936914,
+      "maximum_work_residual": 1.4870436923931224e-10
+    }
+  },
+  "source_sha256": {
+    "candidate-noisy": {
+      "result_sha256": "0777668665ea7e4d0bf5b35aef1efbb210e589587952b6f08a26e5425e492ac3",
+      "raw_sha256": "d5c2a82ee99e1a60eddc9390a834c477d10600548a379bc621bf57aa5c88f1a1"
+    },
+    "candidate-smooth": {
+      "result_sha256": "24f927606b92eef3669f7316e4363ac74f8e1ed82a47a2cd5b99faa19fb18ea5",
+      "raw_sha256": "ff22cfe2a34198b0f5a76c8e4d640adcb8211d5368d10d1b3da8717beadf42be"
+    },
+    "halfstep-noisy": {
+      "result_sha256": "d2e7038bd30dfb3bf3af3cd893f9bcf263fd7fbad9610b9e70256c2b2a415ca7",
+      "raw_sha256": "70535d0458eb84b2e8cf9be6d1ddbe5340c6521fe5e994c0b8708eda43747ed4"
+    },
+    "halfstep-smooth": {
+      "result_sha256": "809831cf2dcf779edc205db98a04c6cc428ccfbf377c3d16bb01474ddbb69636",
+      "raw_sha256": "eb805dfb4c63ce054df52ed0d3fb2cb8b00a05d687ee934ecbd3320b535f7e3b"
+    },
+    "halfcadence-noisy": {
+      "result_sha256": "ad64dbabde20f7bd5307b972240727df854630ad713dc2ce954de053ac12af0f",
+      "raw_sha256": "80b9ff5ae16a2f6da1b3ec467e58995172308483b0a35ed4c915b2fe49bf22c4"
+    },
+    "halfcadence-smooth": {
+      "result_sha256": "5742f62bff8d9a5ed776d771aa03cdbd6ce30a2701e6799b31ee075636da8d7e",
+      "raw_sha256": "cdea9456f648bc9eccc01e022f6da1e20b0aad740ba2fae21acf8fd96eb37503"
+    }
+  },
+  "scientific_source_sha256": {
+    "scripts/noise_sweep/run_orbits_cadence.py": "86c8895f8009ba89b5f0748966b6772fa569a2ed1c970ef9ec28da0f632e5f95",
+    "benchmark/brownian_leaves.py": "ee40c435d08146abfe481779983d60faac003e8c58988fab4d9e43a5402ea53f",
+    "benchmark/orbit_fourth.cpp": "a1ddb204096ecb8de55a62ddd008bf378d730c983c612c86fa341cc4ca0a5767",
+    "benchmark/orbit_fourth.py": "c592aedac87f8a2e180cad454f8472a40f9df3706d20e458c9bc2f24dca74207",
+    "benchmark/orbit_kernel.cpp": "444789c4b5707a8a13d7a0ca08d71abdcfe7bbd6305a116c2912854f7f956c32",
+    "benchmark/orbit_kernel.py": "db8e3de488065bf2e1b010aae78d0b9b6db8a97e2589e3fdba4c0369b75e24ff"
+  },
+  "forecast_sha256": "d455a54900fb1ffb190e906554afc25ee02719e12c4989995d3240c7913e54a4",
+  "recovered_cases": true,
+  "interval_scope": "Pointwise Student-t iid particle intervals; finite-sample tail concentration is reported, not trimmed. Not a simultaneous or rigorous truncation-error bound.",
+  "scope": "Last predeclared numerical matrix on an unchanged prefix. Neither qualification nor failure establishes full-population physical adequacy. Original failed attempts and frozen prediction remain unchanged."
+}
