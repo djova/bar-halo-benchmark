@@ -50,6 +50,22 @@ failed refinement into a success. The full map, population-width check and new
 3D transfer have their own protocols. These finite Gaussian tracer populations
 are not full halo DFs, and the imposed white action noise is not physical SIDM.
 
+## Reproduce the matched stationary and moving comparison
+
+`python reproduce_matched.py --out reproduced-matched` regenerates both signs
+with the same positive initial population, noise strength and duration. It
+recomputes the distribution estimates, the eight stationary positive-weight
+trajectory batches, and all4,194,304initial particles in the new moving sample.
+Allow roughly45minutes on one CPU. It writes full outputs and
+`matched-response.png`, and checks every batch against the archived values.
+
+The exact scientific sources and protocols are in `matched/`. The command uses
+no private inputs and runs offline after installing the pinned dependencies.
+The independent clean reproduction is being verified; do not treat an untested
+package as already reproduced. Separate numerical-refinement matrices are
+documented but not all rerun by this command. This reduced-model sign comparison
+does not qualify the3D prediction or a full-halo response.
+
 ## Frozen prospective 3D forecasts
 
 The records in `forecasts/2026-09-22/` were committed before inspecting any

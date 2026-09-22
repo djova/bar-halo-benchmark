@@ -1,0 +1,9 @@
+{
+  "reference.json": "5fad77867b176a0a3816d0d28d0026748fd79e5fff9d5e14fe88f0a0791dfcbb",
+  "MATCHED_STATIONARY.md": "977454f1ba9d82d8ad796b79c4971ed681af0f061c009b9ccfcdd31b323d4857",
+  "MOVING_PRECISION.md": "33da8453fd087a0ef052002ec4dd0403b17e49a553afffd2a425469c814eaf1b",
+  "benchmark/characteristic_endpoint.py": "955446c37f7c41ec3d53c6773f29151d8d12fe7d0c22d837d3264437f5e1129b",
+  "benchmark/characteristics.py": "15f6f2de767e1563ed7a30a9bb5301fbfb008f82c86ffdf7b5147881e1df44b3",
+  "benchmark/resonance.py": "3666138845cc675233ba8d269e7a6661b730567daa732fbf5bef2c40e7bfdbdf",
+  "scripts/noise_sweep/stationary_pairs.py": "9d79f5b31a8ee96f22320ca5309630554321e4c800ee95a381cf0fa687c54d25"
+}
