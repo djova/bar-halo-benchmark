@@ -74,3 +74,27 @@ not a passing reproduction claim. `--reference` can name an explicit published
 reference. Numerical qualification is separate from reproducibility, and a
 faithfully reproduced failure remains a failure. Original protocols and the
 clean-reproduction criteria are included alongside the source.
+
+## Inspect and regenerate the unforced calibration
+
+```
+python transfer/reproduce_coefficients.py --agama PATH_TO_PATCHED_AGAMA --out reproduced-calibration
+```
+
+This optional two-second calculation regenerates the original action scans,
+frequency gradients, bar Fourier coefficients and distribution-function slopes.
+It checks their original checksum against the forecast's pre-outcome record and
+derives every frozen orbital input. No forced trajectory is an input. The
+original scripts and full reference table are in `scripts/noise_sweep/` and
+`calibration/`; the command uses one nice10 single-core worker and a300s limit.
+
+The independently rebuilt dependency reproduces the frequency gradients,
+Fourier coefficients and all derived frozen orbital inputs within the declared
+tolerances. It **does not pass every scalar comparison**:100of1304 checks miss
+the fixed tolerance, all in finite-difference DF slopes or their scaled values.
+The largest slope difference is1.954e-9. No reference or tolerance is adjusted.
+The command writes the generated table and full verification, marks
+`COMPARISON_FAILED`, and exits nonzero when those strict comparisons fail.
+This does not change the original forecasts or establish their physical adequacy.
+See `calibration/clean-comparison.json` for the complete readback and
+`calibration/PROTOCOL.md` for the unchanged criteria and correspondence repair.

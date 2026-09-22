@@ -1,0 +1,6 @@
+{
+  "scripts/noise_sweep/prepare_transfer.py": "dccda3ec375d68afaa2603d01919d69da3cc574aae36707248ff65b47cd0ac90",
+  "scripts/noise_sweep/coefficients.py": "2959668d1dc766c1d07c6a070237a53f42663506588ee24c848a0190f569d457",
+  "calibration/reference.json": "0febc6485f34dc8d9a431b83ce52965bf10f13e85b4f67bb62c61db19ae5b3f6",
+  "forecast.json": "d455a54900fb1ffb190e906554afc25ee02719e12c4989995d3240c7913e54a4"
+}
