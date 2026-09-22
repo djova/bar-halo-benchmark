@@ -122,3 +122,10 @@ The separate six-case timestep/cadence rerun also reproduces all decisions in
 2.636CPUhours. Its small timestep shifts pass; its cadence intervals still fail.
 See the transfer README and full clean numerical receipt. Reproducing the result
 does not turn that numerical qualification into a pass.
+
+## Bar-free controls and domain limits
+
+The [complete bar-free readback](unforced/README.md) supplies exact-law comparisons,
+all 44 control records, retained boundary failures, the original solver and a
+one-command figure reconstruction. This uses existing controls; it does not
+qualify the unresolved three-dimensional forecast or add a new physical sample.

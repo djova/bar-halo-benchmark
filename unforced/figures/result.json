@@ -1,0 +1,12 @@
+{
+  "input_sha256": "970ba3355e278ee133260e225e2755fc86f021486da3151ee0efd9bb30fbbbc6",
+  "plot_source_sha256": "f4235a16bb01d547be48565e2af145a7f9346fa39f87fd34ce1e8dc9263c9f5b",
+  "figures": {
+    "unforced-boundary-check.pdf": "2b6ec8cff0eff4e7dcdd5505bd0e3a8348d7f68fc05a7da3a3123415dfa8c441",
+    "unforced-boundary-check.png": "4cde99ffc748880b5b4614aea730566224e9076eb5d38caba9a25e0b31757667",
+    "unforced-noise-moments.pdf": "999a14028b9dbd8cb7b04ac40525f9a2a011672e19ca258a63bdfba2c01f3bb8",
+    "unforced-noise-moments.png": "00a36432d5236972b339c52d0191d113629d96f7a3c4bf361ac6016412a4b5b3"
+  },
+  "cpu_seconds": 1.512594521,
+  "scope": "Recorded moments and pointwise95% intervals only. Rows reuse seed families, not independent conditions. Original boundary failures are retained; bar-free checks do not qualify forced transfer."
+}

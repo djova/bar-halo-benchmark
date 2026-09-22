@@ -1,0 +1,1256 @@
+{
+  "distribution_controls": [
+    {
+      "source": "map-01/unforced-s0-eta0",
+      "variant": "original",
+      "s": 0.0,
+      "eta": 0.0,
+      "T": 25.132741228718345,
+      "J": 64.0,
+      "expected_variance": 64.0,
+      "measured_variance": 63.99999999999182,
+      "mean_error": 8.681944052568724e-14,
+      "variance_error": -8.178346888598753e-12,
+      "original_gates": {
+        "mass": true,
+        "positive_mass": true,
+        "moment_budget": true,
+        "unforced_mean": true,
+        "unforced_variance": true
+      },
+      "original_all_pass": true,
+      "bar_impulse_zero": true,
+      "maximum_saved_negative_mass": 5.926651549350604e-17,
+      "maximum_saved_moment_residual": 9.170442183403793e-14,
+      "scope": "Recorded full-grid summary moments; decimated density is not used to reconstruct the full-grid moments. Raw checksum verified."
+    },
+    {
+      "source": "map-01/unforced-s0-eta0.01",
+      "variant": "original",
+      "s": 0.0,
+      "eta": 0.01,
+      "T": 25.132741228718345,
+      "J": 64.0,
+      "expected_variance": 64.32,
+      "measured_variance": 64.31999999994923,
+      "mean_error": 3.566036355096003e-13,
+      "variance_error": -5.076117304270156e-11,
+      "original_gates": {
+        "mass": true,
+        "positive_mass": true,
+        "moment_budget": true,
+        "unforced_mean": true,
+        "unforced_variance": true
+      },
+      "original_all_pass": true,
+      "bar_impulse_zero": true,
+      "maximum_saved_negative_mass": 0.0,
+      "maximum_saved_moment_residual": 3.102835296725139e-13,
+      "scope": "Recorded full-grid summary moments; decimated density is not used to reconstruct the full-grid moments. Raw checksum verified."
+    },
+    {
+      "source": "map-01/unforced-s0-eta0.1",
+      "variant": "original",
+      "s": 0.0,
+      "eta": 0.1,
+      "T": 25.132741228718345,
+      "J": 64.0,
+      "expected_variance": 67.2,
+      "measured_variance": 67.20000000004418,
+      "mean_error": 1.1177725411926076e-12,
+      "variance_error": 4.418154730956303e-11,
+      "original_gates": {
+        "mass": true,
+        "positive_mass": true,
+        "moment_budget": true,
+        "unforced_mean": true,
+        "unforced_variance": true
+      },
+      "original_all_pass": true,
+      "bar_impulse_zero": true,
+      "maximum_saved_negative_mass": 0.0,
+      "maximum_saved_moment_residual": 4.3205549817147374e-13,
+      "scope": "Recorded full-grid summary moments; decimated density is not used to reconstruct the full-grid moments. Raw checksum verified."
+    },
+    {
+      "source": "map-01/unforced-s0-eta1",
+      "variant": "original",
+      "s": 0.0,
+      "eta": 1.0,
+      "T": 25.132741228718345,
+      "J": 64.0,
+      "expected_variance": 96.0,
+      "measured_variance": 95.99999998319633,
+      "mean_error": 6.487392623100163e-09,
+      "variance_error": -1.6803667790554755e-08,
+      "original_gates": {
+        "mass": true,
+        "positive_mass": true,
+        "moment_budget": true,
+        "unforced_mean": true,
+        "unforced_variance": true
+      },
+      "original_all_pass": true,
+      "bar_impulse_zero": true,
+      "maximum_saved_negative_mass": 0.0,
+      "maximum_saved_moment_residual": 1.7669580635768943e-13,
+      "scope": "Recorded full-grid summary moments; decimated density is not used to reconstruct the full-grid moments. Raw checksum verified."
+    },
+    {
+      "source": "positive-01/unforced-domain-s0",
+      "variant": "double_domain",
+      "s": 0.0,
+      "eta": 1.0,
+      "T": 25.132741228718345,
+      "J": 128.0,
+      "expected_variance": 96.0,
+      "measured_variance": 96.00000000054001,
+      "mean_error": 2.1891377599558837e-12,
+      "variance_error": 5.400124791776761e-10,
+      "original_gates": {
+        "mass": true,
+        "positive_mass": true,
+        "moment_budget": true,
+        "unforced_mean": true,
+        "unforced_variance": true
+      },
+      "original_all_pass": true,
+      "bar_impulse_zero": true,
+      "maximum_saved_negative_mass": 4.599685124463541e-15,
+      "maximum_saved_moment_residual": 2.490379820545504e-12,
+      "scope": "Recorded full-grid summary moments; decimated density is not used to reconstruct the full-grid moments. Raw checksum verified."
+    },
+    {
+      "source": "map-01/unforced-s0.1-eta0",
+      "variant": "original",
+      "s": 0.1,
+      "eta": 0.0,
+      "T": 25.132741228718345,
+      "J": 64.0,
+      "expected_variance": 64.0,
+      "measured_variance": 63.99999999991462,
+      "mean_error": 2.4351631822128184e-12,
+      "variance_error": -8.537881512893364e-11,
+      "original_gates": {
+        "mass": true,
+        "positive_mass": true,
+        "moment_budget": true,
+        "unforced_mean": true,
+        "unforced_variance": true
+      },
+      "original_all_pass": true,
+      "bar_impulse_zero": true,
+      "maximum_saved_negative_mass": 0.0,
+      "maximum_saved_moment_residual": 1.7355673045962999e-13,
+      "scope": "Recorded full-grid summary moments; decimated density is not used to reconstruct the full-grid moments. Raw checksum verified."
+    },
+    {
+      "source": "map-01/unforced-s0.1-eta0.01",
+      "variant": "original",
+      "s": 0.1,
+      "eta": 0.01,
+      "T": 25.132741228718345,
+      "J": 64.0,
+      "expected_variance": 64.32,
+      "measured_variance": 64.31999999985759,
+      "mean_error": 2.5714985696367876e-12,
+      "variance_error": -1.4240697510103928e-10,
+      "original_gates": {
+        "mass": true,
+        "positive_mass": true,
+        "moment_budget": true,
+        "unforced_mean": true,
+        "unforced_variance": true
+      },
+      "original_all_pass": true,
+      "bar_impulse_zero": true,
+      "maximum_saved_negative_mass": 0.0,
+      "maximum_saved_moment_residual": 8.567593710082242e-14,
+      "scope": "Recorded full-grid summary moments; decimated density is not used to reconstruct the full-grid moments. Raw checksum verified."
+    },
+    {
+      "source": "map-01/unforced-s0.1-eta0.1",
+      "variant": "original",
+      "s": 0.1,
+      "eta": 0.1,
+      "T": 25.132741228718345,
+      "J": 64.0,
+      "expected_variance": 67.2,
+      "measured_variance": 67.19999999992007,
+      "mean_error": 1.0272893646856573e-11,
+      "variance_error": -7.993605777301127e-11,
+      "original_gates": {
+        "mass": true,
+        "positive_mass": true,
+        "moment_budget": true,
+        "unforced_mean": true,
+        "unforced_variance": true
+      },
+      "original_all_pass": true,
+      "bar_impulse_zero": true,
+      "maximum_saved_negative_mass": 0.0,
+      "maximum_saved_moment_residual": 8.768303398085502e-14,
+      "scope": "Recorded full-grid summary moments; decimated density is not used to reconstruct the full-grid moments. Raw checksum verified."
+    },
+    {
+      "source": "map-01/unforced-s0.1-eta1",
+      "variant": "original",
+      "s": 0.1,
+      "eta": 1.0,
+      "T": 25.132741228718345,
+      "J": 64.0,
+      "expected_variance": 96.0,
+      "measured_variance": 96.00000017906352,
+      "mean_error": 4.406317244409763e-08,
+      "variance_error": 1.7906351956753497e-07,
+      "original_gates": {
+        "mass": true,
+        "positive_mass": true,
+        "moment_budget": true,
+        "unforced_mean": true,
+        "unforced_variance": false
+      },
+      "original_all_pass": false,
+      "bar_impulse_zero": true,
+      "maximum_saved_negative_mass": 0.0,
+      "maximum_saved_moment_residual": 3.238461170826849e-12,
+      "scope": "Recorded full-grid summary moments; decimated density is not used to reconstruct the full-grid moments. Raw checksum verified."
+    },
+    {
+      "source": "positive-01/unforced-domain-s0.1",
+      "variant": "double_domain",
+      "s": 0.1,
+      "eta": 1.0,
+      "T": 25.132741228718345,
+      "J": 128.0,
+      "expected_variance": 96.0,
+      "measured_variance": 96.00000000095504,
+      "mean_error": 4.148681398419285e-12,
+      "variance_error": 9.550404911351507e-10,
+      "original_gates": {
+        "mass": true,
+        "positive_mass": true,
+        "moment_budget": true,
+        "unforced_mean": true,
+        "unforced_variance": true
+      },
+      "original_all_pass": true,
+      "bar_impulse_zero": true,
+      "maximum_saved_negative_mass": 1.2416014341475142e-14,
+      "maximum_saved_moment_residual": 3.749559224520061e-12,
+      "scope": "Recorded full-grid summary moments; decimated density is not used to reconstruct the full-grid moments. Raw checksum verified."
+    },
+    {
+      "source": "map-01/unforced-s0.4-eta0",
+      "variant": "original",
+      "s": 0.4,
+      "eta": 0.0,
+      "T": 20.0,
+      "J": 64.0,
+      "expected_variance": 64.0,
+      "measured_variance": 64.0000000065521,
+      "mean_error": 4.161340161346061e-10,
+      "variance_error": 6.5520993075551814e-09,
+      "original_gates": {
+        "mass": true,
+        "positive_mass": true,
+        "moment_budget": true,
+        "unforced_mean": true,
+        "unforced_variance": true
+      },
+      "original_all_pass": true,
+      "bar_impulse_zero": true,
+      "maximum_saved_negative_mass": 1.1410507293289957e-16,
+      "maximum_saved_moment_residual": 5.215371388266694e-13,
+      "scope": "Recorded full-grid summary moments; decimated density is not used to reconstruct the full-grid moments. Raw checksum verified."
+    },
+    {
+      "source": "map-01/unforced-s0.4-eta0.01",
+      "variant": "original",
+      "s": 0.4,
+      "eta": 0.01,
+      "T": 20.0,
+      "J": 64.0,
+      "expected_variance": 64.25464790894704,
+      "measured_variance": 64.254647916198,
+      "mean_error": 4.5843795426492306e-10,
+      "variance_error": 7.2509607207393856e-09,
+      "original_gates": {
+        "mass": true,
+        "positive_mass": true,
+        "moment_budget": true,
+        "unforced_mean": true,
+        "unforced_variance": true
+      },
+      "original_all_pass": true,
+      "bar_impulse_zero": true,
+      "maximum_saved_negative_mass": 0.0,
+      "maximum_saved_moment_residual": 2.690921970318971e-13,
+      "scope": "Recorded full-grid summary moments; decimated density is not used to reconstruct the full-grid moments. Raw checksum verified."
+    },
+    {
+      "source": "map-pilot-01/unforced",
+      "variant": "original",
+      "s": 0.4,
+      "eta": 0.1,
+      "T": 20.0,
+      "J": 64.0,
+      "expected_variance": 66.54647908947032,
+      "measured_variance": 66.54647910592412,
+      "mean_error": 1.0473730771565215e-09,
+      "variance_error": 1.645379654746648e-08,
+      "original_gates": {
+        "mass": true,
+        "positive_mass": true,
+        "moment_budget": true,
+        "unforced_mean": true,
+        "unforced_variance": true
+      },
+      "original_all_pass": true,
+      "bar_impulse_zero": true,
+      "maximum_saved_negative_mass": 0.0,
+      "maximum_saved_moment_residual": 5.373542988603971e-13,
+      "scope": "Recorded full-grid summary moments; decimated density is not used to reconstruct the full-grid moments. Raw checksum verified."
+    },
+    {
+      "source": "map-01/unforced-s0.4-eta1",
+      "variant": "original",
+      "s": 0.4,
+      "eta": 1.0,
+      "T": 20.0,
+      "J": 64.0,
+      "expected_variance": 89.46479089470326,
+      "measured_variance": 89.46479695023487,
+      "mean_error": 4.0294311109967396e-07,
+      "variance_error": 6.055531613924359e-06,
+      "original_gates": {
+        "mass": true,
+        "positive_mass": true,
+        "moment_budget": true,
+        "unforced_mean": false,
+        "unforced_variance": false
+      },
+      "original_all_pass": false,
+      "bar_impulse_zero": true,
+      "maximum_saved_negative_mass": 0.0,
+      "maximum_saved_moment_residual": 2.538970764735958e-11,
+      "scope": "Recorded full-grid summary moments; decimated density is not used to reconstruct the full-grid moments. Raw checksum verified."
+    },
+    {
+      "source": "positive-01/unforced-domain-s0.4",
+      "variant": "double_domain",
+      "s": 0.4,
+      "eta": 1.0,
+      "T": 20.0,
+      "J": 128.0,
+      "expected_variance": 89.46479089470326,
+      "measured_variance": 89.46479089508857,
+      "mean_error": 4.637623618464204e-12,
+      "variance_error": 3.8531311474798713e-10,
+      "original_gates": {
+        "mass": true,
+        "positive_mass": true,
+        "moment_budget": true,
+        "unforced_mean": true,
+        "unforced_variance": true
+      },
+      "original_all_pass": true,
+      "bar_impulse_zero": true,
+      "maximum_saved_negative_mass": 1.4413573093402456e-14,
+      "maximum_saved_moment_residual": 3.6362381796293927e-12,
+      "scope": "Recorded full-grid summary moments; decimated density is not used to reconstruct the full-grid moments. Raw checksum verified."
+    },
+    {
+      "source": "map-01/unforced-s1.2-eta0",
+      "variant": "original",
+      "s": 1.2,
+      "eta": 0.0,
+      "T": 6.666666666666667,
+      "J": 64.0,
+      "expected_variance": 64.0,
+      "measured_variance": 64.00000000661657,
+      "mean_error": 4.1721759380664025e-10,
+      "variance_error": 6.616573955398053e-09,
+      "original_gates": {
+        "mass": true,
+        "positive_mass": true,
+        "moment_budget": true,
+        "unforced_mean": true,
+        "unforced_variance": true
+      },
+      "original_all_pass": true,
+      "bar_impulse_zero": true,
+      "maximum_saved_negative_mass": 0.0,
+      "maximum_saved_moment_residual": 6.785787677929585e-14,
+      "scope": "Recorded full-grid summary moments; decimated density is not used to reconstruct the full-grid moments. Raw checksum verified."
+    },
+    {
+      "source": "map-01/unforced-s1.2-eta0.01",
+      "variant": "original",
+      "s": 1.2,
+      "eta": 0.01,
+      "T": 6.666666666666667,
+      "J": 64.0,
+      "expected_variance": 64.08488263631568,
+      "measured_variance": 64.08488264316941,
+      "mean_error": 4.310181100919408e-10,
+      "variance_error": 6.853724698885344e-09,
+      "original_gates": {
+        "mass": true,
+        "positive_mass": true,
+        "moment_budget": true,
+        "unforced_mean": true,
+        "unforced_variance": true
+      },
+      "original_all_pass": true,
+      "bar_impulse_zero": true,
+      "maximum_saved_negative_mass": 0.0,
+      "maximum_saved_moment_residual": 1.8602744916681658e-13,
+      "scope": "Recorded full-grid summary moments; decimated density is not used to reconstruct the full-grid moments. Raw checksum verified."
+    },
+    {
+      "source": "map-01/unforced-s1.2-eta0.1",
+      "variant": "original",
+      "s": 1.2,
+      "eta": 0.1,
+      "T": 6.666666666666667,
+      "J": 64.0,
+      "expected_variance": 64.84882636315677,
+      "measured_variance": 64.84882637220566,
+      "mean_error": 5.718476803195927e-10,
+      "variance_error": 9.048889637597313e-09,
+      "original_gates": {
+        "mass": true,
+        "positive_mass": true,
+        "moment_budget": true,
+        "unforced_mean": true,
+        "unforced_variance": true
+      },
+      "original_all_pass": true,
+      "bar_impulse_zero": true,
+      "maximum_saved_negative_mass": 0.0,
+      "maximum_saved_moment_residual": 9.24562257542482e-14,
+      "scope": "Recorded full-grid summary moments; decimated density is not used to reconstruct the full-grid moments. Raw checksum verified."
+    },
+    {
+      "source": "map-01/unforced-s1.2-eta1",
+      "variant": "original",
+      "s": 1.2,
+      "eta": 1.0,
+      "T": 6.666666666666667,
+      "J": 64.0,
+      "expected_variance": 72.48826363156775,
+      "measured_variance": 72.48826374084966,
+      "mean_error": 7.011118130506588e-09,
+      "variance_error": 1.0928191329639958e-07,
+      "original_gates": {
+        "mass": true,
+        "positive_mass": true,
+        "moment_budget": true,
+        "unforced_mean": true,
+        "unforced_variance": false
+      },
+      "original_all_pass": false,
+      "bar_impulse_zero": true,
+      "maximum_saved_negative_mass": 0.0,
+      "maximum_saved_moment_residual": 6.297071554205623e-13,
+      "scope": "Recorded full-grid summary moments; decimated density is not used to reconstruct the full-grid moments. Raw checksum verified."
+    },
+    {
+      "source": "positive-01/unforced-domain-s1.2",
+      "variant": "double_domain",
+      "s": 1.2,
+      "eta": 1.0,
+      "T": 6.666666666666667,
+      "J": 128.0,
+      "expected_variance": 72.48826363156775,
+      "measured_variance": 72.48826363162036,
+      "mean_error": 1.028066520802895e-12,
+      "variance_error": 5.260858415567782e-11,
+      "original_gates": {
+        "mass": true,
+        "positive_mass": true,
+        "moment_budget": true,
+        "unforced_mean": true,
+        "unforced_variance": true
+      },
+      "original_all_pass": true,
+      "bar_impulse_zero": true,
+      "maximum_saved_negative_mass": 1.2628316835148943e-14,
+      "maximum_saved_moment_residual": 9.210565279920859e-13,
+      "scope": "Recorded full-grid summary moments; decimated density is not used to reconstruct the full-grid moments. Raw checksum verified."
+    }
+  ],
+  "stochastic_batches": [
+    {
+      "source": "map-01/paths-unforced-8201-s0-eta0.1",
+      "seed": 8201,
+      "s": 0.0,
+      "eta": 0.1,
+      "T": 25.132741228718345,
+      "n": 32768,
+      "expected_noise_variance": 3.1999999999999997,
+      "noise_mean": 0.004976889003582232,
+      "noise_variance": 3.2059718884807267,
+      "mean_standardized": 0.5036257572213042,
+      "final_budget_max": 1.7985612998927536e-13,
+      "bar_impulse_zero": true,
+      "original_gates": {
+        "path_budget": true
+      },
+      "original_all_pass": true
+    },
+    {
+      "source": "map-01/paths-unforced-8202-s0-eta0.1",
+      "seed": 8202,
+      "s": 0.0,
+      "eta": 0.1,
+      "T": 25.132741228718345,
+      "n": 32768,
+      "expected_noise_variance": 3.1999999999999997,
+      "noise_mean": -0.0002976727651602105,
+      "noise_variance": 3.204313207037232,
+      "mean_standardized": -0.03012236592981382,
+      "final_budget_max": 1.184607967275042e-13,
+      "bar_impulse_zero": true,
+      "original_gates": {
+        "path_budget": true
+      },
+      "original_all_pass": true
+    },
+    {
+      "source": "map-01/paths-unforced-8203-s0-eta0.1",
+      "seed": 8203,
+      "s": 0.0,
+      "eta": 0.1,
+      "T": 25.132741228718345,
+      "n": 32768,
+      "expected_noise_variance": 3.1999999999999997,
+      "noise_mean": -0.023748365180620675,
+      "noise_variance": 3.173393819479764,
+      "mean_standardized": -2.4031655896383155,
+      "final_budget_max": 1.1790568521519162e-13,
+      "bar_impulse_zero": true,
+      "original_gates": {
+        "path_budget": true
+      },
+      "original_all_pass": true
+    },
+    {
+      "source": "map-01/paths-unforced-8204-s0-eta0.1",
+      "seed": 8204,
+      "s": 0.0,
+      "eta": 0.1,
+      "T": 25.132741228718345,
+      "n": 32768,
+      "expected_noise_variance": 3.1999999999999997,
+      "noise_mean": -0.0005976793000567367,
+      "noise_variance": 3.2243931995460136,
+      "mean_standardized": -0.06048089275246374,
+      "final_budget_max": 1.1457501614131615e-13,
+      "bar_impulse_zero": true,
+      "original_gates": {
+        "path_budget": true
+      },
+      "original_all_pass": true
+    },
+    {
+      "source": "map-01/paths-unforced-8205-s0-eta0.1",
+      "seed": 8205,
+      "s": 0.0,
+      "eta": 0.1,
+      "T": 25.132741228718345,
+      "n": 32768,
+      "expected_noise_variance": 3.1999999999999997,
+      "noise_mean": 0.006420642257910251,
+      "noise_variance": 3.2412707709676902,
+      "mean_standardized": 0.6497233144359248,
+      "final_budget_max": 1.056932319443149e-13,
+      "bar_impulse_zero": true,
+      "original_gates": {
+        "path_budget": true
+      },
+      "original_all_pass": true
+    },
+    {
+      "source": "map-01/paths-unforced-8206-s0-eta0.1",
+      "seed": 8206,
+      "s": 0.0,
+      "eta": 0.1,
+      "T": 25.132741228718345,
+      "n": 32768,
+      "expected_noise_variance": 3.1999999999999997,
+      "noise_mean": 0.01235293412658114,
+      "noise_variance": 3.258546624794204,
+      "mean_standardized": 1.2500290440326123,
+      "final_budget_max": 9.836575998178887e-14,
+      "bar_impulse_zero": true,
+      "original_gates": {
+        "path_budget": true
+      },
+      "original_all_pass": true
+    },
+    {
+      "source": "map-01/paths-unforced-8207-s0-eta0.1",
+      "seed": 8207,
+      "s": 0.0,
+      "eta": 0.1,
+      "T": 25.132741228718345,
+      "n": 32768,
+      "expected_noise_variance": 3.1999999999999997,
+      "noise_mean": 0.011503772608323769,
+      "noise_variance": 3.157867964569358,
+      "mean_standardized": 1.1640999400626937,
+      "final_budget_max": 1.638689184346731e-13,
+      "bar_impulse_zero": true,
+      "original_gates": {
+        "path_budget": true
+      },
+      "original_all_pass": true
+    },
+    {
+      "source": "map-01/paths-unforced-8208-s0-eta0.1",
+      "seed": 8208,
+      "s": 0.0,
+      "eta": 0.1,
+      "T": 25.132741228718345,
+      "n": 32768,
+      "expected_noise_variance": 3.1999999999999997,
+      "noise_mean": -0.005946950646900394,
+      "noise_variance": 3.1943117388808795,
+      "mean_standardized": -0.6017890936581443,
+      "final_budget_max": 1.13464793116691e-13,
+      "bar_impulse_zero": true,
+      "original_gates": {
+        "path_budget": true
+      },
+      "original_all_pass": true
+    },
+    {
+      "source": "map-01/paths-unforced-8201-s0.4-eta0.1",
+      "seed": 8201,
+      "s": 0.4,
+      "eta": 0.1,
+      "T": 20.0,
+      "n": 32768,
+      "expected_noise_variance": 2.5464790894703255,
+      "noise_mean": 0.0039644599687991815,
+      "noise_variance": 2.540491560625175,
+      "mean_standardized": 0.4497166296613678,
+      "final_budget_max": 1.2967404927621828e-13,
+      "bar_impulse_zero": true,
+      "original_gates": {
+        "path_budget": true
+      },
+      "original_all_pass": true
+    },
+    {
+      "source": "map-01/paths-unforced-8202-s0.4-eta0.1",
+      "seed": 8202,
+      "s": 0.4,
+      "eta": 0.1,
+      "T": 20.0,
+      "n": 32768,
+      "expected_noise_variance": 2.5464790894703255,
+      "noise_mean": -9.569485192275165e-05,
+      "noise_variance": 2.5514516816155908,
+      "mean_standardized": -0.010855341363348115,
+      "final_budget_max": 1.219024881038422e-13,
+      "bar_impulse_zero": true,
+      "original_gates": {
+        "path_budget": true
+      },
+      "original_all_pass": true
+    },
+    {
+      "source": "map-01/paths-unforced-8203-s0.4-eta0.1",
+      "seed": 8203,
+      "s": 0.4,
+      "eta": 0.1,
+      "T": 20.0,
+      "n": 32768,
+      "expected_noise_variance": 2.5464790894703255,
+      "noise_mean": -0.026193047011645768,
+      "noise_variance": 2.503446259330013,
+      "mean_standardized": -2.9712618907354087,
+      "final_budget_max": 1.5276668818842154e-13,
+      "bar_impulse_zero": true,
+      "original_gates": {
+        "path_budget": true
+      },
+      "original_all_pass": true
+    },
+    {
+      "source": "map-01/paths-unforced-8204-s0.4-eta0.1",
+      "seed": 8204,
+      "s": 0.4,
+      "eta": 0.1,
+      "T": 20.0,
+      "n": 32768,
+      "expected_noise_variance": 2.5464790894703255,
+      "noise_mean": 0.006073417048416598,
+      "noise_variance": 2.5634397542955627,
+      "mean_standardized": 0.6889504918797577,
+      "final_budget_max": 9.836575998178887e-14,
+      "bar_impulse_zero": true,
+      "original_gates": {
+        "path_budget": true
+      },
+      "original_all_pass": true
+    },
+    {
+      "source": "map-01/paths-unforced-8205-s0.4-eta0.1",
+      "seed": 8205,
+      "s": 0.4,
+      "eta": 0.1,
+      "T": 20.0,
+      "n": 32768,
+      "expected_noise_variance": 2.5464790894703255,
+      "noise_mean": 0.012729088209582864,
+      "noise_variance": 2.586041777075585,
+      "mean_standardized": 1.4439501705978335,
+      "final_budget_max": 1.1901590823981678e-13,
+      "bar_impulse_zero": true,
+      "original_gates": {
+        "path_budget": true
+      },
+      "original_all_pass": true
+    },
+    {
+      "source": "map-01/paths-unforced-8206-s0.4-eta0.1",
+      "seed": 8206,
+      "s": 0.4,
+      "eta": 0.1,
+      "T": 20.0,
+      "n": 32768,
+      "expected_noise_variance": 2.5464790894703255,
+      "noise_mean": 0.011145744982131452,
+      "noise_variance": 2.5726529362065302,
+      "mean_standardized": 1.2643403913465423,
+      "final_budget_max": 9.969802761133906e-14,
+      "bar_impulse_zero": true,
+      "original_gates": {
+        "path_budget": true
+      },
+      "original_all_pass": true
+    },
+    {
+      "source": "map-01/paths-unforced-8207-s0.4-eta0.1",
+      "seed": 8207,
+      "s": 0.4,
+      "eta": 0.1,
+      "T": 20.0,
+      "n": 32768,
+      "expected_noise_variance": 2.5464790894703255,
+      "noise_mean": 0.006858688692105871,
+      "noise_variance": 2.5163308468857095,
+      "mean_standardized": 0.7780293878070508,
+      "final_budget_max": 1.2279066652354231e-13,
+      "bar_impulse_zero": true,
+      "original_gates": {
+        "path_budget": true
+      },
+      "original_all_pass": true
+    },
+    {
+      "source": "map-01/paths-unforced-8208-s0.4-eta0.1",
+      "seed": 8208,
+      "s": 0.4,
+      "eta": 0.1,
+      "T": 20.0,
+      "n": 32768,
+      "expected_noise_variance": 2.5464790894703255,
+      "noise_mean": -0.007051201566147072,
+      "noise_variance": 2.5494620604133336,
+      "mean_standardized": -0.7998674796434165,
+      "final_budget_max": 1.2512213487525514e-13,
+      "bar_impulse_zero": true,
+      "original_gates": {
+        "path_budget": true
+      },
+      "original_all_pass": true
+    },
+    {
+      "source": "map-01/paths-unforced-8201-s1.2-eta1",
+      "seed": 8201,
+      "s": 1.2,
+      "eta": 1.0,
+      "T": 6.666666666666667,
+      "n": 32768,
+      "expected_noise_variance": 8.488263631567753,
+      "noise_mean": 0.017506187690607612,
+      "noise_variance": 8.540191992447909,
+      "mean_standardized": 1.0876949648047152,
+      "final_budget_max": 8.260059303211165e-14,
+      "bar_impulse_zero": true,
+      "original_gates": {
+        "path_budget": true
+      },
+      "original_all_pass": true
+    },
+    {
+      "source": "map-01/paths-unforced-8202-s1.2-eta1",
+      "seed": 8202,
+      "s": 1.2,
+      "eta": 1.0,
+      "T": 6.666666666666667,
+      "n": 32768,
+      "expected_noise_variance": 8.488263631567753,
+      "noise_mean": -0.007045401168953495,
+      "noise_variance": 8.435667662702027,
+      "mean_standardized": -0.4377450711676902,
+      "final_budget_max": 6.306066779870889e-14,
+      "bar_impulse_zero": true,
+      "original_gates": {
+        "path_budget": true
+      },
+      "original_all_pass": true
+    },
+    {
+      "source": "map-01/paths-unforced-8203-s1.2-eta1",
+      "seed": 8203,
+      "s": 1.2,
+      "eta": 1.0,
+      "T": 6.666666666666667,
+      "n": 32768,
+      "expected_noise_variance": 8.488263631567753,
+      "noise_mean": -0.033776096318454046,
+      "noise_variance": 8.496859793070914,
+      "mean_standardized": -2.0985774027804007,
+      "final_budget_max": 6.483702463810914e-14,
+      "bar_impulse_zero": true,
+      "original_gates": {
+        "path_budget": true
+      },
+      "original_all_pass": true
+    },
+    {
+      "source": "map-01/paths-unforced-8204-s1.2-eta1",
+      "seed": 8204,
+      "s": 1.2,
+      "eta": 1.0,
+      "T": 6.666666666666667,
+      "n": 32768,
+      "expected_noise_variance": 8.488263631567753,
+      "noise_mean": 0.025214659661405802,
+      "noise_variance": 8.458779248625785,
+      "mean_standardized": 1.5666379703954691,
+      "final_budget_max": 8.79296635503124e-14,
+      "bar_impulse_zero": true,
+      "original_gates": {
+        "path_budget": true
+      },
+      "original_all_pass": true
+    },
+    {
+      "source": "map-01/paths-unforced-8205-s1.2-eta1",
+      "seed": 8205,
+      "s": 1.2,
+      "eta": 1.0,
+      "T": 6.666666666666667,
+      "n": 32768,
+      "expected_noise_variance": 8.488263631567753,
+      "noise_mean": 0.034315892759066005,
+      "noise_variance": 8.481778564907495,
+      "mean_standardized": 2.132116050991521,
+      "final_budget_max": 8.304468224196171e-14,
+      "bar_impulse_zero": true,
+      "original_gates": {
+        "path_budget": true
+      },
+      "original_all_pass": true
+    },
+    {
+      "source": "map-01/paths-unforced-8206-s1.2-eta1",
+      "seed": 8206,
+      "s": 1.2,
+      "eta": 1.0,
+      "T": 6.666666666666667,
+      "n": 32768,
+      "expected_noise_variance": 8.488263631567753,
+      "noise_mean": 0.0005804740850879168,
+      "noise_variance": 8.449032277546074,
+      "mean_standardized": 0.03606603280556035,
+      "final_budget_max": 6.217248937900877e-14,
+      "bar_impulse_zero": true,
+      "original_gates": {
+        "path_budget": true
+      },
+      "original_all_pass": true
+    },
+    {
+      "source": "map-01/paths-unforced-8207-s1.2-eta1",
+      "seed": 8207,
+      "s": 1.2,
+      "eta": 1.0,
+      "T": 6.666666666666667,
+      "n": 32768,
+      "expected_noise_variance": 8.488263631567753,
+      "noise_mean": 0.01095503829626042,
+      "noise_variance": 8.437014932711934,
+      "mean_standardized": 0.6806587593298965,
+      "final_budget_max": 6.439293542825908e-14,
+      "bar_impulse_zero": true,
+      "original_gates": {
+        "path_budget": true
+      },
+      "original_all_pass": true
+    },
+    {
+      "source": "map-01/paths-unforced-8208-s1.2-eta1",
+      "seed": 8208,
+      "s": 1.2,
+      "eta": 1.0,
+      "T": 6.666666666666667,
+      "n": 32768,
+      "expected_noise_variance": 8.488263631567753,
+      "noise_mean": 0.00019069311795641246,
+      "noise_variance": 8.387884931551886,
+      "mean_standardized": 0.01184815037344675,
+      "final_budget_max": 5.684341886080802e-14,
+      "bar_impulse_zero": true,
+      "original_gates": {
+        "path_budget": true
+      },
+      "original_all_pass": true
+    }
+  ],
+  "stochastic_groups": [
+    {
+      "s": 0.0,
+      "eta": 0.1,
+      "T": 25.132741228718345,
+      "seeds": [
+        8201,
+        8202,
+        8203,
+        8204,
+        8205,
+        8206,
+        8207,
+        8208
+      ],
+      "n": 262144,
+      "expected_mean": 0.0,
+      "expected_noise_variance": 3.1999999999999997,
+      "noise_mean": 0.0005829462629574221,
+      "mean_ci95_known_variance": [
+        -0.006264886085297121,
+        0.0074307786112119655
+      ],
+      "mean_standardized": 0.1668489563138897,
+      "noise_variance": 3.2075415026392324,
+      "variance_ci95": [
+        3.1902474273754127,
+        3.224977236575836
+      ],
+      "variance_ratio": 1.0023567195747602,
+      "scope": "Pointwise descriptive intervals at this condition. Conditions share seeds and are not treated as independent. No new qualification gate."
+    },
+    {
+      "s": 0.4,
+      "eta": 0.1,
+      "T": 20.0,
+      "seeds": [
+        8201,
+        8202,
+        8203,
+        8204,
+        8205,
+        8206,
+        8207,
+        8208
+      ],
+      "n": 262144,
+      "expected_mean": 0.0,
+      "expected_noise_variance": 2.5464790894703255,
+      "noise_mean": 0.0009289319339150471,
+      "mean_ci95_known_variance": [
+        -0.00517975948403095,
+        0.007037623351861044
+      ],
+      "mean_standardized": 0.29804634249716644,
+      "noise_variance": 2.5479859235755202,
+      "variance_ci95": [
+        2.5342479687284167,
+        2.561836408316285
+      ],
+      "variance_ratio": 1.0005917323693823,
+      "scope": "Pointwise descriptive intervals at this condition. Conditions share seeds and are not treated as independent. No new qualification gate."
+    },
+    {
+      "s": 1.2,
+      "eta": 1.0,
+      "T": 6.666666666666667,
+      "seeds": [
+        8201,
+        8202,
+        8203,
+        8204,
+        8205,
+        8206,
+        8207,
+        8208
+      ],
+      "n": 262144,
+      "expected_mean": 0.0,
+      "expected_noise_variance": 8.488263631567753,
+      "noise_mean": 0.0059926810153720774,
+      "mean_ci95_known_variance": [
+        -0.005160212606118725,
+        0.01714557463686288
+      ],
+      "mean_standardized": 1.0531292917860886,
+      "noise_variance": 8.46106816775865,
+      "variance_ci95": [
+        8.415448695778279,
+        8.507061316489889
+      ],
+      "variance_ratio": 0.9967961099007384,
+      "scope": "Pointwise descriptive intervals at this condition. Conditions share seeds and are not treated as independent. No new qualification gate."
+    }
+  ],
+  "source_sha256": {
+    "map-01/unforced-s0-eta0": {
+      "result_sha256": "3efea3ce7315aeaf6d04ceb5ffbd32ec0db1aa9f2f1b0000609d3a182d18e849",
+      "raw_sha256": "4f2b190345831d608b872eae2ca03bcff12ec05b0e29aaa0968a2c117ec73ca5",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/unforced-s0-eta0.01": {
+      "result_sha256": "399e24b6533876aeecef3204dd14e88a3058bf66a430682c6d1e17fe720e2d30",
+      "raw_sha256": "c55c5ba1aeb1dcd418aca544174ad0fa357c065999e23979a6d7fc24528a93f9",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/unforced-s0-eta0.1": {
+      "result_sha256": "ddfe2e8c6fc2f266a9ac431be56bd42e5a7081e7f518cd57e5b64367a26273f5",
+      "raw_sha256": "cfaa50bdd7b07686cd1a5142b7560fad045e250245531876a156d2db7524b50b",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/unforced-s0-eta1": {
+      "result_sha256": "13b9be761a77c9289230eca9a0b1037eee2f8bdd37fbf9885b7dc0a2b92ef74b",
+      "raw_sha256": "5f6177185ac0582bce3da6dfc0930ba911a4b2b607db2a1f23bbc0102e713f78",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "positive-01/unforced-domain-s0": {
+      "result_sha256": "0d67bb2fda78e88b2af40f2707d0ac6557c048e7e47ae2bbe344a84912a1b755",
+      "raw_sha256": "866c6619b303808a60d4a091d2995587ac73b3feda552c4d6edacb2de9382211",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/unforced-s0.1-eta0": {
+      "result_sha256": "9a796daef73fb4787feb923fd686af7fa79b15e1eac5f507031c394e8d831f21",
+      "raw_sha256": "4748f7d9abad34319df0979dac8f727fb33875384199b4f1219e6a1d6d3bf4ab",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/unforced-s0.1-eta0.01": {
+      "result_sha256": "8685e4580bdb85f04919f131186f2aa08cd471b5c96450ecd1a64aae8df7956b",
+      "raw_sha256": "8b46c512796ac127bbaa0306b84700ea96cbecb1c1c60414342de08cc437b7b8",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/unforced-s0.1-eta0.1": {
+      "result_sha256": "616b04681bf10cbd32b16530a115fbc4a2a7859498738eaafa753716f14106ec",
+      "raw_sha256": "7dbb6881a0ec4fa1941c39759d3dd1e14519aab8afe05c9dc4feab570d34868b",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/unforced-s0.1-eta1": {
+      "result_sha256": "a5547d1b1a8d66aaaf3c2f777ace718aeafc7ffe410fbe6f4ddaad2fca378824",
+      "raw_sha256": "eef468153bcb89e4f21ed18139565e4a607993a3d290dd1daca9b93c6fd37ece",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "positive-01/unforced-domain-s0.1": {
+      "result_sha256": "8b47adf2fa7a83740355a6a13c67208d78b664d57e7532a766ea3c4b2b8b613b",
+      "raw_sha256": "71d2d97a216a75e038f46fc91c74fc02b7214e7ddada90e059542d365135dce2",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/unforced-s0.4-eta0": {
+      "result_sha256": "9efbe10a84c6e4f18b2021908eeccc1390d2f6560a550ecb0a1a4041d5c0a500",
+      "raw_sha256": "8ea39223bc631414666183689d84641d177117a29617a89a74fe0541a47c81c4",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/unforced-s0.4-eta0.01": {
+      "result_sha256": "293ad76c01bc20c1295e39da3cfde48127bbb7cde569fffa7d4e48a8cff84a04",
+      "raw_sha256": "7f172872804b3d6053d75f6678c79fc5937ce3c3ae58bf04a57e17bd2a1a6f12",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-pilot-01/unforced": {
+      "result_sha256": "f11f7d1651a0abf80d52dd1060658ed45620e9259ae46297e15053258c43c171",
+      "raw_sha256": "2108dc84da0dd7d676e818693cff7b33aa9019e103d9b1b4e68b262f058f36dd",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/unforced-s0.4-eta1": {
+      "result_sha256": "d78f616207b7825dda75c5177bf4b7ebfb641694ecaf871d00d2da904a6664f5",
+      "raw_sha256": "780d2dfe319665dac9fe9b2135ef60f0eec61f0bae1eac8df69809b4151ce4fe",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "positive-01/unforced-domain-s0.4": {
+      "result_sha256": "9abf3daad2918776e2b623ac43fe83ddc2f1129fda0454669890d91f6e0a6a93",
+      "raw_sha256": "fc7aca0bcf5d29f53835d31693be80127ae0e907b68da115bcff7c403e666307",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/unforced-s1.2-eta0": {
+      "result_sha256": "0ef6b41fb4b5bc95282a268fbc427b09eaca196212aa111650a7027be77c50a9",
+      "raw_sha256": "4107633e5e725be6c0d4a6d42c70afafd2231c1d44eca1940cab7d8ae69750bf",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/unforced-s1.2-eta0.01": {
+      "result_sha256": "48b16ee03493c9ee5b28bced3d8afbfd2239f9fc222ac3051ae10c67e0495769",
+      "raw_sha256": "2226701fdc4d3724d5d63b631a39c52b872c15f6b76f9bd337b0d26ff4d66ac0",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/unforced-s1.2-eta0.1": {
+      "result_sha256": "f21b17985c87766b92726c2fd8e3b51c33ac893fdf18be5a23d1aa8f585e76c0",
+      "raw_sha256": "16ebb868e967c3e5a28ebe7cc83a59f1e35a0a2cf193216cbfa261f8c9e7644a",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/unforced-s1.2-eta1": {
+      "result_sha256": "b35c304600dd83e7471fa8e6da8b818caa3ca7f90e498ea5459875c742fde8aa",
+      "raw_sha256": "65cad6198a03c840ff8d4892c6a1521f239fbcb5433f68b8ae78cb354b094c71",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "positive-01/unforced-domain-s1.2": {
+      "result_sha256": "bd9caab7f529467b4c95c721e508a6a26a4e95fbb17c32686b34eba4467df84b",
+      "raw_sha256": "b3a4ca8b317cae28f29d419815d50a0aee5680d161736e7a267e8f782c55f764",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/paths-unforced-8201-s0-eta0.1": {
+      "result_sha256": "02a3da9f3a4998e6d15aac523de2b3129723214c0852e7a86ace94d094712b27",
+      "raw_sha256": "5a3b2c5f7ecc4b999d43856af7b7dd5cf2cec83f7511afc74c28da84d61276e5",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/paths-unforced-8202-s0-eta0.1": {
+      "result_sha256": "25c70b39f52faeead4901cb291fd949ad0eb21cdc1e7f1347ed3790deb5bf854",
+      "raw_sha256": "79fb9b62e97f0dbca47fb45147b8d4849e881e9983eadb0f8066e54ffa26b57f",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/paths-unforced-8203-s0-eta0.1": {
+      "result_sha256": "c903d6dad2950f9bb2ce13610b4b7a961a600aeb51d58f6b3b30a0c4e9f2c0ad",
+      "raw_sha256": "93b22eaa2baf7b5f28337705dcd5391a16e0a39b8199ec40dc9f99d26cf481a6",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/paths-unforced-8204-s0-eta0.1": {
+      "result_sha256": "264b7e3157f6fd3e3fcdca1ae84c60d0c4e4bbf3995bba728eb36abb2d3135b1",
+      "raw_sha256": "e9007530f40875c419732c15f56c967e79e47a05d8ea3ee23a240982c1b5bfb1",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/paths-unforced-8205-s0-eta0.1": {
+      "result_sha256": "07701309f16efce486b442b235c455c48a7c909ba91447d365f9020cc099daf9",
+      "raw_sha256": "b1262a7c141dedbbbcd23d08fa63de0bc6130d4f426590ad3578e77dd1957904",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/paths-unforced-8206-s0-eta0.1": {
+      "result_sha256": "8fa5538250403151bb3709004bff64688f62e6c5207425a1f18ec327b5da17a0",
+      "raw_sha256": "b5d5748e226f74ce3431b8cd3745756e5ecf4835caccfb82fc724f306b846dde",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/paths-unforced-8207-s0-eta0.1": {
+      "result_sha256": "f1e03bd50b46b7adcc26422eae5540d581dbcc49c3ef39ab3317ddac5442047e",
+      "raw_sha256": "9d4819d6e2ec02e9d90aecccbfc7333b797f24d9b01a149dfaa1686afe09cb64",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/paths-unforced-8208-s0-eta0.1": {
+      "result_sha256": "6d9c070c5b1d872587b5b3ce081dbba164382c93e8c50c3dc0e770af47b4ddff",
+      "raw_sha256": "a49bddd6c1cdc5de15bd49d4418ad2764afaeb05b9fbd7d24554024cc0e709c9",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/paths-unforced-8201-s0.4-eta0.1": {
+      "result_sha256": "a01719b3b6983c152b6d2f8f6a80ab2a17824dd697cea7b3b15ee096d9c12c3e",
+      "raw_sha256": "72e7bf8d71826ca880638e24b91afe330a51f7ef9fe6bd3ca86d7ca579ae1aea",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/paths-unforced-8202-s0.4-eta0.1": {
+      "result_sha256": "9d0a599bdb8d50473fa18fb08ea9c303dd7de72802673915f4b79ee8c60af850",
+      "raw_sha256": "3b60592ec3ff25570501f0572cfd1b6b59268c178ef40b10df17f2e94ed4b701",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/paths-unforced-8203-s0.4-eta0.1": {
+      "result_sha256": "fda2e25ecdfae22bffbbf3176542cc35a2c3b951c9de921a30f78736ac1242d0",
+      "raw_sha256": "a1a1a1836fc170df2b10ede38c7f075f586293aafd2ac106bf9b3edb73f00f5e",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/paths-unforced-8204-s0.4-eta0.1": {
+      "result_sha256": "c5933f9a15c6dbf8aa142fd58bf7a4d9b98e51b953cfd2840c363b3300a42e2d",
+      "raw_sha256": "6a30fa676f080df0623587fba34267e86f150e24c41178b991c984d0fbb2e247",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/paths-unforced-8205-s0.4-eta0.1": {
+      "result_sha256": "3b495b271682b12b55b9b4c8679d19f988f0337266f9fac23c5c4ed4a190b9b5",
+      "raw_sha256": "c40f6dbf746119a32546eb20a8f80f07b64d26c1d9316e2a7de819f72eb56733",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/paths-unforced-8206-s0.4-eta0.1": {
+      "result_sha256": "0886f60662c1191aeeed7fa30c668d9fe0d257bf13d61501cfc5af3305c3e3a1",
+      "raw_sha256": "0a31d9a0605b4b84e3c94ed9df3263f48c0e46e568a3db95d99c6f6820ebe0d7",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/paths-unforced-8207-s0.4-eta0.1": {
+      "result_sha256": "cc649231ac5c7bea5712d91421f2ff0ea032f8494a9545fe3e8d68de8c2de95c",
+      "raw_sha256": "d8337f89a2c7bf0a5e1c9f5b746614b1796a958cee066baab4bed5ce42957ebb",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/paths-unforced-8208-s0.4-eta0.1": {
+      "result_sha256": "aa07b6df469ba9e96c64501e958acd73a9977470f6682434a85e539e077f2394",
+      "raw_sha256": "db91115ed1eab416c6cae25f5292dc85553797bbf236e7c3a74ed0fcfb425d2d",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/paths-unforced-8201-s1.2-eta1": {
+      "result_sha256": "9a97ed8f104f467a59bf5d21c400c7eb1976db4d80ebe2b6a05be48e5ede5b5e",
+      "raw_sha256": "99079103b79f50f02dc37a0a81dd78a2fc2007e057965d1014052c004ce38ea0",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/paths-unforced-8202-s1.2-eta1": {
+      "result_sha256": "b5599eb296ab1cc294cebf47c8afc410337d9ee9b0b2fbc997b53d580872c53d",
+      "raw_sha256": "c2287b6999f9bddca85373a43c7d419cc398b35ffb299bfde7c98bd9e064bd2e",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/paths-unforced-8203-s1.2-eta1": {
+      "result_sha256": "b2faf358809e03dd4ad90c9f28a7ecd62db722f6f34b2f5d3ee1748279a97ec7",
+      "raw_sha256": "4d04e403b305287c64ae108322e180205fdac060a0e604f1fe2d7eb7cc729e80",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/paths-unforced-8204-s1.2-eta1": {
+      "result_sha256": "15df13842ef92b3d0ba71cebebc7826f16171fc0e14465fc0e7772f1769bd3da",
+      "raw_sha256": "c70ac56d6fa3f3ddfe4a78d1700281aa07dd937aa0d18fcdf948a06925ea6673",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/paths-unforced-8205-s1.2-eta1": {
+      "result_sha256": "1546335f93a814021290c04483ec30a6aef07578308640807f4ffb6e7b8e934d",
+      "raw_sha256": "5e1256c59ca978dfd012c1903b4fb6b44fc11ddb2f9cce196b0b27e96308cfbf",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/paths-unforced-8206-s1.2-eta1": {
+      "result_sha256": "28b7122b828150a474942650444574f12e8e7ddf594cfb51dd50087e2a26990b",
+      "raw_sha256": "d8df429afb14a2049fd987715c22838da12a1af1eae0aaf354dae2b532928daa",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/paths-unforced-8207-s1.2-eta1": {
+      "result_sha256": "71884c9b883690cb09ceacee0e0a4650f81b82f3cde926e657526faf33bacc12",
+      "raw_sha256": "8e1fc42cb4916e064d96af84747803ee60e4bce716c118df49102177fbe061f8",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    },
+    "map-01/paths-unforced-8208-s1.2-eta1": {
+      "result_sha256": "ad5b1ee5ce41dc6451b2c7f9c904fd7992ca0dfeef3577913bfc04f52087ef5d",
+      "raw_sha256": "4bbe53258133621f86a71f375b1e8d8ddafdc111cf53479aaed1445bb67d233c",
+      "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5"
+    }
+  },
+  "coverage": {
+    "original_distributions": 16,
+    "domain_replacements": 4,
+    "stochastic_batches": 24,
+    "groups": 3
+  },
+  "readback_checks_pass": true,
+  "retained_original_failures": [
+    "map-01/unforced-s0.1-eta1",
+    "map-01/unforced-s0.4-eta1",
+    "map-01/unforced-s1.2-eta1"
+  ],
+  "replacement_failures": [],
+  "review_source_sha256": "7467af5c78ed4ce858f3164c252f63061e74e3b6556b703aaf94fab3b6e7311d",
+  "cpu_seconds": 0.155379253,
+  "population_width_provenance": {
+    "sigma": 8.0,
+    "solver_sha256": "bc1359a145b4ecaeb8dcf026a7c62bfdbbbb28ccbff4b3de6c8524117b6d6db5",
+    "scope": "Width is hardcoded in this exact archived solver, not supplied from current defaults. Slope is explicit in every case config."
+  },
+  "scope": "Retrospective readback of completed bar-free map controls. Analytic moments and exact recorded budgets do not qualify a forced contrast, the 3D forecast, a gravitational noise model or a physical SIDM law."
+}
