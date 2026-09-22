@@ -1,0 +1,215 @@
+{
+  "cases": [
+    {
+      "label": "B",
+      "forecast_Lz": -9.063365069860787e-06,
+      "adequacy_half_width": 1.8126730139721574e-06,
+      "raw_3D": {
+        "n": 65536,
+        "mean": -1.0657993863865197e-05,
+        "se": 6.158883694984139e-06,
+        "ci95": [
+          -2.2729407037642116e-05,
+          1.413419309911723e-06
+        ],
+        "half_width": 1.207141317377692e-05
+      },
+      "paired_reduced": {
+        "n": 65536,
+        "mean": -1.185528284927292e-05,
+        "se": 6.209310121345178e-06,
+        "ci95": [
+          -2.402553182798262e-05,
+          3.1496612943678335e-07
+        ],
+        "half_width": 1.2170248978709703e-05
+      },
+      "discrepancy": {
+        "n": 65536,
+        "mean": 1.1972889854077266e-06,
+        "se": 1.6332821353544176e-06,
+        "ci95": [
+          -2.003944299979487e-06,
+          4.3985222707949404e-06
+        ],
+        "half_width": 3.201233285387214e-06
+      },
+      "covariance_xy": 2.418926223940428e-06,
+      "correlation_xy": 0.9651556074589821,
+      "variance_reduced_3D_estimate": -7.866076084453061e-06,
+      "variance_reduced_scope": "Forecast plus mean(X-Y), with fixed coefficient1. Not the raw3D sample mean.",
+      "refinements": [
+        {
+          "setting": "step",
+          "discrepancy_shift": {
+            "n": 16384,
+            "mean": 1.489446435954577e-06,
+            "se": 1.0669499934643563e-06,
+            "ci95": [
+              -6.018916309560101e-07,
+              3.580784502865164e-06
+            ],
+            "half_width": 2.091338066910587e-06
+          },
+          "raw_3D_shift": {
+            "n": 16384,
+            "mean": 1.4894464359545772e-06,
+            "se": 1.0669499934643563e-06,
+            "ci95": [
+              -6.018916309560099e-07,
+              3.580784502865164e-06
+            ],
+            "half_width": 2.091338066910587e-06
+          },
+          "brownian_endpoint_difference": 0.0,
+          "local_pass": true
+        },
+        {
+          "setting": "cadence",
+          "discrepancy_shift": {
+            "n": 16384,
+            "mean": -1.0502904595917589e-07,
+            "se": 3.5751682987549466e-07,
+            "ci95": [
+              -8.05800928858856e-07,
+              5.957428369405041e-07
+            ],
+            "half_width": 7.007718828996801e-07
+          },
+          "raw_3D_shift": {
+            "n": 16384,
+            "mean": -7.099781597176796e-08,
+            "se": 2.6130823014355487e-07,
+            "ci95": [
+              -5.831903763014525e-07,
+              4.411947443579166e-07
+            ],
+            "half_width": 5.121925603296846e-07
+          },
+          "brownian_endpoint_difference": 5.204170427930421e-17,
+          "local_pass": true
+        }
+      ],
+      "unforced": {
+        "unforced-noisy": {
+          "gates": {
+            "reduced_budget": true,
+            "torque_budget": true,
+            "noise_Lz": true,
+            "noise_fast_actions": true,
+            "noise_angles": true,
+            "roundtrip": true,
+            "unforced_bar": true,
+            "unforced_fast_actions": true,
+            "noise_variance": true
+          },
+          "final": {
+            "time": 12719.252047177502,
+            "tau": 20.0,
+            "bar_impulse": 0.0,
+            "bar_impulse_se": 0.0,
+            "noise_Lz": -5.8179472679009486e-06,
+            "noise_Js": -2.9089736366354243e-06,
+            "noise_Js_variance": 8.071027839051793e-07,
+            "work_residual_mean": -4.411776063346902e-09,
+            "work_residual_rms": 1.3204306515803967e-06,
+            "max_torque_budget": 2.300937218535637e-13,
+            "fast_action_rms": [
+              1.8212744052789955e-06,
+              1.0309769005580187e-14
+            ],
+            "fast_action_max": 4.805652610892497e-06,
+            "retrograde_fraction": 0.0,
+            "reduced_bar_Lz": 0.0,
+            "paired_bar_discrepancy": 0.0,
+            "reduced_budget": 6.200551183610514e-11
+          },
+          "maximum_work_residual": 3.730116986899734e-06
+        },
+        "unforced-smooth": {
+          "gates": {
+            "reduced_budget": true,
+            "torque_budget": true,
+            "noise_Lz": true,
+            "noise_fast_actions": true,
+            "noise_angles": true,
+            "roundtrip": true,
+            "unforced_bar": true,
+            "unforced_fast_actions": true,
+            "noise_variance": true
+          },
+          "final": {
+            "time": 12719.252047177502,
+            "tau": 20.0,
+            "bar_impulse": 0.0,
+            "bar_impulse_se": 0.0,
+            "noise_Lz": 0.0,
+            "noise_Js": 0.0,
+            "noise_Js_variance": 0.0,
+            "work_residual_mean": -1.911403439352498e-09,
+            "work_residual_rms": 1.31462801724093e-06,
+            "max_torque_budget": 2.4069635173873394e-13,
+            "fast_action_rms": [
+              1.8136249399931195e-06,
+              8.782064192170051e-15
+            ],
+            "fast_action_max": 4.791939032175452e-06,
+            "retrograde_fraction": 0.0,
+            "reduced_bar_Lz": 0.0,
+            "paired_bar_discrepancy": 0.0,
+            "reduced_budget": 6.195932655828074e-11
+          },
+          "maximum_work_residual": 3.739642238764773e-06
+        }
+      },
+      "local_pass": true,
+      "numerical_point_changes_pass": false,
+      "numerical_sampling_intervals_pass": false,
+      "point_numerical_envelope": 1.6467426960229731e-06,
+      "conservative_numerical_envelope": 4.43885264583324e-06,
+      "enlarged_discrepancy_interval": [
+        -6.442796945812727e-06,
+        8.83737491662818e-06
+      ],
+      "extension_trigger": true,
+      "decision": "Numerical qualification unresolved or failed; inspect separate gates and intervals."
+    }
+  ],
+  "source_sha256": {
+    "results/noise-sweep/transfer-B-01/B-noisy": {
+      "result_sha256": "e61598e572cab145dc70263c49039fc87dd2e8028defe7a6617ebe6f0fbe4b5a",
+      "raw_sha256": "1d75e79ead86d4b21ef029cb1bc20a45738546afd08d116018077689924b307a"
+    },
+    "results/noise-sweep/transfer-B-01/B-smooth": {
+      "result_sha256": "3b1b0a1ceef44aaa75901697425fac625dd4fc29d9ab0042e1ab8f8230e5d7e3",
+      "raw_sha256": "773567ba830c4c7407cb738581539e88b38381ddc86582a4ac87b6484caeca56"
+    },
+    "results/noise-sweep/transfer-B-01/B-step-noisy": {
+      "result_sha256": "a890d708899ebdade61b58a9ed4d26ad616cb5fb84a050a0d9b019e9e5e75526",
+      "raw_sha256": "a6ac15616de06e46736465d0d3aee93970750d4abb95b60b85669407ebf55f92"
+    },
+    "results/noise-sweep/transfer-B-01/B-step-smooth": {
+      "result_sha256": "9572623b1d93dffa9d16078a239c1e86cd0d46d9084d59777a9dfff3c91e5d96",
+      "raw_sha256": "760668ffce185f33bbcdbd66b8bb28480bae78c0d3336ed39bbd5ad18b05a1d8"
+    },
+    "results/noise-sweep/transfer-B-01/B-cadence-noisy": {
+      "result_sha256": "d49dabbbe1a104dd93f37a72964778fbc08484365eab407bd892524b5c320903",
+      "raw_sha256": "3b421376440f9fb942cb05757ff0e374ef5d9c58492588a1a391684d9ab82327"
+    },
+    "results/noise-sweep/transfer-B-01/B-cadence-smooth": {
+      "result_sha256": "5b2f61dc7d33e0aafe916bc3709e7e5de28d9fa0404a8c52344a9c4adc1021a1",
+      "raw_sha256": "ead00e3a1eb2a18d89d8147c5b18f0cd31392152e7c3fa9cc6bb27fe08df364b"
+    },
+    "results/noise-sweep/transfer-B-01/B-unforced-noisy": {
+      "result_sha256": "a2cc7166887549202910e10cb6f749b1b276aca781e2844d6bbc829c74da1dc9",
+      "raw_sha256": "2487de2d8e0ddc423de1f46302676ae3037aff4dcb47f926bb1bbd7319eb1d2d"
+    },
+    "results/noise-sweep/transfer-B-01/B-unforced-smooth": {
+      "result_sha256": "205f4d1e90eadc33aba2b2d62a6b768fd858eefec736402098fd04745fd1acba",
+      "raw_sha256": "fe88d463efe66fcfaa83b6eede3e4a7ef4215ebff400d836eff9db28b531cfbd"
+    }
+  },
+  "forecast_sha256": "d455a54900fb1ffb190e906554afc25ee02719e12c4989995d3240c7913e54a4",
+  "interval_scope": "Pointwise Student-t iid particle intervals. Numerical refinement intervals are reported separately and conservatively added; not a simultaneous confidence guarantee.",
+  "inference": "Conditional prescribed-bar response under imposed canonical white action noise. No physical SIDM or live-halo claim."
+}

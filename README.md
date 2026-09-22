@@ -57,5 +57,15 @@ held-out Cartesian outcome. Case B predicts a noise-induced mean bar-Lz contrast
 of-9.06336507e-6, with a fixed +/-20% operational approximation band. Its local,
 refinement and independent reduced-trajectory checks pass. Case A narrowly fails
 its independent-sampling prerequisite and remains unqualified; its3Dseed is
-unused. The3Dtest is running, so this release contains no claimed transfer result.
-The exact conditions, failed check and rules are preserved alongside the values.
+unused. The first3D test is statistically unresolved and fails its numerical
+qualification. Its mean proximity to the forecast does not establish predictive
+success. The exact conditions, failed checks and rules remain unchanged.
+
+## Reproduce the initial 3D qualification test
+
+The optional [transfer package](transfer/README.md) regenerates the original
+eight-case Cartesian experiment from seeds, with a pinned, separately built
+AGAMA/GSL dependency. It includes the full initial analysis as a reference,
+including the failed timestep qualification. The clean build, independent
+coordinate test and short unforced smoke pass; a full clean rerun is underway.
+This is a numerical and physical-model benchmark, not a live-halo or SIDM result.

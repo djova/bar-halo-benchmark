@@ -1,0 +1,9 @@
+{
+  "agama_revision": "f302756b8af2b763db58e278e30478517dc8eea3",
+  "gsl_version": "2.8",
+  "gsl_archive_sha256": "6a99eeed15632c6354895b1dd542ed5a855c0f15d9ad1326c6fe2b2c9e423190",
+  "patch_sha256": "9aed4bd8aa2ffac1f02317c9cc4762fd9724a77d1cebf5013cf4ec6654205202",
+  "library_sha256": "cf674dd10a4d148a305da88fbbf989aff85ca3dd95dfe8e47e8035e4ffbb3a16",
+  "build_recipe_sha256": "28f8b0ba3524baaf6ee38b846d89ff248a71f5c78b1a943fb25129f908ee322c",
+  "scope": "Pinned source dependency build. This alone is not a coordinate or scientific verification."
+}
