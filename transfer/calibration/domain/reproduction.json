@@ -1,0 +1,15 @@
+{
+  "checked_utc": "2026-09-22T14:19:42.055580+00:00",
+  "all_numeric_cases_identical": true,
+  "all_three_png_bytes_identical": true,
+  "source_sha256": "35b8e6a100398c67e1849c44c33e5fdd2b4c900b360ddedfd8cb56c5fb7de8c2",
+  "reference_result_sha256": "74143b3993e1b933473b00d6204c71cc538aa34458bb653819935f69768cc8ed",
+  "rerun_result_sha256": "753ef2f5e7875ce7df0ffd7c19c59acceeb4b7cc123e6bd73df0f3a7e48a95e0",
+  "png_sha256": {
+    "coupling-detuning.png": "5fdbc68ad31860fa70febe3c329b1f49c1cc98a3029f59ec973acd3ffae8e128",
+    "coefficient-domain.png": "20597d99cadd7ac8ddcef51fd221b1d26485d879373615f9b9f1114e6512ba06",
+    "initial-gradient-sweep.png": "6e8227c9328bb434397ae19059e36da8760d7b45307f32e578bea47c89ad3196"
+  },
+  "rerun_cpu_seconds": 1.3307679239999999,
+  "scope": "Public command reuses the existing pinned environment and reads only the supplied original full-precision unforced table and frozen forecast. No dependency evaluation, orbit integration or new physical qualification. PDF creation timestamps are not compared."
+}
