@@ -1,0 +1,81 @@
+{
+  "checked_utc": "2026-09-22T13:46:11.449628+00:00",
+  "reproduction": {
+    "smoke_only": true,
+    "cases": 2,
+    "all_local_checks_pass": true,
+    "local_checks": {
+      "smoke-noisy": true,
+      "smoke-smooth": true
+    },
+    "scientific_cpu_seconds": 0.468609,
+    "source_manifest": {
+      "scripts/noise_sweep/run_orbits_cadence.py": "86c8895f8009ba89b5f0748966b6772fa569a2ed1c970ef9ec28da0f632e5f95",
+      "benchmark/brownian_leaves.py": "ee40c435d08146abfe481779983d60faac003e8c58988fab4d9e43a5402ea53f",
+      "benchmark/orbit_fourth.cpp": "a1ddb204096ecb8de55a62ddd008bf378d730c983c612c86fa341cc4ca0a5767",
+      "benchmark/orbit_fourth.py": "c592aedac87f8a2e180cad454f8472a40f9df3706d20e458c9bc2f24dca74207",
+      "benchmark/orbit_kernel.cpp": "444789c4b5707a8a13d7a0ca08d71abdcfe7bbd6305a116c2912854f7f956c32",
+      "benchmark/orbit_kernel.py": "db8e3de488065bf2e1b010aae78d0b9b6db8a97e2589e3fdba4c0369b75e24ff",
+      "benchmark/characteristics.py": "15f6f2de767e1563ed7a30a9bb5301fbfb008f82c86ffdf7b5147881e1df44b3",
+      "scripts/noise_sweep/guarded_queue.py": "d81e61e188f6cad86898001a9dca3236ee48575cd9a6bdccfc92b00cfa6cf38c",
+      "scripts/noise_sweep/analyze_cadence_confirmation.py": "17e965d754bdf28db8c88fd2de0f0ceb20650fe6d54e63444619d968ae06116a",
+      "scripts/noise_sweep/analyze_transfer.py": "5b48ba01c1df990f84acc58bf0d3e6927cdb5786b4c42ce87ee571a3a5c44611",
+      "forecast.json": "d455a54900fb1ffb190e906554afc25ee02719e12c4989995d3240c7913e54a4",
+      "INDEPENDENT_CADENCE_CONFIRMATION.md": "0712277e2cac2209adbf4393d833a6b3304c663d6a50b7cd3f4eb826d81f2198",
+      "reproduce_confirmation.py": "0271c6eb7ada1b62a9c36e6b3d480a8ec5116ff34e9d4854a54a4fa3c05a3814",
+      "check_confirmation.py": "fd47d6fad8b0ca824986d81177b9f740ebb66c5ddaf5010474c36fd066ec6cb4"
+    },
+    "analysis_sha256": null,
+    "numerical_qualification": null,
+    "reference_comparison": null,
+    "scope": "Same-seed reproduction of the fixed amended sample; no old-sample pooling or physical extension. Smoke checks are short and unforced. No full-matrix reference comparison is claimed by this receipt."
+  },
+  "software_controls": {
+    "supervisor": [
+      {
+        "check": "complete",
+        "passed": true,
+        "cpu_seconds": 0.025126999999999997
+      },
+      {
+        "check": "timeout",
+        "passed": true,
+        "cpu_seconds": 1.001673
+      },
+      {
+        "check": "cpu",
+        "passed": true,
+        "cpu_seconds": 2.002723
+      },
+      {
+        "check": "changed_external_input_refused",
+        "passed": true
+      }
+    ],
+    "cleanup": {
+      "failed_supervisor_descendant_stopped": true
+    },
+    "analyzer": {
+      "complete_design_readback": true,
+      "raw_pass_does_not_mask_discrepancy_failure": true,
+      "numerical_failure_preserved": true
+    },
+    "scope": "Disposable mathematical and process controls. No simulated physical conclusion or full independent reproduction."
+  },
+  "library_sha256": {
+    "noisy": {
+      "agama": "cf674dd10a4d148a305da88fbbf989aff85ca3dd95dfe8e47e8035e4ffbb3a16",
+      "kernel": "365c9b909dd9367a3543cc7429de62597df74b585c08f3bcad178b951d7a2579"
+    },
+    "smooth": {
+      "agama": "cf674dd10a4d148a305da88fbbf989aff85ca3dd95dfe8e47e8035e4ffbb3a16",
+      "kernel": "365c9b909dd9367a3543cc7429de62597df74b585c08f3bcad178b951d7a2579"
+    }
+  },
+  "raw_sha256": {
+    "noisy": "a645a0ca1c6eb962e616acff723378e33832e6e76e64077c65127f9bece13778",
+    "smooth": "41ef6e1b286289800eee0034a6a9c873fc4b0acd298e07153cd017d968ef09b6"
+  },
+  "earlier_driver_smoke_cpu_seconds": 0.474337,
+  "scope": "Final public-source snapshot in an isolated directory, reusing the independently rebuilt AGAMA/GSL and pinned environment. Two actual short unforced controls pass. Known-value analyzer and process tests pass. No full twenty-case clean reproduction, forced outcome, new dependency build or physical qualification."
+}

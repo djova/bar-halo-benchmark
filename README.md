@@ -113,6 +113,11 @@ All declared scalar differences are below1.66e-13 and every decision agrees;
 individual state arrays retain small differences documented in the receipt.
 This is a numerical and physical-model benchmark, not a live-halo or SIDM result.
 
+The same [transfer package](transfer/README.md#reproduce-the-fixed-independent-cadence-confirmation)
+now includes the fixed twenty-case independent cadence confirmation. Its short
+unforced execution and known-value analysis controls pass; a full clean rerun of
+that larger matrix is not claimed.
+
 The separate six-case timestep/cadence rerun also reproduces all decisions in
 2.636CPUhours. Its small timestep shifts pass; its cadence intervals still fail.
 See the transfer README and full clean numerical receipt. Reproducing the result

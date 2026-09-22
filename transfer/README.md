@@ -26,7 +26,7 @@ From the repository root:
 python transfer/reproduce.py --agama PATH_TO_PATCHED_AGAMA --out reproduced-transfer
 ```
 
-The default uses one nice10 scientific worker. --workers2 or4 allows parallel
+The default uses one nice10 scientific worker. `--workers 2` or `--workers 4` allows parallel
 cases, each with one BLAS/OpenMP thread. It compiles a separate portable force
 kernel, then regenerates the two forced and two unforced65536-particle samples
 and matched16384-particle timestep/cadence refinements from fixed seeds. No private
@@ -58,7 +58,7 @@ fourth-order kernel and nested noise source:
 python transfer/reproduce_numerical.py --agama PATH_TO_PATCHED_AGAMA --out reproduced-numerical
 ```
 
-It uses one nice10single-core worker by default; `--workers2` permits two. Each
+It uses one nice10single-core worker by default; `--workers 2` permits two. Each
 case has a7200s limit. Allow roughly2.6CPUhours for the full matrix. `--smoke`
 runs only two short unforced checks; those pass in a fresh pinned environment.
 The compiled force kernel matches the original binary. The original final matrix is complete: both timestep intervals pass, but both
@@ -110,3 +110,44 @@ than logarithm subtraction. See [the measured outcome and limits](calibration/ar
 its protocol, raw binary64 values, scripts and figure. This does not identify the
 internal dependency calculation responsible, or turn the original failed checks
 into passes.
+
+## Reproduce the fixed independent cadence confirmation
+
+On Linux, using the same pinned environment and patched dependency:
+
+```sh
+python transfer/reproduce_confirmation.py --agama PATH_TO_PATCHED_AGAMA --out reproduced-confirmation
+```
+
+This generates the exact twenty cases in the explicit amendment: 131,072 previously
+unused particle IDs at candidate and half-cadence settings, a 16,384-particle
+half-step pair, and a 4,096-particle unforced pair. It runs the unchanged scientific
+analyzer only after every case is complete. No earlier sample is pooled in, no
+physical parameters or numerical margin change, and no physical extension launches.
+
+The command defaults to one worker at nice=10 using one core; `--workers 2` or
+`--workers 3` runs concurrent cases. Each case has a 7,200-second wall limit, with
+an aggregate 14 CPU-hour ceiling and a 41-hour elapsed stop for the complete queue.
+Allow roughly 13 CPU-hours on the experiment's CPU; a slower machine may reach a
+limit and preserve an incomplete result. Source and dependency hashes, exact
+settings, individual arrays and a CPU ledger are recorded. Preserve stopped
+attempts; the command refuses to overwrite an output directory. Use a separate
+package checkout for concurrent reproduction commands.
+
+`--show-design` prints every case without compiling or running anything. `--smoke`
+runs only two 128-particle, short unforced checks in the same guarded pathway.
+The package's execution and analyzer controls can be checked separately:
+
+```sh
+python transfer/check_confirmation.py
+```
+
+Those disposable fixtures check wall/CPU stops, external-source refusal,
+descendant cleanup and a known reduced-only shift that must fail the discrepancy
+gate even when the raw 3D shift passes. They are software checks, never simulation
+evidence. An isolated public-source copy passes both real short unforced checks,
+using the previously independently rebuilt dependency and pinned environment.
+This is not a full twenty-case clean reproduction or a new dependency build.
+The original confirmation is still running; no terminal reference comparison or
+physical qualification is claimed. `reference_comparison: null` means no such
+comparison, and a failed numerical qualification remains failed.
