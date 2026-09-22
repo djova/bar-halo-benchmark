@@ -1,0 +1,2090 @@
+{
+  "all_declared_checks_pass": true,
+  "scalar_verification": {
+    "all_pass": true,
+    "absolute_tolerance": 1e-09,
+    "measurements": [
+      {
+        "quantity": "candidate_raw_3D.mean",
+        "absolute_difference": 5.926249583025536e-14
+      },
+      {
+        "quantity": "candidate_raw_3D.se",
+        "absolute_difference": 5.851591590834773e-16
+      },
+      {
+        "quantity": "candidate_raw_3D.half_width",
+        "absolute_difference": 1.1469012453071623e-15
+      },
+      {
+        "quantity": "candidate_raw_3D.ci95",
+        "absolute_difference": 6.040940046369431e-14
+      },
+      {
+        "quantity": "candidate_reduced.mean",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "candidate_reduced.se",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "candidate_reduced.half_width",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "candidate_reduced.ci95",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "candidate_discrepancy.mean",
+        "absolute_difference": 5.926249884781023e-14
+      },
+      {
+        "quantity": "candidate_discrepancy.se",
+        "absolute_difference": 2.2857777004720373e-16
+      },
+      {
+        "quantity": "candidate_discrepancy.half_width",
+        "absolute_difference": 4.480084312970083e-16
+      },
+      {
+        "quantity": "candidate_discrepancy.ci95",
+        "absolute_difference": 5.971050764968415e-14
+      },
+      {
+        "quantity": "halfstep.raw_3D_shift.mean",
+        "absolute_difference": 1.4325712897159572e-13
+      },
+      {
+        "quantity": "halfstep.raw_3D_shift.se",
+        "absolute_difference": 5.505811209737235e-14
+      },
+      {
+        "quantity": "halfstep.raw_3D_shift.half_width",
+        "absolute_difference": 1.0791988980439609e-13
+      },
+      {
+        "quantity": "halfstep.raw_3D_shift.ci95",
+        "absolute_difference": 2.511770187758884e-13
+      },
+      {
+        "quantity": "halfstep.discrepancy_shift.mean",
+        "absolute_difference": 1.4325712928633795e-13
+      },
+      {
+        "quantity": "halfstep.discrepancy_shift.se",
+        "absolute_difference": 5.505811209830293e-14
+      },
+      {
+        "quantity": "halfstep.discrepancy_shift.half_width",
+        "absolute_difference": 1.0791988980625724e-13
+      },
+      {
+        "quantity": "halfstep.discrepancy_shift.ci95",
+        "absolute_difference": 2.511770190926986e-13
+      },
+      {
+        "quantity": "halfstep.reduced_shift.mean",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "halfstep.reduced_shift.se",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "halfstep.reduced_shift.half_width",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "halfstep.reduced_shift.ci95",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "halfcadence.raw_3D_shift.mean",
+        "absolute_difference": 5.2142106350325156e-14
+      },
+      {
+        "quantity": "halfcadence.raw_3D_shift.se",
+        "absolute_difference": 6.046553631495905e-14
+      },
+      {
+        "quantity": "halfcadence.raw_3D_shift.half_width",
+        "absolute_difference": 1.1851136787670796e-13
+      },
+      {
+        "quantity": "halfcadence.raw_3D_shift.ci95",
+        "absolute_difference": 1.706534742270331e-13
+      },
+      {
+        "quantity": "halfcadence.discrepancy_shift.mean",
+        "absolute_difference": 5.214210648101969e-14
+      },
+      {
+        "quantity": "halfcadence.discrepancy_shift.se",
+        "absolute_difference": 4.887616095653863e-14
+      },
+      {
+        "quantity": "halfcadence.discrepancy_shift.half_width",
+        "absolute_difference": 9.579639980633149e-14
+      },
+      {
+        "quantity": "halfcadence.discrepancy_shift.ci95",
+        "absolute_difference": 1.4793850628900554e-13
+      },
+      {
+        "quantity": "halfcadence.reduced_shift.mean",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "halfcadence.reduced_shift.se",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "halfcadence.reduced_shift.half_width",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "halfcadence.reduced_shift.ci95",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "candidate-65536.raw.mean",
+        "absolute_difference": 1.7656524097073474e-13
+      },
+      {
+        "quantity": "candidate-65536.raw.se",
+        "absolute_difference": 1.5848545484873147e-15
+      },
+      {
+        "quantity": "candidate-65536.raw.half_width",
+        "absolute_difference": 3.106371361310742e-15
+      },
+      {
+        "quantity": "candidate-65536.raw.ci95",
+        "absolute_difference": 1.7967161233204548e-13
+      },
+      {
+        "quantity": "candidate-65536.reduced.mean",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "candidate-65536.reduced.se",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "candidate-65536.reduced.half_width",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "candidate-65536.reduced.ci95",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "candidate-65536.discrepancy.mean",
+        "absolute_difference": 1.7656523800611943e-13
+      },
+      {
+        "quantity": "candidate-65536.discrepancy.se",
+        "absolute_difference": 4.3902607040785004e-16
+      },
+      {
+        "quantity": "candidate-65536.discrepancy.half_width",
+        "absolute_difference": 8.605067003462745e-16
+      },
+      {
+        "quantity": "candidate-65536.discrepancy.ci95",
+        "absolute_difference": 1.774257447064657e-13
+      },
+      {
+        "quantity": "candidate-98304.raw.mean",
+        "absolute_difference": 2.2281493734484584e-13
+      },
+      {
+        "quantity": "candidate-98304.raw.se",
+        "absolute_difference": 3.730587209592115e-15
+      },
+      {
+        "quantity": "candidate-98304.raw.half_width",
+        "absolute_difference": 7.312086456072106e-15
+      },
+      {
+        "quantity": "candidate-98304.raw.ci95",
+        "absolute_difference": 2.3012702380091794e-13
+      },
+      {
+        "quantity": "candidate-98304.reduced.mean",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "candidate-98304.reduced.se",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "candidate-98304.reduced.half_width",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "candidate-98304.reduced.ci95",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "candidate-98304.discrepancy.mean",
+        "absolute_difference": 2.228149417917688e-13
+      },
+      {
+        "quantity": "candidate-98304.discrepancy.se",
+        "absolute_difference": 4.301453534723623e-15
+      },
+      {
+        "quantity": "candidate-98304.discrepancy.half_width",
+        "absolute_difference": 8.431005120933775e-15
+      },
+      {
+        "quantity": "candidate-98304.discrepancy.ci95",
+        "absolute_difference": 2.3124594670094435e-13
+      },
+      {
+        "quantity": "candidate-131072.raw.mean",
+        "absolute_difference": 1.4062493929875098e-13
+      },
+      {
+        "quantity": "candidate-131072.raw.se",
+        "absolute_difference": 2.4468748967103326e-15
+      },
+      {
+        "quantity": "candidate-131072.raw.half_width",
+        "absolute_difference": 4.79596492185784e-15
+      },
+      {
+        "quantity": "candidate-131072.raw.ci95",
+        "absolute_difference": 1.4542090337357587e-13
+      },
+      {
+        "quantity": "candidate-131072.reduced.mean",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "candidate-131072.reduced.se",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "candidate-131072.reduced.half_width",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "candidate-131072.reduced.ci95",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "candidate-131072.discrepancy.mean",
+        "absolute_difference": 1.4062494078105863e-13
+      },
+      {
+        "quantity": "candidate-131072.discrepancy.se",
+        "absolute_difference": 3.5470889565142587e-15
+      },
+      {
+        "quantity": "candidate-131072.discrepancy.half_width",
+        "absolute_difference": 6.952423561173721e-15
+      },
+      {
+        "quantity": "candidate-131072.discrepancy.ci95",
+        "absolute_difference": 1.475773645539906e-13
+      },
+      {
+        "quantity": "candidate-163840.raw.mean",
+        "absolute_difference": 5.017534510706051e-14
+      },
+      {
+        "quantity": "candidate-163840.raw.se",
+        "absolute_difference": 4.373724079849255e-15
+      },
+      {
+        "quantity": "candidate-163840.raw.half_width",
+        "absolute_difference": 8.572657828834901e-15
+      },
+      {
+        "quantity": "candidate-163840.raw.ci95",
+        "absolute_difference": 5.874800293589541e-14
+      },
+      {
+        "quantity": "candidate-163840.reduced.mean",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "candidate-163840.reduced.se",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "candidate-163840.reduced.half_width",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "candidate-163840.reduced.ci95",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "candidate-163840.discrepancy.mean",
+        "absolute_difference": 5.017534976574172e-14
+      },
+      {
+        "quantity": "candidate-163840.discrepancy.se",
+        "absolute_difference": 1.0224467790703826e-14
+      },
+      {
+        "quantity": "candidate-163840.discrepancy.half_width",
+        "absolute_difference": 2.0040328581718073e-14
+      },
+      {
+        "quantity": "candidate-163840.discrepancy.ci95",
+        "absolute_difference": 7.021567877097627e-14
+      },
+      {
+        "quantity": "halfcadence-65536.raw.mean",
+        "absolute_difference": 5.187922438648282e-13
+      },
+      {
+        "quantity": "halfcadence-65536.raw.se",
+        "absolute_difference": 7.990637773853948e-15
+      },
+      {
+        "quantity": "halfcadence-65536.raw.half_width",
+        "absolute_difference": 1.5661940738461236e-14
+      },
+      {
+        "quantity": "halfcadence-65536.raw.ci95",
+        "absolute_difference": 5.344541846032894e-13
+      },
+      {
+        "quantity": "halfcadence-65536.reduced.mean",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "halfcadence-65536.reduced.se",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "halfcadence-65536.reduced.half_width",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "halfcadence-65536.reduced.ci95",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "halfcadence-65536.discrepancy.mean",
+        "absolute_difference": 5.187922476764765e-13
+      },
+      {
+        "quantity": "halfcadence-65536.discrepancy.se",
+        "absolute_difference": 1.4558845919603698e-14
+      },
+      {
+        "quantity": "halfcadence-65536.discrepancy.half_width",
+        "absolute_difference": 2.8535868295870206e-14
+      },
+      {
+        "quantity": "halfcadence-65536.discrepancy.ci95",
+        "absolute_difference": 5.473281163958631e-13
+      },
+      {
+        "quantity": "halfcadence-98304.raw.mean",
+        "absolute_difference": 2.8757993368925226e-13
+      },
+      {
+        "quantity": "halfcadence-98304.raw.se",
+        "absolute_difference": 2.039152199417686e-15
+      },
+      {
+        "quantity": "halfcadence-98304.raw.half_width",
+        "absolute_difference": 3.9968130530459306e-15
+      },
+      {
+        "quantity": "halfcadence-98304.raw.ci95",
+        "absolute_difference": 2.915767399660346e-13
+      },
+      {
+        "quantity": "halfcadence-98304.reduced.mean",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "halfcadence-98304.reduced.se",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "halfcadence-98304.reduced.half_width",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "halfcadence-98304.reduced.ci95",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "halfcadence-98304.discrepancy.mean",
+        "absolute_difference": 2.875799332657358e-13
+      },
+      {
+        "quantity": "halfcadence-98304.discrepancy.se",
+        "absolute_difference": 3.7239803526035314e-15
+      },
+      {
+        "quantity": "halfcadence-98304.discrepancy.half_width",
+        "absolute_difference": 7.299137016374482e-15
+      },
+      {
+        "quantity": "halfcadence-98304.discrepancy.ci95",
+        "absolute_difference": 2.9487907070562674e-13
+      },
+      {
+        "quantity": "halfcadence-131072.raw.mean",
+        "absolute_difference": 2.2922626609491814e-13
+      },
+      {
+        "quantity": "halfcadence-131072.raw.se",
+        "absolute_difference": 6.781498241648434e-15
+      },
+      {
+        "quantity": "halfcadence-131072.raw.half_width",
+        "absolute_difference": 1.3291983209625172e-14
+      },
+      {
+        "quantity": "halfcadence-131072.raw.ci95",
+        "absolute_difference": 2.4251825184564216e-13
+      },
+      {
+        "quantity": "halfcadence-131072.reduced.mean",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "halfcadence-131072.reduced.se",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "halfcadence-131072.reduced.half_width",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "halfcadence-131072.reduced.ci95",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "halfcadence-131072.discrepancy.mean",
+        "absolute_difference": 2.292262663066764e-13
+      },
+      {
+        "quantity": "halfcadence-131072.discrepancy.se",
+        "absolute_difference": 1.3409871137641657e-14
+      },
+      {
+        "quantity": "halfcadence-131072.discrepancy.half_width",
+        "absolute_difference": 2.6283835540983833e-14
+      },
+      {
+        "quantity": "halfcadence-131072.discrepancy.ci95",
+        "absolute_difference": 2.55510101635902e-13
+      },
+      {
+        "quantity": "halfcadence-163840.raw.mean",
+        "absolute_difference": 1.4820156007348123e-14
+      },
+      {
+        "quantity": "halfcadence-163840.raw.se",
+        "absolute_difference": 1.8404314937282493e-15
+      },
+      {
+        "quantity": "halfcadence-163840.raw.half_width",
+        "absolute_difference": 3.607313422580513e-15
+      },
+      {
+        "quantity": "halfcadence-163840.raw.ci95",
+        "absolute_difference": 1.8427469429928636e-14
+      },
+      {
+        "quantity": "halfcadence-163840.reduced.mean",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "halfcadence-163840.reduced.se",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "halfcadence-163840.reduced.half_width",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "halfcadence-163840.reduced.ci95",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "halfcadence-163840.discrepancy.mean",
+        "absolute_difference": 1.4820159818996386e-14
+      },
+      {
+        "quantity": "halfcadence-163840.discrepancy.se",
+        "absolute_difference": 9.156527803772657e-16
+      },
+      {
+        "quantity": "halfcadence-163840.discrepancy.half_width",
+        "absolute_difference": 1.7947128904001984e-15
+      },
+      {
+        "quantity": "halfcadence-163840.discrepancy.ci95",
+        "absolute_difference": 1.6614872709396584e-14
+      },
+      {
+        "quantity": "halfstep.raw.mean",
+        "absolute_difference": 1.3921589575582871e-14
+      },
+      {
+        "quantity": "halfstep.raw.se",
+        "absolute_difference": 5.986422295378713e-16
+      },
+      {
+        "quantity": "halfstep.raw.half_width",
+        "absolute_difference": 1.1734049062267493e-15
+      },
+      {
+        "quantity": "halfstep.raw.ci95",
+        "absolute_difference": 1.509499448180962e-14
+      },
+      {
+        "quantity": "halfstep.reduced.mean",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "halfstep.reduced.se",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "halfstep.reduced.half_width",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "halfstep.reduced.ci95",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "halfstep.discrepancy.mean",
+        "absolute_difference": 1.3921588728549924e-14
+      },
+      {
+        "quantity": "halfstep.discrepancy.se",
+        "absolute_difference": 5.435473526485416e-15
+      },
+      {
+        "quantity": "halfstep.discrepancy.half_width",
+        "absolute_difference": 1.065411932396794e-14
+      },
+      {
+        "quantity": "halfstep.discrepancy.ci95",
+        "absolute_difference": 2.4575708052517863e-14
+      },
+      {
+        "quantity": "unforced.raw.mean",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "unforced.raw.se",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "unforced.raw.half_width",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "unforced.raw.ci95",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "unforced.reduced.mean",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "unforced.reduced.se",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "unforced.reduced.half_width",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "unforced.reduced.ci95",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "unforced.discrepancy.mean",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "unforced.discrepancy.se",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "unforced.discrepancy.half_width",
+        "absolute_difference": 0.0
+      },
+      {
+        "quantity": "unforced.discrepancy.ci95",
+        "absolute_difference": 0.0
+      }
+    ],
+    "maximum_scalar_difference": 5.473281163958631e-13,
+    "descriptive_tail_comparison": [
+      {
+        "quantity": "halfstep.raw_3D_shift",
+        "rank_order_identical": true,
+        "variance_fraction_difference": 4.0613266255706826e-05,
+        "maximum_individual_difference": 2.874330252977675e-10
+      },
+      {
+        "quantity": "halfstep.discrepancy_shift",
+        "rank_order_identical": true,
+        "variance_fraction_difference": 4.061326627524675e-05,
+        "maximum_individual_difference": 2.874330252977675e-10
+      },
+      {
+        "quantity": "halfcadence.raw_3D_shift",
+        "rank_order_identical": true,
+        "variance_fraction_difference": 8.114974348050197e-08,
+        "maximum_individual_difference": 6.666373061209319e-10
+      },
+      {
+        "quantity": "halfcadence.discrepancy_shift",
+        "rank_order_identical": true,
+        "variance_fraction_difference": 1.3405159582369208e-07,
+        "maximum_individual_difference": 6.666373061209319e-10
+      }
+    ],
+    "gates_agree": true,
+    "numerical_qualification": false,
+    "scope": "Same-seed reproducibility, not another independent statistical sample. The original numerical criterion and failed qualification are unchanged. Full individual-array differences require the separate archive comparison."
+  },
+  "cases": [
+    {
+      "case": "candidate-131072-noisy",
+      "arrays": {
+        "fast_times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "fast_paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 5.803538866491764e-09
+        },
+        "fast_events": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "particle_ids": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_actions_angles": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_reduced_bar_Lz": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 3.774758283725532e-15
+        },
+        "times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 5.726332186206662e-09
+        },
+        "final_bar_Lz": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 6.481500258379014e-10
+        },
+        "final_noise_Lz": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 8.770761894538737e-14
+        },
+        "final_noise_energy": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 6.785128014996644e-13
+        },
+        "final_work": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 3.172372607662677e-10
+        },
+        "final_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 1.797810645243203e-06
+        },
+        "final_noise_Js": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "local_gates_agree": true,
+      "scientific_sources_identical": true,
+      "original_raw_sha256": "b2e96761f248ca9f8424943c00cb99f2e8f031e72cbfda4e935f66f30bc9110b",
+      "isolated_raw_sha256": "1fafea19b6b65c3e484331b1afffeefa77cc5da5da693c87ba8a40d7fc36a47b",
+      "original_agama_library_sha256": "f6c04e4941aff3538d3bb08f6446d731b788d85406af94092cf856fbd139d000",
+      "isolated_agama_library_sha256": "cf674dd10a4d148a305da88fbbf989aff85ca3dd95dfe8e47e8035e4ffbb3a16"
+    },
+    {
+      "case": "candidate-131072-smooth",
+      "arrays": {
+        "fast_times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "fast_paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 4.268788468542173e-09
+        },
+        "fast_events": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "particle_ids": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_actions_angles": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_reduced_bar_Lz": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 3.774758283725532e-15
+        },
+        "times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 4.239950890383426e-09
+        },
+        "final_bar_Lz": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 5.176115352306665e-09
+        },
+        "final_noise_Lz": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_noise_energy": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_work": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 2.5347917306794976e-09
+        },
+        "final_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 9.257368722093151e-06
+        },
+        "final_noise_Js": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "local_gates_agree": true,
+      "scientific_sources_identical": true,
+      "original_raw_sha256": "102d089ad4b58c67ba4ffed9d45734a4c53c403a2e2ddececc03971898039637",
+      "isolated_raw_sha256": "a63f39521806ea7f38e1b6e6d5cdbc547859bc00103d312c281ec806d2078956",
+      "original_agama_library_sha256": "f6c04e4941aff3538d3bb08f6446d731b788d85406af94092cf856fbd139d000",
+      "isolated_agama_library_sha256": "cf674dd10a4d148a305da88fbbf989aff85ca3dd95dfe8e47e8035e4ffbb3a16"
+    },
+    {
+      "case": "candidate-163840-noisy",
+      "arrays": {
+        "fast_times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "fast_paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 3.5636299777763725e-07
+        },
+        "fast_events": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "particle_ids": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_actions_angles": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_reduced_bar_Lz": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 4.052314039881821e-15
+        },
+        "times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 3.5636299777763725e-07
+        },
+        "final_bar_Lz": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 4.475648330247439e-09
+        },
+        "final_noise_Lz": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 7.738254481637341e-14
+        },
+        "final_noise_energy": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 2.2552515410723117e-12
+        },
+        "final_work": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 2.1913551086563676e-09
+        },
+        "final_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 5.442501705588132e-06
+        },
+        "final_noise_Js": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "local_gates_agree": true,
+      "scientific_sources_identical": true,
+      "original_raw_sha256": "cc6b97a709a56d1549cfed5010929eec9d062838591fe3a3a5b974454d4f20aa",
+      "isolated_raw_sha256": "92f5c28be9415909fdd33f92d7903fb62d2c49d4e4e280a36d60369cb3c10e1c",
+      "original_agama_library_sha256": "f6c04e4941aff3538d3bb08f6446d731b788d85406af94092cf856fbd139d000",
+      "isolated_agama_library_sha256": "cf674dd10a4d148a305da88fbbf989aff85ca3dd95dfe8e47e8035e4ffbb3a16"
+    },
+    {
+      "case": "candidate-163840-smooth",
+      "arrays": {
+        "fast_times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "fast_paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 6.975908739548231e-09
+        },
+        "fast_events": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "particle_ids": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_actions_angles": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_reduced_bar_Lz": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 4.052314039881821e-15
+        },
+        "times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 6.975908739548231e-09
+        },
+        "final_bar_Lz": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 9.502153988779835e-10
+        },
+        "final_noise_Lz": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_noise_energy": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_work": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 4.654428995541117e-10
+        },
+        "final_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 8.605157455487955e-07
+        },
+        "final_noise_Js": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "local_gates_agree": true,
+      "scientific_sources_identical": true,
+      "original_raw_sha256": "cc8ef2b666646f7f2fb5035b12096dee0f4e76ad0eb841fea86c5ea7d74f6af1",
+      "isolated_raw_sha256": "57f6bbef80255ec1d0c61dc07de17e9ba5a0c34d68796a1de86696e28a7c4679",
+      "original_agama_library_sha256": "f6c04e4941aff3538d3bb08f6446d731b788d85406af94092cf856fbd139d000",
+      "isolated_agama_library_sha256": "cf674dd10a4d148a305da88fbbf989aff85ca3dd95dfe8e47e8035e4ffbb3a16"
+    },
+    {
+      "case": "candidate-65536-noisy",
+      "arrays": {
+        "fast_times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "fast_paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 3.393360933218181e-08
+        },
+        "fast_events": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "particle_ids": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_actions_angles": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_reduced_bar_Lz": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 3.823330541052883e-15
+        },
+        "times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 3.567432416140548e-08
+        },
+        "final_bar_Lz": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 1.9644373085679623e-09
+        },
+        "final_noise_Lz": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 8.93729534823251e-14
+        },
+        "final_noise_energy": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 4.4786396813378815e-13
+        },
+        "final_work": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 9.58940519005247e-10
+        },
+        "final_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 5.804881230142556e-06
+        },
+        "final_noise_Js": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "local_gates_agree": true,
+      "scientific_sources_identical": true,
+      "original_raw_sha256": "55a00583a4c1465cd792608e0740020bf8ff829dd8dc2f0833300572fc61be6d",
+      "isolated_raw_sha256": "3415c13ac942caa0feb097ccf7dc7c4f35f472c695eaca8d91a9bbf2f566b364",
+      "original_agama_library_sha256": "f6c04e4941aff3538d3bb08f6446d731b788d85406af94092cf856fbd139d000",
+      "isolated_agama_library_sha256": "cf674dd10a4d148a305da88fbbf989aff85ca3dd95dfe8e47e8035e4ffbb3a16"
+    },
+    {
+      "case": "candidate-65536-smooth",
+      "arrays": {
+        "fast_times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "fast_paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 3.298562145648276e-09
+        },
+        "fast_events": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "particle_ids": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_actions_angles": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_reduced_bar_Lz": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 3.823330541052883e-15
+        },
+        "times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 5.878396880376613e-09
+        },
+        "final_bar_Lz": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 2.355281874806374e-09
+        },
+        "final_noise_Lz": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_noise_energy": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_work": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 1.1527791375285073e-09
+        },
+        "final_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 7.68178665344621e-07
+        },
+        "final_noise_Js": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "local_gates_agree": true,
+      "scientific_sources_identical": true,
+      "original_raw_sha256": "115abe07c8984568f41f97e3f39494725bb4251b9eaf3d8ad4daf487759f7615",
+      "isolated_raw_sha256": "ad56a16ef286e3a7fce77e114f8aed35e979049372d89613f00e1b7aeb0402e9",
+      "original_agama_library_sha256": "f6c04e4941aff3538d3bb08f6446d731b788d85406af94092cf856fbd139d000",
+      "isolated_agama_library_sha256": "cf674dd10a4d148a305da88fbbf989aff85ca3dd95dfe8e47e8035e4ffbb3a16"
+    },
+    {
+      "case": "candidate-98304-noisy",
+      "arrays": {
+        "fast_times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "fast_paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 9.520239906135597e-08
+        },
+        "fast_events": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "particle_ids": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_actions_angles": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_reduced_bar_Lz": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 4.773959005888173e-15
+        },
+        "times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 9.752797147655201e-08
+        },
+        "final_bar_Lz": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 3.6072194541277025e-09
+        },
+        "final_noise_Lz": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 8.515410598874951e-14
+        },
+        "final_noise_energy": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 1.3201106874305424e-12
+        },
+        "final_work": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 1.7643942429052678e-09
+        },
+        "final_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 2.4793610329809646e-06
+        },
+        "final_noise_Js": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "local_gates_agree": true,
+      "scientific_sources_identical": true,
+      "original_raw_sha256": "aaeefe7326d906ae528e16fd81d2d55e7320eef9207b310eda3738a38edbf991",
+      "isolated_raw_sha256": "0e04633a5674b62ac950bad59353a3b6fe763291d80c0a7634a20abb183f8050",
+      "original_agama_library_sha256": "f6c04e4941aff3538d3bb08f6446d731b788d85406af94092cf856fbd139d000",
+      "isolated_agama_library_sha256": "cf674dd10a4d148a305da88fbbf989aff85ca3dd95dfe8e47e8035e4ffbb3a16"
+    },
+    {
+      "case": "candidate-98304-smooth",
+      "arrays": {
+        "fast_times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "fast_paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 1.7976738500569134e-08
+        },
+        "fast_events": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "particle_ids": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_actions_angles": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_reduced_bar_Lz": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 4.773959005888173e-15
+        },
+        "times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 1.7240539662566334e-08
+        },
+        "final_bar_Lz": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 1.3062260741363713e-09
+        },
+        "final_noise_Lz": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_noise_energy": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_work": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 6.389627092403052e-10
+        },
+        "final_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 9.356586438049458e-07
+        },
+        "final_noise_Js": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "local_gates_agree": true,
+      "scientific_sources_identical": true,
+      "original_raw_sha256": "f64448f5a32aadff14637e2fc41887193629832140e866102c7005defc901580",
+      "isolated_raw_sha256": "e1236b5f05030cf92502a623feb7591490b481b77b3df1904c78763a1ce989de",
+      "original_agama_library_sha256": "f6c04e4941aff3538d3bb08f6446d731b788d85406af94092cf856fbd139d000",
+      "isolated_agama_library_sha256": "cf674dd10a4d148a305da88fbbf989aff85ca3dd95dfe8e47e8035e4ffbb3a16"
+    },
+    {
+      "case": "halfcadence-131072-noisy",
+      "arrays": {
+        "fast_times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "fast_paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 1.1883166183696003e-08
+        },
+        "fast_events": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "particle_ids": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_actions_angles": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_reduced_bar_Lz": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 3.774758283725532e-15
+        },
+        "times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 1.1878759309524867e-08
+        },
+        "final_bar_Lz": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 2.3351558048334553e-09
+        },
+        "final_noise_Lz": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 1.1002310174035301e-13
+        },
+        "final_noise_energy": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 7.588374373312945e-13
+        },
+        "final_work": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 1.143195340041342e-09
+        },
+        "final_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 1.913128967523381e-06
+        },
+        "final_noise_Js": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "local_gates_agree": true,
+      "scientific_sources_identical": true,
+      "original_raw_sha256": "e63fe660c0f01c4f70511c81da11600bbee5a1ff19cc908d482f13a90f862021",
+      "isolated_raw_sha256": "f2e07bf37d30c26d01e042b32c550e8e785eb9d5771f621e6e623dc199559ed6",
+      "original_agama_library_sha256": "f6c04e4941aff3538d3bb08f6446d731b788d85406af94092cf856fbd139d000",
+      "isolated_agama_library_sha256": "cf674dd10a4d148a305da88fbbf989aff85ca3dd95dfe8e47e8035e4ffbb3a16"
+    },
+    {
+      "case": "halfcadence-131072-smooth",
+      "arrays": {
+        "fast_times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "fast_paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 1.8662976941641318e-08
+        },
+        "fast_events": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "particle_ids": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_actions_angles": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_reduced_bar_Lz": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 3.774758283725532e-15
+        },
+        "times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 1.967970586491674e-08
+        },
+        "final_bar_Lz": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 1.3596539998050883e-08
+        },
+        "final_noise_Lz": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_noise_energy": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_work": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 6.658384980092608e-09
+        },
+        "final_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 2.4422618049246836e-05
+        },
+        "final_noise_Js": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "local_gates_agree": true,
+      "scientific_sources_identical": true,
+      "original_raw_sha256": "93c445753fc22b4d943ba3dd92f52bb254f1748e23b85aadadcbccfa560a95fb",
+      "isolated_raw_sha256": "6f59ad0f578829b46453b9af2f5ae384bdba85ae805b115586a1004c8201438f",
+      "original_agama_library_sha256": "f6c04e4941aff3538d3bb08f6446d731b788d85406af94092cf856fbd139d000",
+      "isolated_agama_library_sha256": "cf674dd10a4d148a305da88fbbf989aff85ca3dd95dfe8e47e8035e4ffbb3a16"
+    },
+    {
+      "case": "halfcadence-163840-noisy",
+      "arrays": {
+        "fast_times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "fast_paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 3.5538369891341404e-07
+        },
+        "fast_events": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "particle_ids": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_actions_angles": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_reduced_bar_Lz": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 4.052314039881821e-15
+        },
+        "times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 3.5538369891341404e-07
+        },
+        "final_bar_Lz": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 1.1950054678439015e-09
+        },
+        "final_noise_Lz": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 1.333377852574813e-13
+        },
+        "final_noise_energy": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 4.723443858267729e-13
+        },
+        "final_work": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 5.839716946771586e-10
+        },
+        "final_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 1.8889770240226866e-06
+        },
+        "final_noise_Js": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "local_gates_agree": true,
+      "scientific_sources_identical": true,
+      "original_raw_sha256": "056e34d10058b9e805b7753b9c1fe01b65b37ee7c4c7e2213f3ae3e75cb43056",
+      "isolated_raw_sha256": "e0ef5b7c1930fca92823183778a296789c8eab6dcfba9ade4ea45067f296570f",
+      "original_agama_library_sha256": "f6c04e4941aff3538d3bb08f6446d731b788d85406af94092cf856fbd139d000",
+      "isolated_agama_library_sha256": "cf674dd10a4d148a305da88fbbf989aff85ca3dd95dfe8e47e8035e4ffbb3a16"
+    },
+    {
+      "case": "halfcadence-163840-smooth",
+      "arrays": {
+        "fast_times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "fast_paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 5.876788611303141e-09
+        },
+        "fast_events": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "particle_ids": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_actions_angles": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_reduced_bar_Lz": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 4.052314039881821e-15
+        },
+        "times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 5.876788611303141e-09
+        },
+        "final_bar_Lz": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 2.950211877095557e-10
+        },
+        "final_noise_Lz": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_noise_energy": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_work": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 1.445100636376928e-10
+        },
+        "final_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 8.012399196344333e-07
+        },
+        "final_noise_Js": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "local_gates_agree": true,
+      "scientific_sources_identical": true,
+      "original_raw_sha256": "180f20dc052bf5ad468ac9ca8a55b8471d8187301798367328dda96fcc9178bb",
+      "isolated_raw_sha256": "ceadd1b8afc691b31a76f1598bb91ec4d9f9a9aaaf4fe41784250860e5e6808b",
+      "original_agama_library_sha256": "f6c04e4941aff3538d3bb08f6446d731b788d85406af94092cf856fbd139d000",
+      "isolated_agama_library_sha256": "cf674dd10a4d148a305da88fbbf989aff85ca3dd95dfe8e47e8035e4ffbb3a16"
+    },
+    {
+      "case": "halfcadence-65536-noisy",
+      "arrays": {
+        "fast_times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "fast_paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 4.254344579922298e-08
+        },
+        "fast_events": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "particle_ids": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_actions_angles": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_reduced_bar_Lz": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 3.823330541052883e-15
+        },
+        "times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 4.5099667111969666e-08
+        },
+        "final_bar_Lz": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 1.624182701569568e-08
+        },
+        "final_noise_Lz": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 1.270095140171179e-13
+        },
+        "final_noise_energy": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 1.141309269314661e-12
+        },
+        "final_work": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 7.950254023473755e-09
+        },
+        "final_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 8.768890254695627e-06
+        },
+        "final_noise_Js": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "local_gates_agree": true,
+      "scientific_sources_identical": true,
+      "original_raw_sha256": "23bbd84e4f7149ea7e1aa3de898dbfad1bc91041fabbef69b2896d9267906a69",
+      "isolated_raw_sha256": "1730d4b6063f2a53d72585cfd2d631ec92c9ba8539da4bfe3b61cc141b7ea1bf",
+      "original_agama_library_sha256": "f6c04e4941aff3538d3bb08f6446d731b788d85406af94092cf856fbd139d000",
+      "isolated_agama_library_sha256": "cf674dd10a4d148a305da88fbbf989aff85ca3dd95dfe8e47e8035e4ffbb3a16"
+    },
+    {
+      "case": "halfcadence-65536-smooth",
+      "arrays": {
+        "fast_times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "fast_paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 3.458230445063659e-09
+        },
+        "fast_events": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "particle_ids": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_actions_angles": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_reduced_bar_Lz": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 3.823330541052883e-15
+        },
+        "times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 3.4506174306780935e-09
+        },
+        "final_bar_Lz": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 3.8997151102955485e-10
+        },
+        "final_noise_Lz": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_noise_energy": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_work": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 1.908795284376666e-10
+        },
+        "final_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 3.48709475406217e-07
+        },
+        "final_noise_Js": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "local_gates_agree": true,
+      "scientific_sources_identical": true,
+      "original_raw_sha256": "6825288bdfb39d03f25357e1a1721c1c39b6877059737731dfadbc31f8a7ec2a",
+      "isolated_raw_sha256": "076cfeec63bb336e63de260ad3ddd7ce2ea169117d2fe9e62d04052b37cd2d4f",
+      "original_agama_library_sha256": "f6c04e4941aff3538d3bb08f6446d731b788d85406af94092cf856fbd139d000",
+      "isolated_agama_library_sha256": "cf674dd10a4d148a305da88fbbf989aff85ca3dd95dfe8e47e8035e4ffbb3a16"
+    },
+    {
+      "case": "halfcadence-98304-noisy",
+      "arrays": {
+        "fast_times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "fast_paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 1.4656540431312592e-07
+        },
+        "fast_events": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "particle_ids": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_actions_angles": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_reduced_bar_Lz": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 4.773959005888173e-15
+        },
+        "times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 1.5391365053296635e-07
+        },
+        "final_bar_Lz": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 1.0452650385864293e-09
+        },
+        "final_noise_Lz": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 1.2856382625159313e-13
+        },
+        "final_noise_energy": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 4.4481085481606897e-13
+        },
+        "final_work": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 5.116498908580569e-10
+        },
+        "final_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 2.1698016244471596e-06
+        },
+        "final_noise_Js": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "local_gates_agree": true,
+      "scientific_sources_identical": true,
+      "original_raw_sha256": "0aedc002cd53cde0d7e281d16b974423a4fd019b747a82bd39404da88aab04e3",
+      "isolated_raw_sha256": "4848dfa72dd30001b46032bb98292a65e3ee5f4031785c7684aa59d8fd9e9b2f",
+      "original_agama_library_sha256": "f6c04e4941aff3538d3bb08f6446d731b788d85406af94092cf856fbd139d000",
+      "isolated_agama_library_sha256": "cf674dd10a4d148a305da88fbbf989aff85ca3dd95dfe8e47e8035e4ffbb3a16"
+    },
+    {
+      "case": "halfcadence-98304-smooth",
+      "arrays": {
+        "fast_times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "fast_paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 2.9771921910420884e-08
+        },
+        "fast_events": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "particle_ids": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_actions_angles": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_reduced_bar_Lz": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 4.773959005888173e-15
+        },
+        "times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 2.9579532156986943e-08
+        },
+        "final_bar_Lz": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 9.883099906168868e-09
+        },
+        "final_noise_Lz": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_noise_energy": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_work": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 4.837220140066489e-09
+        },
+        "final_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 5.6853560872482944e-06
+        },
+        "final_noise_Js": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "local_gates_agree": true,
+      "scientific_sources_identical": true,
+      "original_raw_sha256": "edbb9542343ed129fdabe1b044d1c43db3e4d11255ced2db0d8e70d2de750787",
+      "isolated_raw_sha256": "bf39280597ff5610937407c09f483c4a03dee2a7fda1f9176fff2f8fefbee660",
+      "original_agama_library_sha256": "f6c04e4941aff3538d3bb08f6446d731b788d85406af94092cf856fbd139d000",
+      "isolated_agama_library_sha256": "cf674dd10a4d148a305da88fbbf989aff85ca3dd95dfe8e47e8035e4ffbb3a16"
+    },
+    {
+      "case": "halfstep-noisy",
+      "arrays": {
+        "fast_times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "fast_paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 4.637599977652673e-08
+        },
+        "fast_events": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "particle_ids": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_actions_angles": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_reduced_bar_Lz": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 2.9976021664879227e-15
+        },
+        "times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 4.5140987323111226e-08
+        },
+        "final_bar_Lz": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 8.635485109105556e-10
+        },
+        "final_noise_Lz": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 9.026113190202523e-14
+        },
+        "final_noise_energy": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 9.616196727790793e-13
+        },
+        "final_work": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 4.2268570880823336e-10
+        },
+        "final_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 2.072729850310928e-06
+        },
+        "final_noise_Js": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "local_gates_agree": true,
+      "scientific_sources_identical": true,
+      "original_raw_sha256": "d63ccb5fdfbe97ff431825e64c3b7300996933bc586188e776f0e917e1c00695",
+      "isolated_raw_sha256": "e871f3987c9f2278250fd80104386050975a6e8a9f7bc197aea17d484a1c01c9",
+      "original_agama_library_sha256": "f6c04e4941aff3538d3bb08f6446d731b788d85406af94092cf856fbd139d000",
+      "isolated_agama_library_sha256": "cf674dd10a4d148a305da88fbbf989aff85ca3dd95dfe8e47e8035e4ffbb3a16"
+    },
+    {
+      "case": "halfstep-smooth",
+      "arrays": {
+        "fast_times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "fast_paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 4.484756122025146e-09
+        },
+        "fast_events": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "particle_ids": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_actions_angles": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_reduced_bar_Lz": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 2.9976021664879227e-15
+        },
+        "times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 6.254532003424629e-09
+        },
+        "final_bar_Lz": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 9.687288241543024e-10
+        },
+        "final_noise_Lz": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_noise_energy": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_work": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 4.741641520611753e-10
+        },
+        "final_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 4.480458879463356e-07
+        },
+        "final_noise_Js": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "local_gates_agree": true,
+      "scientific_sources_identical": true,
+      "original_raw_sha256": "01c9423e75f19c66bba050ee1214c8e7290197bb018a46c1f983480ac1a1fdc5",
+      "isolated_raw_sha256": "5ec7bfb967b1ef996f84e3d0bc8bf174fe3cf3f0f79f1b7e317e3efaf37d1641",
+      "original_agama_library_sha256": "f6c04e4941aff3538d3bb08f6446d731b788d85406af94092cf856fbd139d000",
+      "isolated_agama_library_sha256": "cf674dd10a4d148a305da88fbbf989aff85ca3dd95dfe8e47e8035e4ffbb3a16"
+    },
+    {
+      "case": "unforced-noisy",
+      "arrays": {
+        "fast_times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "fast_paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 3.869586817639714e-09
+        },
+        "fast_events": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "particle_ids": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_actions_angles": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_reduced_bar_Lz": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 2.7755575615628914e-15
+        },
+        "times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 3.500348462470715e-09
+        },
+        "final_bar_Lz": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_noise_Lz": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 7.349676423018536e-14
+        },
+        "final_noise_energy": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 1.142419492339286e-13
+        },
+        "final_work": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 5.376834671944053e-09
+        },
+        "final_noise_Js": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "local_gates_agree": true,
+      "scientific_sources_identical": true,
+      "original_raw_sha256": "ef0a336cbc7eb07e09fdcf08a9f06af2d582db0f6c2326ca03fc05d66e975b2c",
+      "isolated_raw_sha256": "b5cda4c556cfd474994eb7a397f34effab92f4ebf8723fb598e020a8b8a1106a",
+      "original_agama_library_sha256": "f6c04e4941aff3538d3bb08f6446d731b788d85406af94092cf856fbd139d000",
+      "isolated_agama_library_sha256": "cf674dd10a4d148a305da88fbbf989aff85ca3dd95dfe8e47e8035e4ffbb3a16"
+    },
+    {
+      "case": "unforced-smooth",
+      "arrays": {
+        "fast_times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "fast_paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 3.729296395998949e-09
+        },
+        "fast_events": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "particle_ids": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_actions_angles": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_reduced_bar_Lz": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "initial_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 2.7755575615628914e-15
+        },
+        "times": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "paths": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 3.3393572351769762e-09
+        },
+        "final_bar_Lz": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_noise_Lz": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_noise_energy": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_work": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "final_cartesian": {
+          "bitwise_identical": false,
+          "maximum_absolute_difference": 3.986929286714513e-09
+        },
+        "final_noise_Js": {
+          "bitwise_identical": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "local_gates_agree": true,
+      "scientific_sources_identical": true,
+      "original_raw_sha256": "2bcbb340fd3bc72fbf05226dc34247c54df6431d6c49035e88d9a3a311f35e8b",
+      "isolated_raw_sha256": "05b1e2f79c226ff9f29b6c757774e047e071f533af08dfa61864be514090a34a",
+      "original_agama_library_sha256": "f6c04e4941aff3538d3bb08f6446d731b788d85406af94092cf856fbd139d000",
+      "isolated_agama_library_sha256": "cf674dd10a4d148a305da88fbbf989aff85ca3dd95dfe8e47e8035e4ffbb3a16"
+    }
+  ],
+  "isolated_scientific_core_hours": 12.291035440277778,
+  "original_analysis_sha256": "9fd2b6fa554801065a53a5402ec79aeea4b8d6634c8a2289d45c5bf5b17e31bb",
+  "isolated_analysis_sha256": "e2e117fc8bc9619c843a66f6c7eab52490927aceee868167a5a60ccb2654f60b",
+  "comparison_source_sha256": "bc70c80b1703821d5d80d32024e0eeae9f4498d14ac473d7610119eae43bb66b",
+  "scope": "Fresh public source copy using the existing separate pinned environment and independently built dependency. Same-seed reproducibility, not new physical evidence or another statistical sample. Cartesian differences are reported; no unmeasured bitwise equality or new build is claimed."
+}

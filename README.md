@@ -55,8 +55,8 @@ statistical replication. Reported uncertainty across control batches uses four
 independent batches, not overlapping time increments as independent samples.
 
 The moving-resonance release below includes provisional measurements and their
-explicit qualification limits. A genuinely new-condition3D prediction remains
-outstanding; no full-halo or dark-matter conclusion follows from these tests.
+explicit qualification limits. The new-condition 3D magnitude prediction remains
+unresolved; no full-halo or dark-matter conclusion follows from these tests.
 
 ## Reproduce the provisional resonance response
 
@@ -114,9 +114,13 @@ individual state arrays retain small differences documented in the receipt.
 This is a numerical and physical-model benchmark, not a live-halo or SIDM result.
 
 The same [transfer package](transfer/README.md#reproduce-the-fixed-independent-cadence-confirmation)
-now includes the fixed twenty-case independent cadence confirmation. Its short
-unforced execution and known-value analysis controls pass; a full clean rerun of
-that larger matrix is not claimed.
+now reproduces the complete fixed twenty-case independent cadence confirmation.
+A fresh public-source copy completed in 12.291 CPU hours using the existing separate
+pinned environment and independently built dependency. All 156 declared scalar
+comparisons pass, with maximum difference 5.48e-13; the required initial-state,
+ID, time and event arrays match exactly. Cartesian states retain small differences.
+The failed numerical qualification is reproduced, not repaired. See the
+[complete outcome and array comparison](transfer/INDEPENDENT_CONFIRMATION_REPRODUCTION_OUTCOME.md).
 
 The separate six-case timestep/cadence rerun also reproduces all decisions in
 2.636CPUhours. Its small timestep shifts pass; its cadence intervals still fail.

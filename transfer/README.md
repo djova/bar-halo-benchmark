@@ -117,9 +117,14 @@ The original full twenty-case calculation has finished and **fails** the unchang
 noise-cadence interval criterion. Both timestep intervals and all local/unforced
 checks pass. See [the outcome and stopping decision](INDEPENDENT_CADENCE_OUTCOME.md)
 and [the full-precision reference](reference/independent-cadence-analysis.json).
-The conditional physical extension will not run. The new complete standalone
-rerun is pending; only its previously documented smoke/control execution is
-verified at present.
+The conditional physical extension will not run. A complete standalone rerun
+now reproduces all 156 declared scalar comparisons, with largest difference
+5.473281163958631e-13 against the unchanged 1e-9 tolerance. It used 12.291 CPU hours
+in a fresh public-source copy with the existing separate pinned environment and
+previously independently built dependency. This is the same seeded sample,
+not a new physical experiment or another dependency build. The original failed
+qualification is unchanged. See the [complete outcome](INDEPENDENT_CONFIRMATION_REPRODUCTION_OUTCOME.md)
+and [full-precision scalar/array receipt](reference/clean-confirmation-reproduction.json).
 
 On Linux, using the same pinned environment and patched dependency:
 
@@ -153,13 +158,10 @@ python transfer/check_confirmation.py
 Those disposable fixtures check wall/CPU stops, external-source refusal,
 descendant cleanup and a known reduced-only shift that must fail the discrepancy
 gate even when the raw 3D shift passes. They are software checks, never simulation
-evidence. An isolated public-source copy passes both real short unforced checks,
-using the previously independently rebuilt dependency and pinned environment.
-This is not a full twenty-case clean reproduction or a new dependency build.
-The original confirmation is complete and failed its numerical qualification;
-the complete same-sample standalone reproduction is now running. Its terminal
-reference comparison is still pending. `reference_comparison: null` means no such
-comparison, and reproducing a failed qualification does not change that decision.
+evidence. The earlier short unforced executions are separate smoke checks. The full
+20-case reproduction reported above is now complete. `reference_comparison: null`
+means no complete comparison; a smoke result cannot stand in for one. Reproducing
+a failed qualification does not change that scientific decision.
 
 The [unforced domain readback](calibration/domain/README.md) regenerates the coefficient ranges, initial-gradient comparison and retained harmonic spectrum from the original public inputs in about one CPU second. It introduces no new trajectory or physical qualification.
 
@@ -180,3 +182,24 @@ python transfer/scripts/noise_sweep/plot_cadence_confirmation.py --analysis repr
 The two comparison panels use the same normalized horizontal scale. Original
 and independent samples stay separate; no path is removed from the variance
 curves. The archived figures are in `reference/confirmation-figures/`.
+
+## Compare saved arrays from two complete runs
+
+The [array comparator](compare_arrays.py) checks all 300 saved arrays, their
+checksums, shapes, dtypes, finite values, settings and decisions. It requires
+byte-identical initial action–angle states, particle IDs and recording times/events,
+and reports every other component-wise difference without claiming bitwise
+Cartesian equivalence. It also applies the unchanged 156 scalar comparisons.
+Given two complete runs of the same frozen design:
+
+```sh
+python transfer/compare_arrays.py --original first-run/cases --reference-analysis first-run/analysis/result.json --isolated second-run --out array-comparison
+```
+
+This command does not need the experiment's private archive: both inputs can be
+your own completed reproductions. It refuses incomplete or differently configured
+matrices. Its public adaptation differs from the project comparator only in the
+standalone import path and reproduces every comparison exactly. In the recorded
+comparison, all 100 required identity/time arrays match, and 164 of 300 arrays are
+bitwise identical. The largest final Cartesian-component difference is 2.44e-5
+in model units; this is not a relative error or a physical-model accuracy bound.

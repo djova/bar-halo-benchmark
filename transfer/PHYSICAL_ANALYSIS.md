@@ -3,8 +3,9 @@
 This is analysis preparation. The original independent numerical confirmation
 is complete and failed its noise-cadence interval criteria. The conditional
 524,288-ID physical extension will not run in this campaign. The separate
-same-sample reproduction of that confirmation is still running. No physical
-reference result or full-population reproduction is claimed here.
+same-sample reproduction of that confirmation has completed and reproduces the
+failed numerical qualification. No physical reference result or full-population
+reproduction is claimed here.
 
 The unchanged prepared analyzer and its original assembly contract are now public:
 `scripts/noise_sweep/analyze_physical_transfer.py` and
