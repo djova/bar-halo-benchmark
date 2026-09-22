@@ -1,0 +1,83 @@
+{
+  "rows": [
+    {
+      "sigma": 8,
+      "s": 0,
+      "T": 20,
+      "contrast": 0.003661363643065652,
+      "initial_density_at_resonance": 0.04943356201355225,
+      "density_normalized_contrast": 0.07406635277591135,
+      "collisionless_quadrature_change": 3.0717786536752813e-06,
+      "noisy_grid_change": 6.678685382510707e-17,
+      "all_local_and_unforced_gates": true,
+      "strict_refinement_pass": true,
+      "initial_slope": -0.016531804196572842,
+      "slope_at_final_resonance": -0.016531804196572842
+    },
+    {
+      "sigma": 8,
+      "s": 0.4,
+      "T": 20,
+      "contrast": -0.026741288734433155,
+      "initial_density_at_resonance": 0.04943356201355225,
+      "density_normalized_contrast": -0.5409541138690757,
+      "collisionless_quadrature_change": 0.000288272088352734,
+      "noisy_grid_change": 6.938893903907228e-17,
+      "all_local_and_unforced_gates": true,
+      "strict_refinement_pass": false,
+      "initial_slope": -0.016531804196572842,
+      "slope_at_final_resonance": -0.14153180419657285
+    },
+    {
+      "sigma": 16,
+      "s": 0,
+      "T": 20,
+      "contrast": 0.0018775633227177085,
+      "initial_density_at_resonance": 0.024076723722266505,
+      "density_normalized_contrast": 0.07798250893169949,
+      "collisionless_quadrature_change": 1.5331808918030154e-06,
+      "noisy_grid_change": 1.0495077029659683e-16,
+      "all_local_and_unforced_gates": true,
+      "strict_refinement_pass": true,
+      "initial_slope": -0.016531804196572842,
+      "slope_at_final_resonance": -0.016531804196572842
+    },
+    {
+      "sigma": 16,
+      "s": 0.4,
+      "T": 20,
+      "contrast": -0.0067041004440547905,
+      "initial_density_at_resonance": 0.024076723722266505,
+      "density_normalized_contrast": -0.2784473718845202,
+      "collisionless_quadrature_change": 0.00018550428339770414,
+      "noisy_grid_change": 5.585809592645319e-16,
+      "all_local_and_unforced_gates": true,
+      "strict_refinement_pass": false,
+      "initial_slope": -0.016531804196572842,
+      "slope_at_final_resonance": -0.04778180419657284
+    }
+  ],
+  "source_sha256": {
+    "results/noise-sweep/population-01/characteristics-w8-s0-level0/result.json": "6eb01c94afae23640d855b189eff3778db4f690e8f7be6c9761144f661c59b7d",
+    "results/noise-sweep/population-01/characteristics-w8-s0-level1/result.json": "598f40dc05ba8c723b75d23ee2c77e14b1e7c7da1993520fad36738cb4b0cd6c",
+    "results/noise-sweep/population-01/distribution-w8-s0-level0/result.json": "10533e9f2e2723d62323ca2baaaa92ad335db6526b17771d42d9e6172c1ee847",
+    "results/noise-sweep/population-01/distribution-w8-s0-level1/result.json": "f6feb6e1be51f5b107d33bc3606bdd14d3887e590a17fcbb639bf4f7fc65b1ee",
+    "results/noise-sweep/population-01/unforced-w8-s0/result.json": "83c3135cfe1abfd03e7fb2ecd8cb51c0de29c0e76259dff154632b2434981ec6",
+    "results/noise-sweep/positive-01/fine-s0.4/result.json": "ad42b7d4d2370d93b5b3b772365ca0902657867b9f7c63652e7c90962d0f9985",
+    "results/noise-sweep/population-01/characteristics-w8-s0.4-level1/result.json": "e73dab0ac19cd1c76c101f8c0fb16dda5e6ff18abb64d87ff23bc937cb72cb35",
+    "results/noise-sweep/map-pilot-01/forced/result.json": "c5d0049f91cb1741a3c9b2f45444a4302a81a222a6677a5cdfb3bc5b4ab7497f",
+    "results/noise-sweep/map-01/fine-s0.4-eta0.1/result.json": "70855e276685779270a98e535333e9eb3c0f0ecd173ee81bdd258b0a7026d3b9",
+    "results/noise-sweep/population-01/unforced-w8-s0.4/result.json": "a624ab756dfbd137e9d23a1302ad51d604eb6f1c7edf02544d680822fd20350e",
+    "results/noise-sweep/population-01/characteristics-w16-s0-level0/result.json": "68811c585506fa42624d3d2d7039210d6fa62b897338632e066e2d196456ba10",
+    "results/noise-sweep/population-01/characteristics-w16-s0-level1/result.json": "3675eef4f5f30c7dd19dfae0dbbd9b1ec311164fc4768b2694fda1380c2a5236",
+    "results/noise-sweep/population-01/distribution-w16-s0-level0/result.json": "21357d27fa4e2d1579e787dd76696499f51eb9cddbd4bbf16bbb46ea0c2d217c",
+    "results/noise-sweep/population-01/distribution-w16-s0-level1/result.json": "4511792af825a3e361c4371d612987c7c8f4e99606d2f3a96ed02c7733f8f01d",
+    "results/noise-sweep/population-01/unforced-w16-s0/result.json": "2efa77e79d2192a8e464d7f64b599630bfa646825f2bfe5c5a7e49319ee953cc",
+    "results/noise-sweep/population-01/characteristics-w16-s0.4-level0/result.json": "5cdbd35db1ac50563bcda0d932276a5a1aef6c531b8a5c4700f65edcff37f859",
+    "results/noise-sweep/population-01/characteristics-w16-s0.4-level1/result.json": "87d9abab0327d86fb7284ca4de7a063d06292cbb014b20c2d76b7c1ca5651e71",
+    "results/noise-sweep/population-01/distribution-w16-s0.4-level0/result.json": "768489f5c7fba62bb3d209f0c313a86cab9b3d92a1fb36b7f3274002d70d031a",
+    "results/noise-sweep/population-01/distribution-w16-s0.4-level1/result.json": "57312e833b62d95209cd0342b228908d6ce9993f94e660a820ab788dfa56b926",
+    "results/noise-sweep/population-01/unforced-w16-s0.4/result.json": "3b70e53f0a9103c6d4153a378320d6978eb4f899724012b026b04698d0310d8e"
+  },
+  "scope": "New finite-tracer-population measurement at common T=20. Only the initial local log slope is matched; curvature and population normalization change. Moving rows miss the unchanged5e-5 quadrature target. The data support population-shape sensitivity, not a universal response law."
+}

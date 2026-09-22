@@ -1,0 +1,23 @@
+--- a/src/actions_isochrone.cpp
++++ b/src/actions_isochrone.cpp
+@@ -34,9 +34,9 @@
+         double chi  = math::atan2(pointCyl.z * point.vphi, -point.vtheta * point.r);
+         double eta  = math::atan2(k1, k2);                         // eccentric anomaly
+         double sineta     = k1 / sqrt(k1*k1 + k2*k2);        // sin(eta)
+-        double tanhalfeta = eta==0 ? 0 : -k2/k1 + 1/sineta;  // tan(eta/2)
++        double tanhalfeta = std::tan(0.5 * eta);  // tan(eta/2)
+         ang->thetar   = math::wrapAngle(eta - sineta * ecc );
+-        ang->thetaz   = math::wrapAngle(psi + 0.5 * (1 + L/L1) * (ang->thetar - (eta<0 ? 2*M_PI : 0))
++        ang->thetaz   = math::wrapAngle(psi + 0.5 * (1 + L/L1) * (eta - sineta * ecc)
+                       - math::atan(fac1 * tanhalfeta) - math::atan(fac2 * tanhalfeta) * L/L1 );
+         ang->thetaphi = math::wrapAngle(point.phi - chi + math::sign(Lz) * ang->thetaz);
+         if(pointCyl.z==0 && pointCyl.vz==0)  // if Jz=0, the value of theta_z is meaningless
+@@ -78,7 +78,7 @@
+     double sineta, coseta, sinpsi, cospsi;
+     math::sincos(eta, sineta, coseta);
+     double ra = 1 - ecc * coseta;   // Kepler problem:  r / a = 1 - e cos(eta)
+-    double tanhalfeta = coseta==-1 ? INFINITY : sineta / (1 + coseta);
++    double tanhalfeta = std::tan(0.5 * eta);
+     double thetar   = aa.thetar - (eta>M_PI ? 2*M_PI : 0);
+     double psi1     = math::atan(fac1 * tanhalfeta);
+     double psi2     = math::atan(fac2 * tanhalfeta);

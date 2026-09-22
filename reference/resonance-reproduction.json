@@ -1,0 +1,52 @@
+{
+  "records": [
+    {
+      "s": 0.0,
+      "eta": 0.1,
+      "distribution_contrast": 0.004397165652257951,
+      "batches": [
+        0.01148470058297967,
+        0.00722107045680883,
+        0.00012421026717949785,
+        0.0053990291265849115,
+        0.0007599053077178312,
+        0.0026541996445980896,
+        0.0067712152500397724,
+        0.010815834667533396
+      ],
+      "mean": 0.00565377066293025,
+      "se": 0.0015115037179131807,
+      "ci95": [
+        0.0020796323160760803,
+        0.009227909009784421
+      ],
+      "archived_strict_baseline_qualified": true
+    },
+    {
+      "s": 0.4,
+      "eta": 0.1,
+      "distribution_contrast": -0.02702956082278596,
+      "batches": [
+        -0.013164440386876294,
+        -0.017744212687585997,
+        -0.02364801787493301,
+        -0.022339601664750353,
+        -0.04458813329026079,
+        -0.009968513881441682,
+        -0.013839597596377748,
+        -0.02397037321514492
+      ],
+      "mean": -0.02115786132467135,
+      "se": 0.003823777846067163,
+      "ci95": [
+        -0.030199659149918307,
+        -0.01211606349942439
+      ],
+      "archived_strict_baseline_qualified": false
+    }
+  ],
+  "scientific_cpu_seconds": 172.633475617,
+  "wall_seconds": 177.8560216819169,
+  "reference_values_reproduced": true,
+  "scope": "Finite Gaussian tracer population. This command reruns central measurements and independent stochastic paths; archived quadrature certification comes from separate refinements, not rerun here. The s=.4 collisionless reference missed its strict tolerance. No full-halo or SIDM claim."
+}

@@ -32,6 +32,20 @@ are fixed for reproducibility; a repeat with those seeds is not independent
 statistical replication. Reported uncertainty across control batches uses four
 independent batches, not overlapping time increments as independent samples.
 
-The planned moving-resonance experiment will be added only after its protocols,
-numerical independence and outcomes are reviewed. There is no precomputed claim
-that noise strengthens or weakens a slowing bar.
+The moving-resonance release below includes provisional measurements and their
+explicit qualification limits. A genuinely new-condition3D prediction remains
+outstanding; no full-halo or dark-matter conclusion follows from these tests.
+
+## Reproduce the provisional resonance response
+
+`python reproduce_resonance.py --out reproduced-resonance` regenerates two central
+contrasts from positive initial populations and32independent paired stochastic
+runs. It requires only the same pinned NumPy/Matplotlib environment and normally
+takes a few minutes on one CPU. It writes actual saved histories, full summaries
+and `response.png`. No initial conditions or private arrays are required.
+
+The s=0.4 collisionless reference missed its separately archived strict quadrature
+tolerance. The command reproduces that reported estimate; it does not turn the
+failed refinement into a success. The full map, population-width check and new
+3D transfer have their own protocols. These finite Gaussian tracer populations
+are not full halo DFs, and the imposed white action noise is not physical SIDM.
