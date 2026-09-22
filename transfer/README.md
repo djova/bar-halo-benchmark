@@ -39,7 +39,12 @@ The analysis retains raw3D means, paired reduced means, covariance, uncertainty,
 actual numerical changes and the original failed caseA prerequisite. It will not
 silently run caseA or change the frozen adequacy band. The clean dependency build
 passes the independent80-digit coordinate test and the short unforced smoke.
-The complete isolated eight-case rerun is in progress; the smoke check does not
-prove that the full experiment has reproduced. The first archived3D experiment
+The complete isolated eight-case rerun also passes. From a fresh dependency
+build and environment, the seven checked means and numerical shifts differ by
+at most1.66e-13, below the fixed1e-9 tolerance; every gate and decision agrees.
+It uses2.39scientific core-hours. Individual trajectories are not bitwise
+identical: the largest final Cartesian-component difference is1.93e-6. See
+`reference/clean-reproduction.json` for every array comparison. The reference
+checker rejects missing cases or controls, not just disagreeing means. The first archived3D experiment
 is numerically unqualified: reproducing that failure is an intended outcome,
 not something this command silently repairs.

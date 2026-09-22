@@ -2,6 +2,7 @@
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 import argparse, datetime, hashlib, json, os, subprocess, sys
+from verify_reference import verify
 
 ROOT=Path(__file__).resolve().parent
 
@@ -58,6 +59,11 @@ def main():
         cases=list(pool.map(run,variants))
     if not a.smoke and not (out/'analysis').exists():
         subprocess.run([sys.executable,str(ROOT/'scripts/noise_sweep/analyze_transfer.py'),'--root',str(out),'--forecast',str(ROOT/'forecast.json'),'--case','B','--out',str(out/'analysis')],cwd=ROOT,env=env,check=True)
+    if not a.smoke:
+        comparison=verify(json.loads((out/'analysis/result.json').read_text()),
+                          json.loads((ROOT/'reference/initial-transfer-analysis.json').read_text()))
+        verification='reference-verification-'+datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')+'.json'
+        with (out/verification).open('x') as f:f.write(json.dumps(comparison,indent=2)+'\n')
     receipt='reproduction.json' if not a.resume else 'reproduction-resumed-'+datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')+'.json'
     (out/receipt).write_text(json.dumps(dict(cases=cases,smoke_only=a.smoke,source_sha256=sources,resumed=a.resume),indent=2)+'\n')
     print(json.dumps(cases,indent=2))

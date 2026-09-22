@@ -1,0 +1,73 @@
+{
+  "records": [
+    {
+      "name": "stationary",
+      "s": 0.0,
+      "eta": 0.1,
+      "T": 20,
+      "distribution_contrast": 0.0010599440399923477,
+      "mean": 0.0010507118122610373,
+      "se": 1.7365396877159735e-05,
+      "ci95": [
+        0.0010096491736667718,
+        0.0010917744508553027
+      ],
+      "batches": [
+        0.0010084039984580647,
+        0.0010045592406104486,
+        0.0011481391028308966,
+        0.0010224823763867056,
+        0.0010315474343006573,
+        0.0010413728390337453,
+        0.0010513254175280675,
+        0.0010978640889397135
+      ],
+      "reference_errors": {
+        "distribution": 0.0,
+        "batch": 0.0,
+        "interval": 0.0
+      }
+    },
+    {
+      "name": "moving",
+      "s": 0.25,
+      "eta": 0.1,
+      "T": 20,
+      "distribution_contrast": -0.00804389584611969,
+      "mean": -0.008844251685510621,
+      "se": 0.0005306949499190288,
+      "ci95": [
+        -0.010099145834286975,
+        -0.007589357536734268
+      ],
+      "batches": [
+        -0.007586474928496727,
+        -0.006305949484780894,
+        -0.009034542490015035,
+        -0.00946498239411421,
+        -0.008696349817948104,
+        -0.008721179903161555,
+        -0.011469084860720999,
+        -0.00947544960484744
+      ],
+      "reference_errors": {
+        "distribution": 2.7755575615628914e-17,
+        "batch": 2.0816681711721685e-17,
+        "interval": 6.938893903907228e-18
+      }
+    }
+  ],
+  "scientific_cpu_seconds": 2676.612989091,
+  "wall_seconds": 2680.229000297957,
+  "reference_values_reproduced": true,
+  "source_manifest": {
+    "reference.json": "5fad77867b176a0a3816d0d28d0026748fd79e5fff9d5e14fe88f0a0791dfcbb",
+    "MATCHED_STATIONARY.md": "977454f1ba9d82d8ad796b79c4971ed681af0f061c009b9ccfcdd31b323d4857",
+    "MOVING_PRECISION.md": "33da8453fd087a0ef052002ec4dd0403b17e49a553afffd2a425469c814eaf1b",
+    "benchmark/characteristic_endpoint.py": "955446c37f7c41ec3d53c6773f29151d8d12fe7d0c22d837d3264437f5e1129b",
+    "benchmark/characteristics.py": "15f6f2de767e1563ed7a30a9bb5301fbfb008f82c86ffdf7b5147881e1df44b3",
+    "benchmark/resonance.py": "3666138845cc675233ba8d269e7a6661b730567daa732fbf5bef2c40e7bfdbdf",
+    "scripts/noise_sweep/stationary_pairs.py": "9d79f5b31a8ee96f22320ca5309630554321e4c800ee95a381cf0fa687c54d25"
+  },
+  "scope": "Same-seed standalone reproduction, not an independent replication. Regenerates the matched positive-population estimates and independent sampling intervals; separate archived numerical refinements are not rerun by this command. No3D transfer, full-halo distribution or physical dark-matter claim."
+}

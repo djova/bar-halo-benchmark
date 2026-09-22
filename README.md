@@ -61,8 +61,11 @@ Allow roughly45minutes on one CPU. It writes full outputs and
 
 The exact scientific sources and protocols are in `matched/`. The command uses
 no private inputs and runs offline after installing the pinned dependencies.
-The independent clean reproduction is being verified; do not treat an untested
-package as already reproduced. Separate numerical-refinement matrices are
+A fresh isolated environment reproduced all28cases in44.7CPUminutes. Every
+batch, distribution contrast and interval agrees within2.8e-17, below the frozen
+1e-9 tolerance; all local gates pass. The full receipt is in
+`matched/clean-reproduction.json`. This verifies this command and its seeded
+inputs; it is not another independent physical sample. Separate numerical-refinement matrices are
 documented but not all rerun by this command. This reduced-model sign comparison
 does not qualify the3D prediction or a full-halo response.
 
@@ -83,5 +86,7 @@ The optional [transfer package](transfer/README.md) regenerates the original
 eight-case Cartesian experiment from seeds, with a pinned, separately built
 AGAMA/GSL dependency. It includes the full initial analysis as a reference,
 including the failed timestep qualification. The clean build, independent
-coordinate test and short unforced smoke pass; a full clean rerun is underway.
+coordinate test, short unforced smoke and complete eight-case clean rerun pass.
+All declared scalar differences are below1.66e-13 and every decision agrees;
+individual state arrays retain small differences documented in the receipt.
 This is a numerical and physical-model benchmark, not a live-halo or SIDM result.
