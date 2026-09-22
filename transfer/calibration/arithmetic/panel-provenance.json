@@ -1,0 +1,13 @@
+{
+  "input_sha256": {
+    "original": "88ba9517b9c37e6fd81a9ae638993c9a4509044d213b5e6f1d67885aca430076",
+    "rebuilt": "a52c409c6cc8029fdee5b1149037c2115810b8544c5bdc9ebdd7461ec85868d8"
+  },
+  "analysis_sha256": "017abf7fe2b2d5978dbb7852751d7435cea7226195d97e1f9c44cf116374e72e",
+  "source_sha256": "64b16a4c4958b7b3db29372a162fa3db1ec5c414a1e095ecbbdd31339245ee3b",
+  "files": {
+    "calibration-offset-check.png": "e36099d5813b518f06e17d04534f503c8d7ad8e74b64ece665a4d29d5978c7d3",
+    "calibration-action-scan.png": "44685ddba670828fb5ac5879acfe8201d3a0a448a6c3a64225b104622acd8245"
+  },
+  "scope": "Individual mobile-readable panels of the unchanged recorded comparison; no new evaluation or inference."
+}

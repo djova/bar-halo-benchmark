@@ -18,3 +18,10 @@ transfer requirements. The recorded original/rebuilt library hashes identify the
 archived pair; do not label a different build as either member of that pair.
 The high-precision operation is the logarithm of the returned binary64 DF values.
 It does not increase the accuracy of the dependency's DF construction.
+
+The website uses two larger panels that stack on phones. They show the same
+measurements as the combined figure. Regenerate them from the same inputs:
+
+```sh
+python transfer/calibration/arithmetic/plot_panels.py --root transfer/calibration/arithmetic --analysis transfer/calibration/arithmetic/result.json --out reproduced-arithmetic-panels
+```
