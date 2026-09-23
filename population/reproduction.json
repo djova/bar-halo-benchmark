@@ -1,0 +1,390 @@
+{
+  "validation": [
+    {
+      "id": "s0-seed94501",
+      "script": "scripts/population_response/cumulative_paths.py",
+      "arguments": [
+        "--table",
+        "inputs/halo-table",
+        "--s",
+        "0",
+        "--seed",
+        "94501",
+        "--allocation",
+        "inputs/allocation.json",
+        "--dt",
+        ".0125",
+        "--record-kernel"
+      ],
+      "wall_seconds": 1800
+    },
+    {
+      "id": "s0-seed94502",
+      "script": "scripts/population_response/cumulative_paths.py",
+      "arguments": [
+        "--table",
+        "inputs/halo-table",
+        "--s",
+        "0",
+        "--seed",
+        "94502",
+        "--allocation",
+        "inputs/allocation.json",
+        "--dt",
+        ".0125",
+        "--record-kernel"
+      ],
+      "wall_seconds": 1800
+    },
+    {
+      "id": "s0-seed94503",
+      "script": "scripts/population_response/cumulative_paths.py",
+      "arguments": [
+        "--table",
+        "inputs/halo-table",
+        "--s",
+        "0",
+        "--seed",
+        "94503",
+        "--allocation",
+        "inputs/allocation.json",
+        "--dt",
+        ".0125",
+        "--record-kernel"
+      ],
+      "wall_seconds": 1800
+    },
+    {
+      "id": "s0-seed94504",
+      "script": "scripts/population_response/cumulative_paths.py",
+      "arguments": [
+        "--table",
+        "inputs/halo-table",
+        "--s",
+        "0",
+        "--seed",
+        "94504",
+        "--allocation",
+        "inputs/allocation.json",
+        "--dt",
+        ".0125",
+        "--record-kernel"
+      ],
+      "wall_seconds": 1800
+    },
+    {
+      "id": "s0-seed94505",
+      "script": "scripts/population_response/cumulative_paths.py",
+      "arguments": [
+        "--table",
+        "inputs/halo-table",
+        "--s",
+        "0",
+        "--seed",
+        "94505",
+        "--allocation",
+        "inputs/allocation.json",
+        "--dt",
+        ".0125",
+        "--record-kernel"
+      ],
+      "wall_seconds": 1800
+    },
+    {
+      "id": "s0-seed94506",
+      "script": "scripts/population_response/cumulative_paths.py",
+      "arguments": [
+        "--table",
+        "inputs/halo-table",
+        "--s",
+        "0",
+        "--seed",
+        "94506",
+        "--allocation",
+        "inputs/allocation.json",
+        "--dt",
+        ".0125",
+        "--record-kernel"
+      ],
+      "wall_seconds": 1800
+    },
+    {
+      "id": "s0-seed94507",
+      "script": "scripts/population_response/cumulative_paths.py",
+      "arguments": [
+        "--table",
+        "inputs/halo-table",
+        "--s",
+        "0",
+        "--seed",
+        "94507",
+        "--allocation",
+        "inputs/allocation.json",
+        "--dt",
+        ".0125",
+        "--record-kernel"
+      ],
+      "wall_seconds": 1800
+    },
+    {
+      "id": "s0-seed94508",
+      "script": "scripts/population_response/cumulative_paths.py",
+      "arguments": [
+        "--table",
+        "inputs/halo-table",
+        "--s",
+        "0",
+        "--seed",
+        "94508",
+        "--allocation",
+        "inputs/allocation.json",
+        "--dt",
+        ".0125",
+        "--record-kernel"
+      ],
+      "wall_seconds": 1800
+    },
+    {
+      "id": "s.25-seed94501",
+      "script": "scripts/population_response/cumulative_paths.py",
+      "arguments": [
+        "--table",
+        "inputs/halo-table",
+        "--s",
+        ".25",
+        "--seed",
+        "94501",
+        "--allocation",
+        "inputs/allocation.json",
+        "--dt",
+        ".0125",
+        "--record-kernel"
+      ],
+      "wall_seconds": 1800
+    },
+    {
+      "id": "s.25-seed94502",
+      "script": "scripts/population_response/cumulative_paths.py",
+      "arguments": [
+        "--table",
+        "inputs/halo-table",
+        "--s",
+        ".25",
+        "--seed",
+        "94502",
+        "--allocation",
+        "inputs/allocation.json",
+        "--dt",
+        ".0125",
+        "--record-kernel"
+      ],
+      "wall_seconds": 1800
+    },
+    {
+      "id": "s.25-seed94503",
+      "script": "scripts/population_response/cumulative_paths.py",
+      "arguments": [
+        "--table",
+        "inputs/halo-table",
+        "--s",
+        ".25",
+        "--seed",
+        "94503",
+        "--allocation",
+        "inputs/allocation.json",
+        "--dt",
+        ".0125",
+        "--record-kernel"
+      ],
+      "wall_seconds": 1800
+    },
+    {
+      "id": "s.25-seed94504",
+      "script": "scripts/population_response/cumulative_paths.py",
+      "arguments": [
+        "--table",
+        "inputs/halo-table",
+        "--s",
+        ".25",
+        "--seed",
+        "94504",
+        "--allocation",
+        "inputs/allocation.json",
+        "--dt",
+        ".0125",
+        "--record-kernel"
+      ],
+      "wall_seconds": 1800
+    },
+    {
+      "id": "s.25-seed94505",
+      "script": "scripts/population_response/cumulative_paths.py",
+      "arguments": [
+        "--table",
+        "inputs/halo-table",
+        "--s",
+        ".25",
+        "--seed",
+        "94505",
+        "--allocation",
+        "inputs/allocation.json",
+        "--dt",
+        ".0125",
+        "--record-kernel"
+      ],
+      "wall_seconds": 1800
+    },
+    {
+      "id": "s.25-seed94506",
+      "script": "scripts/population_response/cumulative_paths.py",
+      "arguments": [
+        "--table",
+        "inputs/halo-table",
+        "--s",
+        ".25",
+        "--seed",
+        "94506",
+        "--allocation",
+        "inputs/allocation.json",
+        "--dt",
+        ".0125",
+        "--record-kernel"
+      ],
+      "wall_seconds": 1800
+    },
+    {
+      "id": "s.25-seed94507",
+      "script": "scripts/population_response/cumulative_paths.py",
+      "arguments": [
+        "--table",
+        "inputs/halo-table",
+        "--s",
+        ".25",
+        "--seed",
+        "94507",
+        "--allocation",
+        "inputs/allocation.json",
+        "--dt",
+        ".0125",
+        "--record-kernel"
+      ],
+      "wall_seconds": 1800
+    },
+    {
+      "id": "s.25-seed94508",
+      "script": "scripts/population_response/cumulative_paths.py",
+      "arguments": [
+        "--table",
+        "inputs/halo-table",
+        "--s",
+        ".25",
+        "--seed",
+        "94508",
+        "--allocation",
+        "inputs/allocation.json",
+        "--dt",
+        ".0125",
+        "--record-kernel"
+      ],
+      "wall_seconds": 1800
+    }
+  ],
+  "distribution": [
+    {
+      "id": "noisy-s0",
+      "script": "scripts/population_response/forward.py",
+      "arguments": [
+        "--table",
+        "inputs/halo-table",
+        "--s",
+        "0",
+        "--eta",
+        ".1",
+        "--J",
+        "96",
+        "--nj",
+        "6144",
+        "--nphi",
+        "256",
+        "--dt",
+        ".025",
+        "--end",
+        "20",
+        "--plateau",
+        "24",
+        "--cutoff",
+        "40"
+      ],
+      "wall_seconds": 1800
+    },
+    {
+      "id": "stationary-characteristic",
+      "script": "scripts/population_response/characteristic_remainder.py",
+      "arguments": [
+        "--table",
+        "inputs/halo-table",
+        "--s",
+        "0",
+        "--J",
+        "160",
+        "--nj",
+        "20480",
+        "--nphi",
+        "512",
+        "--dt",
+        ".025",
+        "--chunk",
+        "8"
+      ],
+      "wall_seconds": 2400
+    },
+    {
+      "id": "noisy-s.25",
+      "script": "scripts/population_response/forward.py",
+      "arguments": [
+        "--table",
+        "inputs/halo-table",
+        "--s",
+        ".25",
+        "--eta",
+        ".1",
+        "--J",
+        "96",
+        "--nj",
+        "6144",
+        "--nphi",
+        "256",
+        "--dt",
+        ".025",
+        "--end",
+        "20",
+        "--plateau",
+        "24",
+        "--cutoff",
+        "40"
+      ],
+      "wall_seconds": 1800
+    },
+    {
+      "id": "moving-characteristic",
+      "script": "scripts/population_response/characteristic_remainder.py",
+      "arguments": [
+        "--table",
+        "inputs/halo-table",
+        "--s",
+        ".25",
+        "--J",
+        "160",
+        "--nj",
+        "40960",
+        "--nphi",
+        "1024",
+        "--dt",
+        ".025",
+        "--chunk",
+        "8"
+      ],
+      "wall_seconds": 2400
+    }
+  ]
+}
