@@ -11,6 +11,7 @@ From this directory, with Python3.11 and Node22 available:
 python3.11 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 .venv/bin/python scripts/publication/generate.py --benchmark ..
+npm ci --prefix web
 node build.mjs
 python3 -m http.server 8795 --directory dist
 ```
@@ -30,5 +31,7 @@ their authors' terms; no blanket third-party license is granted here.
 This is AI-assisted work, maintained by djova, and not externally reviewed.
 Public issues are the criticism route; cite a claim or dataset ID.
 
-[Publication release audit and access fallbacks](RELEASE_AUDIT.md) records what
-was checked, including the remaining generic-client retrieval limitation.
+Release 2026-09-23.2 adds build-time KaTeX with local fonts and expandable numeric
+values. It preserves the previous 2026-09-23.1 source tag and all numerical
+results. The [reading audit and access fallback](RELEASE_AUDIT.md) documents the
+preceding release's checks and the generic-client retrieval limitation.

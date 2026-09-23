@@ -43,10 +43,10 @@ The recorded fresh-source accuracy rerun used **3.60 summed core-hours**; elapse
 
 ## Versions, authorship and reuse {#licenses}
 
-Numerical source: `cdb30b5b2f350d2f3de6831995b83f281fe2974e`. Tested accuracy rerun: `66143ebdb7441e17f4b44c23d15c2b35eb66841a`. Publication release: **2026-09-23.1**. Checksums identify the article's exact scientific inputs; publication changes do not silently revise their protocols.
+Numerical source: `cdb30b5b2f350d2f3de6831995b83f281fe2974e`. Tested accuracy rerun: `66143ebdb7441e17f4b44c23d15c2b35eb66841a`. Publication release: **2026-09-23.2**. Checksums identify the article's exact scientific inputs; publication changes do not silently revise their protocols.
 
 The public benchmark's [MIT code license](https://github.com/djova/bar-halo-benchmark/blob/cdb30b5b2f350d2f3de6831995b83f281fe2974e/LICENSE) is preserved. Original article text, new learning modules and derived result tables included in this clean public release use the same MIT license. Cite the release and underlying papers when reusing the research. This does not license every legacy or third-party item: no new license is asserted over third-party catalogue tables, papers, logos or quotations. Consult the [CDS catalogue](https://cdsarc.cds.unistra.fr/viz-bin/cat/J/A+A/587/A160) and original authors for their terms and attribution.
 
 Project initiated and maintained by [djova](https://github.com/djova). Scientific authorship beyond this project role is not asserted. Analysis, software and exposition were developed with AI assistance; the maintainer is the human contact through the public issue tracker.
 
-[Archived protocols and corrections](archive.html) preserve scientific history. [Release snapshots](releases/2026-09-23.1/manifest.json) and a public Git tag preserve this publication's central evidence. The current manifest is a discovery pointer; cite the versioned files or pinned public commit for a fixed reference.
+[Archived protocols and corrections](archive.html) preserve scientific history. [Release snapshots](releases/2026-09-23.2/manifest.json) and a public Git tag preserve this publication's central evidence. The current manifest is a discovery pointer; cite the versioned files or pinned public commit for a fixed reference.

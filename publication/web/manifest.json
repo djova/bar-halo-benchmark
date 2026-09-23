@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "release": "2026-09-23.1",
+  "release": "2026-09-23.2",
   "article": "paper.html",
   "markdown": "paper.md",
   "review_status": "not_externally_reviewed",
@@ -10,7 +10,7 @@
   },
   "publication_source": {
     "repository": "https://github.com/djova/bar-halo-benchmark",
-    "ref": "publication-2026-09-23.1",
+    "ref": "publication-2026-09-23.2",
     "directory": "publication"
   },
   "models": "models.json",
@@ -21,29 +21,29 @@
   "verification": "verify_publication.py",
   "reproduction": "reproduce.html",
   "archive": "archive.html",
-  "release_snapshot": "releases/2026-09-23.1/manifest.json",
+  "release_snapshot": "releases/2026-09-23.2/manifest.json",
   "licenses": "reproduce.html#licenses",
-  "generator_sha256": "2903e6c0b42032855d34be1a7472281d021cfec07da0c0e4b67eab93e3ad4fed",
-  "article_source_sha256": "00702bf22159a9b0f46e95aa107b7361894ddb4d88308bbacacd973a9d7a5992",
+  "generator_sha256": "a3d17d7d94630b4692e4faed81906f186944f20c85327f2678698484230e1597",
+  "article_source_sha256": "f6ffccfe3a2666ee3394a755da25d29976c809c383adc4d2bc1e40004e360a39",
   "artifacts": [
     {
       "path": "agents.html",
-      "sha256": "5f03f17fcce5272ac2eeabca172928b9ecbf6904c55fc062c92b618e3c1f9e22",
+      "sha256": "214801f8064ecf4b2ae5348a6aeb85587aa5a53efdb852a2eb126ded4602876c",
       "bytes": 4111
     },
     {
       "path": "agents.md",
-      "sha256": "d9e2f6ddd60f1918d4eeddb82b9071803102d8ab20a9c176bb05b7042fdfc16b",
+      "sha256": "26e3b92d8d28f1b421b9fe8e0110873e42d0640297499957ea4cedf69efee625",
       "bytes": 2624
     },
     {
       "path": "archive.html",
-      "sha256": "6407b9a2a42cc64a52ffbc0cdeb2a5d54ec365472d4b33adc59f107cbe1b80c0",
+      "sha256": "4da892ad24d4bd9b2877ce80f3d262ebbe92af2f2da343e7d91b4f1cba1b7322",
       "bytes": 3817
     },
     {
       "path": "campaigns.json",
-      "sha256": "10e8ca39b702b1e089e35578d5348b2d32a0c17fa08b12790d2307a3a60a349e",
+      "sha256": "a885a69c26aaa432c7040ff77aff704dccd7acd0cce352c046f1228a567067e7",
       "bytes": 3502
     },
     {
@@ -53,7 +53,7 @@
     },
     {
       "path": "claims.json",
-      "sha256": "2ad3b85a5dd0080aa50a8c3383327f275215ff2589998366fa35cf3e1bd5ceaf",
+      "sha256": "c06cf741575e3f0bf2db1f14d3eb0e4b8e4d410a28110f6723f74a1e3dba032b",
       "bytes": 15842
     },
     {
@@ -68,7 +68,7 @@
     },
     {
       "path": "datasets.json",
-      "sha256": "93c2a4394586a6570dddbb9020e19d1d3abda7d514d7aabcfd7043eed2fd39da",
+      "sha256": "194862ea22b7a4dc1c10737a0683e6bcb15400c69473185d8a742f0f407ecab3",
       "bytes": 65232
     },
     {
@@ -108,43 +108,43 @@
     },
     {
       "path": "experiments.html",
-      "sha256": "eee60134f849d03fe06267e4749af69d1c19805dbd27914ff5ea0ec8ce7698cd",
+      "sha256": "4bff5a92a291e73f76c82c7db55f3379c7fdbc2012e9a99ee4ff79ee66e3ffc6",
       "bytes": 4429
     },
     {
       "path": "figures.json",
-      "sha256": "27ef5ba7c925a818c01ec4ce43e761ad18d92bed02e52d049948d95d15db3b6f",
+      "sha256": "faab8d5837f4f02cd2780b89dae0b736d8655ff42b1698f6dd3c6a6af3b57ab8",
       "bytes": 6957
     },
     {
       "path": "learn.html",
-      "sha256": "865a9dda420a046f9520558d9c8857928bc0bd4dac3a4414d1e642633eb06209",
-      "bytes": 12015
+      "sha256": "5c112f3331cd5755adf9c0e0a712624cc176eba2b73a893d1fe5138ace7fe0e6",
+      "bytes": 12816
     },
     {
       "path": "learn.md",
-      "sha256": "e98b96130187aeed25c4028f9c5d540726f272c9e3b44e7bec553b75f8df9f2a",
-      "bytes": 9604
+      "sha256": "5edfe8648993f780ac0532e45056ff868c2cd0ae41ae60e9fca5fd51163c2872",
+      "bytes": 9889
     },
     {
       "path": "llms.txt",
-      "sha256": "1d5abd1901b78ae10dba4e7aa168030b134417bdd097f86fe4074d4a23bbbfa2",
+      "sha256": "eace7cdcd332f1847825195ee54629e0040256bee011801401c34f79d59807f4",
       "bytes": 514
     },
     {
       "path": "models.json",
-      "sha256": "9497d999ffd6ead496c0cf68a2caae1aba3ad92e69784115430ea068b8b00b0b",
+      "sha256": "70bfa133c19c4c8694e3a24b4cf85e139120ae5d024291961e8b0d607c20306b",
       "bytes": 2241
     },
     {
       "path": "paper.html",
-      "sha256": "d24e0974b12ad222813ca6b6d907747df84c19485998a067a24fdd8275e63e63",
-      "bytes": 52551
+      "sha256": "9286f0d9672976135506f0499d0446f48306ba7592d3aa3292ebc62f99ca997e",
+      "bytes": 53775
     },
     {
       "path": "paper.md",
-      "sha256": "ab36c2550236cd2c1df8a55bd9442676299ceec7f0db4ab134f0d2233e4fe3bb",
-      "bytes": 34686
+      "sha256": "99284bf2695dd1c69bda613119b6afefc2fec70db25af18695994ccc268883d5",
+      "bytes": 35620
     },
     {
       "path": "publication-sources.md",
@@ -153,12 +153,12 @@
     },
     {
       "path": "reproduce.html",
-      "sha256": "6b25177fba509a46587422d4470babe517678b62e1b5d19b9b24682b205750f7",
+      "sha256": "4af029daad5b9077615426ff9eac5418d965bac92a2e876caa315b58239338be",
       "bytes": 8164
     },
     {
       "path": "reproduce.md",
-      "sha256": "a2ef0d0b20826d6d9e2cd4acbb9b157696b767f81ab01e7d4b459cd729efaa88",
+      "sha256": "335a841ff424dcf95097aa4584c78ff62dccc88f732078e378aeeb098fb40dd5",
       "bytes": 6026
     },
     {
@@ -168,7 +168,7 @@
     },
     {
       "path": "results/accuracy.json",
-      "sha256": "d39ddb4b2dd579d36d307ba904730ec7293a870f439ecb8386a491cd75ac652a",
+      "sha256": "3667115e8d2de066afc78f561a6cda12e5a974e50b4fbfd029506c806802ebd0",
       "bytes": 22821
     },
     {
@@ -178,7 +178,7 @@
     },
     {
       "path": "results/cost.json",
-      "sha256": "ab3f9f178c7b411c0e62e905111df1ee162523a19c55173fcc2a7da46f3e9707",
+      "sha256": "307fe3fac9ca3c24e0cd09634b992e4269b3bf6bb04c2db663bac5ee21f363df",
       "bytes": 16790
     },
     {
@@ -188,12 +188,12 @@
     },
     {
       "path": "results/populations.json",
-      "sha256": "83c315d4f49d75b7f7ae7b852408abecd319e58b4d8b43b33faea5056956f420",
+      "sha256": "e1d8cd6cc2ed8eb11008594a6282d0ab115d68ac17f3776d300c660bad2f50ca",
       "bytes": 2586
     },
     {
       "path": "results/summary.json",
-      "sha256": "a07e4cc68e83fb94d7640e7661b1e556ee4826139f3a3e7462d94966b180a54d",
+      "sha256": "2aee0a043bfca0a7dcaafab984dd4ce9b2ecb37b68bb150424662a9da05f86f0",
       "bytes": 410
     },
     {

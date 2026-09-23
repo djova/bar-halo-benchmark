@@ -4,3 +4,28 @@
 @media print{.publication{max-width:none;padding:0;color:#111;background:white}.publication .publication-table{overflow:visible}.publication table{min-width:0;font-size:9pt}.publication a{color:#174c70}.publication pre,.publication-claim{background:#eee;color:#111}.publication fieldset{display:none}}
 .publication .publication-meta{font-size:.8rem;color:#becbdd;line-height:1.6;margin:1rem 0}.publication>h1{margin:.45em 0}.publication>h1+p{font-size:1.05rem;line-height:1.6}.publication>h2:first-of-type{margin-top:1.3em}@media(max-width:650px){.publication>h1{font-size:2.1rem;line-height:1.13}.publication>h1+p{font-size:.95rem}.publication>h2:first-of-type{font-size:1.5rem}}
 .publication caption{text-align:left;padding:12px;font-weight:650;color:#edf2f6;background:#142235}
+
+/* Typeset equations and evidence on demand, shared by all current pages. */
+.math-block{max-width:100%;overflow-x:auto;overflow-y:hidden;padding:1.1rem .8rem;margin:1.3rem 0;background:#101f2d;border-left:2px solid #769bb5;border-radius:0 7px 7px 0;line-height:1.4;font-size:1rem}
+.math-block .katex-display{margin:.25em 0;text-align:left}.math-block .katex-display>.katex{display:block;text-align:left;padding:.2em .1em;min-width:max-content}.math-inline .katex{font-size:1.08em}.math-block .katex{font-size:1.15em}
+.math-block .katex svg,.math-inline .katex svg{display:block;width:100%;height:100%;margin:0;max-width:none}
+.equation-label{font:600 .72rem/1.5 ui-sans-serif,system-ui,sans-serif;letter-spacing:.06em;color:#aebfce;margin:1.3rem 0 -.6rem;scroll-margin-top:105px}
+.math-block:focus-visible,.evidence-table-scroll:focus-visible{outline:3px solid #f3c785;outline-offset:3px}
+main .readable-table{border-collapse:collapse;width:100%;table-layout:auto;font-size:.86rem;line-height:1.55;margin:0}
+main .readable-table th,main .readable-table td{border-bottom:1px solid #34485b;padding:14px 16px;text-align:left;vertical-align:top;min-width:8.5rem}
+main .readable-table th{font-weight:650;color:#edf2f6;background:#142333;white-space:normal;max-width:18rem}
+main .readable-table td:nth-child(n){white-space:normal;overflow-wrap:normal;word-break:normal}
+main .readable-table .numeric-cell{white-space:nowrap!important;font-variant-numeric:tabular-nums}
+main .readable-table tr:last-child td{border-bottom:0}.readable-table tbody tr:hover{background:#122638}
+.evidence-table-scroll{overflow-x:auto;max-width:100%;min-width:0;margin:1.3rem 0;border:1px solid #34485b;border-radius:8px}
+.evidence-table-scroll .readable-table{min-width:min(100%,760px)}
+main details.evidence-values{margin:1.3rem 0 2rem;padding:0;border:1px solid #34485b;border-radius:9px;background:#0d1a27}
+main details.evidence-values>summary{padding:1rem 1.2rem;min-height:48px;cursor:pointer;font-size:.9rem;line-height:1.5;color:#a8d5f0;font-weight:600}
+main details.evidence-values[open]>summary{border-bottom:1px solid #34485b}
+main details.evidence-values>.evidence-table-scroll{margin:0;border:0;border-radius:0 0 8px 8px;max-height:34rem;overflow:auto}
+main details.evidence-values .readable-table th{position:sticky;top:0;z-index:1}
+main details.evidence-values .readable-table{width:max-content;min-width:100%;max-width:none}
+main details.evidence-values .readable-table td:first-child{min-width:13rem;max-width:25rem}
+main details.evidence-values .readable-table th{max-width:15rem}
+@media(max-width:650px){.math-block{font-size:.85rem;padding:.8rem .5rem}.math-inline .katex{font-size:1.02em}main .readable-table th,main .readable-table td{padding:11px 12px}main details.evidence-values>summary{padding:.9rem 1rem}}
+@media print{.math-block{background:white;color:#111;overflow:visible}main details.evidence-values>*{display:block}main .evidence-table-scroll{overflow:visible}.katex{color:#111}}

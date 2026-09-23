@@ -10,7 +10,7 @@ A bar is a density pattern. Its stars need not remain together like points paint
 
 The galaxy clock is in **Gyr** (billions of years). Density brightness is logarithmic and normalized per frame; a brighter frame is not necessarily a stronger bar. The measured cosine amplitude is a separate quantity.
 
-**Worked example — the factor of two.** If Σ(φ) ∝ 1 + a cos(2φ), the normalized complex coefficient is C₂ = ∫Σ exp(2iφ)dφ / ∫Σdφ. The constant and oscillating fourth-harmonic terms integrate to zero, leaving C₂ = a/2. Thus A₂ = 2|C₂| = |a| for this profile. General positive distributions can have higher harmonics and A₂ above one; A₂ is not a fraction of stars.
+**Worked example — the factor of two.** If \(\Sigma(\phi)\propto1+a\cos(2\phi)\), the normalized complex coefficient is \(C_2=\frac{\int\Sigma e^{2i\phi}\,\mathrm d\phi}{\int\Sigma\,\mathrm d\phi}\). The constant and oscillating fourth-harmonic terms integrate to zero, leaving \(C_2=a/2\). Thus \(A_2=2|C_2|=|a|\) for this profile. General positive distributions can have higher harmonics and A₂ above one; A₂ is not a fraction of stars.
 
 **Try:** Does a local A₂ of 1.2 mean 120% of the stars are in the bar?
 
@@ -26,7 +26,7 @@ Two galaxies can have similar density profiles but different orbital motions. A 
 
 In the local experiment, the **kernel tells us what the dynamics do** at each starting action; the **weight tells us how much material is there**. Reweighting a fixed external response is legitimate because the particles do not change its prescribed field. That separation cannot simply be assumed in a live halo.
 
-**Worked example.** An exponential wE = exp(gx) and Gaussian wσ = exp(gx − x²/(2σ²)) both have w(0) = 1 and w′(0) = g. Their logarithmic slopes are g and g − x/σ². A moving resonance encounters the mismatch away from zero. Same initial slope does not mean same sampled gradient.
+**Worked example.** An exponential \(w_{\mathrm E}=e^{gx}\) and Gaussian \(w_\sigma=e^{gx-x^2/(2\sigma^2)}\) both have \(w(0)=1\) and \(w'(0)=g\). Their logarithmic slopes are \(g\) and \(g-x/\sigma^2\). A moving resonance encounters the mismatch away from zero. Same initial slope does not mean same sampled gradient.
 
 [Explore the recorded populations](population-response.html#population-explorer) · [Expert model and normalization](paper.html#model) · [Next: transfer](#learn-3)
 
@@ -36,7 +36,7 @@ In the local experiment, the **kernel tells us what the dynamics do** at each st
 
 Torque is the rate of angular-momentum change. Integrating torque over time gives a transfer. In a live isolated galaxy, stars and halo can exchange it. In an imposed-field calculation the source is prescribed, so the test particles' transfer is not a self-consistent history of the bar.
 
-The reduced experiment records the bar impulse B = −∫sinψ dt, separately from the imposed noise and the moving coordinate. The reported response is **Bnoise − Bsmooth**, averaged with a specified population weight.
+The reduced experiment records the bar impulse \(B=-\int\sin\psi\,\mathrm dt\), separately from the imposed noise and the moving coordinate. The reported response is **\(B_{\mathrm{noise}}-B_{\mathrm{smooth}}\)**, averaged with a specified population weight.
 
 **Worked example — contrast versus total.** If the smooth bar transfers +10 units to a population and the noisy bar transfers +8, the contrast is −2. Both transfers remain positive; the negative contrast means suppression, not transfer back to the bar. These numbers are an arithmetic illustration, not a simulated result.
 
@@ -48,7 +48,7 @@ The reduced experiment records the bar impulse B = −∫sinψ dt, separately fr
 
 Weak repeated pushes can accumulate if their phases remain correlated with an orbit. Near a resonance, a particular combination of orbital and bar angles changes slowly. Some trajectories librate around a phase; others circulate. As the imposed bar slows, the resonant action moves. Trapping, crossing and population gradients can then influence transfer.
 
-The local slow-angle equations are dψ = −j dt and dj = (−sinψ − s)dt + √(2D)dW. The term −s shifts the coordinate origin; it is not a physical bar torque. At constant coefficients, a phase-locked solution requires |s| ≤ 1 because |sinψ| ≤ 1. That condition does not say what fraction of a particular population becomes trapped.
+The local slow-angle equations are \(\mathrm d\psi=-j\,\mathrm dt\) and \(\mathrm dj=(-\sin\psi-s)\,\mathrm dt+\sqrt{2D}\,\mathrm dW\). The term −s shifts the coordinate origin; it is not a physical bar torque. At constant coefficients, a phase-locked solution requires \(|s|\leq1\) because \(|\sin\psi|\leq1\). That condition does not say what fraction of a particular population becomes trapped.
 
 **Worked example.** At s = 1.2 no constant phase solves sinψ = −s; at s = 0.25 such phases exist. Neither calculation alone determines the sign of the noise-induced total transfer.
 
@@ -60,13 +60,14 @@ The local slow-angle equations are dψ = −j dt and dj = (−sinψ − s)dt + �
 
 Particle graininess, a chosen stochastic operator and physical collisions are different sources of fluctuations. Changing numerical softening or particle count tests the calculation. Imposing additive Brownian action noise defines a model; it does not calibrate an SIDM cross-section. Conservation checks, convergence checks and a test of model adequacy answer different questions.
 
-**Worked example — a non-flat screen with constant diffusion.** For a stationary Ornstein–Uhlenbeck process dJ = −γJdt + √(2D)dW, constant D coexists with restoring drift. Its increment variance gives:
+**Worked example — a non-flat screen with constant diffusion.** For a stationary Ornstein–Uhlenbeck process \(\mathrm dJ=-\gamma J\,\mathrm dt+\sqrt{2D}\,\mathrm dW\), constant D coexists with restoring drift. Its increment variance gives:
 
-```text
-Var[J(t+τ) − J(t)] / (2τ) = D (1 − exp(−γτ)) / (γτ).
+```math
+\frac{\operatorname{Var}[J(t+\tau)-J(t)]}{2\tau}
+=D\,\frac{1-e^{-\gamma\tau}}{\gamma\tau}.
 ```
 
-At γ = 0.25 and lags 1, 2, 4, this is about 0.8848D, 0.7869D and 0.6321D. It is not flat, despite constant diffusion. Pooled state-dependent drift adds another ambiguity. Short softened gravitational trajectories can instead be ballistic; taking lag to zero is not automatically a diffusion measurement.
+At \(\gamma=0.25\) and lags 1, 2, 4, this is about 0.8848D, 0.7869D and 0.6321D. It is not flat, despite constant diffusion. Pooled state-dependent drift adds another ambiguity. Short softened gravitational trajectories can instead be ballistic; taking lag to zero is not automatically a diffusion measurement.
 
 **Try:** Are two endpoint times, two windows and two antithetic partners eight independent experiments?
 
@@ -78,9 +79,9 @@ At γ = 0.25 and lags 1, 2, 4, this is about 0.8848D, 0.7869D and 0.6321D. It is
 
 **Prerequisite:** gradients, signed sums and modules 2–5.
 
-The primitive kernel Qₚ weights the initial population gradient: R[w] = −∫w′Qₚ dx when the boundary term vanishes. An absolute mismatch integral can qualify an approximation. It can also decline an accurate one because taking absolute values destroys useful cancellation.
+The primitive kernel \(Q_{\mathrm p}\) weights the initial population gradient: \(\mathcal R[w]=-\int w'Q_{\mathrm p}\,\mathrm dx\) when the boundary term vanishes. An absolute mismatch integral can qualify an approximation. It can also decline an accurate one because taking absolute values destroys useful cancellation.
 
-**Worked example — reconstruct the sign.** The original early Gaussian gives approximately −0.011058 + 0.012565 = +0.001508. The halo gives −0.004835 + 0.000934 = −0.003901. Rounding explains the final displayed digit. These are **gradient-coordinate contributions**, not two literal orbital cohorts. Matching central density and slope did not preserve their balance.
+**Worked example — reconstruct the sign.** The original early Gaussian gives approximately \(-0.011058+0.012565=+0.001508\). The halo gives \(-0.004835+0.000934=-0.003901\). Rounding explains the final displayed digit. These are **gradient-coordinate contributions**, not two literal orbital cohorts. Matching central density and slope did not preserve their balance.
 
 [Inspect Gaussian 128's conservative rejection](paper.html?population=gaussian128&time=10&window=40#interactive-decision). Its independent intrinsic error is within 5%, but its absolute allowance declines to certify it. That is an informative limitation of the rule, not evidence that the recorded response was wrong.
 
@@ -96,7 +97,7 @@ The primitive kernel Qₚ weights the initial population gradient: R[w] = −∫
 | Original galaxy | Toomre Q | Disc stability parameter; realized baseline minimum ≈ 1.31, target 1.5 |
 | Prescribed Cartesian field | Model time and model action | Analytical-potential units; no automatic Gyr conversion |
 | Reduced resonance | T, x, j, ψ, s, η | Dimensionless time, initial action, moving slow action, resonant angle, sweep and noise |
-| Reduced resonance | Qₚ (Q in earlier records) | Primitive response kernel, unrelated to Toomre Q |
+| Reduced resonance | \(Q_{\mathrm p}\) (Q in earlier records) | Primitive response kernel, unrelated to Toomre Q |
 | Reduced resonance | R[w] | Noise-minus-smooth accumulated bar transfer with specified weight |
 | All models | An unavailable estimate | Missing or unqualified, never silently zero |
 

@@ -1,6 +1,6 @@
 # Anonymous research access
 
-**Current authority:** [canonical article](paper.html) ([Markdown](paper.md)), release **2026-09-23.1**, not externally reviewed. This page describes discovery, not instructions to execute jobs. Reading requires no login, privileged browser, private network or private repository.
+**Current authority:** [canonical article](paper.html) ([Markdown](paper.md)), release **2026-09-23.2**, not externally reviewed. This page describes discovery, not instructions to execute jobs. Reading requires no login, privileged browser, private network or private repository.
 
 Start with [manifest.json](manifest.json), then [claims.json](claims.json), [models.json](models.json), [campaigns.json](campaigns.json), [datasets.json](datasets.json) and the small [results summary](results/summary.json). RFC6901 pointers identify exact source rows. Result files expose units, model and numerical provenance via their dataset entries. Use the same article, uncertainties and limitations as human readers.
 
@@ -18,4 +18,4 @@ Start with [manifest.json](manifest.json), then [claims.json](claims.json), [mod
 
 ## Stable references and reuse
 
-Claim IDs, equations, figures, limitations and result IDs are stable within this release. Each principal figure records its default state, scientific parameters, source, full values and analysis hashes in [figures.json](figures.json). A release snapshot lives under [releases/2026-09-23.1/](releases/2026-09-23.1/manifest.json). [llms.txt](llms.txt) is an optional discovery aid, not a guarantee that any service will index this work. [Licenses and contact](reproduce.html#licenses) distinguish benchmark code, scientific records, article and third-party data.
+Claim IDs, equations, figures, limitations and result IDs are stable within this release. Each principal figure records its default state, scientific parameters, source, full values and analysis hashes in [figures.json](figures.json). A release snapshot lives under [releases/2026-09-23.2/](releases/2026-09-23.2/manifest.json). [llms.txt](llms.txt) is an optional discovery aid, not a guarantee that any service will index this work. [Licenses and contact](reproduce.html#licenses) distinguish benchmark code, scientific records, article and third-party data.

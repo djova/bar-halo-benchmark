@@ -79,3 +79,14 @@ or external researcher review is claimed, and no researchers were contacted.
 
 Public criticism is welcome through [issues](https://github.com/djova/bar-halo-benchmark/issues).
 Please cite a claim, figure or dataset ID and the release version.
+
+## Presentation revision 2026-09-23.2
+
+The next source tag preserves the scientific measurements and adds build-time
+KaTeX, semantic MathML and locally served WOFF2 fonts. The current pages contain
+99 typeset expressions; 24 substantial numeric tables now use native expanders.
+Graphs remain visible by default. All 24 accuracy records remain in the HTML.
+Both browser engines pass desktop and mobile rendering checks, and all 30 current
+root pages were reviewed for desktop table overflow without JavaScript.
+The previous source tag and website snapshot remain unchanged. No new physics
+or stronger accuracy claim is introduced by this presentation revision.

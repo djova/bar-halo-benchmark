@@ -8,7 +8,7 @@ if dest.exists():raise SystemExit('Existing release is immutable; choose a new v
 files={x['path']for x in manifest['artifacts']}
 files|={'data/manifest.json','data/archive/index-2026-09-21.json'}
 files|={f'diagnostics/population-accuracy/{name}.md'for name in ['PLAN','SOURCES','CLAIM_LEDGER','ACCURACY_OUTCOME_01','COST_OUTCOME_02','EXTERNAL_REVIEW_QUESTIONS']}
-files|={'story.css','population-response.css','population-accuracy.css','publication.css','population-accuracy.js','navigation.js','navigation.css','verify_publication.py'}
+files|={'story.css','population-response.css','population-accuracy.css','publication.css','population-accuracy.js','presentation.js','navigation.js','navigation.css','verify_publication.py'}
 files|={f'diagnostics/population-accuracy/{name}.png'for name in ['population-comparison','population-accuracy','estimator-efficiency']}
 # A snapshot retains core scientific pages and files. Deeper historical pages keep stable current-site links.
 def rewrite(text,path):

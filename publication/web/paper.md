@@ -2,7 +2,7 @@
 
 *A response-kernel benchmark and an operational test of population approximations*
 
-<p class="publication-meta">Canonical article · Release 2026-09-23.1 · Not externally reviewed · <a href="reproduce.html#licenses">Human maintainer and AI disclosure</a></p>
+<p class="publication-meta">Canonical article · Release 2026-09-23.2 · Not externally reviewed · <a href="reproduce.html#licenses">Human maintainer and AI disclosure</a></p>
 
 ## Abstract {#abstract}
 
@@ -35,27 +35,41 @@ Our addition is the quantified population counterexample, a reusable recorded re
 
 ## Model, populations and observable {#model}
 
-The implemented frequency gradient is negative. In dimensionless slow action j and resonant angle ψ, measured relative to the moving resonance:
+The implemented frequency gradient is negative. In dimensionless slow action \(j\) and resonant angle \(\psi\), measured relative to the moving resonance:
 
-```text
-(EQ-DYN-01)   dψ = −j dt
-             dj = (−sin ψ − s) dt + √(2D) dW,   D = 2η/π
-(EQ-OBS-01)   B(T) = −∫₀ᵀ sin ψ dt
+<div class="equation-label" id="EQ-DYN-01">EQ-DYN-01 · Reduced dynamics</div>
+
+```math
+\begin{aligned}
+\mathrm d\psi &= -j\,\mathrm dt,\\
+\mathrm dj &= (-\sin\psi-s)\,\mathrm dt + \sqrt{2D}\,\mathrm dW,\\
+D &= \frac{2\eta}{\pi}.
+\end{aligned}
 ```
 
-The accumulated bar impulse B excludes the moving-coordinate term −sT and Brownian impulse. The path budget checks all three separately. Our response is **noise minus smooth accumulated bar-mediated transfer**, not instantaneous torque. Positive means more transfer from the imposed bar to the sampled slice. Negative means less than the smooth control, and need not mean that the bar gains angular momentum.
+<div class="equation-label" id="EQ-OBS-01">EQ-OBS-01 · Accumulated bar impulse</div>
 
-The initial resonant phase is uniform. The reference is an analytical isochrone-halo distribution function evaluated at fixed fast actions: radial action 0.08 and vertical action 0.05, central slow action Jₛ,₀ = 0.25. Set x = (Jₛ − Jₛ,₀)/u, u ≈ 0.0005633691. The initial logarithmic slope is g ≈ −0.0047493212. Before the common compact window:
+```math
+B(T)=-\int_0^T\sin\psi\,\mathrm dt.
+```
 
-```text
-(EQ-POP-01)   halo:        wH(x) = fhalo(Js, fixed fast actions) / fref
-             exponential: wE(x) = exp(gx)
-             Gaussian:    wσ(x) = exp(gx − x²/(2σ²))
+The accumulated bar impulse \(B\) excludes the moving-coordinate term \(-sT\) and Brownian impulse. The path budget checks all three separately. Our response is **noise minus smooth accumulated bar-mediated transfer**, not instantaneous torque. Positive means more transfer from the imposed bar to the sampled slice. Negative means less than the smooth control, and need not mean that the bar gains angular momentum.
+
+The initial resonant phase is uniform. The reference is an analytical isochrone-halo distribution function evaluated at fixed fast actions: radial action 0.08 and vertical action 0.05, central slow action \(J_{s,0}=0.25\). Set \(x=(J_s-J_{s,0})/u\), \(u\approx0.0005633691\). The initial logarithmic slope is \(g\approx-0.0047493212\). Before the common compact window:
+
+<div class="equation-label" id="EQ-POP-01">EQ-POP-01 · Initial populations</div>
+
+```math
+\begin{aligned}
+w_{\mathrm H}(x)&=\frac{f_{\mathrm{halo}}(J_s;J_r,J_z)}{f_{\mathrm{ref}}},\\
+w_{\mathrm E}(x)&=\exp(gx),\\
+w_{\sigma}(x)&=\exp\!\left(gx-\frac{x^2}{2\sigma^2}\right).
+\end{aligned}
 ```
 
 Central density and slope are held fixed; populations are **not renormalized to unit mass**. The primary window has plateau 24 and cutoff 40; the wider comparison has plateau 48 and cutoff 64 in x. Moving this physical taper differs from enlarging the solver domain or auxiliary sampling support. These are conditional contributions from one slice, not integrals over an entire halo.
 
-All response tables display dimensionless ∫wKᵦ dx. Multiplication by 4u²(2π)³fref ≈ 2.7022892 × 10⁻⁶ gives the angular-momentum contribution **per unit fast-action area** in the analytical model's units. The local time T is dimensionless; it is not the original galaxy's Gyr clock. T = 20 is about 3.18 reference librations. [Exact calibration, windows and numerical algorithms](population-methods.html).
+All response tables display dimensionless \(\int wK_B\,\mathrm dx\). Multiplication by \(4u^2(2\pi)^3 f_{\mathrm{ref}}\approx2.7022892\times10^{-6}\) gives the angular-momentum contribution **per unit fast-action area** in the analytical model's units. The local time T is dimensionless; it is not the original galaxy's Gyr clock. T = 20 is about 3.18 reference librations. [Exact calibration, windows and numerical algorithms](population-methods.html).
 
 ## Population choice changes the finite-time answer {#population-result}
 
@@ -77,15 +91,20 @@ All response tables display dimensionless ∫wKᵦ dx. Multiplication by 4u²(2�
 
 The exponential's point differences are about 0.050% and 0.068%. These are not certified sub-0.1% accuracies. The paired sampling and numerical assessment is in [the difference record](diagnostics/population-accuracy/joint-error-assessment.json). Matching a slope at one point can impose the wrong curvature; preserving the gradient over the sensitive region can work well.
 
-At T = 10, the Gaussian's gradient-coordinate contributions inside and outside radius four are approximately −0.011058 + 0.012565 = +0.001508. For the halo they are −0.004835 + 0.000934 = −0.003901. Different cancellation changes the sign. **These terms are an integral decomposition, not two literal orbital cohorts.** The [original explorer](population-response.html) distinguishes these coordinates from initial-orbit cohorts.
+At T = 10, the Gaussian's gradient-coordinate contributions inside and outside radius four are approximately \(-0.011058+0.012565=+0.001508\). For the halo they are \(-0.004835+0.000934=-0.003901\). Different cancellation changes the sign. **These terms are an integral decomposition, not two literal orbital cohorts.** The [original explorer](population-response.html) distinguishes these coordinates from initial-orbit cohorts.
 
 ## Why a response kernel is reusable {#kernel}
 
-For fixed, population-independent evolution, define the phase/noise-averaged action response Kᵦ(x). Let Qₚ denote its primitive; the subscript distinguishes it from the galaxy's Toomre Q.
+For fixed, population-independent evolution, define the phase/noise-averaged action response \(K_B(x)\). Let \(Q_{\mathrm p}\) denote its primitive; the subscript distinguishes it from the galaxy's Toomre Q.
 
-```text
-(EQ-KER-01)   Kᵦ(x) = E[Bnoise − Bsmooth | initial action x]
-             R[w] = ∫w Kᵦ dx = [w Qₚ]boundary − ∫w′ Qₚ dx
+<div class="equation-label" id="EQ-KER-01">EQ-KER-01 · Response and population weighting</div>
+
+```math
+\begin{aligned}
+K_B(x)&=\mathbb E[B_{\mathrm{noise}}-B_{\mathrm{smooth}}\mid x],\\
+\mathcal R[w]&=\int w(x)K_B(x)\,\mathrm dx\\
+&=[wQ_{\mathrm p}]_{\mathrm{boundary}}-\int w'(x)Q_{\mathrm p}(x)\,\mathrm dx.
+\end{aligned}
 ```
 
 For the common compact support, the boundary term vanishes. Nonlinear trapping of individual orbits is compatible with linear dependence on the initial population. This identity does not automatically apply to a self-consistent gravitational field or a collision law whose coefficients depend on the evolving population.
@@ -96,8 +115,11 @@ The kernel separates dynamical sensitivity from how much material occupies each 
 
 For a candidate approximation v and reference h, the exact-kernel inequality is:
 
-```text
-(EQ-ERR-01)   |R[v] − R[h]| ≤ ∫ |v′ − h′| |Qₚ| dx
+<div class="equation-label" id="EQ-ERR-01">EQ-ERR-01 · Exact-kernel error bound</div>
+
+```math
+\left|\mathcal R[v]-\mathcal R[h]\right|
+\leq \int\left|v'(x)-h'(x)\right|\left|Q_{\mathrm p}(x)\right|\,\mathrm dx.
 ```
 
 Include the boundary mismatch if it is nonzero. The implemented kernel is estimated, so its plug-in integral alone is not a rigorous bound. The protocol uses eight independent batch estimates, a nominal simultaneous Student-t envelope with Bonferroni allocation across finite kernel cells and scalar contractions, paired timestep differences, and factor-two mesh refinements. Population contractions retain covariance from shared paths. Antithetic partners, times, windows and population weights are not independent batches.
@@ -155,13 +177,18 @@ The new kernel cost about 5,105 worker CPU-seconds; the six-profile diagnostic t
 
 ## Estimating a small response efficiently {#estimator}
 
-Let F′ = w and y = j + sT − W = x + B. Under the stated external additive noise, uniform initial phase and canonical evolution, a zero-integral primitive identity gives:
+Let \(F'=w\) and \(y=j+sT-W=x+B\). Under the stated external additive noise, uniform initial phase and canonical evolution, a zero-integral primitive identity gives:
 
-```text
-(EQ-EST-01)   ∫ w(x) E[B] dx = −∫ E[F(x+B) − F(x) − w(x)B] dx
+<div class="equation-label" id="EQ-EST-01">EQ-EST-01 · Cumulative-remainder identity</div>
+
+```math
+\begin{aligned}
+\int w(x)\,\mathbb E[B]\,\mathrm dx
+&=-\int\mathbb E\!\left[F(x+B)-F(x)-w(x)B\right]\,\mathrm dx.
+\end{aligned}
 ```
 
-The right side estimates a nonlinear remainder, whose leading term for a slowly varying weight involves w′B²/2. The first-order contribution has known zero ensemble integral. The derivation requires more than area preservation alone. Auxiliary initial-action support must extend beyond the physical window by the maximum bar impulse; those samples do not add physical halo mass. Do not transplant this identity to action-dependent forcing/noise, nonuniform phases or live response without another derivation. [Complete derivation and support restrictions](https://github.com/djova/bar-halo-benchmark/blob/cdb30b5b2f350d2f3de6831995b83f281fe2974e/accuracy/research/population-response/CUMULATIVE_IDENTITY.md).
+The right side estimates a nonlinear remainder, whose leading term for a slowly varying weight involves \(w'B^2/2\). The first-order contribution has known zero ensemble integral. The derivation requires more than area preservation alone. Auxiliary initial-action support must extend beyond the physical window by the maximum bar impulse; those samples do not add physical halo mass. Do not transplant this identity to action-dependent forcing/noise, nonuniform phases or live response without another derivation. [Complete derivation and support restrictions](https://github.com/djova/bar-halo-benchmark/blob/cdb30b5b2f350d2f3de6831995b83f281fe2974e/accuracy/research/population-response/CUMULATIVE_IDENTITY.md).
 
 <p class="publication-claim" id="EST-01"><a href="claims.json">EST-01</a> · The matched estimator has a large conditional cost-times-variance advantage for broad halo weights; the advantage disappears for the narrowest stress population.</p>
 
@@ -236,7 +263,7 @@ Use the [per-study reproduction map](reproduce.html) to distinguish reading, che
 
 For criticism, cite a claim ID such as **PA-ACC-01**, figure ID, dataset version and exact row. [Open a public issue](https://github.com/djova/bar-halo-benchmark/issues). In particular: is an equivalent cumulative estimator already published; is its scope useful; which error source is missing; and which test would most efficiently falsify the proposed application? No outside review or endorsement is claimed.
 
-**Release 2026-09-23.1:** consolidated article, shared result/claim records, public reading routes, campaign-scope and equilibrium wording corrections. Scientific outputs and historical criteria unchanged. [Archived studies and corrections](archive.html) · [release manifest](manifest.json) · [reuse conditions](reproduce.html#licenses).
+**Release 2026-09-23.2:** typeset mathematics with local KaTeX, desktop table layout repairs and expandable numeric evidence. Release 2026-09-23.1 retained the initial consolidated article and scope corrections. Scientific outputs and historical criteria unchanged. [Archived studies and corrections](archive.html) · [release manifest](manifest.json) · [reuse conditions](reproduce.html#licenses).
 
 ## References and reading record {#references}
 
