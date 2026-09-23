@@ -139,5 +139,16 @@ qualification remains unchanged.
 
 For a scheduled local reproduction, `--stop-utc YYYY-MM-DDTHH:MM:SSZ` sets an
 earlier production deadline without overriding the finite CPU and wall limits.
-The clean public-source rerun of this complete held-out matrix is pending at this
-release checkpoint; the arithmetic-only public entry point has been exercised.
+The complete clean public-source rerun finished successfully at pinned commit
+`2528a4d85f71aa6f330184bf063b3d74b2e57d1a`. All 24 forecasts, all 23 cases, and
+every checked measurement, numerical change and decision reproduce exactly. The
+run used 2.35 scientific core-hours with two single-thread workers. Its regenerated
+figure was inspected and is pixel-identical to the original. See the
+[complete receipt](reproductions/heldout-01/result.json) and
+[regenerated figure](reproductions/heldout-01/heldout-predictions.png).
+
+An earlier preparation receipt had an incorrect lockfile hash. The final receipt
+retains that correction: both pinned Git versions contain the same actual lock
+bytes, and all eleven dependency pins match the measured environment. Numerical
+source, installed versions and outcomes are unchanged. The original population
+command remains in progress; this success does not stand in for its completion.

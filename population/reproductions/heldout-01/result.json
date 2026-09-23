@@ -1,0 +1,230 @@
+{
+  "checked_utc": "2026-09-23T05:19:10.637108+00:00",
+  "public_source_commit": "2528a4d85f71aa6f330184bf063b3d74b2e57d1a",
+  "source_worktree_clean": true,
+  "whole_command_exit_code": 0,
+  "command": "python reproduce_heldout.py --out reproduced-heldout --workers 2",
+  "complete_cases": 23,
+  "regenerated_forecasts": 24,
+  "comparison_rows": 24,
+  "all_reference_values_reproduced": true,
+  "maximum_forecast_difference": 0.0,
+  "maximum_measurement_or_refinement_difference": 0.0,
+  "all_decisions_unchanged": true,
+  "scientific_cpu_seconds": 8473.026169,
+  "entrypoint_sha256": "30bb690fd0039162f424a43b7f9ba758db61b60c0d7415274e632517e76fda2c",
+  "source_manifest_sha256": "22fee7864ad5f4eaf4ec28237ce9d558ea94b74aa94ec58716eb4c9e3ab25b07",
+  "requirements_sha256": "4e483716d07d3b3c015b7bae94e88a705494714d9a8ca77df7b901f53f2aa77a",
+  "installed_versions": {
+    "contourpy": "1.3.3",
+    "six": "1.17.0",
+    "numpy": "1.26.4",
+    "python-dateutil": "2.9.0.post0",
+    "kiwisolver": "1.5.1",
+    "packaging": "26.3",
+    "matplotlib": "3.11.2",
+    "fonttools": "4.65.0",
+    "cycler": "0.12.1",
+    "pyparsing": "3.3.3",
+    "pillow": "12.3.0"
+  },
+  "result_sha256": "75b5686b9a73b5849861035cd9b575fa6956810921c57b7fb93e1fee3e2cc1fd",
+  "analysis_sha256": "ad6a77d3b45504c5f96516ef4137d717f22b4ec54dcac8d2b9d713b91a29b518",
+  "forecast_readback_sha256": "47d069b10cb842fce6801d6d8f6b53c1db74fa0ff3a79bb97760a7b764514ff1",
+  "ledger_sha256": "57856d365e2b71e849ae8ab943bbc0452210e103287a165a6d7e90dec3fa4cf3",
+  "figure": {
+    "file": "heldout-predictions.png",
+    "regenerated_sha256": "f0d32e6bbb58f9b0a0a2281be9632725c0b60c54d9aafb44138e178ea777c2a3",
+    "published_sha256": "a0fd5a9d0c8aeed2fdfa6b84bd89319e176421fe9da42ce566190ca38def9b7c",
+    "size": [
+      1980,
+      1170
+    ],
+    "pixels_equal_to_original_figure": true,
+    "metadata_free_copy_preserves_pixels": true,
+    "visually_inspected": true
+  },
+  "comparisons": [
+    {
+      "s": 0.0,
+      "tau": 10.0,
+      "population": "gaussian12-40",
+      "max_difference": 0.0,
+      "gates_unchanged": true
+    },
+    {
+      "s": 0.0,
+      "tau": 10.0,
+      "population": "gaussian12-64",
+      "max_difference": 0.0,
+      "gates_unchanged": true
+    },
+    {
+      "s": 0.0,
+      "tau": 10.0,
+      "population": "gaussian20-40",
+      "max_difference": 0.0,
+      "gates_unchanged": true
+    },
+    {
+      "s": 0.0,
+      "tau": 10.0,
+      "population": "gaussian20-64",
+      "max_difference": 0.0,
+      "gates_unchanged": true
+    },
+    {
+      "s": 0.0,
+      "tau": 10.0,
+      "population": "quartic20-40",
+      "max_difference": 0.0,
+      "gates_unchanged": true
+    },
+    {
+      "s": 0.0,
+      "tau": 10.0,
+      "population": "quartic20-64",
+      "max_difference": 0.0,
+      "gates_unchanged": true
+    },
+    {
+      "s": 0.0,
+      "tau": 20.0,
+      "population": "gaussian12-40",
+      "max_difference": 0.0,
+      "gates_unchanged": true
+    },
+    {
+      "s": 0.0,
+      "tau": 20.0,
+      "population": "gaussian12-64",
+      "max_difference": 0.0,
+      "gates_unchanged": true
+    },
+    {
+      "s": 0.0,
+      "tau": 20.0,
+      "population": "gaussian20-40",
+      "max_difference": 0.0,
+      "gates_unchanged": true
+    },
+    {
+      "s": 0.0,
+      "tau": 20.0,
+      "population": "gaussian20-64",
+      "max_difference": 0.0,
+      "gates_unchanged": true
+    },
+    {
+      "s": 0.0,
+      "tau": 20.0,
+      "population": "quartic20-40",
+      "max_difference": 0.0,
+      "gates_unchanged": true
+    },
+    {
+      "s": 0.0,
+      "tau": 20.0,
+      "population": "quartic20-64",
+      "max_difference": 0.0,
+      "gates_unchanged": true
+    },
+    {
+      "s": 0.25,
+      "tau": 10.0,
+      "population": "gaussian12-40",
+      "max_difference": 0.0,
+      "gates_unchanged": true
+    },
+    {
+      "s": 0.25,
+      "tau": 10.0,
+      "population": "gaussian12-64",
+      "max_difference": 0.0,
+      "gates_unchanged": true
+    },
+    {
+      "s": 0.25,
+      "tau": 10.0,
+      "population": "gaussian20-40",
+      "max_difference": 0.0,
+      "gates_unchanged": true
+    },
+    {
+      "s": 0.25,
+      "tau": 10.0,
+      "population": "gaussian20-64",
+      "max_difference": 0.0,
+      "gates_unchanged": true
+    },
+    {
+      "s": 0.25,
+      "tau": 10.0,
+      "population": "quartic20-40",
+      "max_difference": 0.0,
+      "gates_unchanged": true
+    },
+    {
+      "s": 0.25,
+      "tau": 10.0,
+      "population": "quartic20-64",
+      "max_difference": 0.0,
+      "gates_unchanged": true
+    },
+    {
+      "s": 0.25,
+      "tau": 20.0,
+      "population": "gaussian12-40",
+      "max_difference": 0.0,
+      "gates_unchanged": true
+    },
+    {
+      "s": 0.25,
+      "tau": 20.0,
+      "population": "gaussian12-64",
+      "max_difference": 0.0,
+      "gates_unchanged": true
+    },
+    {
+      "s": 0.25,
+      "tau": 20.0,
+      "population": "gaussian20-40",
+      "max_difference": 0.0,
+      "gates_unchanged": true
+    },
+    {
+      "s": 0.25,
+      "tau": 20.0,
+      "population": "gaussian20-64",
+      "max_difference": 0.0,
+      "gates_unchanged": true
+    },
+    {
+      "s": 0.25,
+      "tau": 20.0,
+      "population": "quartic20-40",
+      "max_difference": 0.0,
+      "gates_unchanged": true
+    },
+    {
+      "s": 0.25,
+      "tau": 20.0,
+      "population": "quartic20-64",
+      "max_difference": 0.0,
+      "gates_unchanged": true
+    }
+  ],
+  "scope": "Full clean public-source same-seed reproduction of the historical prospective population test, using the independently provisioned pinned environment. All 23 cases and 24 comparisons retained. This verifies the runnable release, not a new independent statistical sample, uniform 5% accuracy, a rigorous combined-error bound, or a qualified 3D prediction.",
+  "preflight_metadata_correction": {
+    "checked_utc": "2026-09-23T05:20:54.726758+00:00",
+    "retained_preflight_sha256": "1c6ecc72283a982a1729358315cfea1cca8020d187e0a3a0b68d9a2dbc61278c",
+    "incorrect_preflight_requirements_sha256": "3c4d15e5cea3a4706c4ed8fae523ab28b7fd5f1f63fee83eb1fde8f5d0b7b703",
+    "verified_pinned_requirements_sha256": "4e483716d07d3b3c015b7bae94e88a705494714d9a8ca77df7b901f53f2aa77a",
+    "pinned_commits": [
+      "dd0d85efe05c5f2ab7d00f0805b25c1f8c4665b1",
+      "2528a4d85f71aa6f330184bf063b3d74b2e57d1a"
+    ],
+    "all_11_pins_equal_measured_installed_versions": true,
+    "explanation": "The earlier preparation receipt recorded an incorrect lockfile hash. Its origin is not established. Direct hashing of both clean clones and git-show at each clone pinned HEAD gives the same correct value. Every exact dependency pin matches the measured environment. The old receipt is preserved; numerical inputs, installed versions, sources and outcomes are unchanged."
+  }
+}

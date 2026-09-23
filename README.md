@@ -60,8 +60,9 @@ The [population guide](population/README.md) explains the released DF table,
 absolute normalization, covariance, source manifests and exact verification scope.
 `--check-forecasts-only` on the held-out command checks arithmetic without rerunning
 forced evolution. Reproducing old seeds verifies the package; it is not a new
-independent physical sample. Both full clean public-source reruns are currently
-in progress; their completion is not claimed here.
+independent physical sample. The [complete held-out public-source rerun](population/reproductions/heldout-01/result.json)
+passed with all checked differences exactly zero and an inspected regenerated
+figure. The complete original population rerun is still in progress.
 
 ## What has not transferred to three dimensions?
 
