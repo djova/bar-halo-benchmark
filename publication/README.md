@@ -29,3 +29,6 @@ their authors' terms; no blanket third-party license is granted here.
 
 This is AI-assisted work, maintained by djova, and not externally reviewed.
 Public issues are the criticism route; cite a claim or dataset ID.
+
+[Publication release audit and access fallbacks](RELEASE_AUDIT.md) records what
+was checked, including the remaining generic-client retrieval limitation.

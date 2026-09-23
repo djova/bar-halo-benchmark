@@ -1,0 +1,15 @@
+{
+  "checked_utc": "2026-09-23T18:17:04.607Z",
+  "method": "Cloudflare Browser Rendering fresh remote context with JavaScript disabled; no cookies or credentials supplied to the public target. API authentication is for the test service.",
+  "result": {
+    "success": true,
+    "service_status": 200,
+    "length": 57815,
+    "release": true,
+    "article": true,
+    "table": true,
+    "challenge": false,
+    "analytics_injection": false
+  },
+  "limitations": "This is an external content check, not independent scientific review or a claim that every crawler works. A later multi-payload service call failed; all payload bytes/content types were separately checked with anonymous local HTTP. The web browsing tool still fails on the canonical site but reads the tagged public GitHub Markdown."
+}

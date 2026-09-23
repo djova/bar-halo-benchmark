@@ -1,0 +1,35 @@
+{
+  "scope": "Existing scientific records unchanged by publication consolidation; no new simulation or physical verification claimed",
+  "records": [
+    {
+      "path": "web/data/population-response/publication.json",
+      "unchanged": true,
+      "sha256": "6cdd20f22dcd4d45b081116041a3f3b8092114f4e7f72243b49c386a9e6da105"
+    },
+    {
+      "path": "web/diagnostics/population-response/independent-validation.json",
+      "unchanged": true,
+      "sha256": "f6f9767771cd57d4003265f96f4cc5ff605c9e44ff035dc98fbed727ce48a3ad"
+    },
+    {
+      "path": "web/diagnostics/population-accuracy/accuracy-explorer.json",
+      "unchanged": true,
+      "sha256": "9c75b80a649ba376ad73fe70f74d6df72cff140236f76b495a549625e7e0ba11"
+    },
+    {
+      "path": "web/diagnostics/population-accuracy/frozen-forecast.json",
+      "unchanged": true,
+      "sha256": "210efef3dc4c0adaa3bc04077690d531283993bf38fe23f2731a14fd46fb1c8e"
+    },
+    {
+      "path": "web/diagnostics/population-accuracy/independent-outcome.json",
+      "unchanged": true,
+      "sha256": "c30b54028a2d660386770594a63c038ce975f613f651b319a570f96491147a49"
+    },
+    {
+      "path": "web/diagnostics/population-accuracy/accuracy-reproduction.json",
+      "unchanged": true,
+      "sha256": "e835c5e0cbdcbe37263622a485bd0039bba49f9829c2e5675a698067addddd50"
+    }
+  ]
+}

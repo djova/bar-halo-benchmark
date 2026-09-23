@@ -1,0 +1,428 @@
+{
+  "checked_utc": "2026-09-23T18:18:38.615354+00:00",
+  "origin": "https://djova.ca/galaxy-bar/",
+  "activity": "Anonymous access, not scientific validation",
+  "named_reader_all_match": true,
+  "generic_python_reader": {
+    "path": "paper.md",
+    "user_agent": "Python-urllib/3.12",
+    "status": 403,
+    "content_type": "text/plain",
+    "bytes": 17,
+    "sha256": "2938e9f1284180959e33ab1718d0793a72ff6e4cdb8108c34dcd14e69446de5c",
+    "matches_build": false,
+    "telemetry_injected": false
+  },
+  "records": [
+    {
+      "path": "agents.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 8832,
+      "sha256": "dceab811d80349b918064bf22f75d5449f2a2a24d5b3d4d4b566c4454a9a560b",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "archive.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 8161,
+      "sha256": "4cacc60fd19c6b9624de533aa68b22445d24de1a2f07d92f11f6d174b06d102b",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "communication.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 38148,
+      "sha256": "6f6513d22be09678584b80a26c9c96a7cea6ba8b23513f7828570ceab336f587",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "diagnostics/response/source-index.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 17160,
+      "sha256": "7b7e5f86dd274523dfa608594b1022b3dc11bc45270207617bd6de182938e9c4",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "experiments.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 8978,
+      "sha256": "0bbae2457a9189a69ce11193d55931f5bc14b3859dd021162dd65af78910b4b8",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "final-report.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 15858,
+      "sha256": "92a08e07142b0a28f77f0782e647ad195b052f7bc0c6b15fafa9b966eeab0a59",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "followup.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 163221,
+      "sha256": "6aed1743db0270e8144d0487fb20c3ff7f83054c91d3f286e47b7cbade38f376",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "guide.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 20947,
+      "sha256": "a13fa61f9da0e20d0c54861ad21e8f6bb0a8e22db67345029ed3299cc3be2ea3",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "index.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 18767,
+      "sha256": "bc9846b189febcf31f7c01303904f878215d2a1d945d2250cc87705d8899abc8",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "lab.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 29278,
+      "sha256": "ea7582301cf9fbea9eb0e49eac82f114aaf2c4c6494b779a799e513683707b6d",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "learn.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 16905,
+      "sha256": "a23ef7ed2731b35ad9f250a857b8810d7e947b7fed1fb49613088ce66f98c440",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "methodology.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 51993,
+      "sha256": "f083c1a291cf6f3b0ccbb46db8ec81aae3eb6b62323ab9f30e31d0b7349b10e2",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "next-48-hours.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 20531,
+      "sha256": "d23f8533215215079ff5d339cedaab7f3433d34b898889f1a40cf580d4f0d15e",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "noise-methods.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 44427,
+      "sha256": "3e8a2af29358c09906e4f1528b491897d866fe24a3ba48453f5d42ba10521445",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "noise-sweep.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 48267,
+      "sha256": "d5fad550e7e4e814d4ee11d7ef25a13e8b772167485fc363f691605fb24312a0",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "paper.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 57964,
+      "sha256": "e2164037a5def9edcd12b3c490b1e0e8c262d195a61142637b49ee202862cd29",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "population-accuracy.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 23552,
+      "sha256": "71ffdc535397a7cc46b7c6d65511f26c40ea540d5993895a0a9b2419e2989bb2",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "population-methods.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 38060,
+      "sha256": "35836a4270ccf42eadde34db6e80c863f98c5fc77feaa88fcc5a3b3596212e80",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "population-response.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 18429,
+      "sha256": "034cc5b704ddbe94cdfda5d2cb20cfe250892b07c50f95806133ea1806d84608",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "project-brief.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 20408,
+      "sha256": "0d4fe3e2929d685d2c61b076bfab058a1f57c6ddef366118808b446becb84a91",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "releases/2026-09-23.1/agents.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 9009,
+      "sha256": "1a985c8341ce0df47e732e8fc8cedc2e27470c7cb281d268f89e3e3037027ee4",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "releases/2026-09-23.1/archive.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 8392,
+      "sha256": "acdcf75f465b9273f6ddb3c115c09beadcadaa3078d3dc5f254ec6f35fcf8d9a",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "releases/2026-09-23.1/experiments.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 9191,
+      "sha256": "6f9a3fa12256df1e8e18457c9539058d4799eb8e9b4c14a17a42a945c5d52db2",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "releases/2026-09-23.1/learn.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 17118,
+      "sha256": "51cb943c1346af3314a61c7bcd39ce6ba76802b2eff07acfd6b50f1582665506",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "releases/2026-09-23.1/paper.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 58201,
+      "sha256": "14bd7b7beecbcad19507e9e17755454504105ead07088ef1d09559a281cae083",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "releases/2026-09-23.1/reproduce.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 13177,
+      "sha256": "8f42b93dd774c55e895d4ff6b42b69690fcb08ba76ba66db799f6872e56149e3",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "reproduce.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 12976,
+      "sha256": "39e2841fe7f0d005dbc3b4f69d3637855daeb14b7437736d257f074e6d44118e",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "research.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 33188,
+      "sha256": "b773c028d2af093f938f8b424fdbb27f1193c2f77bcead896999b9e278ecba11",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "response-coupling.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 11508,
+      "sha256": "cfca778368cc3ab887269d5757a2df6db43e50a231a0d64f0200f639b6f5fdc1",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "response-forces.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 11931,
+      "sha256": "db560790c0f85c207c77cd0e6ab4e05b331b17ab93e102687a06c555599de2fb",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "response-methods.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 44323,
+      "sha256": "0e214cda61de3b23123c17db48b089723e066e7e9c8e98c95926ff516285225a",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "response-orbits.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 13015,
+      "sha256": "b4508ac051d49b2fea8f2dd56f7cf8daa9fab093526187c15d4de7548035fe12",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "response-source-history.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 10091,
+      "sha256": "b50a14678e4ca22c39086be5e54a1d5d6d061ff4831daa4e729db2ab3dd2ce71",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "response-validation.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 34921,
+      "sha256": "303a3fb1c14770213d348e21e825f85f2df23a7bffa79d60bd6411f1afbd22ef",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "response.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 24126,
+      "sha256": "f57770f2542206ccd964d6a95f82056b5a6bbfc934a159d803bdcfd3f98d4a22",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "sidm-critical-review.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 12336,
+      "sha256": "e0b8c6af91990f6d7d34ed26f3cdd2169b53f5066584fd60a43c79baaa2c293c",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "synthesis.html",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 34976,
+      "sha256": "a5fb87e240b67622cf315a5f9acf3150dbe2fa2c5542a58f6e0b359920d7d081",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "paper.md",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "text/markdown",
+      "bytes": 34686,
+      "sha256": "ab36c2550236cd2c1df8a55bd9442676299ceec7f0db4ab134f0d2233e4fe3bb",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "manifest.json",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 6717,
+      "sha256": "05325d8556ecd4ac7f86e5291a1108d8eaf5a9332baead2a3d4ee506dd03d24d",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "claims.json",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 15842,
+      "sha256": "2ad3b85a5dd0080aa50a8c3383327f275215ff2589998366fa35cf3e1bd5ceaf",
+      "matches_build": true,
+      "telemetry_injected": false
+    },
+    {
+      "path": "results/summary.json",
+      "user_agent": "GalaxyBar-PublicVerification/1.0",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 410,
+      "sha256": "a07e4cc68e83fb94d7640e7661b1e556ee4826139f3a3e7462d94966b180a54d",
+      "matches_build": true,
+      "telemetry_injected": false
+    }
+  ]
+}

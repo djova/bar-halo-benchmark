@@ -1,0 +1,23 @@
+{
+  "activity": "Anonymous HTTPS public-tag clone and isolated publication rebuild; no simulations",
+  "source_commit": "5d60fb5d6e1b71cbc67517223886d71fb6f0a941",
+  "tag": "publication-2026-09-23.1",
+  "artifacts": 35,
+  "identical": true,
+  "mismatches": [],
+  "dependencies": [
+    {
+      "name": "Markdown",
+      "version": "3.8.2"
+    },
+    {
+      "name": "numpy",
+      "version": "1.26.4"
+    },
+    {
+      "name": "pip",
+      "version": "24.0"
+    }
+  ],
+  "generator_sha256": "2903e6c0b42032855d34be1a7472281d021cfec07da0c0e4b67eab93e3ad4fed"
+}

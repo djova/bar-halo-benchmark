@@ -1,0 +1,11 @@
+{
+  "dataset": "RAW-162b8add2328",
+  "url": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/cdb30b5b2f350d2f3de6831995b83f281fe2974e/accuracy/results/population-accuracy/forecast-01/kernel-batches.npz",
+  "status": 200,
+  "content_type": "application/octet-stream",
+  "bytes": 6058235,
+  "expected_sha256": "a9ae87c02645eb96d2959e1a46599e67f4838e07e2e0dee733e37a8476bde9da",
+  "actual_sha256": "a9ae87c02645eb96d2959e1a46599e67f4838e07e2e0dee733e37a8476bde9da",
+  "numpy_zip_magic": true,
+  "owner_credentials": false
+}

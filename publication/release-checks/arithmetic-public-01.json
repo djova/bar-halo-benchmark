@@ -1,0 +1,98 @@
+{
+  "release": "2026-09-23.1",
+  "activity": "Verification of supplied records, not simulation reproduction or new physics",
+  "population_late_magnitude_ratio": 4.735323064643955,
+  "candidate_count": 20,
+  "qualified_count": 8,
+  "independently_supported": 8,
+  "distinct_new_conditions": 1,
+  "conservative_rejections": [
+    "ACC-gaussian128-T10-W40",
+    "ACC-gaussian128-T10-W64",
+    "ACC-gaussian128-T20-W40",
+    "ACC-gaussian128-T20-W64"
+  ],
+  "broad_conditional_cost_variance_ratio": 6928.353830605735,
+  "broad_between_batch_ratio": 2749.3990669210343,
+  "narrow_ratio": 0.9926830754833764,
+  "scope": "Prescribed local operator; Cartesian transfer unresolved and live-halo/SIDM inference not established.",
+  "downloads": [
+    {
+      "path": "manifest.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 6717,
+      "sha256": "05325d8556ecd4ac7f86e5291a1108d8eaf5a9332baead2a3d4ee506dd03d24d"
+    },
+    {
+      "path": "claims.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 15842,
+      "sha256": "2ad3b85a5dd0080aa50a8c3383327f275215ff2589998366fa35cf3e1bd5ceaf"
+    },
+    {
+      "path": "models.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 2241,
+      "sha256": "9497d999ffd6ead496c0cf68a2caae1aba3ad92e69784115430ea068b8b00b0b"
+    },
+    {
+      "path": "campaigns.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 3502,
+      "sha256": "10e8ca39b702b1e089e35578d5348b2d32a0c17fa08b12790d2307a3a60a349e"
+    },
+    {
+      "path": "datasets.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 65232,
+      "sha256": "93c2a4394586a6570dddbb9020e19d1d3abda7d514d7aabcfd7043eed2fd39da"
+    },
+    {
+      "path": "results/populations.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 2586,
+      "sha256": "83c315d4f49d75b7f7ae7b852408abecd319e58b4d8b43b33faea5056956f420"
+    },
+    {
+      "path": "results/accuracy.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 22821,
+      "sha256": "d39ddb4b2dd579d36d307ba904730ec7293a870f439ecb8386a491cd75ac652a"
+    },
+    {
+      "path": "results/cost.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 16790,
+      "sha256": "ab3f9f178c7b411c0e62e905111df1ee162523a19c55173fcc2a7da46f3e9707"
+    },
+    {
+      "path": "results/summary.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 410,
+      "sha256": "a07e4cc68e83fb94d7640e7661b1e556ee4826139f3a3e7462d94966b180a54d"
+    },
+    {
+      "path": "diagnostics/population-response/independent-validation.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 116519,
+      "sha256": "f6f9767771cd57d4003265f96f4cc5ff605c9e44ff035dc98fbed727ce48a3ad"
+    },
+    {
+      "path": "diagnostics/population-accuracy/accuracy-explorer.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 4726012,
+      "sha256": "9c75b80a649ba376ad73fe70f74d6df72cff140236f76b495a549625e7e0ba11"
+    }
+  ]
+}
