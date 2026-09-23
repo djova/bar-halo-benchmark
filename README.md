@@ -23,6 +23,29 @@ are needed. Details and the full-precision receipt appear below.
 
 [Interactive result, recorded paths and limitations](https://djova.ca/galaxy-bar/noise-sweep).
 
+## Population weighting: the next controlled comparison
+
+The new [population package](population/README.md) keeps the central absolute
+halo DF, imposed dynamics and elapsed times fixed while replacing the selected
+Gaussian with the reference isochrone halo DF. At the primary T20 endpoint,
+moving-resonance suppression survives halo weighting but is about4.7times smaller
+than for the Gaussian. At the prespecified T10 check, their noise effects have
+opposite signs despite equal initial density and slope. Independent stochastic
+trajectories and distribution/characteristic calculations support these findings.
+These are differential contributions at one fixed fast-action slice, not a
+complete halo torque, physical SIDM prediction or observed-galaxy comparison.
+
+```sh
+.venv/bin/python reproduce_population.py --out reproduced-population
+```
+
+This new command regenerates all16trajectory cases, four central independent
+calculations and their recorded kernels from public inputs and seeds. Allow about
+four core-hours. The source and reference records are released; a full fresh-environment
+reproduction is planned, so this release does not yet claim that rerun has passed.
+The independent scientific sample is complete; same-seed reproduction is a separate
+software check. The original failed3Dqualification is retained unchanged.
+
 ## Verify the finite-lag and collision-generator limits
 
 The separate known-limit command also needs no private repository, particle
