@@ -51,6 +51,21 @@ implemented allowance uses estimated kernels, approximate Student-t coverage
 and practical numerical-refinement proxies. Neither a reproduced calculation
 nor an operational qualification turns those proxies into rigorous bounds.
 
+## Verified fresh-source reproduction
+
+The complete command passed in a fresh HTTPS clone of public commit `66143eb`
+with an isolated Python 3.11.14 environment and all exact dependency pins.
+All eight kernels, fourteen independent cases, forecasts and qualification
+outcomes reproduced. An additional archive-side audit compared all 162 saved
+numeric arrays: every array, and every compressed raw archive, matched exactly.
+The regenerated figure has identical RGB pixels and was visually inspected.
+
+The [full receipt](reproductions/accuracy-01/result.json) records these checks.
+The rerun used 4,715.85 kernel and 8,246.96 independent worker CPU-seconds
+(3.60 core-hours together). CPU work is not elapsed time. Same-seed reproduction
+is not additional independent physical evidence. Later receipt/editorial
+updates leave the tested numerical sources, recipes, inputs and pins unchanged.
+
 ## Reproduce the matched estimator-cost experiment
 
 ```sh

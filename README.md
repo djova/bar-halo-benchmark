@@ -43,6 +43,10 @@ python reproduce_accuracy.py --out /tmp/accuracy-reproduction --workers 2
 ```
 
 The original kernel and independent stages used about 1.42 and 2.31 core-hours.
+The complete fresh-source run reproduced all eight kernels, fourteen independent
+cases and 162 saved arrays exactly. See the [reproduction receipt](accuracy/reproductions/accuracy-01/result.json).
+These are repeated released seeds, not additional physical samples.
+
 Read the [research note](accuracy/research/population-accuracy/RESEARCH_NOTE.md),
 [complete outcome](accuracy/research/population-accuracy/ACCURACY_OUTCOME_01.md),
 and [interactive error-budget explorer](https://djova.ca/galaxy-bar/population-accuracy).

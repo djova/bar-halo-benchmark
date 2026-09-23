@@ -1,0 +1,1750 @@
+{
+  "all_reference_decisions_and_values_reproduced": true,
+  "changes": [],
+  "source_manifest_sha256": "c305135e6467bb6fe00c10f2a9fe95928aa8cdd9b38737b8bf93ad49439aa52e",
+  "counts": {
+    "all_comparisons": 24,
+    "candidate_comparisons": 20,
+    "qualified_signs": 15,
+    "false_qualified_signs": 0,
+    "qualified_five_percent": 8,
+    "false_five_percent_qualifications": 0,
+    "supported_five_percent_qualifications": 8,
+    "inconclusive_five_percent_qualifications": 0,
+    "conservative_five_percent_rejections": 4
+  },
+  "kernel_arrays": {
+    "edges": {
+      "maximum_absolute_difference": 0.0,
+      "within_reproduction_tolerance": true
+    },
+    "fine": {
+      "maximum_absolute_difference": 0.0,
+      "within_reproduction_tolerance": true
+    },
+    "coarse": {
+      "maximum_absolute_difference": 0.0,
+      "within_reproduction_tolerance": true
+    }
+  },
+  "kernel_cpu_seconds": 4715.848351,
+  "independent_cpu_seconds": 8246.963380000001,
+  "scope": "Fresh published-source and isolated-environment reproduction of all eight kernels and fourteen independent numerical cases. The public command checks forecasts and qualification outcomes; this additional archive-side audit checks every saved numeric array and scientific case record, plus figure provenance and installed pins. Identical seeds verify reproducibility, not new independent physical evidence. Runtime/provenance fields are excluded from scientific-value equality. Figure pixels and visual inspection are separate checks.",
+  "checked_utc": "2026-09-23T15:35:16.687809+00:00",
+  "public_source_commit": "66143ebdb7441e17f4b44c23d15c2b35eb66841a",
+  "wrapper_exit_code": 0,
+  "fresh_https_clone": true,
+  "fresh_environment": true,
+  "all_scientific_case_records_match": true,
+  "all_saved_arrays_within_tolerance": true,
+  "all_saved_arrays_exactly_equal": true,
+  "all_raw_archives_byte_identical": true,
+  "saved_array_count": 162,
+  "cases": [
+    {
+      "stage": "kernel",
+      "case": "s0.5-seed96101",
+      "scientific_record_matches": true,
+      "original_raw_sha256": "3c7498af59d6efdf14d753776b0b5327b9fed12161e4bc873ec7019c427e9385",
+      "reproduced_raw_sha256": "3c7498af59d6efdf14d753776b0b5327b9fed12161e4bc873ec7019c427e9385",
+      "arrays": {
+        "edges": {
+          "shape": [
+            177
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "counts": {
+          "shape": [
+            176
+          ],
+          "dtype": "int64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "stratum_mean": {
+          "shape": [
+            176,
+            96
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "stratum_covariance": {
+          "shape": [
+            176,
+            96,
+            96
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "mean": {
+          "shape": [
+            96
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "covariance": {
+          "shape": [
+            96,
+            96
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "kernel_edges": {
+          "shape": [
+            32769
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "kernel_primitive_cell_average": {
+          "shape": [
+            2,
+            2,
+            2,
+            32768
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "kernel_primitive_at_edges": {
+          "shape": [
+            2,
+            2,
+            2,
+            32769
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "raw_conditional_kernel": {
+          "shape": [
+            2,
+            2,
+            2,
+            176
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "raw_conditional_kernel_mean_variance": {
+          "shape": [
+            2,
+            2,
+            2,
+            176
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        }
+      }
+    },
+    {
+      "stage": "kernel",
+      "case": "s0.5-seed96102",
+      "scientific_record_matches": true,
+      "original_raw_sha256": "847c1013b8eb63aa0707c78fe8a30c2490739ebc1b1845da79bdf4001efb887b",
+      "reproduced_raw_sha256": "847c1013b8eb63aa0707c78fe8a30c2490739ebc1b1845da79bdf4001efb887b",
+      "arrays": {
+        "edges": {
+          "shape": [
+            177
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "counts": {
+          "shape": [
+            176
+          ],
+          "dtype": "int64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "stratum_mean": {
+          "shape": [
+            176,
+            96
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "stratum_covariance": {
+          "shape": [
+            176,
+            96,
+            96
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "mean": {
+          "shape": [
+            96
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "covariance": {
+          "shape": [
+            96,
+            96
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "kernel_edges": {
+          "shape": [
+            32769
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "kernel_primitive_cell_average": {
+          "shape": [
+            2,
+            2,
+            2,
+            32768
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "kernel_primitive_at_edges": {
+          "shape": [
+            2,
+            2,
+            2,
+            32769
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "raw_conditional_kernel": {
+          "shape": [
+            2,
+            2,
+            2,
+            176
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "raw_conditional_kernel_mean_variance": {
+          "shape": [
+            2,
+            2,
+            2,
+            176
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        }
+      }
+    },
+    {
+      "stage": "kernel",
+      "case": "s0.5-seed96103",
+      "scientific_record_matches": true,
+      "original_raw_sha256": "5e4f4fc68b9192e60101058b0781ff107a6b21abbca6a9b69f8343c57f5292a5",
+      "reproduced_raw_sha256": "5e4f4fc68b9192e60101058b0781ff107a6b21abbca6a9b69f8343c57f5292a5",
+      "arrays": {
+        "edges": {
+          "shape": [
+            177
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "counts": {
+          "shape": [
+            176
+          ],
+          "dtype": "int64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "stratum_mean": {
+          "shape": [
+            176,
+            96
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "stratum_covariance": {
+          "shape": [
+            176,
+            96,
+            96
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "mean": {
+          "shape": [
+            96
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "covariance": {
+          "shape": [
+            96,
+            96
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "kernel_edges": {
+          "shape": [
+            32769
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "kernel_primitive_cell_average": {
+          "shape": [
+            2,
+            2,
+            2,
+            32768
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "kernel_primitive_at_edges": {
+          "shape": [
+            2,
+            2,
+            2,
+            32769
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "raw_conditional_kernel": {
+          "shape": [
+            2,
+            2,
+            2,
+            176
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "raw_conditional_kernel_mean_variance": {
+          "shape": [
+            2,
+            2,
+            2,
+            176
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        }
+      }
+    },
+    {
+      "stage": "kernel",
+      "case": "s0.5-seed96104",
+      "scientific_record_matches": true,
+      "original_raw_sha256": "b831a7e5ac0d5ed021e0a1454b1928580732acf8b6ee65640256109099f9c4de",
+      "reproduced_raw_sha256": "b831a7e5ac0d5ed021e0a1454b1928580732acf8b6ee65640256109099f9c4de",
+      "arrays": {
+        "edges": {
+          "shape": [
+            177
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "counts": {
+          "shape": [
+            176
+          ],
+          "dtype": "int64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "stratum_mean": {
+          "shape": [
+            176,
+            96
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "stratum_covariance": {
+          "shape": [
+            176,
+            96,
+            96
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "mean": {
+          "shape": [
+            96
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "covariance": {
+          "shape": [
+            96,
+            96
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "kernel_edges": {
+          "shape": [
+            32769
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "kernel_primitive_cell_average": {
+          "shape": [
+            2,
+            2,
+            2,
+            32768
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "kernel_primitive_at_edges": {
+          "shape": [
+            2,
+            2,
+            2,
+            32769
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "raw_conditional_kernel": {
+          "shape": [
+            2,
+            2,
+            2,
+            176
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "raw_conditional_kernel_mean_variance": {
+          "shape": [
+            2,
+            2,
+            2,
+            176
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        }
+      }
+    },
+    {
+      "stage": "kernel",
+      "case": "s0.5-seed96105",
+      "scientific_record_matches": true,
+      "original_raw_sha256": "47e578d20b4f3b029e1420d0d4a7c052520043bf425faf1b3d38ff03538b1f23",
+      "reproduced_raw_sha256": "47e578d20b4f3b029e1420d0d4a7c052520043bf425faf1b3d38ff03538b1f23",
+      "arrays": {
+        "edges": {
+          "shape": [
+            177
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "counts": {
+          "shape": [
+            176
+          ],
+          "dtype": "int64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "stratum_mean": {
+          "shape": [
+            176,
+            96
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "stratum_covariance": {
+          "shape": [
+            176,
+            96,
+            96
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "mean": {
+          "shape": [
+            96
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "covariance": {
+          "shape": [
+            96,
+            96
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "kernel_edges": {
+          "shape": [
+            32769
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "kernel_primitive_cell_average": {
+          "shape": [
+            2,
+            2,
+            2,
+            32768
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "kernel_primitive_at_edges": {
+          "shape": [
+            2,
+            2,
+            2,
+            32769
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "raw_conditional_kernel": {
+          "shape": [
+            2,
+            2,
+            2,
+            176
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "raw_conditional_kernel_mean_variance": {
+          "shape": [
+            2,
+            2,
+            2,
+            176
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        }
+      }
+    },
+    {
+      "stage": "kernel",
+      "case": "s0.5-seed96106",
+      "scientific_record_matches": true,
+      "original_raw_sha256": "145d287af524727ae329769a60319fe3fb20435640be83d97b84a5989dec0449",
+      "reproduced_raw_sha256": "145d287af524727ae329769a60319fe3fb20435640be83d97b84a5989dec0449",
+      "arrays": {
+        "edges": {
+          "shape": [
+            177
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "counts": {
+          "shape": [
+            176
+          ],
+          "dtype": "int64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "stratum_mean": {
+          "shape": [
+            176,
+            96
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "stratum_covariance": {
+          "shape": [
+            176,
+            96,
+            96
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "mean": {
+          "shape": [
+            96
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "covariance": {
+          "shape": [
+            96,
+            96
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "kernel_edges": {
+          "shape": [
+            32769
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "kernel_primitive_cell_average": {
+          "shape": [
+            2,
+            2,
+            2,
+            32768
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "kernel_primitive_at_edges": {
+          "shape": [
+            2,
+            2,
+            2,
+            32769
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "raw_conditional_kernel": {
+          "shape": [
+            2,
+            2,
+            2,
+            176
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "raw_conditional_kernel_mean_variance": {
+          "shape": [
+            2,
+            2,
+            2,
+            176
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        }
+      }
+    },
+    {
+      "stage": "kernel",
+      "case": "s0.5-seed96107",
+      "scientific_record_matches": true,
+      "original_raw_sha256": "3bbcbabcbfb20355fd7159a3a0b25d541c4584b32f561fc8930b04d8f8b2cfc4",
+      "reproduced_raw_sha256": "3bbcbabcbfb20355fd7159a3a0b25d541c4584b32f561fc8930b04d8f8b2cfc4",
+      "arrays": {
+        "edges": {
+          "shape": [
+            177
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "counts": {
+          "shape": [
+            176
+          ],
+          "dtype": "int64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "stratum_mean": {
+          "shape": [
+            176,
+            96
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "stratum_covariance": {
+          "shape": [
+            176,
+            96,
+            96
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "mean": {
+          "shape": [
+            96
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "covariance": {
+          "shape": [
+            96,
+            96
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "kernel_edges": {
+          "shape": [
+            32769
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "kernel_primitive_cell_average": {
+          "shape": [
+            2,
+            2,
+            2,
+            32768
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "kernel_primitive_at_edges": {
+          "shape": [
+            2,
+            2,
+            2,
+            32769
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "raw_conditional_kernel": {
+          "shape": [
+            2,
+            2,
+            2,
+            176
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "raw_conditional_kernel_mean_variance": {
+          "shape": [
+            2,
+            2,
+            2,
+            176
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        }
+      }
+    },
+    {
+      "stage": "kernel",
+      "case": "s0.5-seed96108",
+      "scientific_record_matches": true,
+      "original_raw_sha256": "17d035eedc962ef5b6ff442e4f89d39b24089698ef722af0b0d90e38a2773d11",
+      "reproduced_raw_sha256": "17d035eedc962ef5b6ff442e4f89d39b24089698ef722af0b0d90e38a2773d11",
+      "arrays": {
+        "edges": {
+          "shape": [
+            177
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "counts": {
+          "shape": [
+            176
+          ],
+          "dtype": "int64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "stratum_mean": {
+          "shape": [
+            176,
+            96
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "stratum_covariance": {
+          "shape": [
+            176,
+            96,
+            96
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "mean": {
+          "shape": [
+            96
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "covariance": {
+          "shape": [
+            96,
+            96
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "kernel_edges": {
+          "shape": [
+            32769
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "kernel_primitive_cell_average": {
+          "shape": [
+            2,
+            2,
+            2,
+            32768
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "kernel_primitive_at_edges": {
+          "shape": [
+            2,
+            2,
+            2,
+            32769
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "raw_conditional_kernel": {
+          "shape": [
+            2,
+            2,
+            2,
+            176
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "raw_conditional_kernel_mean_variance": {
+          "shape": [
+            2,
+            2,
+            2,
+            176
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        }
+      }
+    },
+    {
+      "stage": "independent",
+      "case": "noisy-base",
+      "scientific_record_matches": true,
+      "original_raw_sha256": "3fea266f0841c7ed298f94f255daa320305a294e673392645d566e7308dd9c44",
+      "reproduced_raw_sha256": "3fea266f0841c7ed298f94f255daa320305a294e673392645d566e7308dd9c44",
+      "arrays": {
+        "times": {
+          "shape": [
+            5
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "psi": {
+          "shape": [
+            64
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "j": {
+          "shape": [
+            768
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "density": {
+          "shape": [
+            5,
+            6,
+            64,
+            768
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "initial_j": {
+          "shape": [
+            3072
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "initial_weights": {
+          "shape": [
+            6,
+            3072
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        }
+      }
+    },
+    {
+      "stage": "independent",
+      "case": "noisy-domain",
+      "scientific_record_matches": true,
+      "original_raw_sha256": "a21159f387216fd16a0996aa32fd72a9738fa3d9254be58f11c818678f473cf2",
+      "reproduced_raw_sha256": "a21159f387216fd16a0996aa32fd72a9738fa3d9254be58f11c818678f473cf2",
+      "arrays": {
+        "times": {
+          "shape": [
+            5
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "psi": {
+          "shape": [
+            64
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "j": {
+          "shape": [
+            820
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "density": {
+          "shape": [
+            5,
+            6,
+            64,
+            820
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "initial_j": {
+          "shape": [
+            4096
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "initial_weights": {
+          "shape": [
+            6,
+            4096
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        }
+      }
+    },
+    {
+      "stage": "independent",
+      "case": "noisy-fine",
+      "scientific_record_matches": true,
+      "original_raw_sha256": "dc46439cf6705d8fef08c41dbe1e672f77bed5214cb1eb6c0de3e7fe142bb57b",
+      "reproduced_raw_sha256": "dc46439cf6705d8fef08c41dbe1e672f77bed5214cb1eb6c0de3e7fe142bb57b",
+      "arrays": {
+        "times": {
+          "shape": [
+            5
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "psi": {
+          "shape": [
+            64
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "j": {
+          "shape": [
+            768
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "density": {
+          "shape": [
+            5,
+            6,
+            64,
+            768
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "initial_j": {
+          "shape": [
+            6144
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "initial_weights": {
+          "shape": [
+            6,
+            6144
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        }
+      }
+    },
+    {
+      "stage": "independent",
+      "case": "noisy-halfstep",
+      "scientific_record_matches": true,
+      "original_raw_sha256": "a474b4d4ffc2d114818b366c63569aa2f75e1ce8a94275cbb0143c11f9fafbc5",
+      "reproduced_raw_sha256": "a474b4d4ffc2d114818b366c63569aa2f75e1ce8a94275cbb0143c11f9fafbc5",
+      "arrays": {
+        "times": {
+          "shape": [
+            5
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "psi": {
+          "shape": [
+            64
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "j": {
+          "shape": [
+            768
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "density": {
+          "shape": [
+            5,
+            6,
+            64,
+            768
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "initial_j": {
+          "shape": [
+            3072
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "initial_weights": {
+          "shape": [
+            6,
+            3072
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        }
+      }
+    },
+    {
+      "stage": "independent",
+      "case": "noisy-unforced-wide",
+      "scientific_record_matches": true,
+      "original_raw_sha256": "4ebd79d3d21f34da4fab1a7f0028f9943873f5abf8f8b598035f22eb9444b485",
+      "reproduced_raw_sha256": "4ebd79d3d21f34da4fab1a7f0028f9943873f5abf8f8b598035f22eb9444b485",
+      "arrays": {
+        "times": {
+          "shape": [
+            5
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "psi": {
+          "shape": [
+            64
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "j": {
+          "shape": [
+            820
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "density": {
+          "shape": [
+            5,
+            6,
+            64,
+            820
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "initial_j": {
+          "shape": [
+            4096
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "initial_weights": {
+          "shape": [
+            6,
+            4096
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        }
+      }
+    },
+    {
+      "stage": "independent",
+      "case": "noisy-wide",
+      "scientific_record_matches": true,
+      "original_raw_sha256": "84aab6fca6af46f0f1fc804068b4144c7272cb9bdb407a6f16d41bdaed9a1014",
+      "reproduced_raw_sha256": "84aab6fca6af46f0f1fc804068b4144c7272cb9bdb407a6f16d41bdaed9a1014",
+      "arrays": {
+        "times": {
+          "shape": [
+            5
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "psi": {
+          "shape": [
+            64
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "j": {
+          "shape": [
+            820
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "density": {
+          "shape": [
+            5,
+            6,
+            64,
+            820
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "initial_j": {
+          "shape": [
+            4096
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "initial_weights": {
+          "shape": [
+            6,
+            4096
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        }
+      }
+    },
+    {
+      "stage": "independent",
+      "case": "noisy-wide-domain",
+      "scientific_record_matches": true,
+      "original_raw_sha256": "3b1b2ef9de5a87bbc82ff70dbd100470a7e09cbbd5791a2ae6ab076a2ce8f773",
+      "reproduced_raw_sha256": "3b1b2ef9de5a87bbc82ff70dbd100470a7e09cbbd5791a2ae6ab076a2ce8f773",
+      "arrays": {
+        "times": {
+          "shape": [
+            5
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "psi": {
+          "shape": [
+            64
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "j": {
+          "shape": [
+            854
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "density": {
+          "shape": [
+            5,
+            6,
+            64,
+            854
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "initial_j": {
+          "shape": [
+            5120
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "initial_weights": {
+          "shape": [
+            6,
+            5120
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        }
+      }
+    },
+    {
+      "stage": "independent",
+      "case": "noisy-wide-fine",
+      "scientific_record_matches": true,
+      "original_raw_sha256": "68e7ff9f3aa39adcb2956fd81907b4d875a2676c9849481068b11a78b7fbd585",
+      "reproduced_raw_sha256": "68e7ff9f3aa39adcb2956fd81907b4d875a2676c9849481068b11a78b7fbd585",
+      "arrays": {
+        "times": {
+          "shape": [
+            5
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "psi": {
+          "shape": [
+            64
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "j": {
+          "shape": [
+            820
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "density": {
+          "shape": [
+            5,
+            6,
+            64,
+            820
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "initial_j": {
+          "shape": [
+            8192
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "initial_weights": {
+          "shape": [
+            6,
+            8192
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        }
+      }
+    },
+    {
+      "stage": "independent",
+      "case": "noisy-wide-halfstep",
+      "scientific_record_matches": true,
+      "original_raw_sha256": "54c8fa7090204247c8d252ad50c38691fc5345de8bcd514046d21732ce2d8d02",
+      "reproduced_raw_sha256": "54c8fa7090204247c8d252ad50c38691fc5345de8bcd514046d21732ce2d8d02",
+      "arrays": {
+        "times": {
+          "shape": [
+            5
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "psi": {
+          "shape": [
+            64
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "j": {
+          "shape": [
+            820
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "density": {
+          "shape": [
+            5,
+            6,
+            64,
+            820
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "initial_j": {
+          "shape": [
+            4096
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "initial_weights": {
+          "shape": [
+            6,
+            4096
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        }
+      }
+    },
+    {
+      "stage": "independent",
+      "case": "smooth-base",
+      "scientific_record_matches": true,
+      "original_raw_sha256": "5fba8d6db74943fb4d635edd5ed49749874a60fdb649e3bae4ed98a4131c661d",
+      "reproduced_raw_sha256": "5fba8d6db74943fb4d635edd5ed49749874a60fdb649e3bae4ed98a4131c661d",
+      "arrays": {
+        "times": {
+          "shape": [
+            2
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "raw_bar_impulse": {
+          "shape": [
+            2,
+            12
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "remainder_bar_impulse": {
+          "shape": [
+            2,
+            12
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "initial_mass": {
+          "shape": [
+            12
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        }
+      }
+    },
+    {
+      "stage": "independent",
+      "case": "smooth-domain",
+      "scientific_record_matches": true,
+      "original_raw_sha256": "2c4433c09adb49a1f0b8d3043941ba0df7a8adcd600f1636c289d3045bab8395",
+      "reproduced_raw_sha256": "2c4433c09adb49a1f0b8d3043941ba0df7a8adcd600f1636c289d3045bab8395",
+      "arrays": {
+        "times": {
+          "shape": [
+            2
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "raw_bar_impulse": {
+          "shape": [
+            2,
+            12
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "remainder_bar_impulse": {
+          "shape": [
+            2,
+            12
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "initial_mass": {
+          "shape": [
+            12
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        }
+      }
+    },
+    {
+      "stage": "independent",
+      "case": "smooth-fine",
+      "scientific_record_matches": true,
+      "original_raw_sha256": "92fcf2d66b2dd58cd993d1ee97a079dcd95644e21f516f54756bf26b40442566",
+      "reproduced_raw_sha256": "92fcf2d66b2dd58cd993d1ee97a079dcd95644e21f516f54756bf26b40442566",
+      "arrays": {
+        "times": {
+          "shape": [
+            2
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "raw_bar_impulse": {
+          "shape": [
+            2,
+            12
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "remainder_bar_impulse": {
+          "shape": [
+            2,
+            12
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "initial_mass": {
+          "shape": [
+            12
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        }
+      }
+    },
+    {
+      "stage": "independent",
+      "case": "smooth-finer",
+      "scientific_record_matches": true,
+      "original_raw_sha256": "3598cdcaae52078d3af0368c08446483ccd63abc483dd904ba15b742bea9c1dc",
+      "reproduced_raw_sha256": "3598cdcaae52078d3af0368c08446483ccd63abc483dd904ba15b742bea9c1dc",
+      "arrays": {
+        "times": {
+          "shape": [
+            2
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "raw_bar_impulse": {
+          "shape": [
+            2,
+            12
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "remainder_bar_impulse": {
+          "shape": [
+            2,
+            12
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "initial_mass": {
+          "shape": [
+            12
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        }
+      }
+    },
+    {
+      "stage": "independent",
+      "case": "smooth-halfstep",
+      "scientific_record_matches": true,
+      "original_raw_sha256": "81c965c5f48231f285ee64ca1cbe5f126703b54085803a74db49a7639d5ef617",
+      "reproduced_raw_sha256": "81c965c5f48231f285ee64ca1cbe5f126703b54085803a74db49a7639d5ef617",
+      "arrays": {
+        "times": {
+          "shape": [
+            2
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "raw_bar_impulse": {
+          "shape": [
+            2,
+            12
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "remainder_bar_impulse": {
+          "shape": [
+            2,
+            12
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        },
+        "initial_mass": {
+          "shape": [
+            12
+          ],
+          "dtype": "float64",
+          "maximum_absolute_difference": 0.0,
+          "exactly_equal": true
+        }
+      }
+    }
+  ],
+  "required_packages": {
+    "contourpy": "1.3.3",
+    "cycler": "0.12.1",
+    "fonttools": "4.65.0",
+    "kiwisolver": "1.5.1",
+    "matplotlib": "3.11.2",
+    "numpy": "1.26.4",
+    "packaging": "26.3",
+    "pillow": "12.3.0",
+    "pyparsing": "3.3.3",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "scipy": "1.17.1"
+  },
+  "requirements_sha256": "974ffa83c4c3345f23b17d120a8b6a66bbdd045f30934ea185d2600cf51f44c6",
+  "figure": {
+    "sha256": "1e6e891e96e79c1aaaafc215821afdf83422b15c5211fca0c20dd1ee95c664fd",
+    "pixels_equal_to_original": true,
+    "generated_from_reproduced_analysis": true,
+    "visual_review": {
+      "status": "passed",
+      "checked_utc": "2026-09-23T15:36:09.407627+00:00",
+      "scope": "Inspected the regenerated full four-panel figure. All twenty candidates, both endpoints/windows, labels, tolerance line, uncertainty marks and scope caption are legible; eight supported qualifications and four conservative rejections agree with the records. RGB pixels also match the original."
+    }
+  },
+  "stage_ledgers": {
+    "kernel": {
+      "cpu_seconds": 4715.848351,
+      "sha256": "ddc87d9024a9f3d5dbc657ee774831b42ae3606dd37cebc4f3d85c811ad5f04c"
+    },
+    "independent": {
+      "cpu_seconds": 8246.963380000001,
+      "sha256": "13b262d7b1381208a53cc72d65c58c449b77346f4d7b735afbdf15bbcab26efe"
+    }
+  },
+  "receipt_audit_cpu_seconds": 1.7387365590000001,
+  "numeric_audit_sha256": "1a167ddc34d588feb525da60818c39d8b7b39146f6b22291600393537e910d5e"
+}

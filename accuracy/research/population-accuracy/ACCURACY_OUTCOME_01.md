@@ -27,6 +27,14 @@ inequality. An allowance based on absolute contributions can be larger than
 the signed error after cancellation. No profiles were dropped, thresholds
 relaxed, or numerical ladder extended to obtain these outcomes.
 
+For these four cases, the plug-in absolute-gradient term already exceeds the
+frozen 5% target before the explicit kernel uncertainty is added. In the
+primary window it is 0.00052005 at T = 10, versus signed error magnitude 0.00009479;
+at T = 20 it is 0.00347405 versus 0.00216566. The statement concerns the recorded
+mean kernel, whose own uncertainty remains relevant. It identifies loss of
+signed cancellation as a source of conservatism, without claiming that the
+true kernel or exact future precision is known.
+
 ## What the independent calculation measured
 
 Primary physical window: plateau 24, cutoff 40. Values are noise-minus-smooth
@@ -89,6 +97,9 @@ safe broad approximations and declines the inaccurate narrow ones, at the
 cost of some conservative rejections. This is evidence of practical usefulness
 in the specified regime. It does not calibrate a universal Gaussian width,
 curvature threshold, simultaneous coverage law or general live-halo correction.
+All new-condition population responses are negative. The supported sign
+qualifications therefore do not test both physical orderings prospectively;
+the earlier opposite-sign counterexample belongs to the separate s=0.25 case.
 
 The exact triangle inequality is elementary. Its sampled implementation uses
 approximate Student-t batch coverage and numerical proxies. Successful tests
@@ -96,8 +107,11 @@ do not remove those assumptions. Prospective population predictions validate
 a reusable computation within externally prescribed dynamics, not a new law
 of dark matter. Three-dimensional transfer remains unvalidated.
 
-Scientific production for this test is closed. The remaining work is public
-reproduction, publication and substantive external review preparation. No
+Scientific production for this test is closed. The complete public-source
+reproduction has also passed: eight kernel cases, fourteen independent cases,
+162 saved arrays matching exactly, all forecast/qualification outcomes and an
+identical regenerated figure. The figure was inspected after completion. No
 additional parameter search or Cartesian precision campaign is required to
 assess this frozen test. Reproducing the released seeds is software/reproducibility
-evidence, not another independent scientific sample.
+evidence, not another independent scientific sample. External-review questions
+are prepared; no researchers have been contacted.

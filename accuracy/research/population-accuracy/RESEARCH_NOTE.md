@@ -209,13 +209,27 @@ error and paired numerical proxy in all twenty candidate comparisons. The
 four Gaussian-128 rejections quantify conservatism. No threshold, population or
 numerical ladder was changed after seeing these outcomes.
 
+The recorded mean kernel also shows why those rejections occur. At the primary
+window, Gaussian 128's signed population error has magnitude about 0.00009479
+at T = 10, while the absolute-gradient integral is 0.00052005; at T = 20 the two are
+0.00216566 and 0.00347405. Before any explicit kernel-uncertainty expansion, the
+latter integral already exceeds the frozen 5% target at both endpoints and both
+windows. Thus the reported conservatism is not solely an effect of the
+simultaneous confidence factor: discarding signed cancellation matters. These
+are contractions of the recorded mean kernel, not exact-kernel bounds or a
+new prospective test. More samples are not automatically a remedy for an
+absolute-contribution allowance.
+
 This test supports a usable distinction within the declared regime: preserve
 the gradient across the response-sensitive action region, rather than imposing
 curvature merely to select convenient tracers. The test does not establish a
 universal width threshold. Twenty correlated comparisons at one new dynamical
 condition are not twenty independent validations of a theory. The allowance's
 Student-t approximation and refinement proxies remain limitations even though
-this particular prospective check succeeds.
+this particular prospective check succeeds. Every independently evolved
+response in the new condition is negative; this prospective sign check does
+not establish performance across a sign-changing family. The original
+opposite-sign population example remains a separate s=0.25 result.
 
 The diagnostic does not make the kernel free. The new kernel required about
 5,105 worker CPU-seconds; contracting the six-profile family and both windows
@@ -307,8 +321,15 @@ versions, numerical reference outputs and commands. The accuracy release adds
 the eight-kernel, fourteen-case experiment through `reproduce_accuracy.py`,
 alongside the corrected-cost and retrospective-audit commands. The original
 kernel and independent stages used 1.42 and 2.31 worker core-hours respectively;
-these are summed CPU work, not elapsed wall time. A complete fresh-source
-reproduction receipt is reported separately after verification. Private
+these are summed CPU work, not elapsed wall time. A fresh HTTPS clone at public
+commit `66143eb`, with an isolated pinned Python environment, reproduced all
+eight kernels and fourteen independent cases. Every one of 162 saved numeric
+arrays matches exactly, as do all checked forecasts and qualification outcomes.
+The regenerated figure has identical RGB pixels and was visually inspected.
+The two stages used 1.31 and 2.29 worker core-hours in the rerun. This repeats
+released seeds; it verifies reproducibility, not additional physical evidence.
+The [complete receipt](https://djova.ca/galaxy-bar/diagnostics/population-accuracy/accuracy-reproduction.json)
+records source, dependencies, arrays, decisions and figure checks. Private
 archives are not a dependency of the scientific release.
 
 The most useful external questions are whether an equivalent finite-time

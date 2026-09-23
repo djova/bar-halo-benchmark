@@ -6,6 +6,14 @@ evaluate a running campaign. Potential readers include the authors of the
 stationary-diffusion, moving-resonance and migration–diffusion work cited below.
 Naming them is not a claim that they have reviewed or endorsed the project.
 
+The review package is ready: [interactive report](https://djova.ca/galaxy-bar/population-accuracy),
+[focused manuscript](https://github.com/djova/bar-halo-benchmark/blob/main/accuracy/research/population-accuracy/RESEARCH_NOTE.md),
+and [runnable package](https://github.com/djova/bar-halo-benchmark/tree/main/accuracy).
+The complete new-condition test and fresh public-source reproduction have
+finished. Eight advance 5% qualifications are supported; four accurate
+comparisons were conservatively unqualified. All new-condition responses are
+negative, which limits the prospective sign check.
+
 ## The bounded claim to scrutinize
 
 At matched central density and slope, positive populations can give opposite
