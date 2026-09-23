@@ -1,0 +1,1210 @@
+{
+  "rows": [
+    {
+      "s": 0.0,
+      "tau": 10.0,
+      "population": "gaussian12-40",
+      "independent_integral_w_K_B": 0.013147730117034179,
+      "frozen_prediction": {
+        "mean": 0.01313892574989574,
+        "se": 2.7832942003771113e-05,
+        "ci95": [
+          0.013073111300240447,
+          0.013204740199551033
+        ]
+      },
+      "independent_minus_predicted": {
+        "mean": 8.804367138438417e-06,
+        "se": 2.7832942003771113e-05,
+        "ci95": [
+          -5.701008251685423e-05,
+          7.461881679373106e-05
+        ]
+      },
+      "frozen_accuracy_allowance": 0.000656946287494787,
+      "comparison_changes": {
+        "characteristic_quadrature": -1.301214277506929e-05,
+        "characteristic_timestep": -6.019896185704976e-09,
+        "characteristic_domain": 0.0,
+        "noisy_mesh": 7.875644580934704e-16,
+        "noisy_timestep": -1.1577688151936938e-07,
+        "noisy_domain": -2.4494295480792516e-15,
+        "noisy_wide_mesh": 8.326672684688674e-16,
+        "physical_window": 2.412636312953964e-09
+      },
+      "comparison_gates": {
+        "characteristic_quadrature": true,
+        "characteristic_timestep": true,
+        "characteristic_domain": true,
+        "noisy_mesh": true,
+        "noisy_timestep": true,
+        "noisy_domain": true,
+        "noisy_wide_mesh": true,
+        "physical_window": true
+      },
+      "all_local_gates_pass": true,
+      "numerical_window_qualified": true,
+      "retained_characteristic_base_fine_change": -1.301214277506929e-05,
+      "forecast_qualified": true,
+      "accuracy_interval_contained": true,
+      "prospective_prediction_qualified": true
+    },
+    {
+      "s": 0.0,
+      "tau": 10.0,
+      "population": "gaussian12-64",
+      "independent_integral_w_K_B": 0.013147732529658769,
+      "frozen_prediction": {
+        "mean": 0.013138904113124059,
+        "se": 2.7818958978854677e-05,
+        "ci95": [
+          0.013073122728068595,
+          0.013204685498179523
+        ]
+      },
+      "independent_minus_predicted": {
+        "mean": 8.82841653470994e-06,
+        "se": 2.7818958978854677e-05,
+        "ci95": [
+          -5.6952968520754664e-05,
+          7.460980159017454e-05
+        ]
+      },
+      "frozen_accuracy_allowance": 0.0006569452056562029,
+      "comparison_changes": {
+        "characteristic_quadrature": -1.3012142765750356e-05,
+        "characteristic_timestep": -6.522293111849153e-09,
+        "characteristic_domain": 0.0,
+        "noisy_mesh": 7.875644580934704e-16,
+        "noisy_timestep": -1.1577688151936938e-07,
+        "noisy_domain": -2.4494295480792516e-15,
+        "noisy_wide_mesh": 8.326672684688674e-16,
+        "physical_window": 2.412636312953964e-09
+      },
+      "comparison_gates": {
+        "characteristic_quadrature": true,
+        "characteristic_timestep": true,
+        "characteristic_domain": true,
+        "noisy_mesh": true,
+        "noisy_timestep": true,
+        "noisy_domain": true,
+        "noisy_wide_mesh": true,
+        "physical_window": true
+      },
+      "all_local_gates_pass": true,
+      "numerical_window_qualified": true,
+      "retained_characteristic_base_fine_change": -1.3012142765750356e-05,
+      "forecast_qualified": true,
+      "accuracy_interval_contained": true,
+      "prospective_prediction_qualified": true
+    },
+    {
+      "s": 0.0,
+      "tau": 10.0,
+      "population": "gaussian20-40",
+      "independent_integral_w_K_B": 0.013333558575191383,
+      "frozen_prediction": {
+        "mean": 0.01333177705588917,
+        "se": 1.6162581874918395e-05,
+        "ci95": [
+          0.013293558622819383,
+          0.013369995488958956
+        ]
+      },
+      "independent_minus_predicted": {
+        "mean": 1.7815193022136053e-06,
+        "se": 1.6162581874918395e-05,
+        "ci95": [
+          -3.6436913767572406e-05,
+          3.999995237199962e-05
+        ]
+      },
+      "frozen_accuracy_allowance": 0.0006665888527944585,
+      "comparison_changes": {
+        "characteristic_quadrature": -1.308395319392884e-05,
+        "characteristic_timestep": -1.5976776575332696e-08,
+        "characteristic_domain": -3.469446951953614e-18,
+        "noisy_mesh": 2.230854390106174e-15,
+        "noisy_timestep": -8.569500666369412e-08,
+        "noisy_domain": -5.322131624296844e-15,
+        "noisy_wide_mesh": 2.4528989950312052e-15,
+        "physical_window": -9.701643181522779e-09
+      },
+      "comparison_gates": {
+        "characteristic_quadrature": true,
+        "characteristic_timestep": true,
+        "characteristic_domain": true,
+        "noisy_mesh": true,
+        "noisy_timestep": true,
+        "noisy_domain": true,
+        "noisy_wide_mesh": true,
+        "physical_window": true
+      },
+      "all_local_gates_pass": true,
+      "numerical_window_qualified": true,
+      "retained_characteristic_base_fine_change": -1.308395319392884e-05,
+      "forecast_qualified": true,
+      "accuracy_interval_contained": true,
+      "prospective_prediction_qualified": true
+    },
+    {
+      "s": 0.0,
+      "tau": 10.0,
+      "population": "gaussian20-64",
+      "independent_integral_w_K_B": 0.013333548873562534,
+      "frozen_prediction": {
+        "mean": 0.013331650409705326,
+        "se": 1.639004701278903e-05,
+        "ci95": [
+          0.01329289410705414,
+          0.013370406712356512
+        ]
+      },
+      "independent_minus_predicted": {
+        "mean": 1.8984638572086803e-06,
+        "se": 1.639004701278903e-05,
+        "ci95": [
+          -3.685783879397813e-05,
+          4.065476650839549e-05
+        ]
+      },
+      "frozen_accuracy_allowance": 0.0006665825204852663,
+      "comparison_changes": {
+        "characteristic_quadrature": -1.3083953213357744e-05,
+        "characteristic_timestep": -2.8994146748437255e-08,
+        "characteristic_domain": 0.0,
+        "noisy_mesh": 2.230854390106174e-15,
+        "noisy_timestep": -8.569500666369412e-08,
+        "noisy_domain": -5.322131624296844e-15,
+        "noisy_wide_mesh": 2.4528989950312052e-15,
+        "physical_window": -9.701643181522779e-09
+      },
+      "comparison_gates": {
+        "characteristic_quadrature": true,
+        "characteristic_timestep": true,
+        "characteristic_domain": true,
+        "noisy_mesh": true,
+        "noisy_timestep": true,
+        "noisy_domain": true,
+        "noisy_wide_mesh": true,
+        "physical_window": true
+      },
+      "all_local_gates_pass": true,
+      "numerical_window_qualified": true,
+      "retained_characteristic_base_fine_change": -1.3083953213357744e-05,
+      "forecast_qualified": true,
+      "accuracy_interval_contained": true,
+      "prospective_prediction_qualified": true
+    },
+    {
+      "s": 0.0,
+      "tau": 10.0,
+      "population": "quartic20-40",
+      "independent_integral_w_K_B": 0.013436017385216697,
+      "frozen_prediction": {
+        "mean": 0.013435089041912393,
+        "se": 1.2730440642926862e-05,
+        "ci95": [
+          0.013404986333234666,
+          0.01346519175059012
+        ]
+      },
+      "independent_minus_predicted": {
+        "mean": 9.283433043039049e-07,
+        "se": 1.2730440642926862e-05,
+        "ci95": [
+          -2.9174365373423393e-05,
+          3.10310519820312e-05
+        ]
+      },
+      "frozen_accuracy_allowance": 0.0006717544520956197,
+      "comparison_changes": {
+        "characteristic_quadrature": -1.3124243586614195e-05,
+        "characteristic_timestep": -1.1867757040984195e-08,
+        "characteristic_domain": 0.0,
+        "noisy_mesh": 1.4606371667724716e-15,
+        "noisy_timestep": -1.1333205978542038e-07,
+        "noisy_domain": -6.147859998861804e-15,
+        "noisy_wide_mesh": 4.9439619065339e-15,
+        "physical_window": 4.4759893794849015e-09
+      },
+      "comparison_gates": {
+        "characteristic_quadrature": true,
+        "characteristic_timestep": true,
+        "characteristic_domain": true,
+        "noisy_mesh": true,
+        "noisy_timestep": true,
+        "noisy_domain": true,
+        "noisy_wide_mesh": true,
+        "physical_window": true
+      },
+      "all_local_gates_pass": true,
+      "numerical_window_qualified": true,
+      "retained_characteristic_base_fine_change": -1.3124243586614195e-05,
+      "forecast_qualified": true,
+      "accuracy_interval_contained": true,
+      "prospective_prediction_qualified": true
+    },
+    {
+      "s": 0.0,
+      "tau": 10.0,
+      "population": "quartic20-64",
+      "independent_integral_w_K_B": 0.013436021861212752,
+      "frozen_prediction": {
+        "mean": 0.013434994894918322,
+        "se": 1.268917018198889e-05,
+        "ci95": [
+          0.013404989775373403,
+          0.013465000014463241
+        ]
+      },
+      "independent_minus_predicted": {
+        "mean": 1.0269662944278283e-06,
+        "se": 1.268917018198889e-05,
+        "ci95": [
+          -2.8978153250491127e-05,
+          3.1032085839346783e-05
+        ]
+      },
+      "frozen_accuracy_allowance": 0.0006717497447459161,
+      "comparison_changes": {
+        "characteristic_quadrature": -1.3124243595955681e-05,
+        "characteristic_timestep": -1.2277482596551037e-08,
+        "characteristic_domain": -1.734723475976807e-18,
+        "noisy_mesh": 1.4606371667724716e-15,
+        "noisy_timestep": -1.1333205978542038e-07,
+        "noisy_domain": -6.147859998861804e-15,
+        "noisy_wide_mesh": 4.9439619065339e-15,
+        "physical_window": 4.4759893794849015e-09
+      },
+      "comparison_gates": {
+        "characteristic_quadrature": true,
+        "characteristic_timestep": true,
+        "characteristic_domain": true,
+        "noisy_mesh": true,
+        "noisy_timestep": true,
+        "noisy_domain": true,
+        "noisy_wide_mesh": true,
+        "physical_window": true
+      },
+      "all_local_gates_pass": true,
+      "numerical_window_qualified": true,
+      "retained_characteristic_base_fine_change": -1.3124243595955681e-05,
+      "forecast_qualified": true,
+      "accuracy_interval_contained": true,
+      "prospective_prediction_qualified": true
+    },
+    {
+      "s": 0.0,
+      "tau": 20.0,
+      "population": "gaussian12-40",
+      "independent_integral_w_K_B": 0.022093954862527,
+      "frozen_prediction": {
+        "mean": 0.022156956558461713,
+        "se": 2.3396419224794688e-05,
+        "ci95": [
+          0.022101632818162333,
+          0.022212280298761093
+        ]
+      },
+      "independent_minus_predicted": {
+        "mean": -6.300169593471353e-05,
+        "se": 2.3396419224794688e-05,
+        "ci95": [
+          -0.00011832543623409471,
+          -7.677955635332363e-06
+        ]
+      },
+      "frozen_accuracy_allowance": 0.0011078478279230857,
+      "comparison_changes": {
+        "characteristic_quadrature": 1.5513380999266843e-05,
+        "characteristic_timestep": -6.291444677730684e-09,
+        "characteristic_domain": 0.0,
+        "noisy_mesh": 1.6861512186494565e-15,
+        "noisy_timestep": -9.661277931838352e-08,
+        "noisy_domain": -8.590350653037149e-15,
+        "noisy_wide_mesh": 2.5049406993105094e-15,
+        "physical_window": 8.168745482123319e-09
+      },
+      "comparison_gates": {
+        "characteristic_quadrature": true,
+        "characteristic_timestep": true,
+        "characteristic_domain": true,
+        "noisy_mesh": true,
+        "noisy_timestep": true,
+        "noisy_domain": true,
+        "noisy_wide_mesh": true,
+        "physical_window": true
+      },
+      "all_local_gates_pass": true,
+      "numerical_window_qualified": true,
+      "retained_characteristic_base_fine_change": 1.5513380999266843e-05,
+      "forecast_qualified": true,
+      "accuracy_interval_contained": true,
+      "prospective_prediction_qualified": true
+    },
+    {
+      "s": 0.0,
+      "tau": 20.0,
+      "population": "gaussian12-64",
+      "independent_integral_w_K_B": 0.02209396303125504,
+      "frozen_prediction": {
+        "mean": 0.022157031801312586,
+        "se": 2.3400022593743103e-05,
+        "ci95": [
+          0.022101699540399602,
+          0.02221236406222557
+        ]
+      },
+      "independent_minus_predicted": {
+        "mean": -6.30687700575441e-05,
+        "se": 2.3400022593743106e-05,
+        "ci95": [
+          -0.00011840103097052814,
+          -7.736509144560058e-06
+        ]
+      },
+      "frozen_accuracy_allowance": 0.0011078515900656294,
+      "comparison_changes": {
+        "characteristic_quadrature": 1.5513381008930988e-05,
+        "characteristic_timestep": -6.793840828453468e-09,
+        "characteristic_domain": -1.734723475976807e-18,
+        "noisy_mesh": 1.6861512186494565e-15,
+        "noisy_timestep": -9.661277931838352e-08,
+        "noisy_domain": -8.590350653037149e-15,
+        "noisy_wide_mesh": 2.5049406993105094e-15,
+        "physical_window": 8.168745482123319e-09
+      },
+      "comparison_gates": {
+        "characteristic_quadrature": true,
+        "characteristic_timestep": true,
+        "characteristic_domain": true,
+        "noisy_mesh": true,
+        "noisy_timestep": true,
+        "noisy_domain": true,
+        "noisy_wide_mesh": true,
+        "physical_window": true
+      },
+      "all_local_gates_pass": true,
+      "numerical_window_qualified": true,
+      "retained_characteristic_base_fine_change": 1.5513381008930988e-05,
+      "forecast_qualified": true,
+      "accuracy_interval_contained": true,
+      "prospective_prediction_qualified": true
+    },
+    {
+      "s": 0.0,
+      "tau": 20.0,
+      "population": "gaussian20-40",
+      "independent_integral_w_K_B": 0.022539638203092086,
+      "frozen_prediction": {
+        "mean": 0.022557093255327808,
+        "se": 1.9980778905760005e-05,
+        "ci95": [
+          0.022509846220961534,
+          0.022604340289694082
+        ]
+      },
+      "independent_minus_predicted": {
+        "mean": -1.745505223572138e-05,
+        "se": 1.9980778905760005e-05,
+        "ci95": [
+          -6.470208660199503e-05,
+          2.9791982130552266e-05
+        ]
+      },
+      "frozen_accuracy_allowance": 0.0011278546627663903,
+      "comparison_changes": {
+        "characteristic_quadrature": 1.5692478354959252e-05,
+        "characteristic_timestep": -1.6251749685586292e-08,
+        "characteristic_domain": -1.734723475976807e-18,
+        "noisy_mesh": 4.274358644806853e-15,
+        "noisy_timestep": -8.595184828458224e-08,
+        "noisy_domain": -1.2614909117303341e-14,
+        "noisy_wide_mesh": 4.246603069191224e-15,
+        "physical_window": 6.616073072382433e-08
+      },
+      "comparison_gates": {
+        "characteristic_quadrature": true,
+        "characteristic_timestep": true,
+        "characteristic_domain": true,
+        "noisy_mesh": true,
+        "noisy_timestep": true,
+        "noisy_domain": true,
+        "noisy_wide_mesh": true,
+        "physical_window": true
+      },
+      "all_local_gates_pass": true,
+      "numerical_window_qualified": true,
+      "retained_characteristic_base_fine_change": 1.5692478354959252e-05,
+      "forecast_qualified": true,
+      "accuracy_interval_contained": true,
+      "prospective_prediction_qualified": true
+    },
+    {
+      "s": 0.0,
+      "tau": 20.0,
+      "population": "gaussian20-64",
+      "independent_integral_w_K_B": 0.022539704363833978,
+      "frozen_prediction": {
+        "mean": 0.02255851383703022,
+        "se": 1.922408802704535e-05,
+        "ci95": [
+          0.022513056092266715,
+          0.022603971581793728
+        ]
+      },
+      "independent_minus_predicted": {
+        "mean": -1.8809473196245916e-05,
+        "se": 1.922408802704535e-05,
+        "ci95": [
+          -6.426721795975184e-05,
+          2.6648271567260005e-05
+        ]
+      },
+      "frozen_accuracy_allowance": 0.001127925691851511,
+      "comparison_changes": {
+        "characteristic_quadrature": 1.5692478331148438e-05,
+        "characteristic_timestep": -2.9269115360552878e-08,
+        "characteristic_domain": 0.0,
+        "noisy_mesh": 4.274358644806853e-15,
+        "noisy_timestep": -8.595184828458224e-08,
+        "noisy_domain": -1.2614909117303341e-14,
+        "noisy_wide_mesh": 4.246603069191224e-15,
+        "physical_window": 6.616073072382433e-08
+      },
+      "comparison_gates": {
+        "characteristic_quadrature": true,
+        "characteristic_timestep": true,
+        "characteristic_domain": true,
+        "noisy_mesh": true,
+        "noisy_timestep": true,
+        "noisy_domain": true,
+        "noisy_wide_mesh": true,
+        "physical_window": true
+      },
+      "all_local_gates_pass": true,
+      "numerical_window_qualified": true,
+      "retained_characteristic_base_fine_change": 1.5692478331148438e-05,
+      "forecast_qualified": true,
+      "accuracy_interval_contained": true,
+      "prospective_prediction_qualified": true
+    },
+    {
+      "s": 0.0,
+      "tau": 20.0,
+      "population": "quartic20-40",
+      "independent_integral_w_K_B": 0.022784706457924526,
+      "frozen_prediction": {
+        "mean": 0.022781935425770852,
+        "se": 2.9547282175013448e-05,
+        "ci95": [
+          0.02271206720577116,
+          0.022851803645770545
+        ]
+      },
+      "independent_minus_predicted": {
+        "mean": 2.771032153675492e-06,
+        "se": 2.9547282175013448e-05,
+        "ci95": [
+          -6.70971878460165e-05,
+          7.263925215336749e-05
+        ]
+      },
+      "frozen_accuracy_allowance": 0.0011390967712885426,
+      "comparison_changes": {
+        "characteristic_quadrature": 1.5792852168072802e-05,
+        "characteristic_timestep": -1.21446442537948e-08,
+        "characteristic_domain": 0.0,
+        "noisy_mesh": 3.3792413312028202e-15,
+        "noisy_timestep": -1.1981865177118634e-07,
+        "noisy_domain": -1.4051260155412137e-14,
+        "noisy_wide_mesh": 8.527900607901984e-15,
+        "physical_window": 1.1713308035316006e-08
+      },
+      "comparison_gates": {
+        "characteristic_quadrature": true,
+        "characteristic_timestep": true,
+        "characteristic_domain": true,
+        "noisy_mesh": true,
+        "noisy_timestep": true,
+        "noisy_domain": true,
+        "noisy_wide_mesh": true,
+        "physical_window": true
+      },
+      "all_local_gates_pass": true,
+      "numerical_window_qualified": true,
+      "retained_characteristic_base_fine_change": 1.5792852168072802e-05,
+      "forecast_qualified": true,
+      "accuracy_interval_contained": true,
+      "prospective_prediction_qualified": true
+    },
+    {
+      "s": 0.0,
+      "tau": 20.0,
+      "population": "quartic20-64",
+      "independent_integral_w_K_B": 0.02278471817123203,
+      "frozen_prediction": {
+        "mean": 0.022781946773266223,
+        "se": 2.949023091181204e-05,
+        "ci95": [
+          0.02271221345806708,
+          0.022851680088465366
+        ]
+      },
+      "independent_minus_predicted": {
+        "mean": 2.771397965807814e-06,
+        "se": 2.949023091181204e-05,
+        "ci95": [
+          -6.696191723333414e-05,
+          7.250471316494977e-05
+        ]
+      },
+      "frozen_accuracy_allowance": 0.001139097338663311,
+      "comparison_changes": {
+        "characteristic_quadrature": 1.5792852159701026e-05,
+        "characteristic_timestep": -1.2554367186459747e-08,
+        "characteristic_domain": -1.734723475976807e-18,
+        "noisy_mesh": 3.3792413312028202e-15,
+        "noisy_timestep": -1.1981865177118634e-07,
+        "noisy_domain": -1.4051260155412137e-14,
+        "noisy_wide_mesh": 8.527900607901984e-15,
+        "physical_window": 1.1713308035316006e-08
+      },
+      "comparison_gates": {
+        "characteristic_quadrature": true,
+        "characteristic_timestep": true,
+        "characteristic_domain": true,
+        "noisy_mesh": true,
+        "noisy_timestep": true,
+        "noisy_domain": true,
+        "noisy_wide_mesh": true,
+        "physical_window": true
+      },
+      "all_local_gates_pass": true,
+      "numerical_window_qualified": true,
+      "retained_characteristic_base_fine_change": 1.5792852159701026e-05,
+      "forecast_qualified": true,
+      "accuracy_interval_contained": true,
+      "prospective_prediction_qualified": true
+    },
+    {
+      "s": 0.25,
+      "tau": 10.0,
+      "population": "gaussian12-40",
+      "independent_integral_w_K_B": -0.0005599609415994911,
+      "frozen_prediction": {
+        "mean": -0.0006272194048951724,
+        "se": 5.485329230451004e-05,
+        "ci95": [
+          -0.0007569268301581247,
+          -0.0004975119796322201
+        ]
+      },
+      "independent_minus_predicted": {
+        "mean": 6.725846329568139e-05,
+        "se": 5.485329230451004e-05,
+        "ci95": [
+          -6.244896196727092e-05,
+          0.0001969658885586337
+        ]
+      },
+      "frozen_accuracy_allowance": 0.0002,
+      "comparison_changes": {
+        "characteristic_quadrature": 2.354239720553375e-05,
+        "characteristic_timestep": -1.8796410303223432e-08,
+        "characteristic_domain": 0.0,
+        "noisy_mesh": 5.578870698741412e-15,
+        "noisy_timestep": 1.2510650121144717e-06,
+        "noisy_domain": -3.70536934468646e-15,
+        "noisy_wide_mesh": 3.8719027983802334e-15,
+        "physical_window": -1.1185726692120035e-08
+      },
+      "comparison_gates": {
+        "characteristic_quadrature": true,
+        "characteristic_timestep": true,
+        "characteristic_domain": true,
+        "noisy_mesh": true,
+        "noisy_timestep": true,
+        "noisy_domain": true,
+        "noisy_wide_mesh": true,
+        "physical_window": true
+      },
+      "all_local_gates_pass": true,
+      "numerical_window_qualified": true,
+      "retained_characteristic_base_fine_change": 6.162024101689922e-05,
+      "forecast_qualified": true,
+      "accuracy_interval_contained": true,
+      "prospective_prediction_qualified": true
+    },
+    {
+      "s": 0.25,
+      "tau": 10.0,
+      "population": "gaussian12-64",
+      "independent_integral_w_K_B": -0.0005599721273379932,
+      "frozen_prediction": {
+        "mean": -0.000627256079323808,
+        "se": 5.482323434428502e-05,
+        "ci95": [
+          -0.0007568924288050588,
+          -0.0004976197298425572
+        ]
+      },
+      "independent_minus_predicted": {
+        "mean": 6.728395198581493e-05,
+        "se": 5.482323434428502e-05,
+        "ci95": [
+          -6.235239749543587e-05,
+          0.00019692030146706573
+        ]
+      },
+      "frozen_accuracy_allowance": 0.0002,
+      "comparison_changes": {
+        "characteristic_quadrature": 2.3542397202341858e-05,
+        "characteristic_timestep": -1.942267395527164e-08,
+        "characteristic_domain": 0.0,
+        "noisy_mesh": 5.578870698741412e-15,
+        "noisy_timestep": 1.2510650121144717e-06,
+        "noisy_domain": -3.70536934468646e-15,
+        "noisy_wide_mesh": 3.8719027983802334e-15,
+        "physical_window": -1.1185726692120035e-08
+      },
+      "comparison_gates": {
+        "characteristic_quadrature": true,
+        "characteristic_timestep": true,
+        "characteristic_domain": true,
+        "noisy_mesh": true,
+        "noisy_timestep": true,
+        "noisy_domain": true,
+        "noisy_wide_mesh": true,
+        "physical_window": true
+      },
+      "all_local_gates_pass": true,
+      "numerical_window_qualified": true,
+      "retained_characteristic_base_fine_change": 6.162024102648878e-05,
+      "forecast_qualified": true,
+      "accuracy_interval_contained": true,
+      "prospective_prediction_qualified": true
+    },
+    {
+      "s": 0.25,
+      "tau": 10.0,
+      "population": "gaussian20-40",
+      "independent_integral_w_K_B": -0.0025104888654984003,
+      "frozen_prediction": {
+        "mean": -0.0025463309793208487,
+        "se": 3.666826178383393e-05,
+        "ci95": [
+          -0.002633037640398655,
+          -0.0024596243182430423
+        ]
+      },
+      "independent_minus_predicted": {
+        "mean": 3.584211382244839e-05,
+        "se": 3.666826178383393e-05,
+        "ci95": [
+          -5.0864547255358224e-05,
+          0.000122548774900255
+        ]
+      },
+      "frozen_accuracy_allowance": 0.0002,
+      "comparison_changes": {
+        "characteristic_quadrature": 1.4501367967587053e-05,
+        "characteristic_timestep": -3.4129554973838516e-08,
+        "characteristic_domain": 0.0,
+        "noisy_mesh": 4.718447854656915e-15,
+        "noisy_timestep": 7.99778801754969e-07,
+        "noisy_domain": -8.548717289613705e-15,
+        "noisy_wide_mesh": 3.344546861683284e-15,
+        "physical_window": -1.7207862236523486e-07
+      },
+      "comparison_gates": {
+        "characteristic_quadrature": true,
+        "characteristic_timestep": true,
+        "characteristic_domain": true,
+        "noisy_mesh": true,
+        "noisy_timestep": true,
+        "noisy_domain": true,
+        "noisy_wide_mesh": true,
+        "physical_window": true
+      },
+      "all_local_gates_pass": true,
+      "numerical_window_qualified": true,
+      "retained_characteristic_base_fine_change": 4.8140229657892e-05,
+      "forecast_qualified": true,
+      "accuracy_interval_contained": true,
+      "prospective_prediction_qualified": true
+    },
+    {
+      "s": 0.25,
+      "tau": 10.0,
+      "population": "gaussian20-64",
+      "independent_integral_w_K_B": -0.002510660944108664,
+      "frozen_prediction": {
+        "mean": -0.0025466651568576103,
+        "se": 3.643268198959579e-05,
+        "ci95": [
+          -0.002632814760240776,
+          -0.0024605155534744446
+        ]
+      },
+      "independent_minus_predicted": {
+        "mean": 3.600421274894581e-05,
+        "se": 3.643268198959579e-05,
+        "ci95": [
+          -5.0145390634220055e-05,
+          0.00012215381613211166
+        ]
+      },
+      "frozen_accuracy_allowance": 0.0002,
+      "comparison_changes": {
+        "characteristic_quadrature": 1.4501367967365009e-05,
+        "characteristic_timestep": -4.968509009772859e-08,
+        "characteristic_domain": 0.0,
+        "noisy_mesh": 4.718447854656915e-15,
+        "noisy_timestep": 7.99778801754969e-07,
+        "noisy_domain": -8.548717289613705e-15,
+        "noisy_wide_mesh": 3.344546861683284e-15,
+        "physical_window": -1.7207862236523486e-07
+      },
+      "comparison_gates": {
+        "characteristic_quadrature": true,
+        "characteristic_timestep": true,
+        "characteristic_domain": true,
+        "noisy_mesh": true,
+        "noisy_timestep": true,
+        "noisy_domain": true,
+        "noisy_wide_mesh": true,
+        "physical_window": true
+      },
+      "all_local_gates_pass": true,
+      "numerical_window_qualified": true,
+      "retained_characteristic_base_fine_change": 4.814022963608999e-05,
+      "forecast_qualified": true,
+      "accuracy_interval_contained": true,
+      "prospective_prediction_qualified": true
+    },
+    {
+      "s": 0.25,
+      "tau": 10.0,
+      "population": "quartic20-40",
+      "independent_integral_w_K_B": -0.0034613686367422347,
+      "frozen_prediction": {
+        "mean": -0.0034817729786613986,
+        "se": 2.761925655856012e-05,
+        "ci95": [
+          -0.003547082142530733,
+          -0.0034164638147920643
+        ]
+      },
+      "independent_minus_predicted": {
+        "mean": 2.0404341919164385e-05,
+        "se": 2.761925655856012e-05,
+        "ci95": [
+          -4.4904821950169944e-05,
+          8.571350578849871e-05
+        ]
+      },
+      "frozen_accuracy_allowance": 0.0002,
+      "comparison_changes": {
+        "characteristic_quadrature": 9.468932480848069e-06,
+        "characteristic_timestep": -2.8926831700804012e-08,
+        "characteristic_domain": -6.938893903907228e-18,
+        "noisy_mesh": 4.912736883966318e-15,
+        "noisy_timestep": 4.694959809328769e-07,
+        "noisy_domain": -9.58955137519979e-15,
+        "noisy_wide_mesh": 4.260480856999038e-15,
+        "physical_window": -1.4043005952535381e-08
+      },
+      "comparison_gates": {
+        "characteristic_quadrature": true,
+        "characteristic_timestep": true,
+        "characteristic_domain": true,
+        "noisy_mesh": true,
+        "noisy_timestep": true,
+        "noisy_domain": true,
+        "noisy_wide_mesh": true,
+        "physical_window": true
+      },
+      "all_local_gates_pass": true,
+      "numerical_window_qualified": true,
+      "retained_characteristic_base_fine_change": 4.06840630194083e-05,
+      "forecast_qualified": true,
+      "accuracy_interval_contained": true,
+      "prospective_prediction_qualified": true
+    },
+    {
+      "s": 0.25,
+      "tau": 10.0,
+      "population": "quartic20-64",
+      "independent_integral_w_K_B": -0.003461382679749783,
+      "frozen_prediction": {
+        "mean": -0.0034818734929544797,
+        "se": 2.7542853934670437e-05,
+        "ci95": [
+          -0.003547001993326479,
+          -0.0034167449925824804
+        ]
+      },
+      "independent_minus_predicted": {
+        "mean": 2.0490813204696522e-05,
+        "se": 2.7542853934670434e-05,
+        "ci95": [
+          -4.463768716730293e-05,
+          8.561931357669598e-05
+        ]
+      },
+      "frozen_accuracy_allowance": 0.0002,
+      "comparison_changes": {
+        "characteristic_quadrature": 9.468932483595871e-06,
+        "characteristic_timestep": -2.9454338364154342e-08,
+        "characteristic_domain": -6.938893903907228e-18,
+        "noisy_mesh": 4.912736883966318e-15,
+        "noisy_timestep": 4.694959809328769e-07,
+        "noisy_domain": -9.58955137519979e-15,
+        "noisy_wide_mesh": 4.260480856999038e-15,
+        "physical_window": -1.4043005952535381e-08
+      },
+      "comparison_gates": {
+        "characteristic_quadrature": true,
+        "characteristic_timestep": true,
+        "characteristic_domain": true,
+        "noisy_mesh": true,
+        "noisy_timestep": true,
+        "noisy_domain": true,
+        "noisy_wide_mesh": true,
+        "physical_window": true
+      },
+      "all_local_gates_pass": true,
+      "numerical_window_qualified": true,
+      "retained_characteristic_base_fine_change": 4.068406300801464e-05,
+      "forecast_qualified": true,
+      "accuracy_interval_contained": true,
+      "prospective_prediction_qualified": true
+    },
+    {
+      "s": 0.25,
+      "tau": 20.0,
+      "population": "gaussian12-40",
+      "independent_integral_w_K_B": -0.0864468935367565,
+      "frozen_prediction": {
+        "mean": -0.08676506928182084,
+        "se": 0.0001515250184739849,
+        "ci95": [
+          -0.08712336901522748,
+          -0.08640676954841421
+        ]
+      },
+      "independent_minus_predicted": {
+        "mean": 0.0003181757450643422,
+        "se": 0.0001515250184739849,
+        "ci95": [
+          -4.012398834228717e-05,
+          0.0006764754784709716
+        ]
+      },
+      "frozen_accuracy_allowance": 0.004338253464091043,
+      "comparison_changes": {
+        "characteristic_quadrature": 6.468897881545255e-05,
+        "characteristic_timestep": -1.9938091233573374e-08,
+        "characteristic_domain": 5.551115123125783e-17,
+        "noisy_mesh": 1.8318679906315083e-14,
+        "noisy_timestep": 6.222825694235379e-06,
+        "noisy_domain": 7.382983113757291e-15,
+        "noisy_wide_mesh": 9.880984919163893e-15,
+        "physical_window": -5.04757941555134e-08
+      },
+      "comparison_gates": {
+        "characteristic_quadrature": true,
+        "characteristic_timestep": true,
+        "characteristic_domain": true,
+        "noisy_mesh": true,
+        "noisy_timestep": true,
+        "noisy_domain": true,
+        "noisy_wide_mesh": true,
+        "physical_window": true
+      },
+      "all_local_gates_pass": true,
+      "numerical_window_qualified": true,
+      "retained_characteristic_base_fine_change": 0.00030097224425484903,
+      "forecast_qualified": true,
+      "accuracy_interval_contained": true,
+      "prospective_prediction_qualified": true
+    },
+    {
+      "s": 0.25,
+      "tau": 20.0,
+      "population": "gaussian12-64",
+      "independent_integral_w_K_B": -0.08644694401255798,
+      "frozen_prediction": {
+        "mean": -0.08676500204552631,
+        "se": 0.00015158454323847302,
+        "ci95": [
+          -0.08712344253263463,
+          -0.086406561558418
+        ]
+      },
+      "independent_minus_predicted": {
+        "mean": 0.0003180580329683342,
+        "se": 0.00015158454323847302,
+        "ci95": [
+          -4.0382454139974155e-05,
+          0.0006764985200766425
+        ]
+      },
+      "frozen_accuracy_allowance": 0.004338250102276316,
+      "comparison_changes": {
+        "characteristic_quadrature": 6.468897881334312e-05,
+        "characteristic_timestep": -2.0688878998864624e-08,
+        "characteristic_domain": 0.0,
+        "noisy_mesh": 1.8318679906315083e-14,
+        "noisy_timestep": 6.222825694235379e-06,
+        "noisy_domain": 7.382983113757291e-15,
+        "noisy_wide_mesh": 9.880984919163893e-15,
+        "physical_window": -5.04757941555134e-08
+      },
+      "comparison_gates": {
+        "characteristic_quadrature": true,
+        "characteristic_timestep": true,
+        "characteristic_domain": true,
+        "noisy_mesh": true,
+        "noisy_timestep": true,
+        "noisy_domain": true,
+        "noisy_wide_mesh": true,
+        "physical_window": true
+      },
+      "all_local_gates_pass": true,
+      "numerical_window_qualified": true,
+      "retained_characteristic_base_fine_change": 0.0003009722442631757,
+      "forecast_qualified": true,
+      "accuracy_interval_contained": true,
+      "prospective_prediction_qualified": true
+    },
+    {
+      "s": 0.25,
+      "tau": 20.0,
+      "population": "gaussian20-40",
+      "independent_integral_w_K_B": -0.05196418721516996,
+      "frozen_prediction": {
+        "mean": -0.052135524357936565,
+        "se": 8.859245497620902e-05,
+        "ci95": [
+          -0.05234501222548145,
+          -0.05192603649039168
+        ]
+      },
+      "independent_minus_predicted": {
+        "mean": 0.000171337142766609,
+        "se": 8.859245497620902e-05,
+        "ci95": [
+          -3.815072477827671e-05,
+          0.0003808250103114947
+        ]
+      },
+      "frozen_accuracy_allowance": 0.0026067762178968285,
+      "comparison_changes": {
+        "characteristic_quadrature": 3.799009222171801e-05,
+        "characteristic_timestep": -4.8182319134504326e-08,
+        "characteristic_domain": 0.0,
+        "noisy_mesh": 1.2351231148954867e-14,
+        "noisy_timestep": 3.4345145038527924e-06,
+        "noisy_domain": -2.2593038551121936e-14,
+        "noisy_wide_mesh": 7.827072323607354e-15,
+        "physical_window": -6.069252608820186e-07
+      },
+      "comparison_gates": {
+        "characteristic_quadrature": true,
+        "characteristic_timestep": true,
+        "characteristic_domain": true,
+        "noisy_mesh": true,
+        "noisy_timestep": true,
+        "noisy_domain": true,
+        "noisy_wide_mesh": true,
+        "physical_window": true
+      },
+      "all_local_gates_pass": true,
+      "numerical_window_qualified": true,
+      "retained_characteristic_base_fine_change": 0.00015982232958300369,
+      "forecast_qualified": true,
+      "accuracy_interval_contained": true,
+      "prospective_prediction_qualified": true
+    },
+    {
+      "s": 0.25,
+      "tau": 20.0,
+      "population": "gaussian20-64",
+      "independent_integral_w_K_B": -0.051964794140435644,
+      "frozen_prediction": {
+        "mean": -0.05213430105287712,
+        "se": 8.914675659044029e-05,
+        "ci95": [
+          -0.05234509963546172,
+          -0.051923502470292524
+        ]
+      },
+      "independent_minus_predicted": {
+        "mean": 0.00016950691244147637,
+        "se": 8.914675659044029e-05,
+        "ci95": [
+          -4.1291670143117615e-05,
+          0.0003803054950260703
+        ]
+      },
+      "frozen_accuracy_allowance": 0.002606715052643856,
+      "comparison_changes": {
+        "characteristic_quadrature": 3.799009222243965e-05,
+        "characteristic_timestep": -6.629211596331785e-08,
+        "characteristic_domain": 0.0,
+        "noisy_mesh": 1.2351231148954867e-14,
+        "noisy_timestep": 3.4345145038527924e-06,
+        "noisy_domain": -2.2593038551121936e-14,
+        "noisy_wide_mesh": 7.827072323607354e-15,
+        "physical_window": -6.069252608820186e-07
+      },
+      "comparison_gates": {
+        "characteristic_quadrature": true,
+        "characteristic_timestep": true,
+        "characteristic_domain": true,
+        "noisy_mesh": true,
+        "noisy_timestep": true,
+        "noisy_domain": true,
+        "noisy_wide_mesh": true,
+        "physical_window": true
+      },
+      "all_local_gates_pass": true,
+      "numerical_window_qualified": true,
+      "retained_characteristic_base_fine_change": 0.00015982232955996656,
+      "forecast_qualified": true,
+      "accuracy_interval_contained": true,
+      "prospective_prediction_qualified": true
+    },
+    {
+      "s": 0.25,
+      "tau": 20.0,
+      "population": "quartic20-40",
+      "independent_integral_w_K_B": -0.031483172288905764,
+      "frozen_prediction": {
+        "mean": -0.03157180941912713,
+        "se": 5.561095469044445e-05,
+        "ci95": [
+          -0.03170330843124238,
+          -0.031440310407011875
+        ]
+      },
+      "independent_minus_predicted": {
+        "mean": 8.863713022135879e-05,
+        "se": 5.561095469044445e-05,
+        "ci95": [
+          -4.2861881893893654e-05,
+          0.00022013614233661123
+        ]
+      },
+      "frozen_accuracy_allowance": 0.0015785904709563565,
+      "comparison_changes": {
+        "characteristic_quadrature": 2.3252785409599852e-05,
+        "characteristic_timestep": -4.601688854966035e-08,
+        "characteristic_domain": 2.7755575615628914e-17,
+        "noisy_mesh": 1.3350431871117507e-14,
+        "noisy_timestep": 1.768901893919872e-06,
+        "noisy_domain": -2.2620794126737565e-14,
+        "noisy_wide_mesh": 7.0915495697931874e-15,
+        "physical_window": -6.989415024527545e-08
+      },
+      "comparison_gates": {
+        "characteristic_quadrature": true,
+        "characteristic_timestep": true,
+        "characteristic_domain": true,
+        "noisy_mesh": true,
+        "noisy_timestep": true,
+        "noisy_domain": true,
+        "noisy_wide_mesh": true,
+        "physical_window": true
+      },
+      "all_local_gates_pass": true,
+      "numerical_window_qualified": true,
+      "retained_characteristic_base_fine_change": 8.273269049843823e-05,
+      "forecast_qualified": true,
+      "accuracy_interval_contained": true,
+      "prospective_prediction_qualified": true
+    },
+    {
+      "s": 0.25,
+      "tau": 20.0,
+      "population": "quartic20-64",
+      "independent_integral_w_K_B": -0.031483242183078394,
+      "frozen_prediction": {
+        "mean": -0.03157182173918291,
+        "se": 5.570237349753635e-05,
+        "ci95": [
+          -0.031703536922426466,
+          -0.03144010655593935
+        ]
+      },
+      "independent_minus_predicted": {
+        "mean": 8.857955610451669e-05,
+        "se": 5.570237349753635e-05,
+        "ci95": [
+          -4.3135627139036936e-05,
+          0.00022029473934807032
+        ]
+      },
+      "frozen_accuracy_allowance": 0.0015785910869591455,
+      "comparison_changes": {
+        "characteristic_quadrature": 2.325278541212561e-05,
+        "characteristic_timestep": -4.666273392683884e-08,
+        "characteristic_domain": 0.0,
+        "noisy_mesh": 1.3350431871117507e-14,
+        "noisy_timestep": 1.768901893919872e-06,
+        "noisy_domain": -2.2620794126737565e-14,
+        "noisy_wide_mesh": 7.0915495697931874e-15,
+        "physical_window": -6.989415024527545e-08
+      },
+      "comparison_gates": {
+        "characteristic_quadrature": true,
+        "characteristic_timestep": true,
+        "characteristic_domain": true,
+        "noisy_mesh": true,
+        "noisy_timestep": true,
+        "noisy_domain": true,
+        "noisy_wide_mesh": true,
+        "physical_window": true
+      },
+      "all_local_gates_pass": true,
+      "numerical_window_qualified": true,
+      "retained_characteristic_base_fine_change": 8.273269048938992e-05,
+      "forecast_qualified": true,
+      "accuracy_interval_contained": true,
+      "prospective_prediction_qualified": true
+    }
+  ],
+  "forecast_sha256": "cac7744c2577c74a4f934bf85f894db60f047892a03f4858e412fc40673ba7ef",
+  "source_sha256": "84e6fd75bcaaeab914e865227d1e45c86896b3316667762265bdbff21936039b",
+  "inputs": {
+    "results/population-response/heldout-matrix-01/manifest.json": "6a72274567a35a705330a4eb58969d4d2df08779fd62ecc15890ab2718481f24",
+    "results/population-response/heldout-matrix-01/ledger.json": "34e420c35bc5fd62d5e28f2626c5dde4db3d5577cfe9ca53a1896a1e0fe625e5",
+    "results/population-response/heldout-matrix-01/moving-noisy-base/result.json": "5dda0f02d17d03a219a6b887bb65580cbe3bea07885b315755071ed1f0725bef",
+    "results/population-response/heldout-matrix-01/moving-noisy-domain/result.json": "6363fbf7a79602d1f7f2100b88f484d7e301d7e249d4d02978b3bfd076c3e7e9",
+    "results/population-response/heldout-matrix-01/moving-noisy-fine/result.json": "7fdf1ab3bfb361b593991d5d67a9f7a22a41d8b272f4a1351256e64856392fc2",
+    "results/population-response/heldout-matrix-01/moving-noisy-halfstep/result.json": "b31ba6d6bb850d7f5fe1a352937284f7a753ffe8b3b4b8a528d2dcb5cca4e6fa",
+    "results/population-response/heldout-matrix-01/moving-noisy-unforced-wide/result.json": "879a682cd4a3a52623022a929ee5d246dfbae573c243a897a4885692db16a05f",
+    "results/population-response/heldout-matrix-01/moving-noisy-wide/result.json": "526b2069447a3d6975e2afb4091e5b68ad1d88035e1aa98170172d75b6a70a01",
+    "results/population-response/heldout-matrix-01/moving-noisy-wide-fine/result.json": "425c1e5e71d74b8314b1c5ecccc635c7161984a6355f04ecd0109ce5406053f0",
+    "results/population-response/heldout-matrix-01/moving-smooth-base/result.json": "be2664f11a9641e73e5a6d102c81d644c93fe5e8a29961c886deb143638a86ae",
+    "results/population-response/heldout-matrix-01/moving-smooth-domain/result.json": "f9c0fe59a70a1e85a28887072469d12759b4d890805b56ee947f61e3b6f05336",
+    "results/population-response/heldout-matrix-01/moving-smooth-fine/result.json": "6e3d65720e0d328f175571a0a73c82d50e0db26f40bb15829ca52f84728e5d04",
+    "results/population-response/heldout-matrix-01/moving-smooth-finer/result.json": "5b966f21a6c14e32b3d90c44a0269edcd52fe5aa34ea8b498a684dcb8bb59103",
+    "results/population-response/heldout-matrix-01/moving-smooth-halfstep/result.json": "86ea12aa9e971e81f118de8f1f26eb5341af4ad266b56abc63aba24d687695f7",
+    "results/population-response/heldout-matrix-01/stationary-noisy-base/result.json": "360b4795df66a6c5fbfadd115f0fe408692780301ca01b42cb2a286de041df3f",
+    "results/population-response/heldout-matrix-01/stationary-noisy-domain/result.json": "0c5e6137f890722be15b1cfee4aa11634509260e96620e954d1173ae55515902",
+    "results/population-response/heldout-matrix-01/stationary-noisy-fine/result.json": "82e522a457859c4b16adfc7f2aab3ee3273ba30426c029f17334a9cf0676286c",
+    "results/population-response/heldout-matrix-01/stationary-noisy-halfstep/result.json": "6fe1154e312b3c6722ebe5f6b7c5c487a697704ff77dff5b2b484762e188dd13",
+    "results/population-response/heldout-matrix-01/stationary-noisy-unforced-wide/result.json": "bdff8329bb30bb4697db817796aa804b463c98e4d2e6c86092dcd103ab7d1a05",
+    "results/population-response/heldout-matrix-01/stationary-noisy-wide/result.json": "4065352faf9fc09b44b04891eaa48b763c3ea43672a49b3d94735cf2a8d9cc0d",
+    "results/population-response/heldout-matrix-01/stationary-noisy-wide-fine/result.json": "5f766d21923ae96815eed64f7ca92384cbd6ecdd857d43cf164b4ac567b85a96",
+    "results/population-response/heldout-matrix-01/stationary-smooth-base/result.json": "cb9df6d0f124973679d3412f51343435b9acf22213460342d5360fe27645a8af",
+    "results/population-response/heldout-matrix-01/stationary-smooth-domain/result.json": "36e0302f95679f1c82a1efafcd253e3870a1639d4101b703942d1e46b4c71a5a",
+    "results/population-response/heldout-matrix-01/stationary-smooth-fine/result.json": "1f9df19db54e5abf5aae7c3fbde9f6306bc7b876ed132084fd8ee9a91d9c3b6b",
+    "results/population-response/heldout-matrix-01/stationary-smooth-halfstep/result.json": "d22473868d6d55b039676289ce81f429614e4243263e7ba56c569f19f23a848d"
+  },
+  "scope": "All24prospective population/time/window/sweep comparisons. Original forecast intervals and allowances are unchanged. Independent noisy distribution and positive collisionless quadrature; no fitted forced outcome, selected endpoint or new3Dphysical validation. Numerical comparisons are operational diagnostics, not certified error bounds."
+}

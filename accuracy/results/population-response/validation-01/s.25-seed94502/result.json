@@ -1,0 +1,682 @@
+{
+  "columns": [
+    {
+      "tau": 10.0,
+      "level": "fine",
+      "branch": "single",
+      "method": "raw",
+      "population": "gaussian-40"
+    },
+    {
+      "tau": 10.0,
+      "level": "fine",
+      "branch": "single",
+      "method": "raw",
+      "population": "halo-40"
+    },
+    {
+      "tau": 10.0,
+      "level": "fine",
+      "branch": "single",
+      "method": "raw",
+      "population": "exponential-40"
+    },
+    {
+      "tau": 10.0,
+      "level": "fine",
+      "branch": "single",
+      "method": "raw",
+      "population": "gaussian-64"
+    },
+    {
+      "tau": 10.0,
+      "level": "fine",
+      "branch": "single",
+      "method": "raw",
+      "population": "halo-64"
+    },
+    {
+      "tau": 10.0,
+      "level": "fine",
+      "branch": "single",
+      "method": "raw",
+      "population": "exponential-64"
+    },
+    {
+      "tau": 10.0,
+      "level": "fine",
+      "branch": "single",
+      "method": "remainder",
+      "population": "gaussian-40"
+    },
+    {
+      "tau": 10.0,
+      "level": "fine",
+      "branch": "single",
+      "method": "remainder",
+      "population": "halo-40"
+    },
+    {
+      "tau": 10.0,
+      "level": "fine",
+      "branch": "single",
+      "method": "remainder",
+      "population": "exponential-40"
+    },
+    {
+      "tau": 10.0,
+      "level": "fine",
+      "branch": "single",
+      "method": "remainder",
+      "population": "gaussian-64"
+    },
+    {
+      "tau": 10.0,
+      "level": "fine",
+      "branch": "single",
+      "method": "remainder",
+      "population": "halo-64"
+    },
+    {
+      "tau": 10.0,
+      "level": "fine",
+      "branch": "single",
+      "method": "remainder",
+      "population": "exponential-64"
+    },
+    {
+      "tau": 10.0,
+      "level": "fine",
+      "branch": "antithetic",
+      "method": "raw",
+      "population": "gaussian-40"
+    },
+    {
+      "tau": 10.0,
+      "level": "fine",
+      "branch": "antithetic",
+      "method": "raw",
+      "population": "halo-40"
+    },
+    {
+      "tau": 10.0,
+      "level": "fine",
+      "branch": "antithetic",
+      "method": "raw",
+      "population": "exponential-40"
+    },
+    {
+      "tau": 10.0,
+      "level": "fine",
+      "branch": "antithetic",
+      "method": "raw",
+      "population": "gaussian-64"
+    },
+    {
+      "tau": 10.0,
+      "level": "fine",
+      "branch": "antithetic",
+      "method": "raw",
+      "population": "halo-64"
+    },
+    {
+      "tau": 10.0,
+      "level": "fine",
+      "branch": "antithetic",
+      "method": "raw",
+      "population": "exponential-64"
+    },
+    {
+      "tau": 10.0,
+      "level": "fine",
+      "branch": "antithetic",
+      "method": "remainder",
+      "population": "gaussian-40"
+    },
+    {
+      "tau": 10.0,
+      "level": "fine",
+      "branch": "antithetic",
+      "method": "remainder",
+      "population": "halo-40"
+    },
+    {
+      "tau": 10.0,
+      "level": "fine",
+      "branch": "antithetic",
+      "method": "remainder",
+      "population": "exponential-40"
+    },
+    {
+      "tau": 10.0,
+      "level": "fine",
+      "branch": "antithetic",
+      "method": "remainder",
+      "population": "gaussian-64"
+    },
+    {
+      "tau": 10.0,
+      "level": "fine",
+      "branch": "antithetic",
+      "method": "remainder",
+      "population": "halo-64"
+    },
+    {
+      "tau": 10.0,
+      "level": "fine",
+      "branch": "antithetic",
+      "method": "remainder",
+      "population": "exponential-64"
+    },
+    {
+      "tau": 10.0,
+      "level": "coarse",
+      "branch": "single",
+      "method": "raw",
+      "population": "gaussian-40"
+    },
+    {
+      "tau": 10.0,
+      "level": "coarse",
+      "branch": "single",
+      "method": "raw",
+      "population": "halo-40"
+    },
+    {
+      "tau": 10.0,
+      "level": "coarse",
+      "branch": "single",
+      "method": "raw",
+      "population": "exponential-40"
+    },
+    {
+      "tau": 10.0,
+      "level": "coarse",
+      "branch": "single",
+      "method": "raw",
+      "population": "gaussian-64"
+    },
+    {
+      "tau": 10.0,
+      "level": "coarse",
+      "branch": "single",
+      "method": "raw",
+      "population": "halo-64"
+    },
+    {
+      "tau": 10.0,
+      "level": "coarse",
+      "branch": "single",
+      "method": "raw",
+      "population": "exponential-64"
+    },
+    {
+      "tau": 10.0,
+      "level": "coarse",
+      "branch": "single",
+      "method": "remainder",
+      "population": "gaussian-40"
+    },
+    {
+      "tau": 10.0,
+      "level": "coarse",
+      "branch": "single",
+      "method": "remainder",
+      "population": "halo-40"
+    },
+    {
+      "tau": 10.0,
+      "level": "coarse",
+      "branch": "single",
+      "method": "remainder",
+      "population": "exponential-40"
+    },
+    {
+      "tau": 10.0,
+      "level": "coarse",
+      "branch": "single",
+      "method": "remainder",
+      "population": "gaussian-64"
+    },
+    {
+      "tau": 10.0,
+      "level": "coarse",
+      "branch": "single",
+      "method": "remainder",
+      "population": "halo-64"
+    },
+    {
+      "tau": 10.0,
+      "level": "coarse",
+      "branch": "single",
+      "method": "remainder",
+      "population": "exponential-64"
+    },
+    {
+      "tau": 10.0,
+      "level": "coarse",
+      "branch": "antithetic",
+      "method": "raw",
+      "population": "gaussian-40"
+    },
+    {
+      "tau": 10.0,
+      "level": "coarse",
+      "branch": "antithetic",
+      "method": "raw",
+      "population": "halo-40"
+    },
+    {
+      "tau": 10.0,
+      "level": "coarse",
+      "branch": "antithetic",
+      "method": "raw",
+      "population": "exponential-40"
+    },
+    {
+      "tau": 10.0,
+      "level": "coarse",
+      "branch": "antithetic",
+      "method": "raw",
+      "population": "gaussian-64"
+    },
+    {
+      "tau": 10.0,
+      "level": "coarse",
+      "branch": "antithetic",
+      "method": "raw",
+      "population": "halo-64"
+    },
+    {
+      "tau": 10.0,
+      "level": "coarse",
+      "branch": "antithetic",
+      "method": "raw",
+      "population": "exponential-64"
+    },
+    {
+      "tau": 10.0,
+      "level": "coarse",
+      "branch": "antithetic",
+      "method": "remainder",
+      "population": "gaussian-40"
+    },
+    {
+      "tau": 10.0,
+      "level": "coarse",
+      "branch": "antithetic",
+      "method": "remainder",
+      "population": "halo-40"
+    },
+    {
+      "tau": 10.0,
+      "level": "coarse",
+      "branch": "antithetic",
+      "method": "remainder",
+      "population": "exponential-40"
+    },
+    {
+      "tau": 10.0,
+      "level": "coarse",
+      "branch": "antithetic",
+      "method": "remainder",
+      "population": "gaussian-64"
+    },
+    {
+      "tau": 10.0,
+      "level": "coarse",
+      "branch": "antithetic",
+      "method": "remainder",
+      "population": "halo-64"
+    },
+    {
+      "tau": 10.0,
+      "level": "coarse",
+      "branch": "antithetic",
+      "method": "remainder",
+      "population": "exponential-64"
+    },
+    {
+      "tau": 20.0,
+      "level": "fine",
+      "branch": "single",
+      "method": "raw",
+      "population": "gaussian-40"
+    },
+    {
+      "tau": 20.0,
+      "level": "fine",
+      "branch": "single",
+      "method": "raw",
+      "population": "halo-40"
+    },
+    {
+      "tau": 20.0,
+      "level": "fine",
+      "branch": "single",
+      "method": "raw",
+      "population": "exponential-40"
+    },
+    {
+      "tau": 20.0,
+      "level": "fine",
+      "branch": "single",
+      "method": "raw",
+      "population": "gaussian-64"
+    },
+    {
+      "tau": 20.0,
+      "level": "fine",
+      "branch": "single",
+      "method": "raw",
+      "population": "halo-64"
+    },
+    {
+      "tau": 20.0,
+      "level": "fine",
+      "branch": "single",
+      "method": "raw",
+      "population": "exponential-64"
+    },
+    {
+      "tau": 20.0,
+      "level": "fine",
+      "branch": "single",
+      "method": "remainder",
+      "population": "gaussian-40"
+    },
+    {
+      "tau": 20.0,
+      "level": "fine",
+      "branch": "single",
+      "method": "remainder",
+      "population": "halo-40"
+    },
+    {
+      "tau": 20.0,
+      "level": "fine",
+      "branch": "single",
+      "method": "remainder",
+      "population": "exponential-40"
+    },
+    {
+      "tau": 20.0,
+      "level": "fine",
+      "branch": "single",
+      "method": "remainder",
+      "population": "gaussian-64"
+    },
+    {
+      "tau": 20.0,
+      "level": "fine",
+      "branch": "single",
+      "method": "remainder",
+      "population": "halo-64"
+    },
+    {
+      "tau": 20.0,
+      "level": "fine",
+      "branch": "single",
+      "method": "remainder",
+      "population": "exponential-64"
+    },
+    {
+      "tau": 20.0,
+      "level": "fine",
+      "branch": "antithetic",
+      "method": "raw",
+      "population": "gaussian-40"
+    },
+    {
+      "tau": 20.0,
+      "level": "fine",
+      "branch": "antithetic",
+      "method": "raw",
+      "population": "halo-40"
+    },
+    {
+      "tau": 20.0,
+      "level": "fine",
+      "branch": "antithetic",
+      "method": "raw",
+      "population": "exponential-40"
+    },
+    {
+      "tau": 20.0,
+      "level": "fine",
+      "branch": "antithetic",
+      "method": "raw",
+      "population": "gaussian-64"
+    },
+    {
+      "tau": 20.0,
+      "level": "fine",
+      "branch": "antithetic",
+      "method": "raw",
+      "population": "halo-64"
+    },
+    {
+      "tau": 20.0,
+      "level": "fine",
+      "branch": "antithetic",
+      "method": "raw",
+      "population": "exponential-64"
+    },
+    {
+      "tau": 20.0,
+      "level": "fine",
+      "branch": "antithetic",
+      "method": "remainder",
+      "population": "gaussian-40"
+    },
+    {
+      "tau": 20.0,
+      "level": "fine",
+      "branch": "antithetic",
+      "method": "remainder",
+      "population": "halo-40"
+    },
+    {
+      "tau": 20.0,
+      "level": "fine",
+      "branch": "antithetic",
+      "method": "remainder",
+      "population": "exponential-40"
+    },
+    {
+      "tau": 20.0,
+      "level": "fine",
+      "branch": "antithetic",
+      "method": "remainder",
+      "population": "gaussian-64"
+    },
+    {
+      "tau": 20.0,
+      "level": "fine",
+      "branch": "antithetic",
+      "method": "remainder",
+      "population": "halo-64"
+    },
+    {
+      "tau": 20.0,
+      "level": "fine",
+      "branch": "antithetic",
+      "method": "remainder",
+      "population": "exponential-64"
+    },
+    {
+      "tau": 20.0,
+      "level": "coarse",
+      "branch": "single",
+      "method": "raw",
+      "population": "gaussian-40"
+    },
+    {
+      "tau": 20.0,
+      "level": "coarse",
+      "branch": "single",
+      "method": "raw",
+      "population": "halo-40"
+    },
+    {
+      "tau": 20.0,
+      "level": "coarse",
+      "branch": "single",
+      "method": "raw",
+      "population": "exponential-40"
+    },
+    {
+      "tau": 20.0,
+      "level": "coarse",
+      "branch": "single",
+      "method": "raw",
+      "population": "gaussian-64"
+    },
+    {
+      "tau": 20.0,
+      "level": "coarse",
+      "branch": "single",
+      "method": "raw",
+      "population": "halo-64"
+    },
+    {
+      "tau": 20.0,
+      "level": "coarse",
+      "branch": "single",
+      "method": "raw",
+      "population": "exponential-64"
+    },
+    {
+      "tau": 20.0,
+      "level": "coarse",
+      "branch": "single",
+      "method": "remainder",
+      "population": "gaussian-40"
+    },
+    {
+      "tau": 20.0,
+      "level": "coarse",
+      "branch": "single",
+      "method": "remainder",
+      "population": "halo-40"
+    },
+    {
+      "tau": 20.0,
+      "level": "coarse",
+      "branch": "single",
+      "method": "remainder",
+      "population": "exponential-40"
+    },
+    {
+      "tau": 20.0,
+      "level": "coarse",
+      "branch": "single",
+      "method": "remainder",
+      "population": "gaussian-64"
+    },
+    {
+      "tau": 20.0,
+      "level": "coarse",
+      "branch": "single",
+      "method": "remainder",
+      "population": "halo-64"
+    },
+    {
+      "tau": 20.0,
+      "level": "coarse",
+      "branch": "single",
+      "method": "remainder",
+      "population": "exponential-64"
+    },
+    {
+      "tau": 20.0,
+      "level": "coarse",
+      "branch": "antithetic",
+      "method": "raw",
+      "population": "gaussian-40"
+    },
+    {
+      "tau": 20.0,
+      "level": "coarse",
+      "branch": "antithetic",
+      "method": "raw",
+      "population": "halo-40"
+    },
+    {
+      "tau": 20.0,
+      "level": "coarse",
+      "branch": "antithetic",
+      "method": "raw",
+      "population": "exponential-40"
+    },
+    {
+      "tau": 20.0,
+      "level": "coarse",
+      "branch": "antithetic",
+      "method": "raw",
+      "population": "gaussian-64"
+    },
+    {
+      "tau": 20.0,
+      "level": "coarse",
+      "branch": "antithetic",
+      "method": "raw",
+      "population": "halo-64"
+    },
+    {
+      "tau": 20.0,
+      "level": "coarse",
+      "branch": "antithetic",
+      "method": "raw",
+      "population": "exponential-64"
+    },
+    {
+      "tau": 20.0,
+      "level": "coarse",
+      "branch": "antithetic",
+      "method": "remainder",
+      "population": "gaussian-40"
+    },
+    {
+      "tau": 20.0,
+      "level": "coarse",
+      "branch": "antithetic",
+      "method": "remainder",
+      "population": "halo-40"
+    },
+    {
+      "tau": 20.0,
+      "level": "coarse",
+      "branch": "antithetic",
+      "method": "remainder",
+      "population": "exponential-40"
+    },
+    {
+      "tau": 20.0,
+      "level": "coarse",
+      "branch": "antithetic",
+      "method": "remainder",
+      "population": "gaussian-64"
+    },
+    {
+      "tau": 20.0,
+      "level": "coarse",
+      "branch": "antithetic",
+      "method": "remainder",
+      "population": "halo-64"
+    },
+    {
+      "tau": 20.0,
+      "level": "coarse",
+      "branch": "antithetic",
+      "method": "remainder",
+      "population": "exponential-64"
+    }
+  ],
+  "cpu_seconds": 685.3013079890001,
+  "independent_initial_paths": 1572864,
+  "raw_sha256": "333c61d302975eb0ff2b7a62f170524281406512a2d83d3bd22b27b6d3db7173",
+  "original_record_sha256": "6b6987151be8367f3ad6b0c373a51155f0a6ea61b3c3a5949a18959467dece01",
+  "original_archive_sha256": "337949e9349f53f5129bcf9b064dc82d45284f23d1598ad1cb4d9fefde104de7",
+  "scope": "Exact extraction of the original mean and full covariance only. Other arrays are omitted because this arithmetic audit does not read them. The underlying experiment has its separate runnable population release."
+}

@@ -32,6 +32,9 @@ The new [matched-cost package](accuracy/README.md) compares raw and cumulative
 estimators on identical numerical weights and paths, measures their CPU cost,
 and retains narrow populations where the advantage disappears. It includes all
 16 finite cases, paired covariance, timing repeats and a one-command reproduction.
+A short `reproduce_accuracy_audit.py --out /tmp/paired-audit` command also
+recomputes the revised paired uncertainty from exact historical sufficient
+statistics; it preserves all original operational outcomes.
 The separate new-sweep approximation diagnostic is still awaiting independent
 population outcomes; this cost release does not claim that validation passed.
 

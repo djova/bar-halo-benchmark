@@ -44,3 +44,20 @@ recipe reproduces its corrected, matched-weight successor. Numerical sources
 are copied unchanged; the finite queue launcher only substitutes the active
 Python interpreter for a private virtual-environment location. No private files,
 host service, API, live halo, AGAMA installation or supercomputer is required.
+
+## Recompute the retrospective paired assessment
+
+```sh
+python reproduce_accuracy_audit.py --out /tmp/accuracy-retrospective-audit
+```
+
+This short command reproduces the joint numerical-proxy assessment of the earlier
+forecasts, the paired exponential-minus-halo uncertainty and the archived
+raw/remainder covariance comparison. It uses exact mean/covariance projections
+from the historical batches, with original archive hashes and an extraction
+receipt. It does not rerun orbital evolution or create new physical samples.
+The existing population and held-out reproduction commands regenerate those
+underlying experiments. All 24 historical operational passes remain unchanged;
+the later numerical-proxy assessment retains 22, with both early width-12 window
+comparisons left marginal. Numerical refinements are practical allowances, not
+rigorous error bounds.

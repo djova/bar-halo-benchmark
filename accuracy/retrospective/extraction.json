@@ -1,0 +1,102 @@
+{
+  "cases": [
+    {
+      "case": "s0-seed94501",
+      "original_archive_sha256": "9001695e870265511128ab63a75d01927a309bdcd11217d9a7c716484b85648f",
+      "extracted_statistics_sha256": "2989cb7b2bed10c7ff725efaa5bfa3783f78276cbc994f4734ca4d6146fea294",
+      "arrays_identical": true
+    },
+    {
+      "case": "s0-seed94502",
+      "original_archive_sha256": "3fc3eb59b65a35f1b3d34cfa45b857721c931822d7bf9eb0f93abde0df159afc",
+      "extracted_statistics_sha256": "d74171f8c5301cadc4935ec542d30e2529a6be300d1209f70a34a337a76ae0db",
+      "arrays_identical": true
+    },
+    {
+      "case": "s0-seed94503",
+      "original_archive_sha256": "3fb07cb68ba5185f73d9d38c28b1f72d3ea05aad042442e95957d975d1d551c3",
+      "extracted_statistics_sha256": "d3b9479c62d5735c0758cef01115ab75de46af32082c4e55ea1440f755c9aebb",
+      "arrays_identical": true
+    },
+    {
+      "case": "s0-seed94504",
+      "original_archive_sha256": "c46432b174bdd934d518f76a2357f648c5ca8a2f9e6dc82d784b2cdb356727e6",
+      "extracted_statistics_sha256": "5d6d11cd31bcdd70bd861f663aed0f994a2b9e9240843f5bfe8f8fa6d52f88b3",
+      "arrays_identical": true
+    },
+    {
+      "case": "s0-seed94505",
+      "original_archive_sha256": "2ad2137ad981f8ac364ab5e27b81991fe916bdef0a74f1372fe1f54d08229d7b",
+      "extracted_statistics_sha256": "89cc794ef5ca479228859625ab6561f3024783ec3f5c99e39906c55fac000c3d",
+      "arrays_identical": true
+    },
+    {
+      "case": "s0-seed94506",
+      "original_archive_sha256": "4548aa57e6e5f6564e0de1ba5f430a307429ea498eeb2458b462f4936a5581d0",
+      "extracted_statistics_sha256": "beed1000dbc9dbe36809d360d9e84b7ab830bb986da07370b3e69d7fb764e8cb",
+      "arrays_identical": true
+    },
+    {
+      "case": "s0-seed94507",
+      "original_archive_sha256": "dfb3f73f979d9cbfa954aff7524af02c49b63bb179816098bdd543cc884bfc99",
+      "extracted_statistics_sha256": "a2bdcecaec5daa2cdbf0132788d9a977829c016e082169b2b5fcb9c9f756c568",
+      "arrays_identical": true
+    },
+    {
+      "case": "s0-seed94508",
+      "original_archive_sha256": "14b96efec291d24c0d2d51cf4e6af87dc665a61eddf7c2db64655dcbf48b49b2",
+      "extracted_statistics_sha256": "6f41c5f803b84b2c3d0f1741aae96238a6207f1d506326add56641a6db51fc88",
+      "arrays_identical": true
+    },
+    {
+      "case": "s.25-seed94501",
+      "original_archive_sha256": "f33793caa9630c8529801010b29291cb428651a26173c964224ba2e5c5a6bce9",
+      "extracted_statistics_sha256": "5166c68ac97ddc0b6a78dd0607dfc0b4320916c2f239cadeae44196105b73bb9",
+      "arrays_identical": true
+    },
+    {
+      "case": "s.25-seed94502",
+      "original_archive_sha256": "337949e9349f53f5129bcf9b064dc82d45284f23d1598ad1cb4d9fefde104de7",
+      "extracted_statistics_sha256": "333c61d302975eb0ff2b7a62f170524281406512a2d83d3bd22b27b6d3db7173",
+      "arrays_identical": true
+    },
+    {
+      "case": "s.25-seed94503",
+      "original_archive_sha256": "e8c12896634d7d4f5d6ddfdd0b3bcde74997b5b1051002624b7cab1449abda64",
+      "extracted_statistics_sha256": "d247e9392272185da3918b927a3c4ede851afd10b739aa77649c8e0b5fe97aef",
+      "arrays_identical": true
+    },
+    {
+      "case": "s.25-seed94504",
+      "original_archive_sha256": "b0d0a02357b7b4776d5ff850e291b8f1845437a03742bd658b54a369f6393845",
+      "extracted_statistics_sha256": "5ed933ca78128b57582ca3951b9d64c3f841b99f3034dad893aaa49e66cb5f89",
+      "arrays_identical": true
+    },
+    {
+      "case": "s.25-seed94505",
+      "original_archive_sha256": "46f4204276e4777fa0d4042f9ef730756bb6408dfc10a014d82e06ed5f8780e9",
+      "extracted_statistics_sha256": "30d03eaa458310b54cd3ab9c8d4018ccd71c7537efce8c55ecbd7cbbdd2d30f5",
+      "arrays_identical": true
+    },
+    {
+      "case": "s.25-seed94506",
+      "original_archive_sha256": "2f69afce17855c502a1d9c0af98f218b2cc37b569936d14c6749cf96dac9cdd5",
+      "extracted_statistics_sha256": "2c965b753ed02430725c7e427b08fa26d8c2733f424de116a8a8b4ff78e20994",
+      "arrays_identical": true
+    },
+    {
+      "case": "s.25-seed94507",
+      "original_archive_sha256": "32ca652920f2e6ca2878ef61d19f7d77f1aed389cac9f36fe84c956862d1bb39",
+      "extracted_statistics_sha256": "3bdd972434ee5a741edc78c979f176e7eee6780505b58a7a378ed13e9a8cce84",
+      "arrays_identical": true
+    },
+    {
+      "case": "s.25-seed94508",
+      "original_archive_sha256": "6a2ee7d72900164dab8aa603dd091f36cadb5d81a10faaf540328e37d133faa2",
+      "extracted_statistics_sha256": "b0dac104ae620aed8bd9977501e0d0e98dfbb9baef84281490af09de581350e0",
+      "arrays_identical": true
+    }
+  ],
+  "source_sha256": "3efc46cc2b79c166183cd262061bb3f2337ad95b2c8008b6f0a20d1e0c33645b",
+  "scope": "Recompute the retrospective audit from exactly extracted historical sufficient statistics; not a rerun or new phase sample."
+}
