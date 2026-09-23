@@ -134,3 +134,13 @@ The canonical browsing path still fails through that service, and the generic
 Python reader gets403 there; the named anonymous reader and live browsers work.
 This is a tested fallback, not universal canonical accessibility or an independent
 scientific review. See [the corrective receipts](release-checks/corrections-2026-09-23.3/).
+
+### Delivery checks for the corrective release
+
+The Cloudflare and tailnet publication interfaces pass Chrome/WebKit checks,
+including mobile, no-JavaScript evidence, missing-data behavior and keyboard
+navigation. All 7,300 publication files on each site match the audited build.
+The full canonical-domain and new Pages-alias privacy scans each pass22,796
+file instances; local release checks pass15,280. These verify delivery and
+privacy, not physical convergence or independent scientific confirmation.
+The remaining canonical generic-reader/browsing-tool limitations above persist.
