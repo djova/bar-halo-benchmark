@@ -1,0 +1,212 @@
+{
+  "cases": [
+    {
+      "id": "s0-seed96211",
+      "script": "scripts/population_accuracy/benchmark_estimators.py",
+      "arguments": [
+        "--table",
+        "results/population-response/preflight-02",
+        "--s",
+        "0",
+        "--seed",
+        "96211"
+      ],
+      "wall_seconds": 240
+    },
+    {
+      "id": "s0-seed96212",
+      "script": "scripts/population_accuracy/benchmark_estimators.py",
+      "arguments": [
+        "--table",
+        "results/population-response/preflight-02",
+        "--s",
+        "0",
+        "--seed",
+        "96212"
+      ],
+      "wall_seconds": 240
+    },
+    {
+      "id": "s0-seed96213",
+      "script": "scripts/population_accuracy/benchmark_estimators.py",
+      "arguments": [
+        "--table",
+        "results/population-response/preflight-02",
+        "--s",
+        "0",
+        "--seed",
+        "96213"
+      ],
+      "wall_seconds": 240
+    },
+    {
+      "id": "s0-seed96214",
+      "script": "scripts/population_accuracy/benchmark_estimators.py",
+      "arguments": [
+        "--table",
+        "results/population-response/preflight-02",
+        "--s",
+        "0",
+        "--seed",
+        "96214"
+      ],
+      "wall_seconds": 240
+    },
+    {
+      "id": "s0-seed96215",
+      "script": "scripts/population_accuracy/benchmark_estimators.py",
+      "arguments": [
+        "--table",
+        "results/population-response/preflight-02",
+        "--s",
+        "0",
+        "--seed",
+        "96215"
+      ],
+      "wall_seconds": 240
+    },
+    {
+      "id": "s0-seed96216",
+      "script": "scripts/population_accuracy/benchmark_estimators.py",
+      "arguments": [
+        "--table",
+        "results/population-response/preflight-02",
+        "--s",
+        "0",
+        "--seed",
+        "96216"
+      ],
+      "wall_seconds": 240
+    },
+    {
+      "id": "s0-seed96217",
+      "script": "scripts/population_accuracy/benchmark_estimators.py",
+      "arguments": [
+        "--table",
+        "results/population-response/preflight-02",
+        "--s",
+        "0",
+        "--seed",
+        "96217"
+      ],
+      "wall_seconds": 240
+    },
+    {
+      "id": "s0-seed96218",
+      "script": "scripts/population_accuracy/benchmark_estimators.py",
+      "arguments": [
+        "--table",
+        "results/population-response/preflight-02",
+        "--s",
+        "0",
+        "--seed",
+        "96218"
+      ],
+      "wall_seconds": 240
+    },
+    {
+      "id": "s0.25-seed96211",
+      "script": "scripts/population_accuracy/benchmark_estimators.py",
+      "arguments": [
+        "--table",
+        "results/population-response/preflight-02",
+        "--s",
+        "0.25",
+        "--seed",
+        "96211"
+      ],
+      "wall_seconds": 240
+    },
+    {
+      "id": "s0.25-seed96212",
+      "script": "scripts/population_accuracy/benchmark_estimators.py",
+      "arguments": [
+        "--table",
+        "results/population-response/preflight-02",
+        "--s",
+        "0.25",
+        "--seed",
+        "96212"
+      ],
+      "wall_seconds": 240
+    },
+    {
+      "id": "s0.25-seed96213",
+      "script": "scripts/population_accuracy/benchmark_estimators.py",
+      "arguments": [
+        "--table",
+        "results/population-response/preflight-02",
+        "--s",
+        "0.25",
+        "--seed",
+        "96213"
+      ],
+      "wall_seconds": 240
+    },
+    {
+      "id": "s0.25-seed96214",
+      "script": "scripts/population_accuracy/benchmark_estimators.py",
+      "arguments": [
+        "--table",
+        "results/population-response/preflight-02",
+        "--s",
+        "0.25",
+        "--seed",
+        "96214"
+      ],
+      "wall_seconds": 240
+    },
+    {
+      "id": "s0.25-seed96215",
+      "script": "scripts/population_accuracy/benchmark_estimators.py",
+      "arguments": [
+        "--table",
+        "results/population-response/preflight-02",
+        "--s",
+        "0.25",
+        "--seed",
+        "96215"
+      ],
+      "wall_seconds": 240
+    },
+    {
+      "id": "s0.25-seed96216",
+      "script": "scripts/population_accuracy/benchmark_estimators.py",
+      "arguments": [
+        "--table",
+        "results/population-response/preflight-02",
+        "--s",
+        "0.25",
+        "--seed",
+        "96216"
+      ],
+      "wall_seconds": 240
+    },
+    {
+      "id": "s0.25-seed96217",
+      "script": "scripts/population_accuracy/benchmark_estimators.py",
+      "arguments": [
+        "--table",
+        "results/population-response/preflight-02",
+        "--s",
+        "0.25",
+        "--seed",
+        "96217"
+      ],
+      "wall_seconds": 240
+    },
+    {
+      "id": "s0.25-seed96218",
+      "script": "scripts/population_accuracy/benchmark_estimators.py",
+      "arguments": [
+        "--table",
+        "results/population-response/preflight-02",
+        "--s",
+        "0.25",
+        "--seed",
+        "96218"
+      ],
+      "wall_seconds": 240
+    }
+  ]
+}

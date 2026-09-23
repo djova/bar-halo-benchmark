@@ -1,0 +1,2143 @@
+{
+  "rows": [
+    {
+      "s": 0.0,
+      "tau": 10.0,
+      "population": "halo",
+      "paired_raw_minus_remainder": {
+        "mean": 0.03216976025603217,
+        "se": 0.03344908372136098,
+        "ci95": [
+          -0.046924754305055424,
+          0.11126427481711977
+        ]
+      },
+      "paired_interval_contains_zero": true,
+      "conditional_variance_ratio": 39350.971280101134,
+      "cost_times_variance_ratio": 38988.555827432385,
+      "paired_batch_bootstrap_cost_ratio_interval": [
+        38008.69898740879,
+        40043.78380059729
+      ],
+      "between_batch_cost_ratio": 89013.14301247022,
+      "measured_accounted_batch_cost_ratio": 1.009341335004143,
+      "remainder_fine_minus_coarse": {
+        "mean": -5.8528844784533525e-06,
+        "se": 2.0350030580859317e-05,
+        "ci95": [
+          -5.397306031060809e-05,
+          4.2267291353701385e-05
+        ]
+      },
+      "precision": [
+        {
+          "method": "raw",
+          "measured_mean_accounted_batch_cpu_seconds": 18.292741580749997,
+          "measured_batch_cpu_seconds": [
+            18.011707345999998,
+            18.115697377,
+            18.26337468,
+            18.232870979999998,
+            18.391204567,
+            18.451475954,
+            18.381582111,
+            18.494019631
+          ],
+          "conditional_variance_per_batch": 0.011227556685863074,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 20538083.563111685,
+          "integer_batch_cpu_seconds_projection": 20538285.366236545,
+          "projected_batches": 1122756,
+          "measured_eight_batch_response": {
+            "mean": 0.045444496984775325,
+            "se": 0.03346173459023431,
+            "ci95": [
+              -0.033679932127653876,
+              0.12456892609720452
+            ]
+          },
+          "between_batch_variance": 0.008957501454298269
+        },
+        {
+          "method": "remainder",
+          "measured_mean_accounted_batch_cpu_seconds": 18.463620208,
+          "measured_batch_cpu_seconds": [
+            18.192181762999997,
+            18.288668272,
+            18.430808689,
+            18.409062744999996,
+            18.557166691,
+            18.620871989999998,
+            18.543810559,
+            18.666390954999997
+          ],
+          "conditional_variance_per_batch": 2.853184132596134e-07,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 526.7721034350565,
+          "integer_batch_cpu_seconds_projection": 535.444986032,
+          "projected_batches": 29,
+          "measured_eight_batch_response": {
+            "mean": 0.013274736728743143,
+            "se": 0.00011163550790995038,
+            "ci95": [
+              0.013010760699400397,
+              0.013538712758085889
+            ]
+          },
+          "between_batch_variance": 9.969989301050077e-08
+        }
+      ]
+    },
+    {
+      "s": 0.0,
+      "tau": 10.0,
+      "population": "exponential",
+      "paired_raw_minus_remainder": {
+        "mean": 0.03216921854770753,
+        "se": 0.03344767746288322,
+        "ci95": [
+          -0.046921970740479546,
+          0.11126040783589461
+        ]
+      },
+      "paired_interval_contains_zero": true,
+      "conditional_variance_ratio": 39349.97782960885,
+      "cost_times_variance_ratio": 39002.90042126581,
+      "paired_batch_bootstrap_cost_ratio_interval": [
+        38024.45728248502,
+        40062.5081958592
+      ],
+      "between_batch_cost_ratio": 89093.6618407266,
+      "measured_accounted_batch_cost_ratio": 1.0089447619142435,
+      "remainder_fine_minus_coarse": {
+        "mean": -5.838104343272067e-06,
+        "se": 2.034857760453455e-05,
+        "ci95": [
+          -5.395484443237227e-05,
+          4.227863574582814e-05
+        ]
+      },
+      "precision": [
+        {
+          "method": "raw",
+          "measured_mean_accounted_batch_cpu_seconds": 18.2873912205,
+          "measured_batch_cpu_seconds": [
+            18.007858672999998,
+            18.110274277000002,
+            18.257413976000002,
+            18.22798957,
+            18.386246031000002,
+            18.445414197999998,
+            18.376112843,
+            18.487820196
+          ],
+          "conditional_variance_per_batch": 0.011227208306640354,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 20531438.116256673,
+          "integer_batch_cpu_seconds_projection": 20531638.15847098,
+          "projected_batches": 1122721,
+          "measured_eight_batch_response": {
+            "mean": 0.0454437906810916,
+            "se": 0.03346033360631899,
+            "ci95": [
+              -0.03367732563079534,
+              0.12456490699297854
+            ]
+          },
+          "between_batch_variance": 0.008956751400369282
+        },
+        {
+          "method": "remainder",
+          "measured_mean_accounted_batch_cpu_seconds": 18.450967581,
+          "measured_batch_cpu_seconds": [
+            18.177539184999997,
+            18.292504622000003,
+            18.420331452,
+            18.390355176,
+            18.545704759,
+            18.606847978,
+            18.532279556000002,
+            18.642177919999998
+          ],
+          "conditional_variance_per_batch": 2.8531676320774073e-07,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 526.4079823423127,
+          "integer_batch_cpu_seconds_projection": 535.078059849,
+          "projected_batches": 29,
+          "measured_eight_batch_response": {
+            "mean": 0.01327457213338406,
+            "se": 0.00011160230565826905,
+            "ci95": [
+              0.013010674614890846,
+              0.013538469651877275
+            ]
+          },
+          "between_batch_variance": 9.964059702593369e-08
+        }
+      ]
+    },
+    {
+      "s": 0.0,
+      "tau": 10.0,
+      "population": "gaussian8",
+      "paired_raw_minus_remainder": {
+        "mean": 0.03298300829639182,
+        "se": 0.029599112589065984,
+        "ci95": [
+          -0.0370077711573389,
+          0.10297378775012254
+        ]
+      },
+      "paired_interval_contains_zero": true,
+      "conditional_variance_ratio": 3761.7319805968623,
+      "cost_times_variance_ratio": 3730.4410208826607,
+      "paired_batch_bootstrap_cost_ratio_interval": [
+        3579.8762377475105,
+        3919.335334026963
+      ],
+      "between_batch_cost_ratio": 6777.02581583487,
+      "measured_accounted_batch_cost_ratio": 1.008685312803601,
+      "remainder_fine_minus_coarse": {
+        "mean": 6.085624826516925e-05,
+        "se": 3.718442335149555e-05,
+        "ci95": [
+          -2.707094097327018e-05,
+          0.0001487834375036087
+        ]
+      },
+      "precision": [
+        {
+          "method": "raw",
+          "measured_mean_accounted_batch_cpu_seconds": 18.287942713375,
+          "measured_batch_cpu_seconds": [
+            18.008665983999997,
+            18.109857921,
+            18.258966300999997,
+            18.226874507999998,
+            18.387187155,
+            18.446156878,
+            18.375412373,
+            18.490420587
+          ],
+          "conditional_variance_per_batch": 0.010482844695065129,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 19170845.05853861,
+          "integer_batch_cpu_seconds_projection": 19170976.02729031,
+          "projected_batches": 1048285,
+          "measured_eight_batch_response": {
+            "mean": 0.045551622666498745,
+            "se": 0.0296347545030242,
+            "ci95": [
+              -0.02452343652135075,
+              0.11562668185434824
+            ]
+          },
+          "between_batch_variance": 0.007025749395636105
+        },
+        {
+          "method": "remainder",
+          "measured_mean_accounted_batch_cpu_seconds": 18.446779216375,
+          "measured_batch_cpu_seconds": [
+            18.166377598999997,
+            18.290111774,
+            18.424127858,
+            18.389438368,
+            18.531789703,
+            18.602924043,
+            18.522675906,
+            18.646788479999998
+          ],
+          "conditional_variance_per_batch": 2.7867069608191086e-06,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 5139.029125838475,
+          "integer_batch_cpu_seconds_projection": 5146.651401368625,
+          "projected_batches": 279,
+          "measured_eight_batch_response": {
+            "mean": 0.01256861437010692,
+            "se": 0.0003584296393318341,
+            "ci95": [
+              0.01172106295245321,
+              0.01341616578776063
+            ]
+          },
+          "between_batch_variance": 1.0277744508123895e-06
+        }
+      ]
+    },
+    {
+      "s": 0.0,
+      "tau": 10.0,
+      "population": "stress1",
+      "paired_raw_minus_remainder": {
+        "mean": 0.036223608816714575,
+        "se": 0.014516582440231246,
+        "ci95": [
+          0.0018973459282978083,
+          0.07054987170513134
+        ]
+      },
+      "paired_interval_contains_zero": false,
+      "conditional_variance_ratio": 3.6033660090976767,
+      "cost_times_variance_ratio": 3.572939769067551,
+      "paired_batch_bootstrap_cost_ratio_interval": [
+        3.460386430686617,
+        3.693216808840775
+      ],
+      "between_batch_cost_ratio": 2.1096605914522875,
+      "measured_accounted_batch_cost_ratio": 1.0086148898433447,
+      "remainder_fine_minus_coarse": {
+        "mean": 0.000975023276645872,
+        "se": 0.0007389860849200471,
+        "ci95": [
+          -0.0007724011413456761,
+          0.00272244769463742
+        ]
+      },
+      "precision": [
+        {
+          "method": "raw",
+          "measured_mean_accounted_batch_cpu_seconds": 18.288859926249998,
+          "measured_batch_cpu_seconds": [
+            18.007762060999998,
+            18.111016936000002,
+            18.259553267999998,
+            18.231591619,
+            18.385637543999998,
+            18.449287669,
+            18.375254115,
+            18.490776198
+          ],
+          "conditional_variance_per_batch": 0.004208056922418908,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 7695956.596218334,
+          "integer_batch_cpu_seconds_projection": 7696061.9901255565,
+          "projected_batches": 420806,
+          "measured_eight_batch_response": {
+            "mean": 0.026458929902314757,
+            "se": 0.01469165547065885,
+            "ci95": [
+              -0.008281314919650964,
+              0.06119917472428048
+            ]
+          },
+          "between_batch_variance": 0.0017267579237483213
+        },
+        {
+          "method": "remainder",
+          "measured_mean_accounted_batch_cpu_seconds": 18.446416439875,
+          "measured_batch_cpu_seconds": [
+            18.170684497,
+            18.285048419,
+            18.415343151000002,
+            18.381161978999998,
+            18.540709574,
+            18.600721772999997,
+            18.530971470999997,
+            18.646690655
+          ],
+          "conditional_variance_per_batch": 0.0011678127927594712,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 2153956.4318563337,
+          "integer_batch_cpu_seconds_projection": 2154209.4046814824,
+          "projected_batches": 116782,
+          "measured_eight_batch_response": {
+            "mean": -0.009764678914399819,
+            "se": 0.010071676143899566,
+            "ci95": [
+              -0.03358040857845323,
+              0.014051050749653592
+            ]
+          },
+          "between_batch_variance": 0.0008115092827807652
+        }
+      ]
+    },
+    {
+      "s": 0.0,
+      "tau": 10.0,
+      "population": "stress0.125",
+      "paired_raw_minus_remainder": {
+        "mean": 0.009034377396068133,
+        "se": 0.004899311882000603,
+        "ci95": [
+          -0.0025506542962271794,
+          0.020619409088363447
+        ]
+      },
+      "paired_interval_contains_zero": true,
+      "conditional_variance_ratio": 1.025915941753796,
+      "cost_times_variance_ratio": 1.016737804209338,
+      "paired_batch_bootstrap_cost_ratio_interval": [
+        0.9973594719687313,
+        1.036371935222112
+      ],
+      "between_batch_cost_ratio": 0.6894867574642878,
+      "measured_accounted_batch_cost_ratio": 1.0089647273278923,
+      "remainder_fine_minus_coarse": {
+        "mean": 0.00024835777746700467,
+        "se": 0.00016229632931165358,
+        "ci95": [
+          -0.00013541205876782026,
+          0.0006321276137018296
+        ]
+      },
+      "precision": [
+        {
+          "method": "raw",
+          "measured_mean_accounted_batch_cpu_seconds": 18.28903928175,
+          "measured_batch_cpu_seconds": [
+            18.008095148,
+            18.112422616,
+            18.259332702000002,
+            18.231633007,
+            18.387023757,
+            18.446999026,
+            18.374863829000002,
+            18.491944169
+          ],
+          "conditional_variance_per_batch": 0.0005592454964776024,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 1022454.5656635787,
+          "integer_batch_cpu_seconds_projection": 1022814.5218318688,
+          "projected_batches": 55925,
+          "measured_eight_batch_response": {
+            "mean": 0.00518279921130754,
+            "se": 0.008801760382815615,
+            "ci95": [
+              -0.015630056846606854,
+              0.025995655269221932
+            ]
+          },
+          "between_batch_variance": 0.0006197678866920197
+        },
+        {
+          "method": "remainder",
+          "measured_mean_accounted_batch_cpu_seconds": 18.452995532,
+          "measured_batch_cpu_seconds": [
+            18.168823618,
+            18.272881347000002,
+            18.413579708,
+            18.404857328,
+            18.539228663,
+            18.628540313,
+            18.527242283,
+            18.668810995999998
+          ],
+          "conditional_variance_per_batch": 0.0005451182438217855,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 1005622.6506288771,
+          "integer_batch_cpu_seconds_projection": 1005909.692440384,
+          "projected_batches": 54512,
+          "measured_eight_batch_response": {
+            "mean": -0.0038515781847605953,
+            "se": 0.010552821317074546,
+            "ci95": [
+              -0.028805035393840377,
+              0.021101879024319183
+            ]
+          },
+          "between_batch_variance": 0.0008908963020008237
+        }
+      ]
+    },
+    {
+      "s": 0.0,
+      "tau": 10.0,
+      "population": "stress0.015625",
+      "paired_raw_minus_remainder": {
+        "mean": 0.0013425899804967065,
+        "se": 0.0007089166305345078,
+        "ci95": [
+          -0.00033373147642263255,
+          0.0030189114374160456
+        ]
+      },
+      "paired_interval_contains_zero": true,
+      "conditional_variance_ratio": 1.0013841300954434,
+      "cost_times_variance_ratio": 0.9923550722826365,
+      "paired_batch_bootstrap_cost_ratio_interval": [
+        0.9825033526006922,
+        0.9986627043814593
+      ],
+      "between_batch_cost_ratio": 1.175870745715726,
+      "measured_accounted_batch_cost_ratio": 1.008944511882501,
+      "remainder_fine_minus_coarse": {
+        "mean": -5.3889083347212865e-05,
+        "se": 6.825293786853217e-05,
+        "ci95": [
+          -0.00021528163547359955,
+          0.00010750346877917382
+        ]
+      },
+      "precision": [
+        {
+          "method": "raw",
+          "measured_mean_accounted_batch_cpu_seconds": 18.2880118165,
+          "measured_batch_cpu_seconds": [
+            18.006808844,
+            18.110125947,
+            18.260080502,
+            18.229365983999998,
+            18.386075139,
+            18.447343986,
+            18.374838361,
+            18.489455769
+          ],
+          "conditional_variance_per_batch": 6.943592506304083e-05,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 126704.3258915857,
+          "integer_batch_cpu_seconds_projection": 126991.95405377599,
+          "projected_batches": 6944,
+          "measured_eight_batch_response": {
+            "mean": 0.003150047662948713,
+            "se": 0.002370408520181673,
+            "ci95": [
+              -0.002455077810055035,
+              0.008755173135952461
+            ]
+          },
+          "between_batch_variance": 4.4950692420398946e-05
+        },
+        {
+          "method": "remainder",
+          "measured_mean_accounted_batch_cpu_seconds": 18.4515891555,
+          "measured_batch_cpu_seconds": [
+            18.164996006,
+            18.287906166000003,
+            18.405615327,
+            18.389182195999997,
+            18.549336643,
+            18.591203453,
+            18.561260638,
+            18.663212814999998
+          ],
+          "conditional_variance_per_batch": 6.933994955204932e-05,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 127680.43357720507,
+          "integer_batch_cpu_seconds_projection": 127943.31920423699,
+          "projected_batches": 6934,
+          "measured_eight_batch_response": {
+            "mean": 0.001807457682452006,
+            "se": 0.00217625491739892,
+            "ci95": [
+              -0.0033385674728775325,
+              0.006953482837781544
+            ]
+          },
+          "between_batch_variance": 3.788868372402384e-05
+        }
+      ]
+    },
+    {
+      "s": 0.0,
+      "tau": 20.0,
+      "population": "halo",
+      "paired_raw_minus_remainder": {
+        "mean": 0.05590236407960568,
+        "se": 0.040030605016398726,
+        "ci95": [
+          -0.038754975348102516,
+          0.15055970350731387
+        ]
+      },
+      "paired_interval_contains_zero": true,
+      "conditional_variance_ratio": 25632.096478653963,
+      "cost_times_variance_ratio": 25391.945428634426,
+      "paired_batch_bootstrap_cost_ratio_interval": [
+        24624.53996661829,
+        26166.958541629858
+      ],
+      "between_batch_cost_ratio": 13958.027812992583,
+      "measured_accounted_batch_cost_ratio": 1.009341335004143,
+      "remainder_fine_minus_coarse": {
+        "mean": -1.7117689442542206e-05,
+        "se": 6.880907987344683e-05,
+        "ci95": [
+          -0.00017982530844107956,
+          0.00014558992955599514
+        ]
+      },
+      "precision": [
+        {
+          "method": "raw",
+          "measured_mean_accounted_batch_cpu_seconds": 18.292741580749997,
+          "measured_batch_cpu_seconds": [
+            18.011707345999998,
+            18.115697377,
+            18.26337468,
+            18.232870979999998,
+            18.391204567,
+            18.451475954,
+            18.381582111,
+            18.494019631
+          ],
+          "conditional_variance_per_batch": 0.016538952262573896,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 30252186.04127329,
+          "integer_batch_cpu_seconds_projection": 30254292.129436098,
+          "projected_batches": 1653896,
+          "measured_eight_batch_response": {
+            "mean": 0.07821373935965673,
+            "se": 0.03988387374729465,
+            "ci95": [
+              -0.01609663575066099,
+              0.17252411446997445
+            ]
+          },
+          "between_batch_variance": 0.012725787080721114
+        },
+        {
+          "method": "remainder",
+          "measured_mean_accounted_batch_cpu_seconds": 18.463620208,
+          "measured_batch_cpu_seconds": [
+            18.192181762999997,
+            18.288668272,
+            18.430808689,
+            18.409062744999996,
+            18.557166691,
+            18.620871989999998,
+            18.543810559,
+            18.666390954999997
+          ],
+          "conditional_variance_per_batch": 6.452438362327208e-07,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 1191.408753074823,
+          "integer_batch_cpu_seconds_projection": 1200.13531352,
+          "projected_batches": 65,
+          "measured_eight_batch_response": {
+            "mean": 0.022311375280051032,
+            "se": 0.0003360208867814,
+            "ci95": [
+              0.02151681214212602,
+              0.023105938417976046
+            ]
+          },
+          "between_batch_variance": 9.032802908268677e-07
+        }
+      ]
+    },
+    {
+      "s": 0.0,
+      "tau": 20.0,
+      "population": "exponential",
+      "paired_raw_minus_remainder": {
+        "mean": 0.05589924128134352,
+        "se": 0.040028064325841585,
+        "ci95": [
+          -0.03875209036785747,
+          0.15055057293054452
+        ]
+      },
+      "paired_interval_contains_zero": true,
+      "conditional_variance_ratio": 25631.96432008119,
+      "cost_times_variance_ratio": 25401.544113783355,
+      "paired_batch_bootstrap_cost_ratio_interval": [
+        24632.159301332686,
+        26179.758609945755
+      ],
+      "between_batch_cost_ratio": 13964.129159393462,
+      "measured_accounted_batch_cost_ratio": 1.0089447619142435,
+      "remainder_fine_minus_coarse": {
+        "mean": -1.7036179354794692e-05,
+        "se": 6.88212649565329e-05,
+        "ci95": [
+          -0.000179772611496305,
+          0.00014570025278671562
+        ]
+      },
+      "precision": [
+        {
+          "method": "raw",
+          "measured_mean_accounted_batch_cpu_seconds": 18.2873912205,
+          "measured_batch_cpu_seconds": [
+            18.007858672999998,
+            18.110274277000002,
+            18.257413976000002,
+            18.22798957,
+            18.386246031000002,
+            18.445414197999998,
+            18.376112843,
+            18.487820196
+          ],
+          "conditional_variance_per_batch": 0.016538532330821736,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 30242561.41088261,
+          "integer_batch_cpu_seconds_projection": 30244675.11958881,
+          "projected_batches": 1653854,
+          "measured_eight_batch_response": {
+            "mean": 0.07821028165743336,
+            "se": 0.039881378953398425,
+            "ci95": [
+              -0.016094194202734613,
+              0.17251475751760134
+            ]
+          },
+          "between_batch_variance": 0.01272419509779657
+        },
+        {
+          "method": "remainder",
+          "measured_mean_accounted_batch_cpu_seconds": 18.450967581,
+          "measured_batch_cpu_seconds": [
+            18.177539184999997,
+            18.292504622000003,
+            18.420331452,
+            18.390355176,
+            18.545704759,
+            18.606847978,
+            18.532279556000002,
+            18.642177919999998
+          ],
+          "conditional_variance_per_batch": 6.452307799860947e-07,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 1190.5796464740279,
+          "integer_batch_cpu_seconds_projection": 1199.312892765,
+          "projected_batches": 65,
+          "measured_eight_batch_response": {
+            "mean": 0.022311040376089837,
+            "se": 0.00033599246864977254,
+            "ci95": [
+              0.02151654443636806,
+              0.023105536315811616
+            ]
+          },
+          "between_batch_variance": 9.031275119149473e-07
+        }
+      ]
+    },
+    {
+      "s": 0.0,
+      "tau": 20.0,
+      "population": "gaussian8",
+      "paired_raw_minus_remainder": {
+        "mean": 0.05371438320700189,
+        "se": 0.03549842013342847,
+        "ci95": [
+          -0.030226041933732642,
+          0.1376548083477364
+        ]
+      },
+      "paired_interval_contains_zero": true,
+      "conditional_variance_ratio": 2017.0650533800267,
+      "cost_times_variance_ratio": 1999.3461734894145,
+      "paired_batch_bootstrap_cost_ratio_interval": [
+        1891.745316889663,
+        2113.2778144442254
+      ],
+      "between_batch_cost_ratio": 1984.3657387402868,
+      "measured_accounted_batch_cost_ratio": 1.008685312803601,
+      "remainder_fine_minus_coarse": {
+        "mean": 0.00034144896420689255,
+        "se": 0.0001782424067624625,
+        "ci95": [
+          -8.002735348589202e-05,
+          0.0007629252818996771
+        ]
+      },
+      "precision": [
+        {
+          "method": "raw",
+          "measured_mean_accounted_batch_cpu_seconds": 18.287942713375,
+          "measured_batch_cpu_seconds": [
+            18.008665983999997,
+            18.109857921,
+            18.258966300999997,
+            18.226874507999998,
+            18.387187155,
+            18.446156878,
+            18.375412373,
+            18.490420587
+          ],
+          "conditional_variance_per_batch": 0.015493830120935633,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 28332987.123610757,
+          "integer_batch_cpu_seconds_projection": 28335045.833019808,
+          "projected_batches": 1549384,
+          "measured_eight_batch_response": {
+            "mean": 0.07468820631256037,
+            "se": 0.03550297318874882,
+            "ci95": [
+              -0.009262985093203502,
+              0.15863939771832425
+            ]
+          },
+          "between_batch_variance": 0.010083688841928142
+        },
+        {
+          "method": "remainder",
+          "measured_mean_accounted_batch_cpu_seconds": 18.446779216375,
+          "measured_batch_cpu_seconds": [
+            18.166377598999997,
+            18.290111774,
+            18.424127858,
+            18.389438368,
+            18.531789703,
+            18.602924043,
+            18.522675906,
+            18.646788479999998
+          ],
+          "conditional_variance_per_batch": 7.681373535757999e-06,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 14171.12629083228,
+          "integer_batch_cpu_seconds_projection": 14185.573217392373,
+          "projected_batches": 769,
+          "measured_eight_batch_response": {
+            "mean": 0.02097382310555848,
+            "se": 0.0007935531425300722,
+            "ci95": [
+              0.019097368099804207,
+              0.022850278111312756
+            ]
+          },
+          "between_batch_variance": 5.037812720154825e-06
+        }
+      ]
+    },
+    {
+      "s": 0.0,
+      "tau": 20.0,
+      "population": "stress1",
+      "paired_raw_minus_remainder": {
+        "mean": 0.03165866197111765,
+        "se": 0.02184360174358154,
+        "ci95": [
+          -0.019993248453889695,
+          0.083310572396125
+        ]
+      },
+      "paired_interval_contains_zero": true,
+      "conditional_variance_ratio": 3.1798939544027416,
+      "cost_times_variance_ratio": 3.1531564659595115,
+      "paired_batch_bootstrap_cost_ratio_interval": [
+        3.0811596355943336,
+        3.225695161501977
+      ],
+      "between_batch_cost_ratio": 2.332889711105376,
+      "measured_accounted_batch_cost_ratio": 1.0086148898433447,
+      "remainder_fine_minus_coarse": {
+        "mean": 0.0030925618151710532,
+        "se": 0.0018217206668019188,
+        "ci95": [
+          -0.001215123053176542,
+          0.007400246683518649
+        ]
+      },
+      "precision": [
+        {
+          "method": "raw",
+          "measured_mean_accounted_batch_cpu_seconds": 18.288859926249998,
+          "measured_batch_cpu_seconds": [
+            18.007762060999998,
+            18.111016936000002,
+            18.259553267999998,
+            18.231591619,
+            18.385637543999998,
+            18.449287669,
+            18.375254115,
+            18.490776198
+          ],
+          "conditional_variance_per_batch": 0.005655881868025784,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 10343665.82559193,
+          "integer_batch_cpu_seconds_projection": 10343977.996827811,
+          "projected_batches": 565589,
+          "measured_eight_batch_response": {
+            "mean": 0.024015839796821085,
+            "se": 0.025913156090780723,
+            "ci95": [
+              -0.03725903753074829,
+              0.08529071712439046
+            ]
+          },
+          "between_batch_variance": 0.0053719332686813295
+        },
+        {
+          "method": "remainder",
+          "measured_mean_accounted_batch_cpu_seconds": 18.446416439875,
+          "measured_batch_cpu_seconds": [
+            18.170684497,
+            18.285048419,
+            18.415343151000002,
+            18.381161978999998,
+            18.540709574,
+            18.600721772999997,
+            18.530971470999997,
+            18.646690655
+          ],
+          "conditional_variance_per_batch": 0.0017786385172357392,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 3280416.286745964,
+          "integer_batch_cpu_seconds_projection": 3280953.4136619275,
+          "projected_batches": 177864,
+          "measured_eight_batch_response": {
+            "mean": -0.007642822174296567,
+            "se": 0.01689314538186116,
+            "ci95": [
+              -0.04758876342992811,
+              0.032303119081334986
+            ]
+          },
+          "between_batch_variance": 0.002283026887141577
+        }
+      ]
+    },
+    {
+      "s": 0.0,
+      "tau": 20.0,
+      "population": "stress0.125",
+      "paired_raw_minus_remainder": {
+        "mean": 0.005397198632212406,
+        "se": 0.0051603520992876475,
+        "ci95": [
+          -0.006805095088520901,
+          0.017599492352945716
+        ]
+      },
+      "paired_interval_contains_zero": true,
+      "conditional_variance_ratio": 1.0270623164964188,
+      "cost_times_variance_ratio": 1.017909795149854,
+      "paired_batch_bootstrap_cost_ratio_interval": [
+        0.9905064141138077,
+        1.0416280115626153
+      ],
+      "between_batch_cost_ratio": 1.018490228809529,
+      "measured_accounted_batch_cost_ratio": 1.0089647273278923,
+      "remainder_fine_minus_coarse": {
+        "mean": -0.0007246980452537728,
+        "se": 0.0016555886212092055,
+        "ci95": [
+          -0.00463954304962612,
+          0.0031901469591185745
+        ]
+      },
+      "precision": [
+        {
+          "method": "raw",
+          "measured_mean_accounted_batch_cpu_seconds": 18.28903928175,
+          "measured_batch_cpu_seconds": [
+            18.008095148,
+            18.112422616,
+            18.259332702000002,
+            18.231633007,
+            18.387023757,
+            18.446999026,
+            18.374863829000002,
+            18.491944169
+          ],
+          "conditional_variance_per_batch": 0.0007139232312518873,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 1305653.228452137,
+          "integer_batch_cpu_seconds_projection": 1305709.3814419778,
+          "projected_batches": 71393,
+          "measured_eight_batch_response": {
+            "mean": -0.009764682233794238,
+            "se": 0.010130060245260086,
+            "ci95": [
+              -0.033718468359832186,
+              0.014189103892243711
+            ]
+          },
+          "between_batch_variance": 0.0008209449645807908
+        },
+        {
+          "method": "remainder",
+          "measured_mean_accounted_batch_cpu_seconds": 18.452995532,
+          "measured_batch_cpu_seconds": [
+            18.168823618,
+            18.272881347000002,
+            18.413579708,
+            18.404857328,
+            18.539228663,
+            18.628540313,
+            18.527242283,
+            18.668810995999998
+          ],
+          "conditional_variance_per_batch": 0.0006951118931977451,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 1282680.6802266033,
+          "integer_batch_cpu_seconds_projection": 1282704.6254203839,
+          "projected_batches": 69512,
+          "measured_eight_batch_response": {
+            "mean": -0.015161880866006644,
+            "se": 0.009992993452131038,
+            "ci95": [
+              -0.03879155552892359,
+              0.008467793796910306
+            ]
+          },
+          "between_batch_variance": 0.0007988793450746706
+        }
+      ]
+    },
+    {
+      "s": 0.0,
+      "tau": 20.0,
+      "population": "stress0.015625",
+      "paired_raw_minus_remainder": {
+        "mean": 0.000535114934937965,
+        "se": 0.0007513470961959505,
+        "ci95": [
+          -0.0012415386300907963,
+          0.002311768499966726
+        ]
+      },
+      "paired_interval_contains_zero": true,
+      "conditional_variance_ratio": 1.0014742696297743,
+      "cost_times_variance_ratio": 0.992678781209771,
+      "paired_batch_bootstrap_cost_ratio_interval": [
+        0.982394717937612,
+        0.9995410356179546
+      ],
+      "between_batch_cost_ratio": 1.0610926322829333,
+      "measured_accounted_batch_cost_ratio": 1.008944511882501,
+      "remainder_fine_minus_coarse": {
+        "mean": 0.0006551845276986968,
+        "se": 0.000762384838783443,
+        "ci95": [
+          -0.001147569151135288,
+          0.0024579382065326814
+        ]
+      },
+      "precision": [
+        {
+          "method": "raw",
+          "measured_mean_accounted_batch_cpu_seconds": 18.2880118165,
+          "measured_batch_cpu_seconds": [
+            18.006808844,
+            18.110125947,
+            18.260080502,
+            18.229365983999998,
+            18.386075139,
+            18.447343986,
+            18.374838361,
+            18.489455769
+          ],
+          "conditional_variance_per_batch": 9.334972109239425e-05,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 170628.12344408565,
+          "integer_batch_cpu_seconds_projection": 170718.59030702748,
+          "projected_batches": 9335,
+          "measured_eight_batch_response": {
+            "mean": -0.0016377676432411028,
+            "se": 0.003178555123132613,
+            "ci95": [
+              -0.009153856172424969,
+              0.005878320885942763
+            ]
+          },
+          "between_batch_variance": 8.082570136634064e-05
+        },
+        {
+          "method": "remainder",
+          "measured_mean_accounted_batch_cpu_seconds": 18.4515891555,
+          "measured_batch_cpu_seconds": [
+            18.164996006,
+            18.287906166000003,
+            18.405615327,
+            18.389182195999997,
+            18.549336643,
+            18.591203453,
+            18.561260638,
+            18.663212814999998
+          ],
+          "conditional_variance_per_batch": 9.32123010278675e-05,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 171886.5424282992,
+          "integer_batch_cpu_seconds_projection": 172005.714107571,
+          "projected_batches": 9322,
+          "measured_eight_batch_response": {
+            "mean": -0.002172882578179068,
+            "se": 0.0030719875888870836,
+            "ci95": [
+              -0.00943697893145351,
+              0.005091213775095374
+            ]
+          },
+          "between_batch_variance": 7.549686197021021e-05
+        }
+      ]
+    },
+    {
+      "s": 0.25,
+      "tau": 10.0,
+      "population": "halo",
+      "paired_raw_minus_remainder": {
+        "mean": -0.05148008414886082,
+        "se": 0.043558233180249255,
+        "ci95": [
+          -0.15447893868341173,
+          0.05151877038569007
+        ]
+      },
+      "paired_interval_contains_zero": true,
+      "conditional_variance_ratio": 21961.79993705385,
+      "cost_times_variance_ratio": 21774.176556288992,
+      "paired_batch_bootstrap_cost_ratio_interval": [
+        21232.216647945075,
+        22388.999461166586
+      ],
+      "between_batch_cost_ratio": 15771.477726461328,
+      "measured_accounted_batch_cost_ratio": 1.0087200052143048,
+      "remainder_fine_minus_coarse": {
+        "mean": 4.051184468399638e-05,
+        "se": 1.2351993801664626e-05,
+        "ci95": [
+          1.1304020585056448e-05,
+          6.971966878293631e-05
+        ]
+      },
+      "precision": [
+        {
+          "method": "raw",
+          "measured_mean_accounted_batch_cpu_seconds": 18.39515475425,
+          "measured_batch_cpu_seconds": [
+            18.277218381,
+            18.360821689999998,
+            18.404166082000003,
+            18.242585497000004,
+            18.485545258,
+            18.511858751000002,
+            18.447488343,
+            18.431554031999998
+          ],
+          "conditional_variance_per_batch": 0.016402469076767266,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 30175529.530191373,
+          "integer_batch_cpu_seconds_projection": 30172597.400194302,
+          "projected_batches": 1640247,
+          "measured_eight_batch_response": {
+            "mean": -0.05541416422517326,
+            "se": 0.04370407793423671,
+            "ci95": [
+              -0.15875788680197045,
+              0.04792955835162395
+            ]
+          },
+          "between_batch_variance": 0.015280371424654689
+        },
+        {
+          "method": "remainder",
+          "measured_mean_accounted_batch_cpu_seconds": 18.555560599625004,
+          "measured_batch_cpu_seconds": [
+            18.435180498,
+            18.527540261,
+            18.573007554,
+            18.396066339,
+            18.62386327,
+            18.679536169000002,
+            18.606515537,
+            18.602775169
+          ],
+          "conditional_variance_per_batch": 7.46863605158933e-07,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 1385.8402154581518,
+          "integer_batch_cpu_seconds_projection": 1391.6670449718754,
+          "projected_batches": 75,
+          "measured_eight_batch_response": {
+            "mean": -0.003934080076312444,
+            "se": 0.0003464977760514248,
+            "ci95": [
+              -0.0047534171206866085,
+              -0.003114743031938279
+            ]
+          },
+          "between_batch_variance": 9.604856704686672e-07
+        }
+      ]
+    },
+    {
+      "s": 0.25,
+      "tau": 10.0,
+      "population": "exponential",
+      "paired_raw_minus_remainder": {
+        "mean": -0.05148133328551003,
+        "se": 0.043557232121327775,
+        "ci95": [
+          -0.15447782069185792,
+          0.051515154120837854
+        ]
+      },
+      "paired_interval_contains_zero": true,
+      "conditional_variance_ratio": 21924.593605421327,
+      "cost_times_variance_ratio": 21737.650076103368,
+      "paired_batch_bootstrap_cost_ratio_interval": [
+        21193.28215546138,
+        22346.460134616016
+      ],
+      "between_batch_cost_ratio": 15751.228615803066,
+      "measured_accounted_batch_cost_ratio": 1.0087087177982839,
+      "remainder_fine_minus_coarse": {
+        "mean": 4.0543762101139284e-05,
+        "se": 1.2361594435133143e-05,
+        "ci95": [
+          1.1313236111469045e-05,
+          6.977428809080952e-05
+        ]
+      },
+      "precision": [
+        {
+          "method": "raw",
+          "measured_mean_accounted_batch_cpu_seconds": 18.38934672525,
+          "measured_batch_cpu_seconds": [
+            18.273036580000003,
+            18.354937420000002,
+            18.397518984,
+            18.236651374,
+            18.478386976,
+            18.506641488,
+            18.441472284,
+            18.426128696000003
+          ],
+          "conditional_variance_per_batch": 0.01640192633222593,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 30164990.739286233,
+          "integer_batch_cpu_seconds_projection": 30162077.773327973,
+          "projected_batches": 1640193,
+          "measured_eight_batch_response": {
+            "mean": -0.05541368130455911,
+            "se": 0.04370307526760831,
+            "ci95": [
+              -0.15875503295153054,
+              0.04792767034241232
+            ]
+          },
+          "between_batch_variance": 0.015279670302769902
+        },
+        {
+          "method": "remainder",
+          "measured_mean_accounted_batch_cpu_seconds": 18.549494356375,
+          "measured_batch_cpu_seconds": [
+            18.418239258000003,
+            18.525721413,
+            18.541683136000003,
+            18.407315931,
+            18.638971405,
+            18.670216523999997,
+            18.603766376,
+            18.590040808
+          ],
+          "conditional_variance_per_batch": 7.4810628773389e-07,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 1387.6840704344215,
+          "integer_batch_cpu_seconds_projection": 1391.2120767281249,
+          "projected_batches": 75,
+          "measured_eight_batch_response": {
+            "mean": -0.003932348019049075,
+            "se": 0.0003467144112548512,
+            "ci95": [
+              -0.00475219732427901,
+              -0.00311249871381914
+            ]
+          },
+          "between_batch_variance": 9.616870637743853e-07
+        }
+      ]
+    },
+    {
+      "s": 0.25,
+      "tau": 10.0,
+      "population": "gaussian8",
+      "paired_raw_minus_remainder": {
+        "mean": -0.04986596446467029,
+        "se": 0.040278170568569485,
+        "ci95": [
+          -0.14510870340090043,
+          0.045376774471559855
+        ]
+      },
+      "paired_interval_contains_zero": true,
+      "conditional_variance_ratio": 660.838584154004,
+      "cost_times_variance_ratio": 655.0566034291986,
+      "paired_batch_bootstrap_cost_ratio_interval": [
+        642.440070535412,
+        668.6876107156229
+      ],
+      "between_batch_cost_ratio": 595.8602597756776,
+      "measured_accounted_batch_cost_ratio": 1.0088900231968507,
+      "remainder_fine_minus_coarse": {
+        "mean": 0.00017877119242827268,
+        "se": 7.008821395608155e-05,
+        "ci95": [
+          1.3038901956898376e-05,
+          0.000344503482899647
+        ]
+      },
+      "precision": [
+        {
+          "method": "raw",
+          "measured_mean_accounted_batch_cpu_seconds": 18.390016089375,
+          "measured_batch_cpu_seconds": [
+            18.271964098,
+            18.355169877999998,
+            18.39799448,
+            18.236650212,
+            18.480647937999997,
+            18.50587832,
+            18.444412745999998,
+            18.427411043
+          ],
+          "conditional_variance_per_batch": 0.014862586702859757,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 27335086.3389749,
+          "integer_batch_cpu_seconds_projection": 27332326.922978397,
+          "projected_batches": 1486259,
+          "measured_eight_batch_response": {
+            "mean": -0.04940300347248109,
+            "se": 0.04046953553559502,
+            "ci95": [
+              -0.14509824865064505,
+              0.04629224170568288
+            ]
+          },
+          "between_batch_variance": 0.01310226645173431
+        },
+        {
+          "method": "remainder",
+          "measured_mean_accounted_batch_cpu_seconds": 18.553503759,
+          "measured_batch_cpu_seconds": [
+            18.448063538000003,
+            18.524016529,
+            18.567744965000003,
+            18.395347885,
+            18.648778719,
+            18.664641377,
+            18.588494002,
+            18.590943056999997
+          ],
+          "conditional_variance_per_batch": 2.2490494742958488e-05,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 41729.35009871921,
+          "integer_batch_cpu_seconds_projection": 41745.38345775,
+          "projected_batches": 2250,
+          "measured_eight_batch_response": {
+            "mean": 0.0004629609921891877,
+            "se": 0.0016505705635225228,
+            "ci95": [
+              -0.0034400181912813384,
+              0.004365940175659714
+            ]
+          },
+          "between_batch_variance": 2.179506548133647e-05
+        }
+      ]
+    },
+    {
+      "s": 0.25,
+      "tau": 10.0,
+      "population": "stress1",
+      "paired_raw_minus_remainder": {
+        "mean": -0.01065304847555855,
+        "se": 0.013697306027605948,
+        "ci95": [
+          -0.0430420304899236,
+          0.0217359335388065
+        ]
+      },
+      "paired_interval_contains_zero": true,
+      "conditional_variance_ratio": 1.7760324084579917,
+      "cost_times_variance_ratio": 1.7601288554190295,
+      "paired_batch_bootstrap_cost_ratio_interval": [
+        1.7268624758945854,
+        1.7918993016263323
+      ],
+      "between_batch_cost_ratio": 1.5185177606900933,
+      "measured_accounted_batch_cost_ratio": 1.0091020477182286,
+      "remainder_fine_minus_coarse": {
+        "mean": 0.0009471493468383579,
+        "se": 0.0007522374868910906,
+        "ci95": [
+          -0.0008316096576215242,
+          0.00272590835129824
+        ]
+      },
+      "precision": [
+        {
+          "method": "raw",
+          "measured_mean_accounted_batch_cpu_seconds": 18.391085836625003,
+          "measured_batch_cpu_seconds": [
+            18.274021135,
+            18.357413937,
+            18.398564334000003,
+            18.240182148,
+            18.48032036,
+            18.506798845000002,
+            18.443169483000002,
+            18.428216451
+          ],
+          "conditional_variance_per_batch": 0.004122621337717122,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 7582700.205037776,
+          "integer_batch_cpu_seconds_projection": 7581964.220264534,
+          "projected_batches": 412263,
+          "measured_eight_batch_response": {
+            "mean": -0.5625468898710381,
+            "se": 0.024096232124398903,
+            "ci95": [
+              -0.6195254247244009,
+              -0.5055683550176753
+            ]
+          },
+          "between_batch_variance": 0.00464502722074331
+        },
+        {
+          "method": "remainder",
+          "measured_mean_accounted_batch_cpu_seconds": 18.558482377500003,
+          "measured_batch_cpu_seconds": [
+            18.445634822000002,
+            18.508011564,
+            18.568151861000004,
+            18.407696328,
+            18.641941874,
+            18.675674401000002,
+            18.6246308,
+            18.59611737
+          ],
+          "conditional_variance_per_batch": 0.0023212534400183127,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 4308036.9835949205,
+          "integer_batch_cpu_seconds_projection": 4307906.280359565,
+          "projected_batches": 232126,
+          "measured_eight_batch_response": {
+            "mean": -0.5518938413954795,
+            "se": 0.019465773089922374,
+            "ci95": [
+              -0.5979230805199122,
+              -0.5058646022710468
+            ]
+          },
+          "between_batch_variance": 0.0030313305759067685
+        }
+      ]
+    },
+    {
+      "s": 0.25,
+      "tau": 10.0,
+      "population": "stress0.125",
+      "paired_raw_minus_remainder": {
+        "mean": -0.0013664811551068034,
+        "se": 0.0025641666032880316,
+        "ci95": [
+          -0.007429771690365977,
+          0.00469680938015237
+        ]
+      },
+      "paired_interval_contains_zero": true,
+      "conditional_variance_ratio": 0.9591446640671927,
+      "cost_times_variance_ratio": 0.9506696026213439,
+      "paired_batch_bootstrap_cost_ratio_interval": [
+        0.929711113047898,
+        0.9708062961691993
+      ],
+      "between_batch_cost_ratio": 1.2140249483664547,
+      "measured_accounted_batch_cost_ratio": 1.008889298260739,
+      "remainder_fine_minus_coarse": {
+        "mean": -0.0005963194138130252,
+        "se": 0.0002938650559315399,
+        "ci95": [
+          -0.0012911998517644145,
+          9.85610241383641e-05
+        ]
+      },
+      "precision": [
+        {
+          "method": "raw",
+          "measured_mean_accounted_batch_cpu_seconds": 18.391705897875,
+          "measured_batch_cpu_seconds": [
+            18.273130616000003,
+            18.359208289,
+            18.399645983000003,
+            18.239913402000003,
+            18.480964384,
+            18.507583344,
+            18.443200612,
+            18.430000553000003
+          ],
+          "conditional_variance_per_batch": 0.00055927830084069,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 1028695.0291505152,
+          "integer_batch_cpu_seconds_projection": 1028611.327456353,
+          "projected_batches": 55928,
+          "measured_eight_batch_response": {
+            "mean": -0.12480768648585425,
+            "se": 0.011765952989856356,
+            "ci95": [
+              -0.1526297442687692,
+              -0.09698562870293928
+            ]
+          },
+          "between_batch_variance": 0.0011075011980760782
+        },
+        {
+          "method": "remainder",
+          "measured_mean_accounted_batch_cpu_seconds": 18.555195257125,
+          "measured_batch_cpu_seconds": [
+            18.443104773,
+            18.532561252999997,
+            18.567335903000004,
+            18.397921535000002,
+            18.640789271999996,
+            18.654596395,
+            18.62844007,
+            18.576812856
+          ],
+          "conditional_variance_per_batch": 0.0005831010918301995,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 1082074.1783623109,
+          "integer_batch_cpu_seconds_projection": 1081971.9906382158,
+          "projected_batches": 58311,
+          "measured_eight_batch_response": {
+            "mean": -0.12344120533074746,
+            "se": 0.010631426606101495,
+            "ci95": [
+              -0.1485805345125638,
+              -0.0983018761489311
+            ]
+          },
+          "between_batch_variance": 0.0009042178534473821
+        }
+      ]
+    },
+    {
+      "s": 0.25,
+      "tau": 10.0,
+      "population": "stress0.015625",
+      "paired_raw_minus_remainder": {
+        "mean": -0.00018204255573232029,
+        "se": 0.0003461459776202168,
+        "ci95": [
+          -0.0010005477290043782,
+          0.0006364626175397375
+        ]
+      },
+      "paired_interval_contains_zero": true,
+      "conditional_variance_ratio": 0.9911349381842676,
+      "cost_times_variance_ratio": 0.982318105582041,
+      "paired_batch_bootstrap_cost_ratio_interval": [
+        0.9767863636500346,
+        0.9871492693630946
+      ],
+      "between_batch_cost_ratio": 1.0022134075266946,
+      "measured_accounted_batch_cost_ratio": 1.0089445420949568,
+      "remainder_fine_minus_coarse": {
+        "mean": -0.00013030405247166236,
+        "se": 0.00019886462747582245,
+        "ci95": [
+          -0.000600544173384957,
+          0.0003399360684416322
+        ]
+      },
+      "precision": [
+        {
+          "method": "raw",
+          "measured_mean_accounted_batch_cpu_seconds": 18.39136612625,
+          "measured_batch_cpu_seconds": [
+            18.275393833,
+            18.356836247999997,
+            18.400494221000002,
+            18.237954930000004,
+            18.479125588,
+            18.507509294000002,
+            18.445520374,
+            18.428094522000002
+          ],
+          "conditional_variance_per_batch": 6.629975449547582e-05,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 121867.07327666592,
+          "integer_batch_cpu_seconds_projection": 121934.75741703749,
+          "projected_batches": 6630,
+          "measured_eight_batch_response": {
+            "mean": -0.013841701841048045,
+            "se": 0.00162420689434898,
+            "ci95": [
+              -0.017682340853029842,
+              -0.010001062829066248
+            ]
+          },
+          "between_batch_variance": 2.1104384285206077e-05
+        },
+        {
+          "method": "remainder",
+          "measured_mean_accounted_batch_cpu_seconds": 18.555868474750003,
+          "measured_batch_cpu_seconds": [
+            18.444217660000003,
+            18.530564711,
+            18.558818140000003,
+            18.402276754000003,
+            18.640710162999998,
+            18.665341696000002,
+            18.607165302000002,
+            18.597853372
+          ],
+          "conditional_variance_per_batch": 6.689276297426784e-05,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 124060.70150204297,
+          "integer_batch_cpu_seconds_projection": 124138.76009607752,
+          "projected_batches": 6690,
+          "measured_eight_batch_response": {
+            "mean": -0.013659659285315725,
+            "se": 0.0016152048044514417,
+            "ci95": [
+              -0.017479011737210785,
+              -0.009840306833420666
+            ]
+          },
+          "between_batch_variance": 2.0871092482584166e-05
+        }
+      ]
+    },
+    {
+      "s": 0.25,
+      "tau": 20.0,
+      "population": "halo",
+      "paired_raw_minus_remainder": {
+        "mean": -0.05255119276365934,
+        "se": 0.06273854509633621,
+        "ci95": [
+          -0.2009042780081035,
+          0.09580189248078481
+        ]
+      },
+      "paired_interval_contains_zero": true,
+      "conditional_variance_ratio": 6988.600382395952,
+      "cost_times_variance_ratio": 6928.353830605735,
+      "paired_batch_bootstrap_cost_ratio_interval": [
+        6734.7407867733145,
+        7229.06829601754
+      ],
+      "between_batch_cost_ratio": 2749.3990669210343,
+      "measured_accounted_batch_cost_ratio": 1.0087200052143048,
+      "remainder_fine_minus_coarse": {
+        "mean": 3.0863975142268046e-05,
+        "se": 4.922842056588166e-05,
+        "ci95": [
+          -8.55427419954247e-05,
+          0.0001472706922799608
+        ]
+      },
+      "precision": [
+        {
+          "method": "raw",
+          "measured_mean_accounted_batch_cpu_seconds": 18.39515475425,
+          "measured_batch_cpu_seconds": [
+            18.277218381,
+            18.360821689999998,
+            18.404166082000003,
+            18.242585497000004,
+            18.485545258,
+            18.511858751000002,
+            18.447488343,
+            18.431554031999998
+          ],
+          "conditional_variance_per_batch": 0.04557730410818994,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 83845778.28623632,
+          "integer_batch_cpu_seconds_projection": 83840167.0732426,
+          "projected_batches": 4557731,
+          "measured_eight_batch_response": {
+            "mean": -0.08544556502314217,
+            "se": 0.06383657127415224,
+            "ci95": [
+              -0.23639506959653384,
+              0.06550393955024951
+            ]
+          },
+          "between_batch_variance": 0.03260086265631936
+        },
+        {
+          "method": "remainder",
+          "measured_mean_accounted_batch_cpu_seconds": 18.555560599625004,
+          "measured_batch_cpu_seconds": [
+            18.435180498,
+            18.527540261,
+            18.573007554,
+            18.396066339,
+            18.62386327,
+            18.679536169000002,
+            18.606515537,
+            18.602775169
+          ],
+          "conditional_variance_per_batch": 6.521664083554932e-06,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 12101.832605005078,
+          "integer_batch_cpu_seconds_projection": 12116.781071555128,
+          "projected_batches": 653,
+          "measured_eight_batch_response": {
+            "mean": -0.032894372259482836,
+            "se": 0.0012121750622060797,
+            "ci95": [
+              -0.035760710808751324,
+              -0.030028033710214348
+            ]
+          },
+          "between_batch_variance": 1.1754947051474507e-05
+        }
+      ]
+    },
+    {
+      "s": 0.25,
+      "tau": 20.0,
+      "population": "exponential",
+      "paired_raw_minus_remainder": {
+        "mean": -0.052555484796473984,
+        "se": 0.06273801130233132,
+        "ci95": [
+          -0.20090730781866883,
+          0.09579633822572087
+        ]
+      },
+      "paired_interval_contains_zero": true,
+      "conditional_variance_ratio": 6969.667140847335,
+      "cost_times_variance_ratio": 6909.883004239869,
+      "paired_batch_bootstrap_cost_ratio_interval": [
+        6719.270322072151,
+        7205.832383647968
+      ],
+      "between_batch_cost_ratio": 2741.034887355901,
+      "measured_accounted_batch_cost_ratio": 1.0087087177982839,
+      "remainder_fine_minus_coarse": {
+        "mean": 3.088058054149037e-05,
+        "se": 4.934102981221646e-05,
+        "ci95": [
+          -8.579241515103923e-05,
+          0.00014755357623401997
+        ]
+      },
+      "precision": [
+        {
+          "method": "raw",
+          "measured_mean_accounted_batch_cpu_seconds": 18.38934672525,
+          "measured_batch_cpu_seconds": [
+            18.273036580000003,
+            18.354937420000002,
+            18.397518984,
+            18.236651374,
+            18.478386976,
+            18.506641488,
+            18.441472284,
+            18.426128696000003
+          ],
+          "conditional_variance_per_batch": 0.045575848195235816,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 83816624.70280044,
+          "integer_batch_cpu_seconds_projection": 83811010.79479852,
+          "projected_batches": 4557585,
+          "measured_eight_batch_response": {
+            "mean": -0.08547124547113888,
+            "se": 0.0638379438850814,
+            "ci95": [
+              -0.23642399575362166,
+              0.0654815048113439
+            ]
+          },
+          "between_batch_variance": 0.03260226463579842
+        },
+        {
+          "method": "remainder",
+          "measured_mean_accounted_batch_cpu_seconds": 18.549494356375,
+          "measured_batch_cpu_seconds": [
+            18.418239258000003,
+            18.525721413,
+            18.541683136000003,
+            18.407315931,
+            18.638971405,
+            18.670216523999997,
+            18.603766376,
+            18.590040808
+          ],
+          "conditional_variance_per_batch": 6.53917142299782e-06,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 12129.962931553398,
+          "integer_batch_cpu_seconds_projection": 12131.36930906925,
+          "projected_batches": 654,
+          "measured_eight_batch_response": {
+            "mean": -0.03291576067466488,
+            "se": 0.0012140560064541775,
+            "ci95": [
+              -0.03578654695031831,
+              -0.030044974399011447
+            ]
+          },
+          "between_batch_variance": 1.179145589445973e-05
+        }
+      ]
+    },
+    {
+      "s": 0.25,
+      "tau": 20.0,
+      "population": "gaussian8",
+      "paired_raw_minus_remainder": {
+        "mean": -0.05671750780952406,
+        "se": 0.057634297937888386,
+        "ci95": [
+          -0.19300096643697895,
+          0.07956595081793083
+        ]
+      },
+      "paired_interval_contains_zero": true,
+      "conditional_variance_ratio": 123.49068054996727,
+      "cost_times_variance_ratio": 122.40209681009826,
+      "paired_batch_bootstrap_cost_ratio_interval": [
+        118.56986424600774,
+        126.05990661836259
+      ],
+      "between_batch_cost_ratio": 48.807135948868776,
+      "measured_accounted_batch_cost_ratio": 1.0088900231968507,
+      "remainder_fine_minus_coarse": {
+        "mean": 0.00012709407666493602,
+        "se": 0.0005857819687466587,
+        "ci95": [
+          -0.0012580601727791797,
+          0.0015122483261090518
+        ]
+      },
+      "precision": [
+        {
+          "method": "raw",
+          "measured_mean_accounted_batch_cpu_seconds": 18.390016089375,
+          "measured_batch_cpu_seconds": [
+            18.271964098,
+            18.355169877999998,
+            18.39799448,
+            18.236650212,
+            18.480647937999997,
+            18.50587832,
+            18.444412745999998,
+            18.427411043
+          ],
+          "conditional_variance_per_batch": 0.04076509478213572,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 74972244.12914266,
+          "integer_batch_cpu_seconds_projection": 74967084.48849808,
+          "projected_batches": 4076510,
+          "measured_eight_batch_response": {
+            "mean": -0.20996583312115003,
+            "se": 0.06657808004362033,
+            "ci95": [
+              -0.36739797581678024,
+              -0.05253369042551981
+            ]
+          },
+          "between_batch_variance": 0.035461125938357735
+        },
+        {
+          "method": "remainder",
+          "measured_mean_accounted_batch_cpu_seconds": 18.553503759,
+          "measured_batch_cpu_seconds": [
+            18.448063538000003,
+            18.524016529,
+            18.567744965000003,
+            18.395347885,
+            18.648778719,
+            18.664641377,
+            18.588494002,
+            18.590943056999997
+          ],
+          "conditional_variance_per_batch": 0.00033010664934866234,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 612507.8416381949,
+          "integer_batch_cpu_seconds_projection": 612469.712588349,
+          "projected_batches": 33011,
+          "measured_eight_batch_response": {
+            "mean": -0.15324832531162602,
+            "se": 0.009487847410773872,
+            "ci95": [
+              -0.17568351939455373,
+              -0.1308131312286983
+            ]
+          },
+          "between_batch_variance": 0.0007201539879210279
+        }
+      ]
+    },
+    {
+      "s": 0.25,
+      "tau": 20.0,
+      "population": "stress1",
+      "paired_raw_minus_remainder": {
+        "mean": -0.020691360006941023,
+        "se": 0.01334175378988437,
+        "ci95": [
+          -0.05223959457728154,
+          0.010856874563399496
+        ]
+      },
+      "paired_interval_contains_zero": true,
+      "conditional_variance_ratio": 1.604655809374498,
+      "cost_times_variance_ratio": 1.5902316886993109,
+      "paired_batch_bootstrap_cost_ratio_interval": [
+        1.5737620405287036,
+        1.6053364804598191
+      ],
+      "between_batch_cost_ratio": 1.2389420689176096,
+      "measured_accounted_batch_cost_ratio": 1.0091020477182286,
+      "remainder_fine_minus_coarse": {
+        "mean": 0.0003127014669652983,
+        "se": 0.0028277343473674375,
+        "ci95": [
+          -0.006373827747881639,
+          0.0069992306818122355
+        ]
+      },
+      "precision": [
+        {
+          "method": "raw",
+          "measured_mean_accounted_batch_cpu_seconds": 18.391085836625003,
+          "measured_batch_cpu_seconds": [
+            18.274021135,
+            18.357413937,
+            18.398564334000003,
+            18.240182148,
+            18.48032036,
+            18.506798845000002,
+            18.443169483000002,
+            18.428216451
+          ],
+          "conditional_variance_per_batch": 0.014274926016445671,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 26255568.96690356,
+          "integer_batch_cpu_seconds_projection": 26253146.294181336,
+          "projected_batches": 1427493,
+          "measured_eight_batch_response": {
+            "mean": -1.9683688515592288,
+            "se": 0.052335164102608515,
+            "ci95": [
+              -2.092121849807345,
+              -1.8446158533111126
+            ]
+          },
+          "between_batch_variance": 0.021911755213175708
+        },
+        {
+          "method": "remainder",
+          "measured_mean_accounted_batch_cpu_seconds": 18.558482377500003,
+          "measured_batch_cpu_seconds": [
+            18.445634822000002,
+            18.508011564,
+            18.568151861000004,
+            18.407696328,
+            18.641941874,
+            18.675674401000002,
+            18.6246308,
+            18.59611737
+          ],
+          "conditional_variance_per_batch": 0.008895942627104626,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 16510530.606001586,
+          "integer_batch_cpu_seconds_projection": 16509533.130612114,
+          "projected_batches": 889595,
+          "measured_eight_batch_response": {
+            "mean": -1.9476774915522879,
+            "se": 0.046805894199890355,
+            "ci95": [
+              -2.0583558440948346,
+              -1.836999139009741
+            ]
+          },
+          "between_batch_variance": 0.01752633385481064
+        }
+      ]
+    },
+    {
+      "s": 0.25,
+      "tau": 20.0,
+      "population": "stress0.125",
+      "paired_raw_minus_remainder": {
+        "mean": -0.00043361008789997296,
+        "se": 0.00253219734415827,
+        "ci95": [
+          -0.0064213053377154584,
+          0.0055540851619155125
+        ]
+      },
+      "paired_interval_contains_zero": true,
+      "conditional_variance_ratio": 1.0161310880061984,
+      "cost_times_variance_ratio": 1.007171607250019,
+      "paired_batch_bootstrap_cost_ratio_interval": [
+        1.0007816266989744,
+        1.0131071328582744
+      ],
+      "between_batch_cost_ratio": 1.0897734267785273,
+      "measured_accounted_batch_cost_ratio": 1.008889298260739,
+      "remainder_fine_minus_coarse": {
+        "mean": 0.00028706607447436666,
+        "se": 0.0008579606684530986,
+        "ci95": [
+          -0.0017416885290625866,
+          0.00231582067801132
+        ]
+      },
+      "precision": [
+        {
+          "method": "raw",
+          "measured_mean_accounted_batch_cpu_seconds": 18.391705897875,
+          "measured_batch_cpu_seconds": [
+            18.273130616000003,
+            18.359208289,
+            18.399645983000003,
+            18.239913402000003,
+            18.480964384,
+            18.507583344,
+            18.443200612,
+            18.430000553000003
+          ],
+          "conditional_variance_per_batch": 0.0022588990507475403,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 4155379.2107779123,
+          "integer_batch_cpu_seconds_projection": 4154502.4452709835,
+          "projected_batches": 225890,
+          "measured_eight_batch_response": {
+            "mean": -0.3870415894310994,
+            "se": 0.017658078223354197,
+            "ci95": [
+              -0.42879630943456515,
+              -0.34528686942763365
+            ]
+          },
+          "between_batch_variance": 0.0024944618123367663
+        },
+        {
+          "method": "remainder",
+          "measured_mean_accounted_batch_cpu_seconds": 18.555195257125,
+          "measured_batch_cpu_seconds": [
+            18.443104773,
+            18.532561252999997,
+            18.567335903000004,
+            18.397921535000002,
+            18.640789271999996,
+            18.654596395,
+            18.62844007,
+            18.576812856
+          ],
+          "conditional_variance_per_batch": 0.002223039012790996,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 4125790.6605645474,
+          "integer_batch_cpu_seconds_projection": 4124894.126439916,
+          "projected_batches": 222304,
+          "measured_eight_batch_response": {
+            "mean": -0.38660797934319946,
+            "se": 0.016840445329550327,
+            "ci95": [
+              -0.42642930477707663,
+              -0.3467866539093223
+            ]
+          },
+          "between_batch_variance": 0.0022688047911805878
+        }
+      ]
+    },
+    {
+      "s": 0.25,
+      "tau": 20.0,
+      "population": "stress0.015625",
+      "paired_raw_minus_remainder": {
+        "mean": -0.00011610474790827753,
+        "se": 0.0003792530048419471,
+        "ci95": [
+          -0.0010128956006469814,
+          0.0007806861048304263
+        ]
+      },
+      "paired_interval_contains_zero": true,
+      "conditional_variance_ratio": 1.0015945616261908,
+      "cost_times_variance_ratio": 0.9926830754833764,
+      "paired_batch_bootstrap_cost_ratio_interval": [
+        0.9909946340002367,
+        0.9942273135946266
+      ],
+      "between_batch_cost_ratio": 1.041315735848225,
+      "measured_accounted_batch_cost_ratio": 1.0089445420949568,
+      "remainder_fine_minus_coarse": {
+        "mean": -0.0005294333826769033,
+        "se": 0.00030356696074515554,
+        "ci95": [
+          -0.001247255180037213,
+          0.00018838841468340627
+        ]
+      },
+      "precision": [
+        {
+          "method": "raw",
+          "measured_mean_accounted_batch_cpu_seconds": 18.39136612625,
+          "measured_batch_cpu_seconds": [
+            18.275393833,
+            18.356836247999997,
+            18.400494221000002,
+            18.237954930000004,
+            18.479125588,
+            18.507509294000002,
+            18.445520374,
+            18.428094522000002
+          ],
+          "conditional_variance_per_batch": 0.00028863501359884436,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 530903.404887873,
+          "integer_batch_cpu_seconds_projection": 530848.39186808,
+          "projected_batches": 28864,
+          "measured_eight_batch_response": {
+            "mean": -0.04730971347554775,
+            "se": 0.003187693036444627,
+            "ci95": [
+              -0.054847409736158155,
+              -0.039772017214937345
+            ]
+          },
+          "between_batch_variance": 8.129109515678054e-05
+        },
+        {
+          "method": "remainder",
+          "measured_mean_accounted_batch_cpu_seconds": 18.555868474750003,
+          "measured_batch_cpu_seconds": [
+            18.444217660000003,
+            18.530564711,
+            18.558818140000003,
+            18.402276754000003,
+            18.640710162999998,
+            18.665341696000002,
+            18.607165302000002,
+            18.597853372
+          ],
+          "conditional_variance_per_batch": 0.00028817550000492814,
+          "target_standard_error": 0.0001,
+          "continuous_cpu_seconds_projection": 534816.6177098922,
+          "integer_batch_cpu_seconds_projection": 534743.0177053456,
+          "projected_batches": 28818,
+          "measured_eight_batch_response": {
+            "mean": -0.047193608727639474,
+            "se": 0.0031099372797504365,
+            "ci95": [
+              -0.05454744184026985,
+              -0.0398397756150091
+            ]
+          },
+          "between_batch_variance": 7.737367907185237e-05
+        }
+      ]
+    }
+  ],
+  "independent_batches_per_sweep": 8,
+  "actual_total_job_cpu_seconds": 344.83415613799997,
+  "worker_cpu_seconds": 346.81883100000005,
+  "maximum_path_budget": 7.485123632022805e-13,
+  "inputs": {
+    "results/population-accuracy/estimator-cost-02/manifest.json": "97e96f84435317972861c89b930ecc0a6a1854c4b3140957f319d50c299d013c",
+    "results/population-accuracy/estimator-cost-02/ledger.json": "7c2f516432a19245b56df6db2c88ed22533a3e029a5868668de37bebebde502b",
+    "results/population-accuracy/estimator-cost-02/s0-seed96211/result.json": "ec0163dd99694bb7f5dbaf2eed306d7dc4017131edf25797b325df51abcd9c89",
+    "results/population-accuracy/estimator-cost-02/s0-seed96212/result.json": "601c056d4532be65d082183f233579c337734184e06186147fd8414a4113b31e",
+    "results/population-accuracy/estimator-cost-02/s0-seed96213/result.json": "d70b6eb58c2522535c48de8be6e237ba40bd70edef2b8991cd45c8f09d0dd7f3",
+    "results/population-accuracy/estimator-cost-02/s0-seed96214/result.json": "2a65f19c741346d97c498a8e9c36c06c3612ddb9eda16e1e435974c8efc3ccbd",
+    "results/population-accuracy/estimator-cost-02/s0-seed96215/result.json": "d88fb47f96d6a6f2574a178ebd8466e0f847faeda6da4d9e84aea79feaf19c24",
+    "results/population-accuracy/estimator-cost-02/s0-seed96216/result.json": "82aaa9f04020c66536250cecf8d4c2634e82bedc1968dec2f7f051a16613c160",
+    "results/population-accuracy/estimator-cost-02/s0-seed96217/result.json": "a9c57c709bba1e4cb77630275295fc21d28759a6662d71eb8c3d50b69029b112",
+    "results/population-accuracy/estimator-cost-02/s0-seed96218/result.json": "53dcfb6c7eb27e985e42e892133c67ba16fa2a749b56cc397acc2304e598673a",
+    "results/population-accuracy/estimator-cost-02/s0.25-seed96211/result.json": "d8a4178d1353c05e9dc7327ee0171237035137a10cc0d080af6a3ee850e70b18",
+    "results/population-accuracy/estimator-cost-02/s0.25-seed96212/result.json": "31ba94ff48091848d924235f7cfdd7ba9d83986ce35f5666d188130191643520",
+    "results/population-accuracy/estimator-cost-02/s0.25-seed96213/result.json": "d7a33542bad3288f4471e669ff5662cf96e2e02d4e43263add7c5b035843cc29",
+    "results/population-accuracy/estimator-cost-02/s0.25-seed96214/result.json": "a6e29c3ccf5f6ef10d78647e625cc11f2e99c77ac54122b4593f2b9bdc0dc09a",
+    "results/population-accuracy/estimator-cost-02/s0.25-seed96215/result.json": "d61249113abc08fcbb345261b7b6e51272ee4554ea31cee9555cdcc72006651c",
+    "results/population-accuracy/estimator-cost-02/s0.25-seed96216/result.json": "e022abcca9f272233db85a5238b9ea648c5a7badd75f99da1bba43adad8ebe42",
+    "results/population-accuracy/estimator-cost-02/s0.25-seed96217/result.json": "fcbc3367460bf2b98d517cd7cefc84b50b49e539a55356bd4168eaf7dfb8bd69",
+    "results/population-accuracy/estimator-cost-02/s0.25-seed96218/result.json": "435910fb0b1b6cba28fe25c216f8c1dab2d685ba77f2ba3fc6d451977728250a"
+  },
+  "source_sha256": "507f029de95f79be5ed2e586f8845b3cccd2f26636a4f1b02465f7c3613792bf",
+  "cpu_seconds": 0.05554329499999999,
+  "scope": "Actual identical-path integration and separately measured method setup/evaluation costs. Cost-times-variance ratios are fixed-allocation precision-efficiency estimates, not directly timed executions at target precision. All costs cover T20 integration with both saved endpoints and paired numerical refinement. Twenty-thousand paired bootstrap resamples of eight independent batches retain method/timing covariance but do not certify tail variance. Narrow populations are stress tests; raw/remainder share the same expected quantity, not independent physical confirmations."
+}

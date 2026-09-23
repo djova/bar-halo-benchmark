@@ -1,0 +1,65 @@
+{
+  "checked_utc": "2026-09-22T23:39:07.652068+00:00",
+  "actions": [
+    0.08,
+    0.05,
+    0.5
+  ],
+  "js0": 0.25,
+  "action_unit": 0.0005633691213339646,
+  "time_unit": 635.9626023588751,
+  "f_ref": 0.008581162971259104,
+  "g": -0.004749321154862916,
+  "remeasured_g": -0.004749321154862916,
+  "table_nodes": 10241,
+  "table_range": [
+    -160,
+    160
+  ],
+  "minimum_Jphi": 0.31972188117313133,
+  "interpolation_max_relative_error": 5.257889679199934e-10,
+  "reference_path_profiles": {
+    "0": {
+      "x_res": 0.0,
+      "halo_relative_density": 1.0,
+      "gaussian_relative_density": 1.0,
+      "exponential_relative_density": 1.0,
+      "gaussian_log_slope": -0.004749321154862916
+    },
+    "10": {
+      "x_res": 2.5,
+      "halo_relative_density": 0.9882072797881498,
+      "gaussian_relative_density": 0.9411041852976831,
+      "exponential_relative_density": 0.9881969066259085,
+      "gaussian_log_slope": -0.043811821154862915
+    },
+    "20": {
+      "x_res": 5.0,
+      "halo_relative_density": 0.9765740822029692,
+      "gaussian_relative_density": 0.8032742386046229,
+      "exponential_relative_density": 0.9765331262650145,
+      "gaussian_log_slope": -0.08287432115486291
+    }
+  },
+  "mass_per_fast_action_area_factor": 0.002398329172538389,
+  "Lz_per_fast_action_area_factor": 2.7022891972051328e-06,
+  "mass_jacobian_relative_difference": -7.771561172376096e-16,
+  "gates": {
+    "physical_prograde_domain": true,
+    "positive_finite_df": true,
+    "interpolation_relative_error": true,
+    "central_df_matches_frozen": true,
+    "central_scaled_slope_matches_frozen": true,
+    "canonical_mass_jacobian": true
+  },
+  "all_pass": true,
+  "raw_sha256": "461821b730fe71cd18edd68ee4453ce26b45f7eaae0d5de031dc05d107c6e90c",
+  "source_sha256": "eb6e7f820b80f286942bbfcce98275afa4034b283a671d8b08ecfc7407f43900",
+  "protocol_sha256": "4c899b6724eed9f0284b3c0e135f913b6b25172f740fee6f46728f9c35c57a67",
+  "frozen_coefficient_sha256": "0febc6485f34dc8d9a431b83ce52965bf10f13e85b4f67bb62c61db19ae5b3f6",
+  "agama_library_sha256": "1f32d2e266e99f5ed8b1553b43ac29b8f030d886f648580c4a86b4e88d6661c4",
+  "upstream_source_revision": "f302756b8af2b763db58e278e30478517dc8eea3",
+  "cpu_seconds": 0.031891528,
+  "wall_seconds": 0.03406828094739467,
+  "scope": "Unforced DF tabulation and normalization only. Same fixed-fast-action reference halo; no new torque outcome, total-halo inference or qualified local-domain claim."
+}

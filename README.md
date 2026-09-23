@@ -26,6 +26,15 @@ control; it need not mean reversed total torque.
 **[Explore the population result and recorded kernels](https://djova.ca/galaxy-bar/population-response)** ·
 **[Read the equations, evidence and limits](https://djova.ca/galaxy-bar/population-methods)**
 
+## Matched estimator cost and narrow-population limits
+
+The new [matched-cost package](accuracy/README.md) compares raw and cumulative
+estimators on identical numerical weights and paths, measures their CPU cost,
+and retains narrow populations where the advantage disappears. It includes all
+16 finite cases, paired covariance, timing repeats and a one-command reproduction.
+The separate new-sweep approximation diagnostic is still awaiting independent
+population outcomes; this cost release does not claim that validation passed.
+
 ## Regenerate the measurements
 
 Use Linux with Python 3.11, the tested interpreter and CPU-accounting platform.

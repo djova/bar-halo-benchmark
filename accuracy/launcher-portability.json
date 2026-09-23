@@ -1,0 +1,5 @@
+{
+  "original_sha256": "31d4639d03db0387ab74b646ccecd3f0082bfe188d9244a8b10a4096dc826608",
+  "released_sha256": "5ad9ce0cc50c14c2fe49a18717e92da02cc518300dd43385f62a85221a364f7b",
+  "change": "Only use the active Python interpreter, preserving finite case/CPU guards and numerical source."
+}
