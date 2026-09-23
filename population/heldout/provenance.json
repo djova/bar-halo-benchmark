@@ -1,0 +1,7 @@
+{
+  "forecast_project_commit": "4b633b6",
+  "original_forecast_sha256": "cac7744c2577c74a4f934bf85f894db60f047892a03f4858e412fc40673ba7ef",
+  "independent_matrix_project_commit": "dba35d6",
+  "analysis_sha256": "bb178b58abe04f83cab1fb67a1819558295b63823bdab72bab428b31e9ed658b",
+  "scope": "Original prospective forecasts committed before forced evolution. Public package reruns the historical full test, including any failures. Numerical source unchanged; execution paths/deadline portable."
+}

@@ -107,3 +107,37 @@ way to predict the error of a local population approximation. New Gaussian width
 must be committed before independent forced evolution starts. A kernel prediction
 within this same reduced model is distinct from a new three-dimensional physical
 prediction or an observed-galaxy comparison.
+
+## Reproduce the prospective new-population test
+
+The complete original test meets its frozen magnitude criterion for all three new
+shapes, both sweeps, both durations and both windows. This is not uniform 5%
+accuracy: the allowance is the larger of 0.0002 and 5% of the forecast magnitude.
+The small moving width-12 response at T10 only narrowly fits that allowance; its
+remaining interval margin is smaller than a measured quadrature change. Separate
+numerical checks are operational diagnostics, not rigorous combined error bounds.
+
+```sh
+.venv/bin/python reproduce_heldout.py --out reproduced-heldout
+```
+
+This first reconstructs all 24 forecasts from the recorded independent kernel
+batches, then reruns all 23 distribution/characteristic cases, checks all means
+and decisions, and writes `heldout-predictions.png`. No sample or failed outcome
+is omitted. Allow roughly 2.3 core-hours, measured in the original matrix, with
+a four-core-hour cap and finite per-case/48-hour wall limits. One nice-10 worker
+is the default. Add `--check-forecasts-only` to regenerate just the arithmetic,
+without claiming to rerun the forced experiment.
+
+The original forecasts were committed before new-shape evolution. Running this
+command later reproduces that historical prospective test; it does not create a
+new prospective physical experiment. The correlated 24 comparisons share kernel
+batches and are not independent confirmations of a physical theory. See
+[the outcome](research/population-response/HELDOUT_OUTCOME_01.md) and
+[every comparison](heldout/reference.json). The original failed Cartesian
+qualification remains unchanged.
+
+For a scheduled local reproduction, `--stop-utc YYYY-MM-DDTHH:MM:SSZ` sets an
+earlier production deadline without overriding the finite CPU and wall limits.
+The clean public-source rerun of this complete held-out matrix is pending at this
+release checkpoint; the arithmetic-only public entry point has been exercised.

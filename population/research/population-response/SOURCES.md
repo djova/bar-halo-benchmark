@@ -10,3 +10,8 @@ Read22September2026. This is a targeted comparison, not a systematic novelty sur
 Scientific claim sought: a measured dependence on full phase-space weighting and
 an independently verified way to predict it. Neither the adjoint construction nor
 the existence of competing scattering effects is claimed as new.
+
+Further population-specific positioning and primary-source section references are
+recorded in [LITERATURE_POSITIONING_02.md](LITERATURE_POSITIONING_02.md). Initial-slope
+limitations and cancellation of orbital torques are established concerns; the new
+claim is the quantitatively verified conditional measurement and predictive test.

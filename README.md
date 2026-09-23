@@ -165,3 +165,13 @@ AGAMA revision and verifies a proposed algebraic repair against80-digit
 coordinates. Its exact inputs, proposed patch and original/patched receipts
 are public. This numerical software result is separate from the torque findings;
 it does not establish the issue's frequency in galaxies or maintainer acceptance.
+
+## Predicting new initial populations
+
+The [population extension](population/README.md#reproduce-the-prospective-new-population-test)
+now includes a one-command reproduction of forecasts committed before independent
+evolution of three new populations. All prescribed comparisons meet the original
+criterion, with an absolute accuracy floor that matters for the smallest response.
+This tests a reusable local response operator, not a new 3D halo prediction.
+Run `python reproduce_heldout.py --out reproduced-heldout` for the complete test,
+or add `--check-forecasts-only` for arithmetic reconstruction alone.
