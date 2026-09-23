@@ -133,3 +133,12 @@ The [complete bar-free readback](unforced/README.md) supplies exact-law comparis
 all 44 control records, retained boundary failures, the original solver and a
 one-command figure reconstruction. This uses existing controls; it does not
 qualify the unresolved three-dimensional forecast or add a new physical sample.
+
+## Small coordinate regression for upstream review
+
+The [four-case isochrone regression](optional-agama/MINIMAL_REGRESSION.md)
+reproduces a turning-phase coordinate problem at the checked current upstream
+AGAMA revision and verifies a proposed algebraic repair against80-digit
+coordinates. Its exact inputs, proposed patch and original/patched receipts
+are public. This numerical software result is separate from the torque findings;
+it does not establish the issue's frequency in galaxies or maintainer acceptance.

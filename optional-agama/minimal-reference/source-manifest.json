@@ -1,0 +1,7 @@
+{
+  "minimal_regression.py": "18174586732c3ae42537e336de4eac2ef7ea82db45acd861f934ced141301fe9",
+  "stable-angles.patch": "9aed4bd8aa2ffac1f02317c9cc4762fd9724a77d1cebf5013cf4ec6654205202",
+  "minimal-reference/original.json": "df0df486e2018adfc619fd65ed1c999401dbfee9de561e7f73f4c213743410d7",
+  "minimal-reference/patched.json": "6f19c590d81f04149efb19476e9f59cd7fed29d44d5f1e3b0c4e9322732d4cfd",
+  "minimal-reference/upstream-history.json": "45763e73c2b3e6e69cdb5f06a3449fbacfe4722d599dc86c7fadd2b35eb11171"
+}

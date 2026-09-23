@@ -1,0 +1,357 @@
+{
+  "checked_utc": "2026-09-23T00:06:19.484722+00:00",
+  "scope": "Read-only first-party API. Complete first pages have fewer than100 entries. Titles are a bounded history screen, not proof that no related discussion exists. No maintainer contact.",
+  "head": {
+    "sha": "f302756b8af2b763db58e278e30478517dc8eea3",
+    "date": "2026-08-25T15:34:37Z",
+    "message": "Replaced cubature with a new implementation; improved the accuracy of TargetDensity and non-spherical Dehnen potentials",
+    "url": "https://github.com/GalacticDynamics-Oxford/Agama/commit/f302756b8af2b763db58e278e30478517dc8eea3"
+  },
+  "coordinate_commits": [
+    {
+      "sha": "f302756b8af2b763db58e278e30478517dc8eea3",
+      "date": "2026-08-25T15:34:37Z",
+      "message": "Replaced cubature with a new implementation; improved the accuracy of TargetDensity and non-spherical Dehnen potentials",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/commit/f302756b8af2b763db58e278e30478517dc8eea3"
+    },
+    {
+      "sha": "3ba5ca06ed9cb195f49c66e2d3b52c6a8852bc71",
+      "date": "2025-09-18T21:20:41Z",
+      "message": "Improvements in sampleNdim",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/commit/3ba5ca06ed9cb195f49c66e2d3b52c6a8852bc71"
+    },
+    {
+      "sha": "389780596ce0015cb4951edcd184fdd854749513",
+      "date": "2024-02-12T12:06:01Z",
+      "message": "Redesigned action finder and mapper interfaces, created actions_factory",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/commit/389780596ce0015cb4951edcd184fdd854749513"
+    },
+    {
+      "sha": "3052049d42fd4df3201dee7b0a2d7edb34412ea3",
+      "date": "2023-10-21T17:55:30Z",
+      "message": "Redesigned parallelization approach in the python interface",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/commit/3052049d42fd4df3201dee7b0a2d7edb34412ea3"
+    },
+    {
+      "sha": "db52105b02a45d4476c260bb34aa0d1369c37ee4",
+      "date": "2018-02-22T23:18:11Z",
+      "message": "Prepared for public release",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/commit/db52105b02a45d4476c260bb34aa0d1369c37ee4"
+    },
+    {
+      "sha": "4ce178ee46ff9d0809af7a5c0f628878dcee6a58",
+      "date": "2016-10-09T19:11:04Z",
+      "message": "Public release for the Gaia Challenge 2016",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/commit/4ce178ee46ff9d0809af7a5c0f628878dcee6a58"
+    }
+  ],
+  "closed_titles": [
+    {
+      "number": 60,
+      "title": "using solveOpt() to reproduce a Miyamoto-Nagai profile",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/60"
+    },
+    {
+      "number": 59,
+      "title": "Increasing tolerance of torus mapper?",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/59"
+    },
+    {
+      "number": 56,
+      "title": "Amuse module, worker",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/56"
+    },
+    {
+      "number": 54,
+      "title": "setup: detect unsio lib if available in python",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/pull/54"
+    },
+    {
+      "number": 53,
+      "title": "Segmentation fault using `agama.readSnapshot()` to read NEMO binary snapshot",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/53"
+    },
+    {
+      "number": 52,
+      "title": "Reading/writing snapshots with Agama",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/52"
+    },
+    {
+      "number": 51,
+      "title": "Support for python 3.12 - numpy distutils",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/51"
+    },
+    {
+      "number": 50,
+      "title": "Units in Agama",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/50"
+    },
+    {
+      "number": 49,
+      "title": "Automatic Install not functioning correctly on remote machine",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/49"
+    },
+    {
+      "number": 48,
+      "title": "How to create a self-consistent model with custom mass distribution",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/48"
+    },
+    {
+      "number": 47,
+      "title": "Compilation error of test_fortran on Apple Sequoia 15.0 Apple M3 Pro ",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/47"
+    },
+    {
+      "number": 46,
+      "title": "Update `setup.py` to remove deprecated `distutils` dependency",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/46"
+    },
+    {
+      "number": 45,
+      "title": "Issue with Mac OS installation",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/45"
+    },
+    {
+      "number": 44,
+      "title": "\"NumPy is not present\" when installing via 'pip'",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/44"
+    },
+    {
+      "number": 43,
+      "title": "Error in ActionFinder initialization: Interpolator: energy or angular momentum of a circular orbit are not monotonic",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/43"
+    },
+    {
+      "number": 42,
+      "title": "compilation fails on CentOS",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/42"
+    },
+    {
+      "number": 41,
+      "title": "Windows Installation not working",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/41"
+    },
+    {
+      "number": 40,
+      "title": "About the tolerance of the Torus Mapper fitting",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/40"
+    },
+    {
+      "number": 38,
+      "title": "GOMP version issue via python 3.9.8 (agama 1.0)",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/38"
+    },
+    {
+      "number": 37,
+      "title": "Logarithmic potential energy",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/37"
+    },
+    {
+      "number": 36,
+      "title": "Versioned tag or release plan",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/36"
+    },
+    {
+      "number": 35,
+      "title": "document of Einasto profile",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/35"
+    },
+    {
+      "number": 34,
+      "title": "Example python scripts do not work on newer python versions",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/34"
+    },
+    {
+      "number": 33,
+      "title": "Gadget-4 plugin",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/33"
+    },
+    {
+      "number": 32,
+      "title": "central density of King profile",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/32"
+    },
+    {
+      "number": 31,
+      "title": "Discrepancy with Galpy when using agama.GalpyPotential",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/31"
+    },
+    {
+      "number": 30,
+      "title": "Sampling refinement procedure error ",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/30"
+    },
+    {
+      "number": 29,
+      "title": "Generating rotating star clusters",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/29"
+    },
+    {
+      "number": 28,
+      "title": "explicitly including G  in the calculation of Toomre Q in the example?",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/28"
+    },
+    {
+      "number": 27,
+      "title": "Use of new models",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/27"
+    },
+    {
+      "number": 26,
+      "title": "Memory leak?",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/26"
+    },
+    {
+      "number": 25,
+      "title": "Error when Importing Agama: dlopen symbol not found in flat namespace",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/25"
+    },
+    {
+      "number": 24,
+      "title": "Inner cutoff radius for spherical models",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/24"
+    },
+    {
+      "number": 23,
+      "title": "Cannot install Agama on my Apple Silicon Monterey",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/23"
+    },
+    {
+      "number": 22,
+      "title": "Number of sampling points of an orbit not equal to the requested value.",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/22"
+    },
+    {
+      "number": 21,
+      "title": "Problems of installing agama on mac osx",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/21"
+    },
+    {
+      "number": 20,
+      "title": "Generating randomized N-body initial conditions with Agama",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/20"
+    },
+    {
+      "number": 19,
+      "title": "artificial density oscillations in the outskirt of Spheroid potential",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/19"
+    },
+    {
+      "number": 18,
+      "title": "Feature request: enclosed mass in Python interface",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/18"
+    },
+    {
+      "number": 17,
+      "title": "Simulation with binary SMBH and two component mass function crashing after some timesteps",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/17"
+    },
+    {
+      "number": 16,
+      "title": "Allow setting value of G",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/16"
+    },
+    {
+      "number": 15,
+      "title": "Add a getUnits() function in py_wrapper?",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/15"
+    },
+    {
+      "number": 14,
+      "title": "Installing on Intel Mac 10.15 w/ Anaconda Python 3.8",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/14"
+    },
+    {
+      "number": 13,
+      "title": "NaN values for total energy in RAGA",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/13"
+    },
+    {
+      "number": 12,
+      "title": "Using different units in RAGA",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/12"
+    },
+    {
+      "number": 11,
+      "title": "Wrong Potential for Gas and DarkMatter particles",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/11"
+    },
+    {
+      "number": 10,
+      "title": "RuntimeError: Error in solveOpt(): quadraticOptimizationSolve not implemented",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/10"
+    },
+    {
+      "number": 9,
+      "title": "Accessing a Potential's multipole coefficients in Python",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/9"
+    },
+    {
+      "number": 8,
+      "title": "Error in installation using pip",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/8"
+    },
+    {
+      "number": 7,
+      "title": "Error during installation: relocation R_X86_64_32 against",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/7"
+    },
+    {
+      "number": 6,
+      "title": "Installing Agama Windows 10 / Python 3.9.0",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/6"
+    },
+    {
+      "number": 5,
+      "title": "Logarithmic potential does support ActionFinder",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/5"
+    },
+    {
+      "number": 4,
+      "title": "Don't break if /dev/tty is not available",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/pull/4"
+    },
+    {
+      "number": 3,
+      "title": "Installing on Mac with Python 3.7",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/3"
+    },
+    {
+      "number": 2,
+      "title": "galpypot.py",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/2"
+    },
+    {
+      "number": 1,
+      "title": "Installing Agama",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/1"
+    }
+  ],
+  "open_titles": [
+    {
+      "number": 61,
+      "title": "Fix math rendering in Schwarzschild tutorial",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/pull/61"
+    },
+    {
+      "number": 58,
+      "title": "Support for Autodiff for core C++ routines",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/58"
+    },
+    {
+      "number": 57,
+      "title": "WIP: Modernize build system",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/pull/57"
+    },
+    {
+      "number": 55,
+      "title": "Add CICD github pipeline",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/55"
+    },
+    {
+      "number": 39,
+      "title": "Kernel dies when using AGAMA after importing sklearn",
+      "url": "https://github.com/GalacticDynamics-Oxford/Agama/issues/39"
+    }
+  ]
+}

@@ -27,3 +27,12 @@ The three changes stabilize two half-angle formulas and retain the signed radial
 mean anomaly internally. Actions, forces, the Hamiltonian and physical parameters
 are unchanged. Extreme turning-phase probes do not establish how often the defect
 matters in a galaxy. This is a numerical-methods benchmark, not new bar physics.
+
+## Four-case current-upstream regression
+
+[The minimal regression](MINIMAL_REGRESSION.md) isolates four nondegenerate
+turning-phase inputs. A23September2026check finds upstream master still at the
+pinned revision. Fresh executions of the unchanged and separately patched
+libraries preserve both the failures and the machine-precision repaired values.
+This small review artifact includes80-digit coordinates, exact inputs and
+receipts; it does not imply maintainer review or acceptance.
