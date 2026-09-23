@@ -1,177 +1,100 @@
-# Bar–halo response benchmark
+# Bar–halo response: dynamics and population
 
-A runnable controlled experiment in how imposed action noise changes bar torque.
-At the same positive initial population, noise strength and elapsed time, the
-reduced model resolves increased transfer at a stationary resonance and decreased
-transfer at sweep s=.25. This is a finite local tracer population, not a full-halo
-or dark-matter result. The independently frozen3D prediction remains numerically
-unqualified; the package preserves that unresolved outcome.
+A reproducible experiment separating what a prescribed resonance does to orbits
+from how much halo material occupies those orbits.
 
-**Regenerate the central matched figure:**
+At the same central physical density, bar history and imposed noise, replacing a
+selected Gaussian with the reference isochrone halo distribution changes the
+response substantially. Moving-resonance suppression survives at model time
+T = 20, with about **4.7 times smaller magnitude**. At the predeclared T = 10
+check, the two populations have **opposite signs** despite matching central density
+and slope. Independent trajectory and distribution/characteristic calculations
+support these finite-time measurements.
+
+The measured response kernel also predicts three new populations whose magnitude
+forecasts were committed before independent evolution. All declared comparisons
+meet their original operational criterion. This is **not uniform 5% accuracy**:
+the absolute tolerance matters, and one small response lies close to its boundary.
+Separate numerical checks do not provide a rigorous combined-error certificate.
+
+These results concern an externally prescribed local resonance model, constant
+additive action diffusion, and one fixed fast-action slice of a halo. They do not
+establish a total halo torque, a live halo response, physical SIDM, or agreement
+with observed galaxies. Negative contrast means less bar transfer than the smooth
+control; it need not mean reversed total torque.
+
+**[Explore the population result and recorded kernels](https://djova.ca/galaxy-bar/population-response)** ·
+**[Read the equations, evidence and limits](https://djova.ca/galaxy-bar/population-methods)**
+
+## Regenerate the measurements
+
+Use Linux with Python 3.11, the tested interpreter and CPU-accounting platform.
+Install the exact dependencies once:
 
 ```sh
 python3.11 -m venv .venv
 .venv/bin/python -m pip install -r requirements.lock.txt
-.venv/bin/python reproduce_matched.py --out reproduced-matched
 ```
 
-Python3.11 is the tested interpreter. The final command runs offline, generates
-all initial conditions from seeds, and takes about45minutes on one CPU. It checks
-both distribution estimates and all independent trajectory batches against the
-reference. A clean isolated28-case rerun passes. No private files or credentials
-are needed. Details and the full-precision receipt appear below.
-
-[Interactive result, recorded paths and limitations](https://djova.ca/galaxy-bar/noise-sweep).
-
-## Population weighting: the next controlled comparison
-
-The new [population package](population/README.md) keeps the central absolute
-halo DF, imposed dynamics and elapsed times fixed while replacing the selected
-Gaussian with the reference isochrone halo DF. At the primary T20 endpoint,
-moving-resonance suppression survives halo weighting but is about4.7times smaller
-than for the Gaussian. At the prespecified T10 check, their noise effects have
-opposite signs despite equal initial density and slope. Independent stochastic
-trajectories and distribution/characteristic calculations support these findings.
-These are differential contributions at one fixed fast-action slice, not a
-complete halo torque, physical SIDM prediction or observed-galaxy comparison.
+Then choose either complete experiment. These commands run offline after setup;
+initial phases and noise are generated from seeds. No private files, credentials,
+AGAMA installation or compiled gravity solver are needed for these local tests.
 
 ```sh
 .venv/bin/python reproduce_population.py --out reproduced-population
+.venv/bin/python reproduce_heldout.py --out reproduced-heldout
 ```
 
-This new command regenerates all16trajectory cases, four central independent
-calculations and their recorded kernels from public inputs and seeds. Allow about
-four core-hours. The source and reference records are released; a full fresh-environment
-reproduction is planned, so this release does not yet claim that rerun has passed.
-The independent scientific sample is complete; same-seed reproduction is a separate
-software check. The original failed3Dqualification is retained unchanged.
+| Command | What it regenerates | Output and approximate CPU cost |
+|---|---|---|
+| `reproduce_population.py` | All 16 original trajectory batches, four central distribution/characteristic calculations, kernels and intervals | `population-response.png`; about four core-hours |
+| `reproduce_heldout.py` | All 24 frozen forecasts and the 23 independent new-population numerical cases | `heldout-predictions.png`; about 2.3 core-hours |
 
-## Verify the finite-lag and collision-generator limits
+One nice-10 worker is the default. `--workers 2` or `--workers 3` uses that many
+single-thread workers; core-hours are summed CPU time, not elapsed time. The two
+commands have finite six- and four-core-hour guards respectively, finite case
+limits, and an optional earlier `--stop-utc` deadline. They refuse an existing
+output directory. A guard-stopped run is incomplete, never a passing reproduction.
 
-The separate known-limit command also needs no private repository, particle
-files, AGAMA, compiled gravity engine or API credential. In the same environment:
+The [population guide](population/README.md) explains the released DF table,
+absolute normalization, covariance, source manifests and exact verification scope.
+`--check-forecasts-only` on the held-out command checks arithmetic without rerunning
+forced evolution. Reproducing old seeds verifies the package; it is not a new
+independent physical sample. Both full clean public-source reruns are currently
+in progress; their completion is not claimed here.
 
-```sh
-.venv/bin/python reproduce.py --out reproduced
-```
+## What has not transferred to three dimensions?
 
-The final command generates `result.json`, `finite-lag-controls.png` and
-`maxwell-generators.png`. It refuses to overwrite an existing output directory.
-This initial release verifies known limits, not a new astrophysical result:
+A new halo-weighted Cartesian design pilot retains all initial-action/phase strata,
+both windows, both endpoints and its numerical controls. Its physical-discrepancy
+uncertainty is much too large for the intended test. The original cost rule stops
+sample enlargement with that estimator. This is an unresolved prediction, not a
+physical rejection or a claim that all possible methods require huge computers.
+The [complete pilot report](https://djova.ca/galaxy-bar/population-methods#halo-pilot)
+preserves every condition, variance diagnostic, forecast and stopping assumption.
+The earlier failed Gaussian 3D qualification is also unchanged.
 
-* The exact Brownian and Ornstein–Uhlenbeck transition laws demonstrate why
-  pooled finite-lag variance per time cannot generally identify a diffusion
-  coefficient. Constant diffusion with restoring drift fails a flatness screen.
-* Geometric Brownian motion demonstrates state-dependent Markov diffusion and
-  the variance introduced by pooling different starting times.
-* The Maxwell test reproduces an existing Galaxy Bar result: exact elastic
-  jumps and their Gaussian second-order truncation agree on the first two jump
-  coefficients but not the initial fourth velocity moment. This is a generator
-  derivative, not a time-evolved halo or a physical SIDM response.
+## Earlier benchmarks and the separate software contribution
 
-`FINITE_LAG_CONTROLS.md` freezes the controls, sample counts, seeds, lags and
-acceptance criteria. `reference-maxwell.json` supplies the earlier full-precision
-summary for a direct reproduction check. All outputs retain batch values, input
-parameters, software versions, source hashes and analytical predictions. Seeds
-are fixed for reproducibility; a repeat with those seeds is not independent
-statistical replication. Reported uncertainty across control batches uses four
-independent batches, not overlapping time increments as independent samples.
+| Topic | Runnable source and detailed evidence |
+|---|---|
+| Matched stationary and moving Gaussian controls | [Matched benchmark](EARLIER_BENCHMARKS.md#reproduce-the-matched-stationary-and-moving-comparison), `reproduce_matched.py` |
+| Finite-lag diffusion inference and finite elastic-jump limits | [Known-limit controls](FINITE_LAG_CONTROLS.md), `reproduce.py` |
+| Earlier Cartesian tests, numerical refinements and preserved failures | [Optional transfer package](transfer/README.md) |
+| Bar-free controls and boundary diagnostics | [Unforced records and readback](unforced/README.md) |
+| AGAMA turning-phase coordinate repair | [Minimal regression, proposed patch and high-precision evidence](optional-agama/MINIMAL_REGRESSION.md) |
 
-The moving-resonance release below includes provisional measurements and their
-explicit qualification limits. The new-condition 3D magnitude prediction remains
-unresolved; no full-halo or dark-matter conclusion follows from these tests.
+The AGAMA artifact is checked against the recorded current upstream revision and
+independent 80-digit coordinates. It does not establish incidence in real galaxies
+or maintainer acceptance. Optional AGAMA/GSL components retain their upstream
+licenses and require a separate build; neither binary is redistributed here.
 
-## Reproduce the provisional resonance response
+## What was already known?
 
-`python reproduce_resonance.py --out reproduced-resonance` regenerates two central
-contrasts from positive initial populations and32independent paired stochastic
-runs. It requires only the same pinned NumPy/Matplotlib environment and normally
-takes a few minutes on one CPU. It writes actual saved histories, full summaries
-and `response.png`. No initial conditions or private arrays are required.
-
-The s=0.4 collisionless reference missed its separately archived strict quadrature
-tolerance. The command reproduces that reported estimate; it does not turn the
-failed refinement into a success. The full map, population-width check and new
-3D transfer have their own protocols. These finite Gaussian tracer populations
-are not full halo DFs, and the imposed white action noise is not physical SIDM.
-
-## Reproduce the matched stationary and moving comparison
-
-`python reproduce_matched.py --out reproduced-matched` regenerates both signs
-with the same positive initial population, noise strength and duration. It
-recomputes the distribution estimates, the eight stationary positive-weight
-trajectory batches, and all4,194,304initial particles in the new moving sample.
-Allow roughly45minutes on one CPU. It writes full outputs and
-`matched-response.png`, and checks every batch against the archived values.
-
-The exact scientific sources and protocols are in `matched/`. The command uses
-no private inputs and runs offline after installing the pinned dependencies.
-A fresh isolated environment reproduced all28cases in44.7CPUminutes. Every
-batch, distribution contrast and interval agrees within2.8e-17, below the frozen
-1e-9 tolerance; all local gates pass. The full receipt is in
-`matched/clean-reproduction.json`. This verifies this command and its seeded
-inputs; it is not another independent physical sample. Separate numerical-refinement matrices are
-documented but not all rerun by this command. This reduced-model sign comparison
-does not qualify the3D prediction or a full-halo response.
-
-## Frozen prospective 3D forecasts
-
-The records in `forecasts/2026-09-22/` were committed before inspecting any
-held-out Cartesian outcome. Case B predicts a noise-induced mean bar-Lz contrast
-of-9.06336507e-6, with a fixed +/-20% operational approximation band. Its local,
-refinement and independent reduced-trajectory checks pass. Case A narrowly fails
-its independent-sampling prerequisite and remains unqualified; its3Dseed is
-unused. The first3D test is statistically unresolved and fails its numerical
-qualification. Its mean proximity to the forecast does not establish predictive
-success. The exact conditions, failed checks and rules remain unchanged.
-
-## Reproduce the initial 3D qualification test
-
-The optional [transfer package](transfer/README.md) regenerates the original
-eight-case Cartesian experiment from seeds, with a pinned, separately built
-AGAMA/GSL dependency. It includes the full initial analysis as a reference,
-including the failed timestep qualification. The clean build, independent
-coordinate test, short unforced smoke and complete eight-case clean rerun pass.
-All declared scalar differences are below1.66e-13 and every decision agrees;
-individual state arrays retain small differences documented in the receipt.
-This is a numerical and physical-model benchmark, not a live-halo or SIDM result.
-
-The same [transfer package](transfer/README.md#reproduce-the-fixed-independent-cadence-confirmation)
-now reproduces the complete fixed twenty-case independent cadence confirmation.
-A fresh public-source copy completed in 12.291 CPU hours using the existing separate
-pinned environment and independently built dependency. All 156 declared scalar
-comparisons pass, with maximum difference 5.48e-13; the required initial-state,
-ID, time and event arrays match exactly. Cartesian states retain small differences.
-The failed numerical qualification is reproduced, not repaired. See the
-[complete outcome and array comparison](transfer/INDEPENDENT_CONFIRMATION_REPRODUCTION_OUTCOME.md).
-
-The separate six-case timestep/cadence rerun also reproduces all decisions in
-2.636CPUhours. Its small timestep shifts pass; its cadence intervals still fail.
-See the transfer README and full clean numerical receipt. Reproducing the result
-does not turn that numerical qualification into a pass.
-
-## Bar-free controls and domain limits
-
-The [complete bar-free readback](unforced/README.md) supplies exact-law comparisons,
-all 44 control records, retained boundary failures, the original solver and a
-one-command figure reconstruction. This uses existing controls; it does not
-qualify the unresolved three-dimensional forecast or add a new physical sample.
-
-## Small coordinate regression for upstream review
-
-The [four-case isochrone regression](optional-agama/MINIMAL_REGRESSION.md)
-reproduces a turning-phase coordinate problem at the checked current upstream
-AGAMA revision and verifies a proposed algebraic repair against80-digit
-coordinates. Its exact inputs, proposed patch and original/patched receipts
-are public. This numerical software result is separate from the torque findings;
-it does not establish the issue's frequency in galaxies or maintainer acceptance.
-
-## Predicting new initial populations
-
-The [population extension](population/README.md#reproduce-the-prospective-new-population-test)
-now includes a one-command reproduction of forecasts committed before independent
-evolution of three new populations. All prescribed comparisons meet the original
-criterion, with an absolute accuracy floor that matters for the smallest response.
-This tests a reusable local response operator, not a new 3D halo prediction.
-Run `python reproduce_heldout.py --out reproduced-heldout` for the complete test,
-or add `--check-forecasts-only` for arithmetic reconstruction alone.
+Diffusion sustaining stationary resonant friction, competition with moving-resonance
+feedback, and related migration–diffusion effects have clear predecessors. See
+[Hamilton, Chiba, Ogilvie–Lubow and the source-grounded positioning](population/research/population-response/SOURCES.md).
+Neither opposing noise effects nor linearity in an externally evolved initial
+population is claimed as a discovery. The bounded addition is a quantitatively
+checked population dependence, reusable response data and prospectively tested
+population predictions, with an explicit unsuccessful route to a 3D test.
