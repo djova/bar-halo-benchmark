@@ -1,0 +1,97 @@
+{
+  "release": "2026-09-23.4",
+  "checked_utc": "2026-09-23T21:41:08.935019+00:00",
+  "reader": "Anonymous Python urllib default headers; no private connector",
+  "records": [
+    {
+      "path": "paper.md",
+      "url": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/paper.md",
+      "status": 200,
+      "content_type": "text/plain",
+      "sha256": "f789be73704c9b8130041dcbaf5d2f58d614ab314112847450c62ca373e3123e",
+      "bytes": 56738,
+      "matches": true
+    },
+    {
+      "path": "learn.md",
+      "url": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/learn.md",
+      "status": 200,
+      "content_type": "text/plain",
+      "sha256": "11a243213d4513d62c63cd27ced9953ed5669d908284d9fb2e943dc5f4563ceb",
+      "bytes": 12725,
+      "matches": true
+    },
+    {
+      "path": "agents.md",
+      "url": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/agents.md",
+      "status": 200,
+      "content_type": "text/plain",
+      "sha256": "3bf09f9cad020f2c85caa5c9aa6f34c99e24ee86578e62e92eac8406de7acfe0",
+      "bytes": 7550,
+      "matches": true
+    },
+    {
+      "path": "manifest.json",
+      "url": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/manifest.json",
+      "status": 200,
+      "content_type": "text/plain",
+      "sha256": "6b0876255672fd8d38c1b1bba050b4488ff2adda305926cebda4b842b6ec23e9",
+      "bytes": 11471,
+      "matches": true
+    },
+    {
+      "path": "protocols/ACCURACY_PLAN.md",
+      "url": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/protocols/ACCURACY_PLAN.md",
+      "status": 200,
+      "content_type": "text/plain",
+      "sha256": "f081a9359d4c9785262c495cdb99cc204b93c3215cef7451096ff78119d55dec",
+      "bytes": 8299,
+      "matches": true
+    },
+    {
+      "path": "results/accuracy.json",
+      "url": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/results/accuracy.json",
+      "status": 200,
+      "content_type": "text/plain",
+      "sha256": "530fa1a082acc88ed74db74b5db4a96b68299cf507b8a1d0e33b898b35fb768f",
+      "bytes": 24195,
+      "matches": true
+    },
+    {
+      "path": "results/cost.json",
+      "url": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/results/cost.json",
+      "status": 200,
+      "content_type": "text/plain",
+      "sha256": "1969615c7d9182e324cadc91e101daecc871958232846b16e8f95b3c0f1fcdd7",
+      "bytes": 16790,
+      "matches": true
+    },
+    {
+      "path": "diagnostics/population-accuracy/estimator-efficiency.png",
+      "url": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/diagnostics/population-accuracy/estimator-efficiency.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256": "f37bf73f627995d32d2b995d20f4f73299e69f709f0f322533e6cdf9f6e021c6",
+      "bytes": 249125,
+      "matches": true
+    },
+    {
+      "path": "diagnostics/population-accuracy/population-accuracy.png",
+      "url": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/diagnostics/population-accuracy/population-accuracy.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256": "d45bd97a95604b283bd97ac2253a6ced48fab92a5fb095bd65e9ccfd78ed728d",
+      "bytes": 168399,
+      "matches": true
+    },
+    {
+      "path": "diagnostics/population-accuracy/population-comparison.png",
+      "url": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/diagnostics/population-accuracy/population-comparison.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256": "43334e2a5b9b90a40fd94cf6a7ab8bd8fce54daa98278593c9fecaa2d870f8a7",
+      "bytes": 93214,
+      "matches": true
+    }
+  ]
+}

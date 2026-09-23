@@ -157,3 +157,26 @@ recomputed. Release .3 and its evidence remain immutable.
 
 This fixes the identified publication links, not universal client access.
 Canonical-site and some browser-service retrieval remains client-dependent.
+
+### Editorial patch checks
+
+The .4 mirror was read anonymously with default Python headers: ten central
+resources, including the frozen accuracy protocol and all three principal PNGs,
+match the released bytes; the images have image/png content types. The web
+browsing service also retrieved the article, learning guide, manifest, protocol
+and estimator figure. That service still could not retrieve the canonical article.
+This is evidence for the pinned fallback, not universal client access.
+
+The existing publication consistency checker passes on the tagged raw mirror
+and canonical site at expected release .4. Targeted regression checks exercise
+the reported link failures. Chrome and WebKit checks pass at desktop and mobile
+sizes, with complete static evidence and missing-data behavior. The corrected
+Fourier example was visually inspected. These checks do not rerun simulations
+or establish scientific validity; .3 and the numerical evidence are unchanged.
+
+Both the canonical domain and new Pages alias pass full public privacy and
+byte-matching scans (23,063 file instances each). The earlier 140 deployment
+ID/URL/commit mappings are preserved, with their historical audit chain retained.
+Anonymous mirror and browsing-service observations are in the
+[editorial access receipts](release-checks/editorial-2026-09-23.4/).
+These are project-reported delivery checks, not external scientific review.
