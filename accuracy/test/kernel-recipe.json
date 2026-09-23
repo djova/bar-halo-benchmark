@@ -1,0 +1,150 @@
+{
+  "cases": [
+    {
+      "id": "s0.5-seed96101",
+      "script": "scripts/population_response/cumulative_paths.py",
+      "arguments": [
+        "--table",
+        "results/population-response/preflight-02",
+        "--s",
+        "0.5",
+        "--seed",
+        "96101",
+        "--allocation",
+        "research/population-response/validation-allocation-01.json",
+        "--dt",
+        ".0125",
+        "--record-kernel"
+      ],
+      "wall_seconds": 1800
+    },
+    {
+      "id": "s0.5-seed96102",
+      "script": "scripts/population_response/cumulative_paths.py",
+      "arguments": [
+        "--table",
+        "results/population-response/preflight-02",
+        "--s",
+        "0.5",
+        "--seed",
+        "96102",
+        "--allocation",
+        "research/population-response/validation-allocation-01.json",
+        "--dt",
+        ".0125",
+        "--record-kernel"
+      ],
+      "wall_seconds": 1800
+    },
+    {
+      "id": "s0.5-seed96103",
+      "script": "scripts/population_response/cumulative_paths.py",
+      "arguments": [
+        "--table",
+        "results/population-response/preflight-02",
+        "--s",
+        "0.5",
+        "--seed",
+        "96103",
+        "--allocation",
+        "research/population-response/validation-allocation-01.json",
+        "--dt",
+        ".0125",
+        "--record-kernel"
+      ],
+      "wall_seconds": 1800
+    },
+    {
+      "id": "s0.5-seed96104",
+      "script": "scripts/population_response/cumulative_paths.py",
+      "arguments": [
+        "--table",
+        "results/population-response/preflight-02",
+        "--s",
+        "0.5",
+        "--seed",
+        "96104",
+        "--allocation",
+        "research/population-response/validation-allocation-01.json",
+        "--dt",
+        ".0125",
+        "--record-kernel"
+      ],
+      "wall_seconds": 1800
+    },
+    {
+      "id": "s0.5-seed96105",
+      "script": "scripts/population_response/cumulative_paths.py",
+      "arguments": [
+        "--table",
+        "results/population-response/preflight-02",
+        "--s",
+        "0.5",
+        "--seed",
+        "96105",
+        "--allocation",
+        "research/population-response/validation-allocation-01.json",
+        "--dt",
+        ".0125",
+        "--record-kernel"
+      ],
+      "wall_seconds": 1800
+    },
+    {
+      "id": "s0.5-seed96106",
+      "script": "scripts/population_response/cumulative_paths.py",
+      "arguments": [
+        "--table",
+        "results/population-response/preflight-02",
+        "--s",
+        "0.5",
+        "--seed",
+        "96106",
+        "--allocation",
+        "research/population-response/validation-allocation-01.json",
+        "--dt",
+        ".0125",
+        "--record-kernel"
+      ],
+      "wall_seconds": 1800
+    },
+    {
+      "id": "s0.5-seed96107",
+      "script": "scripts/population_response/cumulative_paths.py",
+      "arguments": [
+        "--table",
+        "results/population-response/preflight-02",
+        "--s",
+        "0.5",
+        "--seed",
+        "96107",
+        "--allocation",
+        "research/population-response/validation-allocation-01.json",
+        "--dt",
+        ".0125",
+        "--record-kernel"
+      ],
+      "wall_seconds": 1800
+    },
+    {
+      "id": "s0.5-seed96108",
+      "script": "scripts/population_response/cumulative_paths.py",
+      "arguments": [
+        "--table",
+        "results/population-response/preflight-02",
+        "--s",
+        "0.5",
+        "--seed",
+        "96108",
+        "--allocation",
+        "research/population-response/validation-allocation-01.json",
+        "--dt",
+        ".0125",
+        "--record-kernel"
+      ],
+      "wall_seconds": 1800
+    }
+  ],
+  "protocol": "research/population-accuracy/KERNEL_01.md",
+  "cpu_ceiling_seconds": 14400
+}

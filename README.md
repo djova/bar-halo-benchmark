@@ -26,6 +26,30 @@ control; it need not mean reversed total torque.
 **[Explore the population result and recorded kernels](https://djova.ca/galaxy-bar/population-response)** ·
 **[Read the equations, evidence and limits](https://djova.ca/galaxy-bar/population-methods)**
 
+## A prospective population-approximation test
+
+At a preselected doubled sweep rate, a frozen kernel-weighted gradient allowance
+qualified eight candidate comparisons for 5% accuracy. Independently evolved
+populations support all eight, with no false qualified signs. The procedure
+also declines four Gaussian 128 cases that actually meet 5%: it is useful and
+conservative within this family, not a universal certificate.
+
+The [complete accuracy package](accuracy/README.md) regenerates eight new kernels
+and all fourteen independent numerical cases, preserving the original outcomes:
+
+```sh
+python -m pip install -r accuracy/requirements.lock.txt
+python reproduce_accuracy.py --out /tmp/accuracy-reproduction --workers 2
+```
+
+The original kernel and independent stages used about 1.42 and 2.31 core-hours.
+Read the [research note](accuracy/research/population-accuracy/RESEARCH_NOTE.md),
+[complete outcome](accuracy/research/population-accuracy/ACCURACY_OUTCOME_01.md),
+and [interactive error-budget explorer](https://djova.ca/galaxy-bar/population-accuracy).
+All twenty candidate comparisons share one prescribed dynamics; four halo
+self-references are counted separately. Estimated-kernel coverage and numerical
+refinement allowances remain operational assumptions.
+
 ## Matched estimator cost and narrow-population limits
 
 The new [matched-cost package](accuracy/README.md) compares raw and cumulative
@@ -35,8 +59,8 @@ and retains narrow populations where the advantage disappears. It includes all
 A short `reproduce_accuracy_audit.py --out /tmp/paired-audit` command also
 recomputes the revised paired uncertainty from exact historical sufficient
 statistics; it preserves all original operational outcomes.
-The separate new-sweep approximation diagnostic is still awaiting independent
-population outcomes; this cost release does not claim that validation passed.
+The cost and accuracy commands answer different questions. A same-seed
+reproduction of either is not another independent physical sample.
 
 ## Regenerate the measurements
 
