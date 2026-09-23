@@ -1,12 +1,12 @@
 # From moving stars to a testable inference
 
-Six short modules lead from the original galaxy views to the current methods result. Each uses the project's actual evidence. The [research article](paper.html) gives the complete argument; the [evidence guide](guide.html) is a directory, not a prerequisite.
+Six short modules lead from the original galaxy views to the current methods result. Each uses the project's actual evidence. The [research article](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/paper.md) gives the complete argument; the [evidence guide — historical website-only](https://djova.ca/galaxy-bar/guide.html) is a directory, not a prerequisite.
 
 ## 1. Stars and patterns {#learn-1}
 
 **Prerequisite:** positions, velocities and the idea of an orbit.
 
-A bar is a density pattern. Its stars need not remain together like points painted on a solid rod. In the [galaxy view](index.html#experiment), choose **Follow stars**, then switch between the inertial view and a qualified pattern frame. You are following recorded particle identities, not an artist's animation. A coherent orientation is evidence for a bar; visible elongation alone does not prove resonant trapping.
+A bar is a density pattern. Its stars need not remain together like points painted on a solid rod. In the [galaxy view — historical website-only](https://djova.ca/galaxy-bar/index.html#experiment), choose **Follow stars**, then switch between the inertial view and a qualified pattern frame. You are following recorded particle identities, not an artist's animation. A coherent orientation is evidence for a bar; visible elongation alone does not prove resonant trapping.
 
 The galaxy clock is in **Gyr** (billions of years). Density brightness is logarithmic and normalized per frame; a brighter frame is not necessarily a stronger bar. The measured cosine amplitude is a separate quantity.
 
@@ -16,7 +16,7 @@ The galaxy clock is in **Gyr** (billions of years). Density brightness is logari
 
 <details><summary>Reason it through</summary><p>No. It is a cosine-amplitude convention. Its aperture, radial coherence and higher harmonics matter. The observed S⁴G comparison uses a related amplitude convention but not an identical measurement pipeline.</p></details>
 
-[Expert definitions and observational selection](methodology.html) · [Next: orbital populations](#learn-2)
+[Expert definitions and observational selection — historical website-only](https://djova.ca/galaxy-bar/methodology.html) · [Next: orbital populations](#learn-2)
 
 ## 2. Orbital populations {#learn-2}
 
@@ -24,11 +24,15 @@ The galaxy clock is in **Gyr** (billions of years). Density brightness is logari
 
 Two galaxies can have similar density profiles but different orbital motions. A distribution function specifies population in phase space, including motion. A selected Gaussian tracer population is a physical modeling choice unless its sampling weights correct it back to the intended DF.
 
+An **orbital action** characterizes the motion around an orbit, rather than the particle's position at one instant. In an integrable, time-independent potential, actions stay constant while their conjugate angles advance; angular momentum is one familiar example. We use actions as coordinates for organizing an orbital population, within the reference potential's assumptions.
+
+For the twofold corotation resonance, the slow action is \(J_s=L_z/2\) and the slow angle is \(\psi=2(\theta_\phi-\phi_{\rm bar})\). Here \(L_z\) is specific angular momentum about the symmetry axis, \(\phi_{\rm bar}\) is the bar's orientation and \(\theta_\phi\) is an orbital angle variable. This angle variable is generally **not** the star's instantaneous geometric azimuth. The local coordinate \(x\) labels the initial slow action relative to the initial resonance, in the experiment's scaled units; the other, fast actions are held fixed.
+
 In the local experiment, the **kernel tells us what the dynamics do** at each starting action; the **weight tells us how much material is there**. Reweighting a fixed external response is legitimate because the particles do not change its prescribed field. That separation cannot simply be assumed in a live halo.
 
 **Worked example.** An exponential \(w_{\mathrm E}=e^{gx}\) and Gaussian \(w_\sigma=e^{gx-x^2/(2\sigma^2)}\) both have \(w(0)=1\) and \(w'(0)=g\). Their logarithmic slopes are \(g\) and \(g-x/\sigma^2\). A moving resonance encounters the mismatch away from zero. Same initial slope does not mean same sampled gradient.
 
-[Explore the recorded populations](population-response.html#population-explorer) · [Expert model and normalization](paper.html#model) · [Next: transfer](#learn-3)
+[Explore the recorded populations — historical website-only](https://djova.ca/galaxy-bar/population-response.html#population-explorer) · [Expert model and normalization](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/paper.md#model) · [Next: transfer](#learn-3)
 
 ## 3. Angular-momentum exchange {#learn-3}
 
@@ -40,7 +44,7 @@ The reduced experiment records the bar impulse \(B=-\int\sin\psi\,\mathrm dt\), 
 
 **Worked example — contrast versus total.** If the smooth bar transfers +10 units to a population and the noisy bar transfers +8, the contrast is −2. Both transfers remain positive; the negative contrast means suppression, not transfer back to the bar. These numbers are an arithmetic illustration, not a simulated result.
 
-[Follow the same recorded orbit and torque](response-coupling.html) · [Expert observable](paper.html#model) · [Next: resonances](#learn-4)
+[Follow the same recorded orbit and torque — historical website-only](https://djova.ca/galaxy-bar/response-coupling.html) · [Expert observable](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/paper.md#model) · [Next: resonances](#learn-4)
 
 ## 4. Resonances and a moving pattern {#learn-4}
 
@@ -48,11 +52,13 @@ The reduced experiment records the bar impulse \(B=-\int\sin\psi\,\mathrm dt\), 
 
 Weak repeated pushes can accumulate if their phases remain correlated with an orbit. Near a resonance, a particular combination of orbital and bar angles changes slowly. Some trajectories librate around a phase; others circulate. As the imposed bar slows, the resonant action moves. Trapping, crossing and population gradients can then influence transfer.
 
-The local slow-angle equations are \(\mathrm d\psi=-j\,\mathrm dt\) and \(\mathrm dj=(-\sin\psi-s)\,\mathrm dt+\sqrt{2D}\,\mathrm dW\). The term −s shifts the coordinate origin; it is not a physical bar torque. At constant coefficients, a phase-locked solution requires \(|s|\leq1\) because \(|\sin\psi|\leq1\). That condition does not say what fraction of a particular population becomes trapped.
+The local slow-angle equations are \(\mathrm d\psi=-j\,\mathrm dt\) and \(\mathrm dj=(-\sin\psi-s)\,\mathrm dt+\sqrt{2D}\,\mathrm dW_t\). The symbol \(W_t\) denotes a standard Wiener process: over a time step \(\Delta t\), its independent random increment has mean zero and variance \(\Delta t\). Thus the noise impulse has variance \(2D\Delta t\). The term −s shifts the coordinate origin; it is not a physical bar torque.
 
-**Worked example.** At s = 1.2 no constant phase solves sinψ = −s; at s = 0.25 such phases exist. Neither calculation alone determines the sign of the noise-induced total transfer.
+First turn off the noise, \(D=0\). A phase-locked equilibrium requires \(j=0\) and \(\sin\psi=-s\). For \(|s|<1\), the deterministic constant-coefficient system has a stable libration region; at \(|s|=1\), it reaches a degenerate boundary. With noise present, this structure helps organize temporary trapping, but does not imply permanent phase locking. Escape and residence times are separate stochastic questions.
 
-[Recorded resonance trajectories](noise-sweep.html#paths) · [Expert local model](paper.html#model) · [Next: noise and inference](#learn-5)
+**Worked example.** With D = 0, at s = 1.2 no constant phase solves sinψ = −s; at s = 0.25 such phases exist. Neither calculation alone determines the sign of the noise-induced total transfer.
+
+[Recorded resonance trajectories — historical website-only](https://djova.ca/galaxy-bar/noise-sweep.html#paths) · [Expert local model](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/paper.md#model) · [Next: noise and inference](#learn-5)
 
 ## 5. Noise and numerical inference {#learn-5}
 
@@ -73,7 +79,7 @@ At \(\gamma=0.25\) and lags 1, 2, 4, this is about 0.8848D, 0.7869D and 0.6321D.
 
 <details><summary>Reason it through</summary><p>No. They share dynamics and random histories. The independent sampling units in the kernel uncertainty are the eight separately seeded batches. Retaining pairing helps estimate contrasts but does not create independence.</p></details>
 
-[Retained correction and synthetic controls](response.html) · [Expert uncertainty](paper.html#accuracy) · [Next: the contribution](#learn-6)
+[Retained correction and synthetic controls — historical website-only](https://djova.ca/galaxy-bar/response.html) · [Expert uncertainty](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/paper.md#accuracy) · [Next: the contribution](#learn-6)
 
 ## 6. When does an approximation preserve the answer? {#learn-6}
 
@@ -83,11 +89,11 @@ The primitive kernel \(Q_{\mathrm p}\) weights the initial population gradient: 
 
 **Worked example — reconstruct the sign.** The original early Gaussian gives approximately \(-0.011058+0.012565=+0.001508\). The halo gives \(-0.004835+0.000934=-0.003901\). Rounding explains the final displayed digit. These are **gradient-coordinate contributions**, not two literal orbital cohorts. Matching central density and slope did not preserve their balance.
 
-[Inspect Gaussian 128's conservative rejection](paper.html?population=gaussian128&time=10&window=40#interactive-decision). Its independent intrinsic error is within 5%, but its absolute allowance declines to certify it. That is an informative limitation of the rule, not evidence that the recorded response was wrong.
+[Inspect Gaussian 128's conservative rejection](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/paper.md?population=gaussian128&time=10&window=40#interactive-decision). Its independent intrinsic error is within 5%, but its absolute allowance declines to certify it. That is an informative limitation of the rule, not evidence that the recorded response was wrong.
 
 **What has been learned?** Population approximations can change a finite-time answer; some inexpensive approximations work closely here; the kernel can expose the mismatch and assess its error with stated numerical assumptions. The eight supported qualifications share one new dynamical condition. No full-halo or SIDM prediction follows.
 
-[Read the complete article](paper.html) · [Check the evidence yourself](reproduce.html)
+[Read the complete article](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/paper.md) · [Check the evidence yourself](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/reproduce.md)
 
 ## Keep symbols and clocks separate {#notation}
 

@@ -35,7 +35,7 @@ The implemented frequency gradient is negative. In dimensionless slow action \(j
 ```math
 \begin{aligned}
 \mathrm d\psi &= -j\,\mathrm dt,\\
-\mathrm dj &= (-\sin\psi-s)\,\mathrm dt + \sqrt{2D}\,\mathrm dW,\\
+\mathrm dj &= (-\sin\psi-s)\,\mathrm dt + \sqrt{2D}\,\mathrm dW_t,\\
 D &= \frac{2\eta}{\pi}.
 \end{aligned}
 ```
@@ -133,7 +133,7 @@ The new kernel cost about 5,105 worker CPU-seconds; the six-profile diagnostic t
 
 ## Estimating a small response efficiently {#estimator}
 
-Let \(F'=w\) and \(y=j+sT-W=x+B\). Under the stated external additive noise, uniform initial phase and canonical evolution, a zero-integral primitive identity gives:
+Let \(F'=w\). Here \(W_t\) is a standard Wiener process, with independent increments of mean zero and variance equal to the elapsed time. Define the accumulated action-noise impulse \(\Xi_T=\sqrt{2D}\,W_T\), starting from \(W_0=0\), so that \(y=j+sT-\Xi_T=x+B\). Under the stated external additive noise, uniform initial phase and canonical evolution, a zero-integral primitive identity gives:
 
 <div class="equation-label" id="EQ-EST-01">EQ-EST-01 · Cumulative-remainder identity</div>
 
@@ -144,7 +144,7 @@ Let \(F'=w\) and \(y=j+sT-W=x+B\). Under the stated external additive noise, uni
 \end{aligned}
 ```
 
-The right side estimates a nonlinear remainder, whose leading term for a slowly varying weight involves \(w'B^2/2\). The first-order contribution has known zero ensemble integral. The derivation requires more than area preservation alone. Auxiliary initial-action support must extend beyond the physical window by the maximum bar impulse; those samples do not add physical halo mass. Do not transplant this identity to action-dependent forcing/noise, nonuniform phases or live response without another derivation. [Complete derivation and support restrictions](https://github.com/djova/bar-halo-benchmark/blob/cdb30b5b2f350d2f3de6831995b83f281fe2974e/accuracy/research/population-response/CUMULATIVE_IDENTITY.md).
+The finite-displacement control \(F(x+B)-F(x)\) has zero integrated expectation under the stated assumptions. Subtracting it from the weighted impulse \(w(x)B\) leaves the negative nonlinear remainder. The first-order weighted impulse itself is **not** assumed to have zero expectation: its integrated expectation is the physical signal. The remainder begins with \(w'B^2/2\) for a slowly varying weight; the estimator uses its negative. The derivation requires more than area preservation alone. Auxiliary initial-action support must extend beyond the physical window by the maximum bar impulse; those samples do not add physical halo mass. Do not transplant this identity to action-dependent forcing/noise, nonuniform phases or live response without another derivation. [Complete derivation and support restrictions](methods/CUMULATIVE_IDENTITY.md).
 
 {{CLAIM:EST-01}}
 

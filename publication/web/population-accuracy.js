@@ -1,3 +1,4 @@
+const assessmentLabel = status => ({supported:'independently within 5%',contradicted:'independently outside 5%',inconclusive:'independent accuracy inconclusive',unqualified_numerics:'independent numerical qualification unavailable'}[status] ?? status);
 const $=id=>document.getElementById(id);
 const ns='http://www.w3.org/2000/svg';
 const labels={halo:'Reference halo',exponential:'Slope-matched exponential',gaussian8:'Gaussian σ = 8',gaussian32:'Gaussian σ = 32',gaussian128:'Gaussian σ = 128',gaussian512:'Gaussian σ = 512'};
@@ -78,7 +79,7 @@ function render(){
  $('accuracy-response').textContent=fmt(f.approximate.mean);$('accuracy-allowance').textContent=fmt(f.approximation_allowance);
  $('accuracy-actual').textContent=a?fmt(a.paired_population_error):'Pending';
  $('accuracy-actual-note').textContent=a?`approximation − halo, ±${fmt(a.paired_numerical_proxy)} numerical proxy`:'independent evolution required';
- $('accuracy-verdict').textContent=`${qualified?'5% accuracy qualified in advance':'5% accuracy not qualified'}${a?` · independent test ${a.independent_five_percent_test}`:' · independent test pending'}`;
+ $('accuracy-verdict').textContent=`${qualified?'5% accuracy qualified in advance':'5% accuracy not qualified'}${a?` · ${assessmentLabel(a.independent_five_percent_test)}`:' · independent test pending'}`;
  $('accuracy-verdict').parentElement.dataset.qualified=String(qualified);
  $('accuracy-verdict').parentElement.dataset.assessment=a?(qualified?a.independent_five_percent_test:'unqualified'):'pending';
  $('accuracy-verdict-detail').textContent=`${labels[f.population]}, T = ${f.tau}, cutoff ${f.cutoff}. Sign ${f.sign_qualification==='unqualified'?'not qualified':f.sign_qualification+' qualified'} by the frozen rule. ${a?`Independent sign assessment: ${a.sign_test.replaceAll('_',' ')}.`:'No prospective accuracy success is claimed before the independent test.'} ${f.five_percent_across_windows_qualified?'The frozen 5% rule also qualifies the shared-window comparison.':'The shared-window 5% rule does not qualify this comparison.'}`;
@@ -96,7 +97,7 @@ function cost(){
 }
 function table(){
  const tbody=$('accuracy-all');tbody.replaceChildren();
- for(const r of data.rows){const f=r.forecast,a=r.independent,tr=document.createElement('tr');for(const s of [`${labels[f.population]} / T${f.tau} / ${f.cutoff}`,f.five_percent_qualified?'Qualified':'Not qualified',a?a.independent_five_percent_test:'Pending',a?a.sign_test.replaceAll('_',' '):'Pending']){const td=document.createElement('td');td.textContent=s;tr.append(td);}tbody.append(tr);}
+ for(const r of data.rows){const f=r.forecast,a=r.independent,tr=document.createElement('tr');for(const s of [`${labels[f.population]} / T${f.tau} / ${f.cutoff}`,f.five_percent_qualified?'Qualified':'Not qualified',a?assessmentLabel(a.independent_five_percent_test):'Pending',a?a.sign_test.replaceAll('_',' '):'Pending']){const td=document.createElement('td');td.textContent=s;tr.append(td);}tbody.append(tr);}
 }
 function fail(error){console.error(error);$('accuracy-load').dataset.error='true';$('accuracy-load').textContent='The recorded evidence could not be loaded. Reload the page or use the linked methods and downloadable records; no result is substituted.';$('accuracy-controls').disabled=true;$('accuracy-cost-controls').disabled=true;}
 async function start(){

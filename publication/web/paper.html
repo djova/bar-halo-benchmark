@@ -1,9 +1,9 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="publication-version" content="2026-09-23.2"><meta name="description" content="Versioned Galaxy Bar research: population-selection bias, response kernels and numerical accuracy under a prescribed local resonance."><title>Finite-time population bias in noisy sweeping resonances · Galaxy Bar</title><link rel="stylesheet" href="story.css"><link rel="stylesheet" href="population-response.css"><link rel="stylesheet" href="population-accuracy.css"><link rel="stylesheet" href="publication.css"><link rel="alternate" type="application/json" href="manifest.json" title="Publication manifest"></head><body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="./">Galaxy Bar</a></header><main id="main" class="publication population-publication accuracy-publication"><h1>Finite-time population bias in noisy sweeping resonances</h1>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="publication-version" content="2026-09-23.3"><meta name="description" content="Versioned Galaxy Bar research: population-selection bias, response kernels and numerical accuracy under a prescribed local resonance."><title>Finite-time population bias in noisy sweeping resonances · Galaxy Bar</title><link rel="stylesheet" href="story.css"><link rel="stylesheet" href="population-response.css"><link rel="stylesheet" href="population-accuracy.css"><link rel="stylesheet" href="publication.css"><link rel="alternate" type="application/json" href="manifest.json" title="Publication manifest"></head><body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="./">Galaxy Bar</a></header><main id="main" class="publication population-publication accuracy-publication"><h1>Finite-time population bias in noisy sweeping resonances</h1>
 <p><em>A response-kernel benchmark and an operational test of population approximations</em></p>
-<p class="publication-meta">Canonical article · Release 2026-09-23.2 · Not externally reviewed · <a href="reproduce.html#licenses">Human maintainer and AI disclosure</a></p>
+<p class="publication-meta">Canonical article · Release 2026-09-23.3 · Not externally reviewed · <a href="reproduce.html#licenses">Human maintainer and AI disclosure</a></p>
 
 <h2 id="abstract">Abstract</h2>
-<p>A local resonance calculation must specify which orbital population its dynamics act upon. We demonstrate <strong>finite-time population-selection bias in a prescribed noisy sweeping-resonance model</strong>, and provide a reproducible response-kernel diagnostic and variance-reduced estimator for assessing that bias. At matched central density and slope, a selected Gaussian and reference-halo weighting in the tested action slice give opposite early noise effects. Their later suppression magnitudes differ by a factor of <strong>4.735323</strong>. A slope-matched exponential closely follows the halo calculation. At one new sweep rate, all <strong>eight advance 5% qualifications</strong> survive independent numerical comparison; four other accurate comparisons are conservatively rejected.</p>
+<p>A local resonance calculation must specify which orbital population its dynamics act upon. We demonstrate <strong>finite-time population-selection bias in a prescribed noisy sweeping-resonance model</strong>, and provide a reproducible response-kernel diagnostic and variance-reduced estimator for assessing that bias. At matched central density and slope, a selected Gaussian and reference-halo weighting in the tested action slice give opposite early noise effects. Their later suppression magnitudes differ by a factor of <strong><span data-publication-scalar="population_late_magnitude_ratio">4.735323</span></strong>. A slope-matched exponential closely follows the halo calculation. At one new sweep rate, all <strong>eight advance 5% qualifications</strong> survive independent numerical comparison; four other accurate comparisons are conservatively rejected.</p>
 <p>This is a bounded computational-methods result. It does not establish a new physical torque mechanism, a complete halo torque, or a validated prediction for a live galaxy. The galaxy simulations are collisionless. The local noise model is not a calibrated SIDM collision operator. <strong>These experiments do not test CDM against SIDM.</strong></p>
 <p><a href="learn.html">Learn the foundations</a> · <a href="reproduce.html">Inspect and reproduce</a> · <a href="claims.json">Claim registry</a> · <a href="paper.md">Download this article</a></p>
 <h2 id="models">Which physical system is being discussed?</h2>
@@ -60,7 +60,7 @@
 
 <pre><code class="language-math">\begin{aligned}
 \mathrm d\psi &amp;= -j\,\mathrm dt,\\
-\mathrm dj &amp;= (-\sin\psi-s)\,\mathrm dt + \sqrt{2D}\,\mathrm dW,\\
+\mathrm dj &amp;= (-\sin\psi-s)\,\mathrm dt + \sqrt{2D}\,\mathrm dW_t,\\
 D &amp;= \frac{2\eta}{\pi}.
 \end{aligned}
 </code></pre>
@@ -100,49 +100,49 @@ w_{\sigma}(x)&amp;=\exp\!\left(gx-\frac{x^2}{2\sigma^2}\right).
 <tr>
 <td>Gaussian σ=8</td>
 <td>10</td>
-<td>0.00150764622</td>
-<td>0.00128939881</td>
-<td>0.00172589363</td>
+<td><span data-record="POP-gaussian-T10" data-field="response">0.00150764622</span></td>
+<td><span data-record="POP-gaussian-T10" data-field="ci95_low">0.00128939881</span></td>
+<td><span data-record="POP-gaussian-T10" data-field="ci95_high">0.00172589363</span></td>
 <td>yes</td>
 </tr>
 <tr>
 <td>Reference halo</td>
 <td>10</td>
-<td>-0.00390067586</td>
-<td>-0.00396285817</td>
-<td>-0.00383849356</td>
+<td><span data-record="POP-halo-T10" data-field="response">-0.00390067586</span></td>
+<td><span data-record="POP-halo-T10" data-field="ci95_low">-0.00396285817</span></td>
+<td><span data-record="POP-halo-T10" data-field="ci95_high">-0.00383849356</span></td>
 <td>yes</td>
 </tr>
 <tr>
 <td>Slope-matched exponential</td>
 <td>10</td>
-<td>-0.0038987336</td>
-<td>-0.00396095025</td>
-<td>-0.00383651696</td>
+<td><span data-record="POP-exponential-T10" data-field="response">-0.0038987336</span></td>
+<td><span data-record="POP-exponential-T10" data-field="ci95_low">-0.00396095025</span></td>
+<td><span data-record="POP-exponential-T10" data-field="ci95_high">-0.00383651696</span></td>
 <td>yes</td>
 </tr>
 <tr>
 <td>Gaussian σ=8</td>
 <td>20</td>
-<td>-0.161949145</td>
-<td>-0.162575063</td>
-<td>-0.161323226</td>
+<td><span data-record="POP-gaussian-T20" data-field="response">-0.161949145</span></td>
+<td><span data-record="POP-gaussian-T20" data-field="ci95_low">-0.162575063</span></td>
+<td><span data-record="POP-gaussian-T20" data-field="ci95_high">-0.161323226</span></td>
 <td>yes</td>
 </tr>
 <tr>
 <td>Reference halo</td>
 <td>20</td>
-<td>-0.0342002314</td>
-<td>-0.034326595</td>
-<td>-0.0340738678</td>
+<td><span data-record="POP-halo-T20" data-field="response">-0.0342002314</span></td>
+<td><span data-record="POP-halo-T20" data-field="ci95_low">-0.034326595</span></td>
+<td><span data-record="POP-halo-T20" data-field="ci95_high">-0.0340738678</span></td>
 <td>yes</td>
 </tr>
 <tr>
 <td>Slope-matched exponential</td>
 <td>20</td>
-<td>-0.0342234835</td>
-<td>-0.0343499518</td>
-<td>-0.0340970151</td>
+<td><span data-record="POP-exponential-T20" data-field="response">-0.0342234835</span></td>
+<td><span data-record="POP-exponential-T20" data-field="ci95_low">-0.0343499518</span></td>
+<td><span data-record="POP-exponential-T20" data-field="ci95_high">-0.0340970151</span></td>
 <td>yes</td>
 </tr>
 </tbody>
@@ -178,9 +178,7 @@ K_B(x)&amp;=\mathbb E[B_{\mathrm{noise}}-B_{\mathrm{smooth}}\mid x],\\
 
 <p><strong>Figure F-ACC-01.</strong> All twenty candidates at one new condition. Orange circles show full forecast allowances; blue crosses show approximate-kernel forecast discrepancy against the independently evolved halo, including its numerical proxy. Both are scaled by the frozen 5% target. This discrepancy is distinct from <strong>intrinsic population error</strong>, R[v] − R[h], which the paired independent calculation also measures. The four halo self-references are excluded from candidate counts. <a href="#table-accuracy">Complete table</a> · <a href="datasets.json">DS-ACC metadata</a>.</p>
 <h3 id="interactive-decision">Interrogate the decision</h3>
-<section id="accuracy-explorer"><h2>Can we qualify the approximation in advance?</h2><p>The prospective experiment doubled the sweep to <strong>s = 0.5</strong>, with the same noise η = 0.1, and computed its own response kernel. All profiles, thresholds and numerical forecasts were fixed before independent evolution.</p>
-<p class="population-finding"><strong>All eight advance 5% qualifications are independently supported.</strong> The exponential and the broadest Gaussian pass at both recorded times and physical windows. The rule is conservative: it declines four width-128 comparisons that independently meet 5%. No qualified sign is contradicted.</p><p>These are twenty correlated candidate comparisons under one new dynamics, plus four halo self-references. All new-condition responses are negative, so this test does not cover a prospective sign change. The numerical allowances remain practical proxies, not rigorous bounds. <a href="diagnostics/population-accuracy/ACCURACY_OUTCOME_01.md">Read every outcome and the stopping decision ↗</a></p>
-<p id="accuracy-load" role="status">Published default: exponential, T = 20, cutoff 40. Interactive plots load below; complete values are in the static tables.</p>
+<section id="accuracy-explorer"><h3>Inspect a recorded comparison</h3><p id="accuracy-load" role="status">Published default: exponential, T = 20, cutoff 40. Interactive plots load below; complete values are in the static tables.</p>
 <fieldset class="population-controls" id="accuracy-controls" disabled><legend>One new dynamical condition · recorded comparisons</legend><label>Approximation<select id="accuracy-population"><option value="exponential">Slope-matched exponential</option><option value="gaussian8">Gaussian, width 8</option><option value="gaussian32">Gaussian, width 32</option><option value="gaussian128">Gaussian, width 128</option><option value="gaussian512">Gaussian, width 512</option><option value="halo">Halo self-reference</option></select></label><label>Elapsed model time<select id="accuracy-time"><option value="20">T = 20</option><option value="10">T = 10</option></select></label><label>Physical window<select id="accuracy-window"><option value="40">Plateau 24 · cutoff 40</option><option value="64">Plateau 48 · cutoff 64</option></select></label></fieldset>
 <p class="population-coordinate">Every accuracy plot and decision uses this selection. There are only two saved endpoints; this control does not animate unrecorded evolution. Width is in the local action coordinate x. The separate cost benchmark below has its own controls and earlier dynamics.</p>
 <div class="accuracy-verdict" aria-live="polite"><span class="eyebrow">FROZEN FORECAST → INDEPENDENT CHECK</span><h3 id="accuracy-verdict">5% qualified in advance · independent test supported</h3><p id="accuracy-verdict-detail"></p></div>
@@ -188,7 +186,7 @@ K_B(x)&amp;=\mathbb E[B_{\mathrm{noise}}-B_{\mathrm{smooth}}\mid x],\\
 <article class="population-plot-card"><h3>Does the error fit the accuracy budget?</h3><svg id="accuracy-budget" role="img" aria-label="Predicted error allowance and independent error compared with the five-percent target"></svg><p id="accuracy-budget-copy"></p><p>The target uses a conservative lower estimate of the halo response. Numerical refinements are practical error proxies. Near zero, a percentage can be undefined. An unqualified approximation is not necessarily inaccurate.</p></article>
 <article class="population-plot-card"><h3>Where does the allowance come from?</h3><p>The <span class="accuracy-orange">orange area</span> adds absolute gradient mismatch weighted by the uncertain kernel. The <span class="accuracy-blue">blue signed contribution</span> can cancel between regions. A large orange area can therefore reject an approximation whose actual error is small.</p><svg id="accuracy-gradient" role="img" aria-label="Spatial contributions to the gradient mismatch allowance and the signed population error"></svg><label class="accuracy-radius">Inspect contributions inside |x| ≤ <output id="accuracy-radius-value">8</output><input id="accuracy-radius" type="range" min="0" max="64" step="0.5" value="8"></label><p id="accuracy-region" class="population-cursor"></p><p>The shaded region selects recorded gradient-coordinate bins, not a cohort of orbits. The full allowance also includes a separately measured kernel-mesh change. <a href="population-methods.html#kernel">Why the primitive kernel measures a gradient ↗</a></p></article>
 <details id="accuracy-ingredients"><summary>Inspect the population gradient and the dynamical sensitivity separately</summary><p id="accuracy-cancellation"></p><div class="population-plot-card"><h3>1. How quickly does the population change?</h3><svg id="accuracy-slopes" role="img" aria-label="Initial population gradients: reference halo and approximation over the same action coordinate"></svg><p><span class="accuracy-blue">Blue: halo gradient.</span> <span class="accuracy-orange">Orange: approximate gradient.</span> They match at the initial resonance x = 0; curvature can separate them elsewhere. The strong gradients near the ends belong to the common physical taper.</p></div><div class="population-plot-card"><h3>2. Where is the response sensitive?</h3><svg id="accuracy-kernel" role="img" aria-label="Mean primitive kernel and expanded absolute kernel envelope over the same action coordinate"></svg><p>The signed mean kernel is blue. The orange envelope adds simultaneous sampling and paired timestep allowances. It is the same dynamical kernel for every population; only the weighting changes.</p><p>All three plots share the selected time, physical window and highlighted action region. Curves here are averages within display bins. The error product is formed on the original fine cells before those contributions are summed for display; multiplying these coarse curves would not reproduce it exactly.</p></div></details>
-<details><summary>Inspect every forecast and independent outcome</summary><p>Twenty candidate comparisons share one dynamical kernel; four halo self-comparisons are numerical references. They are not 24 independent physical discoveries.</p><div class="population-table-wrap" tabindex="0" aria-label="All recorded approximation tests"><div class="publication-table" tabindex="0" role="region" aria-label="All recorded operational decisions"><table><caption>All recorded operational decisions</caption><thead><tr><th>Population / time / cutoff</th><th>Frozen 5% qualification</th><th>Independent 5% assessment</th><th>Sign assessment</th></tr></thead><tbody id="accuracy-all"><tr><td>Reference halo / T10 / 40</td><td>Qualified</td><td>supported</td><td>supported</td></tr><tr><td>Slope-matched exponential / T10 / 40</td><td>Qualified</td><td>supported</td><td>supported</td></tr><tr><td>Gaussian σ=8 / T10 / 40</td><td>Not qualified</td><td>contradicted</td><td>not qualified</td></tr><tr><td>Gaussian σ=32 / T10 / 40</td><td>Not qualified</td><td>contradicted</td><td>supported</td></tr><tr><td>Gaussian σ=128 / T10 / 40</td><td>Not qualified</td><td>supported</td><td>supported</td></tr><tr><td>Gaussian σ=512 / T10 / 40</td><td>Qualified</td><td>supported</td><td>supported</td></tr><tr><td>Reference halo / T10 / 64</td><td>Qualified</td><td>supported</td><td>supported</td></tr><tr><td>Slope-matched exponential / T10 / 64</td><td>Qualified</td><td>supported</td><td>supported</td></tr><tr><td>Gaussian σ=8 / T10 / 64</td><td>Not qualified</td><td>contradicted</td><td>not qualified</td></tr><tr><td>Gaussian σ=32 / T10 / 64</td><td>Not qualified</td><td>contradicted</td><td>not qualified</td></tr><tr><td>Gaussian σ=128 / T10 / 64</td><td>Not qualified</td><td>supported</td><td>supported</td></tr><tr><td>Gaussian σ=512 / T10 / 64</td><td>Qualified</td><td>supported</td><td>supported</td></tr><tr><td>Reference halo / T20 / 40</td><td>Qualified</td><td>supported</td><td>supported</td></tr><tr><td>Slope-matched exponential / T20 / 40</td><td>Qualified</td><td>supported</td><td>supported</td></tr><tr><td>Gaussian σ=8 / T20 / 40</td><td>Not qualified</td><td>contradicted</td><td>not qualified</td></tr><tr><td>Gaussian σ=32 / T20 / 40</td><td>Not qualified</td><td>contradicted</td><td>supported</td></tr><tr><td>Gaussian σ=128 / T20 / 40</td><td>Not qualified</td><td>supported</td><td>supported</td></tr><tr><td>Gaussian σ=512 / T20 / 40</td><td>Qualified</td><td>supported</td><td>supported</td></tr><tr><td>Reference halo / T20 / 64</td><td>Qualified</td><td>supported</td><td>supported</td></tr><tr><td>Slope-matched exponential / T20 / 64</td><td>Qualified</td><td>supported</td><td>supported</td></tr><tr><td>Gaussian σ=8 / T20 / 64</td><td>Not qualified</td><td>contradicted</td><td>not qualified</td></tr><tr><td>Gaussian σ=32 / T20 / 64</td><td>Not qualified</td><td>contradicted</td><td>supported</td></tr><tr><td>Gaussian σ=128 / T20 / 64</td><td>Not qualified</td><td>supported</td><td>supported</td></tr><tr><td>Gaussian σ=512 / T20 / 64</td><td>Qualified</td><td>supported</td><td>supported</td></tr></tbody></table></div></div></details>
+<details><summary>Inspect every forecast and independent outcome</summary><p>Twenty candidate comparisons share one dynamical kernel; four halo self-comparisons are numerical references. They are not 24 independent physical discoveries.</p><div class="population-table-wrap" tabindex="0" aria-label="All recorded approximation tests"><div class="publication-table" tabindex="0" role="region" aria-label="All recorded operational decisions"><table><caption>All recorded operational decisions</caption><thead><tr><th>Population / time / cutoff</th><th>Frozen 5% qualification</th><th>Independent 5% assessment</th><th>Sign assessment</th></tr></thead><tbody id="accuracy-all"><tr><td>Reference halo / T10 / 40</td><td>Qualified</td><td>independently within 5%</td><td>supported</td></tr><tr><td>Slope-matched exponential / T10 / 40</td><td>Qualified</td><td>independently within 5%</td><td>supported</td></tr><tr><td>Gaussian σ=8 / T10 / 40</td><td>Not qualified</td><td>independently outside 5%</td><td>not qualified</td></tr><tr><td>Gaussian σ=32 / T10 / 40</td><td>Not qualified</td><td>independently outside 5%</td><td>supported</td></tr><tr><td>Gaussian σ=128 / T10 / 40</td><td>Not qualified</td><td>independently within 5%</td><td>supported</td></tr><tr><td>Gaussian σ=512 / T10 / 40</td><td>Qualified</td><td>independently within 5%</td><td>supported</td></tr><tr><td>Reference halo / T10 / 64</td><td>Qualified</td><td>independently within 5%</td><td>supported</td></tr><tr><td>Slope-matched exponential / T10 / 64</td><td>Qualified</td><td>independently within 5%</td><td>supported</td></tr><tr><td>Gaussian σ=8 / T10 / 64</td><td>Not qualified</td><td>independently outside 5%</td><td>not qualified</td></tr><tr><td>Gaussian σ=32 / T10 / 64</td><td>Not qualified</td><td>independently outside 5%</td><td>not qualified</td></tr><tr><td>Gaussian σ=128 / T10 / 64</td><td>Not qualified</td><td>independently within 5%</td><td>supported</td></tr><tr><td>Gaussian σ=512 / T10 / 64</td><td>Qualified</td><td>independently within 5%</td><td>supported</td></tr><tr><td>Reference halo / T20 / 40</td><td>Qualified</td><td>independently within 5%</td><td>supported</td></tr><tr><td>Slope-matched exponential / T20 / 40</td><td>Qualified</td><td>independently within 5%</td><td>supported</td></tr><tr><td>Gaussian σ=8 / T20 / 40</td><td>Not qualified</td><td>independently outside 5%</td><td>not qualified</td></tr><tr><td>Gaussian σ=32 / T20 / 40</td><td>Not qualified</td><td>independently outside 5%</td><td>supported</td></tr><tr><td>Gaussian σ=128 / T20 / 40</td><td>Not qualified</td><td>independently within 5%</td><td>supported</td></tr><tr><td>Gaussian σ=512 / T20 / 40</td><td>Qualified</td><td>independently within 5%</td><td>supported</td></tr><tr><td>Reference halo / T20 / 64</td><td>Qualified</td><td>independently within 5%</td><td>supported</td></tr><tr><td>Slope-matched exponential / T20 / 64</td><td>Qualified</td><td>independently within 5%</td><td>supported</td></tr><tr><td>Gaussian σ=8 / T20 / 64</td><td>Not qualified</td><td>independently outside 5%</td><td>not qualified</td></tr><tr><td>Gaussian σ=32 / T20 / 64</td><td>Not qualified</td><td>independently outside 5%</td><td>supported</td></tr><tr><td>Gaussian σ=128 / T20 / 64</td><td>Not qualified</td><td>independently within 5%</td><td>supported</td></tr><tr><td>Gaussian σ=512 / T20 / 64</td><td>Qualified</td><td>independently within 5%</td><td>supported</td></tr></tbody></table></div></div></details>
 <noscript><p>The interactive controls require JavaScript. Read the <a href="diagnostics/population-accuracy/PLAN.md">frozen protocol</a> and <a href="population-methods.html#approximation-accuracy">scientific methods</a> without it.</p></noscript></section>
 
 <h3 id="table-accuracy">Complete accuracy values</h3>
@@ -207,219 +205,219 @@ K_B(x)&amp;=\mathbb E[B_{\mathrm{noise}}-B_{\mathrm{smooth}}\mid x],\\
 <tbody>
 <tr>
 <td><a id="ACC-halo-T10-W40" href="paper.html?population=halo&amp;time=10&amp;window=40#interactive-decision">Reference halo · 10 · 40</a> (reference)</td>
-<td>-0.00886738702</td>
-<td>-0.0088400079</td>
-<td>0 ± 0</td>
-<td>-2.73791146e-05</td>
-<td>0.000113244174 / 0.000437707142</td>
-<td>Qualified / supported</td>
+<td><span data-record="ACC-halo-T10-W40" data-field="forecast">-0.00886738702</span></td>
+<td><span data-record="ACC-halo-T10-W40" data-field="independent_response">-0.0088400079</span></td>
+<td><span data-record="ACC-halo-T10-W40" data-field="intrinsic_population_error">0</span> ± <span data-record="ACC-halo-T10-W40" data-field="intrinsic_error_proxy">0</span></td>
+<td><span data-record="ACC-halo-T10-W40" data-field="forecast_minus_independent_halo">-2.73791146e-05</span></td>
+<td><span data-record="ACC-halo-T10-W40" data-field="full_allowance">0.000113244174</span> / <span data-record="ACC-halo-T10-W40" data-field="target">0.000437707142</span></td>
+<td>Qualified / independently within 5%</td>
 </tr>
 <tr>
 <td><a id="ACC-exponential-T10-W40" href="paper.html?population=exponential&amp;time=10&amp;window=40#interactive-decision">Slope-matched exponential · 10 · 40</a></td>
-<td>-0.0088723455</td>
-<td>-0.00884491869</td>
-<td>-4.91078514e-06 ± 7.70468092e-09</td>
-<td>-3.23375997e-05</td>
-<td>0.000148862064 / 0.000437707142</td>
-<td>Qualified / supported</td>
+<td><span data-record="ACC-exponential-T10-W40" data-field="forecast">-0.0088723455</span></td>
+<td><span data-record="ACC-exponential-T10-W40" data-field="independent_response">-0.00884491869</span></td>
+<td><span data-record="ACC-exponential-T10-W40" data-field="intrinsic_population_error">-4.91078514e-06</span> ± <span data-record="ACC-exponential-T10-W40" data-field="intrinsic_error_proxy">7.70468092e-09</span></td>
+<td><span data-record="ACC-exponential-T10-W40" data-field="forecast_minus_independent_halo">-3.23375997e-05</span></td>
+<td><span data-record="ACC-exponential-T10-W40" data-field="full_allowance">0.000148862064</span> / <span data-record="ACC-exponential-T10-W40" data-field="target">0.000437707142</span></td>
+<td>Qualified / independently within 5%</td>
 </tr>
 <tr>
 <td><a id="ACC-gaussian8-T10-W40" href="paper.html?population=gaussian8&amp;time=10&amp;window=40#interactive-decision">Gaussian σ=8 · 10 · 40</a></td>
-<td>-0.0398135751</td>
-<td>-0.0396109614</td>
-<td>-0.0307709535 ± 3.05130755e-05</td>
-<td>-0.0309735672</td>
-<td>0.113123884 / 0.000437707142</td>
-<td>Not qualified / contradicted</td>
+<td><span data-record="ACC-gaussian8-T10-W40" data-field="forecast">-0.0398135751</span></td>
+<td><span data-record="ACC-gaussian8-T10-W40" data-field="independent_response">-0.0396109614</span></td>
+<td><span data-record="ACC-gaussian8-T10-W40" data-field="intrinsic_population_error">-0.0307709535</span> ± <span data-record="ACC-gaussian8-T10-W40" data-field="intrinsic_error_proxy">3.05130755e-05</span></td>
+<td><span data-record="ACC-gaussian8-T10-W40" data-field="forecast_minus_independent_halo">-0.0309735672</span></td>
+<td><span data-record="ACC-gaussian8-T10-W40" data-field="full_allowance">0.113123884</span> / <span data-record="ACC-gaussian8-T10-W40" data-field="target">0.000437707142</span></td>
+<td>Not qualified / independently outside 5%</td>
 </tr>
 <tr>
 <td><a id="ACC-gaussian32-T10-W40" href="paper.html?population=gaussian32&amp;time=10&amp;window=40#interactive-decision">Gaussian σ=32 · 10 · 40</a></td>
-<td>-0.0103457493</td>
-<td>-0.0103050984</td>
-<td>-0.00146509045 ± 2.23114269e-06</td>
-<td>-0.00150574144</td>
-<td>0.0100394536 / 0.000437707142</td>
-<td>Not qualified / contradicted</td>
+<td><span data-record="ACC-gaussian32-T10-W40" data-field="forecast">-0.0103457493</span></td>
+<td><span data-record="ACC-gaussian32-T10-W40" data-field="independent_response">-0.0103050984</span></td>
+<td><span data-record="ACC-gaussian32-T10-W40" data-field="intrinsic_population_error">-0.00146509045</span> ± <span data-record="ACC-gaussian32-T10-W40" data-field="intrinsic_error_proxy">2.23114269e-06</span></td>
+<td><span data-record="ACC-gaussian32-T10-W40" data-field="forecast_minus_independent_halo">-0.00150574144</span></td>
+<td><span data-record="ACC-gaussian32-T10-W40" data-field="full_allowance">0.0100394536</span> / <span data-record="ACC-gaussian32-T10-W40" data-field="target">0.000437707142</span></td>
+<td>Not qualified / independently outside 5%</td>
 </tr>
 <tr>
 <td><a id="ACC-gaussian128-T10-W40" href="paper.html?population=gaussian128&amp;time=10&amp;window=40#interactive-decision">Gaussian σ=128 · 10 · 40</a></td>
-<td>-0.00896218156</td>
-<td>-0.0089338922</td>
-<td>-9.38842914e-05 ± 1.47467e-07</td>
-<td>-0.000122173657</td>
-<td>0.000794600692 / 0.000437707142</td>
-<td>Not qualified / supported</td>
+<td><span data-record="ACC-gaussian128-T10-W40" data-field="forecast">-0.00896218156</span></td>
+<td><span data-record="ACC-gaussian128-T10-W40" data-field="independent_response">-0.0089338922</span></td>
+<td><span data-record="ACC-gaussian128-T10-W40" data-field="intrinsic_population_error">-9.38842914e-05</span> ± <span data-record="ACC-gaussian128-T10-W40" data-field="intrinsic_error_proxy">1.47467e-07</span></td>
+<td><span data-record="ACC-gaussian128-T10-W40" data-field="forecast_minus_independent_halo">-0.000122173657</span></td>
+<td><span data-record="ACC-gaussian128-T10-W40" data-field="full_allowance">0.000794600692</span> / <span data-record="ACC-gaussian128-T10-W40" data-field="target">0.000437707142</span></td>
+<td>Not qualified / independently within 5%</td>
 </tr>
 <tr>
 <td><a id="ACC-gaussian512-T10-W40" href="paper.html?population=gaussian512&amp;time=10&amp;window=40#interactive-decision">Gaussian σ=512 · 10 · 40</a></td>
-<td>-0.00887795134</td>
-<td>-0.00885047045</td>
-<td>-1.04625485e-05 ± 1.64425664e-08</td>
-<td>-3.79434334e-05</td>
-<td>0.000189338267 / 0.000437707142</td>
-<td>Qualified / supported</td>
+<td><span data-record="ACC-gaussian512-T10-W40" data-field="forecast">-0.00887795134</span></td>
+<td><span data-record="ACC-gaussian512-T10-W40" data-field="independent_response">-0.00885047045</span></td>
+<td><span data-record="ACC-gaussian512-T10-W40" data-field="intrinsic_population_error">-1.04625485e-05</span> ± <span data-record="ACC-gaussian512-T10-W40" data-field="intrinsic_error_proxy">1.64425664e-08</span></td>
+<td><span data-record="ACC-gaussian512-T10-W40" data-field="forecast_minus_independent_halo">-3.79434334e-05</span></td>
+<td><span data-record="ACC-gaussian512-T10-W40" data-field="full_allowance">0.000189338267</span> / <span data-record="ACC-gaussian512-T10-W40" data-field="target">0.000437707142</span></td>
+<td>Qualified / independently within 5%</td>
 </tr>
 <tr>
 <td><a id="ACC-halo-T10-W64" href="paper.html?population=halo&amp;time=10&amp;window=64#interactive-decision">Reference halo · 10 · 64</a> (reference)</td>
-<td>-0.00886970857</td>
-<td>-0.0088424281</td>
-<td>0 ± 0</td>
-<td>-2.72804678e-05</td>
-<td>0.000125126449 / 0.000437229106</td>
-<td>Qualified / supported</td>
+<td><span data-record="ACC-halo-T10-W64" data-field="forecast">-0.00886970857</span></td>
+<td><span data-record="ACC-halo-T10-W64" data-field="independent_response">-0.0088424281</span></td>
+<td><span data-record="ACC-halo-T10-W64" data-field="intrinsic_population_error">0</span> ± <span data-record="ACC-halo-T10-W64" data-field="intrinsic_error_proxy">0</span></td>
+<td><span data-record="ACC-halo-T10-W64" data-field="forecast_minus_independent_halo">-2.72804678e-05</span></td>
+<td><span data-record="ACC-halo-T10-W64" data-field="full_allowance">0.000125126449</span> / <span data-record="ACC-halo-T10-W64" data-field="target">0.000437229106</span></td>
+<td>Qualified / independently within 5%</td>
 </tr>
 <tr>
 <td><a id="ACC-exponential-T10-W64" href="paper.html?population=exponential&amp;time=10&amp;window=64#interactive-decision">Slope-matched exponential · 10 · 64</a></td>
-<td>-0.00887466249</td>
-<td>-0.00884733137</td>
-<td>-4.90327501e-06 ± 1.07602545e-08</td>
-<td>-3.22343933e-05</td>
-<td>0.000167582146 / 0.000437229106</td>
-<td>Qualified / supported</td>
+<td><span data-record="ACC-exponential-T10-W64" data-field="forecast">-0.00887466249</span></td>
+<td><span data-record="ACC-exponential-T10-W64" data-field="independent_response">-0.00884733137</span></td>
+<td><span data-record="ACC-exponential-T10-W64" data-field="intrinsic_population_error">-4.90327501e-06</span> ± <span data-record="ACC-exponential-T10-W64" data-field="intrinsic_error_proxy">1.07602545e-08</span></td>
+<td><span data-record="ACC-exponential-T10-W64" data-field="forecast_minus_independent_halo">-3.22343933e-05</span></td>
+<td><span data-record="ACC-exponential-T10-W64" data-field="full_allowance">0.000167582146</span> / <span data-record="ACC-exponential-T10-W64" data-field="target">0.000437229106</span></td>
+<td>Qualified / independently within 5%</td>
 </tr>
 <tr>
 <td><a id="ACC-gaussian8-T10-W64" href="paper.html?population=gaussian8&amp;time=10&amp;window=64#interactive-decision">Gaussian σ=8 · 10 · 64</a></td>
-<td>-0.039813574</td>
-<td>-0.0396109618</td>
-<td>-0.0307685337 ± 2.96698035e-05</td>
-<td>-0.0309711459</td>
-<td>0.112054479 / 0.000437229106</td>
-<td>Not qualified / contradicted</td>
+<td><span data-record="ACC-gaussian8-T10-W64" data-field="forecast">-0.039813574</span></td>
+<td><span data-record="ACC-gaussian8-T10-W64" data-field="independent_response">-0.0396109618</span></td>
+<td><span data-record="ACC-gaussian8-T10-W64" data-field="intrinsic_population_error">-0.0307685337</span> ± <span data-record="ACC-gaussian8-T10-W64" data-field="intrinsic_error_proxy">2.96698035e-05</span></td>
+<td><span data-record="ACC-gaussian8-T10-W64" data-field="forecast_minus_independent_halo">-0.0309711459</span></td>
+<td><span data-record="ACC-gaussian8-T10-W64" data-field="full_allowance">0.112054479</span> / <span data-record="ACC-gaussian8-T10-W64" data-field="target">0.000437229106</span></td>
+<td>Not qualified / independently outside 5%</td>
 </tr>
 <tr>
 <td><a id="ACC-gaussian32-T10-W64" href="paper.html?population=gaussian32&amp;time=10&amp;window=64#interactive-decision">Gaussian σ=32 · 10 · 64</a></td>
-<td>-0.0103469499</td>
-<td>-0.0103061665</td>
-<td>-0.00146373843 ± 2.43893043e-06</td>
-<td>-0.00150452184</td>
-<td>0.0108583051 / 0.000437229106</td>
-<td>Not qualified / contradicted</td>
+<td><span data-record="ACC-gaussian32-T10-W64" data-field="forecast">-0.0103469499</span></td>
+<td><span data-record="ACC-gaussian32-T10-W64" data-field="independent_response">-0.0103061665</span></td>
+<td><span data-record="ACC-gaussian32-T10-W64" data-field="intrinsic_population_error">-0.00146373843</span> ± <span data-record="ACC-gaussian32-T10-W64" data-field="intrinsic_error_proxy">2.43893043e-06</span></td>
+<td><span data-record="ACC-gaussian32-T10-W64" data-field="forecast_minus_independent_halo">-0.00150452184</span></td>
+<td><span data-record="ACC-gaussian32-T10-W64" data-field="full_allowance">0.0108583051</span> / <span data-record="ACC-gaussian32-T10-W64" data-field="target">0.000437229106</span></td>
+<td>Not qualified / independently outside 5%</td>
 </tr>
 <tr>
 <td><a id="ACC-gaussian128-T10-W64" href="paper.html?population=gaussian128&amp;time=10&amp;window=64#interactive-decision">Gaussian σ=128 · 10 · 64</a></td>
-<td>-0.00896441884</td>
-<td>-0.00893617755</td>
-<td>-9.37494552e-05 ± 1.95531726e-07</td>
-<td>-0.000121990741</td>
-<td>0.000929584953 / 0.000437229106</td>
-<td>Not qualified / supported</td>
+<td><span data-record="ACC-gaussian128-T10-W64" data-field="forecast">-0.00896441884</span></td>
+<td><span data-record="ACC-gaussian128-T10-W64" data-field="independent_response">-0.00893617755</span></td>
+<td><span data-record="ACC-gaussian128-T10-W64" data-field="intrinsic_population_error">-9.37494552e-05</span> ± <span data-record="ACC-gaussian128-T10-W64" data-field="intrinsic_error_proxy">1.95531726e-07</span></td>
+<td><span data-record="ACC-gaussian128-T10-W64" data-field="forecast_minus_independent_halo">-0.000121990741</span></td>
+<td><span data-record="ACC-gaussian128-T10-W64" data-field="full_allowance">0.000929584953</span> / <span data-record="ACC-gaussian128-T10-W64" data-field="target">0.000437229106</span></td>
+<td>Not qualified / independently within 5%</td>
 </tr>
 <tr>
 <td><a id="ACC-gaussian512-T10-W64" href="paper.html?population=gaussian512&amp;time=10&amp;window=64#interactive-decision">Gaussian σ=512 · 10 · 64</a></td>
-<td>-0.00888026334</td>
-<td>-0.00885287494</td>
-<td>-1.04468434e-05 ± 2.24912369e-08</td>
-<td>-3.78352457e-05</td>
-<td>0.000215716763 / 0.000437229106</td>
-<td>Qualified / supported</td>
+<td><span data-record="ACC-gaussian512-T10-W64" data-field="forecast">-0.00888026334</span></td>
+<td><span data-record="ACC-gaussian512-T10-W64" data-field="independent_response">-0.00885287494</span></td>
+<td><span data-record="ACC-gaussian512-T10-W64" data-field="intrinsic_population_error">-1.04468434e-05</span> ± <span data-record="ACC-gaussian512-T10-W64" data-field="intrinsic_error_proxy">2.24912369e-08</span></td>
+<td><span data-record="ACC-gaussian512-T10-W64" data-field="forecast_minus_independent_halo">-3.78352457e-05</span></td>
+<td><span data-record="ACC-gaussian512-T10-W64" data-field="full_allowance">0.000215716763</span> / <span data-record="ACC-gaussian512-T10-W64" data-field="target">0.000437229106</span></td>
+<td>Qualified / independently within 5%</td>
 </tr>
 <tr>
 <td><a id="ACC-halo-T20-W40" href="paper.html?population=halo&amp;time=20&amp;window=40#interactive-decision">Reference halo · 20 · 40</a> (reference)</td>
-<td>-0.0661634001</td>
-<td>-0.0661331971</td>
-<td>0 ± 0</td>
-<td>-3.02029798e-05</td>
-<td>0.000546072501 / 0.00328086638</td>
-<td>Qualified / supported</td>
+<td><span data-record="ACC-halo-T20-W40" data-field="forecast">-0.0661634001</span></td>
+<td><span data-record="ACC-halo-T20-W40" data-field="independent_response">-0.0661331971</span></td>
+<td><span data-record="ACC-halo-T20-W40" data-field="intrinsic_population_error">0</span> ± <span data-record="ACC-halo-T20-W40" data-field="intrinsic_error_proxy">0</span></td>
+<td><span data-record="ACC-halo-T20-W40" data-field="forecast_minus_independent_halo">-3.02029798e-05</span></td>
+<td><span data-record="ACC-halo-T20-W40" data-field="full_allowance">0.000546072501</span> / <span data-record="ACC-halo-T20-W40" data-field="target">0.00328086638</span></td>
+<td>Qualified / independently within 5%</td>
 </tr>
 <tr>
 <td><a id="ACC-exponential-T20-W40" href="paper.html?population=exponential&amp;time=20&amp;window=40#interactive-decision">Slope-matched exponential · 20 · 40</a></td>
-<td>-0.0662762799</td>
-<td>-0.0662460699</td>
-<td>-0.000112872735 ± 3.18237406e-07</td>
-<td>-0.000143082815</td>
-<td>0.000753037978 / 0.00328086638</td>
-<td>Qualified / supported</td>
+<td><span data-record="ACC-exponential-T20-W40" data-field="forecast">-0.0662762799</span></td>
+<td><span data-record="ACC-exponential-T20-W40" data-field="independent_response">-0.0662460699</span></td>
+<td><span data-record="ACC-exponential-T20-W40" data-field="intrinsic_population_error">-0.000112872735</span> ± <span data-record="ACC-exponential-T20-W40" data-field="intrinsic_error_proxy">3.18237406e-07</span></td>
+<td><span data-record="ACC-exponential-T20-W40" data-field="forecast_minus_independent_halo">-0.000143082815</span></td>
+<td><span data-record="ACC-exponential-T20-W40" data-field="full_allowance">0.000753037978</span> / <span data-record="ACC-exponential-T20-W40" data-field="target">0.00328086638</span></td>
+<td>Qualified / independently within 5%</td>
 </tr>
 <tr>
 <td><a id="ACC-gaussian8-T20-W40" href="paper.html?population=gaussian8&amp;time=20&amp;window=40#interactive-decision">Gaussian σ=8 · 20 · 40</a></td>
-<td>-0.570824503</td>
-<td>-0.570685682</td>
-<td>-0.504552485 ± 0.00092853291</td>
-<td>-0.504691306</td>
-<td>0.675506654 / 0.00328086638</td>
-<td>Not qualified / contradicted</td>
+<td><span data-record="ACC-gaussian8-T20-W40" data-field="forecast">-0.570824503</span></td>
+<td><span data-record="ACC-gaussian8-T20-W40" data-field="independent_response">-0.570685682</span></td>
+<td><span data-record="ACC-gaussian8-T20-W40" data-field="intrinsic_population_error">-0.504552485</span> ± <span data-record="ACC-gaussian8-T20-W40" data-field="intrinsic_error_proxy">0.00092853291</span></td>
+<td><span data-record="ACC-gaussian8-T20-W40" data-field="forecast_minus_independent_halo">-0.504691306</span></td>
+<td><span data-record="ACC-gaussian8-T20-W40" data-field="full_allowance">0.675506654</span> / <span data-record="ACC-gaussian8-T20-W40" data-field="target">0.00328086638</span></td>
+<td>Not qualified / independently outside 5%</td>
 </tr>
 <tr>
 <td><a id="ACC-gaussian32-T20-W40" href="paper.html?population=gaussian32&amp;time=20&amp;window=40#interactive-decision">Gaussian σ=32 · 20 · 40</a></td>
-<td>-0.0991751529</td>
-<td>-0.0991428226</td>
-<td>-0.0330096254 ± 9.04520944e-05</td>
-<td>-0.0330419558</td>
-<td>0.0593473779 / 0.00328086638</td>
-<td>Not qualified / contradicted</td>
+<td><span data-record="ACC-gaussian32-T20-W40" data-field="forecast">-0.0991751529</span></td>
+<td><span data-record="ACC-gaussian32-T20-W40" data-field="independent_response">-0.0991428226</span></td>
+<td><span data-record="ACC-gaussian32-T20-W40" data-field="intrinsic_population_error">-0.0330096254</span> ± <span data-record="ACC-gaussian32-T20-W40" data-field="intrinsic_error_proxy">9.04520944e-05</span></td>
+<td><span data-record="ACC-gaussian32-T20-W40" data-field="forecast_minus_independent_halo">-0.0330419558</span></td>
+<td><span data-record="ACC-gaussian32-T20-W40" data-field="full_allowance">0.0593473779</span> / <span data-record="ACC-gaussian32-T20-W40" data-field="target">0.00328086638</span></td>
+<td>Not qualified / independently outside 5%</td>
 </tr>
 <tr>
 <td><a id="ACC-gaussian128-T20-W40" href="paper.html?population=gaussian128&amp;time=20&amp;window=40#interactive-decision">Gaussian σ=128 · 20 · 40</a></td>
-<td>-0.0683290608</td>
-<td>-0.0682987261</td>
-<td>-0.00216552899 ± 6.11217596e-06</td>
-<td>-0.00219586364</td>
-<td>0.00451776613 / 0.00328086638</td>
-<td>Not qualified / supported</td>
+<td><span data-record="ACC-gaussian128-T20-W40" data-field="forecast">-0.0683290608</span></td>
+<td><span data-record="ACC-gaussian128-T20-W40" data-field="independent_response">-0.0682987261</span></td>
+<td><span data-record="ACC-gaussian128-T20-W40" data-field="intrinsic_population_error">-0.00216552899</span> ± <span data-record="ACC-gaussian128-T20-W40" data-field="intrinsic_error_proxy">6.11217596e-06</span></td>
+<td><span data-record="ACC-gaussian128-T20-W40" data-field="forecast_minus_independent_halo">-0.00219586364</span></td>
+<td><span data-record="ACC-gaussian128-T20-W40" data-field="full_allowance">0.00451776613</span> / <span data-record="ACC-gaussian128-T20-W40" data-field="target">0.00328086638</span></td>
+<td>Not qualified / independently within 5%</td>
 </tr>
 <tr>
 <td><a id="ACC-gaussian512-T20-W40" href="paper.html?population=gaussian512&amp;time=20&amp;window=40#interactive-decision">Gaussian σ=512 · 20 · 40</a></td>
-<td>-0.0664045621</td>
-<td>-0.0663743443</td>
-<td>-0.000241147163 ± 6.80995613e-07</td>
-<td>-0.000271365005</td>
-<td>0.000988743067 / 0.00328086638</td>
-<td>Qualified / supported</td>
+<td><span data-record="ACC-gaussian512-T20-W40" data-field="forecast">-0.0664045621</span></td>
+<td><span data-record="ACC-gaussian512-T20-W40" data-field="independent_response">-0.0663743443</span></td>
+<td><span data-record="ACC-gaussian512-T20-W40" data-field="intrinsic_population_error">-0.000241147163</span> ± <span data-record="ACC-gaussian512-T20-W40" data-field="intrinsic_error_proxy">6.80995613e-07</span></td>
+<td><span data-record="ACC-gaussian512-T20-W40" data-field="forecast_minus_independent_halo">-0.000271365005</span></td>
+<td><span data-record="ACC-gaussian512-T20-W40" data-field="full_allowance">0.000988743067</span> / <span data-record="ACC-gaussian512-T20-W40" data-field="target">0.00328086638</span></td>
+<td>Qualified / independently within 5%</td>
 </tr>
 <tr>
 <td><a id="ACC-halo-T20-W64" href="paper.html?population=halo&amp;time=20&amp;window=64#interactive-decision">Reference halo · 20 · 64</a> (reference)</td>
-<td>-0.0661736164</td>
-<td>-0.066142906</td>
-<td>0 ± 0</td>
-<td>-3.07104753e-05</td>
-<td>0.000519889295 / 0.00328268636</td>
-<td>Qualified / supported</td>
+<td><span data-record="ACC-halo-T20-W64" data-field="forecast">-0.0661736164</span></td>
+<td><span data-record="ACC-halo-T20-W64" data-field="independent_response">-0.066142906</span></td>
+<td><span data-record="ACC-halo-T20-W64" data-field="intrinsic_population_error">0</span> ± <span data-record="ACC-halo-T20-W64" data-field="intrinsic_error_proxy">0</span></td>
+<td><span data-record="ACC-halo-T20-W64" data-field="forecast_minus_independent_halo">-3.07104753e-05</span></td>
+<td><span data-record="ACC-halo-T20-W64" data-field="full_allowance">0.000519889295</span> / <span data-record="ACC-halo-T20-W64" data-field="target">0.00328268636</span></td>
+<td>Qualified / independently within 5%</td>
 </tr>
 <tr>
 <td><a id="ACC-exponential-T20-W64" href="paper.html?population=exponential&amp;time=20&amp;window=64#interactive-decision">Slope-matched exponential · 20 · 64</a></td>
-<td>-0.0662864735</td>
-<td>-0.0662557552</td>
-<td>-0.000112849281 ± 3.14117196e-07</td>
-<td>-0.000143567573</td>
-<td>0.000733737515 / 0.00328268636</td>
-<td>Qualified / supported</td>
+<td><span data-record="ACC-exponential-T20-W64" data-field="forecast">-0.0662864735</span></td>
+<td><span data-record="ACC-exponential-T20-W64" data-field="independent_response">-0.0662557552</span></td>
+<td><span data-record="ACC-exponential-T20-W64" data-field="intrinsic_population_error">-0.000112849281</span> ± <span data-record="ACC-exponential-T20-W64" data-field="intrinsic_error_proxy">3.14117196e-07</span></td>
+<td><span data-record="ACC-exponential-T20-W64" data-field="forecast_minus_independent_halo">-0.000143567573</span></td>
+<td><span data-record="ACC-exponential-T20-W64" data-field="full_allowance">0.000733737515</span> / <span data-record="ACC-exponential-T20-W64" data-field="target">0.00328268636</span></td>
+<td>Qualified / independently within 5%</td>
 </tr>
 <tr>
 <td><a id="ACC-gaussian8-T20-W64" href="paper.html?population=gaussian8&amp;time=20&amp;window=64#interactive-decision">Gaussian σ=8 · 20 · 64</a></td>
-<td>-0.570824507</td>
-<td>-0.570685685</td>
-<td>-0.504542779 ± 0.000927460422</td>
-<td>-0.504681601</td>
-<td>0.674266443 / 0.00328268636</td>
-<td>Not qualified / contradicted</td>
+<td><span data-record="ACC-gaussian8-T20-W64" data-field="forecast">-0.570824507</span></td>
+<td><span data-record="ACC-gaussian8-T20-W64" data-field="independent_response">-0.570685685</span></td>
+<td><span data-record="ACC-gaussian8-T20-W64" data-field="intrinsic_population_error">-0.504542779</span> ± <span data-record="ACC-gaussian8-T20-W64" data-field="intrinsic_error_proxy">0.000927460422</span></td>
+<td><span data-record="ACC-gaussian8-T20-W64" data-field="forecast_minus_independent_halo">-0.504681601</span></td>
+<td><span data-record="ACC-gaussian8-T20-W64" data-field="full_allowance">0.674266443</span> / <span data-record="ACC-gaussian8-T20-W64" data-field="target">0.00328268636</span></td>
+<td>Not qualified / independently outside 5%</td>
 </tr>
 <tr>
 <td><a id="ACC-gaussian32-T20-W64" href="paper.html?population=gaussian32&amp;time=20&amp;window=64#interactive-decision">Gaussian σ=32 · 20 · 64</a></td>
-<td>-0.0991807238</td>
-<td>-0.0991477929</td>
-<td>-0.0330048869 ± 8.97728828e-05</td>
-<td>-0.0330378178</td>
-<td>0.0601306957 / 0.00328268636</td>
-<td>Not qualified / contradicted</td>
+<td><span data-record="ACC-gaussian32-T20-W64" data-field="forecast">-0.0991807238</span></td>
+<td><span data-record="ACC-gaussian32-T20-W64" data-field="independent_response">-0.0991477929</span></td>
+<td><span data-record="ACC-gaussian32-T20-W64" data-field="intrinsic_population_error">-0.0330048869</span> ± <span data-record="ACC-gaussian32-T20-W64" data-field="intrinsic_error_proxy">8.97728828e-05</span></td>
+<td><span data-record="ACC-gaussian32-T20-W64" data-field="forecast_minus_independent_halo">-0.0330378178</span></td>
+<td><span data-record="ACC-gaussian32-T20-W64" data-field="full_allowance">0.0601306957</span> / <span data-record="ACC-gaussian32-T20-W64" data-field="target">0.00328268636</span></td>
+<td>Not qualified / independently outside 5%</td>
 </tr>
 <tr>
 <td><a id="ACC-gaussian128-T20-W64" href="paper.html?population=gaussian128&amp;time=20&amp;window=64#interactive-decision">Gaussian σ=128 · 20 · 64</a></td>
-<td>-0.0683388449</td>
-<td>-0.0683079968</td>
-<td>-0.00216509083 ± 6.0403304e-06</td>
-<td>-0.00219593894</td>
-<td>0.00461589381 / 0.00328268636</td>
-<td>Not qualified / supported</td>
+<td><span data-record="ACC-gaussian128-T20-W64" data-field="forecast">-0.0683388449</span></td>
+<td><span data-record="ACC-gaussian128-T20-W64" data-field="independent_response">-0.0683079968</span></td>
+<td><span data-record="ACC-gaussian128-T20-W64" data-field="intrinsic_population_error">-0.00216509083</span> ± <span data-record="ACC-gaussian128-T20-W64" data-field="intrinsic_error_proxy">6.0403304e-06</span></td>
+<td><span data-record="ACC-gaussian128-T20-W64" data-field="forecast_minus_independent_halo">-0.00219593894</span></td>
+<td><span data-record="ACC-gaussian128-T20-W64" data-field="full_allowance">0.00461589381</span> / <span data-record="ACC-gaussian128-T20-W64" data-field="target">0.00328268636</span></td>
+<td>Not qualified / independently within 5%</td>
 </tr>
 <tr>
 <td><a id="ACC-gaussian512-T20-W64" href="paper.html?population=gaussian512&amp;time=20&amp;window=64#interactive-decision">Gaussian σ=512 · 20 · 64</a></td>
-<td>-0.0664147295</td>
-<td>-0.0663840031</td>
-<td>-0.000241097167 ± 6.7249861e-07</td>
-<td>-0.000271823514</td>
-<td>0.000977177308 / 0.00328268636</td>
-<td>Qualified / supported</td>
+<td><span data-record="ACC-gaussian512-T20-W64" data-field="forecast">-0.0664147295</span></td>
+<td><span data-record="ACC-gaussian512-T20-W64" data-field="independent_response">-0.0663840031</span></td>
+<td><span data-record="ACC-gaussian512-T20-W64" data-field="intrinsic_population_error">-0.000241097167</span> ± <span data-record="ACC-gaussian512-T20-W64" data-field="intrinsic_error_proxy">6.7249861e-07</span></td>
+<td><span data-record="ACC-gaussian512-T20-W64" data-field="forecast_minus_independent_halo">-0.000271823514</span></td>
+<td><span data-record="ACC-gaussian512-T20-W64" data-field="full_allowance">0.000977177308</span> / <span data-record="ACC-gaussian512-T20-W64" data-field="target">0.00328268636</span></td>
+<td>Qualified / independently within 5%</td>
 </tr>
 </tbody>
 </table></div>
@@ -429,7 +427,7 @@ K_B(x)&amp;=\mathbb E[B_{\mathrm{noise}}-B_{\mathrm{smooth}}\mid x],\\
 <p>At primary-window T = 10, Gaussian 128's signed mean-kernel contrast has magnitude about 0.00009479, whereas the absolute-gradient integral is about 0.00052005, already above the 0.00043771 target before explicit kernel uncertainty. Discarding cancellation explains part of the conservative rejection. More samples alone need not repair it. All twenty independent population discrepancies plus their proxies fit their stated gradient allowances. All new-condition responses are negative: this prospective test does not validate performance across both signs.</p>
 <p>The new kernel cost about 5,105 worker CPU-seconds; the six-profile diagnostic took about 0.8 seconds. If the full DF and kernel are already known, the full contraction is also cheap. The diagnostic audits a simplifying assumption; it does not make the kernel free or always beat direct use of the known DF.</p>
 <h2 id="estimator">Estimating a small response efficiently</h2>
-<p>Let <span data-math="F&#x27;=w"></span> and <span data-math="y=j+sT-W=x+B"></span>. Under the stated external additive noise, uniform initial phase and canonical evolution, a zero-integral primitive identity gives:</p>
+<p>Let <span data-math="F&#x27;=w"></span>. Here <span data-math="W_t"></span> is a standard Wiener process, with independent increments of mean zero and variance equal to the elapsed time. Define the accumulated action-noise impulse <span data-math="\Xi_T=\sqrt{2D}\,W_T"></span>, starting from <span data-math="W_0=0"></span>, so that <span data-math="y=j+sT-\Xi_T=x+B"></span>. Under the stated external additive noise, uniform initial phase and canonical evolution, a zero-integral primitive identity gives:</p>
 <div class="equation-label" id="EQ-EST-01">EQ-EST-01 · Cumulative-remainder identity</div>
 
 <pre><code class="language-math">\begin{aligned}
@@ -437,7 +435,7 @@ K_B(x)&amp;=\mathbb E[B_{\mathrm{noise}}-B_{\mathrm{smooth}}\mid x],\\
 &amp;=-\int\mathbb E\!\left[F(x+B)-F(x)-w(x)B\right]\,\mathrm dx.
 \end{aligned}
 </code></pre>
-<p>The right side estimates a nonlinear remainder, whose leading term for a slowly varying weight involves <span data-math="w&#x27;B^2/2"></span>. The first-order contribution has known zero ensemble integral. The derivation requires more than area preservation alone. Auxiliary initial-action support must extend beyond the physical window by the maximum bar impulse; those samples do not add physical halo mass. Do not transplant this identity to action-dependent forcing/noise, nonuniform phases or live response without another derivation. <a href="https://github.com/djova/bar-halo-benchmark/blob/cdb30b5b2f350d2f3de6831995b83f281fe2974e/accuracy/research/population-response/CUMULATIVE_IDENTITY.md">Complete derivation and support restrictions</a>.</p>
+<p>The finite-displacement control <span data-math="F(x+B)-F(x)"></span> has zero integrated expectation under the stated assumptions. Subtracting it from the weighted impulse <span data-math="w(x)B"></span> leaves the negative nonlinear remainder. The first-order weighted impulse itself is <strong>not</strong> assumed to have zero expectation: its integrated expectation is the physical signal. The remainder begins with <span data-math="w&#x27;B^2/2"></span> for a slowly varying weight; the estimator uses its negative. The derivation requires more than area preservation alone. Auxiliary initial-action support must extend beyond the physical window by the maximum bar impulse; those samples do not add physical halo mass. Do not transplant this identity to action-dependent forcing/noise, nonuniform phases or live response without another derivation. <a href="methods/CUMULATIVE_IDENTITY.md">Complete derivation and support restrictions</a>.</p>
 <p class="publication-claim" id="EST-01"><a href="claims.json">EST-01</a> · The matched estimator has a large conditional cost-times-variance advantage for broad halo weights; the advantage disappears for the narrowest stress population.</p>
 
 <figure id="F-COST-01" class="accuracy-figure"><a href="diagnostics/population-accuracy/estimator-efficiency.png"><img src="diagnostics/population-accuracy/estimator-efficiency.png" alt="Large broad-population variance advantage falls to about unity at the narrowest stress width. Values follow."></a><figcaption>F-COST-01 · Large broad-population variance advantage falls to about unity at the narrowest stress width. Values follow. Local resonance units; reference-halo weighting means one fixed fast-action slice. Parameters, uncertainty and complete values follow immediately below.</figcaption></figure>
@@ -676,6 +674,6 @@ K_B(x)&amp;=\mathbb E[B_{\mathrm{noise}}-B_{\mathrm{smooth}}\mid x],\\
 <p>A fresh public-source run at numerical revision 66143eb reproduced the accuracy calculation's 162 saved arrays exactly and checked the central figure. This is a <strong>project reproduction receipt</strong>, not an external audit and not additional independent physical samples. The current publication redesign does not rerun those experiments. <a href="diagnostics/population-accuracy/accuracy-reproduction.json">Receipt</a>.</p>
 <p>Use the <a href="reproduce.html">per-study reproduction map</a> to distinguish reading, checking supplied records, and rerunning underlying evolution. Original galaxy outputs are public; the public reduced benchmark does not promise complete reproduction of every galaxy initial condition and trajectory. The private working repository is not required to read or reproduce the released local-model results.</p>
 <p>For criticism, cite a claim ID such as <strong>PA-ACC-01</strong>, figure ID, dataset version and exact row. <a href="https://github.com/djova/bar-halo-benchmark/issues">Open a public issue</a>. In particular: is an equivalent cumulative estimator already published; is its scope useful; which error source is missing; and which test would most efficiently falsify the proposed application? No outside review or endorsement is claimed.</p>
-<p><strong>Release 2026-09-23.2:</strong> typeset mathematics with local KaTeX, desktop table layout repairs and expandable numeric evidence. Release 2026-09-23.1 retained the initial consolidated article and scope corrections. Scientific outputs and historical criteria unchanged. <a href="archive.html">Archived studies and corrections</a> · <a href="manifest.json">release manifest</a> · <a href="reproduce.html#licenses">reuse conditions</a>.</p>
+<p><strong>Release 2026-09-23.3:</strong> corrected the finite-displacement control explanation and noise notation, deterministic phase-locking scope, claim comparators, scalar-verifier coverage and pinned public fallback. Releases 2026-09-23.1 and 2026-09-23.2 remain unchanged; the latter introduced KaTeX and expandable values. Scientific outputs and historical criteria unchanged. <a href="archive.html">Archived studies and corrections</a> · <a href="manifest.json">release manifest</a> · <a href="reproduce.html#licenses">reuse conditions</a>.</p>
 <h2 id="references">References and reading record</h2>
-<p>Primary links appear beside the associated statements. <a href="diagnostics/population-accuracy/SOURCES.md">Original scholarly sources</a> and <a href="publication-sources.md">publication review sources</a> identify the inspected material and its limits. Accessibility follows the <a href="https://www.w3.org/WAI/tutorials/images/complex/">W3C complex-image guidance</a> through readable captions and complete values. Registry design follows <a href="https://www.gofair.foundation/fair-principles">FAIR principles</a>; no formal certification is claimed.</p></main><footer class="publication-footer">Release 2026-09-23.2 · Not externally reviewed · <a href="paper.html">Research</a> · <a href="learn.html">Learn</a> · <a href="reproduce.html">Evidence</a> · <a href="agents.html">Agent access</a></footer><script type="module" src="population-accuracy.js"></script></body></html>
+<p>Primary links appear beside the associated statements. <a href="diagnostics/population-accuracy/SOURCES.md">Original scholarly sources</a> and <a href="publication-sources.md">publication review sources</a> identify the inspected material and its limits. Accessibility follows the <a href="https://www.w3.org/WAI/tutorials/images/complex/">W3C complex-image guidance</a> through readable captions and complete values. Registry design follows <a href="https://www.gofair.foundation/fair-principles">FAIR principles</a>; no formal certification is claimed.</p></main><footer class="publication-footer">Release 2026-09-23.3 · Not externally reviewed · <a href="paper.html">Research</a> · <a href="learn.html">Learn</a> · <a href="reproduce.html">Evidence</a> · <a href="agents.html">Agent access</a></footer><script type="module" src="population-accuracy.js"></script></body></html>

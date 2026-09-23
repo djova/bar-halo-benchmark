@@ -1,6 +1,25 @@
 {
-  "schema_version": 1,
-  "release": "2026-09-23.2",
+  "schema_version": 2,
+  "access": {
+    "status": "partial_automated_client_access",
+    "canonical": "https://djova.ca/galaxy-bar/",
+    "raw_mirror": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/",
+    "browse_mirror": "https://github.com/djova/bar-halo-benchmark/blob/publication-2026-09-23.3/publication/web/",
+    "article": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/paper.md",
+    "claims": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/claims.json",
+    "results": {
+      "populations": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/results/populations.json",
+      "accuracy": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/results/accuracy.json",
+      "cost": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/results/cost.json"
+    },
+    "derivation": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/methods/CUMULATIVE_IDENTITY.md",
+    "scientific_source": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/cdb30b5b2f350d2f3de6831995b83f281fe2974e/",
+    "historical_material": "Links labelled historical website-only are not mirrored; central article, claims, values, derivation and frozen protocols are included.",
+    "relative_links": "Resolve publication-relative paths at raw_mirror; resolve path_in_public_package at scientific_source.",
+    "tested_descriptive_user_agent": "GalaxyBar-PublicVerification/2.0",
+    "universal_client_access": false
+  },
+  "release": "2026-09-23.3",
   "article": "paper.html",
   "markdown": "paper.md",
   "review_status": "not_externally_reviewed",
@@ -10,7 +29,7 @@
   },
   "publication_source": {
     "repository": "https://github.com/djova/bar-halo-benchmark",
-    "ref": "publication-2026-09-23.2",
+    "ref": "publication-2026-09-23.3",
     "directory": "publication"
   },
   "models": "models.json",
@@ -21,40 +40,40 @@
   "verification": "verify_publication.py",
   "reproduction": "reproduce.html",
   "archive": "archive.html",
-  "release_snapshot": "releases/2026-09-23.2/manifest.json",
+  "release_snapshot": "releases/2026-09-23.3/manifest.json",
   "licenses": "reproduce.html#licenses",
-  "generator_sha256": "a3d17d7d94630b4692e4faed81906f186944f20c85327f2678698484230e1597",
-  "article_source_sha256": "f6ffccfe3a2666ee3394a755da25d29976c809c383adc4d2bc1e40004e360a39",
+  "generator_sha256": "927b908c637af29a234b3be8c3df0a2da75e62a030a16ecc7fcc030da77fdfbc",
+  "article_source_sha256": "05615023f619f91bb12b5c2f94f72fdde4835b3aff237ef7a352089dd48145d6",
   "artifacts": [
     {
       "path": "agents.html",
-      "sha256": "214801f8064ecf4b2ae5348a6aeb85587aa5a53efdb852a2eb126ded4602876c",
-      "bytes": 4111
+      "sha256": "63b63c1374e1f0380f995da43a94190d9ba6d5ca12537444788166995957a2d1",
+      "bytes": 7531
     },
     {
       "path": "agents.md",
-      "sha256": "26e3b92d8d28f1b421b9fe8e0110873e42d0640297499957ea4cedf69efee625",
-      "bytes": 2624
+      "sha256": "6ec667954e200a986e76c37c15729bca89ce0140d4f04bf54b701b984ec903b7",
+      "bytes": 7397
     },
     {
       "path": "archive.html",
-      "sha256": "4da892ad24d4bd9b2877ce80f3d262ebbe92af2f2da343e7d91b4f1cba1b7322",
+      "sha256": "7ca0cd8ca4ecee62b74090d6bf9ff9ddc7633215b7dfbd6d5f1f94155e143464",
       "bytes": 3817
     },
     {
       "path": "campaigns.json",
-      "sha256": "a885a69c26aaa432c7040ff77aff704dccd7acd0cce352c046f1228a567067e7",
+      "sha256": "55b148f32a39556a923767dea3fef9fd861e66d971ccfdaa95634d6a16f040a3",
       "bytes": 3502
     },
     {
       "path": "claim-ledger.md",
-      "sha256": "3aac430ef1986568c61448a57198b0318d5d846d241fb58339677bbe6d94f98d",
-      "bytes": 2996
+      "sha256": "5a8046ad36139638f344cae12016242c34260fc6a0a7d756485269c299389e1e",
+      "bytes": 3916
     },
     {
       "path": "claims.json",
-      "sha256": "c06cf741575e3f0bf2db1f14d3eb0e4b8e4d410a28110f6723f74a1e3dba032b",
-      "bytes": 15842
+      "sha256": "0338e89247a2ad13295632281dfceda59304094ab0d276dcfbe79cfd13e919a9",
+      "bytes": 40653
     },
     {
       "path": "data/index.json",
@@ -68,8 +87,8 @@
     },
     {
       "path": "datasets.json",
-      "sha256": "194862ea22b7a4dc1c10737a0683e6bcb15400c69473185d8a742f0f407ecab3",
-      "bytes": 65232
+      "sha256": "9b2482dddd7668fe49eedf332e6acd7b7688e14c8bb4f4acef4989809f3d04a5",
+      "bytes": 65538
     },
     {
       "path": "diagnostics/followup/error-budget.json",
@@ -108,43 +127,98 @@
     },
     {
       "path": "experiments.html",
-      "sha256": "4bff5a92a291e73f76c82c7db55f3379c7fdbc2012e9a99ee4ff79ee66e3ffc6",
+      "sha256": "0c6e534eaa3afb0388e106eb7ccd76ff94ca10ed0315115f1207bf292d05f142",
       "bytes": 4429
     },
     {
       "path": "figures.json",
-      "sha256": "faab8d5837f4f02cd2780b89dae0b736d8655ff42b1698f6dd3c6a6af3b57ab8",
+      "sha256": "1a9d71efcbbd5de3f43ebefa3ee36b9ef72367d2d81543ad6359e9873bdacddd",
       "bytes": 6957
     },
     {
       "path": "learn.html",
-      "sha256": "5c112f3331cd5755adf9c0e0a712624cc176eba2b73a893d1fe5138ace7fe0e6",
-      "bytes": 12816
+      "sha256": "a28c7c5388413aebf058888264c59b851fc5afe7cf7337b424e625fd26d5c3bd",
+      "bytes": 14530
     },
     {
       "path": "learn.md",
-      "sha256": "5edfe8648993f780ac0532e45056ff868c2cd0ae41ae60e9fca5fd51163c2872",
-      "bytes": 9889
+      "sha256": "8d0d32d0ae4cce60ccb8a1704ee5e349cdba0ad73dba2f393fb3a0df6e218cb5",
+      "bytes": 12446
     },
     {
       "path": "llms.txt",
-      "sha256": "eace7cdcd332f1847825195ee54629e0040256bee011801401c34f79d59807f4",
-      "bytes": 514
+      "sha256": "340914333069803ebcc2dd582609313358d7b52e9acc88393f33a110b5b13399",
+      "bytes": 817
+    },
+    {
+      "path": "methods/CUMULATIVE_IDENTITY.md",
+      "sha256": "e54d5e12bd47ac1c463e382e965f091af393ac010196f551cb725d359f099e7a",
+      "bytes": 4947
+    },
+    {
+      "path": "methods/validation-allocation-01.json",
+      "sha256": "665f97e00d921fff2883122bb479957a6f398ce5a668841bcbb2df0d97d940e9",
+      "bytes": 3754
     },
     {
       "path": "models.json",
-      "sha256": "70bfa133c19c4c8694e3a24b4cf85e139120ae5d024291961e8b0d607c20306b",
+      "sha256": "e64f4633ba2ceadaca90dfb2146e39d8b602dac8673a1c99079d1a330f690e28",
       "bytes": 2241
     },
     {
       "path": "paper.html",
-      "sha256": "9286f0d9672976135506f0499d0446f48306ba7592d3aa3292ebc62f99ca997e",
-      "bytes": 53775
+      "sha256": "4133b688895c54b79b51f5481cceb6e6b259de8b0a251c0f9ddebb1b00ab98bf",
+      "bytes": 68943
     },
     {
       "path": "paper.md",
-      "sha256": "99284bf2695dd1c69bda613119b6afefc2fec70db25af18695994ccc268883d5",
-      "bytes": 35620
+      "sha256": "22fca75b085b3a310f98ad3e89bab149654c5985c568b903c93b22204392ec1a",
+      "bytes": 57620
+    },
+    {
+      "path": "protocols/ACCURACY_PLAN.md",
+      "sha256": "f081a9359d4c9785262c495cdb99cc204b93c3215cef7451096ff78119d55dec",
+      "bytes": 8299
+    },
+    {
+      "path": "protocols/ACCURACY_REPRODUCTION.md",
+      "sha256": "e390bbced595df3c5f9e02e1ef6255259de6839d7e6e14154914d421d4314e10",
+      "bytes": 7012
+    },
+    {
+      "path": "protocols/ESTIMATOR_COST_02.md",
+      "sha256": "5a009fa15e3a56c834ed26c96560ef08625fb23a7d7b034fae66de4393035efc",
+      "bytes": 1599
+    },
+    {
+      "path": "protocols/GALAXY_EXPERIMENT_PLAN.md",
+      "sha256": "d3a1ac21ad2cad36c97d5977739df02ed1fbb7ade8a52aede5230d894f63c5d5",
+      "bytes": 8637
+    },
+    {
+      "path": "protocols/HALO_SLICE_PILOT_01.md",
+      "sha256": "87f402dfb0cfdef40ebaa60a992f9bd2b5a72772a7b629318aad552735848729",
+      "bytes": 7013
+    },
+    {
+      "path": "protocols/HELDOUT_MATRIX_01.md",
+      "sha256": "0453b8b2f9d7ca0d1c402d2c4fbf210284f8b62889720344acd6e1dff3bb60ff",
+      "bytes": 3571
+    },
+    {
+      "path": "protocols/HELDOUT_POPULATIONS_01.md",
+      "sha256": "19df5e653b1adc63de8d04a99db7d9a98ab52b0b6126b9e540d3b85ecd6b143b",
+      "bytes": 3804
+    },
+    {
+      "path": "protocols/INDEPENDENT_MATRIX_01.md",
+      "sha256": "0ccb20442a24d66d1aa28806f0462c9fa2e422f1638cc7c383fa77c4f84fc0ac",
+      "bytes": 3925
+    },
+    {
+      "path": "protocols/KERNEL_01.md",
+      "sha256": "91b4d952b04e73f8fac37b8e40a58ac5f6c766ee1d1d2a6170fac287d3dc3f81",
+      "bytes": 1943
     },
     {
       "path": "publication-sources.md",
@@ -153,23 +227,23 @@
     },
     {
       "path": "reproduce.html",
-      "sha256": "4af029daad5b9077615426ff9eac5418d965bac92a2e876caa315b58239338be",
-      "bytes": 8164
+      "sha256": "c607be6f405f3a95b8f9d9608eb187525ba60f9eb76d8ef87c3e417c143f552c",
+      "bytes": 8794
     },
     {
       "path": "reproduce.md",
-      "sha256": "335a841ff424dcf95097aa4584c78ff62dccc88f732078e378aeeb098fb40dd5",
-      "bytes": 6026
+      "sha256": "502056fd43789563655ed224f6a914a89fea40c93506d2534475e72e5e2759d5",
+      "bytes": 8120
     },
     {
       "path": "results/accuracy.csv",
-      "sha256": "94e0be010e481dd50ce41b910eedc125af980769a15233a4c61c210cce32eda3",
-      "bytes": 8832
+      "sha256": "559187864d073f43c60a0ab686a7d0d973a589532261d8d74cf3ac10eef4618f",
+      "bytes": 9368
     },
     {
       "path": "results/accuracy.json",
-      "sha256": "3667115e8d2de066afc78f561a6cda12e5a974e50b4fbfd029506c806802ebd0",
-      "bytes": 22821
+      "sha256": "c0b79c448713f240adb3301d2740ded9de8a8b7c162c7e1861fbec84a7b509ea",
+      "bytes": 24195
     },
     {
       "path": "results/cost.csv",
@@ -178,7 +252,7 @@
     },
     {
       "path": "results/cost.json",
-      "sha256": "307fe3fac9ca3c24e0cd09634b992e4269b3bf6bb04c2db663bac5ee21f363df",
+      "sha256": "21407a7ec81bb4b3b79ad9dc4b8f262038cd613e45cce41977ae1efe548fa492",
       "bytes": 16790
     },
     {
@@ -188,18 +262,18 @@
     },
     {
       "path": "results/populations.json",
-      "sha256": "e1d8cd6cc2ed8eb11008594a6282d0ab115d68ac17f3776d300c660bad2f50ca",
+      "sha256": "af01f39ff5386533afde273156627c8ddf93ce6a975fb92eab748dee4b467e04",
       "bytes": 2586
     },
     {
       "path": "results/summary.json",
-      "sha256": "2aee0a043bfca0a7dcaafab984dd4ce9b2ecb37b68bb150424662a9da05f86f0",
+      "sha256": "5d118da5eeaa40c3048828fef42d920c7e9d82bea5808b2ae5eefcd5ac4305da",
       "bytes": 410
     },
     {
       "path": "verify_publication.py",
-      "sha256": "715e37d30c9034e489cb1c6f7339fda4b6eedb3751957c7043115b2b38817b71",
-      "bytes": 3847
+      "sha256": "52d6e9e21f7a1508c30ca9b9661e3fc531832edc00ec6643b44a6b2ace867976",
+      "bytes": 17076
     }
   ],
   "scope": "Canonical publication and central evidence; numerical experiment outputs unchanged. No global scientific all-pass verdict."

@@ -24,6 +24,10 @@ The galaxy clock is in **Gyr** (billions of years). Density brightness is logari
 
 Two galaxies can have similar density profiles but different orbital motions. A distribution function specifies population in phase space, including motion. A selected Gaussian tracer population is a physical modeling choice unless its sampling weights correct it back to the intended DF.
 
+An **orbital action** characterizes the motion around an orbit, rather than the particle's position at one instant. In an integrable, time-independent potential, actions stay constant while their conjugate angles advance; angular momentum is one familiar example. We use actions as coordinates for organizing an orbital population, within the reference potential's assumptions.
+
+For the twofold corotation resonance, the slow action is \(J_s=L_z/2\) and the slow angle is \(\psi=2(\theta_\phi-\phi_{\rm bar})\). Here \(L_z\) is specific angular momentum about the symmetry axis, \(\phi_{\rm bar}\) is the bar's orientation and \(\theta_\phi\) is an orbital angle variable. This angle variable is generally **not** the star's instantaneous geometric azimuth. The local coordinate \(x\) labels the initial slow action relative to the initial resonance, in the experiment's scaled units; the other, fast actions are held fixed.
+
 In the local experiment, the **kernel tells us what the dynamics do** at each starting action; the **weight tells us how much material is there**. Reweighting a fixed external response is legitimate because the particles do not change its prescribed field. That separation cannot simply be assumed in a live halo.
 
 **Worked example.** An exponential \(w_{\mathrm E}=e^{gx}\) and Gaussian \(w_\sigma=e^{gx-x^2/(2\sigma^2)}\) both have \(w(0)=1\) and \(w'(0)=g\). Their logarithmic slopes are \(g\) and \(g-x/\sigma^2\). A moving resonance encounters the mismatch away from zero. Same initial slope does not mean same sampled gradient.
@@ -48,9 +52,11 @@ The reduced experiment records the bar impulse \(B=-\int\sin\psi\,\mathrm dt\), 
 
 Weak repeated pushes can accumulate if their phases remain correlated with an orbit. Near a resonance, a particular combination of orbital and bar angles changes slowly. Some trajectories librate around a phase; others circulate. As the imposed bar slows, the resonant action moves. Trapping, crossing and population gradients can then influence transfer.
 
-The local slow-angle equations are \(\mathrm d\psi=-j\,\mathrm dt\) and \(\mathrm dj=(-\sin\psi-s)\,\mathrm dt+\sqrt{2D}\,\mathrm dW\). The term −s shifts the coordinate origin; it is not a physical bar torque. At constant coefficients, a phase-locked solution requires \(|s|\leq1\) because \(|\sin\psi|\leq1\). That condition does not say what fraction of a particular population becomes trapped.
+The local slow-angle equations are \(\mathrm d\psi=-j\,\mathrm dt\) and \(\mathrm dj=(-\sin\psi-s)\,\mathrm dt+\sqrt{2D}\,\mathrm dW_t\). The symbol \(W_t\) denotes a standard Wiener process: over a time step \(\Delta t\), its independent random increment has mean zero and variance \(\Delta t\). Thus the noise impulse has variance \(2D\Delta t\). The term −s shifts the coordinate origin; it is not a physical bar torque.
 
-**Worked example.** At s = 1.2 no constant phase solves sinψ = −s; at s = 0.25 such phases exist. Neither calculation alone determines the sign of the noise-induced total transfer.
+First turn off the noise, \(D=0\). A phase-locked equilibrium requires \(j=0\) and \(\sin\psi=-s\). For \(|s|<1\), the deterministic constant-coefficient system has a stable libration region; at \(|s|=1\), it reaches a degenerate boundary. With noise present, this structure helps organize temporary trapping, but does not imply permanent phase locking. Escape and residence times are separate stochastic questions.
+
+**Worked example.** With D = 0, at s = 1.2 no constant phase solves sinψ = −s; at s = 0.25 such phases exist. Neither calculation alone determines the sign of the noise-induced total transfer.
 
 [Recorded resonance trajectories](noise-sweep.html#paths) · [Expert local model](paper.html#model) · [Next: noise and inference](#learn-5)
 

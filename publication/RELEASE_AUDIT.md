@@ -90,3 +90,30 @@ Both browser engines pass desktop and mobile rendering checks, and all 30 curren
 root pages were reviewed for desktop table overflow without JavaScript.
 The previous source tag and website snapshot remain unchanged. No new physics
 or stronger accuracy claim is introduced by this presentation revision.
+
+## Corrective publication revision 2026-09-23.3
+
+The finite-displacement control has zero integrated expectation; the weighted
+first-order impulse is the potentially nonzero signal. The article and supporting
+accuracy page now state that correctly. Noise impulse Xi_T is distinguished from
+standard Wiener motion W_t. The guide defines actions and orbital angles and
+explicitly switches off noise before deriving deterministic phase locking.
+
+Claim metadata now separates physical controls, assessed comparisons and
+uncertainty methods, and selects exact rows with identities and actual protocols.
+The publication consistency checker reconstructs 24 rows of accuracy/sign
+classifications and independent three-way assessments from supplied operands.
+It also checks the manifest, article numeric cells, JSON/CSV consistency and claim
+pointers, and accepts an expected release. Twelve tests, including semantic
+mutations with refreshed hashes, pass locally. The arithmetic returns eight
+supported advance qualifications, four conservative rejections, eight outside
+5%, and fifteen supported sign qualifications. It does not rerun any simulation
+or certify the coverage of numerical proxies.
+
+The agent guide, manifest and README expose pinned raw GitHub links to the
+article, claims, values, derivation, protocols and scientific source. Included
+Markdown links resolve to that tag; omitted historical material is labelled
+website-only. Canonical-site accessibility remains partial across clients.
+These content changes are not an edge-access repair or a universal crawler test.
+Earlier release tags and numerical evidence are unchanged. No external researcher
+has been contacted and no external scientific endorsement is claimed.

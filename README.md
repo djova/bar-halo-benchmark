@@ -5,6 +5,16 @@
 > released local experiments from original galaxy outputs that are not fully
 > reproducible from this repository.
 
+
+> **Anonymous reading fallback (release 2026-09-23.3):**
+> [tagged article](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/paper.md),
+> [claims](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/claims.json),
+> [accuracy values](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/results/accuracy.json), and
+> [agent guide with derivation, source and link-resolution rules](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/agents.md).
+> These need no custom user agent or private connector. Canonical-site access
+> remains partial for some automated clients. Historical website-only explorers
+> are labelled separately; the central evidence is included in this mirror.
+
 # Bar–halo response: dynamics and population
 
 A reproducible experiment separating what a prescribed resonance does to orbits
@@ -21,8 +31,9 @@ support these finite-time measurements.
 The measured response kernel also predicts three new populations whose magnitude
 forecasts were committed before independent evolution. All declared comparisons
 meet their original operational criterion. This is **not uniform 5% accuracy**:
-the absolute tolerance matters, and one small response lies close to its boundary.
-Separate numerical checks do not provide a rigorous combined-error certificate.
+the absolute tolerance matters. The later combined-proxy assessment retains
+22 of the 24 qualifications and leaves two early Gaussian-12 window comparisons
+marginal. These checks do not provide a rigorous combined-error certificate.
 
 These results concern an externally prescribed local resonance model, constant
 additive action diffusion, and one fixed fast-action slice of a halo. They do not
