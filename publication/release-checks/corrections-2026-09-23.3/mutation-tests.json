@@ -1,0 +1,20 @@
+{
+  "command": "python3 scripts/publication/test_verify_publication.py",
+  "test_count": 12,
+  "passed": true,
+  "coverage": [
+    "baseline arithmetic",
+    "classification change",
+    "operand change with refreshed hashes",
+    "existing wrong claim row",
+    "missing pointer",
+    "stale release",
+    "record release mismatch",
+    "article scalar mutation",
+    "article cell mutation",
+    "artifact byte mutation",
+    "missing protocol",
+    "three-way and sign boundaries"
+  ],
+  "scope": "Verifier testing, not numerical evolution"
+}

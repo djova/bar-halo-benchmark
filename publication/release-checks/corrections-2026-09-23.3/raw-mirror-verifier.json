@@ -1,0 +1,617 @@
+{
+  "release": "2026-09-23.3",
+  "expected_release": "2026-09-23.3",
+  "activity": "Publication consistency checking from supplied numerical records; no orbit evolution",
+  "population_late_magnitude_ratio": 4.735323064643955,
+  "exponential_halo_point_difference_percent": {
+    "10": 0.04979289102488016,
+    "20": 0.06798793568441042
+  },
+  "candidate_count": 20,
+  "qualified_count": 8,
+  "independently_supported": 8,
+  "qualified_contradicted": 0,
+  "distinct_new_conditions": 1,
+  "conservative_rejections": [
+    "ACC-gaussian128-T10-W40",
+    "ACC-gaussian128-T10-W64",
+    "ACC-gaussian128-T20-W40",
+    "ACC-gaussian128-T20-W64"
+  ],
+  "unqualified_independently_outside": 8,
+  "qualified_signs": 15,
+  "supported_signs": 15,
+  "broad_conditional_cost_variance_ratio": 6928.353830605735,
+  "broad_between_batch_ratio": 2749.3990669210343,
+  "narrow_ratio": 0.9926830754833764,
+  "coverage": {
+    "manifest_artifacts_hashed": 46,
+    "claim_evidence_pointers": 66,
+    "protocols": 10,
+    "reconstructed_accuracy_rows": 24,
+    "article_numeric_cells_per_representation": 186,
+    "article_representations": [
+      "HTML",
+      "Markdown"
+    ]
+  },
+  "exclusions": [
+    "No simulation or array reproduction",
+    "No proof of numerical-proxy bounds or general confidence coverage",
+    "No verification of every external archive or historical explorer",
+    "No external scientific review, novelty or live-halo/SIDM validation"
+  ],
+  "decisions": [
+    {
+      "id": "ACC-halo-T10-W40",
+      "reference": true,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-exponential-T10-W40",
+      "reference": false,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian8-T10-W40",
+      "reference": false,
+      "qualified": false,
+      "assessment": "contradicted",
+      "intrinsic_assessment": "contradicted",
+      "sign": "unqualified",
+      "sign_assessment": "not_qualified",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian32-T10-W40",
+      "reference": false,
+      "qualified": false,
+      "assessment": "contradicted",
+      "intrinsic_assessment": "contradicted",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian128-T10-W40",
+      "reference": false,
+      "qualified": false,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian512-T10-W40",
+      "reference": false,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-halo-T10-W64",
+      "reference": true,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-exponential-T10-W64",
+      "reference": false,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian8-T10-W64",
+      "reference": false,
+      "qualified": false,
+      "assessment": "contradicted",
+      "intrinsic_assessment": "contradicted",
+      "sign": "unqualified",
+      "sign_assessment": "not_qualified",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian32-T10-W64",
+      "reference": false,
+      "qualified": false,
+      "assessment": "contradicted",
+      "intrinsic_assessment": "contradicted",
+      "sign": "unqualified",
+      "sign_assessment": "not_qualified",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian128-T10-W64",
+      "reference": false,
+      "qualified": false,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian512-T10-W64",
+      "reference": false,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-halo-T20-W40",
+      "reference": true,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-exponential-T20-W40",
+      "reference": false,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian8-T20-W40",
+      "reference": false,
+      "qualified": false,
+      "assessment": "contradicted",
+      "intrinsic_assessment": "contradicted",
+      "sign": "unqualified",
+      "sign_assessment": "not_qualified",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian32-T20-W40",
+      "reference": false,
+      "qualified": false,
+      "assessment": "contradicted",
+      "intrinsic_assessment": "contradicted",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian128-T20-W40",
+      "reference": false,
+      "qualified": false,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian512-T20-W40",
+      "reference": false,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-halo-T20-W64",
+      "reference": true,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-exponential-T20-W64",
+      "reference": false,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian8-T20-W64",
+      "reference": false,
+      "qualified": false,
+      "assessment": "contradicted",
+      "intrinsic_assessment": "contradicted",
+      "sign": "unqualified",
+      "sign_assessment": "not_qualified",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian32-T20-W64",
+      "reference": false,
+      "qualified": false,
+      "assessment": "contradicted",
+      "intrinsic_assessment": "contradicted",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian128-T20-W64",
+      "reference": false,
+      "qualified": false,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian512-T20-W64",
+      "reference": false,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    }
+  ],
+  "downloads": [
+    {
+      "path": "manifest.json",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 10293,
+      "sha256": "376ba255b89ac4d53264e700fa7b9d5cf213ebde8ba1d2fbda74ec540d9e381f"
+    },
+    {
+      "path": "agents.html",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 7531,
+      "sha256": "63b63c1374e1f0380f995da43a94190d9ba6d5ca12537444788166995957a2d1"
+    },
+    {
+      "path": "agents.md",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 7397,
+      "sha256": "6ec667954e200a986e76c37c15729bca89ce0140d4f04bf54b701b984ec903b7"
+    },
+    {
+      "path": "archive.html",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 3817,
+      "sha256": "7ca0cd8ca4ecee62b74090d6bf9ff9ddc7633215b7dfbd6d5f1f94155e143464"
+    },
+    {
+      "path": "campaigns.json",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 3502,
+      "sha256": "55b148f32a39556a923767dea3fef9fd861e66d971ccfdaa95634d6a16f040a3"
+    },
+    {
+      "path": "claim-ledger.md",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 3916,
+      "sha256": "5a8046ad36139638f344cae12016242c34260fc6a0a7d756485269c299389e1e"
+    },
+    {
+      "path": "claims.json",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 40653,
+      "sha256": "0338e89247a2ad13295632281dfceda59304094ab0d276dcfbe79cfd13e919a9"
+    },
+    {
+      "path": "data/index.json",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 12522,
+      "sha256": "31864d88be97b3390e7b882dc142100078857e9d46986a1d2a7634940022a93c"
+    },
+    {
+      "path": "data/observational-summary.json",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 1832,
+      "sha256": "bb2f6e3e934e19db31f7b5342282398ac8a5fbff769678abba5e232d234f6bd9"
+    },
+    {
+      "path": "datasets.json",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 65538,
+      "sha256": "9b2482dddd7668fe49eedf332e6acd7b7688e14c8bb4f4acef4989809f3d04a5"
+    },
+    {
+      "path": "diagnostics/followup/error-budget.json",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 172963,
+      "sha256": "44d25acd146dffbb900030378d94b50efcc07eafd92c2842cc5817df9ffe045d"
+    },
+    {
+      "path": "diagnostics/population-accuracy/accuracy-explorer.json",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 4726012,
+      "sha256": "9c75b80a649ba376ad73fe70f74d6df72cff140236f76b495a549625e7e0ba11"
+    },
+    {
+      "path": "diagnostics/population-accuracy/accuracy-reproduction.json",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 45149,
+      "sha256": "e835c5e0cbdcbe37263622a485bd0039bba49f9829c2e5675a698067addddd50"
+    },
+    {
+      "path": "diagnostics/population-accuracy/conservatism-explanation.json",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 2771,
+      "sha256": "2f6afaef5f3b0dc1fb395c159fed728b033432d0b1ef9dc93a190a671da5f499"
+    },
+    {
+      "path": "diagnostics/population-accuracy/joint-error-assessment.json",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 52024,
+      "sha256": "97124a1ad6859382ce0c590baaba618dd70a713108fdde1e1efe618698929d11"
+    },
+    {
+      "path": "diagnostics/population-response/halo-pilot.json",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 859177,
+      "sha256": "c30b77afdd4468fc49792c83f982c06b14432742fa55676a92840957ca471ea1"
+    },
+    {
+      "path": "diagnostics/population-response/independent-validation.json",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 116519,
+      "sha256": "f6f9767771cd57d4003265f96f4cc5ff605c9e44ff035dc98fbed727ce48a3ad"
+    },
+    {
+      "path": "experiments.html",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 4429,
+      "sha256": "0c6e534eaa3afb0388e106eb7ccd76ff94ca10ed0315115f1207bf292d05f142"
+    },
+    {
+      "path": "figures.json",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 6957,
+      "sha256": "1a9d71efcbbd5de3f43ebefa3ee36b9ef72367d2d81543ad6359e9873bdacddd"
+    },
+    {
+      "path": "learn.html",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 14530,
+      "sha256": "a28c7c5388413aebf058888264c59b851fc5afe7cf7337b424e625fd26d5c3bd"
+    },
+    {
+      "path": "learn.md",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 12446,
+      "sha256": "8d0d32d0ae4cce60ccb8a1704ee5e349cdba0ad73dba2f393fb3a0df6e218cb5"
+    },
+    {
+      "path": "llms.txt",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 817,
+      "sha256": "340914333069803ebcc2dd582609313358d7b52e9acc88393f33a110b5b13399"
+    },
+    {
+      "path": "methods/CUMULATIVE_IDENTITY.md",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 4947,
+      "sha256": "e54d5e12bd47ac1c463e382e965f091af393ac010196f551cb725d359f099e7a"
+    },
+    {
+      "path": "methods/validation-allocation-01.json",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 3754,
+      "sha256": "665f97e00d921fff2883122bb479957a6f398ce5a668841bcbb2df0d97d940e9"
+    },
+    {
+      "path": "models.json",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 2241,
+      "sha256": "e64f4633ba2ceadaca90dfb2146e39d8b602dac8673a1c99079d1a330f690e28"
+    },
+    {
+      "path": "paper.html",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 68943,
+      "sha256": "4133b688895c54b79b51f5481cceb6e6b259de8b0a251c0f9ddebb1b00ab98bf"
+    },
+    {
+      "path": "paper.md",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 57620,
+      "sha256": "22fca75b085b3a310f98ad3e89bab149654c5985c568b903c93b22204392ec1a"
+    },
+    {
+      "path": "protocols/ACCURACY_PLAN.md",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 8299,
+      "sha256": "f081a9359d4c9785262c495cdb99cc204b93c3215cef7451096ff78119d55dec"
+    },
+    {
+      "path": "protocols/ACCURACY_REPRODUCTION.md",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 7012,
+      "sha256": "e390bbced595df3c5f9e02e1ef6255259de6839d7e6e14154914d421d4314e10"
+    },
+    {
+      "path": "protocols/ESTIMATOR_COST_02.md",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 1599,
+      "sha256": "5a009fa15e3a56c834ed26c96560ef08625fb23a7d7b034fae66de4393035efc"
+    },
+    {
+      "path": "protocols/GALAXY_EXPERIMENT_PLAN.md",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 8637,
+      "sha256": "d3a1ac21ad2cad36c97d5977739df02ed1fbb7ade8a52aede5230d894f63c5d5"
+    },
+    {
+      "path": "protocols/HALO_SLICE_PILOT_01.md",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 7013,
+      "sha256": "87f402dfb0cfdef40ebaa60a992f9bd2b5a72772a7b629318aad552735848729"
+    },
+    {
+      "path": "protocols/HELDOUT_MATRIX_01.md",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 3571,
+      "sha256": "0453b8b2f9d7ca0d1c402d2c4fbf210284f8b62889720344acd6e1dff3bb60ff"
+    },
+    {
+      "path": "protocols/HELDOUT_POPULATIONS_01.md",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 3804,
+      "sha256": "19df5e653b1adc63de8d04a99db7d9a98ab52b0b6126b9e540d3b85ecd6b143b"
+    },
+    {
+      "path": "protocols/INDEPENDENT_MATRIX_01.md",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 3925,
+      "sha256": "0ccb20442a24d66d1aa28806f0462c9fa2e422f1638cc7c383fa77c4f84fc0ac"
+    },
+    {
+      "path": "protocols/KERNEL_01.md",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 1943,
+      "sha256": "91b4d952b04e73f8fac37b8e40a58ac5f6c766ee1d1d2a6170fac287d3dc3f81"
+    },
+    {
+      "path": "publication-sources.md",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 1570,
+      "sha256": "2cd33594512f9fc27c261d702d24e5f56da95cb1cf186c424b3a5574032075c6"
+    },
+    {
+      "path": "reproduce.html",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 8794,
+      "sha256": "c607be6f405f3a95b8f9d9608eb187525ba60f9eb76d8ef87c3e417c143f552c"
+    },
+    {
+      "path": "reproduce.md",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 8120,
+      "sha256": "502056fd43789563655ed224f6a914a89fea40c93506d2534475e72e5e2759d5"
+    },
+    {
+      "path": "results/accuracy.csv",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 9368,
+      "sha256": "559187864d073f43c60a0ab686a7d0d973a589532261d8d74cf3ac10eef4618f"
+    },
+    {
+      "path": "results/accuracy.json",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 24195,
+      "sha256": "c0b79c448713f240adb3301d2740ded9de8a8b7c162c7e1861fbec84a7b509ea"
+    },
+    {
+      "path": "results/cost.csv",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 7203,
+      "sha256": "119f53bbacb0bdf8d850595fd11be2dbb36dfb8a17d13d2be0073759f8bee876"
+    },
+    {
+      "path": "results/cost.json",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 16790,
+      "sha256": "21407a7ec81bb4b3b79ad9dc4b8f262038cd613e45cce41977ae1efe548fa492"
+    },
+    {
+      "path": "results/populations.csv",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 1195,
+      "sha256": "6c2b9188487a9da9c66bfa91aa31eacf1833b270321531a021b23f4104caec31"
+    },
+    {
+      "path": "results/populations.json",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 2586,
+      "sha256": "af01f39ff5386533afde273156627c8ddf93ce6a975fb92eab748dee4b467e04"
+    },
+    {
+      "path": "results/summary.json",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 410,
+      "sha256": "5d118da5eeaa40c3048828fef42d920c7e9d82bea5808b2ae5eefcd5ac4305da"
+    },
+    {
+      "path": "verify_publication.py",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 17076,
+      "sha256": "52d6e9e21f7a1508c30ca9b9661e3fc531832edc00ec6643b44a6b2ace867976"
+    }
+  ]
+}

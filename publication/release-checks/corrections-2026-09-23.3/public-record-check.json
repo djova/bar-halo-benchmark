@@ -1,0 +1,286 @@
+{
+  "release": "2026-09-23.3",
+  "expected_release": "2026-09-23.3",
+  "activity": "Publication consistency checking from supplied numerical records; no orbit evolution",
+  "population_late_magnitude_ratio": 4.735323064643955,
+  "exponential_halo_point_difference_percent": {
+    "10": 0.04979289102488016,
+    "20": 0.06798793568441042
+  },
+  "candidate_count": 20,
+  "qualified_count": 8,
+  "independently_supported": 8,
+  "qualified_contradicted": 0,
+  "distinct_new_conditions": 1,
+  "conservative_rejections": [
+    "ACC-gaussian128-T10-W40",
+    "ACC-gaussian128-T10-W64",
+    "ACC-gaussian128-T20-W40",
+    "ACC-gaussian128-T20-W64"
+  ],
+  "unqualified_independently_outside": 8,
+  "qualified_signs": 15,
+  "supported_signs": 15,
+  "broad_conditional_cost_variance_ratio": 6928.353830605735,
+  "broad_between_batch_ratio": 2749.3990669210343,
+  "narrow_ratio": 0.9926830754833764,
+  "coverage": {
+    "manifest_artifacts_hashed": 71,
+    "claim_evidence_pointers": 66,
+    "protocols": 10,
+    "reconstructed_accuracy_rows": 24,
+    "article_numeric_cells_per_representation": 186,
+    "article_representations": [
+      "HTML",
+      "Markdown"
+    ]
+  },
+  "exclusions": [
+    "No simulation or array reproduction",
+    "No proof of numerical-proxy bounds or general confidence coverage",
+    "No verification of every external archive or historical explorer",
+    "No external scientific review, novelty or live-halo/SIDM validation"
+  ],
+  "decisions": [
+    {
+      "id": "ACC-halo-T10-W40",
+      "reference": true,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-exponential-T10-W40",
+      "reference": false,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian8-T10-W40",
+      "reference": false,
+      "qualified": false,
+      "assessment": "contradicted",
+      "intrinsic_assessment": "contradicted",
+      "sign": "unqualified",
+      "sign_assessment": "not_qualified",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian32-T10-W40",
+      "reference": false,
+      "qualified": false,
+      "assessment": "contradicted",
+      "intrinsic_assessment": "contradicted",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian128-T10-W40",
+      "reference": false,
+      "qualified": false,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian512-T10-W40",
+      "reference": false,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-halo-T10-W64",
+      "reference": true,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-exponential-T10-W64",
+      "reference": false,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian8-T10-W64",
+      "reference": false,
+      "qualified": false,
+      "assessment": "contradicted",
+      "intrinsic_assessment": "contradicted",
+      "sign": "unqualified",
+      "sign_assessment": "not_qualified",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian32-T10-W64",
+      "reference": false,
+      "qualified": false,
+      "assessment": "contradicted",
+      "intrinsic_assessment": "contradicted",
+      "sign": "unqualified",
+      "sign_assessment": "not_qualified",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian128-T10-W64",
+      "reference": false,
+      "qualified": false,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian512-T10-W64",
+      "reference": false,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-halo-T20-W40",
+      "reference": true,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-exponential-T20-W40",
+      "reference": false,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian8-T20-W40",
+      "reference": false,
+      "qualified": false,
+      "assessment": "contradicted",
+      "intrinsic_assessment": "contradicted",
+      "sign": "unqualified",
+      "sign_assessment": "not_qualified",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian32-T20-W40",
+      "reference": false,
+      "qualified": false,
+      "assessment": "contradicted",
+      "intrinsic_assessment": "contradicted",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian128-T20-W40",
+      "reference": false,
+      "qualified": false,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian512-T20-W40",
+      "reference": false,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-halo-T20-W64",
+      "reference": true,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-exponential-T20-W64",
+      "reference": false,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian8-T20-W64",
+      "reference": false,
+      "qualified": false,
+      "assessment": "contradicted",
+      "intrinsic_assessment": "contradicted",
+      "sign": "unqualified",
+      "sign_assessment": "not_qualified",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian32-T20-W64",
+      "reference": false,
+      "qualified": false,
+      "assessment": "contradicted",
+      "intrinsic_assessment": "contradicted",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian128-T20-W64",
+      "reference": false,
+      "qualified": false,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian512-T20-W64",
+      "reference": false,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    }
+  ]
+}

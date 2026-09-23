@@ -1,0 +1,13 @@
+{
+  "source": "37e9e56db028942d066b61cf40330f7f3eca6cff",
+  "tag": "publication-2026-09-23.3",
+  "anonymous_https_clone": true,
+  "python": "3.11.14",
+  "fresh_venv": true,
+  "pinned_dependencies": true,
+  "generator_command": ".venv/bin/python scripts/publication/generate.py --benchmark ..",
+  "website_build": "node build.mjs",
+  "all_tracked_generated_web_files_identical": true,
+  "verifier_passed": true,
+  "simulations_executed": false
+}

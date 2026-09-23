@@ -117,3 +117,20 @@ website-only. Canonical-site accessibility remains partial across clients.
 These content changes are not an edge-access repair or a universal crawler test.
 Earlier release tags and numerical evidence are unchanged. No external researcher
 has been contacted and no external scientific endorsement is claimed.
+
+### Public retrieval and reconstruction after tagging
+
+A fresh anonymous clone of `publication-2026-09-23.3` with a fresh Python3.11.14
+environment and pinned dependencies regenerates the tracked publication web
+files identically, builds the site, and passes its consistency checker. No
+scientific evolution is rerun. The two older publication tags remain unchanged.
+
+The web browsing service retrieves the tagged agent guide, article, claims,
+population/accuracy/cost values, finite-displacement derivation and pinned
+scientific reproduction instructions. A default Python reader, without custom
+headers, retrieves eleven central mirror/source resources with matching bytes.
+The full raw mirror passes the expected-release consistency checker as well.
+The canonical browsing path still fails through that service, and the generic
+Python reader gets403 there; the named anonymous reader and live browsers work.
+This is a tested fallback, not universal canonical accessibility or an independent
+scientific review. See [the corrective receipts](release-checks/corrections-2026-09-23.3/).

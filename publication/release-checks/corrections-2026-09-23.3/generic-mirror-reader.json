@@ -1,0 +1,95 @@
+{
+  "reader": "Python urllib default headers, no custom user agent, cookies, auth or private connector",
+  "release": "2026-09-23.3",
+  "records": [
+    {
+      "path": "agents.md",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 7397,
+      "sha256": "6ec667954e200a986e76c37c15729bca89ce0140d4f04bf54b701b984ec903b7",
+      "matches_source": true
+    },
+    {
+      "path": "paper.md",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 57620,
+      "sha256": "22fca75b085b3a310f98ad3e89bab149654c5985c568b903c93b22204392ec1a",
+      "matches_source": true
+    },
+    {
+      "path": "learn.md",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 12446,
+      "sha256": "8d0d32d0ae4cce60ccb8a1704ee5e349cdba0ad73dba2f393fb3a0df6e218cb5",
+      "matches_source": true
+    },
+    {
+      "path": "manifest.json",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 10293,
+      "sha256": "376ba255b89ac4d53264e700fa7b9d5cf213ebde8ba1d2fbda74ec540d9e381f",
+      "matches_source": true
+    },
+    {
+      "path": "claims.json",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 40653,
+      "sha256": "0338e89247a2ad13295632281dfceda59304094ab0d276dcfbe79cfd13e919a9",
+      "matches_source": true
+    },
+    {
+      "path": "results/populations.json",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 2586,
+      "sha256": "af01f39ff5386533afde273156627c8ddf93ce6a975fb92eab748dee4b467e04",
+      "matches_source": true
+    },
+    {
+      "path": "results/accuracy.json",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 24195,
+      "sha256": "c0b79c448713f240adb3301d2740ded9de8a8b7c162c7e1861fbec84a7b509ea",
+      "matches_source": true
+    },
+    {
+      "path": "results/cost.json",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 16790,
+      "sha256": "21407a7ec81bb4b3b79ad9dc4b8f262038cd613e45cce41977ae1efe548fa492",
+      "matches_source": true
+    },
+    {
+      "path": "methods/CUMULATIVE_IDENTITY.md",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 4947,
+      "sha256": "e54d5e12bd47ac1c463e382e965f091af393ac010196f551cb725d359f099e7a",
+      "matches_source": true
+    },
+    {
+      "path": "protocols/ACCURACY_PLAN.md",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 8299,
+      "sha256": "f081a9359d4c9785262c495cdb99cc204b93c3215cef7451096ff78119d55dec",
+      "matches_source": true
+    },
+    {
+      "path": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/cdb30b5b2f350d2f3de6831995b83f281fe2974e/accuracy/README.md",
+      "status": 200,
+      "content_type": "text/plain",
+      "bytes": 7012,
+      "sha256": "e390bbced595df3c5f9e02e1ef6255259de6839d7e6e14154914d421d4314e10",
+      "matches_source": true
+    }
+  ],
+  "scope": "Access and byte consistency, not independent scientific review"
+}
