@@ -62,7 +62,9 @@ absolute normalization, covariance, source manifests and exact verification scop
 forced evolution. Reproducing old seeds verifies the package; it is not a new
 independent physical sample. The [complete held-out public-source rerun](population/reproductions/heldout-01/result.json)
 passed with all checked differences exactly zero and an inspected regenerated
-figure. The complete original population rerun is still in progress.
+figure. The [complete original population rerun](population/reproductions/population-01/result.json)
+also passed: all 20 cases, 24 analysis comparisons and ten saved kernel arrays
+reproduce exactly. Both commands generated their inspected figures successfully.
 
 ## What has not transferred to three dimensions?
 

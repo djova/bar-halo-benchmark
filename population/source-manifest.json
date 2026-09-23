@@ -1,5 +1,5 @@
 {
-  "README.md": "db77a0df010b5037c6cbb7076f014b10d525abebd486b303f97854bd980e6edd",
+  "README.md": "8976c3097c4904f92337a2eb671376090918f4ee7e8e0d1d49748a412a7cc683",
   "benchmark/characteristics.py": "15f6f2de767e1563ed7a30a9bb5301fbfb008f82c86ffdf7b5147881e1df44b3",
   "heldout/forecast/FROZEN_PREDICTIONS": "53152200c093f4271d607484558771793cff74f030969a64d317dae46fe9f425",
   "heldout/forecast/predictions.npz": "0f410a7773a27e27ef87bdf6d48ef02f06333a9796c57ac836d5748c9737f052",
@@ -20,6 +20,8 @@
   "reproduction.json": "5fa4f7812a1105ef2ee7f1b819c3fbfefdfddb7e17390e219608b6f1c3b073da",
   "reproductions/heldout-01/heldout-predictions.png": "a0fd5a9d0c8aeed2fdfa6b84bd89319e176421fe9da42ce566190ca38def9b7c",
   "reproductions/heldout-01/result.json": "8b64bd9577d3efef18bf1b00d452f9744606f86cf01f1c5ad1a3a1fb5c265195",
+  "reproductions/population-01/population-response.png": "1cec445ce47c9062409a9d134a5c964a8bd8488cd66cf12ccd790fc6c89e07e3",
+  "reproductions/population-01/result.json": "2eaff5ba74c4a28e59d88061c61be691ad45e804ea36b0aa82700f6564f1afe1",
   "research/population-response/CUMULATIVE_IDENTITY.md": "e54d5e12bd47ac1c463e382e965f091af393ac010196f551cb725d359f099e7a",
   "research/population-response/DETERMINISTIC_REFINEMENT_01.md": "cdd9fe35dabaa9d707f262330a23531d4dcabd5154f08efe81f30e66475a849f",
   "research/population-response/DETERMINISTIC_REFINEMENT_02.md": "d029ccd5ab6bc32170bf1e20822b09bf83af6de97abac5fc608dcb02b4d69c5d",

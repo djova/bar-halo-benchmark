@@ -1,0 +1,257 @@
+{
+  "checked_utc": "2026-09-23T05:46:22.649029+00:00",
+  "public_source_commit": "dd0d85efe05c5f2ab7d00f0805b25c1f8c4665b1",
+  "source_worktree_clean": true,
+  "whole_command_exit_code": 0,
+  "command": "python reproduce_population.py --out reproduced-population --workers 1",
+  "complete_cases": 20,
+  "trajectory_batches": 16,
+  "independent_central_calculations": 4,
+  "analysis_comparisons": 24,
+  "central_estimates": 12,
+  "saved_kernel_arrays": 10,
+  "all_reference_values_reproduced": true,
+  "maximum_case_difference": 0.0,
+  "maximum_analysis_interval_difference": 0.0,
+  "maximum_saved_kernel_difference": 0.0,
+  "all_decisions_unchanged": true,
+  "scientific_cpu_seconds": 12556.907485999998,
+  "wall_seconds_before_final_plot": 12573.213443203014,
+  "python": "3.11.14 (main, Dec  9 2025, 19:02:23) [Clang 21.1.4 ]",
+  "numpy": "1.26.4",
+  "installed_versions": {
+    "contourpy": "1.3.3",
+    "six": "1.17.0",
+    "numpy": "1.26.4",
+    "python-dateutil": "2.9.0.post0",
+    "kiwisolver": "1.5.1",
+    "packaging": "26.3",
+    "matplotlib": "3.11.2",
+    "fonttools": "4.65.0",
+    "cycler": "0.12.1",
+    "pyparsing": "3.3.3",
+    "pillow": "12.3.0"
+  },
+  "entrypoint_sha256": "da561754a7e122a2fcd78c297b27220d3ecd0193cd964fb2db023733e68a1382",
+  "source_manifest_sha256": "3c841951fb6ef8c210ca2acc7eea0f992402a7b0385c2d04cadee6b1a69626be",
+  "requirements_sha256": "4e483716d07d3b3c015b7bae94e88a705494714d9a8ca77df7b901f53f2aa77a",
+  "result_sha256": "2b77bd57cdd76fb9aa7607e51e3978fcc938c13fa995b6affda245570185ccf2",
+  "analysis_sha256": "28aeb6aa9fedbc4581cbd635369e8067802f74611e619626af06376d82e72340",
+  "kernel_archive_sha256": "b708acde9c5ab9fe965c027d229d2bd7f1555fb6c93be98fa3b5f1915bda4878",
+  "ledger_sha256": {
+    "validation": "3452c4f2c7ecc82285f5407f887fb2825ac62329e5eb8782c375e00ad9e77b17",
+    "distribution": "94a239b70ca70714c82a309c1a79ce0500ae735b48463e3119e470bed19990b4"
+  },
+  "figure": {
+    "file": "population-response.png",
+    "regenerated_sha256": "684b575203215cc3f322c3f433e0a9c550c61f95389edcaccf9a77745e3fca42",
+    "published_sha256": "1cec445ce47c9062409a9d134a5c964a8bd8488cd66cf12ccd790fc6c89e07e3",
+    "size": [
+      1700,
+      884
+    ],
+    "metadata_free_copy_preserves_pixels": true,
+    "visually_inspected": true
+  },
+  "comparisons": [
+    {
+      "case": "s0-seed94501",
+      "max_absolute_error": 0.0,
+      "pass_": true
+    },
+    {
+      "case": "s0-seed94502",
+      "max_absolute_error": 0.0,
+      "pass_": true
+    },
+    {
+      "case": "s0-seed94503",
+      "max_absolute_error": 0.0,
+      "pass_": true
+    },
+    {
+      "case": "s0-seed94504",
+      "max_absolute_error": 0.0,
+      "pass_": true
+    },
+    {
+      "case": "s0-seed94505",
+      "max_absolute_error": 0.0,
+      "pass_": true
+    },
+    {
+      "case": "s0-seed94506",
+      "max_absolute_error": 0.0,
+      "pass_": true
+    },
+    {
+      "case": "s0-seed94507",
+      "max_absolute_error": 0.0,
+      "pass_": true
+    },
+    {
+      "case": "s0-seed94508",
+      "max_absolute_error": 0.0,
+      "pass_": true
+    },
+    {
+      "case": "s.25-seed94501",
+      "max_absolute_error": 0.0,
+      "pass_": true
+    },
+    {
+      "case": "s.25-seed94502",
+      "max_absolute_error": 0.0,
+      "pass_": true
+    },
+    {
+      "case": "s.25-seed94503",
+      "max_absolute_error": 0.0,
+      "pass_": true
+    },
+    {
+      "case": "s.25-seed94504",
+      "max_absolute_error": 0.0,
+      "pass_": true
+    },
+    {
+      "case": "s.25-seed94505",
+      "max_absolute_error": 0.0,
+      "pass_": true
+    },
+    {
+      "case": "s.25-seed94506",
+      "max_absolute_error": 0.0,
+      "pass_": true
+    },
+    {
+      "case": "s.25-seed94507",
+      "max_absolute_error": 0.0,
+      "pass_": true
+    },
+    {
+      "case": "s.25-seed94508",
+      "max_absolute_error": 0.0,
+      "pass_": true
+    },
+    {
+      "case": "noisy-s0",
+      "max_absolute_error": 0.0,
+      "pass_": true
+    },
+    {
+      "case": "stationary-characteristic",
+      "max_absolute_error": 0.0,
+      "pass_": true
+    },
+    {
+      "case": "noisy-s.25",
+      "max_absolute_error": 0.0,
+      "pass_": true
+    },
+    {
+      "case": "moving-characteristic",
+      "max_absolute_error": 0.0,
+      "pass_": true
+    }
+  ],
+  "kernel_errors": {
+    "stationary_cell_edges": 0.0,
+    "stationary_primitive_batches": 0.0,
+    "stationary_primitive_coarse_batches": 0.0,
+    "stationary_raw_initial_action_edges": 0.0,
+    "stationary_raw_conditional_batches": 0.0,
+    "moving_cell_edges": 0.0,
+    "moving_primitive_batches": 0.0,
+    "moving_primitive_coarse_batches": 0.0,
+    "moving_raw_initial_action_edges": 0.0,
+    "moving_raw_conditional_batches": 0.0
+  },
+  "central": [
+    {
+      "s": 0.0,
+      "tau": 10.0,
+      "population": "gaussian-40",
+      "distribution": 0.012800835181219683,
+      "archived_distribution_refinement_qualification": true
+    },
+    {
+      "s": 0.0,
+      "tau": 10.0,
+      "population": "halo-40",
+      "distribution": 0.013441448934601443,
+      "archived_distribution_refinement_qualification": true
+    },
+    {
+      "s": 0.0,
+      "tau": 10.0,
+      "population": "exponential-40",
+      "distribution": 0.013441287707819367,
+      "archived_distribution_refinement_qualification": true
+    },
+    {
+      "s": 0.0,
+      "tau": 20.0,
+      "population": "gaussian-40",
+      "distribution": 0.0212723102353136,
+      "archived_distribution_refinement_qualification": true
+    },
+    {
+      "s": 0.0,
+      "tau": 20.0,
+      "population": "halo-40",
+      "distribution": 0.022799966387862282,
+      "archived_distribution_refinement_qualification": true
+    },
+    {
+      "s": 0.0,
+      "tau": 20.0,
+      "population": "exponential-40",
+      "distribution": 0.02279957659347106,
+      "archived_distribution_refinement_qualification": true
+    },
+    {
+      "s": 0.25,
+      "tau": 10.0,
+      "population": "gaussian-40",
+      "distribution": 0.0016249174274667877,
+      "archived_distribution_refinement_qualification": true
+    },
+    {
+      "s": 0.25,
+      "tau": 10.0,
+      "population": "halo-40",
+      "distribution": -0.003884807350011052,
+      "archived_distribution_refinement_qualification": true
+    },
+    {
+      "s": 0.25,
+      "tau": 10.0,
+      "population": "exponential-40",
+      "distribution": -0.0038828373591318632,
+      "archived_distribution_refinement_qualification": true
+    },
+    {
+      "s": 0.25,
+      "tau": 20.0,
+      "population": "gaussian-40",
+      "distribution": -0.16136962710460867,
+      "archived_distribution_refinement_qualification": true
+    },
+    {
+      "s": 0.25,
+      "tau": 20.0,
+      "population": "halo-40",
+      "distribution": -0.03411474339627195,
+      "archived_distribution_refinement_qualification": true
+    },
+    {
+      "s": 0.25,
+      "tau": 20.0,
+      "population": "exponential-40",
+      "distribution": -0.034137878951411224,
+      "archived_distribution_refinement_qualification": true
+    }
+  ],
+  "scope": "Full clean public-source same-seed reproduction of 16 trajectory batches, four central independent distribution/characteristic calculations, 24 analysis comparisons, 12 central estimates and all ten saved kernel arrays. Separate archived distribution refinements and Cartesian experiments are not rerun by this command. This verifies the executable release, not a new independent statistical sample, pointwise kernel convergence, or a qualified 3D prediction."
+}

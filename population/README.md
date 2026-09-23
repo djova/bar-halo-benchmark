@@ -29,6 +29,13 @@ ceiling is six core-hours and every case has a finite wall limit. A run stopped
 by those limits remains incomplete. A later timestamp does not bypass a scientific
 check. `--stop-utc YYYY-MM-DDTHH:MM:SSZ` can supply an earlier external deadline.
 
+A full clean public-source run at commit
+`dd0d85efe05c5f2ab7d00f0805b25c1f8c4665b1` completed in 3.49 scientific core-hours
+on one thread. All 20 cases, 24 analysis comparisons, 12 central estimates and
+ten saved kernel arrays reproduce exactly. Its regenerated figure was inspected.
+See the [complete receipt](reproductions/population-01/result.json) and
+[regenerated figure](reproductions/population-01/population-response.png).
+
 This command reproduces the original seeds. It is not a new statistical sample.
 It reruns the paired trajectory step/window checks, but it does not rerun every
 archived distribution refinement, the prospective new-population tests, or any
@@ -150,5 +157,7 @@ figure was inspected and is pixel-identical to the original. See the
 An earlier preparation receipt had an incorrect lockfile hash. The final receipt
 retains that correction: both pinned Git versions contain the same actual lock
 bytes, and all eleven dependency pins match the measured environment. Numerical
-source, installed versions and outcomes are unchanged. The original population
-command remains in progress; this success does not stand in for its completion.
+source, installed versions and outcomes are unchanged. Both full commands have
+now completed; their receipts preserve the exact tested commits and the scope
+of the comparisons. Subsequent release-note and receipt additions do not change
+the numerical solvers or their inputs.
