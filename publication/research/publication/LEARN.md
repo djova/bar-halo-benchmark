@@ -10,7 +10,7 @@ A bar is a density pattern. Its stars need not remain together like points paint
 
 The galaxy clock is in **Gyr** (billions of years). Density brightness is logarithmic and normalized per frame; a brighter frame is not necessarily a stronger bar. The measured cosine amplitude is a separate quantity.
 
-**Worked example — the factor of two.** If \(\Sigma(\phi)\propto1+a\cos(2\phi)\), the normalized complex coefficient is \(C_2=\frac{\int\Sigma e^{2i\phi}\,\mathrm d\phi}{\int\Sigma\,\mathrm d\phi}\). The constant and oscillating fourth-harmonic terms integrate to zero, leaving \(C_2=a/2\). Thus \(A_2=2|C_2|=|a|\) for this profile. General positive distributions can have higher harmonics and A₂ above one; A₂ is not a fraction of stars.
+**Worked example — the factor of two.** If \(\Sigma(\phi)\propto1+a\cos(2\phi)\), the normalized complex coefficient is \(C_2=\frac{\int\Sigma e^{2i\phi}\,\mathrm d\phi}{\int\Sigma\,\mathrm d\phi}\). Expanding the numerator gives \(e^{2i\phi}+(a/2)e^{4i\phi}+a/2\). The oscillating terms integrate to zero over a full azimuth; the constant \(a/2\) survives. Dividing by the denominator gives \(C_2=a/2\). Thus \(A_2=2|C_2|=|a|\) for this profile. General positive distributions can have higher harmonics and A₂ above one; A₂ is not a fraction of stars.
 
 **Try:** Does a local A₂ of 1.2 mean 120% of the stars are in the bar?
 
@@ -89,7 +89,7 @@ The primitive kernel \(Q_{\mathrm p}\) weights the initial population gradient: 
 
 **Worked example — reconstruct the sign.** The original early Gaussian gives approximately \(-0.011058+0.012565=+0.001508\). The halo gives \(-0.004835+0.000934=-0.003901\). Rounding explains the final displayed digit. These are **gradient-coordinate contributions**, not two literal orbital cohorts. Matching central density and slope did not preserve their balance.
 
-[Inspect Gaussian 128's conservative rejection](paper.html?population=gaussian128&time=10&window=40#interactive-decision). Its independent intrinsic error is within 5%, but its absolute allowance declines to certify it. That is an informative limitation of the rule, not evidence that the recorded response was wrong.
+[Inspect Gaussian 128's conservative rejection](paper.html?population=gaussian128&time=10&window=40#interactive-decision). [Static values](results/accuracy.json) are available without the interactive controls. Its independent intrinsic error is within 5%, but its absolute allowance declines to certify it. That is an informative limitation of the rule, not evidence that the recorded response was wrong.
 
 **What has been learned?** Population approximations can change a finite-time answer; some inexpensive approximations work closely here; the kernel can expose the mismatch and assess its error with stated numerical assumptions. The eight supported qualifications share one new dynamical condition. No full-halo or SIDM prediction follows.
 

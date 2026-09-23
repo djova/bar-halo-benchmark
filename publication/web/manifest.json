@@ -3,23 +3,29 @@
   "access": {
     "status": "partial_automated_client_access",
     "canonical": "https://djova.ca/galaxy-bar/",
-    "raw_mirror": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/",
-    "browse_mirror": "https://github.com/djova/bar-halo-benchmark/blob/publication-2026-09-23.3/publication/web/",
-    "article": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/paper.md",
-    "claims": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/claims.json",
+    "raw_mirror": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/",
+    "browse_mirror": "https://github.com/djova/bar-halo-benchmark/blob/publication-2026-09-23.4/publication/web/",
+    "article": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/paper.md",
+    "claims": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/claims.json",
     "results": {
-      "populations": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/results/populations.json",
-      "accuracy": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/results/accuracy.json",
-      "cost": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/results/cost.json"
+      "populations": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/results/populations.json",
+      "accuracy": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/results/accuracy.json",
+      "cost": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/results/cost.json"
     },
-    "derivation": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/methods/CUMULATIVE_IDENTITY.md",
+    "derivation": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/methods/CUMULATIVE_IDENTITY.md",
+    "principal_figures": [
+      "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/diagnostics/population-accuracy/population-comparison.png",
+      "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/diagnostics/population-accuracy/population-accuracy.png",
+      "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/diagnostics/population-accuracy/estimator-efficiency.png"
+    ],
+    "interactive_article": "https://djova.ca/galaxy-bar/paper.html",
     "scientific_source": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/cdb30b5b2f350d2f3de6831995b83f281fe2974e/",
     "historical_material": "Links labelled historical website-only are not mirrored; central article, claims, values, derivation and frozen protocols are included.",
     "relative_links": "Resolve publication-relative paths at raw_mirror; resolve path_in_public_package at scientific_source.",
     "tested_descriptive_user_agent": "GalaxyBar-PublicVerification/2.0",
     "universal_client_access": false
   },
-  "release": "2026-09-23.3",
+  "release": "2026-09-23.4",
   "article": "paper.html",
   "markdown": "paper.md",
   "review_status": "not_externally_reviewed",
@@ -29,7 +35,7 @@
   },
   "publication_source": {
     "repository": "https://github.com/djova/bar-halo-benchmark",
-    "ref": "publication-2026-09-23.3",
+    "ref": "publication-2026-09-23.4",
     "directory": "publication"
   },
   "models": "models.json",
@@ -40,39 +46,39 @@
   "verification": "verify_publication.py",
   "reproduction": "reproduce.html",
   "archive": "archive.html",
-  "release_snapshot": "releases/2026-09-23.3/manifest.json",
+  "release_snapshot": "releases/2026-09-23.4/manifest.json",
   "licenses": "reproduce.html#licenses",
-  "generator_sha256": "927b908c637af29a234b3be8c3df0a2da75e62a030a16ecc7fcc030da77fdfbc",
-  "article_source_sha256": "05615023f619f91bb12b5c2f94f72fdde4835b3aff237ef7a352089dd48145d6",
+  "generator_sha256": "79c62ae4fa7d6ea7d5452300a3f499a7520de028be6c0ec963e1477716b9f610",
+  "article_source_sha256": "f7b0fd66ae235230780714e9f45924e8524212c7cfd3ebe861cc103a458a8ddd",
   "artifacts": [
     {
       "path": "agents.html",
-      "sha256": "63b63c1374e1f0380f995da43a94190d9ba6d5ca12537444788166995957a2d1",
-      "bytes": 7531
+      "sha256": "c18013a5b0727ce502ab304f73a0b74280436f0f3b331972ccd3611b86ae18bb",
+      "bytes": 7684
     },
     {
       "path": "agents.md",
-      "sha256": "6ec667954e200a986e76c37c15729bca89ce0140d4f04bf54b701b984ec903b7",
-      "bytes": 7397
+      "sha256": "3bf09f9cad020f2c85caa5c9aa6f34c99e24ee86578e62e92eac8406de7acfe0",
+      "bytes": 7550
     },
     {
       "path": "archive.html",
-      "sha256": "7ca0cd8ca4ecee62b74090d6bf9ff9ddc7633215b7dfbd6d5f1f94155e143464",
+      "sha256": "fa02669538379c94ab4378ee78088c1744087b23565303ec941309c1e102bc1d",
       "bytes": 3817
     },
     {
       "path": "campaigns.json",
-      "sha256": "55b148f32a39556a923767dea3fef9fd861e66d971ccfdaa95634d6a16f040a3",
+      "sha256": "6241f0eb66586db5825ab233ec2626aaebc6095880d3bcdfa4bc1ceffcc9036b",
       "bytes": 3502
     },
     {
       "path": "claim-ledger.md",
-      "sha256": "5a8046ad36139638f344cae12016242c34260fc6a0a7d756485269c299389e1e",
+      "sha256": "8438085cc9b37736d52a7c8cc1b40df7257466e0bc5c6e6347e64ca73c0f5eb1",
       "bytes": 3916
     },
     {
       "path": "claims.json",
-      "sha256": "0338e89247a2ad13295632281dfceda59304094ab0d276dcfbe79cfd13e919a9",
+      "sha256": "8f68729482bb902ba69a36b79a751b03d3e0cefdb2988359be43bc523172ecba",
       "bytes": 40653
     },
     {
@@ -87,7 +93,7 @@
     },
     {
       "path": "datasets.json",
-      "sha256": "9b2482dddd7668fe49eedf332e6acd7b7688e14c8bb4f4acef4989809f3d04a5",
+      "sha256": "2ede2ee2f02428bcc034a027802cc02131b3515b22570786d67622ce5bc69170",
       "bytes": 65538
     },
     {
@@ -111,9 +117,24 @@
       "bytes": 2771
     },
     {
+      "path": "diagnostics/population-accuracy/estimator-efficiency.png",
+      "sha256": "f37bf73f627995d32d2b995d20f4f73299e69f709f0f322533e6cdf9f6e021c6",
+      "bytes": 249125
+    },
+    {
       "path": "diagnostics/population-accuracy/joint-error-assessment.json",
       "sha256": "97124a1ad6859382ce0c590baaba618dd70a713108fdde1e1efe618698929d11",
       "bytes": 52024
+    },
+    {
+      "path": "diagnostics/population-accuracy/population-accuracy.png",
+      "sha256": "d45bd97a95604b283bd97ac2253a6ced48fab92a5fb095bd65e9ccfd78ed728d",
+      "bytes": 168399
+    },
+    {
+      "path": "diagnostics/population-accuracy/population-comparison.png",
+      "sha256": "43334e2a5b9b90a40fd94cf6a7ab8bd8fce54daa98278593c9fecaa2d870f8a7",
+      "bytes": 93214
     },
     {
       "path": "diagnostics/population-response/halo-pilot.json",
@@ -127,27 +148,27 @@
     },
     {
       "path": "experiments.html",
-      "sha256": "0c6e534eaa3afb0388e106eb7ccd76ff94ca10ed0315115f1207bf292d05f142",
+      "sha256": "1a63f9b7cba52318d352ddba96bd0b951a346094dae961b36f885b7ce31fb69e",
       "bytes": 4429
     },
     {
       "path": "figures.json",
-      "sha256": "1a9d71efcbbd5de3f43ebefa3ee36b9ef72367d2d81543ad6359e9873bdacddd",
+      "sha256": "e61e5a71339643e8b5e81255704cb5aababbfeff355c5b32723a666141b4d637",
       "bytes": 6957
     },
     {
       "path": "learn.html",
-      "sha256": "a28c7c5388413aebf058888264c59b851fc5afe7cf7337b424e625fd26d5c3bd",
-      "bytes": 14530
+      "sha256": "04fe02a8247ae0b5bb2dd09ff09a460ee30de4eeaf679309ce1f7d0f22c915f0",
+      "bytes": 14786
     },
     {
       "path": "learn.md",
-      "sha256": "8d0d32d0ae4cce60ccb8a1704ee5e349cdba0ad73dba2f393fb3a0df6e218cb5",
-      "bytes": 12446
+      "sha256": "11a243213d4513d62c63cd27ced9953ed5669d908284d9fb2e943dc5f4563ceb",
+      "bytes": 12725
     },
     {
       "path": "llms.txt",
-      "sha256": "340914333069803ebcc2dd582609313358d7b52e9acc88393f33a110b5b13399",
+      "sha256": "1ba041ad06c5c2e9485c8b4d314edec9853130b4005ffe0b1b57bc8a25f1d5d3",
       "bytes": 817
     },
     {
@@ -162,18 +183,18 @@
     },
     {
       "path": "models.json",
-      "sha256": "e64f4633ba2ceadaca90dfb2146e39d8b602dac8673a1c99079d1a330f690e28",
+      "sha256": "74cd1bffe392ecee6b49f1fde46f9463ff085f2a6a2649d0aa943de755d5538e",
       "bytes": 2241
     },
     {
       "path": "paper.html",
-      "sha256": "4133b688895c54b79b51f5481cceb6e6b259de8b0a251c0f9ddebb1b00ab98bf",
-      "bytes": 68943
+      "sha256": "54aec24159b24caec4327f7cb97818c75cf726da55ca1a541400cdf29dd286e0",
+      "bytes": 68974
     },
     {
       "path": "paper.md",
-      "sha256": "22fca75b085b3a310f98ad3e89bab149654c5985c568b903c93b22204392ec1a",
-      "bytes": 57620
+      "sha256": "f789be73704c9b8130041dcbaf5d2f58d614ab314112847450c62ca373e3123e",
+      "bytes": 56738
     },
     {
       "path": "protocols/ACCURACY_PLAN.md",
@@ -227,12 +248,12 @@
     },
     {
       "path": "reproduce.html",
-      "sha256": "c607be6f405f3a95b8f9d9608eb187525ba60f9eb76d8ef87c3e417c143f552c",
+      "sha256": "496f4e61fc720dd81d4aa747982c4411595ab63ed9526ce18f7a89c8e320c033",
       "bytes": 8794
     },
     {
       "path": "reproduce.md",
-      "sha256": "502056fd43789563655ed224f6a914a89fea40c93506d2534475e72e5e2759d5",
+      "sha256": "912c4f197c5da4764c6b19c9db95cada0d2f20702c7876a5abc0bb56f79009ea",
       "bytes": 8120
     },
     {
@@ -242,7 +263,7 @@
     },
     {
       "path": "results/accuracy.json",
-      "sha256": "c0b79c448713f240adb3301d2740ded9de8a8b7c162c7e1861fbec84a7b509ea",
+      "sha256": "530fa1a082acc88ed74db74b5db4a96b68299cf507b8a1d0e33b898b35fb768f",
       "bytes": 24195
     },
     {
@@ -252,7 +273,7 @@
     },
     {
       "path": "results/cost.json",
-      "sha256": "21407a7ec81bb4b3b79ad9dc4b8f262038cd613e45cce41977ae1efe548fa492",
+      "sha256": "1969615c7d9182e324cadc91e101daecc871958232846b16e8f95b3c0f1fcdd7",
       "bytes": 16790
     },
     {
@@ -262,12 +283,12 @@
     },
     {
       "path": "results/populations.json",
-      "sha256": "af01f39ff5386533afde273156627c8ddf93ce6a975fb92eab748dee4b467e04",
+      "sha256": "a4a6fcc33f9917ac732fa69d4182feadf59eb1d8fe58e26682b98fedbfcbddab",
       "bytes": 2586
     },
     {
       "path": "results/summary.json",
-      "sha256": "5d118da5eeaa40c3048828fef42d920c7e9d82bea5808b2ae5eefcd5ac4305da",
+      "sha256": "ab4dfb175abe2e3697ed9806b4b9e901e0a99e79f79a1a3555733f3dcdf78cf3",
       "bytes": 410
     },
     {

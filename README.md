@@ -6,11 +6,11 @@
 > reproducible from this repository.
 
 
-> **Anonymous reading fallback (release 2026-09-23.3):**
-> [tagged article](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/paper.md),
-> [claims](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/claims.json),
-> [accuracy values](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/results/accuracy.json), and
-> [agent guide with derivation, source and link-resolution rules](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/agents.md).
+> **Anonymous reading fallback (release 2026-09-23.4):**
+> [tagged article](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/paper.md),
+> [claims](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/claims.json),
+> [accuracy values](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/results/accuracy.json), and
+> [agent guide with derivation, source and link-resolution rules](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/agents.md).
 > These need no custom user agent or private connector. Canonical-site access
 > remains partial for some automated clients. Historical website-only explorers
 > are labelled separately; the central evidence is included in this mirror.

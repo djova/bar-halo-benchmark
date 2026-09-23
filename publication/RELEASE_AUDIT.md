@@ -144,3 +144,16 @@ The full canonical-domain and new Pages-alias privacy scans each pass22,796
 file instances; local release checks pass15,280. These verify delivery and
 privacy, not physical convergence or independent scientific confirmation.
 The remaining canonical generic-reader/browsing-tool limitations above persist.
+
+## Editorial release 2026-09-23.4
+
+The Fourier example now shows the numerator expansion: its oscillating terms
+vanish while the constant a/2 survives. The normalization and results are unchanged.
+Mirror links labelled interactive go to the canonical site, with distinct static
+value links. The article uses the included, byte-identical accuracy protocol.
+All three original principal figures are in the manifest and use pinned raw
+GitHub URLs beside the mirrored text. No figures or numerical results were
+recomputed. Release .3 and its evidence remain immutable.
+
+This fixes the identified publication links, not universal client access.
+Canonical-site and some browser-service retrieval remains client-dependent.

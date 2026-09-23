@@ -9,10 +9,11 @@ from pathlib import Path
 import markdown
 
 ROOT=Path(__file__).resolve().parents[2]; W=ROOT/'web'; SRC=ROOT/'research/publication'
-VERSION='2026-09-23.3'; SCIENCE='cdb30b5b2f350d2f3de6831995b83f281fe2974e'
+VERSION='2026-09-23.4'; SCIENCE='cdb30b5b2f350d2f3de6831995b83f281fe2974e'
 PUBLIC='https://github.com/djova/bar-halo-benchmark'; RAW=f'https://raw.githubusercontent.com/djova/bar-halo-benchmark/{SCIENCE}'
 MIRROR=f'https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-{VERSION}/publication/web/'
 BROWSE=f'{PUBLIC}/blob/publication-{VERSION}/publication/web/'
+FIGURE_FILES=[f'diagnostics/population-accuracy/{name}.png' for name in ('population-comparison','population-accuracy','estimator-efficiency')]
 LABELS={'halo':'Reference halo','exponential':'Slope-matched exponential','gaussian8':'Gaussian σ=8','gaussian32':'Gaussian σ=32','gaussian128':'Gaussian σ=128','gaussian512':'Gaussian σ=512','gaussian':'Gaussian σ=8'}
 def read(p): return json.loads((W/p).read_text())
 def digest(p): return hashlib.sha256(p.read_bytes()).hexdigest()
@@ -188,7 +189,7 @@ cost_table=table(['Population · s · T','Raw / remainder CPU s','Cost×variance
 model_table=table(['Model ID','What evolves','What this establishes','Clock / methods'],[[m['id']+' — '+m['title'],m['evolves'],m['supports']+'; '+m['excludes'],f"{m['clock']} · [methods]({m['methods']})"]for m in models])
 credit='Project initiated and maintained by [djova](https://github.com/djova). Scientific authorship beyond this project role is not asserted. Analysis, software and exposition were developed with AI assistance; the maintainer is the human contact through the public issue tracker.'
 release=f'<p class="publication-meta">Canonical article · Release {VERSION} · Not externally reviewed · <a href="reproduce.html#licenses">Human maintainer and AI disclosure</a></p>'
-replacements={'RELEASE':release,'RATIO':f'<span data-publication-scalar="population_late_magnitude_ratio">{ratio:.6f}</span>','MODELS':model_table,'POPULATION_TABLE':pop_table,'ACCURACY_TABLE':'### Complete accuracy values {#table-accuracy}\n\n'+acc_table+'\n[JSON](results/accuracy.json) · [CSV](results/accuracy.csv). Numeric uncertainty is defined in the protocol above; a deterministic proxy is not a sampling confidence interval.','COST_TABLE':'### Complete estimator-cost values {#table-cost}\n\n'+cost_table+'\n[JSON](results/cost.json) · [CSV](results/cost.csv). All 24 endpoints retain their paired consistency assessments.','LIMITATIONS':'\n\n'.join(f'<span id="{i}"></span>**{i}.** {t}'for i,t in limitations),'ACCURACY_INTERACTIVE':explorer,'COST_INTERACTIVE':cost_interactive,'REVISION':f'**Release {VERSION}:** corrected the finite-displacement control explanation and noise notation, deterministic phase-locking scope, claim comparators, scalar-verifier coverage and pinned public fallback. Releases 2026-09-23.1 and 2026-09-23.2 remain unchanged; the latter introduced KaTeX and expandable values. Scientific outputs and historical criteria unchanged. [Archived studies and corrections](archive.html) · [release manifest](manifest.json) · [reuse conditions](reproduce.html#licenses).','BIBLIOGRAPHY':'## References and reading record {#references}\n\nPrimary links appear beside the associated statements. [Original scholarly sources](diagnostics/population-accuracy/SOURCES.md) and [publication review sources](publication-sources.md) identify the inspected material and its limits. Accessibility follows the [W3C complex-image guidance](https://www.w3.org/WAI/tutorials/images/complex/) through readable captions and complete values. Registry design follows [FAIR principles](https://www.gofair.foundation/fair-principles); no formal certification is claimed.'}
+replacements={'RELEASE':release,'RATIO':f'<span data-publication-scalar="population_late_magnitude_ratio">{ratio:.6f}</span>','MODELS':model_table,'POPULATION_TABLE':pop_table,'ACCURACY_TABLE':'### Complete accuracy values {#table-accuracy}\n\n'+acc_table+'\n[JSON](results/accuracy.json) · [CSV](results/accuracy.csv). Numeric uncertainty is defined in the protocol above; a deterministic proxy is not a sampling confidence interval.','COST_TABLE':'### Complete estimator-cost values {#table-cost}\n\n'+cost_table+'\n[JSON](results/cost.json) · [CSV](results/cost.csv). All 24 endpoints retain their paired consistency assessments.','LIMITATIONS':'\n\n'.join(f'<span id="{i}"></span>**{i}.** {t}'for i,t in limitations),'ACCURACY_INTERACTIVE':explorer,'COST_INTERACTIVE':cost_interactive,'REVISION':f'**Release {VERSION}:** corrected the Fourier teaching expansion and mirror links. Interactive controls lead to the canonical site; static values, the matching protocol and the three principal figures have pinned mirror links. Release 2026-09-23.3 retains the preceding mathematical, metadata and checker corrections. All earlier releases remain unchanged. Scientific outputs and historical criteria unchanged. [Archived studies and corrections](archive.html) · [release manifest](manifest.json) · [reuse conditions](reproduce.html#licenses).','BIBLIOGRAPHY':'## References and reading record {#references}\n\nPrimary links appear beside the associated statements. [Original scholarly sources](diagnostics/population-accuracy/SOURCES.md) and [publication review sources](publication-sources.md) identify the inspected material and its limits. Accessibility follows the [W3C complex-image guidance](https://www.w3.org/WAI/tutorials/images/complex/) through readable captions and complete values. Registry design follows [FAIR principles](https://www.gofair.foundation/fair-principles); no formal certification is claimed.'}
 for key,file,alt,anchor in [('POP','population-comparison.png','Original Gaussian has opposite early sign; halo and exponential closely agree. Values follow.','F-POP-01'),('ACC','population-accuracy.png','All twenty approximation candidates, including four conservative Gaussian128 rejections. Complete values follow.','F-ACC-01'),('COST','estimator-efficiency.png','Large broad-population variance advantage falls to about unity at the narrowest stress width. Values follow.','F-COST-01')]:
  replacements['FIG-'+key]=f'<figure id="{anchor}" class="accuracy-figure"><a href="diagnostics/population-accuracy/{file}"><img src="diagnostics/population-accuracy/{file}" alt="{alt}"></a><figcaption>{anchor} · {alt} Local resonance units; reference-halo weighting means one fixed fast-action slice. Parameters, uncertainty and complete values follow immediately below.</figcaption></figure>'
 for c in claims:replacements['CLAIM:'+c['id']]=f'<p class="publication-claim" id="{c["id"]}"><a href="claims.json">{c["id"]}</a> · {html.escape(c["wording"])}</p>'
@@ -196,7 +197,7 @@ article=(SRC/'ARTICLE.md').read_text()
 for k,v in replacements.items():article=article.replace('{{'+k+'}}',v)
 assert '{{'not in article
 # Markdown keeps the full static argument; large HTML controls are replaced by links.
-md_article=article.replace(explorer,'[Interactive decision explorer](paper.html#interactive-decision). All recorded outcomes are tabulated below.').replace(cost_interactive,'[Interactive estimator comparison](paper.html#estimator). All recorded outcomes are tabulated below.')
+md_article=article.replace(explorer,'[Interactive decision explorer — requires the canonical site](https://djova.ca/galaxy-bar/paper.html#interactive-decision) · [Static accuracy values — available in this mirror](results/accuracy.json). All recorded outcomes are also tabulated below.').replace(cost_interactive,'[Interactive estimator comparison — requires the canonical site](https://djova.ca/galaxy-bar/paper.html#estimator) · [Static estimator values — available in this mirror](results/cost.json). All recorded outcomes are also tabulated below.')
 (W/'paper.md').write_text(md_article)
 page('paper.html','Finite-time population bias in noisy sweeping resonances',article,'<script type="module" src="population-accuracy.js"></script>')
 page('learn.html','Learn the foundations',(SRC/'LEARN.md').read_text())
@@ -344,7 +345,7 @@ Access is **partial across automated clients**. Some anonymous services retrieve
 - [Finite-displacement derivation]({MIRROR}methods/CUMULATIVE_IDENTITY.md) · [frozen accuracy protocol]({MIRROR}protocols/ACCURACY_PLAN.md)
 - [Pinned scientific source]({PUBLIC}/tree/{SCIENCE}) · [numerical reproduction instructions]({RAW}/accuracy/README.md)
 
-The mirrored Markdown resolves links to included central files at this same tag. Links explicitly marked **historical website-only** need the canonical site; the mirror does not contain every old explorer or galaxy movie. For a relative path found inside JSON, resolve it against `{MIRROR}`. For `path_in_public_package`, use the separately pinned scientific source root `{RAW}/`. `json_pointer` uses RFC6901 within that payload, not a web path. To browse instead of fetching raw data, replace the raw prefix with `{BROWSE}`. The manifest's `access` block exposes these roots and exact entry URLs. A successful GitHub fallback does not imply that the canonical site works in every reader.
+The mirrored Markdown resolves links to included central files at this same tag, including the three principal figure images. Links labelled interactive require the canonical site; the adjacent static-value links work in this mirror. Links explicitly marked **historical website-only** need the canonical site; the mirror does not contain every old explorer or galaxy movie. For a relative path found inside JSON, resolve it against `{MIRROR}`. For `path_in_public_package`, use the separately pinned scientific source root `{RAW}/`. `json_pointer` uses RFC6901 within that payload, not a web path. To browse instead of fetching raw data, replace the raw prefix with `{BROWSE}`. The manifest's `access` block exposes these roots and exact entry URLs. A successful GitHub fallback does not imply that the canonical site works in every reader.
 
 ## What a cold-start reader should establish
 
@@ -376,25 +377,32 @@ ledger='# Publication-wide claim ledger\n\nGenerated from the publication regist
 shutil.copyfile(ROOT/'scripts/publication/verify_publication.py',W/'verify_publication.py')
 # Hash the public build inputs without any credentials, private paths or operational logs.
 files=['verify_publication.py','paper.html','paper.md','learn.html','learn.md','reproduce.html','reproduce.md','agents.html','agents.md','archive.html','experiments.html','claims.json','claim-ledger.md','models.json','campaigns.json','datasets.json','figures.json','llms.txt','publication-sources.md']+[p.relative_to(W).as_posix()for p in sorted((W/'results').glob('*'))]
+files+=FIGURE_FILES
 files+=sorted(p.relative_to(W).as_posix() for folder in ('methods','protocols') for p in (W/folder).rglob('*') if p.is_file())
 files+=sorted({e['path']for c in claims for e in c['evidence']}|{d['path']for d in datasets if'path'in d})
-access=dict(status='partial_automated_client_access',canonical='https://djova.ca/galaxy-bar/',raw_mirror=MIRROR,browse_mirror=BROWSE,article=MIRROR+'paper.md',claims=MIRROR+'claims.json',results={n:MIRROR+'results/'+n+'.json' for n in ('populations','accuracy','cost')},derivation=MIRROR+'methods/CUMULATIVE_IDENTITY.md',scientific_source=RAW+'/',historical_material='Links labelled historical website-only are not mirrored; central article, claims, values, derivation and frozen protocols are included.',relative_links='Resolve publication-relative paths at raw_mirror; resolve path_in_public_package at scientific_source.',tested_descriptive_user_agent='GalaxyBar-PublicVerification/2.0',universal_client_access=False)
+access=dict(status='partial_automated_client_access',canonical='https://djova.ca/galaxy-bar/',raw_mirror=MIRROR,browse_mirror=BROWSE,article=MIRROR+'paper.md',claims=MIRROR+'claims.json',results={n:MIRROR+'results/'+n+'.json' for n in ('populations','accuracy','cost')},derivation=MIRROR+'methods/CUMULATIVE_IDENTITY.md',principal_figures=[MIRROR+p for p in FIGURE_FILES],interactive_article='https://djova.ca/galaxy-bar/paper.html',scientific_source=RAW+'/',historical_material='Links labelled historical website-only are not mirrored; central article, claims, values, derivation and frozen protocols are included.',relative_links='Resolve publication-relative paths at raw_mirror; resolve path_in_public_package at scientific_source.',tested_descriptive_user_agent='GalaxyBar-PublicVerification/2.0',universal_client_access=False)
 # Make raw tagged Markdown useful without the canonical website. Central files
 # are explicit pinned URLs; interactive and omitted historical pages are labelled.
 central=set(files)|{'manifest.json'}
+interactive_fragments={'interactive-decision','accuracy-explorer','estimator','accuracy-budget','accuracy-gradient','accuracy-slopes','accuracy-kernel'}
 md_equivalents={'paper.html':'paper.md','learn.html':'learn.md','agents.html':'agents.md','reproduce.html':'reproduce.md'}
 def mirror_link(link,source):
  u=urlsplit(link)
- if not u.path or u.scheme or u.netloc or link.startswith('/'):return link,False
- target=posixpath.normpath(str(Path(source).parent/u.path));target=md_equivalents.get(target,target)
+ if not u.path or u.scheme or u.netloc or link.startswith('/'):return link,None
+ target=posixpath.normpath(str(Path(source).parent/u.path))
  suffix=('?'+u.query if u.query else '')+('#'+u.fragment if u.fragment else '')
- if target in central and not target.endswith('.html'):return MIRROR+target+suffix,False
- return 'https://djova.ca/galaxy-bar/'+posixpath.normpath(str(Path(source).parent/u.path))+suffix,True
+ # A browser selection needs its controls; raw Markdown cannot implement it.
+ if target=='paper.html' and (u.query or u.fragment in interactive_fragments):
+  return 'https://djova.ca/galaxy-bar/'+target+suffix,'interactive — requires the canonical site'
+ target=md_equivalents.get(target,target)
+ if target=='diagnostics/population-accuracy/PLAN.md':target='protocols/ACCURACY_PLAN.md'
+ if target in central and not target.endswith('.html'):return MIRROR+target+suffix,None
+ return 'https://djova.ca/galaxy-bar/'+posixpath.normpath(str(Path(source).parent/u.path))+suffix,'historical website-only'
 for name in ('paper.md','learn.md','agents.md','reproduce.md','claim-ledger.md'):
  text=(W/name).read_text()
  def mlink(m):
-  url,historical=mirror_link(m[2],name)
-  return '['+m[1]+(' — historical website-only' if historical else '')+']('+url+')'
+  url,qualification=mirror_link(m[2],name)
+  return '['+m[1]+(' — '+qualification if qualification else '')+']('+url+')'
  text=re.sub(r'\[([^\]]+)\]\(([^)]+)\)',mlink,text)
  def hlink(m):
   url,_=mirror_link(m[2],name);return m[1]+url+m[3]

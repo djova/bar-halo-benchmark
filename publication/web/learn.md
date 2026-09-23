@@ -1,6 +1,6 @@
 # From moving stars to a testable inference
 
-Six short modules lead from the original galaxy views to the current methods result. Each uses the project's actual evidence. The [research article](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/paper.md) gives the complete argument; the [evidence guide — historical website-only](https://djova.ca/galaxy-bar/guide.html) is a directory, not a prerequisite.
+Six short modules lead from the original galaxy views to the current methods result. Each uses the project's actual evidence. The [research article](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/paper.md) gives the complete argument; the [evidence guide — historical website-only](https://djova.ca/galaxy-bar/guide.html) is a directory, not a prerequisite.
 
 ## 1. Stars and patterns {#learn-1}
 
@@ -10,7 +10,7 @@ A bar is a density pattern. Its stars need not remain together like points paint
 
 The galaxy clock is in **Gyr** (billions of years). Density brightness is logarithmic and normalized per frame; a brighter frame is not necessarily a stronger bar. The measured cosine amplitude is a separate quantity.
 
-**Worked example — the factor of two.** If \(\Sigma(\phi)\propto1+a\cos(2\phi)\), the normalized complex coefficient is \(C_2=\frac{\int\Sigma e^{2i\phi}\,\mathrm d\phi}{\int\Sigma\,\mathrm d\phi}\). The constant and oscillating fourth-harmonic terms integrate to zero, leaving \(C_2=a/2\). Thus \(A_2=2|C_2|=|a|\) for this profile. General positive distributions can have higher harmonics and A₂ above one; A₂ is not a fraction of stars.
+**Worked example — the factor of two.** If \(\Sigma(\phi)\propto1+a\cos(2\phi)\), the normalized complex coefficient is \(C_2=\frac{\int\Sigma e^{2i\phi}\,\mathrm d\phi}{\int\Sigma\,\mathrm d\phi}\). Expanding the numerator gives \(e^{2i\phi}+(a/2)e^{4i\phi}+a/2\). The oscillating terms integrate to zero over a full azimuth; the constant \(a/2\) survives. Dividing by the denominator gives \(C_2=a/2\). Thus \(A_2=2|C_2|=|a|\) for this profile. General positive distributions can have higher harmonics and A₂ above one; A₂ is not a fraction of stars.
 
 **Try:** Does a local A₂ of 1.2 mean 120% of the stars are in the bar?
 
@@ -32,7 +32,7 @@ In the local experiment, the **kernel tells us what the dynamics do** at each st
 
 **Worked example.** An exponential \(w_{\mathrm E}=e^{gx}\) and Gaussian \(w_\sigma=e^{gx-x^2/(2\sigma^2)}\) both have \(w(0)=1\) and \(w'(0)=g\). Their logarithmic slopes are \(g\) and \(g-x/\sigma^2\). A moving resonance encounters the mismatch away from zero. Same initial slope does not mean same sampled gradient.
 
-[Explore the recorded populations — historical website-only](https://djova.ca/galaxy-bar/population-response.html#population-explorer) · [Expert model and normalization](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/paper.md#model) · [Next: transfer](#learn-3)
+[Explore the recorded populations — historical website-only](https://djova.ca/galaxy-bar/population-response.html#population-explorer) · [Expert model and normalization](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/paper.md#model) · [Next: transfer](#learn-3)
 
 ## 3. Angular-momentum exchange {#learn-3}
 
@@ -44,7 +44,7 @@ The reduced experiment records the bar impulse \(B=-\int\sin\psi\,\mathrm dt\), 
 
 **Worked example — contrast versus total.** If the smooth bar transfers +10 units to a population and the noisy bar transfers +8, the contrast is −2. Both transfers remain positive; the negative contrast means suppression, not transfer back to the bar. These numbers are an arithmetic illustration, not a simulated result.
 
-[Follow the same recorded orbit and torque — historical website-only](https://djova.ca/galaxy-bar/response-coupling.html) · [Expert observable](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/paper.md#model) · [Next: resonances](#learn-4)
+[Follow the same recorded orbit and torque — historical website-only](https://djova.ca/galaxy-bar/response-coupling.html) · [Expert observable](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/paper.md#model) · [Next: resonances](#learn-4)
 
 ## 4. Resonances and a moving pattern {#learn-4}
 
@@ -58,7 +58,7 @@ First turn off the noise, \(D=0\). A phase-locked equilibrium requires \(j=0\) a
 
 **Worked example.** With D = 0, at s = 1.2 no constant phase solves sinψ = −s; at s = 0.25 such phases exist. Neither calculation alone determines the sign of the noise-induced total transfer.
 
-[Recorded resonance trajectories — historical website-only](https://djova.ca/galaxy-bar/noise-sweep.html#paths) · [Expert local model](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/paper.md#model) · [Next: noise and inference](#learn-5)
+[Recorded resonance trajectories — historical website-only](https://djova.ca/galaxy-bar/noise-sweep.html#paths) · [Expert local model](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/paper.md#model) · [Next: noise and inference](#learn-5)
 
 ## 5. Noise and numerical inference {#learn-5}
 
@@ -79,7 +79,7 @@ At \(\gamma=0.25\) and lags 1, 2, 4, this is about 0.8848D, 0.7869D and 0.6321D.
 
 <details><summary>Reason it through</summary><p>No. They share dynamics and random histories. The independent sampling units in the kernel uncertainty are the eight separately seeded batches. Retaining pairing helps estimate contrasts but does not create independence.</p></details>
 
-[Retained correction and synthetic controls — historical website-only](https://djova.ca/galaxy-bar/response.html) · [Expert uncertainty](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/paper.md#accuracy) · [Next: the contribution](#learn-6)
+[Retained correction and synthetic controls — historical website-only](https://djova.ca/galaxy-bar/response.html) · [Expert uncertainty](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/paper.md#accuracy) · [Next: the contribution](#learn-6)
 
 ## 6. When does an approximation preserve the answer? {#learn-6}
 
@@ -89,11 +89,11 @@ The primitive kernel \(Q_{\mathrm p}\) weights the initial population gradient: 
 
 **Worked example — reconstruct the sign.** The original early Gaussian gives approximately \(-0.011058+0.012565=+0.001508\). The halo gives \(-0.004835+0.000934=-0.003901\). Rounding explains the final displayed digit. These are **gradient-coordinate contributions**, not two literal orbital cohorts. Matching central density and slope did not preserve their balance.
 
-[Inspect Gaussian 128's conservative rejection](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/paper.md?population=gaussian128&time=10&window=40#interactive-decision). Its independent intrinsic error is within 5%, but its absolute allowance declines to certify it. That is an informative limitation of the rule, not evidence that the recorded response was wrong.
+[Inspect Gaussian 128's conservative rejection — interactive — requires the canonical site](https://djova.ca/galaxy-bar/paper.html?population=gaussian128&time=10&window=40#interactive-decision). [Static values](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/results/accuracy.json) are available without the interactive controls. Its independent intrinsic error is within 5%, but its absolute allowance declines to certify it. That is an informative limitation of the rule, not evidence that the recorded response was wrong.
 
 **What has been learned?** Population approximations can change a finite-time answer; some inexpensive approximations work closely here; the kernel can expose the mismatch and assess its error with stated numerical assumptions. The eight supported qualifications share one new dynamical condition. No full-halo or SIDM prediction follows.
 
-[Read the complete article](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/paper.md) · [Check the evidence yourself](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.3/publication/web/reproduce.md)
+[Read the complete article](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/paper.md) · [Check the evidence yourself](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/reproduce.md)
 
 ## Keep symbols and clocks separate {#notation}
 

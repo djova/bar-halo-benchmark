@@ -113,7 +113,7 @@ The full allowance combines population mismatch and the approximate response's s
 
 {{CLAIM:PA-ACC-01}}
 
-The prospective condition has s = 0.5, η = 0.1. Populations, both times, both windows, forecasts and criteria were frozen before independent evolution. Fourteen independent numerical cases combine positive distribution evolution with collisionless characteristic calculations, including timestep, mesh and domain controls. They are distinct computational pathways; the stochastic kernel was not fitted to their outcomes. [Frozen protocol](diagnostics/population-accuracy/PLAN.md) · [full outcome](diagnostics/population-accuracy/ACCURACY_OUTCOME_01.md).
+The prospective condition has s = 0.5, η = 0.1. Populations, both times, both windows, forecasts and criteria were frozen before independent evolution. Fourteen independent numerical cases combine positive distribution evolution with collisionless characteristic calculations, including timestep, mesh and domain controls. They are distinct computational pathways; the stochastic kernel was not fitted to their outcomes. [Frozen protocol](protocols/ACCURACY_PLAN.md) · [full outcome](diagnostics/population-accuracy/ACCURACY_OUTCOME_01.md).
 
 {{FIG-ACC}}
 
