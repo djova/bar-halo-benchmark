@@ -1,3 +1,10 @@
+> **Canonical interactive article:** [Galaxy Bar research](https://djova.ca/galaxy-bar/paper.html).
+> The clean [article source and evidence package](publication/README.md) provides
+> the full argument, learning route and machine-readable claim registry. Its
+> [reproduction map](https://djova.ca/galaxy-bar/reproduce.html) distinguishes
+> released local experiments from original galaxy outputs that are not fully
+> reproducible from this repository.
+
 # Bar–halo response: dynamics and population
 
 A reproducible experiment separating what a prescribed resonance does to orbits

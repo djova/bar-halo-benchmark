@@ -1,0 +1,156 @@
+{
+  "release": "2026-09-23.1",
+  "figures": [
+    {
+      "id": "F-POP-01",
+      "anchor": "paper.html#F-POP-01",
+      "default_state": {
+        "s": 0.25,
+        "eta": 0.1,
+        "times": [
+          10,
+          20
+        ],
+        "cutoff": 40
+      },
+      "question": "Does matching central density and slope preserve finite-time response?",
+      "values": "results/populations.json",
+      "dataset": "DS-POP",
+      "selection_url": "population-response.html#population-explorer",
+      "release": "2026-09-23.1",
+      "analysis_revision": "cdb30b5b2f350d2f3de6831995b83f281fe2974e",
+      "observable": "Noise-minus-smooth accumulated bar-mediated transfer",
+      "response_units": "dimensionless integral(w K_B dx); efficiency ratio is dimensionless and cost in CPU seconds",
+      "uncertainty": "See linked dataset and article caption; cost/bootstrap and transfer/sampling intervals are distinct.",
+      "clock": "Dimensionless resonance time; not Gyr"
+    },
+    {
+      "id": "F-ACC-01",
+      "anchor": "paper.html#F-ACC-01",
+      "default_state": {
+        "s": 0.5,
+        "eta": 0.1,
+        "population": "exponential",
+        "time": 20,
+        "cutoff": 40
+      },
+      "question": "Can a gradient-mismatch allowance qualify accuracy and when is it conservative?",
+      "values": "results/accuracy.json",
+      "dataset": "DS-ACC",
+      "selection_url": "paper.html?population=exponential&time=20&window=40#interactive-decision",
+      "release": "2026-09-23.1",
+      "analysis_revision": "cdb30b5b2f350d2f3de6831995b83f281fe2974e",
+      "observable": "Noise-minus-smooth accumulated bar-mediated transfer",
+      "response_units": "dimensionless integral(w K_B dx); efficiency ratio is dimensionless and cost in CPU seconds",
+      "uncertainty": "See linked dataset and article caption; cost/bootstrap and transfer/sampling intervals are distinct.",
+      "clock": "Dimensionless resonance time; not Gyr"
+    },
+    {
+      "id": "F-COST-01",
+      "anchor": "paper.html#F-COST-01",
+      "default_state": {
+        "s": 0.25,
+        "population": "halo",
+        "time": 20
+      },
+      "question": "How much variance is removed for the measured CPU cost?",
+      "values": "results/cost.json",
+      "dataset": "DS-COST",
+      "selection_url": "paper.html?costPopulation=halo&costSweep=0.25&costTime=20#estimator",
+      "release": "2026-09-23.1",
+      "analysis_revision": "cdb30b5b2f350d2f3de6831995b83f281fe2974e",
+      "observable": "Noise-minus-smooth accumulated bar-mediated transfer",
+      "response_units": "dimensionless integral(w K_B dx); efficiency ratio is dimensionless and cost in CPU seconds",
+      "uncertainty": "See linked dataset and article caption; cost/bootstrap and transfer/sampling intervals are distinct.",
+      "clock": "Dimensionless resonance time; not Gyr"
+    },
+    {
+      "id": "F-ACC-BUDGET",
+      "anchor": "paper.html#accuracy-budget",
+      "default_state": {
+        "s": 0.5,
+        "eta": 0.1,
+        "population": "exponential",
+        "time": 20,
+        "cutoff": 40,
+        "highlight_radius": 8
+      },
+      "question": "Does full forecast error fit the target?",
+      "values": "diagnostics/population-accuracy/accuracy-explorer.json",
+      "dataset": "DS-ACC-FULL",
+      "selection_url": "paper.html?population=exponential&time=20&window=40#accuracy-budget",
+      "release": "2026-09-23.1",
+      "analysis_revision": "cdb30b5b2f350d2f3de6831995b83f281fe2974e",
+      "observable": "Noise-minus-smooth accumulated bar-mediated transfer",
+      "response_units": "dimensionless integral(w K_B dx); efficiency ratio is dimensionless and cost in CPU seconds",
+      "uncertainty": "See linked dataset and article caption; cost/bootstrap and transfer/sampling intervals are distinct.",
+      "clock": "Dimensionless resonance time; not Gyr"
+    },
+    {
+      "id": "F-ACC-GRADIENT",
+      "anchor": "paper.html#accuracy-gradient",
+      "default_state": {
+        "s": 0.5,
+        "eta": 0.1,
+        "population": "exponential",
+        "time": 20,
+        "cutoff": 40,
+        "highlight_radius": 8
+      },
+      "question": "Where do signed errors cancel while absolute allowances accumulate?",
+      "values": "diagnostics/population-accuracy/accuracy-explorer.json",
+      "dataset": "DS-ACC-FULL",
+      "selection_url": "paper.html?population=exponential&time=20&window=40#accuracy-gradient",
+      "release": "2026-09-23.1",
+      "analysis_revision": "cdb30b5b2f350d2f3de6831995b83f281fe2974e",
+      "observable": "Noise-minus-smooth accumulated bar-mediated transfer",
+      "response_units": "dimensionless integral(w K_B dx); efficiency ratio is dimensionless and cost in CPU seconds",
+      "uncertainty": "See linked dataset and article caption; cost/bootstrap and transfer/sampling intervals are distinct.",
+      "clock": "Dimensionless resonance time; not Gyr"
+    },
+    {
+      "id": "F-ACC-SLOPE",
+      "anchor": "paper.html#accuracy-slopes",
+      "default_state": {
+        "s": 0.5,
+        "eta": 0.1,
+        "population": "exponential",
+        "time": 20,
+        "cutoff": 40,
+        "highlight_radius": 8
+      },
+      "question": "How do reference and approximate population gradients differ?",
+      "values": "diagnostics/population-accuracy/accuracy-explorer.json",
+      "dataset": "DS-ACC-FULL",
+      "selection_url": "paper.html?population=exponential&time=20&window=40#accuracy-slopes",
+      "release": "2026-09-23.1",
+      "analysis_revision": "cdb30b5b2f350d2f3de6831995b83f281fe2974e",
+      "observable": "Noise-minus-smooth accumulated bar-mediated transfer",
+      "response_units": "dimensionless integral(w K_B dx); efficiency ratio is dimensionless and cost in CPU seconds",
+      "uncertainty": "See linked dataset and article caption; cost/bootstrap and transfer/sampling intervals are distinct.",
+      "clock": "Dimensionless resonance time; not Gyr"
+    },
+    {
+      "id": "F-ACC-KERNEL",
+      "anchor": "paper.html#accuracy-kernel",
+      "default_state": {
+        "s": 0.5,
+        "eta": 0.1,
+        "population": "exponential",
+        "time": 20,
+        "cutoff": 40,
+        "highlight_radius": 8
+      },
+      "question": "Which action regions carry dynamical sensitivity?",
+      "values": "diagnostics/population-accuracy/accuracy-explorer.json",
+      "dataset": "DS-ACC-FULL",
+      "selection_url": "paper.html?population=exponential&time=20&window=40#accuracy-kernel",
+      "release": "2026-09-23.1",
+      "analysis_revision": "cdb30b5b2f350d2f3de6831995b83f281fe2974e",
+      "observable": "Noise-minus-smooth accumulated bar-mediated transfer",
+      "response_units": "dimensionless integral(w K_B dx); efficiency ratio is dimensionless and cost in CPU seconds",
+      "uncertainty": "See linked dataset and article caption; cost/bootstrap and transfer/sampling intervals are distinct.",
+      "clock": "Dimensionless resonance time; not Gyr"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="publication-version" content="2026-09-23.1"><meta name="description" content="Versioned Galaxy Bar research: population-selection bias, response kernels and numerical accuracy under a prescribed local resonance."><title>Learn the foundations · Galaxy Bar</title><link rel="stylesheet" href="story.css"><link rel="stylesheet" href="population-response.css"><link rel="stylesheet" href="population-accuracy.css"><link rel="stylesheet" href="publication.css"><link rel="alternate" type="application/json" href="manifest.json" title="Publication manifest"></head><body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="./">Galaxy Bar</a></header><main id="main" class="publication population-publication accuracy-publication"><h1>From moving stars to a testable inference</h1>
+<p>Six short modules lead from the original galaxy views to the current methods result. Each uses the project's actual evidence. The <a href="paper.html">research article</a> gives the complete argument; the <a href="guide.html">evidence guide</a> is a directory, not a prerequisite.</p>
+<h2 id="learn-1">1. Stars and patterns</h2>
+<p><strong>Prerequisite:</strong> positions, velocities and the idea of an orbit.</p>
+<p>A bar is a density pattern. Its stars need not remain together like points painted on a solid rod. In the <a href="index.html#experiment">galaxy view</a>, choose <strong>Follow stars</strong>, then switch between the inertial view and a qualified pattern frame. You are following recorded particle identities, not an artist's animation. A coherent orientation is evidence for a bar; visible elongation alone does not prove resonant trapping.</p>
+<p>The galaxy clock is in <strong>Gyr</strong> (billions of years). Density brightness is logarithmic and normalized per frame; a brighter frame is not necessarily a stronger bar. The measured cosine amplitude is a separate quantity.</p>
+<p><strong>Worked example — the factor of two.</strong> If Σ(φ) ∝ 1 + a cos(2φ), the normalized complex coefficient is C₂ = ∫Σ exp(2iφ)dφ / ∫Σdφ. The constant and oscillating fourth-harmonic terms integrate to zero, leaving C₂ = a/2. Thus A₂ = 2|C₂| = |a| for this profile. General positive distributions can have higher harmonics and A₂ above one; A₂ is not a fraction of stars.</p>
+<p><strong>Try:</strong> Does a local A₂ of 1.2 mean 120% of the stars are in the bar?</p>
+<details><summary>Reason it through</summary><p>No. It is a cosine-amplitude convention. Its aperture, radial coherence and higher harmonics matter. The observed S⁴G comparison uses a related amplitude convention but not an identical measurement pipeline.</p></details>
+
+<p><a href="methodology.html">Expert definitions and observational selection</a> · <a href="#learn-2">Next: orbital populations</a></p>
+<h2 id="learn-2">2. Orbital populations</h2>
+<p><strong>Prerequisite:</strong> module 1; a probability distribution describes how much material occupies a range of states.</p>
+<p>Two galaxies can have similar density profiles but different orbital motions. A distribution function specifies population in phase space, including motion. A selected Gaussian tracer population is a physical modeling choice unless its sampling weights correct it back to the intended DF.</p>
+<p>In the local experiment, the <strong>kernel tells us what the dynamics do</strong> at each starting action; the <strong>weight tells us how much material is there</strong>. Reweighting a fixed external response is legitimate because the particles do not change its prescribed field. That separation cannot simply be assumed in a live halo.</p>
+<p><strong>Worked example.</strong> An exponential wE = exp(gx) and Gaussian wσ = exp(gx − x²/(2σ²)) both have w(0) = 1 and w′(0) = g. Their logarithmic slopes are g and g − x/σ². A moving resonance encounters the mismatch away from zero. Same initial slope does not mean same sampled gradient.</p>
+<p><a href="population-response.html#population-explorer">Explore the recorded populations</a> · <a href="paper.html#model">Expert model and normalization</a> · <a href="#learn-3">Next: transfer</a></p>
+<h2 id="learn-3">3. Angular-momentum exchange</h2>
+<p><strong>Prerequisite:</strong> a force can change momentum; module 2.</p>
+<p>Torque is the rate of angular-momentum change. Integrating torque over time gives a transfer. In a live isolated galaxy, stars and halo can exchange it. In an imposed-field calculation the source is prescribed, so the test particles' transfer is not a self-consistent history of the bar.</p>
+<p>The reduced experiment records the bar impulse B = −∫sinψ dt, separately from the imposed noise and the moving coordinate. The reported response is <strong>Bnoise − Bsmooth</strong>, averaged with a specified population weight.</p>
+<p><strong>Worked example — contrast versus total.</strong> If the smooth bar transfers +10 units to a population and the noisy bar transfers +8, the contrast is −2. Both transfers remain positive; the negative contrast means suppression, not transfer back to the bar. These numbers are an arithmetic illustration, not a simulated result.</p>
+<p><a href="response-coupling.html">Follow the same recorded orbit and torque</a> · <a href="paper.html#model">Expert observable</a> · <a href="#learn-4">Next: resonances</a></p>
+<h2 id="learn-4">4. Resonances and a moving pattern</h2>
+<p><strong>Prerequisite:</strong> periodic motion and module 3.</p>
+<p>Weak repeated pushes can accumulate if their phases remain correlated with an orbit. Near a resonance, a particular combination of orbital and bar angles changes slowly. Some trajectories librate around a phase; others circulate. As the imposed bar slows, the resonant action moves. Trapping, crossing and population gradients can then influence transfer.</p>
+<p>The local slow-angle equations are dψ = −j dt and dj = (−sinψ − s)dt + √(2D)dW. The term −s shifts the coordinate origin; it is not a physical bar torque. At constant coefficients, a phase-locked solution requires |s| ≤ 1 because |sinψ| ≤ 1. That condition does not say what fraction of a particular population becomes trapped.</p>
+<p><strong>Worked example.</strong> At s = 1.2 no constant phase solves sinψ = −s; at s = 0.25 such phases exist. Neither calculation alone determines the sign of the noise-induced total transfer.</p>
+<p><a href="noise-sweep.html#paths">Recorded resonance trajectories</a> · <a href="paper.html#model">Expert local model</a> · <a href="#learn-5">Next: noise and inference</a></p>
+<h2 id="learn-5">5. Noise and numerical inference</h2>
+<p><strong>Prerequisite:</strong> averages and variance; modules 3–4.</p>
+<p>Particle graininess, a chosen stochastic operator and physical collisions are different sources of fluctuations. Changing numerical softening or particle count tests the calculation. Imposing additive Brownian action noise defines a model; it does not calibrate an SIDM cross-section. Conservation checks, convergence checks and a test of model adequacy answer different questions.</p>
+<p><strong>Worked example — a non-flat screen with constant diffusion.</strong> For a stationary Ornstein–Uhlenbeck process dJ = −γJdt + √(2D)dW, constant D coexists with restoring drift. Its increment variance gives:</p>
+<pre><code class="language-text">Var[J(t+τ) − J(t)] / (2τ) = D (1 − exp(−γτ)) / (γτ).
+</code></pre>
+<p>At γ = 0.25 and lags 1, 2, 4, this is about 0.8848D, 0.7869D and 0.6321D. It is not flat, despite constant diffusion. Pooled state-dependent drift adds another ambiguity. Short softened gravitational trajectories can instead be ballistic; taking lag to zero is not automatically a diffusion measurement.</p>
+<p><strong>Try:</strong> Are two endpoint times, two windows and two antithetic partners eight independent experiments?</p>
+<details><summary>Reason it through</summary><p>No. They share dynamics and random histories. The independent sampling units in the kernel uncertainty are the eight separately seeded batches. Retaining pairing helps estimate contrasts but does not create independence.</p></details>
+
+<p><a href="response.html">Retained correction and synthetic controls</a> · <a href="paper.html#accuracy">Expert uncertainty</a> · <a href="#learn-6">Next: the contribution</a></p>
+<h2 id="learn-6">6. When does an approximation preserve the answer?</h2>
+<p><strong>Prerequisite:</strong> gradients, signed sums and modules 2–5.</p>
+<p>The primitive kernel Qₚ weights the initial population gradient: R[w] = −∫w′Qₚ dx when the boundary term vanishes. An absolute mismatch integral can qualify an approximation. It can also decline an accurate one because taking absolute values destroys useful cancellation.</p>
+<p><strong>Worked example — reconstruct the sign.</strong> The original early Gaussian gives approximately −0.011058 + 0.012565 = +0.001508. The halo gives −0.004835 + 0.000934 = −0.003901. Rounding explains the final displayed digit. These are <strong>gradient-coordinate contributions</strong>, not two literal orbital cohorts. Matching central density and slope did not preserve their balance.</p>
+<p><a href="paper.html?population=gaussian128&amp;time=10&amp;window=40#interactive-decision">Inspect Gaussian 128's conservative rejection</a>. Its independent intrinsic error is within 5%, but its absolute allowance declines to certify it. That is an informative limitation of the rule, not evidence that the recorded response was wrong.</p>
+<p><strong>What has been learned?</strong> Population approximations can change a finite-time answer; some inexpensive approximations work closely here; the kernel can expose the mismatch and assess its error with stated numerical assumptions. The eight supported qualifications share one new dynamical condition. No full-halo or SIDM prediction follows.</p>
+<p><a href="paper.html">Read the complete article</a> · <a href="reproduce.html">Check the evidence yourself</a></p>
+<h2 id="notation">Keep symbols and clocks separate</h2>
+<div class="publication-table" tabindex="0" role="region" aria-label="Learn the foundations — complete values"><table><caption>Learn the foundations — complete values</caption>
+<thead>
+<tr>
+<th>Model</th>
+<th>Symbol or clock</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Original galaxy</td>
+<td>t in Gyr; positions in kpc</td>
+<td>Physical simulation time and distance</td>
+</tr>
+<tr>
+<td>Original galaxy</td>
+<td>Toomre Q</td>
+<td>Disc stability parameter; realized baseline minimum ≈ 1.31, target 1.5</td>
+</tr>
+<tr>
+<td>Prescribed Cartesian field</td>
+<td>Model time and model action</td>
+<td>Analytical-potential units; no automatic Gyr conversion</td>
+</tr>
+<tr>
+<td>Reduced resonance</td>
+<td>T, x, j, ψ, s, η</td>
+<td>Dimensionless time, initial action, moving slow action, resonant angle, sweep and noise</td>
+</tr>
+<tr>
+<td>Reduced resonance</td>
+<td>Qₚ (Q in earlier records)</td>
+<td>Primitive response kernel, unrelated to Toomre Q</td>
+</tr>
+<tr>
+<td>Reduced resonance</td>
+<td>R[w]</td>
+<td>Noise-minus-smooth accumulated bar transfer with specified weight</td>
+</tr>
+<tr>
+<td>All models</td>
+<td>An unavailable estimate</td>
+<td>Missing or unqualified, never silently zero</td>
+</tr>
+</tbody>
+</table></div>
+<p>The original particles were sampled from an approximately self-consistent equilibrium model. The softened evolution force differs from the construction potential, so initial adjustment is a documented limitation. A successful local resonance test does not remove that galaxy-model limitation.</p></main><footer class="publication-footer">Release 2026-09-23.1 · Not externally reviewed · <a href="paper.html">Research</a> · <a href="learn.html">Learn</a> · <a href="reproduce.html">Evidence</a> · <a href="agents.html">Agent access</a></footer></body></html>

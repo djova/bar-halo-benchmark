@@ -1,0 +1,59 @@
+{
+  "analysis_sha256": "3c7f783e2b7a1df9c01cdc6589e444f08c768408260f4abb5853b6454793be03",
+  "rows": [
+    {
+      "tau": 10.0,
+      "cutoff": 40,
+      "signed_mean_kernel_population_error": -9.479454249251555e-05,
+      "mean_kernel_absolute_gradient_integral": 0.0005200460372138286,
+      "frozen_five_percent_target": 0.000437707142273395,
+      "absolute_to_signed_magnitude_ratio": 5.486033515641352,
+      "additional_kernel_uncertainty_expansion": 0.00015343139735409168,
+      "mesh_addition": 3.8031213864852045e-06,
+      "approximate_response_allowance": 0.00011732013626765781,
+      "frozen_qualified": false,
+      "independent_five_percent_test": "supported"
+    },
+    {
+      "tau": 10.0,
+      "cutoff": 64,
+      "signed_mean_kernel_population_error": -9.471027307717138e-05,
+      "mean_kernel_absolute_gradient_integral": 0.0005474447775428977,
+      "frozen_five_percent_target": 0.00043722910581763967,
+      "absolute_to_signed_magnitude_ratio": 5.780204826321547,
+      "additional_kernel_uncertainty_expansion": 0.0002425908301314281,
+      "mesh_addition": 1.051469354478962e-05,
+      "approximate_response_allowance": 0.0001290346517115751,
+      "frozen_qualified": false,
+      "independent_five_percent_test": "supported"
+    },
+    {
+      "tau": 20.0,
+      "cutoff": 40,
+      "signed_mean_kernel_population_error": -0.0021656606608806183,
+      "mean_kernel_absolute_gradient_integral": 0.003474046900966501,
+      "frozen_five_percent_target": 0.003280866380447839,
+      "absolute_to_signed_magnitude_ratio": 1.604151085957232,
+      "additional_kernel_uncertainty_expansion": 0.0004544400902937312,
+      "mesh_addition": 4.296175057903057e-06,
+      "approximate_response_allowance": 0.000584982968336673,
+      "frozen_qualified": false,
+      "independent_five_percent_test": "supported"
+    },
+    {
+      "tau": 20.0,
+      "cutoff": 64,
+      "signed_mean_kernel_population_error": -0.002165228462311334,
+      "mean_kernel_absolute_gradient_integral": 0.0035008923855430916,
+      "frozen_five_percent_target": 0.00328268635735495,
+      "absolute_to_signed_magnitude_ratio": 1.6168697421453464,
+      "additional_kernel_uncertainty_expansion": 0.000543994916612423,
+      "mesh_addition": 1.1050785708042327e-05,
+      "approximate_response_allowance": 0.0005599557186584908,
+      "frozen_qualified": false,
+      "independent_five_percent_test": "supported"
+    }
+  ],
+  "all_four_rejected_before_explicit_kernel_uncertainty": true,
+  "scope": "Retrospective explanation of all four conservative Gaussian128 rejections using already frozen quantities. It is not a new prospective experiment, a true-kernel evaluation, or a retuned decision criterion. The halo denominator retains its original uncertainty allowance."
+}

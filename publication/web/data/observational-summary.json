@@ -1,0 +1,71 @@
+{
+  "selection": {
+    "mass_Msun": 61615079157.249565,
+    "half_width_dex": 0.3,
+    "amplitude_convention": "S4G cosine amplitude = 2*abs(sum(m exp(2i phi)))/sum(m) within annulus; constant stellar mass-to-light assumption",
+    "rbar_definition": "S4G visual deprojected outer bar semi-major axis, quality=1; simulation phase-coherence estimate is a different estimator"
+  },
+  "s4g_all_A2": {
+    "n": 587,
+    "p05": 0.14359999999999998,
+    "p16": 0.21352000000000002,
+    "median": 0.374,
+    "p84": 0.60868,
+    "p95": 0.8111999999999996
+  },
+  "s4g_mass_matched_A2": {
+    "n": 112,
+    "p05": 0.21535,
+    "p16": 0.30032,
+    "median": 0.4685,
+    "p84": 0.7603999999999999,
+    "p95": 0.93535
+  },
+  "s4g_mass_matched_RA2_kpc": {
+    "n": 112,
+    "p05": 0.9787333751845119,
+    "p16": 1.5562546797995929,
+    "median": 3.19728501919015,
+    "p84": 5.501943645395763,
+    "p95": 8.535668697115815
+  },
+  "s4g_mass_matched_rbar_kpc": {
+    "n": 78,
+    "p05": 2.0964081700005823,
+    "p16": 2.592456220376313,
+    "median": 4.1396921536730655,
+    "p84": 7.263639528525195,
+    "p95": 9.2606595606607
+  },
+  "manga_Omph": {
+    "n": 225,
+    "p05": 11.436967512750337,
+    "p16": 15.745002699476112,
+    "median": 24.801634595718046,
+    "p84": 34.8663107901471,
+    "p95": 44.40701050213388
+  },
+  "manga_R": {
+    "n": 210,
+    "p05": 0.8412447729377422,
+    "p16": 1.038465141429522,
+    "median": 1.662654775060918,
+    "p84": 2.7149950336454016,
+    "p95": 3.975922428372477
+  },
+  "manga_Rbardp": {
+    "n": 225,
+    "p05": 1.6884392593993072,
+    "p16": 2.315533341693062,
+    "median": 4.176579961994392,
+    "p84": 6.330468504997128,
+    "p95": 8.101513057850141
+  },
+  "manga_rotation_class_point_estimates": {
+    "n_valid": 210,
+    "n_missing": 15,
+    "ultrafast": 25,
+    "fast": 45,
+    "slow": 140
+  }
+}

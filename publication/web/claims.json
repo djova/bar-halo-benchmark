@@ -1,0 +1,402 @@
+{
+  "schema_version": 1,
+  "release": "2026-09-23.1",
+  "claims": [
+    {
+      "id": "POP-01",
+      "wording": "At s=0.25, Gaussian and reference-halo weighting in the tested slice have opposite T=10 responses; their T=20 suppression magnitudes differ by 4.735323.",
+      "article_anchor": "paper.html#population-result",
+      "model_id": "RES-POS",
+      "category": "numerical_result",
+      "conditions": {
+        "s": 0.25,
+        "eta": 0.1,
+        "times": [
+          10,
+          20
+        ],
+        "cutoff": 40
+      },
+      "observable": "noise-minus-smooth accumulated bar-mediated transfer",
+      "units": "dimensionless integral(w K_B dx)",
+      "reference_control": "same dynamics/population without imposed noise",
+      "evidence": [
+        {
+          "path": "results/populations.json",
+          "json_pointer": "/rows",
+          "sha256": "83c315d4f49d75b7f7ae7b852408abecd319e58b4d8b43b33faea5056956f420"
+        }
+      ],
+      "code_version": "cdb30b5b2f350d2f3de6831995b83f281fe2974e",
+      "figure_version": "2026-09-23.1",
+      "uncertainty": "Eight independent seeded batches; population/time/window contractions share paths. Pointwise Student-t intervals where stated; paired numerical differences remain proxies.",
+      "status": "supported_locally",
+      "exclusions": [
+        "LIM-01",
+        "LIM-02"
+      ],
+      "release": "2026-09-23.1",
+      "protocol": "reproduce.html",
+      "outcome": "results/populations.json"
+    },
+    {
+      "id": "POP-02",
+      "wording": "The slope-matched exponential closely follows the reference-halo point estimates; the point differences alone do not certify sub-0.1% accuracy.",
+      "article_anchor": "paper.html#population-result",
+      "model_id": "RES-POS",
+      "category": "numerical_result",
+      "conditions": {
+        "s": 0.25,
+        "eta": 0.1,
+        "times": [
+          10,
+          20
+        ]
+      },
+      "observable": "noise-minus-smooth accumulated bar-mediated transfer",
+      "units": "dimensionless integral(w K_B dx)",
+      "reference_control": "same dynamics/population without imposed noise",
+      "evidence": [
+        {
+          "path": "diagnostics/population-accuracy/joint-error-assessment.json",
+          "json_pointer": "/exponential_halo",
+          "sha256": "97124a1ad6859382ce0c590baaba618dd70a713108fdde1e1efe618698929d11"
+        }
+      ],
+      "code_version": "cdb30b5b2f350d2f3de6831995b83f281fe2974e",
+      "figure_version": "2026-09-23.1",
+      "uncertainty": "Eight independent seeded batches; population/time/window contractions share paths. Pointwise Student-t intervals where stated; paired numerical differences remain proxies.",
+      "status": "supported_locally",
+      "exclusions": [
+        "LIM-01",
+        "LIM-03"
+      ],
+      "release": "2026-09-23.1",
+      "protocol": "reproduce.html",
+      "outcome": "diagnostics/population-accuracy/joint-error-assessment.json"
+    },
+    {
+      "id": "PA-ACC-01",
+      "wording": "Eight advance 5% qualifications are supported by independent numerical comparison at one new sweep rate, s=0.5.",
+      "article_anchor": "paper.html#accuracy",
+      "model_id": "RES-POS",
+      "category": "numerical_result",
+      "conditions": {
+        "s": 0.5,
+        "eta": 0.1,
+        "times": [
+          10,
+          20
+        ],
+        "cutoffs": [
+          40,
+          64
+        ],
+        "populations": [
+          "exponential",
+          "gaussian512"
+        ]
+      },
+      "observable": "noise-minus-smooth accumulated bar-mediated transfer",
+      "units": "dimensionless integral(w K_B dx)",
+      "reference_control": "same dynamics/population without imposed noise",
+      "evidence": [
+        {
+          "path": "results/accuracy.json",
+          "json_pointer": "/rows",
+          "sha256": "d39ddb4b2dd579d36d307ba904730ec7293a870f439ecb8386a491cd75ac652a"
+        }
+      ],
+      "code_version": "cdb30b5b2f350d2f3de6831995b83f281fe2974e",
+      "figure_version": "2026-09-23.1",
+      "uncertainty": "Eight kernel batches; simultaneous Student-t/Bonferroni envelope and paired refinement proxies. Independent deterministic evolution adds numerical proxies, not a new sampling interval.",
+      "status": "supported_locally",
+      "exclusions": [
+        "LIM-03",
+        "LIM-04"
+      ],
+      "release": "2026-09-23.1",
+      "protocol": "diagnostics/population-accuracy/PLAN.md",
+      "outcome": "results/accuracy.json"
+    },
+    {
+      "id": "PA-ACC-02",
+      "wording": "Four Gaussian-128 comparisons meet 5% in the independent assessment but are not qualified by the conservative absolute-gradient allowance.",
+      "article_anchor": "paper.html#accuracy",
+      "model_id": "RES-POS",
+      "category": "numerical_result",
+      "conditions": {
+        "s": 0.5,
+        "eta": 0.1,
+        "population": "gaussian128"
+      },
+      "observable": "noise-minus-smooth accumulated bar-mediated transfer",
+      "units": "dimensionless integral(w K_B dx)",
+      "reference_control": "same dynamics/population without imposed noise",
+      "evidence": [
+        {
+          "path": "diagnostics/population-accuracy/conservatism-explanation.json",
+          "json_pointer": "/rows",
+          "sha256": "2f6afaef5f3b0dc1fb395c159fed728b033432d0b1ef9dc93a190a671da5f499"
+        }
+      ],
+      "code_version": "cdb30b5b2f350d2f3de6831995b83f281fe2974e",
+      "figure_version": "2026-09-23.1",
+      "uncertainty": "Eight independent seeded batches; population/time/window contractions share paths. Pointwise Student-t intervals where stated; paired numerical differences remain proxies.",
+      "status": "supported_locally",
+      "exclusions": [
+        "LIM-03",
+        "LIM-04"
+      ],
+      "release": "2026-09-23.1",
+      "protocol": "diagnostics/population-accuracy/PLAN.md",
+      "outcome": "diagnostics/population-accuracy/conservatism-explanation.json"
+    },
+    {
+      "id": "EST-01",
+      "wording": "The matched estimator has a large conditional cost-times-variance advantage for broad halo weights; the advantage disappears for the narrowest stress population.",
+      "article_anchor": "paper.html#estimator",
+      "model_id": "RES-POS",
+      "category": "numerical_result",
+      "conditions": {
+        "s": [
+          0,
+          0.25
+        ],
+        "times": [
+          10,
+          20
+        ]
+      },
+      "observable": "Raw/remainder cost-times-variance ratio",
+      "units": "dimensionless efficiency; CPU seconds reported separately",
+      "reference_control": "same dynamics/population without imposed noise",
+      "evidence": [
+        {
+          "path": "results/cost.json",
+          "json_pointer": "/rows",
+          "sha256": "ab3f9f178c7b411c0e62e905111df1ee162523a19c55173fcc2a7da46f3e9707"
+        }
+      ],
+      "code_version": "cdb30b5b2f350d2f3de6831995b83f281fe2974e",
+      "figure_version": "2026-09-23.1",
+      "uncertainty": "Eight paired batches per sweep; whole-batch bootstrap intervals and distinct conditional/between-batch estimates; one pointwise consistency flag retained.",
+      "status": "supported_locally",
+      "exclusions": [
+        "LIM-06"
+      ],
+      "release": "2026-09-23.1",
+      "protocol": "reproduce.html",
+      "outcome": "results/cost.json"
+    },
+    {
+      "id": "POP-MARG-01",
+      "wording": "All 24 historical operational forecasts passed their original rule; two early Gaussian-12 window tests remain marginal under a later combined numerical-proxy assessment.",
+      "article_anchor": "paper.html#limitations",
+      "model_id": "RES-POS",
+      "category": "numerical_result",
+      "conditions": {
+        "old_allowance": "max(0.0002, 5% of forecast)"
+      },
+      "observable": "noise-minus-smooth accumulated bar-mediated transfer",
+      "units": "dimensionless integral(w K_B dx)",
+      "reference_control": "same dynamics/population without imposed noise",
+      "evidence": [
+        {
+          "path": "diagnostics/population-accuracy/joint-error-assessment.json",
+          "json_pointer": "/historical_forecast_assessment",
+          "sha256": "97124a1ad6859382ce0c590baaba618dd70a713108fdde1e1efe618698929d11"
+        }
+      ],
+      "code_version": "cdb30b5b2f350d2f3de6831995b83f281fe2974e",
+      "figure_version": "2026-09-23.1",
+      "uncertainty": "Eight independent seeded batches; population/time/window contractions share paths. Pointwise Student-t intervals where stated; paired numerical differences remain proxies.",
+      "status": "marginal",
+      "exclusions": [
+        "LIM-03"
+      ],
+      "release": "2026-09-23.1",
+      "protocol": "reproduce.html",
+      "outcome": "diagnostics/population-accuracy/joint-error-assessment.json"
+    },
+    {
+      "id": "CART-01",
+      "wording": "A reduced-model prediction has not yet achieved qualified transfer to prescribed-field three-dimensional orbits.",
+      "article_anchor": "paper.html#limitations",
+      "model_id": "CART-EXT",
+      "category": "numerical_result",
+      "conditions": {
+        "study": "halo-slice pilot"
+      },
+      "observable": "specified in source record",
+      "units": "source-defined",
+      "reference_control": "source-defined matched comparison",
+      "evidence": [
+        {
+          "path": "diagnostics/population-response/halo-pilot.json",
+          "json_pointer": "",
+          "sha256": "c30b77afdd4468fc49792c83f982c06b14432742fa55676a92840957ca471ea1"
+        }
+      ],
+      "code_version": "cdb30b5b2f350d2f3de6831995b83f281fe2974e",
+      "figure_version": "2026-09-23.1",
+      "uncertainty": "Measured discrepancy precision exceeded the bounded cost allowance; unresolved agreement is not falsification.",
+      "status": "unresolved",
+      "exclusions": [
+        "LIM-05"
+      ],
+      "release": "2026-09-23.1",
+      "protocol": "reproduce.html",
+      "outcome": "diagnostics/population-response/halo-pilot.json"
+    },
+    {
+      "id": "REP-01",
+      "wording": "The project receipt documents exact reproduction of 162 saved arrays from the released numerical source. This publication campaign does not claim a new rerun.",
+      "article_anchor": "paper.html#reproduction",
+      "model_id": "RES-POS",
+      "category": "software_reproduction",
+      "conditions": {
+        "public_numerical_revision": "66143ebdb7441e17f4b44c23d15c2b35eb66841a"
+      },
+      "observable": "Number of arrays reported exactly reproduced",
+      "units": "array count",
+      "reference_control": "same dynamics/population without imposed noise",
+      "evidence": [
+        {
+          "path": "diagnostics/population-accuracy/accuracy-reproduction.json",
+          "json_pointer": "/saved_array_count",
+          "sha256": "e835c5e0cbdcbe37263622a485bd0039bba49f9829c2e5675a698067addddd50"
+        }
+      ],
+      "code_version": "cdb30b5b2f350d2f3de6831995b83f281fe2974e",
+      "figure_version": "2026-09-23.1",
+      "uncertainty": "Same seeds; software reproducibility, no independent physical sampling.",
+      "status": "supported_locally",
+      "exclusions": [
+        "LIM-08"
+      ],
+      "release": "2026-09-23.1",
+      "protocol": "reproduce.html",
+      "outcome": "diagnostics/population-accuracy/accuracy-reproduction.json"
+    },
+    {
+      "id": "GAL-01",
+      "wording": "Three of four matched force-opening comparisons fail the original endpoint criterion; this identifies numerical sensitivity, not the continuum solution.",
+      "article_anchor": "paper.html#models",
+      "model_id": "GAL-LIVE",
+      "category": "numerical_result",
+      "conditions": {
+        "scope": "four paired force-opening comparisons"
+      },
+      "observable": "specified in source record",
+      "units": "source-defined",
+      "reference_control": "source-defined matched comparison",
+      "evidence": [
+        {
+          "path": "diagnostics/followup/error-budget.json",
+          "json_pointer": "/force_pairs",
+          "sha256": "44d25acd146dffbb900030378d94b50efcc07eafd92c2842cc5817df9ffe045d"
+        }
+      ],
+      "code_version": {
+        "scope": "Historical galaxy/catalogue outputs; not reproduced by the reduced benchmark revision",
+        "provenance": "diagnostics/followup/error-budget.json#/source_sha256"
+      },
+      "figure_version": "2026-09-23.1",
+      "uncertainty": "Individual paired sensitivities; not independent Gaussian uncertainty.",
+      "status": "supported_locally",
+      "exclusions": [
+        "LIM-08"
+      ],
+      "release": "2026-09-23.1",
+      "protocol": "reproduce.html",
+      "outcome": "diagnostics/followup/error-budget.json"
+    },
+    {
+      "id": "OBS-01",
+      "wording": "The released selected observational amplitude sample contains 112 galaxies with median 0.4685. This publication campaign does not reprocess the catalogues.",
+      "article_anchor": "paper.html#models",
+      "model_id": "GAL-LIVE",
+      "category": "observational_benchmark",
+      "conditions": {
+        "source": "S4G; fixed mass selection"
+      },
+      "observable": "specified in source record",
+      "units": "source-defined",
+      "reference_control": "source-defined matched comparison",
+      "evidence": [
+        {
+          "path": "data/observational-summary.json",
+          "json_pointer": "/s4g_mass_matched_A2",
+          "sha256": "bb2f6e3e934e19db31f7b5342282398ac8a5fbff769678abba5e232d234f6bd9"
+        }
+      ],
+      "code_version": {
+        "scope": "Historical galaxy/catalogue outputs; not reproduced by the reduced benchmark revision",
+        "provenance": "data/manifest.json"
+      },
+      "figure_version": "2026-09-23.1",
+      "uncertainty": "Population spread is not an error bar on one model. Aperture and measurement differences remain.",
+      "status": "supported_locally",
+      "exclusions": [
+        "No observational validation of the local resonance model."
+      ],
+      "release": "2026-09-23.1",
+      "protocol": "reproduce.html",
+      "outcome": "data/observational-summary.json"
+    }
+  ],
+  "limitations": [
+    {
+      "id": "LIM-01",
+      "text": "One isochrone fast-action slice and finite windows/times; no total halo torque or universal 4.7 correction."
+    },
+    {
+      "id": "LIM-02",
+      "text": "Imposed bar and population-independent additive noise; no collective halo response or calibrated SIDM operator."
+    },
+    {
+      "id": "LIM-03",
+      "text": "Approximate sampling coverage and numerical-refinement proxies; no rigorous operational 5% guarantee."
+    },
+    {
+      "id": "LIM-04",
+      "text": "Eight qualified comparisons share one new dynamical condition and correlated kernel; no eight independent physical regimes."
+    },
+    {
+      "id": "LIM-05",
+      "text": "Prescribed-field 3D transfer remains unresolved; even successful transfer would not validate a live halo."
+    },
+    {
+      "id": "LIM-06",
+      "text": "Cost-times-variance ratios project precision under a fixed workflow; no measured 6900-fold faster simulation."
+    },
+    {
+      "id": "LIM-07",
+      "text": "Specific estimator priority and astrophysical generalization remain open; not externally reviewed."
+    },
+    {
+      "id": "LIM-08",
+      "text": "Software reproduction and deployment checks do not independently confirm physics."
+    }
+  ],
+  "review_status": "not_externally_reviewed",
+  "extends_historical_ledger": "diagnostics/population-accuracy/CLAIM_LEDGER.md",
+  "identities": [
+    {
+      "id": "EQ-KER-01",
+      "status": "exact_under_stated_assumptions",
+      "article_anchor": "paper.html#kernel"
+    },
+    {
+      "id": "EQ-ERR-01",
+      "status": "exact_under_stated_assumptions",
+      "article_anchor": "paper.html#accuracy"
+    },
+    {
+      "id": "EQ-EST-01",
+      "status": "exact_under_stated_assumptions",
+      "article_anchor": "paper.html#estimator"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "release": "2026-09-23.1",
+  "rows": [
+    {
+      "id": "POP-gaussian-T10",
+      "population": "gaussian",
+      "time": 10.0,
+      "s": 0.25,
+      "eta": 0.1,
+      "cutoff": 40,
+      "response": 0.001507646220741944,
+      "ci95_low": 0.0012893988131490212,
+      "ci95_high": 0.0017258936283348666,
+      "numerical_window_qualified": true,
+      "source": "diagnostics/population-response/independent-validation.json",
+      "pointer": "/rows/12"
+    },
+    {
+      "id": "POP-halo-T10",
+      "population": "halo",
+      "time": 10.0,
+      "s": 0.25,
+      "eta": 0.1,
+      "cutoff": 40,
+      "response": -0.003900675861719478,
+      "ci95_low": -0.003962858168327166,
+      "ci95_high": -0.0038384935551117904,
+      "numerical_window_qualified": true,
+      "source": "diagnostics/population-response/independent-validation.json",
+      "pointer": "/rows/13"
+    },
+    {
+      "id": "POP-exponential-T10",
+      "population": "exponential",
+      "time": 10.0,
+      "s": 0.25,
+      "eta": 0.1,
+      "cutoff": 40,
+      "response": -0.0038987336024384183,
+      "ci95_low": -0.003960950249244873,
+      "ci95_high": -0.003836516955631963,
+      "numerical_window_qualified": true,
+      "source": "diagnostics/population-response/independent-validation.json",
+      "pointer": "/rows/14"
+    },
+    {
+      "id": "POP-gaussian-T20",
+      "population": "gaussian",
+      "time": 20.0,
+      "s": 0.25,
+      "eta": 0.1,
+      "cutoff": 40,
+      "response": -0.16194914466882154,
+      "ci95_low": -0.1625750631670685,
+      "ci95_high": -0.1613232261705746,
+      "numerical_window_qualified": true,
+      "source": "diagnostics/population-response/independent-validation.json",
+      "pointer": "/rows/18"
+    },
+    {
+      "id": "POP-halo-T20",
+      "population": "halo",
+      "time": 20.0,
+      "s": 0.25,
+      "eta": 0.1,
+      "cutoff": 40,
+      "response": -0.03420023142201352,
+      "ci95_low": -0.03432659504171371,
+      "ci95_high": -0.03407386780231333,
+      "numerical_window_qualified": true,
+      "source": "diagnostics/population-response/independent-validation.json",
+      "pointer": "/rows/19"
+    },
+    {
+      "id": "POP-exponential-T20",
+      "population": "exponential",
+      "time": 20.0,
+      "s": 0.25,
+      "eta": 0.1,
+      "cutoff": 40,
+      "response": -0.034223483453356636,
+      "ci95_low": -0.03434995183877872,
+      "ci95_high": -0.034097015067934555,
+      "numerical_window_qualified": true,
+      "source": "diagnostics/population-response/independent-validation.json",
+      "pointer": "/rows/20"
+    }
+  ]
+}

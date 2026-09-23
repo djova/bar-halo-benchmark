@@ -1,0 +1,656 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="publication-version" content="2026-09-23.1"><meta name="description" content="Versioned Galaxy Bar research: population-selection bias, response kernels and numerical accuracy under a prescribed local resonance."><title>Finite-time population bias in noisy sweeping resonances · Galaxy Bar</title><link rel="stylesheet" href="story.css"><link rel="stylesheet" href="population-response.css"><link rel="stylesheet" href="population-accuracy.css"><link rel="stylesheet" href="publication.css"><link rel="alternate" type="application/json" href="manifest.json" title="Publication manifest"></head><body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="./">Galaxy Bar</a></header><main id="main" class="publication population-publication accuracy-publication"><h1>Finite-time population bias in noisy sweeping resonances</h1>
+<p><em>A response-kernel benchmark and an operational test of population approximations</em></p>
+<p class="publication-meta">Canonical article · Release 2026-09-23.1 · Not externally reviewed · <a href="reproduce.html#licenses">Human maintainer and AI disclosure</a></p>
+
+<h2 id="abstract">Abstract</h2>
+<p>A local resonance calculation must specify which orbital population its dynamics act upon. We demonstrate <strong>finite-time population-selection bias in a prescribed noisy sweeping-resonance model</strong>, and provide a reproducible response-kernel diagnostic and variance-reduced estimator for assessing that bias. At matched central density and slope, a selected Gaussian and reference-halo weighting in the tested action slice give opposite early noise effects. Their later suppression magnitudes differ by a factor of <strong>4.735323</strong>. A slope-matched exponential closely follows the halo calculation. At one new sweep rate, all <strong>eight advance 5% qualifications</strong> survive independent numerical comparison; four other accurate comparisons are conservatively rejected.</p>
+<p>This is a bounded computational-methods result. It does not establish a new physical torque mechanism, a complete halo torque, or a validated prediction for a live galaxy. The galaxy simulations are collisionless. The local noise model is not a calibrated SIDM collision operator. <strong>These experiments do not test CDM against SIDM.</strong></p>
+<p><a href="learn.html">Learn the foundations</a> · <a href="reproduce.html">Inspect and reproduce</a> · <a href="claims.json">Claim registry</a> · <a href="paper.md">Download this article</a></p>
+<h2 id="models">Which physical system is being discussed?</h2>
+<div class="publication-table" tabindex="0" role="region" aria-label="Model registry"><table><caption>Model registry</caption>
+<thead>
+<tr>
+<th>Model ID</th>
+<th>What evolves</th>
+<th>What this establishes</th>
+<th>Clock / methods</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GAL-LIVE — Self-gravitating galaxy and its fixed-field controls</td>
+<td>Stellar and halo particles; live components alter gravity. Named frozen/static controls remove specified response.</td>
+<td>Behavior and numerical sensitivity of the specified galaxy models; No SIDM comparison; no converged universal bar-strength prediction</td>
+<td>Gyr; kpc; solar masses · <a href="methodology.html">methods</a></td>
+</tr>
+<tr>
+<td>CART-EXT — Prescribed-field Cartesian orbits</td>
+<td>Test particles in an external analytical field, imposed bar and disturbances; cloud does not react collectively</td>
+<td>Particle response to those specified external fields; Not live-halo validation</td>
+<td>Analytical-potential model time/action · <a href="response-methods.html">methods</a></td>
+</tr>
+<tr>
+<td>RES-POS — Reduced noisy resonance, positive population</td>
+<td>Slow action and resonant angle; constant additive action diffusion; fixed fast-action slice</td>
+<td>Population response and numerical accuracy within this local operator; Not full-halo torque, SIDM or general confidence coverage</td>
+<td>Dimensionless T, x and impulse B · <a href="paper.html#model">methods</a></td>
+</tr>
+<tr>
+<td>RES-SIGNED — Earlier signed perturbation with reservoirs</td>
+<td>Signed deviation with its own reservoir/boundary conditions</td>
+<td>Verification and response of that separate setup; Not interchangeable with positive-population results</td>
+<td>Its documented reduced-model units · <a href="noise-methods.html">methods</a></td>
+</tr>
+<tr>
+<td>SYNTH — Synthetic controls</td>
+<td>Known stochastic laws or analytical limiting processes</td>
+<td>Verification of estimators, coordinates or numerical algorithms; Not a new astrophysical measurement</td>
+<td>Control-specific units · <a href="response-validation.html">methods</a></td>
+</tr>
+</tbody>
+</table></div>
+<p>The results below concern model <strong>RES-POS</strong>, a positive initial population in a local resonance with imposed noise. Earlier signed-perturbation calculations with reservoirs (<strong>RES-SIGNED</strong>) have different initial and boundary conditions. They are retained as supporting experiments, not interchangeable resolutions of RES-POS. The original self-gravitating galaxies motivate the question; they do not validate the reduction. Even a successful prescribed-field Cartesian test would still leave collective live-halo response untested.</p>
+<h2 id="previous-work">What was already known?</h2>
+<p><a href="https://arxiv.org/abs/2208.03855">Hamilton, Tolman, Arzamasskiy &amp; Duarte</a> studied how diffusion sustains stationary resonant friction, including an initially linear local distribution. <a href="https://arxiv.org/abs/2305.00022">Chiba</a> studied moving-resonance feedback, compared collisionless reduced dynamics with three-dimensional calculations, and anticipated that diffusion can replenish a friction-producing gradient while erasing a trapped–untrapped density contrast. <a href="https://doi.org/10.1111/j.1365-2966.2006.10506.x">Ogilvie &amp; Lubow</a> treated a related migration–diffusion competition at planetary corotation in gas. Different physical assumptions prevent treating that analogue as a galactic-halo prediction.</p>
+<p>Variance reduction also has direct astrophysical predecessors. <a href="https://arxiv.org/pdf/2010.07321">Elbers et al. (2021), sections 2–2.3</a>, use a δf decomposition to sample departures from a model neutrino distribution and explicitly formulate its control-variate interpretation. Their cosmological calculation includes gravitational feedback. Here the control instead uses a zero-integral primitive identity for accumulated bar impulse under a prescribed canonical map. This is a useful comparison of constructions and assumptions; equivalence, optimality and priority of our specific estimator remain unestablished. We do not claim the control-variate principle as new.</p>
+<p>Our addition is the quantified population counterexample, a reusable recorded response calculation, and a prospectively tested accuracy procedure with a measured estimator-cost comparison. A targeted literature review is not an exhaustive priority search. <a href="diagnostics/population-accuracy/SOURCES.md">Detailed scholarly positioning</a>.</p>
+<h2 id="model">Model, populations and observable</h2>
+<p>The implemented frequency gradient is negative. In dimensionless slow action j and resonant angle ψ, measured relative to the moving resonance:</p>
+<pre><code class="language-text"><span id="EQ-DYN-01"></span>(EQ-DYN-01)   dψ = −j dt
+             dj = (−sin ψ − s) dt + √(2D) dW,   D = 2η/π
+<span id="EQ-OBS-01"></span>(EQ-OBS-01)   B(T) = −∫₀ᵀ sin ψ dt
+</code></pre>
+<p>The accumulated bar impulse B excludes the moving-coordinate term −sT and Brownian impulse. The path budget checks all three separately. Our response is <strong>noise minus smooth accumulated bar-mediated transfer</strong>, not instantaneous torque. Positive means more transfer from the imposed bar to the sampled slice. Negative means less than the smooth control, and need not mean that the bar gains angular momentum.</p>
+<p>The initial resonant phase is uniform. The reference is an analytical isochrone-halo distribution function evaluated at fixed fast actions: radial action 0.08 and vertical action 0.05, central slow action Jₛ,₀ = 0.25. Set x = (Jₛ − Jₛ,₀)/u, u ≈ 0.0005633691. The initial logarithmic slope is g ≈ −0.0047493212. Before the common compact window:</p>
+<pre><code class="language-text"><span id="EQ-POP-01"></span>(EQ-POP-01)   halo:        wH(x) = fhalo(Js, fixed fast actions) / fref
+             exponential: wE(x) = exp(gx)
+             Gaussian:    wσ(x) = exp(gx − x²/(2σ²))
+</code></pre>
+<p>Central density and slope are held fixed; populations are <strong>not renormalized to unit mass</strong>. The primary window has plateau 24 and cutoff 40; the wider comparison has plateau 48 and cutoff 64 in x. Moving this physical taper differs from enlarging the solver domain or auxiliary sampling support. These are conditional contributions from one slice, not integrals over an entire halo.</p>
+<p>All response tables display dimensionless ∫wKᵦ dx. Multiplication by 4u²(2π)³fref ≈ 2.7022892 × 10⁻⁶ gives the angular-momentum contribution <strong>per unit fast-action area</strong> in the analytical model's units. The local time T is dimensionless; it is not the original galaxy's Gyr clock. T = 20 is about 3.18 reference librations. <a href="population-methods.html">Exact calibration, windows and numerical algorithms</a>.</p>
+<h2 id="population-result">Population choice changes the finite-time answer</h2>
+<p class="publication-claim" id="POP-01"><a href="claims.json">POP-01</a> · At s=0.25, Gaussian and reference-halo weighting in the tested slice have opposite T=10 responses; their T=20 suppression magnitudes differ by 4.735323.</p>
+
+<figure id="F-POP-01" class="accuracy-figure"><a href="diagnostics/population-accuracy/population-comparison.png"><img src="diagnostics/population-accuracy/population-comparison.png" alt="Original Gaussian has opposite early sign; halo and exponential closely agree. Values follow."></a><figcaption>F-POP-01 · Original Gaussian has opposite early sign; halo and exponential closely agree. Values follow. Local resonance units; reference-halo weighting means one fixed fast-action slice. Parameters, uncertainty and complete values follow immediately below.</figcaption></figure>
+
+<div class="publication-table" tabindex="0" role="region" aria-label="Original population comparison"><table><caption>Original population comparison</caption>
+<thead>
+<tr>
+<th>Population</th>
+<th>T</th>
+<th>Response</th>
+<th>95% lower</th>
+<th>95% upper</th>
+<th>Numerical/window qualified</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gaussian σ=8</td>
+<td>10</td>
+<td>0.00150764622</td>
+<td>0.00128939881</td>
+<td>0.00172589363</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Reference halo</td>
+<td>10</td>
+<td>-0.00390067586</td>
+<td>-0.00396285817</td>
+<td>-0.00383849356</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Slope-matched exponential</td>
+<td>10</td>
+<td>-0.0038987336</td>
+<td>-0.00396095025</td>
+<td>-0.00383651696</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Gaussian σ=8</td>
+<td>20</td>
+<td>-0.161949145</td>
+<td>-0.162575063</td>
+<td>-0.161323226</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Reference halo</td>
+<td>20</td>
+<td>-0.0342002314</td>
+<td>-0.034326595</td>
+<td>-0.0340738678</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Slope-matched exponential</td>
+<td>20</td>
+<td>-0.0342234835</td>
+<td>-0.0343499518</td>
+<td>-0.0340970151</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Figure F-POP-01.</strong> Sweep s = 0.25, imposed noise η = 0.1, cutoff 40, two recorded endpoints. Intervals are pointwise 95% Student-t intervals across eight independent trajectory batches, with paired controls retained separately. The early signs survive the declared timestep/window allowances. The late ratio is conditional on this population, slice and duration. <a href="results/populations.json">Complete values and numerical controls</a>; <a href="population-response.html#population-explorer">interactive weighting</a>. Analysis version and checksums: <a href="datasets.json">DS-POP</a>.</p>
+<p>The exponential's point differences are about 0.050% and 0.068%. These are not certified sub-0.1% accuracies. The paired sampling and numerical assessment is in <a href="diagnostics/population-accuracy/joint-error-assessment.json">the difference record</a>. Matching a slope at one point can impose the wrong curvature; preserving the gradient over the sensitive region can work well.</p>
+<p>At T = 10, the Gaussian's gradient-coordinate contributions inside and outside radius four are approximately −0.011058 + 0.012565 = +0.001508. For the halo they are −0.004835 + 0.000934 = −0.003901. Different cancellation changes the sign. <strong>These terms are an integral decomposition, not two literal orbital cohorts.</strong> The <a href="population-response.html">original explorer</a> distinguishes these coordinates from initial-orbit cohorts.</p>
+<h2 id="kernel">Why a response kernel is reusable</h2>
+<p>For fixed, population-independent evolution, define the phase/noise-averaged action response Kᵦ(x). Let Qₚ denote its primitive; the subscript distinguishes it from the galaxy's Toomre Q.</p>
+<pre><code class="language-text"><span id="EQ-KER-01"></span>(EQ-KER-01)   Kᵦ(x) = E[Bnoise − Bsmooth | initial action x]
+             R[w] = ∫w Kᵦ dx = [w Qₚ]boundary − ∫w′ Qₚ dx
+</code></pre>
+<p>For the common compact support, the boundary term vanishes. Nonlinear trapping of individual orbits is compatible with linear dependence on the initial population. This identity does not automatically apply to a self-consistent gravitational field or a collision law whose coefficients depend on the evolving population.</p>
+<p>The kernel separates dynamical sensitivity from how much material occupies each action. Forecasting another population tests the accuracy and reuse of this numerical calculation; it does not discover a new linearity principle. A new dynamical condition needs its own kernel.</p>
+<h2 id="accuracy">An error allowance that can decline to predict</h2>
+<p>For a candidate approximation v and reference h, the exact-kernel inequality is:</p>
+<pre><code class="language-text"><span id="EQ-ERR-01"></span>(EQ-ERR-01)   |R[v] − R[h]| ≤ ∫ |v′ − h′| |Qₚ| dx
+</code></pre>
+<p>Include the boundary mismatch if it is nonzero. The implemented kernel is estimated, so its plug-in integral alone is not a rigorous bound. The protocol uses eight independent batch estimates, a nominal simultaneous Student-t envelope with Bonferroni allocation across finite kernel cells and scalar contractions, paired timestep differences, and factor-two mesh refinements. Population contractions retain covariance from shared paths. Antithetic partners, times, windows and population weights are not independent batches.</p>
+<p>The full allowance combines population mismatch and the approximate response's sampling/numerical allowance. Its 5% target uses a conservative lower estimate of the halo response. Near cancellation, report absolute error and leave the percentage unqualified. Measured refinement differences are <strong>numerical proxies</strong>, not proved bounds; general confidence coverage has not been established.</p>
+<p class="publication-claim" id="PA-ACC-01"><a href="claims.json">PA-ACC-01</a> · Eight advance 5% qualifications are supported by independent numerical comparison at one new sweep rate, s=0.5.</p>
+
+<p>The prospective condition has s = 0.5, η = 0.1. Populations, both times, both windows, forecasts and criteria were frozen before independent evolution. Fourteen independent numerical cases combine positive distribution evolution with collisionless characteristic calculations, including timestep, mesh and domain controls. They are distinct computational pathways; the stochastic kernel was not fitted to their outcomes. <a href="diagnostics/population-accuracy/PLAN.md">Frozen protocol</a> · <a href="diagnostics/population-accuracy/ACCURACY_OUTCOME_01.md">full outcome</a>.</p>
+<figure id="F-ACC-01" class="accuracy-figure"><a href="diagnostics/population-accuracy/population-accuracy.png"><img src="diagnostics/population-accuracy/population-accuracy.png" alt="All twenty approximation candidates, including four conservative Gaussian128 rejections. Complete values follow."></a><figcaption>F-ACC-01 · All twenty approximation candidates, including four conservative Gaussian128 rejections. Complete values follow. Local resonance units; reference-halo weighting means one fixed fast-action slice. Parameters, uncertainty and complete values follow immediately below.</figcaption></figure>
+
+<p><strong>Figure F-ACC-01.</strong> All twenty candidates at one new condition. Orange circles show full forecast allowances; blue crosses show approximate-kernel forecast discrepancy against the independently evolved halo, including its numerical proxy. Both are scaled by the frozen 5% target. This discrepancy is distinct from <strong>intrinsic population error</strong>, R[v] − R[h], which the paired independent calculation also measures. The four halo self-references are excluded from candidate counts. <a href="#table-accuracy">Complete table</a> · <a href="datasets.json">DS-ACC metadata</a>.</p>
+<h3 id="interactive-decision">Interrogate the decision</h3>
+<section id="accuracy-explorer"><h2>Can we qualify the approximation in advance?</h2><p>The prospective experiment doubled the sweep to <strong>s = 0.5</strong>, with the same noise η = 0.1, and computed its own response kernel. All profiles, thresholds and numerical forecasts were fixed before independent evolution.</p>
+<p class="population-finding"><strong>All eight advance 5% qualifications are independently supported.</strong> The exponential and the broadest Gaussian pass at both recorded times and physical windows. The rule is conservative: it declines four width-128 comparisons that independently meet 5%. No qualified sign is contradicted.</p><p>These are twenty correlated candidate comparisons under one new dynamics, plus four halo self-references. All new-condition responses are negative, so this test does not cover a prospective sign change. The numerical allowances remain practical proxies, not rigorous bounds. <a href="diagnostics/population-accuracy/ACCURACY_OUTCOME_01.md">Read every outcome and the stopping decision ↗</a></p>
+<p id="accuracy-load" role="status">Published default: exponential, T = 20, cutoff 40. Interactive plots load below; complete values are in the static tables.</p>
+<fieldset class="population-controls" id="accuracy-controls" disabled><legend>One new dynamical condition · recorded comparisons</legend><label>Approximation<select id="accuracy-population"><option value="exponential">Slope-matched exponential</option><option value="gaussian8">Gaussian, width 8</option><option value="gaussian32">Gaussian, width 32</option><option value="gaussian128">Gaussian, width 128</option><option value="gaussian512">Gaussian, width 512</option><option value="halo">Halo self-reference</option></select></label><label>Elapsed model time<select id="accuracy-time"><option value="20">T = 20</option><option value="10">T = 10</option></select></label><label>Physical window<select id="accuracy-window"><option value="40">Plateau 24 · cutoff 40</option><option value="64">Plateau 48 · cutoff 64</option></select></label></fieldset>
+<p class="population-coordinate">Every accuracy plot and decision uses this selection. There are only two saved endpoints; this control does not animate unrecorded evolution. Width is in the local action coordinate x. The separate cost benchmark below has its own controls and earlier dynamics.</p>
+<div class="accuracy-verdict" aria-live="polite"><span class="eyebrow">FROZEN FORECAST → INDEPENDENT CHECK</span><h3 id="accuracy-verdict">5% qualified in advance · independent test supported</h3><p id="accuracy-verdict-detail"></p></div>
+<div class="accuracy-readouts"><div><span>Approximate response</span><strong id="accuracy-response">-0.0662762799</strong><small>noise minus smooth · ∫wK<sub>B</sub>dx</small></div><div><span>Population-error allowance</span><strong id="accuracy-allowance">0.000204957454</strong><small>gradient mismatch + kernel uncertainty</small></div><div><span>Independent population error</span><strong id="accuracy-actual">-0.000112872735</strong><small id="accuracy-actual-note">independently evolved approximation minus halo</small></div></div>
+<article class="population-plot-card"><h3>Does the error fit the accuracy budget?</h3><svg id="accuracy-budget" role="img" aria-label="Predicted error allowance and independent error compared with the five-percent target"></svg><p id="accuracy-budget-copy"></p><p>The target uses a conservative lower estimate of the halo response. Numerical refinements are practical error proxies. Near zero, a percentage can be undefined. An unqualified approximation is not necessarily inaccurate.</p></article>
+<article class="population-plot-card"><h3>Where does the allowance come from?</h3><p>The <span class="accuracy-orange">orange area</span> adds absolute gradient mismatch weighted by the uncertain kernel. The <span class="accuracy-blue">blue signed contribution</span> can cancel between regions. A large orange area can therefore reject an approximation whose actual error is small.</p><svg id="accuracy-gradient" role="img" aria-label="Spatial contributions to the gradient mismatch allowance and the signed population error"></svg><label class="accuracy-radius">Inspect contributions inside |x| ≤ <output id="accuracy-radius-value">8</output><input id="accuracy-radius" type="range" min="0" max="64" step="0.5" value="8"></label><p id="accuracy-region" class="population-cursor"></p><p>The shaded region selects recorded gradient-coordinate bins, not a cohort of orbits. The full allowance also includes a separately measured kernel-mesh change. <a href="population-methods.html#kernel">Why the primitive kernel measures a gradient ↗</a></p></article>
+<details id="accuracy-ingredients"><summary>Inspect the population gradient and the dynamical sensitivity separately</summary><p id="accuracy-cancellation"></p><div class="population-plot-card"><h3>1. How quickly does the population change?</h3><svg id="accuracy-slopes" role="img" aria-label="Initial population gradients: reference halo and approximation over the same action coordinate"></svg><p><span class="accuracy-blue">Blue: halo gradient.</span> <span class="accuracy-orange">Orange: approximate gradient.</span> They match at the initial resonance x = 0; curvature can separate them elsewhere. The strong gradients near the ends belong to the common physical taper.</p></div><div class="population-plot-card"><h3>2. Where is the response sensitive?</h3><svg id="accuracy-kernel" role="img" aria-label="Mean primitive kernel and expanded absolute kernel envelope over the same action coordinate"></svg><p>The signed mean kernel is blue. The orange envelope adds simultaneous sampling and paired timestep allowances. It is the same dynamical kernel for every population; only the weighting changes.</p><p>All three plots share the selected time, physical window and highlighted action region. Curves here are averages within display bins. The error product is formed on the original fine cells before those contributions are summed for display; multiplying these coarse curves would not reproduce it exactly.</p></div></details>
+<details><summary>Inspect every forecast and independent outcome</summary><p>Twenty candidate comparisons share one dynamical kernel; four halo self-comparisons are numerical references. They are not 24 independent physical discoveries.</p><div class="population-table-wrap" tabindex="0" aria-label="All recorded approximation tests"><div class="publication-table" tabindex="0" role="region" aria-label="All recorded operational decisions"><table><caption>All recorded operational decisions</caption><thead><tr><th>Population / time / cutoff</th><th>Frozen 5% qualification</th><th>Independent 5% assessment</th><th>Sign assessment</th></tr></thead><tbody id="accuracy-all"><tr><td>Reference halo / T10 / 40</td><td>Qualified</td><td>supported</td><td>supported</td></tr><tr><td>Slope-matched exponential / T10 / 40</td><td>Qualified</td><td>supported</td><td>supported</td></tr><tr><td>Gaussian σ=8 / T10 / 40</td><td>Not qualified</td><td>contradicted</td><td>not qualified</td></tr><tr><td>Gaussian σ=32 / T10 / 40</td><td>Not qualified</td><td>contradicted</td><td>supported</td></tr><tr><td>Gaussian σ=128 / T10 / 40</td><td>Not qualified</td><td>supported</td><td>supported</td></tr><tr><td>Gaussian σ=512 / T10 / 40</td><td>Qualified</td><td>supported</td><td>supported</td></tr><tr><td>Reference halo / T10 / 64</td><td>Qualified</td><td>supported</td><td>supported</td></tr><tr><td>Slope-matched exponential / T10 / 64</td><td>Qualified</td><td>supported</td><td>supported</td></tr><tr><td>Gaussian σ=8 / T10 / 64</td><td>Not qualified</td><td>contradicted</td><td>not qualified</td></tr><tr><td>Gaussian σ=32 / T10 / 64</td><td>Not qualified</td><td>contradicted</td><td>not qualified</td></tr><tr><td>Gaussian σ=128 / T10 / 64</td><td>Not qualified</td><td>supported</td><td>supported</td></tr><tr><td>Gaussian σ=512 / T10 / 64</td><td>Qualified</td><td>supported</td><td>supported</td></tr><tr><td>Reference halo / T20 / 40</td><td>Qualified</td><td>supported</td><td>supported</td></tr><tr><td>Slope-matched exponential / T20 / 40</td><td>Qualified</td><td>supported</td><td>supported</td></tr><tr><td>Gaussian σ=8 / T20 / 40</td><td>Not qualified</td><td>contradicted</td><td>not qualified</td></tr><tr><td>Gaussian σ=32 / T20 / 40</td><td>Not qualified</td><td>contradicted</td><td>supported</td></tr><tr><td>Gaussian σ=128 / T20 / 40</td><td>Not qualified</td><td>supported</td><td>supported</td></tr><tr><td>Gaussian σ=512 / T20 / 40</td><td>Qualified</td><td>supported</td><td>supported</td></tr><tr><td>Reference halo / T20 / 64</td><td>Qualified</td><td>supported</td><td>supported</td></tr><tr><td>Slope-matched exponential / T20 / 64</td><td>Qualified</td><td>supported</td><td>supported</td></tr><tr><td>Gaussian σ=8 / T20 / 64</td><td>Not qualified</td><td>contradicted</td><td>not qualified</td></tr><tr><td>Gaussian σ=32 / T20 / 64</td><td>Not qualified</td><td>contradicted</td><td>supported</td></tr><tr><td>Gaussian σ=128 / T20 / 64</td><td>Not qualified</td><td>supported</td><td>supported</td></tr><tr><td>Gaussian σ=512 / T20 / 64</td><td>Qualified</td><td>supported</td><td>supported</td></tr></tbody></table></div></div></details>
+<noscript><p>The interactive controls require JavaScript. Read the <a href="diagnostics/population-accuracy/PLAN.md">frozen protocol</a> and <a href="population-methods.html#approximation-accuracy">scientific methods</a> without it.</p></noscript></section>
+
+<h3 id="table-accuracy">Complete accuracy values</h3>
+<div class="publication-table" tabindex="0" role="region" aria-label="Complete accuracy values"><table><caption>Complete accuracy values</caption>
+<thead>
+<tr>
+<th>ID / population · T · window</th>
+<th>Kernel forecast</th>
+<th>Independent response</th>
+<th>Intrinsic error ± proxy</th>
+<th>Forecast − independent halo</th>
+<th>Full allowance / 5% target</th>
+<th>Advance 5% / independent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a id="ACC-halo-T10-W40" href="paper.html?population=halo&amp;time=10&amp;window=40#interactive-decision">Reference halo · 10 · 40</a> (reference)</td>
+<td>-0.00886738702</td>
+<td>-0.0088400079</td>
+<td>0 ± 0</td>
+<td>-2.73791146e-05</td>
+<td>0.000113244174 / 0.000437707142</td>
+<td>Qualified / supported</td>
+</tr>
+<tr>
+<td><a id="ACC-exponential-T10-W40" href="paper.html?population=exponential&amp;time=10&amp;window=40#interactive-decision">Slope-matched exponential · 10 · 40</a></td>
+<td>-0.0088723455</td>
+<td>-0.00884491869</td>
+<td>-4.91078514e-06 ± 7.70468092e-09</td>
+<td>-3.23375997e-05</td>
+<td>0.000148862064 / 0.000437707142</td>
+<td>Qualified / supported</td>
+</tr>
+<tr>
+<td><a id="ACC-gaussian8-T10-W40" href="paper.html?population=gaussian8&amp;time=10&amp;window=40#interactive-decision">Gaussian σ=8 · 10 · 40</a></td>
+<td>-0.0398135751</td>
+<td>-0.0396109614</td>
+<td>-0.0307709535 ± 3.05130755e-05</td>
+<td>-0.0309735672</td>
+<td>0.113123884 / 0.000437707142</td>
+<td>Not qualified / contradicted</td>
+</tr>
+<tr>
+<td><a id="ACC-gaussian32-T10-W40" href="paper.html?population=gaussian32&amp;time=10&amp;window=40#interactive-decision">Gaussian σ=32 · 10 · 40</a></td>
+<td>-0.0103457493</td>
+<td>-0.0103050984</td>
+<td>-0.00146509045 ± 2.23114269e-06</td>
+<td>-0.00150574144</td>
+<td>0.0100394536 / 0.000437707142</td>
+<td>Not qualified / contradicted</td>
+</tr>
+<tr>
+<td><a id="ACC-gaussian128-T10-W40" href="paper.html?population=gaussian128&amp;time=10&amp;window=40#interactive-decision">Gaussian σ=128 · 10 · 40</a></td>
+<td>-0.00896218156</td>
+<td>-0.0089338922</td>
+<td>-9.38842914e-05 ± 1.47467e-07</td>
+<td>-0.000122173657</td>
+<td>0.000794600692 / 0.000437707142</td>
+<td>Not qualified / supported</td>
+</tr>
+<tr>
+<td><a id="ACC-gaussian512-T10-W40" href="paper.html?population=gaussian512&amp;time=10&amp;window=40#interactive-decision">Gaussian σ=512 · 10 · 40</a></td>
+<td>-0.00887795134</td>
+<td>-0.00885047045</td>
+<td>-1.04625485e-05 ± 1.64425664e-08</td>
+<td>-3.79434334e-05</td>
+<td>0.000189338267 / 0.000437707142</td>
+<td>Qualified / supported</td>
+</tr>
+<tr>
+<td><a id="ACC-halo-T10-W64" href="paper.html?population=halo&amp;time=10&amp;window=64#interactive-decision">Reference halo · 10 · 64</a> (reference)</td>
+<td>-0.00886970857</td>
+<td>-0.0088424281</td>
+<td>0 ± 0</td>
+<td>-2.72804678e-05</td>
+<td>0.000125126449 / 0.000437229106</td>
+<td>Qualified / supported</td>
+</tr>
+<tr>
+<td><a id="ACC-exponential-T10-W64" href="paper.html?population=exponential&amp;time=10&amp;window=64#interactive-decision">Slope-matched exponential · 10 · 64</a></td>
+<td>-0.00887466249</td>
+<td>-0.00884733137</td>
+<td>-4.90327501e-06 ± 1.07602545e-08</td>
+<td>-3.22343933e-05</td>
+<td>0.000167582146 / 0.000437229106</td>
+<td>Qualified / supported</td>
+</tr>
+<tr>
+<td><a id="ACC-gaussian8-T10-W64" href="paper.html?population=gaussian8&amp;time=10&amp;window=64#interactive-decision">Gaussian σ=8 · 10 · 64</a></td>
+<td>-0.039813574</td>
+<td>-0.0396109618</td>
+<td>-0.0307685337 ± 2.96698035e-05</td>
+<td>-0.0309711459</td>
+<td>0.112054479 / 0.000437229106</td>
+<td>Not qualified / contradicted</td>
+</tr>
+<tr>
+<td><a id="ACC-gaussian32-T10-W64" href="paper.html?population=gaussian32&amp;time=10&amp;window=64#interactive-decision">Gaussian σ=32 · 10 · 64</a></td>
+<td>-0.0103469499</td>
+<td>-0.0103061665</td>
+<td>-0.00146373843 ± 2.43893043e-06</td>
+<td>-0.00150452184</td>
+<td>0.0108583051 / 0.000437229106</td>
+<td>Not qualified / contradicted</td>
+</tr>
+<tr>
+<td><a id="ACC-gaussian128-T10-W64" href="paper.html?population=gaussian128&amp;time=10&amp;window=64#interactive-decision">Gaussian σ=128 · 10 · 64</a></td>
+<td>-0.00896441884</td>
+<td>-0.00893617755</td>
+<td>-9.37494552e-05 ± 1.95531726e-07</td>
+<td>-0.000121990741</td>
+<td>0.000929584953 / 0.000437229106</td>
+<td>Not qualified / supported</td>
+</tr>
+<tr>
+<td><a id="ACC-gaussian512-T10-W64" href="paper.html?population=gaussian512&amp;time=10&amp;window=64#interactive-decision">Gaussian σ=512 · 10 · 64</a></td>
+<td>-0.00888026334</td>
+<td>-0.00885287494</td>
+<td>-1.04468434e-05 ± 2.24912369e-08</td>
+<td>-3.78352457e-05</td>
+<td>0.000215716763 / 0.000437229106</td>
+<td>Qualified / supported</td>
+</tr>
+<tr>
+<td><a id="ACC-halo-T20-W40" href="paper.html?population=halo&amp;time=20&amp;window=40#interactive-decision">Reference halo · 20 · 40</a> (reference)</td>
+<td>-0.0661634001</td>
+<td>-0.0661331971</td>
+<td>0 ± 0</td>
+<td>-3.02029798e-05</td>
+<td>0.000546072501 / 0.00328086638</td>
+<td>Qualified / supported</td>
+</tr>
+<tr>
+<td><a id="ACC-exponential-T20-W40" href="paper.html?population=exponential&amp;time=20&amp;window=40#interactive-decision">Slope-matched exponential · 20 · 40</a></td>
+<td>-0.0662762799</td>
+<td>-0.0662460699</td>
+<td>-0.000112872735 ± 3.18237406e-07</td>
+<td>-0.000143082815</td>
+<td>0.000753037978 / 0.00328086638</td>
+<td>Qualified / supported</td>
+</tr>
+<tr>
+<td><a id="ACC-gaussian8-T20-W40" href="paper.html?population=gaussian8&amp;time=20&amp;window=40#interactive-decision">Gaussian σ=8 · 20 · 40</a></td>
+<td>-0.570824503</td>
+<td>-0.570685682</td>
+<td>-0.504552485 ± 0.00092853291</td>
+<td>-0.504691306</td>
+<td>0.675506654 / 0.00328086638</td>
+<td>Not qualified / contradicted</td>
+</tr>
+<tr>
+<td><a id="ACC-gaussian32-T20-W40" href="paper.html?population=gaussian32&amp;time=20&amp;window=40#interactive-decision">Gaussian σ=32 · 20 · 40</a></td>
+<td>-0.0991751529</td>
+<td>-0.0991428226</td>
+<td>-0.0330096254 ± 9.04520944e-05</td>
+<td>-0.0330419558</td>
+<td>0.0593473779 / 0.00328086638</td>
+<td>Not qualified / contradicted</td>
+</tr>
+<tr>
+<td><a id="ACC-gaussian128-T20-W40" href="paper.html?population=gaussian128&amp;time=20&amp;window=40#interactive-decision">Gaussian σ=128 · 20 · 40</a></td>
+<td>-0.0683290608</td>
+<td>-0.0682987261</td>
+<td>-0.00216552899 ± 6.11217596e-06</td>
+<td>-0.00219586364</td>
+<td>0.00451776613 / 0.00328086638</td>
+<td>Not qualified / supported</td>
+</tr>
+<tr>
+<td><a id="ACC-gaussian512-T20-W40" href="paper.html?population=gaussian512&amp;time=20&amp;window=40#interactive-decision">Gaussian σ=512 · 20 · 40</a></td>
+<td>-0.0664045621</td>
+<td>-0.0663743443</td>
+<td>-0.000241147163 ± 6.80995613e-07</td>
+<td>-0.000271365005</td>
+<td>0.000988743067 / 0.00328086638</td>
+<td>Qualified / supported</td>
+</tr>
+<tr>
+<td><a id="ACC-halo-T20-W64" href="paper.html?population=halo&amp;time=20&amp;window=64#interactive-decision">Reference halo · 20 · 64</a> (reference)</td>
+<td>-0.0661736164</td>
+<td>-0.066142906</td>
+<td>0 ± 0</td>
+<td>-3.07104753e-05</td>
+<td>0.000519889295 / 0.00328268636</td>
+<td>Qualified / supported</td>
+</tr>
+<tr>
+<td><a id="ACC-exponential-T20-W64" href="paper.html?population=exponential&amp;time=20&amp;window=64#interactive-decision">Slope-matched exponential · 20 · 64</a></td>
+<td>-0.0662864735</td>
+<td>-0.0662557552</td>
+<td>-0.000112849281 ± 3.14117196e-07</td>
+<td>-0.000143567573</td>
+<td>0.000733737515 / 0.00328268636</td>
+<td>Qualified / supported</td>
+</tr>
+<tr>
+<td><a id="ACC-gaussian8-T20-W64" href="paper.html?population=gaussian8&amp;time=20&amp;window=64#interactive-decision">Gaussian σ=8 · 20 · 64</a></td>
+<td>-0.570824507</td>
+<td>-0.570685685</td>
+<td>-0.504542779 ± 0.000927460422</td>
+<td>-0.504681601</td>
+<td>0.674266443 / 0.00328268636</td>
+<td>Not qualified / contradicted</td>
+</tr>
+<tr>
+<td><a id="ACC-gaussian32-T20-W64" href="paper.html?population=gaussian32&amp;time=20&amp;window=64#interactive-decision">Gaussian σ=32 · 20 · 64</a></td>
+<td>-0.0991807238</td>
+<td>-0.0991477929</td>
+<td>-0.0330048869 ± 8.97728828e-05</td>
+<td>-0.0330378178</td>
+<td>0.0601306957 / 0.00328268636</td>
+<td>Not qualified / contradicted</td>
+</tr>
+<tr>
+<td><a id="ACC-gaussian128-T20-W64" href="paper.html?population=gaussian128&amp;time=20&amp;window=64#interactive-decision">Gaussian σ=128 · 20 · 64</a></td>
+<td>-0.0683388449</td>
+<td>-0.0683079968</td>
+<td>-0.00216509083 ± 6.0403304e-06</td>
+<td>-0.00219593894</td>
+<td>0.00461589381 / 0.00328268636</td>
+<td>Not qualified / supported</td>
+</tr>
+<tr>
+<td><a id="ACC-gaussian512-T20-W64" href="paper.html?population=gaussian512&amp;time=20&amp;window=64#interactive-decision">Gaussian σ=512 · 20 · 64</a></td>
+<td>-0.0664147295</td>
+<td>-0.0663840031</td>
+<td>-0.000241097167 ± 6.7249861e-07</td>
+<td>-0.000271823514</td>
+<td>0.000977177308 / 0.00328268636</td>
+<td>Qualified / supported</td>
+</tr>
+</tbody>
+</table></div>
+<p><a href="results/accuracy.json">JSON</a> · <a href="results/accuracy.csv">CSV</a>. Numeric uncertainty is defined in the protocol above; a deterministic proxy is not a sampling confidence interval.</p>
+<p class="publication-claim" id="PA-ACC-02"><a href="claims.json">PA-ACC-02</a> · Four Gaussian-128 comparisons meet 5% in the independent assessment but are not qualified by the conservative absolute-gradient allowance.</p>
+
+<p>At primary-window T = 10, Gaussian 128's signed mean-kernel contrast has magnitude about 0.00009479, whereas the absolute-gradient integral is about 0.00052005, already above the 0.00043771 target before explicit kernel uncertainty. Discarding cancellation explains part of the conservative rejection. More samples alone need not repair it. All twenty independent population discrepancies plus their proxies fit their stated gradient allowances. All new-condition responses are negative: this prospective test does not validate performance across both signs.</p>
+<p>The new kernel cost about 5,105 worker CPU-seconds; the six-profile diagnostic took about 0.8 seconds. If the full DF and kernel are already known, the full contraction is also cheap. The diagnostic audits a simplifying assumption; it does not make the kernel free or always beat direct use of the known DF.</p>
+<h2 id="estimator">Estimating a small response efficiently</h2>
+<p>Let F′ = w and y = j + sT − W = x + B. Under the stated external additive noise, uniform initial phase and canonical evolution, a zero-integral primitive identity gives:</p>
+<pre><code class="language-text"><span id="EQ-EST-01"></span>(EQ-EST-01)   ∫ w(x) E[B] dx = −∫ E[F(x+B) − F(x) − w(x)B] dx
+</code></pre>
+<p>The right side estimates a nonlinear remainder, whose leading term for a slowly varying weight involves w′B²/2. The first-order contribution has known zero ensemble integral. The derivation requires more than area preservation alone. Auxiliary initial-action support must extend beyond the physical window by the maximum bar impulse; those samples do not add physical halo mass. Do not transplant this identity to action-dependent forcing/noise, nonuniform phases or live response without another derivation. <a href="https://github.com/djova/bar-halo-benchmark/blob/cdb30b5b2f350d2f3de6831995b83f281fe2974e/accuracy/research/population-response/CUMULATIVE_IDENTITY.md">Complete derivation and support restrictions</a>.</p>
+<p class="publication-claim" id="EST-01"><a href="claims.json">EST-01</a> · The matched estimator has a large conditional cost-times-variance advantage for broad halo weights; the advantage disappears for the narrowest stress population.</p>
+
+<figure id="F-COST-01" class="accuracy-figure"><a href="diagnostics/population-accuracy/estimator-efficiency.png"><img src="diagnostics/population-accuracy/estimator-efficiency.png" alt="Large broad-population variance advantage falls to about unity at the narrowest stress width. Values follow."></a><figcaption>F-COST-01 · Large broad-population variance advantage falls to about unity at the narrowest stress width. Values follow. Local resonance units; reference-halo weighting means one fixed fast-action slice. Parameters, uncertainty and complete values follow immediately below.</figcaption></figure>
+
+<p><strong>Figure F-COST-01.</strong> Matched raw and remainder estimates use identical paths and discrete weights. Cost includes integration to T = 20, the paired timestep control, setup and method-specific evaluation; I/O and common covariance assembly are excluded from both. T = 10 is charged that same workload. Conditional and between-batch variance estimates differ. Error bars are whole-batch bootstrap intervals, not universal runtime guarantees. <a href="#table-cost">All recorded values</a> · <a href="datasets.json">DS-COST metadata</a>.</p>
+<fieldset class="population-controls" id="accuracy-cost-controls" disabled><legend>Measured matched-cost benchmark · earlier dynamics</legend><label>Population<select id="accuracy-cost-population"><option value="halo">Reference halo</option><option value="exponential">Exponential</option><option value="gaussian8">Gaussian, width 8</option><option value="stress1">Narrow, width 1</option><option value="stress0.125">Narrow, width 1/8</option><option value="stress0.015625">Narrow, width 1/64</option></select></label><label>Resonance<select id="accuracy-cost-sweep"><option value="0.25">Moving · s = 0.25</option><option value="0">Stationary · s = 0</option></select></label><label>Endpoint<select id="accuracy-cost-time"><option value="20">T = 20</option><option value="10">T = 10</option></select></label></fieldset>
+<div class="accuracy-readouts"><div><span>Raw CPU per matched batch</span><strong id="accuracy-raw-cost">—</strong></div><div><span>Remainder CPU per matched batch</span><strong id="accuracy-rem-cost">—</strong></div><div><span>Cost × variance advantage</span><strong id="accuracy-gain">—</strong></div></div>
+<p id="accuracy-cost-copy"></p>
+<p id="accuracy-cost-consistency"></p>
+<p>Each workload includes integration through T = 20 and the paired timestep control, including when reading T = 10. The cost × variance ratio projects repeated-batch precision under the measured allocation; it is not an observed wall-clock speedup at a target accuracy. Setup and postprocessing are included. I/O and common covariance assembly are excluded from both method costs.</p>
+<p><a href="population-methods.html#estimator-cost">Full timing design, retained flag and one-command reproduction ↗</a></p>
+
+<h3 id="table-cost">Complete estimator-cost values</h3>
+<div class="publication-table" tabindex="0" role="region" aria-label="Matched estimator cost"><table><caption>Matched estimator cost</caption>
+<thead>
+<tr>
+<th>Population · s · T</th>
+<th>Raw / remainder CPU s</th>
+<th>Cost×variance ratio</th>
+<th>Bootstrap interval</th>
+<th>Between-batch ratio</th>
+<th>Raw−remainder 95% interval</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>halo · 0.0 · 10</td>
+<td>18.2927416 / 18.4636202</td>
+<td>38988.5558</td>
+<td>[38008.699, 40043.7838]</td>
+<td>89013.143</td>
+<td>[-0.0469247543, 0.111264275]</td>
+</tr>
+<tr>
+<td>exponential · 0.0 · 10</td>
+<td>18.2873912 / 18.4509676</td>
+<td>39002.9004</td>
+<td>[38024.4573, 40062.5082]</td>
+<td>89093.6618</td>
+<td>[-0.0469219707, 0.111260408]</td>
+</tr>
+<tr>
+<td>gaussian8 · 0.0 · 10</td>
+<td>18.2879427 / 18.4467792</td>
+<td>3730.44102</td>
+<td>[3579.87624, 3919.33533]</td>
+<td>6777.02582</td>
+<td>[-0.0370077712, 0.102973788]</td>
+</tr>
+<tr>
+<td>stress1 · 0.0 · 10</td>
+<td>18.2888599 / 18.4464164</td>
+<td>3.57293977</td>
+<td>[3.46038643, 3.69321681]</td>
+<td>2.10966059</td>
+<td>[0.00189734593, 0.0705498717]</td>
+</tr>
+<tr>
+<td>stress0.125 · 0.0 · 10</td>
+<td>18.2890393 / 18.4529955</td>
+<td>1.0167378</td>
+<td>[0.997359472, 1.03637194]</td>
+<td>0.689486757</td>
+<td>[-0.0025506543, 0.0206194091]</td>
+</tr>
+<tr>
+<td>stress0.015625 · 0.0 · 10</td>
+<td>18.2880118 / 18.4515892</td>
+<td>0.992355072</td>
+<td>[0.982503353, 0.998662704]</td>
+<td>1.17587075</td>
+<td>[-0.000333731476, 0.00301891144]</td>
+</tr>
+<tr>
+<td>halo · 0.0 · 20</td>
+<td>18.2927416 / 18.4636202</td>
+<td>25391.9454</td>
+<td>[24624.54, 26166.9585]</td>
+<td>13958.0278</td>
+<td>[-0.0387549753, 0.150559704]</td>
+</tr>
+<tr>
+<td>exponential · 0.0 · 20</td>
+<td>18.2873912 / 18.4509676</td>
+<td>25401.5441</td>
+<td>[24632.1593, 26179.7586]</td>
+<td>13964.1292</td>
+<td>[-0.0387520904, 0.150550573]</td>
+</tr>
+<tr>
+<td>gaussian8 · 0.0 · 20</td>
+<td>18.2879427 / 18.4467792</td>
+<td>1999.34617</td>
+<td>[1891.74532, 2113.27781]</td>
+<td>1984.36574</td>
+<td>[-0.0302260419, 0.137654808]</td>
+</tr>
+<tr>
+<td>stress1 · 0.0 · 20</td>
+<td>18.2888599 / 18.4464164</td>
+<td>3.15315647</td>
+<td>[3.08115964, 3.22569516]</td>
+<td>2.33288971</td>
+<td>[-0.0199932485, 0.0833105724]</td>
+</tr>
+<tr>
+<td>stress0.125 · 0.0 · 20</td>
+<td>18.2890393 / 18.4529955</td>
+<td>1.0179098</td>
+<td>[0.990506414, 1.04162801]</td>
+<td>1.01849023</td>
+<td>[-0.00680509509, 0.0175994924]</td>
+</tr>
+<tr>
+<td>stress0.015625 · 0.0 · 20</td>
+<td>18.2880118 / 18.4515892</td>
+<td>0.992678781</td>
+<td>[0.982394718, 0.999541036]</td>
+<td>1.06109263</td>
+<td>[-0.00124153863, 0.0023117685]</td>
+</tr>
+<tr>
+<td>halo · 0.25 · 10</td>
+<td>18.3951548 / 18.5555606</td>
+<td>21774.1766</td>
+<td>[21232.2166, 22388.9995]</td>
+<td>15771.4777</td>
+<td>[-0.154478939, 0.0515187704]</td>
+</tr>
+<tr>
+<td>exponential · 0.25 · 10</td>
+<td>18.3893467 / 18.5494944</td>
+<td>21737.6501</td>
+<td>[21193.2822, 22346.4601]</td>
+<td>15751.2286</td>
+<td>[-0.154477821, 0.0515151541]</td>
+</tr>
+<tr>
+<td>gaussian8 · 0.25 · 10</td>
+<td>18.3900161 / 18.5535038</td>
+<td>655.056603</td>
+<td>[642.440071, 668.687611]</td>
+<td>595.86026</td>
+<td>[-0.145108703, 0.0453767745]</td>
+</tr>
+<tr>
+<td>stress1 · 0.25 · 10</td>
+<td>18.3910858 / 18.5584824</td>
+<td>1.76012886</td>
+<td>[1.72686248, 1.7918993]</td>
+<td>1.51851776</td>
+<td>[-0.0430420305, 0.0217359335]</td>
+</tr>
+<tr>
+<td>stress0.125 · 0.25 · 10</td>
+<td>18.3917059 / 18.5551953</td>
+<td>0.950669603</td>
+<td>[0.929711113, 0.970806296]</td>
+<td>1.21402495</td>
+<td>[-0.00742977169, 0.00469680938]</td>
+</tr>
+<tr>
+<td>stress0.015625 · 0.25 · 10</td>
+<td>18.3913661 / 18.5558685</td>
+<td>0.982318106</td>
+<td>[0.976786364, 0.987149269]</td>
+<td>1.00221341</td>
+<td>[-0.00100054773, 0.000636462618]</td>
+</tr>
+<tr>
+<td>halo · 0.25 · 20</td>
+<td>18.3951548 / 18.5555606</td>
+<td>6928.35383</td>
+<td>[6734.74079, 7229.0683]</td>
+<td>2749.39907</td>
+<td>[-0.200904278, 0.0958018925]</td>
+</tr>
+<tr>
+<td>exponential · 0.25 · 20</td>
+<td>18.3893467 / 18.5494944</td>
+<td>6909.883</td>
+<td>[6719.27032, 7205.83238]</td>
+<td>2741.03489</td>
+<td>[-0.200907308, 0.0957963382]</td>
+</tr>
+<tr>
+<td>gaussian8 · 0.25 · 20</td>
+<td>18.3900161 / 18.5535038</td>
+<td>122.402097</td>
+<td>[118.569864, 126.059907]</td>
+<td>48.8071359</td>
+<td>[-0.193000966, 0.0795659508]</td>
+</tr>
+<tr>
+<td>stress1 · 0.25 · 20</td>
+<td>18.3910858 / 18.5584824</td>
+<td>1.59023169</td>
+<td>[1.57376204, 1.60533648]</td>
+<td>1.23894207</td>
+<td>[-0.0522395946, 0.0108568746]</td>
+</tr>
+<tr>
+<td>stress0.125 · 0.25 · 20</td>
+<td>18.3917059 / 18.5551953</td>
+<td>1.00717161</td>
+<td>[1.00078163, 1.01310713]</td>
+<td>1.08977343</td>
+<td>[-0.00642130534, 0.00555408516]</td>
+</tr>
+<tr>
+<td>stress0.015625 · 0.25 · 20</td>
+<td>18.3913661 / 18.5558685</td>
+<td>0.992683075</td>
+<td>[0.990994634, 0.994227314]</td>
+<td>1.04131574</td>
+<td>[-0.0010128956, 0.000780686105]</td>
+</tr>
+</tbody>
+</table></div>
+<p><a href="results/cost.json">JSON</a> · <a href="results/cost.csv">CSV</a>. All 24 endpoints retain their paired consistency assessments.</p>
+<p>For moving T = 20 halo weighting, batch costs are about 18.40 versus 18.56 CPU seconds. The advantage comes from variance reduction, not faster trajectory integration. The conditional cost-times-variance ratio is about 6,928, while the noisier between-batch ratio is about 2,749. At Gaussian width 1/64 the ratio is about 0.993: the advantage disappears. One of 24 pointwise raw-minus-remainder intervals excludes zero; this retained multiple-comparison flag is not itself proof of bias. The earlier unmatched-weight timing attempt and corrected benchmark remain in <a href="archive.html">provenance</a>.</p>
+<h2 id="limitations">What remains unestablished</h2>
+<p><span id="LIM-01"></span><strong>LIM-01.</strong> One isochrone fast-action slice and finite windows/times; no total halo torque or universal 4.7 correction.</p>
+<p><span id="LIM-02"></span><strong>LIM-02.</strong> Imposed bar and population-independent additive noise; no collective halo response or calibrated SIDM operator.</p>
+<p><span id="LIM-03"></span><strong>LIM-03.</strong> Approximate sampling coverage and numerical-refinement proxies; no rigorous operational 5% guarantee.</p>
+<p><span id="LIM-04"></span><strong>LIM-04.</strong> Eight qualified comparisons share one new dynamical condition and correlated kernel; no eight independent physical regimes.</p>
+<p><span id="LIM-05"></span><strong>LIM-05.</strong> Prescribed-field 3D transfer remains unresolved; even successful transfer would not validate a live halo.</p>
+<p><span id="LIM-06"></span><strong>LIM-06.</strong> Cost-times-variance ratios project precision under a fixed workflow; no measured 6900-fold faster simulation.</p>
+<p><span id="LIM-07"></span><strong>LIM-07.</strong> Specific estimator priority and astrophysical generalization remain open; not externally reviewed.</p>
+<p><span id="LIM-08"></span><strong>LIM-08.</strong> Software reproduction and deployment checks do not independently confirm physics.</p>
+<p>The earlier 24 population forecasts all passed their original operational criterion, max(0.0002, 5% of forecast). A later combined-proxy assessment leaves two early Gaussian-12 window comparisons marginal, retaining 22 qualifications. Historical passes are preserved; they do not become uniform 5% claims. <a href="diagnostics/population-accuracy/joint-error-assessment.json">Exact old and expanded assessments</a>.</p>
+<p>The earlier smooth response is <strong>independent-phase replication at the same actions and forcing</strong>. Constant diffusion with restoring drift can fail the old pooled finite-lag flatness screen; its failure alone does not establish non-Markovian physics. These corrections remain in the <a href="response.html">prescribed-field study</a> and <a href="learn.html#learn-5">learning example</a>.</p>
+<h2 id="reproduction">Reproduction, criticism and revision history</h2>
+<p class="publication-claim" id="REP-01"><a href="claims.json">REP-01</a> · The project receipt documents exact reproduction of 162 saved arrays from the released numerical source. This publication campaign does not claim a new rerun.</p>
+
+<p>A fresh public-source run at numerical revision 66143eb reproduced the accuracy calculation's 162 saved arrays exactly and checked the central figure. This is a <strong>project reproduction receipt</strong>, not an external audit and not additional independent physical samples. The current publication redesign does not rerun those experiments. <a href="diagnostics/population-accuracy/accuracy-reproduction.json">Receipt</a>.</p>
+<p>Use the <a href="reproduce.html">per-study reproduction map</a> to distinguish reading, checking supplied records, and rerunning underlying evolution. Original galaxy outputs are public; the public reduced benchmark does not promise complete reproduction of every galaxy initial condition and trajectory. The private working repository is not required to read or reproduce the released local-model results.</p>
+<p>For criticism, cite a claim ID such as <strong>PA-ACC-01</strong>, figure ID, dataset version and exact row. <a href="https://github.com/djova/bar-halo-benchmark/issues">Open a public issue</a>. In particular: is an equivalent cumulative estimator already published; is its scope useful; which error source is missing; and which test would most efficiently falsify the proposed application? No outside review or endorsement is claimed.</p>
+<p><strong>Release 2026-09-23.1:</strong> consolidated article, shared result/claim records, public reading routes, campaign-scope and equilibrium wording corrections. Scientific outputs and historical criteria unchanged. <a href="archive.html">Archived studies and corrections</a> · <a href="manifest.json">release manifest</a> · <a href="reproduce.html#licenses">reuse conditions</a>.</p>
+<h2 id="references">References and reading record</h2>
+<p>Primary links appear beside the associated statements. <a href="diagnostics/population-accuracy/SOURCES.md">Original scholarly sources</a> and <a href="publication-sources.md">publication review sources</a> identify the inspected material and its limits. Accessibility follows the <a href="https://www.w3.org/WAI/tutorials/images/complex/">W3C complex-image guidance</a> through readable captions and complete values. Registry design follows <a href="https://www.gofair.foundation/fair-principles">FAIR principles</a>; no formal certification is claimed.</p></main><footer class="publication-footer">Release 2026-09-23.1 · Not externally reviewed · <a href="paper.html">Research</a> · <a href="learn.html">Learn</a> · <a href="reproduce.html">Evidence</a> · <a href="agents.html">Agent access</a></footer><script type="module" src="population-accuracy.js"></script></body></html>

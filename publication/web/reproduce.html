@@ -1,0 +1,67 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="publication-version" content="2026-09-23.1"><meta name="description" content="Versioned Galaxy Bar research: population-selection bias, response kernels and numerical accuracy under a prescribed local resonance."><title>Inspect and reproduce · Galaxy Bar</title><link rel="stylesheet" href="story.css"><link rel="stylesheet" href="population-response.css"><link rel="stylesheet" href="population-accuracy.css"><link rel="stylesheet" href="publication.css"><link rel="alternate" type="application/json" href="manifest.json" title="Publication manifest"></head><body><a class="skip" href="#main">Skip to content</a><header><a class="brand" href="./">Galaxy Bar</a></header><main id="main" class="publication population-publication accuracy-publication"><h1>Inspect, check, or rerun</h1>
+<p>These are different activities. Reading starts no computation and needs no credentials. Checking published records is not rerunning trajectories. A reproduction receipt reports what its author checked; it does not mean a reader independently performed it.</p>
+<h2 id="map">Per-study reproducibility map</h2>
+<div class="publication-table" tabindex="0" role="region" aria-label="Inspect and reproduce — complete values"><table><caption>Inspect and reproduce — complete values</caption>
+<thead>
+<tr>
+<th>Study</th>
+<th>Published outputs</th>
+<th>Analysis reproducible</th>
+<th>Complete experiment reproducible</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Original 10 / expanded 25 galaxies</td>
+<td>Yes: <a href="data/index.json">run index</a>, movies, diagnostics, <a href="data/manifest.json">catalogue provenance</a></td>
+<td>Selected exported diagnostics and <a href="diagnostics/response/source-index.html">scientific source</a>; coverage varies</td>
+<td><strong>No complete public package for every original galaxy</strong>; some IC/raw archives remain private</td>
+</tr>
+<tr>
+<td>Prescribed-field Cartesian response</td>
+<td><a href="response.html">Recorded paths and budgets</a>; limitations retained</td>
+<td>Named reduced/synthetic checks in <a href="https://github.com/djova/bar-halo-benchmark/blob/cdb30b5b2f350d2f3de6831995b83f281fe2974e/EARLIER_BENCHMARKS.md">earlier benchmark scope</a></td>
+<td>No blanket claim for every Cartesian/cloud run</td>
+</tr>
+<tr>
+<td>Matched noisy-resonance benchmark</td>
+<td><a href="noise-sweep.html">Original study</a></td>
+<td>Yes, named public recipes</td>
+<td><a href="https://github.com/djova/bar-halo-benchmark/blob/cdb30b5b2f350d2f3de6831995b83f281fe2974e/reproduce_matched.py">reproduce_matched.py</a> for that matched setup</td>
+</tr>
+<tr>
+<td>Population response and heldout weights</td>
+<td><a href="population-response.html">Population study</a></td>
+<td>Yes</td>
+<td><a href="https://github.com/djova/bar-halo-benchmark/blob/cdb30b5b2f350d2f3de6831995b83f281fe2974e/reproduce_population.py">reproduce_population.py</a> and <a href="https://github.com/djova/bar-halo-benchmark/blob/cdb30b5b2f350d2f3de6831995b83f281fe2974e/reproduce_heldout.py">reproduce_heldout.py</a></td>
+</tr>
+<tr>
+<td>Prospective accuracy / matched estimator cost</td>
+<td><a href="paper.html">Complete article</a>, <a href="results/accuracy.json">tables</a>, <a href="datasets.json">arrays</a></td>
+<td>Yes, retained covariance and exact reference outputs</td>
+<td><a href="https://github.com/djova/bar-halo-benchmark/blob/cdb30b5b2f350d2f3de6831995b83f281fe2974e/reproduce_accuracy.py">reproduce_accuracy.py</a>, cost and retrospective commands</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="inspection">Inspection: seconds, no installation</h2>
+<p><a href="paper.html">Article</a> · <a href="paper.md">Markdown</a> · <a href="claims.json">claims</a> · <a href="models.json">models</a> · <a href="datasets.json">datasets and units</a> · <a href="manifest.json">release manifest</a>. All central tables are in the initial HTML. Controls select recorded endpoints and clarify the calculation.</p>
+<h2 id="verification">Verification: cheap arithmetic, no orbit evolution</h2>
+<p>Download <a href="verify_publication.py">verify_publication.py</a> and run it with Python3.11, standard library only:</p>
+<pre><code class="language-sh">python3 verify_publication.py --origin https://djova.ca/galaxy-bar/
+</code></pre>
+<p>It anonymously fetches the manifest, claims and small result tables, checks hashes and content types, recomputes the late population ratio and prospective counts, identifies a conservative rejection, and reports the broad/narrow estimator ratios. It also checks source-row consistency where supplied. Expected runtime is seconds to a few minutes of network access; no solver is invoked. Network failure is reported, not converted to a scientific failure.</p>
+<h2 id="reproduction">Reproduction: deliberately run the experiment</h2>
+<p>The <a href="https://github.com/djova/bar-halo-benchmark">public benchmark</a> is separate from the private working repository. Use the pinned numerical version <code>cdb30b5b2f350d2f3de6831995b83f281fe2974e</code> and its <a href="https://github.com/djova/bar-halo-benchmark/blob/cdb30b5b2f350d2f3de6831995b83f281fe2974e/accuracy/README.md">exact instructions</a>. Reproduction requires Python3.11, pinned scientific dependencies and available CPU/memory. This command is never run merely by reading the page.</p>
+<pre><code class="language-sh">git clone https://github.com/djova/bar-halo-benchmark.git
+cd bar-halo-benchmark
+git checkout cdb30b5b2f350d2f3de6831995b83f281fe2974e
+python3.11 -m venv .venv
+.venv/bin/pip install -r accuracy/requirements.lock.txt
+.venv/bin/python reproduce_accuracy.py --out ./accuracy-rerun --workers 2
+</code></pre>
+<p>The recorded fresh-source accuracy rerun used <strong>3.60 summed core-hours</strong>; elapsed time and platform equality can differ. The default launcher has finite case/wall limits and4+6 aggregate core-hour ceilings for its two stages. The original cost benchmark used about 347 worker CPU-seconds. The retrospective audit reuses saved arrays. Check each recipe before executing; these costs do not describe the original galaxy simulations.</p>
+<h2 id="licenses">Versions, authorship and reuse</h2>
+<p>Numerical source: <code>cdb30b5b2f350d2f3de6831995b83f281fe2974e</code>. Tested accuracy rerun: <code>66143ebdb7441e17f4b44c23d15c2b35eb66841a</code>. Publication release: <strong>2026-09-23.1</strong>. Checksums identify the article's exact scientific inputs; publication changes do not silently revise their protocols.</p>
+<p>The public benchmark's <a href="https://github.com/djova/bar-halo-benchmark/blob/cdb30b5b2f350d2f3de6831995b83f281fe2974e/LICENSE">MIT code license</a> is preserved. Original article text, new learning modules and derived result tables included in this clean public release use the same MIT license. Cite the release and underlying papers when reusing the research. This does not license every legacy or third-party item: no new license is asserted over third-party catalogue tables, papers, logos or quotations. Consult the <a href="https://cdsarc.cds.unistra.fr/viz-bin/cat/J/A+A/587/A160">CDS catalogue</a> and original authors for their terms and attribution.</p>
+<p>Project initiated and maintained by <a href="https://github.com/djova">djova</a>. Scientific authorship beyond this project role is not asserted. Analysis, software and exposition were developed with AI assistance; the maintainer is the human contact through the public issue tracker.</p>
+<p><a href="archive.html">Archived protocols and corrections</a> preserve scientific history. <a href="releases/2026-09-23.1/manifest.json">Release snapshots</a> and a public Git tag preserve this publication's central evidence. The current manifest is a discovery pointer; cite the versioned files or pinned public commit for a fixed reference.</p></main><footer class="publication-footer">Release 2026-09-23.1 · Not externally reviewed · <a href="paper.html">Research</a> · <a href="learn.html">Learn</a> · <a href="reproduce.html">Evidence</a> · <a href="agents.html">Agent access</a></footer></body></html>

@@ -1,0 +1,50 @@
+{
+  "release": "2026-09-23.1",
+  "models": [
+    {
+      "id": "GAL-LIVE",
+      "title": "Self-gravitating galaxy and its fixed-field controls",
+      "evolves": "Stellar and halo particles; live components alter gravity. Named frozen/static controls remove specified response.",
+      "clock": "Gyr; kpc; solar masses",
+      "supports": "Behavior and numerical sensitivity of the specified galaxy models",
+      "excludes": "No SIDM comparison; no converged universal bar-strength prediction",
+      "methods": "methodology.html"
+    },
+    {
+      "id": "CART-EXT",
+      "title": "Prescribed-field Cartesian orbits",
+      "evolves": "Test particles in an external analytical field, imposed bar and disturbances; cloud does not react collectively",
+      "clock": "Analytical-potential model time/action",
+      "supports": "Particle response to those specified external fields",
+      "excludes": "Not live-halo validation",
+      "methods": "response-methods.html"
+    },
+    {
+      "id": "RES-POS",
+      "title": "Reduced noisy resonance, positive population",
+      "evolves": "Slow action and resonant angle; constant additive action diffusion; fixed fast-action slice",
+      "clock": "Dimensionless T, x and impulse B",
+      "supports": "Population response and numerical accuracy within this local operator",
+      "excludes": "Not full-halo torque, SIDM or general confidence coverage",
+      "methods": "paper.html#model"
+    },
+    {
+      "id": "RES-SIGNED",
+      "title": "Earlier signed perturbation with reservoirs",
+      "evolves": "Signed deviation with its own reservoir/boundary conditions",
+      "clock": "Its documented reduced-model units",
+      "supports": "Verification and response of that separate setup",
+      "excludes": "Not interchangeable with positive-population results",
+      "methods": "noise-methods.html"
+    },
+    {
+      "id": "SYNTH",
+      "title": "Synthetic controls",
+      "evolves": "Known stochastic laws or analytical limiting processes",
+      "clock": "Control-specific units",
+      "supports": "Verification of estimators, coordinates or numerical algorithms",
+      "excludes": "Not a new astrophysical measurement",
+      "methods": "response-validation.html"
+    }
+  ]
+}

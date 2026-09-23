@@ -1,0 +1,7 @@
+id,population,time,s,eta,cutoff,response,ci95_low,ci95_high,numerical_window_qualified,source,pointer
+POP-gaussian-T10,gaussian,10.0,0.25,0.1,40,0.001507646220741944,0.0012893988131490212,0.0017258936283348666,True,diagnostics/population-response/independent-validation.json,/rows/12
+POP-halo-T10,halo,10.0,0.25,0.1,40,-0.003900675861719478,-0.003962858168327166,-0.0038384935551117904,True,diagnostics/population-response/independent-validation.json,/rows/13
+POP-exponential-T10,exponential,10.0,0.25,0.1,40,-0.0038987336024384183,-0.003960950249244873,-0.003836516955631963,True,diagnostics/population-response/independent-validation.json,/rows/14
+POP-gaussian-T20,gaussian,20.0,0.25,0.1,40,-0.16194914466882154,-0.1625750631670685,-0.1613232261705746,True,diagnostics/population-response/independent-validation.json,/rows/18
+POP-halo-T20,halo,20.0,0.25,0.1,40,-0.03420023142201352,-0.03432659504171371,-0.03407386780231333,True,diagnostics/population-response/independent-validation.json,/rows/19
+POP-exponential-T20,exponential,20.0,0.25,0.1,40,-0.034223483453356636,-0.03434995183877872,-0.034097015067934555,True,diagnostics/population-response/independent-validation.json,/rows/20

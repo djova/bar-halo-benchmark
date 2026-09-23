@@ -1,0 +1,6184 @@
+{
+  "checked_utc": "2026-09-21T14:26:38.874945+00:00",
+  "status": "Evidence budget with explicit coverage; scientific review and deployment remain separate checks.",
+  "optional_particle_sampling": {
+    "comparisons": [
+      {
+        "target": "high",
+        "reference": "base",
+        "kind": "particle count and sampled realization, seed label42",
+        "common_3Gyr_endpoint": true,
+        "endpoint_difference": {
+          "relative_local_A2": -0.31267298,
+          "final_plane_rms_kpc": 0.003900609,
+          "fractional_thickening": 0.014821587,
+          "bar_onset_gyr": 0.1,
+          "final_pattern_speed_kms_kpc": null,
+          "disc_Lz_fractional_change": 0.0059538538,
+          "admitted_primary_fit_slope_per_gyr": null
+        },
+        "original_numerical_10percent_flag": false,
+        "scope": "Target/reference\u22121 for amplitudes, target minus reference otherwise. The10%flag belongs to particle-count sensitivity only; no new threshold is applied to seed variation. Different particle numbers change the initial sample, even at the same seed label. Admitted late slopes are not initial linear growth rates."
+      },
+      {
+        "target": "high-seed43",
+        "reference": "seed43",
+        "kind": "particle count and sampled realization, seed label43",
+        "common_3Gyr_endpoint": true,
+        "endpoint_difference": {
+          "relative_local_A2": -0.50760121,
+          "final_plane_rms_kpc": -0.040339743,
+          "fractional_thickening": -0.074256452,
+          "bar_onset_gyr": 0.225,
+          "final_pattern_speed_kms_kpc": null,
+          "disc_Lz_fractional_change": 0.011968336,
+          "admitted_primary_fit_slope_per_gyr": null
+        },
+        "original_numerical_10percent_flag": false,
+        "scope": "Target/reference\u22121 for amplitudes, target minus reference otherwise. The10%flag belongs to particle-count sensitivity only; no new threshold is applied to seed variation. Different particle numbers change the initial sample, even at the same seed label. Admitted late slopes are not initial linear growth rates."
+      },
+      {
+        "target": "high-seed43",
+        "reference": "high",
+        "kind": "same480k nominal model, independent seed",
+        "common_3Gyr_endpoint": true,
+        "endpoint_difference": {
+          "relative_local_A2": -0.1565452,
+          "final_plane_rms_kpc": -0.012345027,
+          "fractional_thickening": -0.02707946,
+          "bar_onset_gyr": -0.05,
+          "final_pattern_speed_kms_kpc": null,
+          "disc_Lz_fractional_change": -0.0044795892,
+          "admitted_primary_fit_slope_per_gyr": 0.85380409
+        },
+        "original_numerical_10percent_flag": null,
+        "scope": "Target/reference\u22121 for amplitudes, target minus reference otherwise. The10%flag belongs to particle-count sensitivity only; no new threshold is applied to seed variation. Different particle numbers change the initial sample, even at the same seed label. Admitted late slopes are not initial linear growth rates."
+      }
+    ],
+    "archive_sha256": "11d3efbf4b853cefab33efa5892f8f228af954f76f16b4d4d3137b0ac9b1ee94",
+    "completed": true,
+    "actual_endpoint_gyr": 3.0,
+    "scope": "Single optional additional480k seed. Two seeds at each particle count, not an independently varied disc/halo resolution ensemble or continuum convergence. RealizedQ/mass/phase-space differences, original restart/recording history, null speeds/growth and finite-length limits remain. A stopped trajectory does not enter3Gyr differences. Primary measurements and core matrices are read only."
+  },
+  "recording_precision_limits": [
+    {
+      "run": "high-seed43",
+      "report": "high-seed43.json",
+      "threshold": 1e-06,
+      "original_checks_pass": false,
+      "coincident_epochs": 31,
+      "failed_checks": [
+        {
+          "time_gyr": 1.8,
+          "component": "disc",
+          "max_complex_error": 1.0379329e-05
+        }
+      ],
+      "independent_arithmetic_error": 1.3211928e-16,
+      "interpretation": "Original failures retained. Float32 aperture membership ambiguity is a retrospective explanation, not a corrected recorder or an isolated force error."
+    },
+    {
+      "run": "high-seed43",
+      "report": "high-seed43-disc-all.json",
+      "threshold": 1e-06,
+      "original_checks_pass": false,
+      "coincident_epochs": 61,
+      "failed_checks": [
+        {
+          "time_gyr": 1.8,
+          "component": "disc",
+          "max_complex_error": 1.0379329e-05
+        }
+      ],
+      "independent_arithmetic_error": 1.3678652e-16,
+      "interpretation": "Original failures retained. Float32 aperture membership ambiguity is a retrospective explanation, not a corrected recorder or an isolated force error."
+    }
+  ],
+  "original_numerical_controls": [
+    {
+      "target": "soft050",
+      "reference": "base",
+      "purpose": "numerical sensitivity",
+      "final_local_A2": [
+        0.54195815,
+        0.64520172
+      ],
+      "relative_change": 0.190501,
+      "within_original_10_percent": false,
+      "target_setting": {
+        "n": 120000,
+        "ndisk": 40000,
+        "eps_kpc": 0.05,
+        "dt_myr": 0.2,
+        "theta": 0.4
+      },
+      "reference_setting": {
+        "n": 120000,
+        "ndisk": 40000,
+        "eps_kpc": 0.1,
+        "dt_myr": 0.2,
+        "theta": 0.4
+      }
+    },
+    {
+      "target": "soft200",
+      "reference": "base",
+      "purpose": "numerical sensitivity",
+      "final_local_A2": [
+        0.54195815,
+        0.32371226
+      ],
+      "relative_change": -0.40269878,
+      "within_original_10_percent": false,
+      "target_setting": {
+        "n": 120000,
+        "ndisk": 40000,
+        "eps_kpc": 0.2,
+        "dt_myr": 0.2,
+        "theta": 0.4
+      },
+      "reference_setting": {
+        "n": 120000,
+        "ndisk": 40000,
+        "eps_kpc": 0.1,
+        "dt_myr": 0.2,
+        "theta": 0.4
+      }
+    },
+    {
+      "target": "timestep",
+      "reference": "base",
+      "purpose": "numerical sensitivity",
+      "final_local_A2": [
+        0.54195815,
+        0.41622032
+      ],
+      "relative_change": -0.23200652,
+      "within_original_10_percent": false,
+      "target_setting": {
+        "n": 120000,
+        "ndisk": 40000,
+        "eps_kpc": 0.1,
+        "dt_myr": 0.1,
+        "theta": 0.4
+      },
+      "reference_setting": {
+        "n": 120000,
+        "ndisk": 40000,
+        "eps_kpc": 0.1,
+        "dt_myr": 0.2,
+        "theta": 0.4
+      }
+    },
+    {
+      "target": "force",
+      "reference": "base",
+      "purpose": "numerical sensitivity",
+      "final_local_A2": [
+        0.54195815,
+        0.45501922
+      ],
+      "relative_change": -0.16041631,
+      "within_original_10_percent": false,
+      "target_setting": {
+        "n": 120000,
+        "ndisk": 40000,
+        "eps_kpc": 0.1,
+        "dt_myr": 0.2,
+        "theta": 0.25
+      },
+      "reference_setting": {
+        "n": 120000,
+        "ndisk": 40000,
+        "eps_kpc": 0.1,
+        "dt_myr": 0.2,
+        "theta": 0.4
+      }
+    },
+    {
+      "target": "high",
+      "reference": "base",
+      "purpose": "numerical sensitivity",
+      "final_local_A2": [
+        0.54195815,
+        0.37250248
+      ],
+      "relative_change": -0.31267298,
+      "within_original_10_percent": false,
+      "target_setting": {
+        "n": 480000,
+        "ndisk": 160000,
+        "eps_kpc": 0.1,
+        "dt_myr": 0.2,
+        "theta": 0.4
+      },
+      "reference_setting": {
+        "n": 120000,
+        "ndisk": 40000,
+        "eps_kpc": 0.1,
+        "dt_myr": 0.2,
+        "theta": 0.4
+      }
+    },
+    {
+      "target": "seed43",
+      "reference": "base",
+      "purpose": "sampling variation",
+      "final_local_A2": [
+        0.54195815,
+        0.63807835
+      ],
+      "relative_change": 0.17735724,
+      "within_original_10_percent": false,
+      "target_setting": {
+        "n": 120000,
+        "ndisk": 40000,
+        "eps_kpc": 0.1,
+        "dt_myr": 0.2,
+        "theta": 0.4
+      },
+      "reference_setting": {
+        "n": 120000,
+        "ndisk": 40000,
+        "eps_kpc": 0.1,
+        "dt_myr": 0.2,
+        "theta": 0.4
+      }
+    },
+    {
+      "target": "soft050_dt",
+      "reference": "soft050",
+      "purpose": "50 pc timestep sensitivity",
+      "final_local_A2": [
+        0.64520172,
+        0.41846068
+      ],
+      "relative_change": -0.35142659,
+      "within_original_10_percent": false,
+      "target_setting": {
+        "n": 120000,
+        "ndisk": 40000,
+        "eps_kpc": 0.05,
+        "dt_myr": 0.1,
+        "theta": 0.4
+      },
+      "reference_setting": {
+        "n": 120000,
+        "ndisk": 40000,
+        "eps_kpc": 0.05,
+        "dt_myr": 0.2,
+        "theta": 0.4
+      }
+    },
+    {
+      "target": "soft025_dt",
+      "reference": "soft050_dt",
+      "purpose": "25 vs 50 pc at common 0.1 Myr timestep",
+      "final_local_A2": [
+        0.41846068,
+        0.60692989
+      ],
+      "relative_change": 0.45038691,
+      "within_original_10_percent": false,
+      "target_setting": {
+        "n": 120000,
+        "ndisk": 40000,
+        "eps_kpc": 0.025,
+        "dt_myr": 0.1,
+        "theta": 0.4
+      },
+      "reference_setting": {
+        "n": 120000,
+        "ndisk": 40000,
+        "eps_kpc": 0.05,
+        "dt_myr": 0.1,
+        "theta": 0.4
+      }
+    }
+  ],
+  "force_pairs": [
+    {
+      "seed": 42,
+      "runs": [
+        "base",
+        "force"
+      ],
+      "qualified": true,
+      "conservation_pass": true,
+      "relative_final_A2_change": -0.16041631,
+      "absolute_final_A2_difference": -0.086938928,
+      "amplitude_within_10_percent": false,
+      "initial_sha256": "a255845699771d64eed95aad56bee47f7dce6dbe070275c7d4a6ca896563917d",
+      "onset_time_difference_gyr": 0.0,
+      "growth_rate_difference_per_gyr": null,
+      "final_local_A2": [
+        0.54195815,
+        0.45501922
+      ]
+    },
+    {
+      "seed": 43,
+      "runs": [
+        "seed43",
+        "seed43-theta025"
+      ],
+      "qualified": true,
+      "conservation_pass": true,
+      "relative_final_A2_change": -0.02650087,
+      "absolute_final_A2_difference": -0.016909632,
+      "amplitude_within_10_percent": true,
+      "initial_sha256": "06f4bf91f887d9c9bceeb41e10ebb1b972db4a15a4947537174aa1e64e05ba54",
+      "onset_time_difference_gyr": 0.0,
+      "growth_rate_difference_per_gyr": null,
+      "final_local_A2": [
+        0.63807835,
+        0.62116872
+      ]
+    },
+    {
+      "seed": 44,
+      "runs": [
+        "seed44-theta04",
+        "seed44-theta025"
+      ],
+      "qualified": true,
+      "conservation_pass": true,
+      "relative_final_A2_change": -0.3479512,
+      "absolute_final_A2_difference": -0.24870361,
+      "amplitude_within_10_percent": false,
+      "initial_sha256": "63858f03ba8af973212a22b254e916cccc4924a2deeea714ecd5e65bb0be9985",
+      "onset_time_difference_gyr": 0.0,
+      "growth_rate_difference_per_gyr": null,
+      "final_local_A2": [
+        0.71476579,
+        0.46606218
+      ]
+    },
+    {
+      "seed": 45,
+      "runs": [
+        "seed45-theta04",
+        "seed45-theta025"
+      ],
+      "qualified": true,
+      "conservation_pass": true,
+      "relative_final_A2_change": 0.1208317,
+      "absolute_final_A2_difference": 0.071056095,
+      "amplitude_within_10_percent": false,
+      "initial_sha256": "1b4c813739205ba7795f44879c44e309fc023bdd2de593f96ca7332ab72cb631",
+      "onset_time_difference_gyr": 0.0,
+      "growth_rate_difference_per_gyr": null,
+      "final_local_A2": [
+        0.58805838,
+        0.65911448
+      ]
+    }
+  ],
+  "force_seed_values": {
+    ".4": [
+      {
+        "seed": 42,
+        "run": "base",
+        "final_local_A2": 0.54195815
+      },
+      {
+        "seed": 43,
+        "run": "seed43",
+        "final_local_A2": 0.63807835
+      },
+      {
+        "seed": 44,
+        "run": "seed44-theta04",
+        "final_local_A2": 0.71476579
+      },
+      {
+        "seed": 45,
+        "run": "seed45-theta04",
+        "final_local_A2": 0.58805838
+      }
+    ],
+    ".25": [
+      {
+        "seed": 42,
+        "run": "force",
+        "final_local_A2": 0.45501922
+      },
+      {
+        "seed": 43,
+        "run": "seed43-theta025",
+        "final_local_A2": 0.62116872
+      },
+      {
+        "seed": 44,
+        "run": "seed44-theta025",
+        "final_local_A2": 0.46606218
+      },
+      {
+        "seed": 45,
+        "run": "seed45-theta025",
+        "final_local_A2": 0.65911448
+      }
+    ]
+  },
+  "same_height_seed_pairs": {
+    "checked_utc": "2026-09-21T10:05:39.311783+00:00",
+    "pairs": [
+      {
+        "height_target_kpc": 0.15,
+        "runs": [
+          "thickness-h150-seed42",
+          "thickness-h150-seed43"
+        ],
+        "complete": true,
+        "endpoint_difference": {
+          "final_A2_cosine": 0.051254097,
+          "bar_onset_gyr": 0.0,
+          "final_pattern_speed_kms_kpc": null,
+          "disc_Lz_fractional_change": -0.018238822,
+          "relative_final_local_A2": 0.07453805,
+          "relative_final_plane_RMS": 0.33763519,
+          "fractional_thickening": 0.88074892
+        },
+        "common_rows": [
+          {
+            "time_gyr": 0.0,
+            "local_cosine_A2": [
+              0.047996098,
+              0.047269513
+            ],
+            "plane_RMS_kpc": [
+              0.24063494,
+              0.24032911
+            ]
+          },
+          {
+            "time_gyr": 0.025,
+            "local_cosine_A2": [
+              0.078390642,
+              0.082647439
+            ],
+            "plane_RMS_kpc": [
+              0.24402539,
+              0.24400209
+            ]
+          },
+          {
+            "time_gyr": 0.05,
+            "local_cosine_A2": [
+              0.10495905,
+              0.11174552
+            ],
+            "plane_RMS_kpc": [
+              0.24323573,
+              0.24649647
+            ]
+          },
+          {
+            "time_gyr": 0.075,
+            "local_cosine_A2": [
+              0.067018496,
+              0.16455297
+            ],
+            "plane_RMS_kpc": [
+              0.24616948,
+              0.24867267
+            ]
+          },
+          {
+            "time_gyr": 0.1,
+            "local_cosine_A2": [
+              0.11316866,
+              0.16934528
+            ],
+            "plane_RMS_kpc": [
+              0.24779887,
+              0.24866866
+            ]
+          },
+          {
+            "time_gyr": 0.125,
+            "local_cosine_A2": [
+              0.082662799,
+              0.11460924
+            ],
+            "plane_RMS_kpc": [
+              0.25057055,
+              0.25018133
+            ]
+          },
+          {
+            "time_gyr": 0.15,
+            "local_cosine_A2": [
+              0.16477286,
+              0.14896079
+            ],
+            "plane_RMS_kpc": [
+              0.25220386,
+              0.2532561
+            ]
+          },
+          {
+            "time_gyr": 0.175,
+            "local_cosine_A2": [
+              0.18484301,
+              0.16918511
+            ],
+            "plane_RMS_kpc": [
+              0.25561897,
+              0.25876176
+            ]
+          },
+          {
+            "time_gyr": 0.2,
+            "local_cosine_A2": [
+              0.15270877,
+              0.21248681
+            ],
+            "plane_RMS_kpc": [
+              0.26023606,
+              0.25790233
+            ]
+          },
+          {
+            "time_gyr": 0.225,
+            "local_cosine_A2": [
+              0.23468996,
+              0.25270627
+            ],
+            "plane_RMS_kpc": [
+              0.25873721,
+              0.26123372
+            ]
+          },
+          {
+            "time_gyr": 0.25,
+            "local_cosine_A2": [
+              0.22630427,
+              0.2317538
+            ],
+            "plane_RMS_kpc": [
+              0.26247495,
+              0.26385207
+            ]
+          },
+          {
+            "time_gyr": 0.275,
+            "local_cosine_A2": [
+              0.16031442,
+              0.27613494
+            ],
+            "plane_RMS_kpc": [
+              0.26482401,
+              0.26574823
+            ]
+          },
+          {
+            "time_gyr": 0.3,
+            "local_cosine_A2": [
+              0.18791729,
+              0.37607079
+            ],
+            "plane_RMS_kpc": [
+              0.26425235,
+              0.26382191
+            ]
+          },
+          {
+            "time_gyr": 0.325,
+            "local_cosine_A2": [
+              0.2427181,
+              0.35343463
+            ],
+            "plane_RMS_kpc": [
+              0.266185,
+              0.26748338
+            ]
+          },
+          {
+            "time_gyr": 0.35,
+            "local_cosine_A2": [
+              0.36023131,
+              0.35841122
+            ],
+            "plane_RMS_kpc": [
+              0.27262626,
+              0.27163983
+            ]
+          },
+          {
+            "time_gyr": 0.375,
+            "local_cosine_A2": [
+              0.51238394,
+              0.44311488
+            ],
+            "plane_RMS_kpc": [
+              0.27505511,
+              0.27694753
+            ]
+          },
+          {
+            "time_gyr": 0.4,
+            "local_cosine_A2": [
+              0.55878749,
+              0.55198638
+            ],
+            "plane_RMS_kpc": [
+              0.27353399,
+              0.28330199
+            ]
+          },
+          {
+            "time_gyr": 0.425,
+            "local_cosine_A2": [
+              0.64784335,
+              0.49033581
+            ],
+            "plane_RMS_kpc": [
+              0.27166785,
+              0.28513391
+            ]
+          },
+          {
+            "time_gyr": 0.45,
+            "local_cosine_A2": [
+              0.74571051,
+              0.44435504
+            ],
+            "plane_RMS_kpc": [
+              0.27334569,
+              0.28735996
+            ]
+          },
+          {
+            "time_gyr": 0.475,
+            "local_cosine_A2": [
+              0.76937277,
+              0.69805672
+            ],
+            "plane_RMS_kpc": [
+              0.27713564,
+              0.28794499
+            ]
+          },
+          {
+            "time_gyr": 0.5,
+            "local_cosine_A2": [
+              0.83567041,
+              0.73733612
+            ],
+            "plane_RMS_kpc": [
+              0.28650252,
+              0.29423194
+            ]
+          },
+          {
+            "time_gyr": 0.525,
+            "local_cosine_A2": [
+              0.93227306,
+              0.89193637
+            ],
+            "plane_RMS_kpc": [
+              0.28834237,
+              0.29324614
+            ]
+          },
+          {
+            "time_gyr": 0.55,
+            "local_cosine_A2": [
+              1.0280763,
+              0.97148503
+            ],
+            "plane_RMS_kpc": [
+              0.28667717,
+              0.29443243
+            ]
+          },
+          {
+            "time_gyr": 0.575,
+            "local_cosine_A2": [
+              1.1071518,
+              0.85667005
+            ],
+            "plane_RMS_kpc": [
+              0.29815972,
+              0.30008583
+            ]
+          },
+          {
+            "time_gyr": 0.6,
+            "local_cosine_A2": [
+              1.0987204,
+              0.83294033
+            ],
+            "plane_RMS_kpc": [
+              0.29517377,
+              0.30433933
+            ]
+          },
+          {
+            "time_gyr": 0.625,
+            "local_cosine_A2": [
+              1.0903651,
+              0.8977146
+            ],
+            "plane_RMS_kpc": [
+              0.29993245,
+              0.30673426
+            ]
+          },
+          {
+            "time_gyr": 0.65,
+            "local_cosine_A2": [
+              0.95735143,
+              0.98636835
+            ],
+            "plane_RMS_kpc": [
+              0.30599607,
+              0.31487483
+            ]
+          },
+          {
+            "time_gyr": 0.675,
+            "local_cosine_A2": [
+              0.86978868,
+              1.0245873
+            ],
+            "plane_RMS_kpc": [
+              0.3090857,
+              0.31870633
+            ]
+          },
+          {
+            "time_gyr": 0.7,
+            "local_cosine_A2": [
+              0.90578393,
+              0.97712663
+            ],
+            "plane_RMS_kpc": [
+              0.31637272,
+              0.31642661
+            ]
+          },
+          {
+            "time_gyr": 0.725,
+            "local_cosine_A2": [
+              0.93777115,
+              0.90789108
+            ],
+            "plane_RMS_kpc": [
+              0.32219483,
+              0.32512927
+            ]
+          },
+          {
+            "time_gyr": 0.75,
+            "local_cosine_A2": [
+              0.93079492,
+              0.94809097
+            ],
+            "plane_RMS_kpc": [
+              0.31813231,
+              0.33631968
+            ]
+          },
+          {
+            "time_gyr": 0.775,
+            "local_cosine_A2": [
+              0.81532455,
+              1.01508
+            ],
+            "plane_RMS_kpc": [
+              0.33118484,
+              0.33333658
+            ]
+          },
+          {
+            "time_gyr": 0.8,
+            "local_cosine_A2": [
+              0.73340975,
+              1.0172905
+            ],
+            "plane_RMS_kpc": [
+              0.33874374,
+              0.33801602
+            ]
+          },
+          {
+            "time_gyr": 0.825,
+            "local_cosine_A2": [
+              0.77040865,
+              1.0230259
+            ],
+            "plane_RMS_kpc": [
+              0.33600761,
+              0.34444713
+            ]
+          },
+          {
+            "time_gyr": 0.85,
+            "local_cosine_A2": [
+              0.80246717,
+              0.95918082
+            ],
+            "plane_RMS_kpc": [
+              0.33547806,
+              0.34388026
+            ]
+          },
+          {
+            "time_gyr": 0.875,
+            "local_cosine_A2": [
+              0.83847863,
+              0.92140189
+            ],
+            "plane_RMS_kpc": [
+              0.34493287,
+              0.35201802
+            ]
+          },
+          {
+            "time_gyr": 0.9,
+            "local_cosine_A2": [
+              0.7988324,
+              0.98260141
+            ],
+            "plane_RMS_kpc": [
+              0.34566231,
+              0.35659886
+            ]
+          },
+          {
+            "time_gyr": 0.925,
+            "local_cosine_A2": [
+              0.69988629,
+              0.98823781
+            ],
+            "plane_RMS_kpc": [
+              0.3532574,
+              0.36370533
+            ]
+          },
+          {
+            "time_gyr": 0.95,
+            "local_cosine_A2": [
+              0.80182657,
+              0.99280926
+            ],
+            "plane_RMS_kpc": [
+              0.35317243,
+              0.36446678
+            ]
+          },
+          {
+            "time_gyr": 0.975,
+            "local_cosine_A2": [
+              0.80233163,
+              0.90159526
+            ],
+            "plane_RMS_kpc": [
+              0.36523024,
+              0.36678063
+            ]
+          },
+          {
+            "time_gyr": 1.0,
+            "local_cosine_A2": [
+              0.78752943,
+              0.92415158
+            ],
+            "plane_RMS_kpc": [
+              0.36706467,
+              0.37513661
+            ]
+          },
+          {
+            "time_gyr": 1.025,
+            "local_cosine_A2": [
+              0.6249441,
+              0.8596903
+            ],
+            "plane_RMS_kpc": [
+              0.36901069,
+              0.38205111
+            ]
+          },
+          {
+            "time_gyr": 1.05,
+            "local_cosine_A2": [
+              0.78894625,
+              0.87749585
+            ],
+            "plane_RMS_kpc": [
+              0.37074696,
+              0.38384552
+            ]
+          },
+          {
+            "time_gyr": 1.075,
+            "local_cosine_A2": [
+              0.73352367,
+              0.95297057
+            ],
+            "plane_RMS_kpc": [
+              0.37838689,
+              0.38867275
+            ]
+          },
+          {
+            "time_gyr": 1.1,
+            "local_cosine_A2": [
+              0.64818569,
+              0.92502192
+            ],
+            "plane_RMS_kpc": [
+              0.37895683,
+              0.3990677
+            ]
+          },
+          {
+            "time_gyr": 1.125,
+            "local_cosine_A2": [
+              0.67440979,
+              0.8444444
+            ],
+            "plane_RMS_kpc": [
+              0.38545141,
+              0.40041734
+            ]
+          },
+          {
+            "time_gyr": 1.15,
+            "local_cosine_A2": [
+              0.70009217,
+              0.85349769
+            ],
+            "plane_RMS_kpc": [
+              0.38942471,
+              0.39919449
+            ]
+          },
+          {
+            "time_gyr": 1.175,
+            "local_cosine_A2": [
+              0.68500064,
+              0.93699096
+            ],
+            "plane_RMS_kpc": [
+              0.38918526,
+              0.40424227
+            ]
+          },
+          {
+            "time_gyr": 1.2,
+            "local_cosine_A2": [
+              0.67556411,
+              0.86848328
+            ],
+            "plane_RMS_kpc": [
+              0.39028593,
+              0.41383303
+            ]
+          },
+          {
+            "time_gyr": 1.225,
+            "local_cosine_A2": [
+              0.75431617,
+              0.88383011
+            ],
+            "plane_RMS_kpc": [
+              0.39717581,
+              0.41552434
+            ]
+          },
+          {
+            "time_gyr": 1.25,
+            "local_cosine_A2": [
+              0.71550312,
+              0.89911095
+            ],
+            "plane_RMS_kpc": [
+              0.39704002,
+              0.41559044
+            ]
+          },
+          {
+            "time_gyr": 1.275,
+            "local_cosine_A2": [
+              0.75504606,
+              0.89839014
+            ],
+            "plane_RMS_kpc": [
+              0.4036026,
+              0.41940568
+            ]
+          },
+          {
+            "time_gyr": 1.3,
+            "local_cosine_A2": [
+              0.74500551,
+              0.88494846
+            ],
+            "plane_RMS_kpc": [
+              0.41296475,
+              0.41868774
+            ]
+          },
+          {
+            "time_gyr": 1.325,
+            "local_cosine_A2": [
+              0.70326424,
+              0.86865187
+            ],
+            "plane_RMS_kpc": [
+              0.41497586,
+              0.42592455
+            ]
+          },
+          {
+            "time_gyr": 1.35,
+            "local_cosine_A2": [
+              0.66665535,
+              0.88288194
+            ],
+            "plane_RMS_kpc": [
+              0.42749979,
+              0.43929796
+            ]
+          },
+          {
+            "time_gyr": 1.375,
+            "local_cosine_A2": [
+              0.7280576,
+              0.94038568
+            ],
+            "plane_RMS_kpc": [
+              0.4191254,
+              0.43253625
+            ]
+          },
+          {
+            "time_gyr": 1.4,
+            "local_cosine_A2": [
+              0.67231901,
+              0.88956886
+            ],
+            "plane_RMS_kpc": [
+              0.42320086,
+              0.43443503
+            ]
+          },
+          {
+            "time_gyr": 1.425,
+            "local_cosine_A2": [
+              0.61543723,
+              0.91581941
+            ],
+            "plane_RMS_kpc": [
+              0.43215095,
+              0.44488883
+            ]
+          },
+          {
+            "time_gyr": 1.45,
+            "local_cosine_A2": [
+              0.65662355,
+              0.89517718
+            ],
+            "plane_RMS_kpc": [
+              0.4302051,
+              0.44260065
+            ]
+          },
+          {
+            "time_gyr": 1.475,
+            "local_cosine_A2": [
+              0.65875208,
+              0.93019969
+            ],
+            "plane_RMS_kpc": [
+              0.43686483,
+              0.45411406
+            ]
+          },
+          {
+            "time_gyr": 1.5,
+            "local_cosine_A2": [
+              0.68441352,
+              0.94685109
+            ],
+            "plane_RMS_kpc": [
+              0.44280902,
+              0.4549012
+            ]
+          },
+          {
+            "time_gyr": 1.525,
+            "local_cosine_A2": [
+              0.64967747,
+              0.91860644
+            ],
+            "plane_RMS_kpc": [
+              0.44406555,
+              0.46132506
+            ]
+          },
+          {
+            "time_gyr": 1.55,
+            "local_cosine_A2": [
+              0.63579221,
+              0.89537325
+            ],
+            "plane_RMS_kpc": [
+              0.44023317,
+              0.45720716
+            ]
+          },
+          {
+            "time_gyr": 1.575,
+            "local_cosine_A2": [
+              0.64378034,
+              0.912207
+            ],
+            "plane_RMS_kpc": [
+              0.44780751,
+              0.46890367
+            ]
+          },
+          {
+            "time_gyr": 1.6,
+            "local_cosine_A2": [
+              0.60426026,
+              0.96858524
+            ],
+            "plane_RMS_kpc": [
+              0.45143471,
+              0.47050915
+            ]
+          },
+          {
+            "time_gyr": 1.625,
+            "local_cosine_A2": [
+              0.55049847,
+              0.92486003
+            ],
+            "plane_RMS_kpc": [
+              0.45973833,
+              0.47696485
+            ]
+          },
+          {
+            "time_gyr": 1.65,
+            "local_cosine_A2": [
+              0.5777701,
+              0.89364097
+            ],
+            "plane_RMS_kpc": [
+              0.45962663,
+              0.47472897
+            ]
+          },
+          {
+            "time_gyr": 1.675,
+            "local_cosine_A2": [
+              0.5785008,
+              0.92818274
+            ],
+            "plane_RMS_kpc": [
+              0.46726634,
+              0.48115307
+            ]
+          },
+          {
+            "time_gyr": 1.7,
+            "local_cosine_A2": [
+              0.55750669,
+              0.93775478
+            ],
+            "plane_RMS_kpc": [
+              0.46606628,
+              0.47935224
+            ]
+          },
+          {
+            "time_gyr": 1.725,
+            "local_cosine_A2": [
+              0.58248554,
+              0.92555011
+            ],
+            "plane_RMS_kpc": [
+              0.46611296,
+              0.48874204
+            ]
+          },
+          {
+            "time_gyr": 1.75,
+            "local_cosine_A2": [
+              0.59317119,
+              0.9043312
+            ],
+            "plane_RMS_kpc": [
+              0.47555757,
+              0.48849491
+            ]
+          },
+          {
+            "time_gyr": 1.775,
+            "local_cosine_A2": [
+              0.64680804,
+              0.92980735
+            ],
+            "plane_RMS_kpc": [
+              0.47555935,
+              0.49419464
+            ]
+          },
+          {
+            "time_gyr": 1.8,
+            "local_cosine_A2": [
+              0.61898689,
+              0.94544624
+            ],
+            "plane_RMS_kpc": [
+              0.47535886,
+              0.50156103
+            ]
+          },
+          {
+            "time_gyr": 1.825,
+            "local_cosine_A2": [
+              0.63573434,
+              0.92512676
+            ],
+            "plane_RMS_kpc": [
+              0.48452906,
+              0.50208292
+            ]
+          },
+          {
+            "time_gyr": 1.85,
+            "local_cosine_A2": [
+              0.6332584,
+              0.96461338
+            ],
+            "plane_RMS_kpc": [
+              0.48950776,
+              0.50332799
+            ]
+          },
+          {
+            "time_gyr": 1.875,
+            "local_cosine_A2": [
+              0.62533085,
+              0.94892422
+            ],
+            "plane_RMS_kpc": [
+              0.4888582,
+              0.50989639
+            ]
+          },
+          {
+            "time_gyr": 1.9,
+            "local_cosine_A2": [
+              0.6717621,
+              0.96465519
+            ],
+            "plane_RMS_kpc": [
+              0.48992176,
+              0.50728986
+            ]
+          },
+          {
+            "time_gyr": 1.925,
+            "local_cosine_A2": [
+              0.68032784,
+              0.93990438
+            ],
+            "plane_RMS_kpc": [
+              0.49618721,
+              0.52173293
+            ]
+          },
+          {
+            "time_gyr": 1.95,
+            "local_cosine_A2": [
+              0.68201022,
+              0.95697346
+            ],
+            "plane_RMS_kpc": [
+              0.50064343,
+              0.52217083
+            ]
+          },
+          {
+            "time_gyr": 1.975,
+            "local_cosine_A2": [
+              0.67656259,
+              0.9160639
+            ],
+            "plane_RMS_kpc": [
+              0.50480816,
+              0.52032735
+            ]
+          },
+          {
+            "time_gyr": 2.0,
+            "local_cosine_A2": [
+              0.68848422,
+              0.97749019
+            ],
+            "plane_RMS_kpc": [
+              0.50561069,
+              0.52513669
+            ]
+          },
+          {
+            "time_gyr": 2.025,
+            "local_cosine_A2": [
+              0.66317647,
+              1.0006858
+            ],
+            "plane_RMS_kpc": [
+              0.51149355,
+              0.52762212
+            ]
+          },
+          {
+            "time_gyr": 2.05,
+            "local_cosine_A2": [
+              0.7224149,
+              0.99183834
+            ],
+            "plane_RMS_kpc": [
+              0.50187724,
+              0.53641625
+            ]
+          },
+          {
+            "time_gyr": 2.075,
+            "local_cosine_A2": [
+              0.696462,
+              0.98818395
+            ],
+            "plane_RMS_kpc": [
+              0.51183923,
+              0.54026217
+            ]
+          },
+          {
+            "time_gyr": 2.1,
+            "local_cosine_A2": [
+              0.67041317,
+              0.96826977
+            ],
+            "plane_RMS_kpc": [
+              0.52260904,
+              0.55175036
+            ]
+          },
+          {
+            "time_gyr": 2.125,
+            "local_cosine_A2": [
+              0.6990552,
+              0.99825643
+            ],
+            "plane_RMS_kpc": [
+              0.51575389,
+              0.55187604
+            ]
+          },
+          {
+            "time_gyr": 2.15,
+            "local_cosine_A2": [
+              0.62402567,
+              0.98199016
+            ],
+            "plane_RMS_kpc": [
+              0.52130305,
+              0.56868831
+            ]
+          },
+          {
+            "time_gyr": 2.175,
+            "local_cosine_A2": [
+              0.64045596,
+              0.99651152
+            ],
+            "plane_RMS_kpc": [
+              0.52843071,
+              0.56514252
+            ]
+          },
+          {
+            "time_gyr": 2.2,
+            "local_cosine_A2": [
+              0.68590837,
+              0.99403432
+            ],
+            "plane_RMS_kpc": [
+              0.53075601,
+              0.58603045
+            ]
+          },
+          {
+            "time_gyr": 2.225,
+            "local_cosine_A2": [
+              0.66488068,
+              0.97490659
+            ],
+            "plane_RMS_kpc": [
+              0.53427253,
+              0.59957177
+            ]
+          },
+          {
+            "time_gyr": 2.25,
+            "local_cosine_A2": [
+              0.64898193,
+              0.9403655
+            ],
+            "plane_RMS_kpc": [
+              0.53241386,
+              0.6072155
+            ]
+          },
+          {
+            "time_gyr": 2.275,
+            "local_cosine_A2": [
+              0.66298034,
+              0.95230698
+            ],
+            "plane_RMS_kpc": [
+              0.54331278,
+              0.6319748
+            ]
+          },
+          {
+            "time_gyr": 2.3,
+            "local_cosine_A2": [
+              0.69853712,
+              0.89178699
+            ],
+            "plane_RMS_kpc": [
+              0.53961092,
+              0.64387764
+            ]
+          },
+          {
+            "time_gyr": 2.325,
+            "local_cosine_A2": [
+              0.71606092,
+              0.89951701
+            ],
+            "plane_RMS_kpc": [
+              0.54052948,
+              0.67786258
+            ]
+          },
+          {
+            "time_gyr": 2.35,
+            "local_cosine_A2": [
+              0.68658673,
+              0.82742813
+            ],
+            "plane_RMS_kpc": [
+              0.54891917,
+              0.70550901
+            ]
+          },
+          {
+            "time_gyr": 2.375,
+            "local_cosine_A2": [
+              0.64352436,
+              0.79102792
+            ],
+            "plane_RMS_kpc": [
+              0.55069553,
+              0.71528726
+            ]
+          },
+          {
+            "time_gyr": 2.4,
+            "local_cosine_A2": [
+              0.66114459,
+              0.78419092
+            ],
+            "plane_RMS_kpc": [
+              0.55272208,
+              0.74144339
+            ]
+          },
+          {
+            "time_gyr": 2.425,
+            "local_cosine_A2": [
+              0.63140226,
+              0.75976368
+            ],
+            "plane_RMS_kpc": [
+              0.55493602,
+              0.75531066
+            ]
+          },
+          {
+            "time_gyr": 2.45,
+            "local_cosine_A2": [
+              0.67383976,
+              0.70877977
+            ],
+            "plane_RMS_kpc": [
+              0.54895825,
+              0.76077767
+            ]
+          },
+          {
+            "time_gyr": 2.475,
+            "local_cosine_A2": [
+              0.63872337,
+              0.74644761
+            ],
+            "plane_RMS_kpc": [
+              0.55850755,
+              0.77920621
+            ]
+          },
+          {
+            "time_gyr": 2.5,
+            "local_cosine_A2": [
+              0.6454368,
+              0.71496777
+            ],
+            "plane_RMS_kpc": [
+              0.56577739,
+              0.77653416
+            ]
+          },
+          {
+            "time_gyr": 2.525,
+            "local_cosine_A2": [
+              0.68928481,
+              0.65857524
+            ],
+            "plane_RMS_kpc": [
+              0.5648003,
+              0.78989682
+            ]
+          },
+          {
+            "time_gyr": 2.55,
+            "local_cosine_A2": [
+              0.65049426,
+              0.70702157
+            ],
+            "plane_RMS_kpc": [
+              0.56978075,
+              0.7896316
+            ]
+          },
+          {
+            "time_gyr": 2.575,
+            "local_cosine_A2": [
+              0.6522027,
+              0.70934127
+            ],
+            "plane_RMS_kpc": [
+              0.56286725,
+              0.79003183
+            ]
+          },
+          {
+            "time_gyr": 2.6,
+            "local_cosine_A2": [
+              0.70630625,
+              0.71772611
+            ],
+            "plane_RMS_kpc": [
+              0.56995125,
+              0.79828665
+            ]
+          },
+          {
+            "time_gyr": 2.625,
+            "local_cosine_A2": [
+              0.69933794,
+              0.72458794
+            ],
+            "plane_RMS_kpc": [
+              0.57972452,
+              0.8043893
+            ]
+          },
+          {
+            "time_gyr": 2.65,
+            "local_cosine_A2": [
+              0.65687272,
+              0.68760734
+            ],
+            "plane_RMS_kpc": [
+              0.58119923,
+              0.81011106
+            ]
+          },
+          {
+            "time_gyr": 2.675,
+            "local_cosine_A2": [
+              0.6331598,
+              0.71030091
+            ],
+            "plane_RMS_kpc": [
+              0.58058768,
+              0.80768359
+            ]
+          },
+          {
+            "time_gyr": 2.7,
+            "local_cosine_A2": [
+              0.61804567,
+              0.75734324
+            ],
+            "plane_RMS_kpc": [
+              0.58454084,
+              0.80683968
+            ]
+          },
+          {
+            "time_gyr": 2.725,
+            "local_cosine_A2": [
+              0.64053081,
+              0.69491225
+            ],
+            "plane_RMS_kpc": [
+              0.58401191,
+              0.82137967
+            ]
+          },
+          {
+            "time_gyr": 2.75,
+            "local_cosine_A2": [
+              0.7063259,
+              0.72278958
+            ],
+            "plane_RMS_kpc": [
+              0.58879842,
+              0.82208756
+            ]
+          },
+          {
+            "time_gyr": 2.775,
+            "local_cosine_A2": [
+              0.69350951,
+              0.73786643
+            ],
+            "plane_RMS_kpc": [
+              0.59541164,
+              0.81813577
+            ]
+          },
+          {
+            "time_gyr": 2.8,
+            "local_cosine_A2": [
+              0.71551289,
+              0.69693296
+            ],
+            "plane_RMS_kpc": [
+              0.59544821,
+              0.82660362
+            ]
+          },
+          {
+            "time_gyr": 2.825,
+            "local_cosine_A2": [
+              0.68361743,
+              0.71440836
+            ],
+            "plane_RMS_kpc": [
+              0.60169551,
+              0.82551968
+            ]
+          },
+          {
+            "time_gyr": 2.85,
+            "local_cosine_A2": [
+              0.6667028,
+              0.6858001
+            ],
+            "plane_RMS_kpc": [
+              0.60635495,
+              0.82610467
+            ]
+          },
+          {
+            "time_gyr": 2.875,
+            "local_cosine_A2": [
+              0.73116529,
+              0.69790521
+            ],
+            "plane_RMS_kpc": [
+              0.60038436,
+              0.83096944
+            ]
+          },
+          {
+            "time_gyr": 2.9,
+            "local_cosine_A2": [
+              0.7446508,
+              0.73346557
+            ],
+            "plane_RMS_kpc": [
+              0.60467804,
+              0.82977871
+            ]
+          },
+          {
+            "time_gyr": 2.925,
+            "local_cosine_A2": [
+              0.77558662,
+              0.70469381
+            ],
+            "plane_RMS_kpc": [
+              0.60742516,
+              0.82648244
+            ]
+          },
+          {
+            "time_gyr": 2.95,
+            "local_cosine_A2": [
+              0.71163992,
+              0.68148041
+            ],
+            "plane_RMS_kpc": [
+              0.6156498,
+              0.83306485
+            ]
+          },
+          {
+            "time_gyr": 2.975,
+            "local_cosine_A2": [
+              0.74298924,
+              0.70095382
+            ],
+            "plane_RMS_kpc": [
+              0.6247439,
+              0.83080225
+            ]
+          },
+          {
+            "time_gyr": 3.0,
+            "local_cosine_A2": [
+              0.68762327,
+              0.73887736
+            ],
+            "plane_RMS_kpc": [
+              0.6245671,
+              0.83544293
+            ]
+          }
+        ],
+        "same_smooth_potential_sha256": "a19468519b00c78895f6819246cff4a7a4c56234a3e0f4f33dc85efa45235d70",
+        "calibration_factors": {
+          "df_radius_factor": 1.0149938,
+          "sigma_factor": 0.98290576,
+          "sigma_scale": 6.3145461
+        },
+        "initial": [
+          {
+            "seed": 42,
+            "Qmin": 1.3290271,
+            "disc_mass_code": 262443.55,
+            "halo_mass_code": 4719796.5,
+            "initial_sha256": "a2872da92de907ff921ab5d4e25c66110c86ced7804555bef3487fc9eb188899"
+          },
+          {
+            "seed": 43,
+            "Qmin": 1.3099832,
+            "disc_mass_code": 265065.14,
+            "halo_mass_code": 4703479.3,
+            "initial_sha256": "9de97eeb000ba564b681492581069b1ff71df72b4630b41176670c2eed9fd9be"
+          }
+        ],
+        "states": [
+          {
+            "run": "thickness-h150-seed42",
+            "analysis_ready": true
+          },
+          {
+            "run": "thickness-h150-seed43",
+            "analysis_ready": true
+          }
+        ],
+        "reason": "Same frozen smooth construction and numerical settings, different Monte Carlo realizations.",
+        "conservation_pass": true,
+        "summaries": [
+          {
+            "frozen_potential": false,
+            "run": "thickness-h150-seed42",
+            "completed": true,
+            "n": 120000,
+            "ndisk": 40000,
+            "eps_kpc": 0.05,
+            "dt_myr": 0.1,
+            "theta": 0.25,
+            "end_gyr": 3.0,
+            "bar_onset_gyr": 0.475,
+            "max_energy_drift": 3.6482904e-05,
+            "max_L_vector_drift_over_initial_disc_Lz": 0.0016503708,
+            "disc_Lz_fractional_change": -0.059412712,
+            "initial_z_rms_kpc": 0.24075322,
+            "final_z_rms_kpc": 0.63579391,
+            "final_A2_cosine": 0.68762327,
+            "final_R_A2_kpc": 2.625,
+            "final_bar_length_kpc": 7.0,
+            "final_global_A2": 0.17220414,
+            "final_coherent": true,
+            "final_pattern_speed_kms_kpc": 29.439498,
+            "max_Lz_drift_over_initial_disc_Lz": 0.00075220246,
+            "static_halo": false,
+            "conservation_pass": true,
+            "energy_drift_over_initial_kinetic": 3.6168201e-05,
+            "angular_conservation_statistic": "full vector",
+            "initial_sha256": "a2872da92de907ff921ab5d4e25c66110c86ced7804555bef3487fc9eb188899",
+            "reused_original": false
+          },
+          {
+            "frozen_potential": false,
+            "run": "thickness-h150-seed43",
+            "completed": true,
+            "n": 120000,
+            "ndisk": 40000,
+            "eps_kpc": 0.05,
+            "dt_myr": 0.1,
+            "theta": 0.25,
+            "end_gyr": 3.0,
+            "bar_onset_gyr": 0.475,
+            "max_energy_drift": 6.1828843e-06,
+            "max_L_vector_drift_over_initial_disc_Lz": 0.0011183858,
+            "disc_Lz_fractional_change": -0.077651535,
+            "initial_z_rms_kpc": 0.2404091,
+            "final_z_rms_kpc": 0.83687547,
+            "final_A2_cosine": 0.73887736,
+            "final_R_A2_kpc": 3.375,
+            "final_bar_length_kpc": 7.25,
+            "final_global_A2": 0.14341197,
+            "final_coherent": true,
+            "final_pattern_speed_kms_kpc": null,
+            "max_Lz_drift_over_initial_disc_Lz": 0.00085260021,
+            "static_halo": false,
+            "conservation_pass": true,
+            "energy_drift_over_initial_kinetic": 6.2228972e-06,
+            "angular_conservation_statistic": "full vector",
+            "initial_sha256": "9de97eeb000ba564b681492581069b1ff71df72b4630b41176670c2eed9fd9be",
+            "reused_original": false
+          }
+        ],
+        "vertical": [
+          {
+            "initial_rms_kpc": 0.24063494,
+            "final_rms_kpc": 0.6245671,
+            "fractional_height_change": 1.5954964,
+            "max_normalized_odd_m2": 0.050174704,
+            "max_odd_m2_kpc": 0.020027203,
+            "final_sigma_R_kms": 118.04159,
+            "final_sigma_z_kms": 81.294034
+          },
+          {
+            "initial_rms_kpc": 0.24032911,
+            "final_rms_kpc": 0.83544293,
+            "fractional_height_change": 2.4762453,
+            "max_normalized_odd_m2": 0.11785468,
+            "max_odd_m2_kpc": 0.083147539,
+            "final_sigma_R_kms": 123.57567,
+            "final_sigma_z_kms": 97.727401
+          }
+        ],
+        "verified_artifact_sha256": [
+          {
+            "analysis": "9133b532a8d514f166f85dc2040964c83f9f30f29311040a5d62e786cd5a0b84",
+            "vertical": "5f44b4a9171f6a813c09fb1534b52f249c348daccb538f90b5d877ec851a32bd",
+            "measurements": "41572cbd20659229eb2051cac0c42378db1eda74a34e59361d139d2cd8a4656c",
+            "config": "2991c6cd8b00fa929695be13c56f6a716e10893788793f47ab85ca349d3328a0"
+          },
+          {
+            "analysis": "3f3d7ee6d02152a3e1cad4e080ec05873058c0536181083db631f8b9285ea981",
+            "vertical": "f194848fbb1c828ccf2cc5ffc84f5ccc9543ab3dd5da950a1ee8d1294a0ade3c",
+            "measurements": "93d6e3d12a563de269f38147bb40e7d767e2233965b2f799f85d3168d199aa99",
+            "config": "a07ec26c0981c854c8b219cc87c22b37bc00521d4edcf8e791b3ac9b0be24ada"
+          }
+        ]
+      },
+      {
+        "height_target_kpc": 0.3,
+        "runs": [
+          "thickness-h300-seed42",
+          "thickness-h300-seed43"
+        ],
+        "complete": true,
+        "endpoint_difference": {
+          "final_A2_cosine": 0.18718609,
+          "bar_onset_gyr": -0.275,
+          "final_pattern_speed_kms_kpc": null,
+          "disc_Lz_fractional_change": -0.0024161188,
+          "relative_final_local_A2": 0.54348588,
+          "relative_final_plane_RMS": 0.070348315,
+          "fractional_thickening": 0.12843916
+        },
+        "common_rows": [
+          {
+            "time_gyr": 0.0,
+            "local_cosine_A2": [
+              0.053065675,
+              0.049527083
+            ],
+            "plane_RMS_kpc": [
+              0.47918522,
+              0.48028514
+            ]
+          },
+          {
+            "time_gyr": 0.025,
+            "local_cosine_A2": [
+              0.0645979,
+              0.078167166
+            ],
+            "plane_RMS_kpc": [
+              0.48828096,
+              0.48345251
+            ]
+          },
+          {
+            "time_gyr": 0.05,
+            "local_cosine_A2": [
+              0.071171934,
+              0.09538692
+            ],
+            "plane_RMS_kpc": [
+              0.49240359,
+              0.47649216
+            ]
+          },
+          {
+            "time_gyr": 0.075,
+            "local_cosine_A2": [
+              0.083335421,
+              0.16134844
+            ],
+            "plane_RMS_kpc": [
+              0.48453995,
+              0.48130928
+            ]
+          },
+          {
+            "time_gyr": 0.1,
+            "local_cosine_A2": [
+              0.071700237,
+              0.14257012
+            ],
+            "plane_RMS_kpc": [
+              0.48967243,
+              0.48058821
+            ]
+          },
+          {
+            "time_gyr": 0.125,
+            "local_cosine_A2": [
+              0.10326276,
+              0.1467138
+            ],
+            "plane_RMS_kpc": [
+              0.49260749,
+              0.48129769
+            ]
+          },
+          {
+            "time_gyr": 0.15,
+            "local_cosine_A2": [
+              0.083167059,
+              0.19231787
+            ],
+            "plane_RMS_kpc": [
+              0.48876617,
+              0.48581477
+            ]
+          },
+          {
+            "time_gyr": 0.175,
+            "local_cosine_A2": [
+              0.052584586,
+              0.20318009
+            ],
+            "plane_RMS_kpc": [
+              0.4907317,
+              0.48541918
+            ]
+          },
+          {
+            "time_gyr": 0.2,
+            "local_cosine_A2": [
+              0.096572069,
+              0.2482635
+            ],
+            "plane_RMS_kpc": [
+              0.49650456,
+              0.48711448
+            ]
+          },
+          {
+            "time_gyr": 0.225,
+            "local_cosine_A2": [
+              0.099928663,
+              0.26933934
+            ],
+            "plane_RMS_kpc": [
+              0.49740153,
+              0.4856465
+            ]
+          },
+          {
+            "time_gyr": 0.25,
+            "local_cosine_A2": [
+              0.13298513,
+              0.31161677
+            ],
+            "plane_RMS_kpc": [
+              0.49763545,
+              0.4903389
+            ]
+          },
+          {
+            "time_gyr": 0.275,
+            "local_cosine_A2": [
+              0.14874997,
+              0.32889689
+            ],
+            "plane_RMS_kpc": [
+              0.50015269,
+              0.48771417
+            ]
+          },
+          {
+            "time_gyr": 0.3,
+            "local_cosine_A2": [
+              0.18155705,
+              0.31678119
+            ],
+            "plane_RMS_kpc": [
+              0.49813413,
+              0.49401203
+            ]
+          },
+          {
+            "time_gyr": 0.325,
+            "local_cosine_A2": [
+              0.15844085,
+              0.43280822
+            ],
+            "plane_RMS_kpc": [
+              0.50278967,
+              0.49651087
+            ]
+          },
+          {
+            "time_gyr": 0.35,
+            "local_cosine_A2": [
+              0.21919504,
+              0.47266818
+            ],
+            "plane_RMS_kpc": [
+              0.501253,
+              0.49147656
+            ]
+          },
+          {
+            "time_gyr": 0.375,
+            "local_cosine_A2": [
+              0.20372709,
+              0.53111603
+            ],
+            "plane_RMS_kpc": [
+              0.5050008,
+              0.49333722
+            ]
+          },
+          {
+            "time_gyr": 0.4,
+            "local_cosine_A2": [
+              0.22895168,
+              0.51261183
+            ],
+            "plane_RMS_kpc": [
+              0.51006683,
+              0.49675412
+            ]
+          },
+          {
+            "time_gyr": 0.425,
+            "local_cosine_A2": [
+              0.30075865,
+              0.50920989
+            ],
+            "plane_RMS_kpc": [
+              0.50489521,
+              0.49845214
+            ]
+          },
+          {
+            "time_gyr": 0.45,
+            "local_cosine_A2": [
+              0.26319037,
+              0.59910428
+            ],
+            "plane_RMS_kpc": [
+              0.50012258,
+              0.49120963
+            ]
+          },
+          {
+            "time_gyr": 0.475,
+            "local_cosine_A2": [
+              0.24152217,
+              0.77393098
+            ],
+            "plane_RMS_kpc": [
+              0.50980388,
+              0.49915461
+            ]
+          },
+          {
+            "time_gyr": 0.5,
+            "local_cosine_A2": [
+              0.29198564,
+              0.84783204
+            ],
+            "plane_RMS_kpc": [
+              0.51844215,
+              0.49801285
+            ]
+          },
+          {
+            "time_gyr": 0.525,
+            "local_cosine_A2": [
+              0.37783485,
+              0.97912551
+            ],
+            "plane_RMS_kpc": [
+              0.51089045,
+              0.49352846
+            ]
+          },
+          {
+            "time_gyr": 0.55,
+            "local_cosine_A2": [
+              0.42673061,
+              1.0856683
+            ],
+            "plane_RMS_kpc": [
+              0.51206562,
+              0.48524883
+            ]
+          },
+          {
+            "time_gyr": 0.575,
+            "local_cosine_A2": [
+              0.36239974,
+              1.1580498
+            ],
+            "plane_RMS_kpc": [
+              0.51504077,
+              0.49160326
+            ]
+          },
+          {
+            "time_gyr": 0.6,
+            "local_cosine_A2": [
+              0.3502623,
+              1.2073347
+            ],
+            "plane_RMS_kpc": [
+              0.50944512,
+              0.4932274
+            ]
+          },
+          {
+            "time_gyr": 0.625,
+            "local_cosine_A2": [
+              0.46986334,
+              1.2153605
+            ],
+            "plane_RMS_kpc": [
+              0.5149556,
+              0.49890592
+            ]
+          },
+          {
+            "time_gyr": 0.65,
+            "local_cosine_A2": [
+              0.61710282,
+              1.2148017
+            ],
+            "plane_RMS_kpc": [
+              0.51563326,
+              0.50606507
+            ]
+          },
+          {
+            "time_gyr": 0.675,
+            "local_cosine_A2": [
+              0.65670786,
+              1.2399601
+            ],
+            "plane_RMS_kpc": [
+              0.50582867,
+              0.50495037
+            ]
+          },
+          {
+            "time_gyr": 0.7,
+            "local_cosine_A2": [
+              0.71954144,
+              1.2437143
+            ],
+            "plane_RMS_kpc": [
+              0.51390674,
+              0.50152653
+            ]
+          },
+          {
+            "time_gyr": 0.725,
+            "local_cosine_A2": [
+              0.8426848,
+              1.2081671
+            ],
+            "plane_RMS_kpc": [
+              0.51288286,
+              0.52015755
+            ]
+          },
+          {
+            "time_gyr": 0.75,
+            "local_cosine_A2": [
+              0.94792835,
+              1.2425488
+            ],
+            "plane_RMS_kpc": [
+              0.50912668,
+              0.51538017
+            ]
+          },
+          {
+            "time_gyr": 0.775,
+            "local_cosine_A2": [
+              1.0474963,
+              1.1317786
+            ],
+            "plane_RMS_kpc": [
+              0.50351288,
+              0.51973683
+            ]
+          },
+          {
+            "time_gyr": 0.8,
+            "local_cosine_A2": [
+              1.0619283,
+              1.0841386
+            ],
+            "plane_RMS_kpc": [
+              0.50870273,
+              0.52960744
+            ]
+          },
+          {
+            "time_gyr": 0.825,
+            "local_cosine_A2": [
+              1.1338713,
+              1.0007758
+            ],
+            "plane_RMS_kpc": [
+              0.50720354,
+              0.5395523
+            ]
+          },
+          {
+            "time_gyr": 0.85,
+            "local_cosine_A2": [
+              1.2239024,
+              1.0757913
+            ],
+            "plane_RMS_kpc": [
+              0.50849726,
+              0.54972804
+            ]
+          },
+          {
+            "time_gyr": 0.875,
+            "local_cosine_A2": [
+              1.2206096,
+              1.0789808
+            ],
+            "plane_RMS_kpc": [
+              0.51136073,
+              0.54904116
+            ]
+          },
+          {
+            "time_gyr": 0.9,
+            "local_cosine_A2": [
+              1.2975365,
+              1.070159
+            ],
+            "plane_RMS_kpc": [
+              0.51164218,
+              0.5506611
+            ]
+          },
+          {
+            "time_gyr": 0.925,
+            "local_cosine_A2": [
+              1.2433309,
+              0.96015122
+            ],
+            "plane_RMS_kpc": [
+              0.52408936,
+              0.55722074
+            ]
+          },
+          {
+            "time_gyr": 0.95,
+            "local_cosine_A2": [
+              1.2410057,
+              1.0599989
+            ],
+            "plane_RMS_kpc": [
+              0.52765392,
+              0.56337627
+            ]
+          },
+          {
+            "time_gyr": 0.975,
+            "local_cosine_A2": [
+              1.2999616,
+              1.0639076
+            ],
+            "plane_RMS_kpc": [
+              0.53335413,
+              0.56795039
+            ]
+          },
+          {
+            "time_gyr": 1.0,
+            "local_cosine_A2": [
+              1.2680299,
+              0.90249435
+            ],
+            "plane_RMS_kpc": [
+              0.53912289,
+              0.57591516
+            ]
+          },
+          {
+            "time_gyr": 1.025,
+            "local_cosine_A2": [
+              1.2322548,
+              1.0178723
+            ],
+            "plane_RMS_kpc": [
+              0.54216778,
+              0.58319711
+            ]
+          },
+          {
+            "time_gyr": 1.05,
+            "local_cosine_A2": [
+              1.2261979,
+              1.0235655
+            ],
+            "plane_RMS_kpc": [
+              0.55152546,
+              0.59045843
+            ]
+          },
+          {
+            "time_gyr": 1.075,
+            "local_cosine_A2": [
+              1.2131262,
+              0.99949055
+            ],
+            "plane_RMS_kpc": [
+              0.55704554,
+              0.59055167
+            ]
+          },
+          {
+            "time_gyr": 1.1,
+            "local_cosine_A2": [
+              1.1898512,
+              1.0357017
+            ],
+            "plane_RMS_kpc": [
+              0.57129161,
+              0.59296883
+            ]
+          },
+          {
+            "time_gyr": 1.125,
+            "local_cosine_A2": [
+              1.1845944,
+              0.98232095
+            ],
+            "plane_RMS_kpc": [
+              0.57334697,
+              0.59719829
+            ]
+          },
+          {
+            "time_gyr": 1.15,
+            "local_cosine_A2": [
+              1.1687291,
+              0.93902914
+            ],
+            "plane_RMS_kpc": [
+              0.5757452,
+              0.60553898
+            ]
+          },
+          {
+            "time_gyr": 1.175,
+            "local_cosine_A2": [
+              1.2097141,
+              0.96250592
+            ],
+            "plane_RMS_kpc": [
+              0.59580575,
+              0.61308443
+            ]
+          },
+          {
+            "time_gyr": 1.2,
+            "local_cosine_A2": [
+              1.1650423,
+              1.0065637
+            ],
+            "plane_RMS_kpc": [
+              0.60106388,
+              0.62433817
+            ]
+          },
+          {
+            "time_gyr": 1.225,
+            "local_cosine_A2": [
+              1.0724412,
+              0.94478892
+            ],
+            "plane_RMS_kpc": [
+              0.62116241,
+              0.64053754
+            ]
+          },
+          {
+            "time_gyr": 1.25,
+            "local_cosine_A2": [
+              1.1115689,
+              0.92489562
+            ],
+            "plane_RMS_kpc": [
+              0.62153165,
+              0.65175736
+            ]
+          },
+          {
+            "time_gyr": 1.275,
+            "local_cosine_A2": [
+              1.1264928,
+              0.89758507
+            ],
+            "plane_RMS_kpc": [
+              0.63873561,
+              0.67676368
+            ]
+          },
+          {
+            "time_gyr": 1.3,
+            "local_cosine_A2": [
+              1.0804686,
+              0.89611848
+            ],
+            "plane_RMS_kpc": [
+              0.63488573,
+              0.69183092
+            ]
+          },
+          {
+            "time_gyr": 1.325,
+            "local_cosine_A2": [
+              1.0467843,
+              0.91160907
+            ],
+            "plane_RMS_kpc": [
+              0.6422449,
+              0.70988415
+            ]
+          },
+          {
+            "time_gyr": 1.35,
+            "local_cosine_A2": [
+              0.99643792,
+              0.87927041
+            ],
+            "plane_RMS_kpc": [
+              0.65598537,
+              0.72484336
+            ]
+          },
+          {
+            "time_gyr": 1.375,
+            "local_cosine_A2": [
+              1.0083027,
+              0.8289817
+            ],
+            "plane_RMS_kpc": [
+              0.65452104,
+              0.74433592
+            ]
+          },
+          {
+            "time_gyr": 1.4,
+            "local_cosine_A2": [
+              1.0405036,
+              0.8153505
+            ],
+            "plane_RMS_kpc": [
+              0.66305468,
+              0.77634119
+            ]
+          },
+          {
+            "time_gyr": 1.425,
+            "local_cosine_A2": [
+              1.0022352,
+              0.78596518
+            ],
+            "plane_RMS_kpc": [
+              0.67856049,
+              0.8096614
+            ]
+          },
+          {
+            "time_gyr": 1.45,
+            "local_cosine_A2": [
+              0.92586184,
+              0.74530982
+            ],
+            "plane_RMS_kpc": [
+              0.68094356,
+              0.84146881
+            ]
+          },
+          {
+            "time_gyr": 1.475,
+            "local_cosine_A2": [
+              0.88387373,
+              0.7051033
+            ],
+            "plane_RMS_kpc": [
+              0.69031711,
+              0.86398217
+            ]
+          },
+          {
+            "time_gyr": 1.5,
+            "local_cosine_A2": [
+              0.87358852,
+              0.70597597
+            ],
+            "plane_RMS_kpc": [
+              0.69820866,
+              0.87097937
+            ]
+          },
+          {
+            "time_gyr": 1.525,
+            "local_cosine_A2": [
+              0.91577176,
+              0.68986101
+            ],
+            "plane_RMS_kpc": [
+              0.70997321,
+              0.89437924
+            ]
+          },
+          {
+            "time_gyr": 1.55,
+            "local_cosine_A2": [
+              0.86373567,
+              0.55056845
+            ],
+            "plane_RMS_kpc": [
+              0.7124624,
+              0.91009727
+            ]
+          },
+          {
+            "time_gyr": 1.575,
+            "local_cosine_A2": [
+              0.86969282,
+              0.51830084
+            ],
+            "plane_RMS_kpc": [
+              0.72648079,
+              0.90528669
+            ]
+          },
+          {
+            "time_gyr": 1.6,
+            "local_cosine_A2": [
+              0.84700636,
+              0.53643627
+            ],
+            "plane_RMS_kpc": [
+              0.73882805,
+              0.90687772
+            ]
+          },
+          {
+            "time_gyr": 1.625,
+            "local_cosine_A2": [
+              0.85839676,
+              0.49733353
+            ],
+            "plane_RMS_kpc": [
+              0.75127946,
+              0.90502908
+            ]
+          },
+          {
+            "time_gyr": 1.65,
+            "local_cosine_A2": [
+              0.79363857,
+              0.5139603
+            ],
+            "plane_RMS_kpc": [
+              0.76973834,
+              0.91559427
+            ]
+          },
+          {
+            "time_gyr": 1.675,
+            "local_cosine_A2": [
+              0.76438351,
+              0.45216163
+            ],
+            "plane_RMS_kpc": [
+              0.78122088,
+              0.92096932
+            ]
+          },
+          {
+            "time_gyr": 1.7,
+            "local_cosine_A2": [
+              0.78224115,
+              0.4350149
+            ],
+            "plane_RMS_kpc": [
+              0.78515315,
+              0.91304481
+            ]
+          },
+          {
+            "time_gyr": 1.725,
+            "local_cosine_A2": [
+              0.72440378,
+              0.46846846
+            ],
+            "plane_RMS_kpc": [
+              0.79667763,
+              0.91681617
+            ]
+          },
+          {
+            "time_gyr": 1.75,
+            "local_cosine_A2": [
+              0.68149548,
+              0.49748162
+            ],
+            "plane_RMS_kpc": [
+              0.79952565,
+              0.92276474
+            ]
+          },
+          {
+            "time_gyr": 1.775,
+            "local_cosine_A2": [
+              0.70646848,
+              0.57669201
+            ],
+            "plane_RMS_kpc": [
+              0.81426966,
+              0.91626336
+            ]
+          },
+          {
+            "time_gyr": 1.8,
+            "local_cosine_A2": [
+              0.66816924,
+              0.5147525
+            ],
+            "plane_RMS_kpc": [
+              0.81763036,
+              0.92070163
+            ]
+          },
+          {
+            "time_gyr": 1.825,
+            "local_cosine_A2": [
+              0.65846005,
+              0.50692021
+            ],
+            "plane_RMS_kpc": [
+              0.81569448,
+              0.9243764
+            ]
+          },
+          {
+            "time_gyr": 1.85,
+            "local_cosine_A2": [
+              0.64769329,
+              0.51505283
+            ],
+            "plane_RMS_kpc": [
+              0.83809695,
+              0.91723192
+            ]
+          },
+          {
+            "time_gyr": 1.875,
+            "local_cosine_A2": [
+              0.58909332,
+              0.59122431
+            ],
+            "plane_RMS_kpc": [
+              0.85460985,
+              0.92394174
+            ]
+          },
+          {
+            "time_gyr": 1.9,
+            "local_cosine_A2": [
+              0.60509292,
+              0.57296025
+            ],
+            "plane_RMS_kpc": [
+              0.84678969,
+              0.92182913
+            ]
+          },
+          {
+            "time_gyr": 1.925,
+            "local_cosine_A2": [
+              0.55809396,
+              0.57163529
+            ],
+            "plane_RMS_kpc": [
+              0.86437637,
+              0.92252956
+            ]
+          },
+          {
+            "time_gyr": 1.95,
+            "local_cosine_A2": [
+              0.52315854,
+              0.57471695
+            ],
+            "plane_RMS_kpc": [
+              0.87165754,
+              0.92221059
+            ]
+          },
+          {
+            "time_gyr": 1.975,
+            "local_cosine_A2": [
+              0.43666687,
+              0.51251784
+            ],
+            "plane_RMS_kpc": [
+              0.87459482,
+              0.93256411
+            ]
+          },
+          {
+            "time_gyr": 2.0,
+            "local_cosine_A2": [
+              0.42608866,
+              0.551625
+            ],
+            "plane_RMS_kpc": [
+              0.87151434,
+              0.92702393
+            ]
+          },
+          {
+            "time_gyr": 2.025,
+            "local_cosine_A2": [
+              0.32656528,
+              0.53536233
+            ],
+            "plane_RMS_kpc": [
+              0.88578514,
+              0.92833948
+            ]
+          },
+          {
+            "time_gyr": 2.05,
+            "local_cosine_A2": [
+              0.31057759,
+              0.50836315
+            ],
+            "plane_RMS_kpc": [
+              0.89021514,
+              0.93765092
+            ]
+          },
+          {
+            "time_gyr": 2.075,
+            "local_cosine_A2": [
+              0.35318449,
+              0.53741641
+            ],
+            "plane_RMS_kpc": [
+              0.8822718,
+              0.93001249
+            ]
+          },
+          {
+            "time_gyr": 2.1,
+            "local_cosine_A2": [
+              0.33828027,
+              0.53893603
+            ],
+            "plane_RMS_kpc": [
+              0.88201747,
+              0.92973091
+            ]
+          },
+          {
+            "time_gyr": 2.125,
+            "local_cosine_A2": [
+              0.34422134,
+              0.52869534
+            ],
+            "plane_RMS_kpc": [
+              0.8909339,
+              0.94599809
+            ]
+          },
+          {
+            "time_gyr": 2.15,
+            "local_cosine_A2": [
+              0.31376905,
+              0.53371887
+            ],
+            "plane_RMS_kpc": [
+              0.88903366,
+              0.93849673
+            ]
+          },
+          {
+            "time_gyr": 2.175,
+            "local_cosine_A2": [
+              0.33006831,
+              0.52173476
+            ],
+            "plane_RMS_kpc": [
+              0.89074091,
+              0.93849967
+            ]
+          },
+          {
+            "time_gyr": 2.2,
+            "local_cosine_A2": [
+              0.30117361,
+              0.50845105
+            ],
+            "plane_RMS_kpc": [
+              0.89153427,
+              0.92992373
+            ]
+          },
+          {
+            "time_gyr": 2.225,
+            "local_cosine_A2": [
+              0.28917639,
+              0.51382828
+            ],
+            "plane_RMS_kpc": [
+              0.88150785,
+              0.93769188
+            ]
+          },
+          {
+            "time_gyr": 2.25,
+            "local_cosine_A2": [
+              0.29821613,
+              0.56876256
+            ],
+            "plane_RMS_kpc": [
+              0.88659838,
+              0.94556527
+            ]
+          },
+          {
+            "time_gyr": 2.275,
+            "local_cosine_A2": [
+              0.32357091,
+              0.51856557
+            ],
+            "plane_RMS_kpc": [
+              0.88972845,
+              0.93766916
+            ]
+          },
+          {
+            "time_gyr": 2.3,
+            "local_cosine_A2": [
+              0.35130781,
+              0.52925034
+            ],
+            "plane_RMS_kpc": [
+              0.90427901,
+              0.93740511
+            ]
+          },
+          {
+            "time_gyr": 2.325,
+            "local_cosine_A2": [
+              0.37871327,
+              0.53168706
+            ],
+            "plane_RMS_kpc": [
+              0.88764008,
+              0.93217259
+            ]
+          },
+          {
+            "time_gyr": 2.35,
+            "local_cosine_A2": [
+              0.3348759,
+              0.54347152
+            ],
+            "plane_RMS_kpc": [
+              0.89378385,
+              0.93906773
+            ]
+          },
+          {
+            "time_gyr": 2.375,
+            "local_cosine_A2": [
+              0.31793721,
+              0.50924468
+            ],
+            "plane_RMS_kpc": [
+              0.89635853,
+              0.93767095
+            ]
+          },
+          {
+            "time_gyr": 2.4,
+            "local_cosine_A2": [
+              0.37345274,
+              0.519547
+            ],
+            "plane_RMS_kpc": [
+              0.90399183,
+              0.93111909
+            ]
+          },
+          {
+            "time_gyr": 2.425,
+            "local_cosine_A2": [
+              0.31909782,
+              0.55892112
+            ],
+            "plane_RMS_kpc": [
+              0.88682024,
+              0.93771647
+            ]
+          },
+          {
+            "time_gyr": 2.45,
+            "local_cosine_A2": [
+              0.33620461,
+              0.514505
+            ],
+            "plane_RMS_kpc": [
+              0.89472269,
+              0.95346465
+            ]
+          },
+          {
+            "time_gyr": 2.475,
+            "local_cosine_A2": [
+              0.33936435,
+              0.48818745
+            ],
+            "plane_RMS_kpc": [
+              0.89610677,
+              0.94062623
+            ]
+          },
+          {
+            "time_gyr": 2.5,
+            "local_cosine_A2": [
+              0.33510659,
+              0.56370603
+            ],
+            "plane_RMS_kpc": [
+              0.89702825,
+              0.94981595
+            ]
+          },
+          {
+            "time_gyr": 2.525,
+            "local_cosine_A2": [
+              0.30095926,
+              0.56272434
+            ],
+            "plane_RMS_kpc": [
+              0.90279615,
+              0.94419056
+            ]
+          },
+          {
+            "time_gyr": 2.55,
+            "local_cosine_A2": [
+              0.32232606,
+              0.50908796
+            ],
+            "plane_RMS_kpc": [
+              0.90158334,
+              0.95044518
+            ]
+          },
+          {
+            "time_gyr": 2.575,
+            "local_cosine_A2": [
+              0.283158,
+              0.57918843
+            ],
+            "plane_RMS_kpc": [
+              0.89454427,
+              0.94680084
+            ]
+          },
+          {
+            "time_gyr": 2.6,
+            "local_cosine_A2": [
+              0.32345453,
+              0.51938302
+            ],
+            "plane_RMS_kpc": [
+              0.90556365,
+              0.9547651
+            ]
+          },
+          {
+            "time_gyr": 2.625,
+            "local_cosine_A2": [
+              0.30105379,
+              0.54717991
+            ],
+            "plane_RMS_kpc": [
+              0.89735946,
+              0.95648346
+            ]
+          },
+          {
+            "time_gyr": 2.65,
+            "local_cosine_A2": [
+              0.28810327,
+              0.55992073
+            ],
+            "plane_RMS_kpc": [
+              0.90642372,
+              0.94922947
+            ]
+          },
+          {
+            "time_gyr": 2.675,
+            "local_cosine_A2": [
+              0.3197491,
+              0.50856701
+            ],
+            "plane_RMS_kpc": [
+              0.90341097,
+              0.95855396
+            ]
+          },
+          {
+            "time_gyr": 2.7,
+            "local_cosine_A2": [
+              0.36914277,
+              0.53185815
+            ],
+            "plane_RMS_kpc": [
+              0.90541785,
+              0.95324931
+            ]
+          },
+          {
+            "time_gyr": 2.725,
+            "local_cosine_A2": [
+              0.32733378,
+              0.50921516
+            ],
+            "plane_RMS_kpc": [
+              0.89912212,
+              0.95630898
+            ]
+          },
+          {
+            "time_gyr": 2.75,
+            "local_cosine_A2": [
+              0.33958936,
+              0.52872136
+            ],
+            "plane_RMS_kpc": [
+              0.90551236,
+              0.96189282
+            ]
+          },
+          {
+            "time_gyr": 2.775,
+            "local_cosine_A2": [
+              0.3766902,
+              0.57188311
+            ],
+            "plane_RMS_kpc": [
+              0.90598168,
+              0.95548535
+            ]
+          },
+          {
+            "time_gyr": 2.8,
+            "local_cosine_A2": [
+              0.33750927,
+              0.51061686
+            ],
+            "plane_RMS_kpc": [
+              0.91425044,
+              0.9623217
+            ]
+          },
+          {
+            "time_gyr": 2.825,
+            "local_cosine_A2": [
+              0.36087193,
+              0.54221145
+            ],
+            "plane_RMS_kpc": [
+              0.90922801,
+              0.94865281
+            ]
+          },
+          {
+            "time_gyr": 2.85,
+            "local_cosine_A2": [
+              0.33568905,
+              0.54727415
+            ],
+            "plane_RMS_kpc": [
+              0.91287396,
+              0.96529299
+            ]
+          },
+          {
+            "time_gyr": 2.875,
+            "local_cosine_A2": [
+              0.35614772,
+              0.54567072
+            ],
+            "plane_RMS_kpc": [
+              0.9020198,
+              0.95878811
+            ]
+          },
+          {
+            "time_gyr": 2.9,
+            "local_cosine_A2": [
+              0.34849786,
+              0.55119723
+            ],
+            "plane_RMS_kpc": [
+              0.90997914,
+              0.96085904
+            ]
+          },
+          {
+            "time_gyr": 2.925,
+            "local_cosine_A2": [
+              0.33567883,
+              0.50573487
+            ],
+            "plane_RMS_kpc": [
+              0.90583271,
+              0.96112878
+            ]
+          },
+          {
+            "time_gyr": 2.95,
+            "local_cosine_A2": [
+              0.38334138,
+              0.51683819
+            ],
+            "plane_RMS_kpc": [
+              0.91320919,
+              0.96077874
+            ]
+          },
+          {
+            "time_gyr": 2.975,
+            "local_cosine_A2": [
+              0.36335125,
+              0.50935883
+            ],
+            "plane_RMS_kpc": [
+              0.91463397,
+              0.97135695
+            ]
+          },
+          {
+            "time_gyr": 3.0,
+            "local_cosine_A2": [
+              0.34441758,
+              0.53160367
+            ],
+            "plane_RMS_kpc": [
+              0.90646237,
+              0.97023047
+            ]
+          }
+        ],
+        "same_smooth_potential_sha256": "e04185f14328e8c106750ba5b9018f294ea44ed1f5b8b07b1c641aa26ed8102e",
+        "calibration_factors": null,
+        "initial": [
+          {
+            "seed": 42,
+            "Qmin": 1.3112277,
+            "disc_mass_code": 265011.09,
+            "halo_mass_code": 4712890.4,
+            "initial_sha256": "a255845699771d64eed95aad56bee47f7dce6dbe070275c7d4a6ca896563917d"
+          },
+          {
+            "seed": 43,
+            "Qmin": 1.2648003,
+            "disc_mass_code": 265065.89,
+            "halo_mass_code": 4717197.7,
+            "initial_sha256": "06f4bf91f887d9c9bceeb41e10ebb1b972db4a15a4947537174aa1e64e05ba54"
+          }
+        ],
+        "states": [
+          {
+            "run": "thickness-h300-seed42",
+            "analysis_ready": true
+          },
+          {
+            "run": "thickness-h300-seed43",
+            "analysis_ready": true
+          }
+        ],
+        "reason": "Same frozen smooth construction and numerical settings, different Monte Carlo realizations.",
+        "conservation_pass": true,
+        "summaries": [
+          {
+            "frozen_potential": false,
+            "run": "thickness-h300-seed42",
+            "completed": true,
+            "n": 120000,
+            "ndisk": 40000,
+            "eps_kpc": 0.05,
+            "dt_myr": 0.1,
+            "theta": 0.25,
+            "end_gyr": 3.0,
+            "bar_onset_gyr": 0.7,
+            "max_energy_drift": 1.630686e-05,
+            "max_L_vector_drift_over_initial_disc_Lz": 0.0011602629,
+            "disc_Lz_fractional_change": -0.076950356,
+            "initial_z_rms_kpc": 0.47917817,
+            "final_z_rms_kpc": 0.90888601,
+            "final_A2_cosine": 0.34441758,
+            "final_R_A2_kpc": 2.625,
+            "final_bar_length_kpc": 7.5,
+            "final_global_A2": 0.087255563,
+            "final_coherent": true,
+            "final_pattern_speed_kms_kpc": null,
+            "max_Lz_drift_over_initial_disc_Lz": 0.00081684804,
+            "static_halo": false,
+            "conservation_pass": true,
+            "energy_drift_over_initial_kinetic": 1.63951e-05,
+            "angular_conservation_statistic": "full vector",
+            "initial_sha256": "a255845699771d64eed95aad56bee47f7dce6dbe070275c7d4a6ca896563917d",
+            "reused_original": false
+          },
+          {
+            "frozen_potential": false,
+            "run": "thickness-h300-seed43",
+            "completed": true,
+            "n": 120000,
+            "ndisk": 40000,
+            "eps_kpc": 0.05,
+            "dt_myr": 0.1,
+            "theta": 0.25,
+            "end_gyr": 3.0,
+            "bar_onset_gyr": 0.425,
+            "max_energy_drift": 1.52157e-05,
+            "max_L_vector_drift_over_initial_disc_Lz": 0.0011621694,
+            "disc_Lz_fractional_change": -0.079366475,
+            "initial_z_rms_kpc": 0.4802736,
+            "final_z_rms_kpc": 0.97019736,
+            "final_A2_cosine": 0.53160367,
+            "final_R_A2_kpc": 4.375,
+            "final_bar_length_kpc": 8.5,
+            "final_global_A2": 0.11281543,
+            "final_coherent": true,
+            "final_pattern_speed_kms_kpc": null,
+            "max_Lz_drift_over_initial_disc_Lz": 0.0011610974,
+            "static_halo": false,
+            "conservation_pass": true,
+            "energy_drift_over_initial_kinetic": 1.5196305e-05,
+            "angular_conservation_statistic": "full vector",
+            "initial_sha256": "06f4bf91f887d9c9bceeb41e10ebb1b972db4a15a4947537174aa1e64e05ba54",
+            "reused_original": false
+          }
+        ],
+        "vertical": [
+          {
+            "initial_rms_kpc": 0.47918522,
+            "final_rms_kpc": 0.90646237,
+            "fractional_height_change": 0.89167429,
+            "max_normalized_odd_m2": 0.14445472,
+            "max_odd_m2_kpc": 0.12345242,
+            "final_sigma_R_kms": 108.14647,
+            "final_sigma_z_kms": 89.819964
+          },
+          {
+            "initial_rms_kpc": 0.48028514,
+            "final_rms_kpc": 0.97023047,
+            "fractional_height_change": 1.0201134,
+            "max_normalized_odd_m2": 0.16984599,
+            "max_odd_m2_kpc": 0.1429201,
+            "final_sigma_R_kms": 115.8345,
+            "final_sigma_z_kms": 95.107817
+          }
+        ],
+        "verified_artifact_sha256": [
+          {
+            "analysis": "8e290dcf80a7ce51957ae70caf529cdf492daac2805eda7c59e73f939721b7f0",
+            "vertical": "0c0c40b71be4aa04ca18351f027c109df44c1afcab35ae0c56382b17169c54a9",
+            "measurements": "fcf06de98cd2c06b4d44256d6ebf4240a7a1e3e9f22745d09f818b1b73d3e731",
+            "config": "79ba69ef1c1ae78e876b0cfb19c9576ccf73cab681119e1935bbddaeebb31e0b"
+          },
+          {
+            "analysis": "347bf6d96573d4257cf62c176d523a69903d77451dca754a9a37d99a190d0738",
+            "vertical": "ace574f991d141a4a581a5e33fa76865cb15b651f012bcc73f20d2646e91fb68",
+            "measurements": "9c13bb7b8cf795815243a33a76cd761ea8a46d199cd3eed435988ec11568215a",
+            "config": "b0c9377704be39e45a5d3ba890c29d10fc69309d10dbda4971fe892cf5279f71"
+          }
+        ]
+      },
+      {
+        "height_target_kpc": 0.6,
+        "runs": [
+          "thickness-h600-seed42",
+          "thickness-h600-seed43"
+        ],
+        "complete": true,
+        "endpoint_difference": {
+          "final_A2_cosine": 0.22085294,
+          "bar_onset_gyr": -0.4,
+          "final_pattern_speed_kms_kpc": 1.1077196,
+          "disc_Lz_fractional_change": 0.0095154981,
+          "relative_final_local_A2": 0.23921899,
+          "relative_final_plane_RMS": -0.14210373,
+          "fractional_thickening": -0.18629751
+        },
+        "common_rows": [
+          {
+            "time_gyr": 0.0,
+            "local_cosine_A2": [
+              0.043450455,
+              0.049065217
+            ],
+            "plane_RMS_kpc": [
+              0.94503646,
+              0.94104417
+            ]
+          },
+          {
+            "time_gyr": 0.025,
+            "local_cosine_A2": [
+              0.053904079,
+              0.064771646
+            ],
+            "plane_RMS_kpc": [
+              0.95315125,
+              0.95701556
+            ]
+          },
+          {
+            "time_gyr": 0.05,
+            "local_cosine_A2": [
+              0.074985785,
+              0.067141365
+            ],
+            "plane_RMS_kpc": [
+              0.95955728,
+              0.96190043
+            ]
+          },
+          {
+            "time_gyr": 0.075,
+            "local_cosine_A2": [
+              0.071172994,
+              0.057956729
+            ],
+            "plane_RMS_kpc": [
+              0.95059973,
+              0.95538021
+            ]
+          },
+          {
+            "time_gyr": 0.1,
+            "local_cosine_A2": [
+              0.063196201,
+              0.084134189
+            ],
+            "plane_RMS_kpc": [
+              0.96459798,
+              0.95746745
+            ]
+          },
+          {
+            "time_gyr": 0.125,
+            "local_cosine_A2": [
+              0.04723619,
+              0.10322026
+            ],
+            "plane_RMS_kpc": [
+              0.96369393,
+              0.95371861
+            ]
+          },
+          {
+            "time_gyr": 0.15,
+            "local_cosine_A2": [
+              0.074188874,
+              0.064294487
+            ],
+            "plane_RMS_kpc": [
+              0.95818049,
+              0.96180083
+            ]
+          },
+          {
+            "time_gyr": 0.175,
+            "local_cosine_A2": [
+              0.06269975,
+              0.085277539
+            ],
+            "plane_RMS_kpc": [
+              0.9602676,
+              0.95008571
+            ]
+          },
+          {
+            "time_gyr": 0.2,
+            "local_cosine_A2": [
+              0.086151967,
+              0.071861086
+            ],
+            "plane_RMS_kpc": [
+              0.94715153,
+              0.96048598
+            ]
+          },
+          {
+            "time_gyr": 0.225,
+            "local_cosine_A2": [
+              0.15635489,
+              0.10775991
+            ],
+            "plane_RMS_kpc": [
+              0.96006029,
+              0.95017725
+            ]
+          },
+          {
+            "time_gyr": 0.25,
+            "local_cosine_A2": [
+              0.13401563,
+              0.10362665
+            ],
+            "plane_RMS_kpc": [
+              0.96135146,
+              0.9644568
+            ]
+          },
+          {
+            "time_gyr": 0.275,
+            "local_cosine_A2": [
+              0.1232806,
+              0.10308076
+            ],
+            "plane_RMS_kpc": [
+              0.9625218,
+              0.9632766
+            ]
+          },
+          {
+            "time_gyr": 0.3,
+            "local_cosine_A2": [
+              0.12037482,
+              0.081514008
+            ],
+            "plane_RMS_kpc": [
+              0.97167314,
+              0.96870781
+            ]
+          },
+          {
+            "time_gyr": 0.325,
+            "local_cosine_A2": [
+              0.10709835,
+              0.097181482
+            ],
+            "plane_RMS_kpc": [
+              0.95444465,
+              0.95953387
+            ]
+          },
+          {
+            "time_gyr": 0.35,
+            "local_cosine_A2": [
+              0.10260536,
+              0.093995603
+            ],
+            "plane_RMS_kpc": [
+              0.96847825,
+              0.96572671
+            ]
+          },
+          {
+            "time_gyr": 0.375,
+            "local_cosine_A2": [
+              0.14669595,
+              0.068079258
+            ],
+            "plane_RMS_kpc": [
+              0.9664305,
+              0.95783957
+            ]
+          },
+          {
+            "time_gyr": 0.4,
+            "local_cosine_A2": [
+              0.15274795,
+              0.070654992
+            ],
+            "plane_RMS_kpc": [
+              0.96194496,
+              0.96353884
+            ]
+          },
+          {
+            "time_gyr": 0.425,
+            "local_cosine_A2": [
+              0.11955214,
+              0.070527495
+            ],
+            "plane_RMS_kpc": [
+              0.96898288,
+              0.96730415
+            ]
+          },
+          {
+            "time_gyr": 0.45,
+            "local_cosine_A2": [
+              0.11286279,
+              0.094857843
+            ],
+            "plane_RMS_kpc": [
+              0.95610859,
+              0.96626074
+            ]
+          },
+          {
+            "time_gyr": 0.475,
+            "local_cosine_A2": [
+              0.15440049,
+              0.093059726
+            ],
+            "plane_RMS_kpc": [
+              0.96684688,
+              0.96089165
+            ]
+          },
+          {
+            "time_gyr": 0.5,
+            "local_cosine_A2": [
+              0.18284114,
+              0.09184974
+            ],
+            "plane_RMS_kpc": [
+              0.96321088,
+              0.96528644
+            ]
+          },
+          {
+            "time_gyr": 0.525,
+            "local_cosine_A2": [
+              0.14750513,
+              0.10439683
+            ],
+            "plane_RMS_kpc": [
+              0.96227757,
+              0.96398651
+            ]
+          },
+          {
+            "time_gyr": 0.55,
+            "local_cosine_A2": [
+              0.120523,
+              0.14051311
+            ],
+            "plane_RMS_kpc": [
+              0.96287091,
+              0.96902711
+            ]
+          },
+          {
+            "time_gyr": 0.575,
+            "local_cosine_A2": [
+              0.13179004,
+              0.10871244
+            ],
+            "plane_RMS_kpc": [
+              0.96614216,
+              0.9733309
+            ]
+          },
+          {
+            "time_gyr": 0.6,
+            "local_cosine_A2": [
+              0.14438932,
+              0.093574011
+            ],
+            "plane_RMS_kpc": [
+              0.97065889,
+              0.96307065
+            ]
+          },
+          {
+            "time_gyr": 0.625,
+            "local_cosine_A2": [
+              0.14614649,
+              0.082296239
+            ],
+            "plane_RMS_kpc": [
+              0.96322517,
+              0.96697325
+            ]
+          },
+          {
+            "time_gyr": 0.65,
+            "local_cosine_A2": [
+              0.137355,
+              0.086522877
+            ],
+            "plane_RMS_kpc": [
+              0.96534413,
+              0.97021642
+            ]
+          },
+          {
+            "time_gyr": 0.675,
+            "local_cosine_A2": [
+              0.15878357,
+              0.11830579
+            ],
+            "plane_RMS_kpc": [
+              0.97610756,
+              0.96323526
+            ]
+          },
+          {
+            "time_gyr": 0.7,
+            "local_cosine_A2": [
+              0.177009,
+              0.13870428
+            ],
+            "plane_RMS_kpc": [
+              0.96660752,
+              0.96382355
+            ]
+          },
+          {
+            "time_gyr": 0.725,
+            "local_cosine_A2": [
+              0.17102625,
+              0.13711089
+            ],
+            "plane_RMS_kpc": [
+              0.97755374,
+              0.97843751
+            ]
+          },
+          {
+            "time_gyr": 0.75,
+            "local_cosine_A2": [
+              0.15543336,
+              0.16213745
+            ],
+            "plane_RMS_kpc": [
+              0.96836419,
+              0.97591357
+            ]
+          },
+          {
+            "time_gyr": 0.775,
+            "local_cosine_A2": [
+              0.18634973,
+              0.13489757
+            ],
+            "plane_RMS_kpc": [
+              0.97231152,
+              0.97249553
+            ]
+          },
+          {
+            "time_gyr": 0.8,
+            "local_cosine_A2": [
+              0.24905029,
+              0.11264209
+            ],
+            "plane_RMS_kpc": [
+              0.96424584,
+              0.96538683
+            ]
+          },
+          {
+            "time_gyr": 0.825,
+            "local_cosine_A2": [
+              0.28854906,
+              0.13621009
+            ],
+            "plane_RMS_kpc": [
+              0.97746788,
+              0.97274782
+            ]
+          },
+          {
+            "time_gyr": 0.85,
+            "local_cosine_A2": [
+              0.31774227,
+              0.16518354
+            ],
+            "plane_RMS_kpc": [
+              0.96165011,
+              0.97702038
+            ]
+          },
+          {
+            "time_gyr": 0.875,
+            "local_cosine_A2": [
+              0.27919157,
+              0.17995171
+            ],
+            "plane_RMS_kpc": [
+              0.9764277,
+              0.97152445
+            ]
+          },
+          {
+            "time_gyr": 0.9,
+            "local_cosine_A2": [
+              0.25654301,
+              0.2699275
+            ],
+            "plane_RMS_kpc": [
+              0.97089571,
+              0.97921922
+            ]
+          },
+          {
+            "time_gyr": 0.925,
+            "local_cosine_A2": [
+              0.34909043,
+              0.2567026
+            ],
+            "plane_RMS_kpc": [
+              0.97249684,
+              0.97356073
+            ]
+          },
+          {
+            "time_gyr": 0.95,
+            "local_cosine_A2": [
+              0.33699904,
+              0.23863407
+            ],
+            "plane_RMS_kpc": [
+              0.96651857,
+              0.96907169
+            ]
+          },
+          {
+            "time_gyr": 0.975,
+            "local_cosine_A2": [
+              0.34351905,
+              0.26539387
+            ],
+            "plane_RMS_kpc": [
+              0.97391277,
+              0.98452472
+            ]
+          },
+          {
+            "time_gyr": 1.0,
+            "local_cosine_A2": [
+              0.36180032,
+              0.25631225
+            ],
+            "plane_RMS_kpc": [
+              0.97159186,
+              0.9724298
+            ]
+          },
+          {
+            "time_gyr": 1.025,
+            "local_cosine_A2": [
+              0.37422295,
+              0.26640288
+            ],
+            "plane_RMS_kpc": [
+              0.97295262,
+              0.97348782
+            ]
+          },
+          {
+            "time_gyr": 1.05,
+            "local_cosine_A2": [
+              0.42877755,
+              0.34290341
+            ],
+            "plane_RMS_kpc": [
+              0.98205724,
+              0.9808642
+            ]
+          },
+          {
+            "time_gyr": 1.075,
+            "local_cosine_A2": [
+              0.42654047,
+              0.29749499
+            ],
+            "plane_RMS_kpc": [
+              0.97082934,
+              0.98389046
+            ]
+          },
+          {
+            "time_gyr": 1.1,
+            "local_cosine_A2": [
+              0.39830987,
+              0.29517993
+            ],
+            "plane_RMS_kpc": [
+              0.97589481,
+              0.96786649
+            ]
+          },
+          {
+            "time_gyr": 1.125,
+            "local_cosine_A2": [
+              0.42196343,
+              0.26190597
+            ],
+            "plane_RMS_kpc": [
+              0.97356924,
+              0.98565345
+            ]
+          },
+          {
+            "time_gyr": 1.15,
+            "local_cosine_A2": [
+              0.51123911,
+              0.23876713
+            ],
+            "plane_RMS_kpc": [
+              0.97785295,
+              0.97823369
+            ]
+          },
+          {
+            "time_gyr": 1.175,
+            "local_cosine_A2": [
+              0.54443421,
+              0.3010597
+            ],
+            "plane_RMS_kpc": [
+              0.97435272,
+              0.96800522
+            ]
+          },
+          {
+            "time_gyr": 1.2,
+            "local_cosine_A2": [
+              0.53092689,
+              0.28821347
+            ],
+            "plane_RMS_kpc": [
+              0.97088027,
+              0.98188734
+            ]
+          },
+          {
+            "time_gyr": 1.225,
+            "local_cosine_A2": [
+              0.58247583,
+              0.27414072
+            ],
+            "plane_RMS_kpc": [
+              0.9739849,
+              0.98879803
+            ]
+          },
+          {
+            "time_gyr": 1.25,
+            "local_cosine_A2": [
+              0.65707811,
+              0.28199117
+            ],
+            "plane_RMS_kpc": [
+              0.97258957,
+              0.98001614
+            ]
+          },
+          {
+            "time_gyr": 1.275,
+            "local_cosine_A2": [
+              0.67562907,
+              0.30734321
+            ],
+            "plane_RMS_kpc": [
+              0.97430754,
+              0.98074783
+            ]
+          },
+          {
+            "time_gyr": 1.3,
+            "local_cosine_A2": [
+              0.7302671,
+              0.33596995
+            ],
+            "plane_RMS_kpc": [
+              0.97846223,
+              0.98148194
+            ]
+          },
+          {
+            "time_gyr": 1.325,
+            "local_cosine_A2": [
+              0.78561576,
+              0.359941
+            ],
+            "plane_RMS_kpc": [
+              0.96845395,
+              0.99265449
+            ]
+          },
+          {
+            "time_gyr": 1.35,
+            "local_cosine_A2": [
+              0.75025032,
+              0.37089956
+            ],
+            "plane_RMS_kpc": [
+              0.98051849,
+              0.9841124
+            ]
+          },
+          {
+            "time_gyr": 1.375,
+            "local_cosine_A2": [
+              0.73390929,
+              0.395901
+            ],
+            "plane_RMS_kpc": [
+              0.97892296,
+              0.98772017
+            ]
+          },
+          {
+            "time_gyr": 1.4,
+            "local_cosine_A2": [
+              0.77765817,
+              0.43914385
+            ],
+            "plane_RMS_kpc": [
+              0.97252656,
+              0.97941967
+            ]
+          },
+          {
+            "time_gyr": 1.425,
+            "local_cosine_A2": [
+              0.81927495,
+              0.5276442
+            ],
+            "plane_RMS_kpc": [
+              0.96581001,
+              0.990567
+            ]
+          },
+          {
+            "time_gyr": 1.45,
+            "local_cosine_A2": [
+              0.82461357,
+              0.5147882
+            ],
+            "plane_RMS_kpc": [
+              0.97857463,
+              0.98369735
+            ]
+          },
+          {
+            "time_gyr": 1.475,
+            "local_cosine_A2": [
+              0.90266954,
+              0.54196589
+            ],
+            "plane_RMS_kpc": [
+              0.97103478,
+              0.9797892
+            ]
+          },
+          {
+            "time_gyr": 1.5,
+            "local_cosine_A2": [
+              0.91849167,
+              0.56088519
+            ],
+            "plane_RMS_kpc": [
+              0.97264537,
+              0.97488384
+            ]
+          },
+          {
+            "time_gyr": 1.525,
+            "local_cosine_A2": [
+              0.93244317,
+              0.54019934
+            ],
+            "plane_RMS_kpc": [
+              0.96016543,
+              0.98425207
+            ]
+          },
+          {
+            "time_gyr": 1.55,
+            "local_cosine_A2": [
+              0.96762653,
+              0.56677848
+            ],
+            "plane_RMS_kpc": [
+              0.97123116,
+              0.99428901
+            ]
+          },
+          {
+            "time_gyr": 1.575,
+            "local_cosine_A2": [
+              0.98639496,
+              0.57972244
+            ],
+            "plane_RMS_kpc": [
+              0.97561327,
+              0.98785547
+            ]
+          },
+          {
+            "time_gyr": 1.6,
+            "local_cosine_A2": [
+              1.0172376,
+              0.63981195
+            ],
+            "plane_RMS_kpc": [
+              0.95941891,
+              0.98023095
+            ]
+          },
+          {
+            "time_gyr": 1.625,
+            "local_cosine_A2": [
+              1.0328789,
+              0.68559066
+            ],
+            "plane_RMS_kpc": [
+              0.96932376,
+              0.98635437
+            ]
+          },
+          {
+            "time_gyr": 1.65,
+            "local_cosine_A2": [
+              1.0462433,
+              0.66965716
+            ],
+            "plane_RMS_kpc": [
+              0.97911929,
+              0.98391045
+            ]
+          },
+          {
+            "time_gyr": 1.675,
+            "local_cosine_A2": [
+              1.1039496,
+              0.70870542
+            ],
+            "plane_RMS_kpc": [
+              0.96580516,
+              0.99077185
+            ]
+          },
+          {
+            "time_gyr": 1.7,
+            "local_cosine_A2": [
+              1.1014098,
+              0.76127734
+            ],
+            "plane_RMS_kpc": [
+              0.97321481,
+              0.98087111
+            ]
+          },
+          {
+            "time_gyr": 1.725,
+            "local_cosine_A2": [
+              1.071188,
+              0.83465073
+            ],
+            "plane_RMS_kpc": [
+              0.96993773,
+              0.98904439
+            ]
+          },
+          {
+            "time_gyr": 1.75,
+            "local_cosine_A2": [
+              1.1279856,
+              0.80520153
+            ],
+            "plane_RMS_kpc": [
+              0.96585081,
+              0.9771656
+            ]
+          },
+          {
+            "time_gyr": 1.775,
+            "local_cosine_A2": [
+              1.079815,
+              0.80199694
+            ],
+            "plane_RMS_kpc": [
+              0.97344552,
+              0.99277578
+            ]
+          },
+          {
+            "time_gyr": 1.8,
+            "local_cosine_A2": [
+              1.1118313,
+              0.80621769
+            ],
+            "plane_RMS_kpc": [
+              0.97838791,
+              0.98135927
+            ]
+          },
+          {
+            "time_gyr": 1.825,
+            "local_cosine_A2": [
+              1.1104389,
+              0.8320995
+            ],
+            "plane_RMS_kpc": [
+              0.9722297,
+              0.97489979
+            ]
+          },
+          {
+            "time_gyr": 1.85,
+            "local_cosine_A2": [
+              1.1483643,
+              0.88242937
+            ],
+            "plane_RMS_kpc": [
+              0.97640291,
+              0.99151617
+            ]
+          },
+          {
+            "time_gyr": 1.875,
+            "local_cosine_A2": [
+              1.1560198,
+              0.92843372
+            ],
+            "plane_RMS_kpc": [
+              0.97155495,
+              0.98888839
+            ]
+          },
+          {
+            "time_gyr": 1.9,
+            "local_cosine_A2": [
+              1.073269,
+              0.94197421
+            ],
+            "plane_RMS_kpc": [
+              0.97087517,
+              0.98250093
+            ]
+          },
+          {
+            "time_gyr": 1.925,
+            "local_cosine_A2": [
+              1.0795866,
+              0.94777202
+            ],
+            "plane_RMS_kpc": [
+              0.97407953,
+              0.98275047
+            ]
+          },
+          {
+            "time_gyr": 1.95,
+            "local_cosine_A2": [
+              1.1523552,
+              0.94570848
+            ],
+            "plane_RMS_kpc": [
+              0.97644109,
+              0.98336786
+            ]
+          },
+          {
+            "time_gyr": 1.975,
+            "local_cosine_A2": [
+              1.1442499,
+              0.91970036
+            ],
+            "plane_RMS_kpc": [
+              0.97950923,
+              0.97869813
+            ]
+          },
+          {
+            "time_gyr": 2.0,
+            "local_cosine_A2": [
+              1.1090491,
+              0.9357842
+            ],
+            "plane_RMS_kpc": [
+              0.97741379,
+              0.99508491
+            ]
+          },
+          {
+            "time_gyr": 2.025,
+            "local_cosine_A2": [
+              1.0857529,
+              1.0215031
+            ],
+            "plane_RMS_kpc": [
+              0.97901883,
+              0.98042976
+            ]
+          },
+          {
+            "time_gyr": 2.05,
+            "local_cosine_A2": [
+              1.0868186,
+              1.0585505
+            ],
+            "plane_RMS_kpc": [
+              0.98046318,
+              0.97730708
+            ]
+          },
+          {
+            "time_gyr": 2.075,
+            "local_cosine_A2": [
+              1.0900509,
+              1.0914857
+            ],
+            "plane_RMS_kpc": [
+              0.98206441,
+              0.98453606
+            ]
+          },
+          {
+            "time_gyr": 2.1,
+            "local_cosine_A2": [
+              1.1152924,
+              1.1015192
+            ],
+            "plane_RMS_kpc": [
+              0.99277543,
+              0.98122612
+            ]
+          },
+          {
+            "time_gyr": 2.125,
+            "local_cosine_A2": [
+              1.0905728,
+              1.0398892
+            ],
+            "plane_RMS_kpc": [
+              0.99786267,
+              0.97993034
+            ]
+          },
+          {
+            "time_gyr": 2.15,
+            "local_cosine_A2": [
+              1.1441992,
+              1.0703311
+            ],
+            "plane_RMS_kpc": [
+              0.99328665,
+              0.98034925
+            ]
+          },
+          {
+            "time_gyr": 2.175,
+            "local_cosine_A2": [
+              1.1418047,
+              1.0442618
+            ],
+            "plane_RMS_kpc": [
+              0.99742703,
+              0.98730038
+            ]
+          },
+          {
+            "time_gyr": 2.2,
+            "local_cosine_A2": [
+              1.1417957,
+              1.0225123
+            ],
+            "plane_RMS_kpc": [
+              1.0289672,
+              0.98398349
+            ]
+          },
+          {
+            "time_gyr": 2.225,
+            "local_cosine_A2": [
+              1.087799,
+              1.0539851
+            ],
+            "plane_RMS_kpc": [
+              1.029138,
+              0.9737768
+            ]
+          },
+          {
+            "time_gyr": 2.25,
+            "local_cosine_A2": [
+              1.1104862,
+              1.118416
+            ],
+            "plane_RMS_kpc": [
+              1.0416822,
+              0.9790389
+            ]
+          },
+          {
+            "time_gyr": 2.275,
+            "local_cosine_A2": [
+              1.0796216,
+              1.0852247
+            ],
+            "plane_RMS_kpc": [
+              1.0673003,
+              0.98907628
+            ]
+          },
+          {
+            "time_gyr": 2.3,
+            "local_cosine_A2": [
+              1.0798637,
+              1.0395836
+            ],
+            "plane_RMS_kpc": [
+              1.0799047,
+              0.98185362
+            ]
+          },
+          {
+            "time_gyr": 2.325,
+            "local_cosine_A2": [
+              1.0408257,
+              1.1125806
+            ],
+            "plane_RMS_kpc": [
+              1.128972,
+              0.98209398
+            ]
+          },
+          {
+            "time_gyr": 2.35,
+            "local_cosine_A2": [
+              0.99417193,
+              1.1035837
+            ],
+            "plane_RMS_kpc": [
+              1.1484288,
+              0.98202403
+            ]
+          },
+          {
+            "time_gyr": 2.375,
+            "local_cosine_A2": [
+              0.94326697,
+              1.0775522
+            ],
+            "plane_RMS_kpc": [
+              1.190202,
+              0.98040566
+            ]
+          },
+          {
+            "time_gyr": 2.4,
+            "local_cosine_A2": [
+              0.93289061,
+              1.0963731
+            ],
+            "plane_RMS_kpc": [
+              1.2109377,
+              0.98194262
+            ]
+          },
+          {
+            "time_gyr": 2.425,
+            "local_cosine_A2": [
+              0.86327111,
+              1.0753748
+            ],
+            "plane_RMS_kpc": [
+              1.2521233,
+              0.99339786
+            ]
+          },
+          {
+            "time_gyr": 2.45,
+            "local_cosine_A2": [
+              0.81581137,
+              1.1073832
+            ],
+            "plane_RMS_kpc": [
+              1.2655299,
+              0.97925508
+            ]
+          },
+          {
+            "time_gyr": 2.475,
+            "local_cosine_A2": [
+              0.78810127,
+              1.1045888
+            ],
+            "plane_RMS_kpc": [
+              1.2711337,
+              0.98504084
+            ]
+          },
+          {
+            "time_gyr": 2.5,
+            "local_cosine_A2": [
+              0.76224737,
+              1.0903149
+            ],
+            "plane_RMS_kpc": [
+              1.2727066,
+              0.99876409
+            ]
+          },
+          {
+            "time_gyr": 2.525,
+            "local_cosine_A2": [
+              0.75907267,
+              1.0995686
+            ],
+            "plane_RMS_kpc": [
+              1.2736983,
+              0.99163092
+            ]
+          },
+          {
+            "time_gyr": 2.55,
+            "local_cosine_A2": [
+              0.76552524,
+              1.1089262
+            ],
+            "plane_RMS_kpc": [
+              1.26068,
+              1.0012356
+            ]
+          },
+          {
+            "time_gyr": 2.575,
+            "local_cosine_A2": [
+              0.82792587,
+              1.0831038
+            ],
+            "plane_RMS_kpc": [
+              1.2548431,
+              0.99862852
+            ]
+          },
+          {
+            "time_gyr": 2.6,
+            "local_cosine_A2": [
+              0.81620132,
+              1.1324203
+            ],
+            "plane_RMS_kpc": [
+              1.2536529,
+              0.98696236
+            ]
+          },
+          {
+            "time_gyr": 2.625,
+            "local_cosine_A2": [
+              0.76407722,
+              1.1382834
+            ],
+            "plane_RMS_kpc": [
+              1.2653691,
+              0.98686699
+            ]
+          },
+          {
+            "time_gyr": 2.65,
+            "local_cosine_A2": [
+              0.80937305,
+              1.1480148
+            ],
+            "plane_RMS_kpc": [
+              1.2589988,
+              0.99531778
+            ]
+          },
+          {
+            "time_gyr": 2.675,
+            "local_cosine_A2": [
+              0.78933193,
+              1.1427745
+            ],
+            "plane_RMS_kpc": [
+              1.2628397,
+              0.99149884
+            ]
+          },
+          {
+            "time_gyr": 2.7,
+            "local_cosine_A2": [
+              0.81961562,
+              1.0943014
+            ],
+            "plane_RMS_kpc": [
+              1.2654751,
+              1.0026606
+            ]
+          },
+          {
+            "time_gyr": 2.725,
+            "local_cosine_A2": [
+              0.79679159,
+              1.0957753
+            ],
+            "plane_RMS_kpc": [
+              1.2713449,
+              1.0054491
+            ]
+          },
+          {
+            "time_gyr": 2.75,
+            "local_cosine_A2": [
+              0.79280536,
+              1.0934852
+            ],
+            "plane_RMS_kpc": [
+              1.2715366,
+              1.0019667
+            ]
+          },
+          {
+            "time_gyr": 2.775,
+            "local_cosine_A2": [
+              0.82140896,
+              1.1308478
+            ],
+            "plane_RMS_kpc": [
+              1.274991,
+              1.0067363
+            ]
+          },
+          {
+            "time_gyr": 2.8,
+            "local_cosine_A2": [
+              0.82955058,
+              1.1657826
+            ],
+            "plane_RMS_kpc": [
+              1.2588254,
+              1.0105671
+            ]
+          },
+          {
+            "time_gyr": 2.825,
+            "local_cosine_A2": [
+              0.82520454,
+              1.1404961
+            ],
+            "plane_RMS_kpc": [
+              1.2706005,
+              1.010697
+            ]
+          },
+          {
+            "time_gyr": 2.85,
+            "local_cosine_A2": [
+              0.8121411,
+              1.189496
+            ],
+            "plane_RMS_kpc": [
+              1.2644796,
+              1.0106882
+            ]
+          },
+          {
+            "time_gyr": 2.875,
+            "local_cosine_A2": [
+              0.85087252,
+              1.1685358
+            ],
+            "plane_RMS_kpc": [
+              1.260535,
+              1.0263876
+            ]
+          },
+          {
+            "time_gyr": 2.9,
+            "local_cosine_A2": [
+              0.90358324,
+              1.1860673
+            ],
+            "plane_RMS_kpc": [
+              1.2778722,
+              1.0240306
+            ]
+          },
+          {
+            "time_gyr": 2.925,
+            "local_cosine_A2": [
+              0.83019089,
+              1.1599037
+            ],
+            "plane_RMS_kpc": [
+              1.2683406,
+              1.0386575
+            ]
+          },
+          {
+            "time_gyr": 2.95,
+            "local_cosine_A2": [
+              0.85649344,
+              1.1902038
+            ],
+            "plane_RMS_kpc": [
+              1.2682332,
+              1.0604425
+            ]
+          },
+          {
+            "time_gyr": 2.975,
+            "local_cosine_A2": [
+              0.89504276,
+              1.1438796
+            ],
+            "plane_RMS_kpc": [
+              1.2594858,
+              1.0726063
+            ]
+          },
+          {
+            "time_gyr": 3.0,
+            "local_cosine_A2": [
+              0.92322495,
+              1.1440779
+            ],
+            "plane_RMS_kpc": [
+              1.2715052,
+              1.0908196
+            ]
+          }
+        ],
+        "same_smooth_potential_sha256": "ca4561a0798863c993961f13238618758e1fe7a634d115cc0d60b3dafea03899",
+        "calibration_factors": {
+          "df_radius_factor": 0.95884087,
+          "sigma_factor": 1.0373856,
+          "sigma_scale": 5.3950518
+        },
+        "initial": [
+          {
+            "seed": 42,
+            "Qmin": 1.303699,
+            "disc_mass_code": 265076.85,
+            "halo_mass_code": 4718808.3,
+            "initial_sha256": "97afd713c023e3b731667988740b761e275e141f74fe1fe8986568b3bd175432"
+          },
+          {
+            "seed": 43,
+            "Qmin": 1.2968123,
+            "disc_mass_code": 265068.01,
+            "halo_mass_code": 4732035.3,
+            "initial_sha256": "2fbdebcac19f9dbf5f511ba9c27f7a95b156f2a72e4fed9d76fd454a0ed6558c"
+          }
+        ],
+        "states": [
+          {
+            "run": "thickness-h600-seed42",
+            "analysis_ready": true
+          },
+          {
+            "run": "thickness-h600-seed43",
+            "analysis_ready": true
+          }
+        ],
+        "reason": "Same frozen smooth construction and numerical settings, different Monte Carlo realizations.",
+        "conservation_pass": true,
+        "summaries": [
+          {
+            "frozen_potential": false,
+            "run": "thickness-h600-seed42",
+            "completed": true,
+            "n": 120000,
+            "ndisk": 40000,
+            "eps_kpc": 0.05,
+            "dt_myr": 0.1,
+            "theta": 0.25,
+            "end_gyr": 3.0,
+            "bar_onset_gyr": 1.9,
+            "max_energy_drift": 1.9221386e-05,
+            "max_L_vector_drift_over_initial_disc_Lz": 0.0020528489,
+            "disc_Lz_fractional_change": -0.13002274,
+            "initial_z_rms_kpc": 0.94576225,
+            "final_z_rms_kpc": 1.2742081,
+            "final_A2_cosine": 0.92322495,
+            "final_R_A2_kpc": 5.875,
+            "final_bar_length_kpc": 10.5,
+            "final_global_A2": 0.25741173,
+            "final_coherent": true,
+            "final_pattern_speed_kms_kpc": 14.593567,
+            "max_Lz_drift_over_initial_disc_Lz": 0.00060022923,
+            "static_halo": false,
+            "conservation_pass": true,
+            "energy_drift_over_initial_kinetic": 1.9171994e-05,
+            "angular_conservation_statistic": "full vector",
+            "initial_sha256": "97afd713c023e3b731667988740b761e275e141f74fe1fe8986568b3bd175432",
+            "reused_original": false
+          },
+          {
+            "frozen_potential": false,
+            "run": "thickness-h600-seed43",
+            "completed": true,
+            "n": 120000,
+            "ndisk": 40000,
+            "eps_kpc": 0.05,
+            "dt_myr": 0.1,
+            "theta": 0.25,
+            "end_gyr": 3.0,
+            "bar_onset_gyr": 1.5,
+            "max_energy_drift": 4.579595e-06,
+            "max_L_vector_drift_over_initial_disc_Lz": 0.0019717119,
+            "disc_Lz_fractional_change": -0.12050725,
+            "initial_z_rms_kpc": 0.94107526,
+            "final_z_rms_kpc": 1.1064497,
+            "final_A2_cosine": 1.1440779,
+            "final_R_A2_kpc": 4.875,
+            "final_bar_length_kpc": 12.0,
+            "final_global_A2": 0.36132685,
+            "final_coherent": true,
+            "final_pattern_speed_kms_kpc": 15.701286,
+            "max_Lz_drift_over_initial_disc_Lz": 0.00033626551,
+            "static_halo": false,
+            "conservation_pass": true,
+            "energy_drift_over_initial_kinetic": 4.5918478e-06,
+            "angular_conservation_statistic": "full vector",
+            "initial_sha256": "2fbdebcac19f9dbf5f511ba9c27f7a95b156f2a72e4fed9d76fd454a0ed6558c",
+            "reused_original": false
+          }
+        ],
+        "vertical": [
+          {
+            "initial_rms_kpc": 0.94503646,
+            "final_rms_kpc": 1.2715052,
+            "fractional_height_change": 0.34545628,
+            "max_normalized_odd_m2": 0.17617052,
+            "max_odd_m2_kpc": 0.22058721,
+            "final_sigma_R_kms": 117.09732,
+            "final_sigma_z_kms": 99.456291
+          },
+          {
+            "initial_rms_kpc": 0.94104417,
+            "final_rms_kpc": 1.0908196,
+            "fractional_height_change": 0.15915877,
+            "max_normalized_odd_m2": 0.11844752,
+            "max_odd_m2_kpc": 0.12920488,
+            "final_sigma_R_kms": 123.47121,
+            "final_sigma_z_kms": 90.485602
+          }
+        ],
+        "verified_artifact_sha256": [
+          {
+            "analysis": "8aacb7dedd58880fa9309293f8b0070458c4e53afbee9291de6e662dc3e7de22",
+            "vertical": "307cb6b37a4639f417b411adfe7ed17313bad12a201c1a6806116bf71b04f4e6",
+            "measurements": "b478dd746177d052eaeed7999ce8951ec88821e5f29a97a6b16f9b9d9fd36284",
+            "config": "45624b50d33934e85415f61c9aeedb8dc27efa43bd77f0c0894b7f898c39a879"
+          },
+          {
+            "analysis": "83f515f1ace1f13823c109a8177e013137c2431172513b018d8c0f4a907345b1",
+            "vertical": "f92607c856b40b32f86cd32d74b17d1b562125409c19b487121b3cbdccbc5c10",
+            "measurements": "c9ff515f0aa61199012a7faded7a68856ffd0a79a55b70ca68a047ccb5d2c6be",
+            "config": "0cecd8a74b58975151155fde987e70b568894d9b699f5f058931f6cc4db1da51"
+          }
+        ]
+      }
+    ],
+    "complete_pairs": 3,
+    "planned_pairs": 3,
+    "selected_models_sha256": "0f27644345607da35af9e45047eee3b1cfb13c3ee40f34f9cc75494d8207a535",
+    "source_sha256": "35d353a49068b863716b85746b6e03cbd88ff4c16a0e309224439838fd5c8a74",
+    "state_verifier_source_sha256": "9b456c2b3e290b5635709ddbd1fe5d2bd1a895df0b780b859716a8228c7fdf46",
+    "scope": "Descriptive seed43 minus seed42 at the same target thickness; relative changes use seed42 as denominator. Two samples do not establish population precision. The initial sampled Q and masses remain different despite identical smooth potential and calibration factors. This does not replace the seven declared physical interventions or their frozen gates."
+  },
+  "centering": [
+    {
+      "run": "high-seed43",
+      "complete_temporal_coverage": true,
+      "onset_over_covered_times": {
+        "original_stored_bar": 0.65,
+        "coarse_center_reconstructed_bar": 0.65,
+        "dense_center_bar": 0.65
+      },
+      "coarse_storage_coherence_mismatches": 0,
+      "coarse_storage_count_mismatch_snapshots": 5,
+      "max_coarse_storage_count_L1_difference": 4,
+      "alternative_center_coherence_mismatches": 2,
+      "max_coarse_storage_absolute_local_A2_difference": 6.3576977e-05,
+      "final_dense_vs_original_relative_local_A2": 0.0062121921,
+      "maximum_strong_inner_phase_offset_degrees": 0.12436331,
+      "maximum_dense_coefficient_reproduction_error": 1.0379329e-05
+    },
+    {
+      "run": "seed43-theta025",
+      "complete_temporal_coverage": true,
+      "onset_over_covered_times": {
+        "original_stored_bar": 0.425,
+        "coarse_center_reconstructed_bar": 0.425,
+        "dense_center_bar": 0.425
+      },
+      "coarse_storage_coherence_mismatches": 0,
+      "coarse_storage_count_mismatch_snapshots": 1,
+      "max_coarse_storage_count_L1_difference": 2,
+      "alternative_center_coherence_mismatches": 1,
+      "max_coarse_storage_absolute_local_A2_difference": 3.8797068e-05,
+      "final_dense_vs_original_relative_local_A2": 0.0040871042,
+      "maximum_strong_inner_phase_offset_degrees": 0.24512437,
+      "maximum_dense_coefficient_reproduction_error": 3.2179368e-09
+    },
+    {
+      "run": "seed44-theta025",
+      "complete_temporal_coverage": true,
+      "onset_over_covered_times": {
+        "original_stored_bar": 0.55,
+        "coarse_center_reconstructed_bar": 0.55,
+        "dense_center_bar": 0.55
+      },
+      "coarse_storage_coherence_mismatches": 0,
+      "coarse_storage_count_mismatch_snapshots": 2,
+      "max_coarse_storage_count_L1_difference": 2,
+      "alternative_center_coherence_mismatches": 0,
+      "max_coarse_storage_absolute_local_A2_difference": 1.7208796e-09,
+      "final_dense_vs_original_relative_local_A2": 0.00093585808,
+      "maximum_strong_inner_phase_offset_degrees": 0.18606716,
+      "maximum_dense_coefficient_reproduction_error": 1.1133932e-09
+    },
+    {
+      "run": "seed44-theta04",
+      "complete_temporal_coverage": true,
+      "onset_over_covered_times": {
+        "original_stored_bar": 0.55,
+        "coarse_center_reconstructed_bar": 0.55,
+        "dense_center_bar": 0.55
+      },
+      "coarse_storage_coherence_mismatches": 0,
+      "coarse_storage_count_mismatch_snapshots": 0,
+      "max_coarse_storage_count_L1_difference": 0,
+      "alternative_center_coherence_mismatches": 1,
+      "max_coarse_storage_absolute_local_A2_difference": 2.2211828e-09,
+      "final_dense_vs_original_relative_local_A2": 2.3252482e-05,
+      "maximum_strong_inner_phase_offset_degrees": 0.13576133,
+      "maximum_dense_coefficient_reproduction_error": 1.1981081e-09
+    },
+    {
+      "run": "seed45-theta025",
+      "complete_temporal_coverage": true,
+      "onset_over_covered_times": {
+        "original_stored_bar": 0.725,
+        "coarse_center_reconstructed_bar": 0.725,
+        "dense_center_bar": 0.725
+      },
+      "coarse_storage_coherence_mismatches": 0,
+      "coarse_storage_count_mismatch_snapshots": 2,
+      "max_coarse_storage_count_L1_difference": 2,
+      "alternative_center_coherence_mismatches": 0,
+      "max_coarse_storage_absolute_local_A2_difference": 1.2752968e-09,
+      "final_dense_vs_original_relative_local_A2": 0.0026580068,
+      "maximum_strong_inner_phase_offset_degrees": 0.53258317,
+      "maximum_dense_coefficient_reproduction_error": 9.5307195e-10
+    },
+    {
+      "run": "seed45-theta04",
+      "complete_temporal_coverage": true,
+      "onset_over_covered_times": {
+        "original_stored_bar": 0.725,
+        "coarse_center_reconstructed_bar": 0.725,
+        "dense_center_bar": 0.725
+      },
+      "coarse_storage_coherence_mismatches": 0,
+      "coarse_storage_count_mismatch_snapshots": 0,
+      "max_coarse_storage_count_L1_difference": 0,
+      "alternative_center_coherence_mismatches": 0,
+      "max_coarse_storage_absolute_local_A2_difference": 2.0762027e-09,
+      "final_dense_vs_original_relative_local_A2": -0.0018173159,
+      "maximum_strong_inner_phase_offset_degrees": 0.31836897,
+      "maximum_dense_coefficient_reproduction_error": 6.5443184e-10
+    },
+    {
+      "run": "static-halo-seed42",
+      "complete_temporal_coverage": true,
+      "onset_over_covered_times": {
+        "original_stored_bar": 0.825,
+        "coarse_center_reconstructed_bar": 0.825,
+        "dense_center_bar": 0.825
+      },
+      "coarse_storage_coherence_mismatches": 0,
+      "coarse_storage_count_mismatch_snapshots": 1,
+      "max_coarse_storage_count_L1_difference": 2,
+      "alternative_center_coherence_mismatches": 2,
+      "max_coarse_storage_absolute_local_A2_difference": 0.00021312113,
+      "final_dense_vs_original_relative_local_A2": 0.011851856,
+      "maximum_strong_inner_phase_offset_degrees": 0.32792934,
+      "maximum_dense_coefficient_reproduction_error": 6.8998215e-10
+    },
+    {
+      "run": "static-halo-seed43",
+      "complete_temporal_coverage": true,
+      "onset_over_covered_times": {
+        "original_stored_bar": 1.05,
+        "coarse_center_reconstructed_bar": 1.05,
+        "dense_center_bar": 1.05
+      },
+      "coarse_storage_coherence_mismatches": 0,
+      "coarse_storage_count_mismatch_snapshots": 2,
+      "max_coarse_storage_count_L1_difference": 2,
+      "alternative_center_coherence_mismatches": 2,
+      "max_coarse_storage_absolute_local_A2_difference": 1.6337357e-09,
+      "final_dense_vs_original_relative_local_A2": -0.0023962966,
+      "maximum_strong_inner_phase_offset_degrees": 0.2405317,
+      "maximum_dense_coefficient_reproduction_error": 3.8117896e-10
+    },
+    {
+      "run": "thickness-h150-seed42-e025",
+      "complete_temporal_coverage": true,
+      "onset_over_covered_times": {
+        "original_stored_bar": 0.45,
+        "coarse_center_reconstructed_bar": 0.45,
+        "dense_center_bar": 0.45
+      },
+      "coarse_storage_coherence_mismatches": 0,
+      "coarse_storage_count_mismatch_snapshots": 1,
+      "max_coarse_storage_count_L1_difference": 2,
+      "alternative_center_coherence_mismatches": 0,
+      "max_coarse_storage_absolute_local_A2_difference": 1.8837686e-09,
+      "final_dense_vs_original_relative_local_A2": -3.0679485e-05,
+      "maximum_strong_inner_phase_offset_degrees": 0.13094119,
+      "maximum_dense_coefficient_reproduction_error": 2.2381741e-09
+    },
+    {
+      "run": "thickness-h150-seed42",
+      "complete_temporal_coverage": true,
+      "onset_over_covered_times": {
+        "original_stored_bar": 0.475,
+        "coarse_center_reconstructed_bar": 0.475,
+        "dense_center_bar": 0.475
+      },
+      "coarse_storage_coherence_mismatches": 0,
+      "coarse_storage_count_mismatch_snapshots": 4,
+      "max_coarse_storage_count_L1_difference": 2,
+      "alternative_center_coherence_mismatches": 1,
+      "max_coarse_storage_absolute_local_A2_difference": 0.00024030625,
+      "final_dense_vs_original_relative_local_A2": 0.00058142789,
+      "maximum_strong_inner_phase_offset_degrees": 0.18983532,
+      "maximum_dense_coefficient_reproduction_error": 1.0822195e-09
+    },
+    {
+      "run": "thickness-h150-seed43",
+      "complete_temporal_coverage": true,
+      "onset_over_covered_times": {
+        "original_stored_bar": 0.475,
+        "coarse_center_reconstructed_bar": 0.475,
+        "dense_center_bar": 0.475
+      },
+      "coarse_storage_coherence_mismatches": 0,
+      "coarse_storage_count_mismatch_snapshots": 1,
+      "max_coarse_storage_count_L1_difference": 2,
+      "alternative_center_coherence_mismatches": 1,
+      "max_coarse_storage_absolute_local_A2_difference": 5.229263e-05,
+      "final_dense_vs_original_relative_local_A2": 0.00047440132,
+      "maximum_strong_inner_phase_offset_degrees": 0.56504498,
+      "maximum_dense_coefficient_reproduction_error": 1.1596823e-09
+    },
+    {
+      "run": "thickness-h300-seed42",
+      "complete_temporal_coverage": true,
+      "onset_over_covered_times": {
+        "original_stored_bar": 0.7,
+        "coarse_center_reconstructed_bar": 0.7,
+        "dense_center_bar": 0.7
+      },
+      "coarse_storage_coherence_mismatches": 0,
+      "coarse_storage_count_mismatch_snapshots": 1,
+      "max_coarse_storage_count_L1_difference": 2,
+      "alternative_center_coherence_mismatches": 2,
+      "max_coarse_storage_absolute_local_A2_difference": 1.5900387e-09,
+      "final_dense_vs_original_relative_local_A2": 0.0019110224,
+      "maximum_strong_inner_phase_offset_degrees": 0.13970023,
+      "maximum_dense_coefficient_reproduction_error": 7.6176767e-10
+    },
+    {
+      "run": "thickness-h300-seed43",
+      "complete_temporal_coverage": true,
+      "onset_over_covered_times": {
+        "original_stored_bar": 0.425,
+        "coarse_center_reconstructed_bar": 0.425,
+        "dense_center_bar": 0.425
+      },
+      "coarse_storage_coherence_mismatches": 0,
+      "coarse_storage_count_mismatch_snapshots": 1,
+      "max_coarse_storage_count_L1_difference": 2,
+      "alternative_center_coherence_mismatches": 2,
+      "max_coarse_storage_absolute_local_A2_difference": 1.6957296e-09,
+      "final_dense_vs_original_relative_local_A2": 0.00010477581,
+      "maximum_strong_inner_phase_offset_degrees": 0.28519688,
+      "maximum_dense_coefficient_reproduction_error": 1.0446285e-09
+    },
+    {
+      "run": "thickness-h600-seed42",
+      "complete_temporal_coverage": true,
+      "onset_over_covered_times": {
+        "original_stored_bar": 1.9,
+        "coarse_center_reconstructed_bar": 1.9,
+        "dense_center_bar": 1.9
+      },
+      "coarse_storage_coherence_mismatches": 0,
+      "coarse_storage_count_mismatch_snapshots": 1,
+      "max_coarse_storage_count_L1_difference": 2,
+      "alternative_center_coherence_mismatches": 1,
+      "max_coarse_storage_absolute_local_A2_difference": 6.3112766e-05,
+      "final_dense_vs_original_relative_local_A2": -0.0031023703,
+      "maximum_strong_inner_phase_offset_degrees": 0.11704762,
+      "maximum_dense_coefficient_reproduction_error": 4.7580951e-10
+    },
+    {
+      "run": "thickness-h600-seed43",
+      "complete_temporal_coverage": true,
+      "onset_over_covered_times": {
+        "original_stored_bar": 1.5,
+        "coarse_center_reconstructed_bar": 1.5,
+        "dense_center_bar": 1.5
+      },
+      "coarse_storage_coherence_mismatches": 0,
+      "coarse_storage_count_mismatch_snapshots": 1,
+      "max_coarse_storage_count_L1_difference": 2,
+      "alternative_center_coherence_mismatches": 1,
+      "max_coarse_storage_absolute_local_A2_difference": 0.00015652297,
+      "final_dense_vs_original_relative_local_A2": 0.00097206979,
+      "maximum_strong_inner_phase_offset_degrees": 0.13654623,
+      "maximum_dense_coefficient_reproduction_error": 1.4408844e-09
+    }
+  ],
+  "mock_recovery": [
+    {
+      "run": "base",
+      "primary_cases": 12,
+      "primary_capped_cases": 12,
+      "primary_failures": 0,
+      "median_absolute_bias": 0.035318384,
+      "p90_absolute_bias": 0.18141881,
+      "aspirational_recovery_pass": true
+    },
+    {
+      "run": "force",
+      "primary_cases": 15,
+      "primary_capped_cases": 15,
+      "primary_failures": 0,
+      "median_absolute_bias": 0.083750141,
+      "p90_absolute_bias": 0.2144593,
+      "aspirational_recovery_pass": true
+    },
+    {
+      "run": "frozen",
+      "primary_cases": 0,
+      "primary_capped_cases": 0,
+      "primary_failures": 0,
+      "median_absolute_bias": null,
+      "p90_absolute_bias": null,
+      "aspirational_recovery_pass": null
+    },
+    {
+      "run": "high-seed43",
+      "primary_cases": 12,
+      "primary_capped_cases": 12,
+      "primary_failures": 0,
+      "median_absolute_bias": 0.023227216,
+      "p90_absolute_bias": 0.22933041,
+      "aspirational_recovery_pass": true
+    },
+    {
+      "run": "high",
+      "primary_cases": 12,
+      "primary_capped_cases": 9,
+      "primary_failures": 0,
+      "median_absolute_bias": 0.039228381,
+      "p90_absolute_bias": 0.19353572,
+      "aspirational_recovery_pass": true
+    },
+    {
+      "run": "seed43-theta025",
+      "primary_cases": 15,
+      "primary_capped_cases": 15,
+      "primary_failures": 0,
+      "median_absolute_bias": 0.028530792,
+      "p90_absolute_bias": 0.12576415,
+      "aspirational_recovery_pass": true
+    },
+    {
+      "run": "seed43",
+      "primary_cases": 18,
+      "primary_capped_cases": 18,
+      "primary_failures": 0,
+      "median_absolute_bias": 0.060999636,
+      "p90_absolute_bias": 0.17443234,
+      "aspirational_recovery_pass": true
+    },
+    {
+      "run": "seed44-theta025",
+      "primary_cases": 9,
+      "primary_capped_cases": 9,
+      "primary_failures": 0,
+      "median_absolute_bias": 0.09831144,
+      "p90_absolute_bias": 0.1280086,
+      "aspirational_recovery_pass": true
+    },
+    {
+      "run": "seed44-theta04",
+      "primary_cases": 21,
+      "primary_capped_cases": 21,
+      "primary_failures": 0,
+      "median_absolute_bias": 0.11236665,
+      "p90_absolute_bias": 0.24861454,
+      "aspirational_recovery_pass": false
+    },
+    {
+      "run": "seed45-theta025",
+      "primary_cases": 15,
+      "primary_capped_cases": 15,
+      "primary_failures": 0,
+      "median_absolute_bias": 0.015684292,
+      "p90_absolute_bias": 0.11826586,
+      "aspirational_recovery_pass": true
+    },
+    {
+      "run": "seed45-theta04",
+      "primary_cases": 12,
+      "primary_capped_cases": 12,
+      "primary_failures": 0,
+      "median_absolute_bias": 0.032461045,
+      "p90_absolute_bias": 0.23428778,
+      "aspirational_recovery_pass": true
+    },
+    {
+      "run": "soft025_dt",
+      "primary_cases": 15,
+      "primary_capped_cases": 15,
+      "primary_failures": 0,
+      "median_absolute_bias": 0.042628913,
+      "p90_absolute_bias": 0.068630386,
+      "aspirational_recovery_pass": true
+    },
+    {
+      "run": "soft050",
+      "primary_cases": 21,
+      "primary_capped_cases": 21,
+      "primary_failures": 0,
+      "median_absolute_bias": 0.11089588,
+      "p90_absolute_bias": 0.19702361,
+      "aspirational_recovery_pass": false
+    },
+    {
+      "run": "soft050_dt",
+      "primary_cases": 15,
+      "primary_capped_cases": 12,
+      "primary_failures": 0,
+      "median_absolute_bias": 0.034677757,
+      "p90_absolute_bias": 0.068325323,
+      "aspirational_recovery_pass": true
+    },
+    {
+      "run": "soft200",
+      "primary_cases": 12,
+      "primary_capped_cases": 12,
+      "primary_failures": 0,
+      "median_absolute_bias": 0.089618178,
+      "p90_absolute_bias": 0.26721475,
+      "aspirational_recovery_pass": true
+    },
+    {
+      "run": "static-halo-seed42",
+      "primary_cases": 21,
+      "primary_capped_cases": 21,
+      "primary_failures": 0,
+      "median_absolute_bias": 0.038660311,
+      "p90_absolute_bias": 0.11765474,
+      "aspirational_recovery_pass": true
+    },
+    {
+      "run": "static-halo-seed43",
+      "primary_cases": 24,
+      "primary_capped_cases": 24,
+      "primary_failures": 0,
+      "median_absolute_bias": 0.030354417,
+      "p90_absolute_bias": 0.088431876,
+      "aspirational_recovery_pass": true
+    },
+    {
+      "run": "thickness-h150-seed42-e025",
+      "primary_cases": 18,
+      "primary_capped_cases": 3,
+      "primary_failures": 0,
+      "median_absolute_bias": 0.13429067,
+      "p90_absolute_bias": 0.23733779,
+      "aspirational_recovery_pass": false
+    },
+    {
+      "run": "thickness-h150-seed42",
+      "primary_cases": 24,
+      "primary_capped_cases": 3,
+      "primary_failures": 0,
+      "median_absolute_bias": 0.11653203,
+      "p90_absolute_bias": 0.35994554,
+      "aspirational_recovery_pass": false
+    },
+    {
+      "run": "thickness-h150-seed43",
+      "primary_cases": 27,
+      "primary_capped_cases": 21,
+      "primary_failures": 0,
+      "median_absolute_bias": 0.0849799,
+      "p90_absolute_bias": 0.14936751,
+      "aspirational_recovery_pass": true
+    },
+    {
+      "run": "thickness-h300-seed42",
+      "primary_cases": 15,
+      "primary_capped_cases": 15,
+      "primary_failures": 0,
+      "median_absolute_bias": 0.015940887,
+      "p90_absolute_bias": 0.10688573,
+      "aspirational_recovery_pass": true
+    },
+    {
+      "run": "thickness-h300-seed43",
+      "primary_cases": 12,
+      "primary_capped_cases": 12,
+      "primary_failures": 0,
+      "median_absolute_bias": 0.066002467,
+      "p90_absolute_bias": 0.10566971,
+      "aspirational_recovery_pass": true
+    },
+    {
+      "run": "thickness-h600-seed42",
+      "primary_cases": 9,
+      "primary_capped_cases": 9,
+      "primary_failures": 0,
+      "median_absolute_bias": 0.21328266,
+      "p90_absolute_bias": 0.31538814,
+      "aspirational_recovery_pass": false
+    },
+    {
+      "run": "thickness-h600-seed43",
+      "primary_cases": 6,
+      "primary_capped_cases": 6,
+      "primary_failures": 0,
+      "median_absolute_bias": 0.061228589,
+      "p90_absolute_bias": 0.097376552,
+      "aspirational_recovery_pass": true
+    },
+    {
+      "run": "timestep",
+      "primary_cases": 9,
+      "primary_capped_cases": 9,
+      "primary_failures": 0,
+      "median_absolute_bias": 0.027120027,
+      "p90_absolute_bias": 0.087418982,
+      "aspirational_recovery_pass": true
+    }
+  ],
+  "mock_geometry": [
+    {
+      "run": "base",
+      "aperture_median_absolute_bias": [
+        0.11049573,
+        0.024667781,
+        0.030724255,
+        0.035318384
+      ],
+      "disc_PA_2deg_median_abs_change": 0.054140998,
+      "disc_PA_2deg_p90_abs_change": 0.088903041,
+      "pixel_refinement_median_abs_difference": 0.00039906656,
+      "direct_particle_median_abs_difference": 0.00040260604
+    },
+    {
+      "run": "force",
+      "aperture_median_absolute_bias": [
+        0.090044161,
+        0.077251668,
+        0.08348991,
+        0.083750141
+      ],
+      "disc_PA_2deg_median_abs_change": 0.054996184,
+      "disc_PA_2deg_p90_abs_change": 0.2954423,
+      "pixel_refinement_median_abs_difference": 0.00060785627,
+      "direct_particle_median_abs_difference": 0.00051828395
+    },
+    {
+      "run": "frozen",
+      "aperture_median_absolute_bias": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "disc_PA_2deg_median_abs_change": null,
+      "disc_PA_2deg_p90_abs_change": null,
+      "pixel_refinement_median_abs_difference": null,
+      "direct_particle_median_abs_difference": null
+    },
+    {
+      "run": "high-seed43",
+      "aperture_median_absolute_bias": [
+        0.045805928,
+        0.019413971,
+        0.02234901,
+        0.023227216
+      ],
+      "disc_PA_2deg_median_abs_change": 0.045987309,
+      "disc_PA_2deg_p90_abs_change": 0.095526201,
+      "pixel_refinement_median_abs_difference": 0.00028871103,
+      "direct_particle_median_abs_difference": 0.00025935122
+    },
+    {
+      "run": "high",
+      "aperture_median_absolute_bias": [
+        0.093953695,
+        0.050046736,
+        0.039778106,
+        0.039228381
+      ],
+      "disc_PA_2deg_median_abs_change": 0.042307708,
+      "disc_PA_2deg_p90_abs_change": 0.091346702,
+      "pixel_refinement_median_abs_difference": 0.00039784481,
+      "direct_particle_median_abs_difference": 0.00024114519
+    },
+    {
+      "run": "seed43-theta025",
+      "aperture_median_absolute_bias": [
+        0.043784353,
+        0.027276703,
+        0.037209308,
+        0.028530792
+      ],
+      "disc_PA_2deg_median_abs_change": 0.044144392,
+      "disc_PA_2deg_p90_abs_change": 0.10671307,
+      "pixel_refinement_median_abs_difference": 0.00053614808,
+      "direct_particle_median_abs_difference": 0.00048392188
+    },
+    {
+      "run": "seed43",
+      "aperture_median_absolute_bias": [
+        0.065817773,
+        0.078773946,
+        0.051866258,
+        0.060999636
+      ],
+      "disc_PA_2deg_median_abs_change": 0.047606294,
+      "disc_PA_2deg_p90_abs_change": 0.090844036,
+      "pixel_refinement_median_abs_difference": 0.00054572159,
+      "direct_particle_median_abs_difference": 0.00038442882
+    },
+    {
+      "run": "seed44-theta025",
+      "aperture_median_absolute_bias": [
+        0.11003887,
+        0.11720566,
+        0.10139963,
+        0.09831144
+      ],
+      "disc_PA_2deg_median_abs_change": 0.027898733,
+      "disc_PA_2deg_p90_abs_change": 0.10473226,
+      "pixel_refinement_median_abs_difference": 0.00039682041,
+      "direct_particle_median_abs_difference": 0.00048287974
+    },
+    {
+      "run": "seed44-theta04",
+      "aperture_median_absolute_bias": [
+        0.12789897,
+        0.10482468,
+        0.11041772,
+        0.11236665
+      ],
+      "disc_PA_2deg_median_abs_change": 0.065802747,
+      "disc_PA_2deg_p90_abs_change": 0.21154575,
+      "pixel_refinement_median_abs_difference": 0.00047418078,
+      "direct_particle_median_abs_difference": 0.00061928604
+    },
+    {
+      "run": "seed45-theta025",
+      "aperture_median_absolute_bias": [
+        0.052187082,
+        0.032336881,
+        0.016237948,
+        0.015684292
+      ],
+      "disc_PA_2deg_median_abs_change": 0.10472019,
+      "disc_PA_2deg_p90_abs_change": 0.16564854,
+      "pixel_refinement_median_abs_difference": 0.00038962265,
+      "direct_particle_median_abs_difference": 0.00046722662
+    },
+    {
+      "run": "seed45-theta04",
+      "aperture_median_absolute_bias": [
+        0.059043011,
+        0.038231435,
+        0.031989729,
+        0.032461045
+      ],
+      "disc_PA_2deg_median_abs_change": 0.060978384,
+      "disc_PA_2deg_p90_abs_change": 0.1641399,
+      "pixel_refinement_median_abs_difference": 0.00031652795,
+      "direct_particle_median_abs_difference": 0.00065638107
+    },
+    {
+      "run": "soft025_dt",
+      "aperture_median_absolute_bias": [
+        0.035001552,
+        0.059286012,
+        0.033867391,
+        0.042628913
+      ],
+      "disc_PA_2deg_median_abs_change": 0.058079937,
+      "disc_PA_2deg_p90_abs_change": 0.10942695,
+      "pixel_refinement_median_abs_difference": 0.00089052686,
+      "direct_particle_median_abs_difference": 0.00046902994
+    },
+    {
+      "run": "soft050",
+      "aperture_median_absolute_bias": [
+        0.16779446,
+        0.10271,
+        0.11051929,
+        0.11089588
+      ],
+      "disc_PA_2deg_median_abs_change": 0.068920954,
+      "disc_PA_2deg_p90_abs_change": 0.227409,
+      "pixel_refinement_median_abs_difference": 0.00093688571,
+      "direct_particle_median_abs_difference": 0.00051223236
+    },
+    {
+      "run": "soft050_dt",
+      "aperture_median_absolute_bias": [
+        0.09498042,
+        0.04876897,
+        0.029684697,
+        0.034677757
+      ],
+      "disc_PA_2deg_median_abs_change": 0.034026345,
+      "disc_PA_2deg_p90_abs_change": 0.18238725,
+      "pixel_refinement_median_abs_difference": 0.0005194949,
+      "direct_particle_median_abs_difference": 0.00045767492
+    },
+    {
+      "run": "soft200",
+      "aperture_median_absolute_bias": [
+        0.10510327,
+        0.070777858,
+        0.091486867,
+        0.089618178
+      ],
+      "disc_PA_2deg_median_abs_change": 0.058125309,
+      "disc_PA_2deg_p90_abs_change": 0.09246201,
+      "pixel_refinement_median_abs_difference": 0.00084765239,
+      "direct_particle_median_abs_difference": 0.00044541195
+    },
+    {
+      "run": "static-halo-seed42",
+      "aperture_median_absolute_bias": [
+        0.058182869,
+        0.0396523,
+        0.036399396,
+        0.038660311
+      ],
+      "disc_PA_2deg_median_abs_change": 0.13715445,
+      "disc_PA_2deg_p90_abs_change": 0.18554008,
+      "pixel_refinement_median_abs_difference": 0.00039486718,
+      "direct_particle_median_abs_difference": 0.00043598565
+    },
+    {
+      "run": "static-halo-seed43",
+      "aperture_median_absolute_bias": [
+        0.027781799,
+        0.034643692,
+        0.029267425,
+        0.030354417
+      ],
+      "disc_PA_2deg_median_abs_change": 0.11594153,
+      "disc_PA_2deg_p90_abs_change": 0.16445812,
+      "pixel_refinement_median_abs_difference": 0.00044370755,
+      "direct_particle_median_abs_difference": 0.00049080815
+    },
+    {
+      "run": "thickness-h150-seed42-e025",
+      "aperture_median_absolute_bias": [
+        0.060267267,
+        0.06960474,
+        0.096261293,
+        0.13429067
+      ],
+      "disc_PA_2deg_median_abs_change": 0.047009171,
+      "disc_PA_2deg_p90_abs_change": 0.27697129,
+      "pixel_refinement_median_abs_difference": 0.0018226033,
+      "direct_particle_median_abs_difference": 0.00050017731
+    },
+    {
+      "run": "thickness-h150-seed42",
+      "aperture_median_absolute_bias": [
+        0.13944346,
+        0.12143053,
+        0.12494875,
+        0.11653203
+      ],
+      "disc_PA_2deg_median_abs_change": 0.093230146,
+      "disc_PA_2deg_p90_abs_change": 0.16780487,
+      "pixel_refinement_median_abs_difference": 0.0011929175,
+      "direct_particle_median_abs_difference": 0.00055882133
+    },
+    {
+      "run": "thickness-h150-seed43",
+      "aperture_median_absolute_bias": [
+        0.053166032,
+        0.07463018,
+        0.081265226,
+        0.0849799
+      ],
+      "disc_PA_2deg_median_abs_change": 0.094221166,
+      "disc_PA_2deg_p90_abs_change": 0.24240088,
+      "pixel_refinement_median_abs_difference": 0.0008592223,
+      "direct_particle_median_abs_difference": 0.00069768425
+    },
+    {
+      "run": "thickness-h300-seed42",
+      "aperture_median_absolute_bias": [
+        0.073715271,
+        0.030746328,
+        0.018105826,
+        0.015940887
+      ],
+      "disc_PA_2deg_median_abs_change": 0.044343618,
+      "disc_PA_2deg_p90_abs_change": 0.20774563,
+      "pixel_refinement_median_abs_difference": 0.0010531978,
+      "direct_particle_median_abs_difference": 0.00048999663
+    },
+    {
+      "run": "thickness-h300-seed43",
+      "aperture_median_absolute_bias": [
+        0.10215685,
+        0.098275708,
+        0.075104816,
+        0.066002467
+      ],
+      "disc_PA_2deg_median_abs_change": 0.063697665,
+      "disc_PA_2deg_p90_abs_change": 0.15222995,
+      "pixel_refinement_median_abs_difference": 0.00042205888,
+      "direct_particle_median_abs_difference": 0.00040791105
+    },
+    {
+      "run": "thickness-h600-seed42",
+      "aperture_median_absolute_bias": [
+        0.17529526,
+        0.1983369,
+        0.21328266,
+        0.21328266
+      ],
+      "disc_PA_2deg_median_abs_change": 0.20591286,
+      "disc_PA_2deg_p90_abs_change": 0.23367725,
+      "pixel_refinement_median_abs_difference": 0.00019347023,
+      "direct_particle_median_abs_difference": 0.0003647658
+    },
+    {
+      "run": "thickness-h600-seed43",
+      "aperture_median_absolute_bias": [
+        0.057653745,
+        0.061951543,
+        0.061228589,
+        0.061228589
+      ],
+      "disc_PA_2deg_median_abs_change": 0.075290064,
+      "disc_PA_2deg_p90_abs_change": 0.11262617,
+      "pixel_refinement_median_abs_difference": 0.00040104636,
+      "direct_particle_median_abs_difference": 0.0002446162
+    },
+    {
+      "run": "timestep",
+      "aperture_median_absolute_bias": [
+        0.044586675,
+        0.023433767,
+        0.01891314,
+        0.027120027
+      ],
+      "disc_PA_2deg_median_abs_change": 0.035473298,
+      "disc_PA_2deg_p90_abs_change": 0.081992287,
+      "pixel_refinement_median_abs_difference": 0.00039291305,
+      "direct_particle_median_abs_difference": 0.00036919386
+    }
+  ],
+  "conservation": [
+    {
+      "run": "base",
+      "completed": true,
+      "end_gyr": 3.0,
+      "max_relative_energy_drift": 5.8914534e-05,
+      "angular_statistic": "vector",
+      "max_angular_drift_over_initial_disc_Lz": 0.0025543984,
+      "conservation_pass": true
+    },
+    {
+      "run": "force",
+      "completed": true,
+      "end_gyr": 3.0,
+      "max_relative_energy_drift": 7.513505e-06,
+      "angular_statistic": "vector",
+      "max_angular_drift_over_initial_disc_Lz": 0.00099587507,
+      "conservation_pass": true
+    },
+    {
+      "run": "frozen",
+      "completed": true,
+      "end_gyr": 3.0,
+      "max_relative_energy_drift": 4.2761094e-08,
+      "angular_statistic": "axial",
+      "max_angular_drift_over_initial_disc_Lz": 1.013122e-14,
+      "conservation_pass": true
+    },
+    {
+      "run": "high",
+      "completed": true,
+      "end_gyr": 3.0,
+      "max_relative_energy_drift": 1.445845e-05,
+      "angular_statistic": "vector",
+      "max_angular_drift_over_initial_disc_Lz": 0.0012670893,
+      "conservation_pass": true
+    },
+    {
+      "run": "high-seed43",
+      "completed": true,
+      "end_gyr": 3.0,
+      "max_relative_energy_drift": 9.6182783e-06,
+      "angular_statistic": "vector",
+      "max_angular_drift_over_initial_disc_Lz": 0.0014260947,
+      "conservation_pass": true
+    },
+    {
+      "run": "seed43",
+      "completed": true,
+      "end_gyr": 3.0,
+      "max_relative_energy_drift": 1.6635995e-05,
+      "angular_statistic": "vector",
+      "max_angular_drift_over_initial_disc_Lz": 0.0024273305,
+      "conservation_pass": true
+    },
+    {
+      "run": "seed43-theta025",
+      "completed": true,
+      "end_gyr": 3.0,
+      "max_relative_energy_drift": 8.6250797e-06,
+      "angular_statistic": "vector",
+      "max_angular_drift_over_initial_disc_Lz": 0.00088417229,
+      "conservation_pass": true
+    },
+    {
+      "run": "seed44-theta025",
+      "completed": true,
+      "end_gyr": 3.0,
+      "max_relative_energy_drift": 1.0181405e-05,
+      "angular_statistic": "vector",
+      "max_angular_drift_over_initial_disc_Lz": 0.0013908072,
+      "conservation_pass": true
+    },
+    {
+      "run": "seed44-theta04",
+      "completed": true,
+      "end_gyr": 3.0,
+      "max_relative_energy_drift": 3.1592329e-05,
+      "angular_statistic": "vector",
+      "max_angular_drift_over_initial_disc_Lz": 0.0044847018,
+      "conservation_pass": true
+    },
+    {
+      "run": "seed45-theta025",
+      "completed": true,
+      "end_gyr": 3.0,
+      "max_relative_energy_drift": 5.8301665e-06,
+      "angular_statistic": "vector",
+      "max_angular_drift_over_initial_disc_Lz": 0.0014851046,
+      "conservation_pass": true
+    },
+    {
+      "run": "seed45-theta04",
+      "completed": true,
+      "end_gyr": 3.0,
+      "max_relative_energy_drift": 2.5691666e-05,
+      "angular_statistic": "vector",
+      "max_angular_drift_over_initial_disc_Lz": 0.0031018512,
+      "conservation_pass": true
+    },
+    {
+      "run": "soft025_dt",
+      "completed": true,
+      "end_gyr": 3.0,
+      "max_relative_energy_drift": 0.00026502001,
+      "angular_statistic": "vector",
+      "max_angular_drift_over_initial_disc_Lz": 0.0028006802,
+      "conservation_pass": true
+    },
+    {
+      "run": "soft050",
+      "completed": true,
+      "end_gyr": 3.0,
+      "max_relative_energy_drift": 0.00013440677,
+      "angular_statistic": "vector",
+      "max_angular_drift_over_initial_disc_Lz": 0.0024972671,
+      "conservation_pass": true
+    },
+    {
+      "run": "soft050_dt",
+      "completed": true,
+      "end_gyr": 3.0,
+      "max_relative_energy_drift": 6.4213728e-05,
+      "angular_statistic": "vector",
+      "max_angular_drift_over_initial_disc_Lz": 0.0026135409,
+      "conservation_pass": true
+    },
+    {
+      "run": "soft200",
+      "completed": true,
+      "end_gyr": 3.0,
+      "max_relative_energy_drift": 3.666445e-05,
+      "angular_statistic": "vector",
+      "max_angular_drift_over_initial_disc_Lz": 0.0025295914,
+      "conservation_pass": true
+    },
+    {
+      "run": "static-halo-seed42",
+      "completed": true,
+      "end_gyr": 3.0,
+      "max_relative_energy_drift": 3.0303593e-06,
+      "angular_statistic": "axial",
+      "max_angular_drift_over_initial_disc_Lz": 9.7077242e-06,
+      "conservation_pass": true
+    },
+    {
+      "run": "static-halo-seed43",
+      "completed": true,
+      "end_gyr": 3.0,
+      "max_relative_energy_drift": 3.3229065e-06,
+      "angular_statistic": "axial",
+      "max_angular_drift_over_initial_disc_Lz": 1.2552393e-05,
+      "conservation_pass": true
+    },
+    {
+      "run": "thickness-h150-seed42",
+      "completed": true,
+      "end_gyr": 3.0,
+      "max_relative_energy_drift": 3.6482904e-05,
+      "angular_statistic": "vector",
+      "max_angular_drift_over_initial_disc_Lz": 0.0016503708,
+      "conservation_pass": true
+    },
+    {
+      "run": "thickness-h150-seed42-e025",
+      "completed": true,
+      "end_gyr": 3.0,
+      "max_relative_energy_drift": 0.00018716448,
+      "angular_statistic": "vector",
+      "max_angular_drift_over_initial_disc_Lz": 0.0020187493,
+      "conservation_pass": true
+    },
+    {
+      "run": "thickness-h150-seed43",
+      "completed": true,
+      "end_gyr": 3.0,
+      "max_relative_energy_drift": 6.1828843e-06,
+      "angular_statistic": "vector",
+      "max_angular_drift_over_initial_disc_Lz": 0.0011183858,
+      "conservation_pass": true
+    },
+    {
+      "run": "thickness-h300-seed42",
+      "completed": true,
+      "end_gyr": 3.0,
+      "max_relative_energy_drift": 1.630686e-05,
+      "angular_statistic": "vector",
+      "max_angular_drift_over_initial_disc_Lz": 0.0011602629,
+      "conservation_pass": true
+    },
+    {
+      "run": "thickness-h300-seed43",
+      "completed": true,
+      "end_gyr": 3.0,
+      "max_relative_energy_drift": 1.52157e-05,
+      "angular_statistic": "vector",
+      "max_angular_drift_over_initial_disc_Lz": 0.0011621694,
+      "conservation_pass": true
+    },
+    {
+      "run": "thickness-h600-seed42",
+      "completed": true,
+      "end_gyr": 3.0,
+      "max_relative_energy_drift": 1.9221386e-05,
+      "angular_statistic": "vector",
+      "max_angular_drift_over_initial_disc_Lz": 0.0020528489,
+      "conservation_pass": true
+    },
+    {
+      "run": "thickness-h600-seed43",
+      "completed": true,
+      "end_gyr": 3.0,
+      "max_relative_energy_drift": 4.579595e-06,
+      "angular_statistic": "vector",
+      "max_angular_drift_over_initial_disc_Lz": 0.0019717119,
+      "conservation_pass": true
+    },
+    {
+      "run": "timestep",
+      "completed": true,
+      "end_gyr": 3.0,
+      "max_relative_energy_drift": 3.7683121e-05,
+      "angular_statistic": "vector",
+      "max_angular_drift_over_initial_disc_Lz": 0.0030612129,
+      "conservation_pass": true
+    }
+  ],
+  "physical_control_readiness": {
+    "complete": 7,
+    "planned": 7,
+    "rows": [
+      {
+        "kind": "thickness_family",
+        "seed": 42,
+        "target": "thickness-h150-seed42",
+        "reference": "thickness-h300-seed42",
+        "actual_end_gyr": [
+          3.0,
+          3.0
+        ],
+        "complete": true
+      },
+      {
+        "kind": "thickness_family",
+        "seed": 42,
+        "target": "thickness-h600-seed42",
+        "reference": "thickness-h300-seed42",
+        "actual_end_gyr": [
+          3.0,
+          3.0
+        ],
+        "complete": true
+      },
+      {
+        "kind": "thickness_family",
+        "seed": 43,
+        "target": "thickness-h150-seed43",
+        "reference": "thickness-h300-seed43",
+        "actual_end_gyr": [
+          3.0,
+          3.0
+        ],
+        "complete": true
+      },
+      {
+        "kind": "thickness_family",
+        "seed": 43,
+        "target": "thickness-h600-seed43",
+        "reference": "thickness-h300-seed43",
+        "actual_end_gyr": [
+          3.0,
+          3.0
+        ],
+        "complete": true
+      },
+      {
+        "kind": "fixed_halo",
+        "seed": 42,
+        "target": "static-halo-seed42",
+        "reference": "force",
+        "actual_end_gyr": [
+          3.0,
+          3.0
+        ],
+        "complete": true
+      },
+      {
+        "kind": "fixed_halo",
+        "seed": 43,
+        "target": "static-halo-seed43",
+        "reference": "seed43-theta025",
+        "actual_end_gyr": [
+          3.0,
+          3.0
+        ],
+        "complete": true
+      },
+      {
+        "kind": "thin_softening",
+        "seed": 42,
+        "target": "thickness-h150-seed42-e025",
+        "reference": "thickness-h150-seed42",
+        "actual_end_gyr": [
+          3.0,
+          3.0
+        ],
+        "complete": true
+      }
+    ]
+  },
+  "initial_models": [
+    {
+      "id": "h150-seed42",
+      "height_target_kpc": 0.15,
+      "seed": 42,
+      "Qmin": 1.3290271,
+      "disc_mass_code": 262443.55,
+      "halo_mass_code": 4719796.5,
+      "interpretation": "Matched smooth equilibrium family; strict sampled-profile failures remain confounds. No claim of a pure thickness-only perturbation."
+    },
+    {
+      "id": "h300-seed42",
+      "height_target_kpc": 0.3,
+      "seed": 42,
+      "Qmin": 1.3112277,
+      "disc_mass_code": 265011.09,
+      "halo_mass_code": 4712890.4,
+      "interpretation": "Matched smooth equilibrium family; strict sampled-profile failures remain confounds. No claim of a pure thickness-only perturbation."
+    },
+    {
+      "id": "h600-seed42",
+      "height_target_kpc": 0.6,
+      "seed": 42,
+      "Qmin": 1.303699,
+      "disc_mass_code": 265076.85,
+      "halo_mass_code": 4718808.3,
+      "interpretation": "Matched smooth equilibrium family; strict sampled-profile failures remain confounds. No claim of a pure thickness-only perturbation."
+    },
+    {
+      "id": "h150-seed43",
+      "height_target_kpc": 0.15,
+      "seed": 43,
+      "Qmin": 1.3099832,
+      "disc_mass_code": 265065.14,
+      "halo_mass_code": 4703479.3,
+      "interpretation": "Matched smooth equilibrium family; strict sampled-profile failures remain confounds. No claim of a pure thickness-only perturbation."
+    },
+    {
+      "id": "h300-seed43",
+      "height_target_kpc": 0.3,
+      "seed": 43,
+      "Qmin": 1.2648003,
+      "disc_mass_code": 265065.89,
+      "halo_mass_code": 4717197.7,
+      "interpretation": "Matched smooth equilibrium family; strict sampled-profile failures remain confounds. No claim of a pure thickness-only perturbation."
+    },
+    {
+      "id": "h600-seed43",
+      "height_target_kpc": 0.6,
+      "seed": 43,
+      "Qmin": 1.2968123,
+      "disc_mass_code": 265068.01,
+      "halo_mass_code": 4732035.3,
+      "interpretation": "Matched smooth equilibrium family; strict sampled-profile failures remain confounds. No claim of a pure thickness-only perturbation."
+    }
+  ],
+  "observations": {
+    "selection": {
+      "mass_Msun": 6.1615079e+10,
+      "half_width_dex": 0.3,
+      "amplitude_convention": "S4G cosine amplitude = 2*abs(sum(m exp(2i phi)))/sum(m) within annulus; constant stellar mass-to-light assumption",
+      "rbar_definition": "S4G visual deprojected outer bar semi-major axis, quality=1; simulation phase-coherence estimate is a different estimator"
+    },
+    "s4g_local_A2": {
+      "n": 112,
+      "p05": 0.21535,
+      "p16": 0.30032,
+      "median": 0.4685,
+      "p84": 0.7604,
+      "p95": 0.93535
+    },
+    "s4g_bar_sizes": {
+      "n": 78,
+      "p05": 2.0964082,
+      "p16": 2.5924562,
+      "median": 4.1396922,
+      "p84": 7.2636395,
+      "p95": 9.2606596
+    },
+    "manga_pattern_speeds": {
+      "n": 225,
+      "p05": 11.436968,
+      "p16": 15.745003,
+      "median": 24.801635,
+      "p84": 34.866311,
+      "p95": 44.407011
+    },
+    "manga_ratio_count": 210,
+    "manga_ordered_interval_count": 225,
+    "manga_median_fractional_reported_half_width": 0.18655915
+  },
+  "rules": [
+    "All endpoint sensitivities refer to 3 Gyr. Values at different evolutionary stages are not silently substituted.",
+    "Force and timestep comparisons reuse particle realizations; increasing particle count also changes the realization. Same-height seed repeats share the frozen smooth construction, not the sampled phase-space state.",
+    "Percentages are descriptive differences with stated denominators, not independent Gaussian uncertainty estimates. No quadrature sum or combined confidence interval is constructed.",
+    "The original threshold belongs to its specified numerical-stability check. It is not a newly imposed pass criterion for seed scatter, centre choice, or every physical intervention.",
+    "Conservation, phase reconstruction, mock bias and observed population spread test different things. A pass in one category does not waive failure or incomplete coverage in another.",
+    "Mock medians use distinct qualified epoch sets and sometimes capped apertures. They are not an isolated thickness or seed effect on estimator bias.",
+    "The static halo also removes azimuthal particle noise; the thickness family retains sampled matching confounds. Neither contrast uniquely identifies a torque, buckling or resonance mechanism.",
+    "This chosen gas-free disc/halo family is not an observed population or a CDM/SIDM discrimination experiment. The bounded reduced diffusion study is separate and retains its weak-diffusion failure."
+  ],
+  "source_sha256": "68735c9aeded1eb289e8e0225985686757264e8f273b6bc582c077a0a4304663",
+  "input_sha256": {
+    "results/campaign-validation.json": "a51e3ef47ee535207166224964a80ac2233580b82e619d9d2c725e5fc86716d4",
+    "results/soft050/analysis.json": "8ebd1ff8093e8bda4036b196510bedbf7868bb14df0b5884f3c0bcedbf23a8c5",
+    "results/soft050/measurements.json": "d1c5612ab866adc6fe54f92c1781a573a6ed8ac44643bc9bd967f71295ec58c9",
+    "results/base/analysis.json": "cf38b9add62f3601fafc94cce31e96db8e99a34477e5dea53f141a0941b42f8e",
+    "results/base/measurements.json": "af07ae6b63ece560c209e8eb5a4a8f2b7b6f39db9d26e5fdf3b93dfbfe32fe1d",
+    "results/soft200/analysis.json": "d0c0bdf9e33260f2bcd641036f5b7d21251da3e4a21c9d0fddfc71b81d2819e0",
+    "results/soft200/measurements.json": "a8b34b6b94aed81ba7094ebb17004c01d168d3cc25251543111fc859878d937e",
+    "results/timestep/analysis.json": "fe19cd863f6ffde68537c4b352f653a8145027604d4f749e14d68639a0a1b8db",
+    "results/timestep/measurements.json": "d62de89b3b3314c0661c1a22525ebc6293c34e3e7240be8d900565621cb8a515",
+    "results/force/analysis.json": "8eba18357722763679a3ee72ca6628705ce571fd7adc8a9ee95fee0d97ecedcc",
+    "results/force/measurements.json": "a98d4ef130619de472225dd5a92e6aa578629e1b3a7ad98ba60139b0678924df",
+    "results/high/analysis.json": "917efcabdffe8878226018f70c9a50b87883aeee17c2e408d066ac6b8b742986",
+    "results/high/measurements.json": "1684f332bc26ca7ddff6d4441ededff378a978a3dd64cbd6b0fd298ba8be100d",
+    "results/seed43/analysis.json": "b4edc14c00f42a5a38ca875af8d5951c0418f487a1229c5fb07d9ee51f32d97d",
+    "results/seed43/measurements.json": "db84835bcd4b40bc6afaa1cdefe6cdacd81a232cf1bb00a91e6f8716b0732ba6",
+    "results/soft050_dt/analysis.json": "ac3969db75e3289ec1e04beee6494dcf9f1424197dee557ba3c9d0d50808b6c9",
+    "results/soft050_dt/measurements.json": "425cc7049fbb4324821842bb5e6b4b0ffaf88e2d37467b85c8c9b47fc2620a4f",
+    "results/soft025_dt/analysis.json": "a900dd7aa04ff69d48c4fc721f5a735ca7f45229f05a67b6b5ce86deeb227a71",
+    "results/soft025_dt/measurements.json": "005e32cb2fbf1cc1924993d785762f32291705a1e484eecedd930e7750630617",
+    "results/followup48/force-pair-summary.json": "e29c0bcec680795d6149edd1031ede454d3bd7f9e9522dc11a9af5fcb4f5f506",
+    "results/followup48/analysis/base/analysis.json": "ad02f8218cd8c50668c810f5cff7074a03dbb15014f30f3796f241c26c6bab02",
+    "results/followup48/analysis/force/analysis.json": "56c4eed150578ebeb26a005a92e0834d2d35bb4baa94c8198114eba399daeb75",
+    "results/followup48/analysis/seed43/analysis.json": "3cd000aa7193367a7c02a2de15d8ce079d52ba30106e98cf2e4eb0757a0ed199",
+    "results/followup48/analysis/seed43-theta025/analysis.json": "669880ab54493c613d99af64a9ab29e7a63653ac96d3c08917066f292a617177",
+    "results/followup48/seed43-theta025/analysis.json": "1ac4383ed9c75d200d8d981852a359d8d5852fd77c7cc2bbb9326abe14096a97",
+    "results/followup48/seed43-theta025/measurements.json": "946d5bb215eda0fea3c8dc52f1f735744765cc1cc265862956d2b9c60bcab30c",
+    "results/followup48/analysis/seed44-theta04/analysis.json": "753d29e42da5416b5f347fe10a8418c4a9f2522dcf9cd636045b5fe96c0ad728",
+    "results/followup48/analysis/seed44-theta025/analysis.json": "796ede45d6cad8a1d7a1fe2976012da80070b09617c418f40616ca7afc7c29ef",
+    "results/followup48/seed44-theta04/analysis.json": "435027ee6da85511d7b024d1bff377435909c512d38c4d524f221953d4082b2e",
+    "results/followup48/seed44-theta04/measurements.json": "e3729c73548ad32f0d4824aaf7e4009f53dc16c47cf2bc761d0650d37a33c730",
+    "results/followup48/seed44-theta025/analysis.json": "95b5dcb6bbcfd2037622e51911a6bab01ad23ff35a254b073f9108c1ee7e4126",
+    "results/followup48/seed44-theta025/measurements.json": "cd63fec14ebf77251bea9d2ca31a920eaa6b56b628ebacce8412132b381d2d27",
+    "results/followup48/analysis/seed45-theta04/analysis.json": "d1becf870850dcca0cda6ad2a9a35f9d740e3f9ea10ac4b8b77bc1115467c7d6",
+    "results/followup48/analysis/seed45-theta025/analysis.json": "55eb828889de6bd2729a9b4411e2281fc08d4ae9e25105271152af445e07954d",
+    "results/followup48/seed45-theta04/analysis.json": "25a91e1c5c77a5b213c4ee621182f819848a643b7531594c85d67be0451d07c2",
+    "results/followup48/seed45-theta04/measurements.json": "b36ce32087b567ad984a5a532af2e8cc0910e7bd337f144504dba113445a8bac",
+    "results/followup48/seed45-theta025/analysis.json": "c36ceb0d94c31be4b04eaa836356ea5c9d1c8794af2844f3beb491f292a91060",
+    "results/followup48/seed45-theta025/measurements.json": "5a71e3c18ffa97a4c7523fa158916f5ef468ffb7ea3ce65529884f9e7ff60057",
+    "results/followup48/seed-repeatability.json": "61f4a51cebbc6d7180d72aa094886f612d89393580fb8eacf5bf258890b76389",
+    "results/followup48/selected-thickness-models.json": "0f27644345607da35af9e45047eee3b1cfb13c3ee40f34f9cc75494d8207a535",
+    "results/followup48/thickness-h150-seed42/analysis.json": "f0c95e13b6aed8d0a30e72405eae888ee0f5e1962b99a57c6f7c3f3123053155",
+    "results/followup48/thickness-h150-seed42/measurements.json": "41572cbd20659229eb2051cac0c42378db1eda74a34e59361d139d2cd8a4656c",
+    "results/followup48/thickness-h150-seed43/analysis.json": "78eab40959035c992cc0185123efda993e9ae5407a910be9b9a9e26a9925f224",
+    "results/followup48/thickness-h150-seed43/measurements.json": "93d6e3d12a563de269f38147bb40e7d767e2233965b2f799f85d3168d199aa99",
+    "results/followup48/thickness-h300-seed42/analysis.json": "7b8147f8368ee0f8e0761e7dd18a5207bddad25d962f744d958f796fe2fe44b1",
+    "results/followup48/thickness-h300-seed42/measurements.json": "fcf06de98cd2c06b4d44256d6ebf4240a7a1e3e9f22745d09f818b1b73d3e731",
+    "results/followup48/thickness-h300-seed43/analysis.json": "77a728654573c6cbf6ffb874b9d068f97445a8bb024c63c7c23b9289c2a18489",
+    "results/followup48/thickness-h300-seed43/measurements.json": "9c13bb7b8cf795815243a33a76cd761ea8a46d199cd3eed435988ec11568215a",
+    "results/followup48/thickness-h600-seed42/analysis.json": "ebca189752b5d3c08db1c3f49e0868b742fb375642652e1abc213258df6451b7",
+    "results/followup48/thickness-h600-seed42/measurements.json": "b478dd746177d052eaeed7999ce8951ec88821e5f29a97a6b16f9b9d9fd36284",
+    "results/followup48/thickness-h600-seed43/analysis.json": "88f4de48e97f30fda5ff9863e811d71a88833ae2e6604df54e32a42752ac5a0d",
+    "results/followup48/thickness-h600-seed43/measurements.json": "c9ff515f0aa61199012a7faded7a68856ffd0a79a55b70ca68a047ccb5d2c6be",
+    "results/followup48/control-comparisons.json": "d2c4def77c29a7189967b4bfab99d2cbea6f42ab8c943f5891fea7dfd5493808",
+    "results/followup48/centering-audits/high-seed43.json": "dafbaeaa9adbf4473109040cfe71b8b21f9f92711cdc16e49e00551084d3aa5d",
+    "results/followup48/centering-audits/seed43-theta025.json": "49056df59669261902ccb09c8ed081647ae786e74f1390cb098bfeca9ecb16d0",
+    "results/followup48/centering-audits/seed44-theta025.json": "f5fb6aef3c55be8cb006efeb33709a350960b2a92080bf006b3087a239a95e7a",
+    "results/followup48/centering-audits/seed44-theta04.json": "aaeb351f17d8cab3f3addfd53b707fe9db9c6ab4c0408684a91738d58677ec73",
+    "results/followup48/centering-audits/seed45-theta025.json": "6a19cd3306171890d811139a086e90f5d0fa75e6b47ccc25e9b36f4e573d4b7a",
+    "results/followup48/centering-audits/seed45-theta04.json": "7eec15137a6ea24125dd1d61917beda408068755bd41240d3798ebe37143025f",
+    "results/followup48/centering-audits/static-halo-seed42.json": "0fc2dbf1658e2173302198187a66f8d6d93110ad7176d2b37e787672ee9505fe",
+    "results/followup48/centering-audits/static-halo-seed43.json": "fd3a74272b125140a570c5257cd87ca2a31e563a96b407da7b4771f7470e9530",
+    "results/followup48/centering-audits/thickness-h150-seed42-e025.json": "76c52398ec5c1591df16f77b745f900827c65016df79778eca26a0fd42bf9294",
+    "results/followup48/centering-audits/thickness-h150-seed42.json": "977cdc07a5eda4f1d45b9b1dca372bf946043cea7d5863fb694c3bf32b5f8d5a",
+    "results/followup48/centering-audits/thickness-h150-seed43.json": "6ed9b8da673074014a8c84b301739cdda9646b9a589cc4de0f97c0910816db74",
+    "results/followup48/centering-audits/thickness-h300-seed42.json": "2208ffe645e5a47e7038cb365a3fef21fff63158e121e9a24b656f653cbdb973",
+    "results/followup48/centering-audits/thickness-h300-seed43.json": "2f1d91ea9897ab0301ec990665983b0eccd9a6e6289d52259a46ae7770ddb951",
+    "results/followup48/centering-audits/thickness-h600-seed42.json": "ee1f959fa1c3fe4aa18616b3727f621d0032ee424e0d37ab280accd95436c881",
+    "results/followup48/centering-audits/thickness-h600-seed43.json": "e96b0465bfe3910235da8180bbbc955bc366d2e63ee00afba11d423f1dec2547",
+    "results/followup48/mock-observations/analysis.json": "46c9a752db13098a18a115efa051fa956416907b8ac151454ffe75e452ef1211",
+    "results/followup48/mock-observations/position-angle-sensitivity.json": "fde5a1abb65a0696ddaf842d649247f3d6ff5c3a936fe258094f0113f6b3a8a2",
+    "results/followup48/mock-observations/position-angle-followup.json": "f1d3d98a272b33bed1123711bbf101b9269444d5252a2b1de3095a5ec29ea783",
+    "results/frozen/analysis.json": "3a7292f6e8e6746ff97745f46c2243699a7a7907279d22f73b15ebad16d02973",
+    "results/frozen/measurements.json": "d0e5a76f50c0a64524d23b218da42c48b7253a2996354950ad55565eff6a5632",
+    "results/followup48/high-seed43/analysis.json": "df82155e97d33fc1068ea1f124fa4f30726533f32ebc6e7f511260fd9c27f1e2",
+    "results/followup48/high-seed43/measurements.json": "b14cbd94539c5e56b28f435f6c521dc9d8b20c394e3fa7c1504b74824b373e7c",
+    "results/followup48/static-halo-seed42/analysis.json": "19f20942123f5124fdec930ad8b140fa68ed08f2db9f6cd2c3b5a530d7918f4b",
+    "results/followup48/static-halo-seed42/measurements.json": "fd37c9a9b49f943bcdaaa63fbf8f8d32bf9f86b0617f93fef565f5cbde53e10e",
+    "results/followup48/static-halo-seed43/analysis.json": "4ab7c2edd4add31d01e2b7ae57a284f25170600ab04fa7f56ecbb5c9b99ac112",
+    "results/followup48/static-halo-seed43/measurements.json": "d2633b926834f74fd80f61d4c786b9c6998d8a093d7b2ef634e3dc02a21f1281",
+    "results/followup48/thickness-h150-seed42-e025/analysis.json": "4594ff66d4aa3b7a5c64c5b11be05013fdcd8721628a38a2091a52ca3ac6def9",
+    "results/followup48/thickness-h150-seed42-e025/measurements.json": "b20862214452933c78176a750128fdc954c1b7323f0be6e24fdefcb5abac0f13",
+    "results/observational-summary.json": "bb2f6e3e934e19db31f7b5342282398ac8a5fbff769678abba5e232d234f6bd9",
+    "data/manga_comparison.ecsv": "a2f5427c38f71bfe652df9ccf96e3ebd4ebcda4e0a4b4afd25992dee0100c683",
+    "data/s4g_comparison.ecsv": "fc83651953ce3d0cd60c65def5e2058f2e8618fb2a38885c50bd5132e4dd79ea",
+    "results/followup48/optional-high/raw-archive.json": "11d3efbf4b853cefab33efa5892f8f228af954f76f16b4d4d3137b0ac9b1ee94",
+    "results/followup48/optional-high/comparison.json": "155e855228aa4d9cb27df9b3ab405edaca21004bc0926e1b747ba8f5e0f76382",
+    "results/followup48/aperture-precision/verification.json": "b5b42392ab67d1ba17c9666dadeb84bdb8425795fd05bc5fef92d0b9cfa11317",
+    "results/followup48/aperture-precision/high-seed43.json": "20bf120f445a905b0df9a788c69d4dc29fdfb5a91ec9c7a40321fa0be769dadf",
+    "results/followup48/aperture-precision/high-seed43-disc-all.json": "1ef5b48a292992bdd23ccb0632d7524829e2b14e533ee42cf02341ae733b4d59"
+  }
+}

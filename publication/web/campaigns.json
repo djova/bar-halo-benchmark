@@ -1,0 +1,93 @@
+{
+  "release": "2026-09-23.1",
+  "campaigns": [
+    {
+      "id": "GAL-10",
+      "model_id": "GAL-LIVE",
+      "members": [
+        "base",
+        "high",
+        "soft050",
+        "soft200",
+        "timestep",
+        "force",
+        "seed43",
+        "soft050_dt",
+        "soft025_dt",
+        "frozen"
+      ],
+      "deadline": "2026-09-20T20:35:55Z",
+      "convergence": "Failed the preselected 10% stability target. At 3 Gyr, halving/doubling softening changes local strength by +19%/−40%; halving timestep by −23%; tightening force accuracy by −16%; quadrupling particles by −31%. The second seed changes it by +18%. At 50 pc, halving timestep changes strength by −35%; at the common 0.1 Myr timestep, 25 versus 50 pc changes it by +45%. All ten runs are complete.",
+      "verdict": "All ten runs reached 3 Gyr. Collective gravity produces a strong bar followed by weakening and vertical thickening; the entirely fixed round-field control stays nearly round. All runs pass their appropriate conservation checks. Final live-run amplitudes overlap the preselected observed distribution, but large numerical sensitivity prevents quantitative convergence or observational validation. This is a benchmarked demonstration, not a CDM-versus-SIDM test.",
+      "assessment_utc": "2026-09-20T20:02:16.128017+00:00",
+      "run_count": 10,
+      "completed_count": 10,
+      "member_count": 10
+    },
+    {
+      "id": "GAL-25",
+      "model_id": "GAL-LIVE",
+      "members": [
+        "base",
+        "high",
+        "soft050",
+        "soft200",
+        "timestep",
+        "force",
+        "seed43",
+        "soft050_dt",
+        "soft025_dt",
+        "frozen",
+        "seed43-theta025",
+        "seed44-theta04",
+        "seed44-theta025",
+        "seed45-theta04",
+        "seed45-theta025",
+        "high-seed43",
+        "thickness-h150-seed42",
+        "thickness-h300-seed42",
+        "thickness-h600-seed42",
+        "thickness-h150-seed43",
+        "thickness-h300-seed43",
+        "thickness-h600-seed43",
+        "thickness-h150-seed42-e025",
+        "static-halo-seed42",
+        "static-halo-seed43"
+      ],
+      "verdict": "Expanded galaxy collection: see the paired force, thickness and live/fixed-halo assessments. The original ten-run verdict does not apply to every later control.",
+      "assessment": "synthesis.html",
+      "run_count": 25,
+      "completed_count": 25,
+      "member_count": 25
+    },
+    {
+      "id": "CART-RESPONSE",
+      "model_id": "CART-EXT",
+      "members": [
+        "independent-phase-replication",
+        "external-cloud-characterization",
+        "grainy-bar-pilot",
+        "cartesian-transfer-pilot"
+      ],
+      "count_unit": "named investigations, not independent realizations",
+      "verdict": "Smooth same-condition phase replication; grainy ordering and new-condition 3D transfer unresolved.",
+      "page": "response.html",
+      "member_count": 4
+    },
+    {
+      "id": "RES-POP",
+      "model_id": "RES-POS",
+      "members": [
+        "population-validation",
+        "heldout-populations",
+        "population-approximation-accuracy",
+        "matched-estimator-cost"
+      ],
+      "count_unit": "named investigations, not independent physical regimes",
+      "verdict": "Conditional population bias and accuracy/cost outcomes; see claim-level evidence.",
+      "page": "paper.html",
+      "member_count": 4
+    }
+  ],
+  "scope": "Counts derive from explicit membership. Overlapping campaigns are not summed."
+}
