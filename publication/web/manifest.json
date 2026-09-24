@@ -3,20 +3,21 @@
   "access": {
     "status": "partial_automated_client_access",
     "canonical": "https://djova.ca/galaxy-bar/",
-    "raw_mirror": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.1/publication/web/",
-    "browse_mirror": "https://github.com/djova/bar-halo-benchmark/blob/publication-2026-09-24.1/publication/web/",
-    "article": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.1/publication/web/paper.md",
-    "claims": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.1/publication/web/claims.json",
+    "raw_mirror": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.2/publication/web/",
+    "browse_mirror": "https://github.com/djova/bar-halo-benchmark/blob/publication-2026-09-24.2/publication/web/",
+    "article": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.2/publication/web/paper.md",
+    "claims": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.2/publication/web/claims.json",
     "results": {
-      "populations": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.1/publication/web/results/populations.json",
-      "accuracy": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.1/publication/web/results/accuracy.json",
-      "cost": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.1/publication/web/results/cost.json"
+      "populations": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.2/publication/web/results/populations.json",
+      "accuracy": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.2/publication/web/results/accuracy.json",
+      "cost": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.2/publication/web/results/cost.json"
     },
-    "derivation": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.1/publication/web/methods/CUMULATIVE_IDENTITY.md",
+    "derivation": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.2/publication/web/methods/CUMULATIVE_IDENTITY.md",
     "principal_figures": [
-      "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.1/publication/web/diagnostics/population-accuracy/population-comparison.png",
-      "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.1/publication/web/diagnostics/population-accuracy/population-accuracy.png",
-      "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.1/publication/web/diagnostics/population-accuracy/estimator-efficiency.png"
+      "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.2/publication/web/diagnostics/population-accuracy/population-comparison.png",
+      "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.2/publication/web/diagnostics/population-accuracy/population-accuracy.png",
+      "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.2/publication/web/diagnostics/population-accuracy/estimator-efficiency.png",
+      "https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.2/publication/web/diagnostics/population-accuracy/population-gradient-explanation.png"
     ],
     "interactive_article": "https://djova.ca/galaxy-bar/paper.html",
     "scientific_source": "https://raw.githubusercontent.com/djova/bar-halo-benchmark/cdb30b5b2f350d2f3de6831995b83f281fe2974e/",
@@ -25,7 +26,7 @@
     "tested_descriptive_user_agent": "GalaxyBar-PublicVerification/2.0",
     "universal_client_access": false
   },
-  "release": "2026-09-24.1",
+  "release": "2026-09-24.2",
   "article": "paper.html",
   "markdown": "paper.md",
   "review_status": "not_externally_reviewed",
@@ -35,7 +36,7 @@
   },
   "publication_source": {
     "repository": "https://github.com/djova/bar-halo-benchmark",
-    "ref": "publication-2026-09-24.1",
+    "ref": "publication-2026-09-24.2",
     "directory": "publication"
   },
   "models": "models.json",
@@ -46,45 +47,45 @@
   "verification": "verify_publication.py",
   "reproduction": "reproduce.html",
   "archive": "archive.html",
-  "release_snapshot": "releases/2026-09-24.1/manifest.json",
+  "release_snapshot": "releases/2026-09-24.2/manifest.json",
   "licenses": "reproduce.html#licenses",
-  "generator_sha256": "68787059fad03bb8166a9e860e852169efde073a0b88675d777181d5773f035b",
-  "article_source_sha256": "004c880ff8412c7f5f9f80ca0f78d766913feea46923eb0312949e11b0501b4c",
+  "generator_sha256": "4a274ccab00de317e00eef964ad60e4e55a232e2cc54f71dc5f4de5108053d47",
+  "article_source_sha256": "4a03879bc2835c0403a11456ba47c43870c081b8b3cc5fcd607b8e1f2e06f1c6",
   "artifacts": [
     {
       "path": "agents.html",
-      "sha256": "f75c98734c61e8a43cc174602565330f2ded89888e660f4a362c26dc400da13b",
+      "sha256": "c51837720a46fbe53148d3081855e734390758775a2563ba264044307b860439",
       "bytes": 7684
     },
     {
       "path": "agents.md",
-      "sha256": "56bfa4557139d1ad130633de89894c072d54f62d283df27c70b4d6ee7f5b976a",
+      "sha256": "a0fce9741093bd219f2236300b9aa8753250c196bae49db7259c46fab839c202",
       "bytes": 7550
     },
     {
       "path": "archive.html",
-      "sha256": "95f360f7bb4d3eb3c8dce76ad4e59c0c60732403e1074b7094059165fe3f1de8",
+      "sha256": "4e7807f15ed8fe6d0e706ea0220670bdbac72b9128354f350d49537c792a9be5",
       "bytes": 3817
     },
     {
       "path": "campaigns.json",
-      "sha256": "5c0683ba43c2e88a078970c081bdb5d4da6450cb8161900c5a62a37581ee1e82",
+      "sha256": "c4d72d954dc8b2e1bcc920e8bf3ef6d75d229311d4d5ab65a0d429aa0b0f87e2",
       "bytes": 3502
     },
     {
       "path": "claim-ledger.md",
-      "sha256": "78eb6c7d7be66519e4baac25a3f118b06d34d7db48927aa2c6c0e9c6f69f77bd",
+      "sha256": "7c29a43bcf6c7b31524b9cb44dac545c9e73e041062b68893729fad0e7c6faca",
       "bytes": 3916
     },
     {
       "path": "claims.json",
-      "sha256": "c3378cff6f5872d2e75c8897614b8ee4589475f782906b400f24cdeb00ddef55",
+      "sha256": "99095747a66cd6a50eb90ed0d9e14765c7cd2c42a8544edbe3bfade0f3d48d07",
       "bytes": 40653
     },
     {
       "path": "communication.html",
-      "sha256": "34b219422a74c757f84396e692355a14f07c5bda4285b6f4aa0c42c53e9ee815",
-      "bytes": 34834
+      "sha256": "008b41ba97b9d2710fdcd6ce5ac602640132046fc498d938cc61d5f3780245ca",
+      "bytes": 36522
     },
     {
       "path": "data/index.json",
@@ -97,9 +98,19 @@
       "bytes": 1832
     },
     {
+      "path": "data/population-response/publication.json",
+      "sha256": "6cdd20f22dcd4d45b081116041a3f3b8092114f4e7f72243b49c386a9e6da105",
+      "bytes": 1478610
+    },
+    {
       "path": "datasets.json",
-      "sha256": "42759f2fee8f6084d8fab7fde63e3ec38844b19852534648bf9ffb90e264b963",
-      "bytes": 65538
+      "sha256": "a022cc0c1a318ae8001bb34c1879c17fc3c18e19f7857e2ae9f9d586568adf9b",
+      "bytes": 67317
+    },
+    {
+      "path": "diagnostics/communication/EDITORIAL_REPAIR_2026-09-24.md",
+      "sha256": "9675040a2f1769fca946b23891860d208365a27a9e78527b76e86c8f902a054f",
+      "bytes": 5632
     },
     {
       "path": "diagnostics/communication/WRITING_REVIEW_2026-09-24.md",
@@ -120,6 +131,26 @@
       "path": "diagnostics/communication/skill-2026-09-24/references/writing-craft.md",
       "sha256": "fa30502a656dd2b98b56725064ea71288022a001a87bd5d4dadd489cd0617c90",
       "bytes": 9629
+    },
+    {
+      "path": "diagnostics/communication/skill-editorial-2026-09-24/SKILL.md",
+      "sha256": "7eb31feeba61ad4833d6b68bda32f7c6b88f2c911d2786906e1d4f9a7a86ec10",
+      "bytes": 9151
+    },
+    {
+      "path": "diagnostics/communication/skill-editorial-2026-09-24/agents/openai.yaml",
+      "sha256": "aa1d873c66c16fc2b9bda46fac98278f5c841e6407e85f4a7a80f850745682b9",
+      "bytes": 292
+    },
+    {
+      "path": "diagnostics/communication/skill-editorial-2026-09-24/references/principles.md",
+      "sha256": "f8cc063c4abaacd041cfdb814f9c7f16f653716b24f2f1dfd1ec7a0da6e35aaa",
+      "bytes": 6454
+    },
+    {
+      "path": "diagnostics/communication/skill-editorial-2026-09-24/references/writing-craft.md",
+      "sha256": "ccab85f441c52ad73f49f9599af182e27f74aa2c44dbf833791985a39fabefa8",
+      "bytes": 12066
     },
     {
       "path": "diagnostics/communication/writing-review-2026-09-24.json",
@@ -152,6 +183,11 @@
       "bytes": 249125
     },
     {
+      "path": "diagnostics/population-accuracy/gradient-figure-receipt.json",
+      "sha256": "266615ae6601a274bd162c7bc915b074de5528a178dd6ecf1ccbcc3cd0738b1c",
+      "bytes": 2274
+    },
+    {
       "path": "diagnostics/population-accuracy/joint-error-assessment.json",
       "sha256": "97124a1ad6859382ce0c590baaba618dd70a713108fdde1e1efe618698929d11",
       "bytes": 52024
@@ -167,6 +203,16 @@
       "bytes": 93214
     },
     {
+      "path": "diagnostics/population-accuracy/population-gradient-explanation.png",
+      "sha256": "7ea38e055b466ec91a78a368fc6094bced66e0815328c983b61df34a7c6bfcd7",
+      "bytes": 246436
+    },
+    {
+      "path": "diagnostics/population-accuracy/population-gradient-explanation.svg",
+      "sha256": "677d55532355d54579973403b162ba04c20b89f3d26ac1e5a372aecebd4a025d",
+      "bytes": 269527
+    },
+    {
       "path": "diagnostics/population-response/halo-pilot.json",
       "sha256": "c30b77afdd4468fc49792c83f982c06b14432742fa55676a92840957ca471ea1",
       "bytes": 859177
@@ -178,27 +224,27 @@
     },
     {
       "path": "experiments.html",
-      "sha256": "7bccdc17832e9df55db87623a6db1d245259db85e4c6a937c5d6ed77ed827f9d",
+      "sha256": "467e41045d91fe499c001033aebb6ef6723aae4f54b51ba25c57f67aa8a247fa",
       "bytes": 4429
     },
     {
       "path": "figures.json",
-      "sha256": "d1340406edce589b928d9a7a0119d97f51001abd3a4edf7446e8a795bcf034bc",
-      "bytes": 6957
+      "sha256": "633d80c1b186f85bbc5be234bb404ebdd4de37c06c90fd891365eb7cb4ee7601",
+      "bytes": 7870
     },
     {
       "path": "learn.html",
-      "sha256": "fe5e32915b859d13a88c2e1196b160ee0fdaedd2a396f1095cc9a158b9b68aa8",
+      "sha256": "0b19f4dd0d7d11600c7d10a0071c53aaed831980fb71998bf32b47d534b76b0d",
       "bytes": 14786
     },
     {
       "path": "learn.md",
-      "sha256": "ece10857df4d2bb622ad5f7ca242cdaf17a24c4f63675fbe8c57db7727bcf080",
+      "sha256": "d074f3c640c2b7b2a8bbcdb854c3450b1add037173af1a22041a20245509c668",
       "bytes": 12725
     },
     {
       "path": "llms.txt",
-      "sha256": "160ea8fed65d53436c85db58dae3f664ab71bb6c0094c5629321f226ece7e820",
+      "sha256": "1a67050c89daea5518306a16d3e5d9b1e3e2f74ee7eb11da102cd889646e02a5",
       "bytes": 817
     },
     {
@@ -213,18 +259,18 @@
     },
     {
       "path": "models.json",
-      "sha256": "b44ad0305ece9de0d719317b9bf85e724954650f682b73d47ee11cad7e4897eb",
+      "sha256": "d69b608694a28eedb505fbb0bddb868ef66341cbcff09315a4b0a03a76b653a0",
       "bytes": 2241
     },
     {
       "path": "paper.html",
-      "sha256": "d7893af6ae25357946fdbaa9b9a876e3da02ce509d3e54253e05e5cbff414b0b",
-      "bytes": 78138
+      "sha256": "922b0c04368d0e94bde3c2cdfd8e3e084aaaafb3241c85f268bd286d71f4e630",
+      "bytes": 84664
     },
     {
       "path": "paper.md",
-      "sha256": "1edaf0e6377cf6ecd9e8376b97e4d86974270c0370edb2c14de7dd40abdd6966",
-      "bytes": 65420
+      "sha256": "d0f8018a4809c89eb3814687d0ee147f391a6ce49ab33606017aaf816247a109",
+      "bytes": 70038
     },
     {
       "path": "protocols/ACCURACY_PLAN.md",
@@ -278,12 +324,12 @@
     },
     {
       "path": "reproduce.html",
-      "sha256": "24ec4d3ca21d2023fec238071e30f0b661bcfa0f79531215a42286fc3d5c53b3",
+      "sha256": "fc0cd35cf29493a109562f82badbd8bb7f0bc626b24d0c6954af89552e3acb43",
       "bytes": 8794
     },
     {
       "path": "reproduce.md",
-      "sha256": "c33cf67faf2ac2a2bc46cb2514a2a51bff03471b802352ac7273321832d09efe",
+      "sha256": "13aab1f36f52c206e046eef0b82cc93a6269c94fcdec2fbf8e4b25578b3730ec",
       "bytes": 8120
     },
     {
@@ -293,7 +339,7 @@
     },
     {
       "path": "results/accuracy.json",
-      "sha256": "03173dec778931db91affcd15efa36636c91e1c26cf679e2bc7c4af2177393da",
+      "sha256": "971d9a3798d67f584f8d48e35cacce64f11bb7484d926832582b529b1ec91cfe",
       "bytes": 24195
     },
     {
@@ -303,7 +349,7 @@
     },
     {
       "path": "results/cost.json",
-      "sha256": "f67a1fbdb7dc1f6a9ec3e07edb5dfb63a8468213a048dcb2e2a32a735a21520a",
+      "sha256": "fbe5aed978d23613ed8d130ea5ceedb6125239ad970da61f73d8c78e4fe71a04",
       "bytes": 16790
     },
     {
@@ -313,18 +359,18 @@
     },
     {
       "path": "results/populations.json",
-      "sha256": "7114323cd2e200b8dde4bb3e057b82ef86d935ca571d91d82c6e56bf992a7c1c",
+      "sha256": "ca646cb5bc56735b11e6c2906695e8b6d400338fa539b07eb4cb31c3d1808e16",
       "bytes": 2586
     },
     {
       "path": "results/summary.json",
-      "sha256": "b62a43d5550b86443ad312f66eea5ad766d16e02c45df820bcb27485db2090d4",
+      "sha256": "40a58c78bab9d3a4255cf9557af7ea54584a3d30e46c40071c52b87c4fa7c0cc",
       "bytes": 410
     },
     {
       "path": "verify_publication.py",
-      "sha256": "52d6e9e21f7a1508c30ca9b9661e3fc531832edc00ec6643b44a6b2ace867976",
-      "bytes": 17076
+      "sha256": "3d36cbb2d309ec976e9b9f84f680c1d6766fb2d9d63de22abe8478a6a8fe8f98",
+      "bytes": 17086
     }
   ],
   "scope": "Canonical publication and central evidence; numerical experiment outputs unchanged. No global scientific all-pass verdict."

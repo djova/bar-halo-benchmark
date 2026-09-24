@@ -207,7 +207,7 @@ def verify(fetch, expected_release=None):
                 same(text,format(summary[attrs['data-publication-scalar']],'.6f'),f'{name}: article headline number');scalars+=1
         same(numeric_count,expected_cells,f'{name}: numeric-cell coverage');same(scalars,1,f'{name}: scalar coverage')
         require('The first-order contribution has known zero ensemble integral' not in fetch(name).decode(),'Obsolete estimator explanation')
-        require('first-order weighted impulse itself is' in ''.join(parser.text),'Missing estimator distinction')
+        require('left-hand side is the generally nonzero transfer' in ''.join(parser.text),'Missing estimator distinction')
         if name.endswith('.html'):
             for claim in claims['claims']:require(claim['article_anchor'].split('#')[1] in parser.ids,'Unresolved article claim anchor')
             require(f'content="{version}"' in fetch(name).decode(),'Article release metadata')

@@ -1,11 +1,11 @@
 # Galaxy Bar: MNRAS-format manuscript
 
-Export 2026-09-24.2 of scientific article 2026-09-24.1. Unreviewed; not
+Export 2026-09-24.3 of scientific article 2026-09-24.2. Unreviewed; not
 submitted to or accepted by MNRAS. No numerical evidence was changed.
 
 [Download the PDF](galaxy-bar-mnras.pdf) · [Interactive article](https://djova.ca/galaxy-bar/paper.html)
 
-This directory contains the complete generated LaTeX, BibTeX database and three
+This directory contains the complete generated LaTeX, BibTeX database and four
 figures. Retrieve the official MNRAS 3.2 template from [CTAN](https://ctan.org/pkg/mnras),
 place `mnras.cls` and `mnras.bst` here, then run:
 
@@ -32,5 +32,16 @@ The manifest identifies input and output hashes. Input paths resolve relative
 to the `publication/` directory. The generated manuscript can be compiled directly
 without regenerating the article, running any simulation or accessing private files.
 
-The editorial revision is documented in the [reading review](../publication/web/diagnostics/communication/WRITING_REVIEW_2026-09-24.md).
-It changes the exposition, not the underlying measurements or frozen criteria.
+The substantive rewrite is documented in the [editorial repair](../publication/web/diagnostics/communication/EDITORIAL_REPAIR_2026-09-24.md).
+It repairs the argument and explanations; it does not change measurements or frozen criteria.
+The four figures include a new view of previously released population gradients and kernels.
+The seven bibliography entries comprise six research references and the project publication.
+Earlier exports remain available under their immutable tags.
+
+To regenerate the gradient figure from released data, run from `publication/`:
+
+```sh
+python3 scripts/publication/gradient_figure.py --source web/data/population-response/publication.json --out /tmp/galaxy-gradient-figure
+```
+
+This uses NumPy and Matplotlib; it does not evolve any orbits.

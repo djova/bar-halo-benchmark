@@ -1,0 +1,974 @@
+{
+  "release": "2026-09-24.2",
+  "expected_release": "2026-09-24.2",
+  "activity": "Publication consistency checking from supplied numerical records; no orbit evolution",
+  "population_late_magnitude_ratio": 4.735323064643955,
+  "exponential_halo_point_difference_percent": {
+    "10": 0.04979289102488016,
+    "20": 0.06798793568441042
+  },
+  "candidate_count": 20,
+  "qualified_count": 8,
+  "independently_supported": 8,
+  "qualified_contradicted": 0,
+  "distinct_new_conditions": 1,
+  "conservative_rejections": [
+    "ACC-gaussian128-T10-W40",
+    "ACC-gaussian128-T10-W64",
+    "ACC-gaussian128-T20-W40",
+    "ACC-gaussian128-T20-W64"
+  ],
+  "unqualified_independently_outside": 8,
+  "qualified_signs": 15,
+  "supported_signs": 15,
+  "broad_conditional_cost_variance_ratio": 6928.353830605735,
+  "broad_between_batch_ratio": 2749.3990669210343,
+  "narrow_ratio": 0.9926830754833764,
+  "coverage": {
+    "manifest_artifacts_hashed": 97,
+    "claim_evidence_pointers": 66,
+    "protocols": 10,
+    "reconstructed_accuracy_rows": 24,
+    "article_numeric_cells_per_representation": 186,
+    "article_representations": [
+      "HTML",
+      "Markdown"
+    ]
+  },
+  "exclusions": [
+    "No simulation or array reproduction",
+    "No proof of numerical-proxy bounds or general confidence coverage",
+    "No verification of every external archive or historical explorer",
+    "No external scientific review, novelty or live-halo/SIDM validation"
+  ],
+  "decisions": [
+    {
+      "id": "ACC-halo-T10-W40",
+      "reference": true,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-exponential-T10-W40",
+      "reference": false,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian8-T10-W40",
+      "reference": false,
+      "qualified": false,
+      "assessment": "contradicted",
+      "intrinsic_assessment": "contradicted",
+      "sign": "unqualified",
+      "sign_assessment": "not_qualified",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian32-T10-W40",
+      "reference": false,
+      "qualified": false,
+      "assessment": "contradicted",
+      "intrinsic_assessment": "contradicted",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian128-T10-W40",
+      "reference": false,
+      "qualified": false,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian512-T10-W40",
+      "reference": false,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-halo-T10-W64",
+      "reference": true,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-exponential-T10-W64",
+      "reference": false,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian8-T10-W64",
+      "reference": false,
+      "qualified": false,
+      "assessment": "contradicted",
+      "intrinsic_assessment": "contradicted",
+      "sign": "unqualified",
+      "sign_assessment": "not_qualified",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian32-T10-W64",
+      "reference": false,
+      "qualified": false,
+      "assessment": "contradicted",
+      "intrinsic_assessment": "contradicted",
+      "sign": "unqualified",
+      "sign_assessment": "not_qualified",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian128-T10-W64",
+      "reference": false,
+      "qualified": false,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian512-T10-W64",
+      "reference": false,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-halo-T20-W40",
+      "reference": true,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-exponential-T20-W40",
+      "reference": false,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian8-T20-W40",
+      "reference": false,
+      "qualified": false,
+      "assessment": "contradicted",
+      "intrinsic_assessment": "contradicted",
+      "sign": "unqualified",
+      "sign_assessment": "not_qualified",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian32-T20-W40",
+      "reference": false,
+      "qualified": false,
+      "assessment": "contradicted",
+      "intrinsic_assessment": "contradicted",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian128-T20-W40",
+      "reference": false,
+      "qualified": false,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian512-T20-W40",
+      "reference": false,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-halo-T20-W64",
+      "reference": true,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-exponential-T20-W64",
+      "reference": false,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian8-T20-W64",
+      "reference": false,
+      "qualified": false,
+      "assessment": "contradicted",
+      "intrinsic_assessment": "contradicted",
+      "sign": "unqualified",
+      "sign_assessment": "not_qualified",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian32-T20-W64",
+      "reference": false,
+      "qualified": false,
+      "assessment": "contradicted",
+      "intrinsic_assessment": "contradicted",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian128-T20-W64",
+      "reference": false,
+      "qualified": false,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    },
+    {
+      "id": "ACC-gaussian512-T20-W64",
+      "reference": false,
+      "qualified": true,
+      "assessment": "supported",
+      "intrinsic_assessment": "supported",
+      "sign": "negative",
+      "sign_assessment": "supported",
+      "allowance_covers": true
+    }
+  ],
+  "downloads": [
+    {
+      "path": "manifest.json",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 20548,
+      "sha256": "f79789293758c5cad016c148c9e06ec88de6cb79b191c5c190133cee7c786148"
+    },
+    {
+      "path": "agents.html",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 13241,
+      "sha256": "432d11d8ac5168d7900d1925ba25fe7aa5a564f409702e75e2d7fc9f86a235cf"
+    },
+    {
+      "path": "agents.md",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 7550,
+      "sha256": "a0fce9741093bd219f2236300b9aa8753250c196bae49db7259c46fab839c202"
+    },
+    {
+      "path": "archive.html",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 9152,
+      "sha256": "c4ad22447329fda92224f44541ca03b754a3e91717d1206faffdbb957a8f89be"
+    },
+    {
+      "path": "campaigns.json",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 3502,
+      "sha256": "c4d72d954dc8b2e1bcc920e8bf3ef6d75d229311d4d5ab65a0d429aa0b0f87e2"
+    },
+    {
+      "path": "claim-ledger.md",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 3916,
+      "sha256": "7c29a43bcf6c7b31524b9cb44dac545c9e73e041062b68893729fad0e7c6faca"
+    },
+    {
+      "path": "claims.json",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 40653,
+      "sha256": "99095747a66cd6a50eb90ed0d9e14765c7cd2c42a8544edbe3bfade0f3d48d07"
+    },
+    {
+      "path": "communication.html",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 42922,
+      "sha256": "fb173ae2b3c14741749d8380ba6d1d1f427c2ef0b7e344508fb590d135faf07b"
+    },
+    {
+      "path": "data/index.json",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 12522,
+      "sha256": "31864d88be97b3390e7b882dc142100078857e9d46986a1d2a7634940022a93c"
+    },
+    {
+      "path": "data/observational-summary.json",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 1832,
+      "sha256": "bb2f6e3e934e19db31f7b5342282398ac8a5fbff769678abba5e232d234f6bd9"
+    },
+    {
+      "path": "data/population-response/publication.json",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 1478610,
+      "sha256": "6cdd20f22dcd4d45b081116041a3f3b8092114f4e7f72243b49c386a9e6da105"
+    },
+    {
+      "path": "datasets.json",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 67317,
+      "sha256": "a022cc0c1a318ae8001bb34c1879c17fc3c18e19f7857e2ae9f9d586568adf9b"
+    },
+    {
+      "path": "diagnostics/communication/EDITORIAL_REPAIR_2026-09-24.md",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 5632,
+      "sha256": "9675040a2f1769fca946b23891860d208365a27a9e78527b76e86c8f902a054f"
+    },
+    {
+      "path": "diagnostics/communication/WRITING_REVIEW_2026-09-24.md",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 6636,
+      "sha256": "b8e043749b01c32499df01e0b3f0534fef80f7dfd59ef8129ff978ffb8fdeb04"
+    },
+    {
+      "path": "diagnostics/communication/skill-2026-09-24/SKILL.md",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 7523,
+      "sha256": "3956e36bb2f7faa12de3aa2e12ef3a07bc60c9b631491fda5bf6fd3467a490f3"
+    },
+    {
+      "path": "diagnostics/communication/skill-2026-09-24/references/principles.md",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 6454,
+      "sha256": "f7f8fe94ac0b4361613e8920c3cd63eb8f261e3c0e40664a33382cf9ac4471b9"
+    },
+    {
+      "path": "diagnostics/communication/skill-2026-09-24/references/writing-craft.md",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 9629,
+      "sha256": "fa30502a656dd2b98b56725064ea71288022a001a87bd5d4dadd489cd0617c90"
+    },
+    {
+      "path": "diagnostics/communication/skill-editorial-2026-09-24/SKILL.md",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 9151,
+      "sha256": "7eb31feeba61ad4833d6b68bda32f7c6b88f2c911d2786906e1d4f9a7a86ec10"
+    },
+    {
+      "path": "diagnostics/communication/skill-editorial-2026-09-24/agents/openai.yaml",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 292,
+      "sha256": "aa1d873c66c16fc2b9bda46fac98278f5c841e6407e85f4a7a80f850745682b9"
+    },
+    {
+      "path": "diagnostics/communication/skill-editorial-2026-09-24/references/principles.md",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 6454,
+      "sha256": "f8cc063c4abaacd041cfdb814f9c7f16f653716b24f2f1dfd1ec7a0da6e35aaa"
+    },
+    {
+      "path": "diagnostics/communication/skill-editorial-2026-09-24/references/writing-craft.md",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 12066,
+      "sha256": "ccab85f441c52ad73f49f9599af182e27f74aa2c44dbf833791985a39fabefa8"
+    },
+    {
+      "path": "diagnostics/communication/writing-review-2026-09-24.json",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 134719,
+      "sha256": "5c246631a77a5a92919a356f752a1faec573666086a2bd3b0659ef0fd0945f76"
+    },
+    {
+      "path": "diagnostics/followup/error-budget.json",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 172963,
+      "sha256": "44d25acd146dffbb900030378d94b50efcc07eafd92c2842cc5817df9ffe045d"
+    },
+    {
+      "path": "diagnostics/population-accuracy/accuracy-explorer.json",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 4726012,
+      "sha256": "9c75b80a649ba376ad73fe70f74d6df72cff140236f76b495a549625e7e0ba11"
+    },
+    {
+      "path": "diagnostics/population-accuracy/accuracy-reproduction.json",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 45149,
+      "sha256": "e835c5e0cbdcbe37263622a485bd0039bba49f9829c2e5675a698067addddd50"
+    },
+    {
+      "path": "diagnostics/population-accuracy/conservatism-explanation.json",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 2771,
+      "sha256": "2f6afaef5f3b0dc1fb395c159fed728b033432d0b1ef9dc93a190a671da5f499"
+    },
+    {
+      "path": "diagnostics/population-accuracy/estimator-efficiency.png",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 249125,
+      "sha256": "f37bf73f627995d32d2b995d20f4f73299e69f709f0f322533e6cdf9f6e021c6"
+    },
+    {
+      "path": "diagnostics/population-accuracy/gradient-figure-receipt.json",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 2274,
+      "sha256": "266615ae6601a274bd162c7bc915b074de5528a178dd6ecf1ccbcc3cd0738b1c"
+    },
+    {
+      "path": "diagnostics/population-accuracy/joint-error-assessment.json",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 52024,
+      "sha256": "97124a1ad6859382ce0c590baaba618dd70a713108fdde1e1efe618698929d11"
+    },
+    {
+      "path": "diagnostics/population-accuracy/population-accuracy.png",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 168399,
+      "sha256": "d45bd97a95604b283bd97ac2253a6ced48fab92a5fb095bd65e9ccfd78ed728d"
+    },
+    {
+      "path": "diagnostics/population-accuracy/population-comparison.png",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 93214,
+      "sha256": "43334e2a5b9b90a40fd94cf6a7ab8bd8fce54daa98278593c9fecaa2d870f8a7"
+    },
+    {
+      "path": "diagnostics/population-accuracy/population-gradient-explanation.png",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 246436,
+      "sha256": "7ea38e055b466ec91a78a368fc6094bced66e0815328c983b61df34a7c6bfcd7"
+    },
+    {
+      "path": "diagnostics/population-accuracy/population-gradient-explanation.svg",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 269527,
+      "sha256": "677d55532355d54579973403b162ba04c20b89f3d26ac1e5a372aecebd4a025d"
+    },
+    {
+      "path": "diagnostics/population-response/halo-pilot.json",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 859177,
+      "sha256": "c30b77afdd4468fc49792c83f982c06b14432742fa55676a92840957ca471ea1"
+    },
+    {
+      "path": "diagnostics/population-response/independent-validation.json",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 116519,
+      "sha256": "f6f9767771cd57d4003265f96f4cc5ff605c9e44ff035dc98fbed727ce48a3ad"
+    },
+    {
+      "path": "experiments.html",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 10073,
+      "sha256": "31bfe2a6015d700a9afdad417bf4a0e4e441bb523aaebcfd8d5b9eba3e9b1270"
+    },
+    {
+      "path": "figures.json",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 7870,
+      "sha256": "633d80c1b186f85bbc5be234bb404ebdd4de37c06c90fd891365eb7cb4ee7601"
+    },
+    {
+      "path": "learn.html",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 81800,
+      "sha256": "f0ba4c3d6c748a2f3d6f561668f29d07a4ce0c721cd5d16da6811b6f27049c63"
+    },
+    {
+      "path": "learn.md",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 12725,
+      "sha256": "d074f3c640c2b7b2a8bbcdb854c3450b1add037173af1a22041a20245509c668"
+    },
+    {
+      "path": "llms.txt",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 817,
+      "sha256": "1a67050c89daea5518306a16d3e5d9b1e3e2f74ee7eb11da102cd889646e02a5"
+    },
+    {
+      "path": "methods/CUMULATIVE_IDENTITY.md",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 4947,
+      "sha256": "e54d5e12bd47ac1c463e382e965f091af393ac010196f551cb725d359f099e7a"
+    },
+    {
+      "path": "methods/validation-allocation-01.json",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 3754,
+      "sha256": "665f97e00d921fff2883122bb479957a6f398ce5a668841bcbb2df0d97d940e9"
+    },
+    {
+      "path": "models.json",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 2241,
+      "sha256": "d69b608694a28eedb505fbb0bddb868ef66341cbcff09315a4b0a03a76b653a0"
+    },
+    {
+      "path": "paper.html",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 275740,
+      "sha256": "8db0cc2687830b8e0c450fc4cf1efb1bd7e62d1094c899506dc9031c462ef1de"
+    },
+    {
+      "path": "paper.md",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 70038,
+      "sha256": "d0f8018a4809c89eb3814687d0ee147f391a6ce49ab33606017aaf816247a109"
+    },
+    {
+      "path": "protocols/ACCURACY_PLAN.md",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 8299,
+      "sha256": "f081a9359d4c9785262c495cdb99cc204b93c3215cef7451096ff78119d55dec"
+    },
+    {
+      "path": "protocols/ACCURACY_REPRODUCTION.md",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 7012,
+      "sha256": "e390bbced595df3c5f9e02e1ef6255259de6839d7e6e14154914d421d4314e10"
+    },
+    {
+      "path": "protocols/ESTIMATOR_COST_02.md",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 1599,
+      "sha256": "5a009fa15e3a56c834ed26c96560ef08625fb23a7d7b034fae66de4393035efc"
+    },
+    {
+      "path": "protocols/GALAXY_EXPERIMENT_PLAN.md",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 8637,
+      "sha256": "d3a1ac21ad2cad36c97d5977739df02ed1fbb7ade8a52aede5230d894f63c5d5"
+    },
+    {
+      "path": "protocols/HALO_SLICE_PILOT_01.md",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 7013,
+      "sha256": "87f402dfb0cfdef40ebaa60a992f9bd2b5a72772a7b629318aad552735848729"
+    },
+    {
+      "path": "protocols/HELDOUT_MATRIX_01.md",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 3571,
+      "sha256": "0453b8b2f9d7ca0d1c402d2c4fbf210284f8b62889720344acd6e1dff3bb60ff"
+    },
+    {
+      "path": "protocols/HELDOUT_POPULATIONS_01.md",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 3804,
+      "sha256": "19df5e653b1adc63de8d04a99db7d9a98ab52b0b6126b9e540d3b85ecd6b143b"
+    },
+    {
+      "path": "protocols/INDEPENDENT_MATRIX_01.md",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 3925,
+      "sha256": "0ccb20442a24d66d1aa28806f0462c9fa2e422f1638cc7c383fa77c4f84fc0ac"
+    },
+    {
+      "path": "protocols/KERNEL_01.md",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 1943,
+      "sha256": "91b4d952b04e73f8fac37b8e40a58ac5f6c766ee1d1d2a6170fac287d3dc3f81"
+    },
+    {
+      "path": "publication-sources.md",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 2447,
+      "sha256": "5fc07dcdd0b3ea4e2bbe4bd7ff43a9bfeb8bec38aa1861bb7837f4ee45811bd6"
+    },
+    {
+      "path": "reproduce.html",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 14485,
+      "sha256": "1ee4c674e6921e6742a6132d0ec0b63ddf874d7aec9cdc214636e42b5ced984c"
+    },
+    {
+      "path": "reproduce.md",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 8120,
+      "sha256": "13aab1f36f52c206e046eef0b82cc93a6269c94fcdec2fbf8e4b25578b3730ec"
+    },
+    {
+      "path": "results/accuracy.csv",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 9368,
+      "sha256": "559187864d073f43c60a0ab686a7d0d973a589532261d8d74cf3ac10eef4618f"
+    },
+    {
+      "path": "results/accuracy.json",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 24195,
+      "sha256": "971d9a3798d67f584f8d48e35cacce64f11bb7484d926832582b529b1ec91cfe"
+    },
+    {
+      "path": "results/cost.csv",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 7203,
+      "sha256": "119f53bbacb0bdf8d850595fd11be2dbb36dfb8a17d13d2be0073759f8bee876"
+    },
+    {
+      "path": "results/cost.json",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 16790,
+      "sha256": "fbe5aed978d23613ed8d130ea5ceedb6125239ad970da61f73d8c78e4fe71a04"
+    },
+    {
+      "path": "results/populations.csv",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 1195,
+      "sha256": "6c2b9188487a9da9c66bfa91aa31eacf1833b270321531a021b23f4104caec31"
+    },
+    {
+      "path": "results/populations.json",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 2586,
+      "sha256": "ca646cb5bc56735b11e6c2906695e8b6d400338fa539b07eb4cb31c3d1808e16"
+    },
+    {
+      "path": "results/summary.json",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 410,
+      "sha256": "40a58c78bab9d3a4255cf9557af7ea54584a3d30e46c40071c52b87c4fa7c0cc"
+    },
+    {
+      "path": "verify_publication.py",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 17086,
+      "sha256": "3d36cbb2d309ec976e9b9f84f680c1d6766fb2d9d63de22abe8478a6a8fe8f98"
+    },
+    {
+      "path": "downloads/mnras-2026-09-24.3/galaxy-bar-mnras.pdf",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 824286,
+      "sha256": "b7ec4733c2bd7d80c174f979e28c7c1ec92a1b8e22296d6db2593aa2d499606b"
+    },
+    {
+      "path": "downloads/mnras-2026-09-24.3/galaxy-bar-mnras.tex",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 45254,
+      "sha256": "2f604a8f348475072d76134f1c256e15d5749295ac951bde29a0bc7de9a08cd2"
+    },
+    {
+      "path": "downloads/mnras-2026-09-24.3/references.bib",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 2541,
+      "sha256": "2cac6e7cf75b83b04ba191738256820dcabe8c37e47ecd1ca3b804f3a8db18c5"
+    },
+    {
+      "path": "downloads/mnras-2026-09-24.3/population-comparison.png",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 93214,
+      "sha256": "43334e2a5b9b90a40fd94cf6a7ab8bd8fce54daa98278593c9fecaa2d870f8a7"
+    },
+    {
+      "path": "downloads/mnras-2026-09-24.3/population-gradient-explanation.png",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 246436,
+      "sha256": "7ea38e055b466ec91a78a368fc6094bced66e0815328c983b61df34a7c6bfcd7"
+    },
+    {
+      "path": "downloads/mnras-2026-09-24.3/population-accuracy.png",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 168399,
+      "sha256": "d45bd97a95604b283bd97ac2253a6ced48fab92a5fb095bd65e9ccfd78ed728d"
+    },
+    {
+      "path": "downloads/mnras-2026-09-24.3/estimator-efficiency.png",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 249125,
+      "sha256": "f37bf73f627995d32d2b995d20f4f73299e69f709f0f322533e6cdf9f6e021c6"
+    },
+    {
+      "path": "downloads/mnras-2026-09-24.3/manifest.json",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 3174,
+      "sha256": "af49c9c7cecd814b283206fa5d53eb0843da50b1042537269aa02ec200606620"
+    },
+    {
+      "path": "math/katex.min.css",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 22654,
+      "sha256": "551905675edbd85e78862903bc58724476d63478e0c129b527d8844ebad1c6dd"
+    },
+    {
+      "path": "math/LICENSE",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 1107,
+      "sha256": "766ccc1f306c885aa45542a9846bbd0a505b27a0374f146778171c2254ce18e3"
+    },
+    {
+      "path": "math/VERSION.txt",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 55,
+      "sha256": "e1078c0f54eef667b8d0ddce7841a004f6691c0182248d0d202dae36ff67776b"
+    },
+    {
+      "path": "math/fonts/KaTeX_AMS-Regular.woff2",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 28076,
+      "sha256": "0cdd387c9590a1a9f9794560022dbb59654a7d86f187aa0c81495ad42d3a7308"
+    },
+    {
+      "path": "math/fonts/KaTeX_Caligraphic-Bold.woff2",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 6912,
+      "sha256": "de7701e42cf1f4cf0b766c03fb27977207eee2f4fd5d76fa82188406da43ea4c"
+    },
+    {
+      "path": "math/fonts/KaTeX_Caligraphic-Regular.woff2",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 6908,
+      "sha256": "5d53e70ad607c2352162dec9e0923fb54ecdafaccbf604cd8dcf7d00facb989b"
+    },
+    {
+      "path": "math/fonts/KaTeX_Fraktur-Bold.woff2",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 11348,
+      "sha256": "74444efd593c005e3f4573b44524704c0af0a937fe911cca9e94068d0d140d3f"
+    },
+    {
+      "path": "math/fonts/KaTeX_Fraktur-Regular.woff2",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 11316,
+      "sha256": "51814d270d06ff0255dba0799994fa4d8c84d11f09951d47595f4abb1f3602dc"
+    },
+    {
+      "path": "math/fonts/KaTeX_Main-Bold.woff2",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 25324,
+      "sha256": "0f60d1b897938ec918c8ce073092411baf9438f6739465693ff18b0f9d20b021"
+    },
+    {
+      "path": "math/fonts/KaTeX_Main-BoldItalic.woff2",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 16780,
+      "sha256": "99cd42a3c072d918f2f44984a807cf7aa16e13545fd0875fc07c6c65f99e715b"
+    },
+    {
+      "path": "math/fonts/KaTeX_Main-Italic.woff2",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 16988,
+      "sha256": "97479ca6cce906abc961ecac96faa5f9ca2e61b8e7670d475826bcdee9a7c267"
+    },
+    {
+      "path": "math/fonts/KaTeX_Main-Regular.woff2",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 26272,
+      "sha256": "c2342cd8b869e01752a9321dc17213fc40d4d04c79688c1d43f2cf316abd7866"
+    },
+    {
+      "path": "math/fonts/KaTeX_Math-BoldItalic.woff2",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 16400,
+      "sha256": "dc47344dbb6cb5b655c8460d561f4df5f501b90c804ad3c6cec65fe322351ab1"
+    },
+    {
+      "path": "math/fonts/KaTeX_Math-Italic.woff2",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 16440,
+      "sha256": "7af58c5ec8f132a2ddde9027c6d7814decce4d3b822a11192a42a20e2e973264"
+    },
+    {
+      "path": "math/fonts/KaTeX_SansSerif-Bold.woff2",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 12216,
+      "sha256": "e99ae51144bf1232efcc1bfe5add36262c6866b0faab24fa75740e1b98577a62"
+    },
+    {
+      "path": "math/fonts/KaTeX_SansSerif-Italic.woff2",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 12028,
+      "sha256": "00b26ac825e2095056396e0553b8ac26d3f8ad158c3826e28b4c45b385c4714a"
+    },
+    {
+      "path": "math/fonts/KaTeX_SansSerif-Regular.woff2",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 10344,
+      "sha256": "68e8c73ef42afd3ccec58bf0fba302cce448938e7fc020a5e31f8a952eee1342"
+    },
+    {
+      "path": "math/fonts/KaTeX_Script-Regular.woff2",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 9644,
+      "sha256": "036d4e95149b69ff9bcc0cd55771efeb25ffa3947293e69acd78d5ac328c684b"
+    },
+    {
+      "path": "math/fonts/KaTeX_Size1-Regular.woff2",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 5468,
+      "sha256": "6b47c40166b6dbe21a5dfca7718413f2147fd2399be1ba605d8ad39cedf25dfe"
+    },
+    {
+      "path": "math/fonts/KaTeX_Size2-Regular.woff2",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 5208,
+      "sha256": "d04c54219f9eaec6d4d4fd42dfb28785975a4794d6b2fc71e566b9cd6db842dd"
+    },
+    {
+      "path": "math/fonts/KaTeX_Size3-Regular.woff2",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 3624,
+      "sha256": "73d591271b1604960cb10bb90fee021670af7297017e0e98480b332d11f51995"
+    },
+    {
+      "path": "math/fonts/KaTeX_Size4-Regular.woff2",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 4928,
+      "sha256": "a4af7d414440a1c1790825cfb700cf9cf43b0f2c4b04f0ebc523011ad9853ec0"
+    },
+    {
+      "path": "math/fonts/KaTeX_Typewriter-Regular.woff2",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 13568,
+      "sha256": "71d517d67827787cfabdf186914cc3358eda539e37931941f2b2fd4a21f68c0b"
+    },
+    {
+      "path": "presentation.js",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 547,
+      "sha256": "fb72d3a7b57259d4b0f131d553ea7d92f2791d044a5dc657abb8428ed638d310"
+    },
+    {
+      "path": "publication.css",
+      "status": null,
+      "content_type": "local-file",
+      "bytes": 7502,
+      "sha256": "1c960c1d0c70772cccf667cdedb53188255230592eee2b8d862008ac943366cb"
+    }
+  ]
+}

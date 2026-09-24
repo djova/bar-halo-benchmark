@@ -7,7 +7,7 @@ import argparse,hashlib,json,re,shutil,subprocess,os
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2]
 W=ROOT/'web';SRC=ROOT/'research/publication';M=SRC/'mnras'
-EXPORT='2026-09-24.2'; SCIENCE_RELEASE='2026-09-24.1'
+EXPORT='2026-09-24.3'; SCIENCE_RELEASE='2026-09-24.2'
 BASE='https://djova.ca/galaxy-bar/'
 def load(name):return json.loads((W/name).read_text())
 def raw(s):return '\n\n```{=latex}\n'+s+'\n```\n\n'
@@ -26,6 +26,8 @@ ratio=abs(next(r['response']for r in pop if r['population']=='gaussian'and r['ti
 source=source.replace('{{RATIO}}',f'{ratio:.6f}')
 abstract=source.split('## Abstract {#abstract}\n\n',1)[1].split('\n[Learn the foundations]',1)[0].replace('\n\n',' ')
 body='## '+source.split('\n## ',2)[2]
+support=body.split('## Supporting evidence and earlier studies {#models}',1)[1].split('## Data, code and correspondence {#reproduction}',1)[0]
+body=body.split('## Supporting evidence and earlier studies {#models}',1)[0]
 body=body.replace('{{MODELS}}','\n\n'.join('**'+m['id']+' — '+m['title']+'.** '+m['evolves'].rstrip('.')+'. '+m['supports']+'. '+m['excludes']+'. Clock: '+m['clock']+'.'for m in load('models.json')['models']))
 for c in claims['claims']:
  body=body.replace('{{CLAIM:'+c['id']+'}}','**'+c['id']+'.** '+c['wording'])
@@ -37,21 +39,22 @@ body=body.replace('{{POPULATION_TABLE}}',raw(table(
 # Move full numeric records to appendices; use existing figures as the main display.
 body=body.replace('{{ACCURACY_TABLE}}',r'Complete values are in Appendix `\ref{app-accuracy}`{=latex}; the interactive article provides the downloadable unrounded records.')
 body=body.replace('{{COST_TABLE}}',r'Complete values are in Appendix `\ref{app-cost}`{=latex}, with paired intervals for every recorded endpoint.')
-body=body.replace('### Interrogate the decision {#interactive-decision}\n\n{{ACCURACY_INTERACTIVE}}', '[Interrogate a recorded accuracy decision in the interactive article](paper.html#interactive-decision).')
-body=body.replace('{{COST_INTERACTIVE}}','[Explore matched estimator costs in the interactive article](paper.html#estimator).')
+body=body.replace('### Explore the error calculation {#interactive-decision}\n\n{{ACCURACY_INTERACTIVE}}', '')
+body=body.replace('{{COST_INTERACTIVE}}','')
 body=body.replace('{{REVISION}}','This PDF export, '+EXPORT+', typesets the scientific article '+SCIENCE_RELEASE+'. It carries the editorial revision in both media; the numerical evidence and historical criteria are unchanged. Earlier releases remain archived. The [interactive article](paper.html) provides the original navigation, selection controls and versioned claim registry.')
 body=body.replace('{{BIBLIOGRAPHY}}','')
 # Cite scholarly sources through the MNRAS author-year bibliography.
-cites={'https://arxiv.org/abs/2208.03855':'Hamilton2023','https://arxiv.org/abs/2305.00022':'Chiba2023','https://doi.org/10.1111/j.1365-2966.2006.10506.x':'OgilvieLubow2006','https://arxiv.org/pdf/2010.07321':'Elbers2021','https://arxiv.org/abs/2511.11804v2':'Dattathri2026'}
+cites={'https://arxiv.org/abs/2208.03855':'Hamilton2023','https://arxiv.org/abs/2305.00022':'Chiba2023','https://doi.org/10.1111/j.1365-2966.2006.10506.x':'OgilvieLubow2006','https://arxiv.org/pdf/2010.07321':'Elbers2021','https://arxiv.org/abs/2511.11804v2':'Dattathri2026','https://arxiv.org/abs/1802.08239':'Vasiliev2019'}
 for url,key in cites.items():
- body=re.sub(r'\[[^\]]+\]\('+re.escape(url)+r'\)',lambda m:'`\\citet{'+key+'}`{=latex}'+(' (sections 2–2.3)'if key=='Elbers2021'else''),body)
+ body=re.sub(r'\(\[[^\]]+\]\('+re.escape(url)+r'\)\)',lambda m:'`\\citep{'+key+'}`{=latex}',body)
+ body=re.sub(r'\[[^\]]+\]\('+re.escape(url)+r'\)',lambda m:'`\\citet{'+key+'}`{=latex}',body)
 # Preserve equations and scientific identifiers, while making them native LaTeX.
 def equations(s):
  s=re.sub(r'<div class="equation-label" id="([^"]+)">.*?</div>\s*```math\n(.*?)\n```',lambda m:raw('\\begin{equation}\\label{'+m[1]+'}\n'+m[2]+'\n\\end{equation}'),s,flags=re.S)
  return s.replace('δf',r'\(\delta f\)').replace('η',r'\(\eta\)')
 body=equations(body).replace('(sections 2–2.3), use','(sections 2–2.3) use')
 # Figure caption is the actual article caption, not a newly inferred interpretation.
-figs=[('POP','population-comparison','F-POP-01'),('ACC','population-accuracy','F-ACC-01'),('COST','estimator-efficiency','F-COST-01')]
+figs=[('POP','population-comparison','F-POP-01'),('GRAD','population-gradient-explanation','F-GRAD-01'),('ACC','population-accuracy','F-ACC-01'),('COST','estimator-efficiency','F-COST-01')]
 def pandoc(text):
  return subprocess.check_output([a.pandoc,'--from=markdown+tex_math_single_backslash+raw_attribute','--to=latex','--top-level-division=section','--wrap=none'],input=text,text=True)
 def links(s):
@@ -59,10 +62,12 @@ def links(s):
 for key,filename,fid in figs:
  cap=re.search(r'\*\*Figure '+fid+r'\.\*\* (.*?)(?:\n\n|$)',body,re.S).group(1)
  body=re.sub(r'\*\*Figure '+fid+r'\.\*\* .*?(?:\n\n|$)','',body,flags=re.S)
+ for _,_,other_id in figs:cap=cap.replace('Figure '+other_id,'Figure `\\ref{'+other_id+'}`{=latex}')
  cap=cap.replace('[Complete table](#table-accuracy)',r'Table `\ref{tab-acc}`{=latex}').replace('[All recorded values](#table-cost)',r'Tables `\ref{tab-cost}`{=latex} and `\ref{tab-consistency}`{=latex}')
  cap=pandoc(links(equations(cap))).strip()
  shutil.copyfile(W/'diagnostics/population-accuracy'/(filename+'.png'),build/(filename+'.png'))
- body=body.replace('{{FIG-'+key+'}}',raw('\\begin{figure*}\n\\centering\n\\includegraphics[width=\\textwidth]{'+filename+'.png}\n\\caption{'+fid+'. '+cap+'}\\label{'+fid+'}\n\\end{figure*}'))
+ body=body.replace('{{FIG-'+key+'}}',raw('\\begin{figure*}\n\\centering\n\\includegraphics[width=\\textwidth]{'+filename+'.png}\n\\caption{'+cap+'}\\label{'+fid+'}\n\\end{figure*}'))
+for _,_,fid in figs:body=body.replace('Figure '+fid,'Figure `\\ref{'+fid+'}`{=latex}')
 assert '{{'not in body
 # Main source headings are level 2 under the web title; lift them one level.
 body=re.sub(r'^(#{2,}) ',lambda m:m[1][1:]+' ',body,flags=re.M)
@@ -75,6 +80,7 @@ for r in acc:
  status=('Q'if r['qualified_5_percent']else'NQ')+'/'+{'supported':'in','contradicted':'out','inconclusive':'?'}[r['independent_assessment']]
  accrows.append([label(r['population'])+(' (ref.)'if r['self_reference']else''),int(r['time']),r['cutoff'],num(r['forecast']),num(r['independent_response']),num(r['full_allowance']),num(r['target']),status])
 app=raw('\\clearpage\n\\onecolumn\n\\makeatletter\n\\def\\fps@table{!h}\n\\makeatother\n\\appendix\n\\renewcommand{\\theHtable}{\\thesection.\\arabic{table}}\n\\section{Complete accuracy records}\\label{app-accuracy}')
+app+='The earlier population-forecast study used a different rule, the larger of 0.0002 and 5 per cent of the forecast. Its 24 original passes remain recorded; two early Gaussian-12 comparisons remain marginal when later numerical-error estimates are combined. They are not part of the new-condition accuracy test below. The interactive evidence appendix retains their complete assessment.\n\n'
 app+='At $s=0.5$ and $\\eta=0.1$, Q/NQ denotes the advance qualification; in/out denotes whether the independent comparison supports accuracy within 5 per cent or lies outside it. The 24 rows contain twenty candidates and four halo references; they share one dynamical condition. Tables report rounded values; the public JSON/CSV retains full precision.\n'
 app+=raw(table(r'Prospective operational decisions (PA-ACC-01, PA-ACC-02). $c$ is the physical window cutoff, $\widehat{\mathcal R}$ the kernel forecast, $\mathcal R_{\rm ind}[v]$ independent evolution of the indicated population, $A$ the full allowance and $\epsilon$ the frozen absolute 5 per cent target. The in/out assessment compares the forecast with the independently evolved halo, with the supplied numerical proxy; it is not a general confidence guarantee.', 'tab-acc',['Population','$T$','$c$','$\\widehat{\\mathcal R}$','$\\mathcal R_{\\rm ind}[v]$','$A$','$\\epsilon$','Decision'],accrows,'lrrrrrrl'))
 # Intrinsic errors, not conflated with forecast discrepancy.
@@ -87,7 +93,7 @@ ack=r'''
 \section*{Acknowledgements and disclosure}
 This manuscript typesets the existing Galaxy Bar interactive publication \citep{GalaxyBar2026}. The human project maintainer is djova; analysis, software and exposition were developed with AI assistance. No institutional affiliation, independent scientific review or journal endorsement is asserted. The MNRAS class and BibTeX style are supplied by the Royal Astronomical Society under the LaTeX Project Public License.
 \section*{Data availability}
-The article, protocols, numerical records and executable benchmark are public at \url{https://github.com/djova/bar-halo-benchmark}. The interactive article is \url{https://djova.ca/galaxy-bar/paper.html}. Scientific evidence is pinned by publication release 2026-09-24.1. This PDF is export 2026-09-24.2; it does not report a new simulation. Complete derivations and data definitions are linked from the article. The benchmark's MIT licence applies as recorded there; third-party works retain their own terms.
+The article, protocols, numerical records and executable benchmark are public at \url{https://github.com/djova/bar-halo-benchmark}. The interactive article is \url{https://djova.ca/galaxy-bar/paper.html}. Scientific evidence is pinned by publication release 2026-09-24.2. This PDF is export 2026-09-24.3; it does not report a new simulation. Complete derivations and data definitions are linked from the article. The benchmark's MIT licence applies as recorded there; third-party works retain their own terms.
 \bibliographystyle{mnras}
 \bibliography{references}
 '''

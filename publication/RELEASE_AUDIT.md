@@ -1,3 +1,44 @@
+# Substantive editorial repair — article 2026-09-24.2, PDF 2026-09-24.3
+
+The previous revision retained too much audit history and procedural language in
+place of a clear physical argument. This release rewrites the introduction,
+derives the local Hamiltonian and scaled equations, states the initial bar
+preparation, explains the measured transfer, and shows how population gradients
+change its sign. The finite-displacement estimator now includes its phase-average
+argument. The PDF separates the main scientific narrative from the website's
+model registry and historical records.
+
+The [editorial repair record](web/diagnostics/communication/EDITORIAL_REPAIR_2026-09-24.md)
+identifies the earlier writing failures and the changes to the communication
+skill. These are our editorial judgments; they do not claim an individual
+researcher's style, approval or endorsement. No private correspondence is included.
+
+A fourth figure combines previously published population gradients, primitive
+kernels and signed contributions. Its generator is supplied in
+`scripts/publication/gradient_figure.py`, and its source checksum and arithmetic
+checks are in `web/diagnostics/population-accuracy/gradient-figure-receipt.json`.
+No orbit or distribution evolution was rerun for this release. The population,
+accuracy and cost operands, old principal figures and previous releases retain
+their scientific content. The PDF includes ten pages, four figures and seven
+bibliography entries; its complete LaTeX source is in `../manuscript/`.
+
+The clean publication is built and its current-release consistency checks are
+recorded below. These establish delivery, arithmetic consistency and export
+fidelity, not writing quality, physical validity or outside scientific review.
+The [standalone-build receipt](release-checks/editorial-repair-public-build.json)
+records reconstruction of all 24 accuracy rows, 66 claim pointers and 186 numeric
+cells in each article representation, with 97 manifest artifacts checked. The
+[packaging receipt](release-checks/editorial-repair-package.json) records unchanged
+population/accuracy/cost rows and three original figure files, matching manuscript
+inputs and output hashes, and a scoped scan for private operational paths or
+correspondence. The PDF SHA-256 is
+`b7ec4733c2bd7d80c174f979e28c7c1ec92a1b8e22296d6db2593aa2d499606b`.
+
+Canonical access remains client-dependent; the pinned GitHub mirror remains
+the reading fallback. Prior release records follow unchanged.
+
+---
+
 # Editorial release 2026-09-24.1
 
 The article and PDF export 2026-09-24.2 share a revised narrative. A 230-record

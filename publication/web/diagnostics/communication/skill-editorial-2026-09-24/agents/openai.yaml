@@ -1,0 +1,4 @@
+interface:
+  display_name: "Interactive Astrophysics Research"
+  short_description: "Explain astronomy through interactive evidence"
+  default_prompt: "Use $astrophysics-interactive-research to turn these results into an intuitive interactive research publication with inspectable evidence."

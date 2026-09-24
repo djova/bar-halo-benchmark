@@ -1,0 +1,52 @@
+{
+  "source": "web/data/population-response/publication.json",
+  "source_sha256": "6cdd20f22dcd4d45b081116041a3f3b8092114f4e7f72243b49c386a9e6da105",
+  "condition": {
+    "s": 0.25,
+    "eta": 0.1,
+    "T": 10.0,
+    "plateau": 24,
+    "cutoff": 40
+  },
+  "data_origin": "Previously released coarsened primitive-kernel cells, population gradients and exact sums of fine-cell contributions; no simulation, fitting, smoothing or new numerical experiment.",
+  "checks": {
+    "halo": {
+      "recorded_response": -0.003900675861719478,
+      "full_gradient_sum": -0.0039006758565394667,
+      "inside_radius_4": -0.004835031845811654,
+      "outside_radius_4": 0.0009343559892721877,
+      "maximum_cumulative_residual": 2.6020852139652106e-18,
+      "pointwise_95_interval": [
+        -0.003962858168327166,
+        -0.0038384935551117904
+      ]
+    },
+    "gaussian": {
+      "recorded_response": 0.001507646220741944,
+      "full_gradient_sum": 0.0015076462638439038,
+      "inside_radius_4": -0.011057679728964214,
+      "outside_radius_4": 0.012565325992808117,
+      "maximum_cumulative_residual": 3.469446951953614e-18,
+      "pointwise_95_interval": [
+        0.0012893988131490212,
+        0.0017258936283348666
+      ]
+    },
+    "exponential": {
+      "recorded_response": -0.0038987336024384183,
+      "full_gradient_sum": -0.0038987335972475333,
+      "inside_radius_4": -0.004836108455288662,
+      "outside_radius_4": 0.0009373748580411286,
+      "maximum_cumulative_residual": 3.0357660829594124e-18,
+      "pointwise_95_interval": [
+        -0.003960950249244873,
+        -0.003836516955631963
+      ]
+    }
+  },
+  "scope": "Exact sums of recorded kernel-cell contributions, coarsened for display. Bands are pointwise95%t7 intervals of eight independent batches. Gradient bins are not initial-particle cohorts. Lines guide the eye between cells; onlyT10/T20are recorded endpoints. Independent-agreement display uses the declared2e-4 operational scale around the sampling interval, not a rigorous error bound.",
+  "figure_sha256": {
+    "population-gradient-explanation.png": "7ea38e055b466ec91a78a368fc6094bced66e0815328c983b61df34a7c6bfcd7",
+    "population-gradient-explanation.svg": "677d55532355d54579973403b162ba04c20b89f3d26ac1e5a372aecebd4a025d"
+  }
+}

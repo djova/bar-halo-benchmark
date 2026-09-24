@@ -1,10 +1,10 @@
 # Galaxy Bar
 
-> Versioned local-model methods research; release 2026-09-24.1; not externally reviewed.
+> Versioned local-model methods research; release 2026-09-24.2; not externally reviewed.
 
 - [Complete article](https://djova.ca/galaxy-bar/paper.md)
-- [Pinned GitHub fallback article](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.1/publication/web/paper.md)
-- [Pinned fallback agent guide and link rules](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.1/publication/web/agents.md)
+- [Pinned GitHub fallback article](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.2/publication/web/paper.md)
+- [Pinned fallback agent guide and link rules](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.2/publication/web/agents.md)
 - [Models and limitations](https://djova.ca/galaxy-bar/claims.json)
 - [Evidence manifest](https://djova.ca/galaxy-bar/manifest.json)
 - [Anonymous agent guide](https://djova.ca/galaxy-bar/agents.md)

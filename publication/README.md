@@ -31,33 +31,34 @@ their authors' terms; no blanket third-party license is granted here.
 This is AI-assisted work, maintained by djova, and not externally reviewed.
 Public issues are the criticism route; cite a claim or dataset ID.
 
-Release 2026-09-24.1 revises the scientific exposition around the population
-approximation, its mechanism and the operational accuracy decision. A documented
-literature review updates the reusable writing skill. The canonical article and
-MNRAS PDF share this narrative. Numerical evidence and earlier releases are unchanged.
-Interactive controls explicitly require the canonical site; static values, the
-protocol and three principal figures retain pinned mirror URLs. The [reading audit and access fallback](RELEASE_AUDIT.md) documents the
-preceding release's checks and the generic-client retrieval limitation.
+Release 2026-09-24.2 rewrites the physical argument, derives the local model,
+clarifies the initial forcing and tabulated population, and adds a recorded-data
+figure explaining signed cancellation. The manuscript shares the scientific prose
+while keeping website navigation and audit history out of its main text. The
+scientific outputs and earlier release files are unchanged. Interactive controls
+require the canonical site; static values, protocols and four principal figures
+retain pinned mirror URLs. RELEASE_AUDIT.md records the release checks and
+client-dependent access limitations.
 
 ## Anonymous fallback without a custom user agent
 
 Canonical-site access remains partial across automated clients. No private
 connector or execution is required for these pinned public files:
 
-- [Article](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.1/publication/web/paper.md) and [agent guide/link-resolution rules](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.1/publication/web/agents.md)
-- [Claims](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.1/publication/web/claims.json) and [manifest](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.1/publication/web/manifest.json)
-- [Population values](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.1/publication/web/results/populations.json), [accuracy operands](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.1/publication/web/results/accuracy.json), [costs](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.1/publication/web/results/cost.json)
-- [Estimator derivation](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.1/publication/web/methods/CUMULATIVE_IDENTITY.md) and [frozen protocol](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.1/publication/web/protocols/ACCURACY_PLAN.md)
+- [Article](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.2/publication/web/paper.md) and [agent guide/link-resolution rules](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.2/publication/web/agents.md)
+- [Claims](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.2/publication/web/claims.json) and [manifest](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.2/publication/web/manifest.json)
+- [Population values](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.2/publication/web/results/populations.json), [accuracy operands](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.2/publication/web/results/accuracy.json), [costs](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.2/publication/web/results/cost.json)
+- [Estimator derivation](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.2/publication/web/methods/CUMULATIVE_IDENTITY.md) and [frozen protocol](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.2/publication/web/protocols/ACCURACY_PLAN.md)
 - [Pinned scientific source](https://github.com/djova/bar-halo-benchmark/tree/cdb30b5b2f350d2f3de6831995b83f281fe2974e)
 
-Relative paths inside JSON resolve against `https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.1/publication/web/`; array paths marked
+Relative paths inside JSON resolve against `https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.2/publication/web/`; array paths marked
 `path_in_public_package` resolve against the scientific-source revision instead.
 Markdown links marked historical website-only need the canonical site.
-The mirror contains the central evidence and all three principal figure images.
+The mirror contains the central evidence and all four principal figure images.
 Interactive links require the canonical site; adjacent static-value links remain
 in this mirror. Historical explorers are not all included.
 
-To check supplied records without simulating: `python3 scripts/publication/verify_publication.py --origin web --expected-release 2026-09-24.1`.
+To check supplied records without simulating: `python3 scripts/publication/verify_publication.py --origin web --expected-release 2026-09-24.2`.
 Mutation tests: `python3 scripts/publication/test_verify_publication.py`.
 The checker verifies its stated arithmetic, pointers and manifest; it does not
 certify the error proxies or independently reproduce physical evolution.

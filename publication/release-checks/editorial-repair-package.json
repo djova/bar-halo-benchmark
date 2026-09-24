@@ -1,0 +1,19 @@
+{
+  "article_release": "2026-09-24.2",
+  "manuscript_export": "2026-09-24.3",
+  "inspected_changed_files": 60,
+  "private_operational_paths_or_correspondence_matches": [],
+  "preserved_evidence": [
+    "populations",
+    "accuracy",
+    "cost",
+    "population-comparison",
+    "population-accuracy",
+    "estimator-efficiency"
+  ],
+  "manuscript_inputs_and_artifacts_match": true,
+  "manifest_artifacts": 7,
+  "pdf_sha256": "b7ec4733c2bd7d80c174f979e28c7c1ec92a1b8e22296d6db2593aa2d499606b",
+  "simulation_rerun": false,
+  "scope": "Source packaging, scoped text scan, prior-evidence comparison and export hash checks; not a full security audit or independent physical validation."
+}

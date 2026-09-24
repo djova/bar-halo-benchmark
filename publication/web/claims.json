@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "release": "2026-09-24.1",
+  "release": "2026-09-24.2",
   "claims": [
     {
       "id": "POP-01",
@@ -24,7 +24,7 @@
         {
           "path": "results/populations.json",
           "json_pointer": "/rows/0",
-          "sha256": "7114323cd2e200b8dde4bb3e057b82ef86d935ca571d91d82c6e56bf992a7c1c",
+          "sha256": "ca646cb5bc56735b11e6c2906695e8b6d400338fa539b07eb4cb31c3d1808e16",
           "expected_identity": {
             "id": "POP-gaussian-T10"
           }
@@ -32,7 +32,7 @@
         {
           "path": "results/populations.json",
           "json_pointer": "/rows/1",
-          "sha256": "7114323cd2e200b8dde4bb3e057b82ef86d935ca571d91d82c6e56bf992a7c1c",
+          "sha256": "ca646cb5bc56735b11e6c2906695e8b6d400338fa539b07eb4cb31c3d1808e16",
           "expected_identity": {
             "id": "POP-halo-T10"
           }
@@ -40,7 +40,7 @@
         {
           "path": "results/populations.json",
           "json_pointer": "/rows/3",
-          "sha256": "7114323cd2e200b8dde4bb3e057b82ef86d935ca571d91d82c6e56bf992a7c1c",
+          "sha256": "ca646cb5bc56735b11e6c2906695e8b6d400338fa539b07eb4cb31c3d1808e16",
           "expected_identity": {
             "id": "POP-gaussian-T20"
           }
@@ -48,21 +48,21 @@
         {
           "path": "results/populations.json",
           "json_pointer": "/rows/4",
-          "sha256": "7114323cd2e200b8dde4bb3e057b82ef86d935ca571d91d82c6e56bf992a7c1c",
+          "sha256": "ca646cb5bc56735b11e6c2906695e8b6d400338fa539b07eb4cb31c3d1808e16",
           "expected_identity": {
             "id": "POP-halo-T20"
           }
         }
       ],
       "code_version": "cdb30b5b2f350d2f3de6831995b83f281fe2974e",
-      "figure_version": "2026-09-24.1",
+      "figure_version": "2026-09-24.2",
       "uncertainty": "Eight independent seeded batches; population/time/window contractions share paths. Pointwise Student-t intervals where stated; paired numerical differences remain proxies.",
       "status": "supported_locally",
       "exclusions": [
         "LIM-01",
         "LIM-02"
       ],
-      "release": "2026-09-24.1",
+      "release": "2026-09-24.2",
       "outcome": "results/populations.json",
       "comparison": "Gaussian versus reference halo at the same density normalization, sweep, noise and endpoint",
       "protocols": [
@@ -132,14 +132,14 @@
         }
       ],
       "code_version": "cdb30b5b2f350d2f3de6831995b83f281fe2974e",
-      "figure_version": "2026-09-24.1",
+      "figure_version": "2026-09-24.2",
       "uncertainty": "Eight paired seed batches; pointwise Student-t interval of exponential-minus-halo contraction, paired timestep/window intervals and independent numerical-refinement proxies; no certified sub-0.1% accuracy.",
       "status": "supported_locally",
       "exclusions": [
         "LIM-01",
         "LIM-03"
       ],
-      "release": "2026-09-24.1",
+      "release": "2026-09-24.2",
       "outcome": "diagnostics/population-accuracy/joint-error-assessment.json",
       "comparison": "Paired slope-matched exponential minus reference-halo response",
       "protocols": [
@@ -179,7 +179,7 @@
         {
           "path": "results/accuracy.json",
           "json_pointer": "/rows/1",
-          "sha256": "03173dec778931db91affcd15efa36636c91e1c26cf679e2bc7c4af2177393da",
+          "sha256": "971d9a3798d67f584f8d48e35cacce64f11bb7484d926832582b529b1ec91cfe",
           "expected_identity": {
             "id": "ACC-exponential-T10-W40"
           }
@@ -187,7 +187,7 @@
         {
           "path": "results/accuracy.json",
           "json_pointer": "/rows/5",
-          "sha256": "03173dec778931db91affcd15efa36636c91e1c26cf679e2bc7c4af2177393da",
+          "sha256": "971d9a3798d67f584f8d48e35cacce64f11bb7484d926832582b529b1ec91cfe",
           "expected_identity": {
             "id": "ACC-gaussian512-T10-W40"
           }
@@ -195,7 +195,7 @@
         {
           "path": "results/accuracy.json",
           "json_pointer": "/rows/7",
-          "sha256": "03173dec778931db91affcd15efa36636c91e1c26cf679e2bc7c4af2177393da",
+          "sha256": "971d9a3798d67f584f8d48e35cacce64f11bb7484d926832582b529b1ec91cfe",
           "expected_identity": {
             "id": "ACC-exponential-T10-W64"
           }
@@ -203,7 +203,7 @@
         {
           "path": "results/accuracy.json",
           "json_pointer": "/rows/11",
-          "sha256": "03173dec778931db91affcd15efa36636c91e1c26cf679e2bc7c4af2177393da",
+          "sha256": "971d9a3798d67f584f8d48e35cacce64f11bb7484d926832582b529b1ec91cfe",
           "expected_identity": {
             "id": "ACC-gaussian512-T10-W64"
           }
@@ -211,7 +211,7 @@
         {
           "path": "results/accuracy.json",
           "json_pointer": "/rows/13",
-          "sha256": "03173dec778931db91affcd15efa36636c91e1c26cf679e2bc7c4af2177393da",
+          "sha256": "971d9a3798d67f584f8d48e35cacce64f11bb7484d926832582b529b1ec91cfe",
           "expected_identity": {
             "id": "ACC-exponential-T20-W40"
           }
@@ -219,7 +219,7 @@
         {
           "path": "results/accuracy.json",
           "json_pointer": "/rows/17",
-          "sha256": "03173dec778931db91affcd15efa36636c91e1c26cf679e2bc7c4af2177393da",
+          "sha256": "971d9a3798d67f584f8d48e35cacce64f11bb7484d926832582b529b1ec91cfe",
           "expected_identity": {
             "id": "ACC-gaussian512-T20-W40"
           }
@@ -227,7 +227,7 @@
         {
           "path": "results/accuracy.json",
           "json_pointer": "/rows/19",
-          "sha256": "03173dec778931db91affcd15efa36636c91e1c26cf679e2bc7c4af2177393da",
+          "sha256": "971d9a3798d67f584f8d48e35cacce64f11bb7484d926832582b529b1ec91cfe",
           "expected_identity": {
             "id": "ACC-exponential-T20-W64"
           }
@@ -235,21 +235,21 @@
         {
           "path": "results/accuracy.json",
           "json_pointer": "/rows/23",
-          "sha256": "03173dec778931db91affcd15efa36636c91e1c26cf679e2bc7c4af2177393da",
+          "sha256": "971d9a3798d67f584f8d48e35cacce64f11bb7484d926832582b529b1ec91cfe",
           "expected_identity": {
             "id": "ACC-gaussian512-T20-W64"
           }
         }
       ],
       "code_version": "cdb30b5b2f350d2f3de6831995b83f281fe2974e",
-      "figure_version": "2026-09-24.1",
+      "figure_version": "2026-09-24.2",
       "uncertainty": "Eight kernel batches; simultaneous Student-t/Bonferroni envelope and paired refinement proxies. Independent deterministic evolution adds numerical proxies, not a new sampling interval.",
       "status": "supported_locally",
       "exclusions": [
         "LIM-03",
         "LIM-04"
       ],
-      "release": "2026-09-24.1",
+      "release": "2026-09-24.2",
       "outcome": "results/accuracy.json",
       "comparison": "Advance full allowance versus frozen 5% target; approximate kernel forecast versus independently evolved reference halo",
       "protocols": [
@@ -279,7 +279,7 @@
         {
           "path": "results/accuracy.json",
           "json_pointer": "/rows/4",
-          "sha256": "03173dec778931db91affcd15efa36636c91e1c26cf679e2bc7c4af2177393da",
+          "sha256": "971d9a3798d67f584f8d48e35cacce64f11bb7484d926832582b529b1ec91cfe",
           "expected_identity": {
             "id": "ACC-gaussian128-T10-W40"
           }
@@ -287,7 +287,7 @@
         {
           "path": "results/accuracy.json",
           "json_pointer": "/rows/10",
-          "sha256": "03173dec778931db91affcd15efa36636c91e1c26cf679e2bc7c4af2177393da",
+          "sha256": "971d9a3798d67f584f8d48e35cacce64f11bb7484d926832582b529b1ec91cfe",
           "expected_identity": {
             "id": "ACC-gaussian128-T10-W64"
           }
@@ -295,7 +295,7 @@
         {
           "path": "results/accuracy.json",
           "json_pointer": "/rows/16",
-          "sha256": "03173dec778931db91affcd15efa36636c91e1c26cf679e2bc7c4af2177393da",
+          "sha256": "971d9a3798d67f584f8d48e35cacce64f11bb7484d926832582b529b1ec91cfe",
           "expected_identity": {
             "id": "ACC-gaussian128-T20-W40"
           }
@@ -303,7 +303,7 @@
         {
           "path": "results/accuracy.json",
           "json_pointer": "/rows/22",
-          "sha256": "03173dec778931db91affcd15efa36636c91e1c26cf679e2bc7c4af2177393da",
+          "sha256": "971d9a3798d67f584f8d48e35cacce64f11bb7484d926832582b529b1ec91cfe",
           "expected_identity": {
             "id": "ACC-gaussian128-T20-W64"
           }
@@ -346,14 +346,14 @@
         }
       ],
       "code_version": "cdb30b5b2f350d2f3de6831995b83f281fe2974e",
-      "figure_version": "2026-09-24.1",
+      "figure_version": "2026-09-24.2",
       "uncertainty": "Shared eight-batch kernel; simultaneous nominal Student-t/Bonferroni envelope plus paired timestep/mesh proxies. Intrinsic errors use paired deterministic refinement changes, not a pointwise sampling CI.",
       "status": "supported_locally",
       "exclusions": [
         "LIM-03",
         "LIM-04"
       ],
-      "release": "2026-09-24.1",
+      "release": "2026-09-24.2",
       "outcome": "diagnostics/population-accuracy/conservatism-explanation.json",
       "comparison": "Gaussian128 absolute-gradient allowance versus target and independently evolved intrinsic population error",
       "protocols": [
@@ -387,7 +387,7 @@
         {
           "path": "results/cost.json",
           "json_pointer": "/rows/0",
-          "sha256": "f67a1fbdb7dc1f6a9ec3e07edb5dfb63a8468213a048dcb2e2a32a735a21520a",
+          "sha256": "fbe5aed978d23613ed8d130ea5ceedb6125239ad970da61f73d8c78e4fe71a04",
           "expected_identity": {
             "id": "COST-halo-s0.0-T10"
           }
@@ -395,7 +395,7 @@
         {
           "path": "results/cost.json",
           "json_pointer": "/rows/5",
-          "sha256": "f67a1fbdb7dc1f6a9ec3e07edb5dfb63a8468213a048dcb2e2a32a735a21520a",
+          "sha256": "fbe5aed978d23613ed8d130ea5ceedb6125239ad970da61f73d8c78e4fe71a04",
           "expected_identity": {
             "id": "COST-stress0.015625-s0.0-T10"
           }
@@ -403,7 +403,7 @@
         {
           "path": "results/cost.json",
           "json_pointer": "/rows/6",
-          "sha256": "f67a1fbdb7dc1f6a9ec3e07edb5dfb63a8468213a048dcb2e2a32a735a21520a",
+          "sha256": "fbe5aed978d23613ed8d130ea5ceedb6125239ad970da61f73d8c78e4fe71a04",
           "expected_identity": {
             "id": "COST-halo-s0.0-T20"
           }
@@ -411,7 +411,7 @@
         {
           "path": "results/cost.json",
           "json_pointer": "/rows/11",
-          "sha256": "f67a1fbdb7dc1f6a9ec3e07edb5dfb63a8468213a048dcb2e2a32a735a21520a",
+          "sha256": "fbe5aed978d23613ed8d130ea5ceedb6125239ad970da61f73d8c78e4fe71a04",
           "expected_identity": {
             "id": "COST-stress0.015625-s0.0-T20"
           }
@@ -419,7 +419,7 @@
         {
           "path": "results/cost.json",
           "json_pointer": "/rows/12",
-          "sha256": "f67a1fbdb7dc1f6a9ec3e07edb5dfb63a8468213a048dcb2e2a32a735a21520a",
+          "sha256": "fbe5aed978d23613ed8d130ea5ceedb6125239ad970da61f73d8c78e4fe71a04",
           "expected_identity": {
             "id": "COST-halo-s0.25-T10"
           }
@@ -427,7 +427,7 @@
         {
           "path": "results/cost.json",
           "json_pointer": "/rows/17",
-          "sha256": "f67a1fbdb7dc1f6a9ec3e07edb5dfb63a8468213a048dcb2e2a32a735a21520a",
+          "sha256": "fbe5aed978d23613ed8d130ea5ceedb6125239ad970da61f73d8c78e4fe71a04",
           "expected_identity": {
             "id": "COST-stress0.015625-s0.25-T10"
           }
@@ -435,7 +435,7 @@
         {
           "path": "results/cost.json",
           "json_pointer": "/rows/18",
-          "sha256": "f67a1fbdb7dc1f6a9ec3e07edb5dfb63a8468213a048dcb2e2a32a735a21520a",
+          "sha256": "fbe5aed978d23613ed8d130ea5ceedb6125239ad970da61f73d8c78e4fe71a04",
           "expected_identity": {
             "id": "COST-halo-s0.25-T20"
           }
@@ -443,20 +443,20 @@
         {
           "path": "results/cost.json",
           "json_pointer": "/rows/23",
-          "sha256": "f67a1fbdb7dc1f6a9ec3e07edb5dfb63a8468213a048dcb2e2a32a735a21520a",
+          "sha256": "fbe5aed978d23613ed8d130ea5ceedb6125239ad970da61f73d8c78e4fe71a04",
           "expected_identity": {
             "id": "COST-stress0.015625-s0.25-T20"
           }
         }
       ],
       "code_version": "cdb30b5b2f350d2f3de6831995b83f281fe2974e",
-      "figure_version": "2026-09-24.1",
+      "figure_version": "2026-09-24.2",
       "uncertainty": "Eight paired batches per sweep; whole-batch bootstrap intervals and distinct conditional/between-batch estimates; one pointwise consistency flag retained.",
       "status": "supported_locally",
       "exclusions": [
         "LIM-06"
       ],
-      "release": "2026-09-24.1",
+      "release": "2026-09-24.2",
       "outcome": "results/cost.json",
       "comparison": "Raw versus cumulative-remainder estimators on matched paths, weights and accounted workload",
       "physical_control": "Each estimator targets the same noise-minus-smooth bar impulse; this is separate from the estimator comparison",
@@ -721,13 +721,13 @@
         }
       ],
       "code_version": "cdb30b5b2f350d2f3de6831995b83f281fe2974e",
-      "figure_version": "2026-09-24.1",
+      "figure_version": "2026-09-24.2",
       "uncertainty": "Historical paired pointwise prediction-discrepancy intervals and summed numerical-refinement proxies. Original absolute-floor decisions remain unchanged; expanded proxies are not rigorous bounds.",
       "status": "marginal",
       "exclusions": [
         "LIM-03"
       ],
-      "release": "2026-09-24.1",
+      "release": "2026-09-24.2",
       "outcome": "diagnostics/population-accuracy/joint-error-assessment.json",
       "comparison": "Historical operational intervals versus original allowance, then expanded intervals including numerical proxies versus that same allowance",
       "protocols": [
@@ -774,13 +774,13 @@
         }
       ],
       "code_version": "cdb30b5b2f350d2f3de6831995b83f281fe2974e",
-      "figure_version": "2026-09-24.1",
+      "figure_version": "2026-09-24.2",
       "uncertainty": "Measured discrepancy precision exceeded the bounded cost allowance; unresolved agreement is not falsification.",
       "status": "unresolved",
       "exclusions": [
         "LIM-05"
       ],
-      "release": "2026-09-24.1",
+      "release": "2026-09-24.2",
       "outcome": "diagnostics/population-response/halo-pilot.json",
       "comparison": "Predeclared reduced halo-slice forecast versus weighted prescribed-field Cartesian response",
       "physical_control": "Matched imposed-noise and smooth responses in each description",
@@ -810,13 +810,13 @@
         }
       ],
       "code_version": "cdb30b5b2f350d2f3de6831995b83f281fe2974e",
-      "figure_version": "2026-09-24.1",
+      "figure_version": "2026-09-24.2",
       "uncertainty": "Deterministic array equality reported by the project under identical seeds/configuration; no sampling interval or new independent physical sample.",
       "status": "supported_locally",
       "exclusions": [
         "LIM-08"
       ],
-      "release": "2026-09-24.1",
+      "release": "2026-09-24.2",
       "outcome": "diagnostics/population-accuracy/accuracy-reproduction.json",
       "comparison": "Original versus reproduced arrays under the same inputs, seeds and numerical configuration",
       "physical_control": null,
@@ -868,13 +868,13 @@
         "scope": "Historical galaxy/catalogue outputs; not reproduced by the reduced benchmark revision",
         "provenance": "diagnostics/followup/error-budget.json#/source_sha256"
       },
-      "figure_version": "2026-09-24.1",
+      "figure_version": "2026-09-24.2",
       "uncertainty": "Individual paired sensitivities; not independent Gaussian uncertainty.",
       "status": "supported_locally",
       "exclusions": [
         "LIM-08"
       ],
-      "release": "2026-09-24.1",
+      "release": "2026-09-24.2",
       "outcome": "diagnostics/followup/error-budget.json",
       "comparison": "Paired force-opening settings under the original endpoint sensitivity criterion",
       "physical_control": "Galaxy runs with matched initial conditions and other settings",
@@ -907,13 +907,13 @@
         "scope": "Historical galaxy/catalogue outputs; not reproduced by the reduced benchmark revision",
         "provenance": "data/manifest.json"
       },
-      "figure_version": "2026-09-24.1",
+      "figure_version": "2026-09-24.2",
       "uncertainty": "Population spread is not an error bar on one model. Aperture and measurement differences remain.",
       "status": "supported_locally",
       "exclusions": [
         "No observational validation of the local resonance model."
       ],
-      "release": "2026-09-24.1",
+      "release": "2026-09-24.2",
       "outcome": "data/observational-summary.json",
       "comparison": "Descriptive selected-catalogue amplitude distribution; no matched intervention",
       "physical_control": null,
