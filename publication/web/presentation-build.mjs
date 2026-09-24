@@ -1,5 +1,6 @@
 // Typeset authored TeX at build time. Readers need neither a CDN nor JavaScript.
 import katex from 'katex';
+import {decorateDownload} from './paper-download.mjs';
 import {parseHTML} from 'linkedom';
 import {cp,mkdir,readFile,writeFile,readdir} from 'node:fs/promises';
 import {createRequire} from 'node:module';
@@ -21,6 +22,7 @@ export async function mathAssets(out){
 
 export function presentPage(input,file){
  const {document}=parseHTML(input);let equations=0;
+ if(file==='paper.html')decorateDownload(document);
  const typeset=(tex,display)=>{
   const node=document.createElement(display?'div':'span');node.className=display?'math-block':'math-inline';
   node.setAttribute('data-tex',tex);

@@ -29,3 +29,14 @@ main details.evidence-values .readable-table td:first-child{min-width:13rem;max-
 main details.evidence-values .readable-table th{max-width:15rem}
 @media(max-width:650px){.math-block{font-size:.85rem;padding:.8rem .5rem}.math-inline .katex{font-size:1.02em}main .readable-table th,main .readable-table td{padding:11px 12px}main details.evidence-values>summary{padding:.9rem 1rem}}
 @media print{.math-block{background:white;color:#111;overflow:visible}main details.evidence-values>*{display:block}main .evidence-table-scroll{overflow:visible}.katex{color:#111}}
+
+/* Download the same research as a typeset, versioned print companion. */
+.paper-downloads{display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap;margin:1.25rem 0 2rem;padding:1rem;border:1px solid #c6d7df;border-radius:12px;background:#f1f7fa}
+.paper-downloads .paper-pdf-button{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;flex-wrap:wrap;padding:.8rem 1rem;min-height:44px;border-radius:8px;background:#16536a;color:#fff;text-decoration:none;font-weight:700;line-height:1.35}
+.paper-downloads .paper-pdf-button:hover{background:#103f51}
+.paper-downloads a:focus-visible{outline:3px solid #ba7800;outline-offset:4px}
+.paper-downloads .pdf-format{font-size:.78em;font-weight:400}
+.paper-downloads p{flex:1 1 250px;margin:0;font-size:.85rem;line-height:1.6;color:#334c5a}
+@media(max-width:480px){.paper-downloads{gap:.8rem;padding:.8rem}.paper-downloads .paper-pdf-button{width:100%}.paper-downloads .pdf-format{flex-basis:100%;text-align:center}}
+
+.paper-downloads p a{color:#17576f;text-decoration:underline}

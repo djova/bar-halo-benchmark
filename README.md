@@ -167,3 +167,9 @@ covers the originating Galaxy Bar conversation through 24 September 2026,
 01:45 UTC. This is AI workflow accounting, separate from the scientific
 estimator-efficiency comparison. Sanitized operands and a verifier are included;
 the private session is not published.
+
+## MNRAS-format PDF
+
+The [nine-page manuscript and LaTeX source](manuscript/README.md) typeset the
+current research, figures, complete records and bibliography. This print export
+is an unreviewed companion to the interactive article, not new scientific evidence.

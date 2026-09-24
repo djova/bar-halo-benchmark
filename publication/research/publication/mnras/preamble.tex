@@ -1,0 +1,34 @@
+% Official MNRAS class and bibliography style, version 3.2.
+\documentclass[fleqn,usenatbib]{mnras}
+\usepackage{newtxtext,newtxmath}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx,amsmath,booktabs,array}
+\usepackage{microtype,lastpage}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue,
+ pdftitle={Finite-time population bias in noisy sweeping resonances},
+ pdfauthor={Galaxy Bar project; human maintainer: djova},
+ pdfsubject={Unreviewed manuscript; canonical article 2026-09-23.4; PDF export 2026-09-24.1},
+ pdfkeywords={resonances, galactic bars, population bias, numerical methods}}
+\newcommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\providecommand{\pandocbounded}[1]{#1}
+\setlength{\emergencystretch}{1.5em}
+\title[Population bias in noisy resonances]{Finite-time population bias in noisy sweeping resonances:\\
+ a response-kernel benchmark and an operational test of population approximations}
+\author[Galaxy Bar project]{Galaxy Bar project\thanks{Human project maintainer: \href{https://github.com/djova}{djova}.
+Contact and criticism: \url{https://github.com/djova/bar-halo-benchmark/issues}.
+Analysis, software and exposition were developed with AI assistance. Scientific authorship beyond the existing project role is not asserted.}}
+\date{Unreviewed manuscript, 24 September 2026. Not submitted to or accepted by MNRAS.}
+\pubyear{2026}
+% Suppress the template's fictitious journal-volume masthead in this draft.
+\makeatletter
+\renewcommand{\@journal}{\hbox{MNRAS-format manuscript \quad | \quad Unreviewed draft}}
+\let\originalheadings\ps@headings
+\renewcommand{\ps@headings}{\originalheadings
+ \def\@oddfoot{\hfill\small Unreviewed manuscript --- PDF export 2026-09-24.1}
+ \def\@evenfoot{\small Unreviewed manuscript --- PDF export 2026-09-24.1\hfil}}
+\pagestyle{headings}
+\makeatother
+\begin{document}
+\label{firstpage}
+\pagerange{\pageref{firstpage}--\pageref{LastPage}}
+\maketitle

@@ -1,0 +1,411 @@
+% Official MNRAS class and bibliography style, version 3.2.
+\documentclass[fleqn,usenatbib]{mnras}
+\usepackage{newtxtext,newtxmath}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx,amsmath,booktabs,array}
+\usepackage{microtype,lastpage}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue,
+ pdftitle={Finite-time population bias in noisy sweeping resonances},
+ pdfauthor={Galaxy Bar project; human maintainer: djova},
+ pdfsubject={Unreviewed manuscript; canonical article 2026-09-23.4; PDF export 2026-09-24.1},
+ pdfkeywords={resonances, galactic bars, population bias, numerical methods}}
+\newcommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\providecommand{\pandocbounded}[1]{#1}
+\setlength{\emergencystretch}{1.5em}
+\title[Population bias in noisy resonances]{Finite-time population bias in noisy sweeping resonances:\\
+ a response-kernel benchmark and an operational test of population approximations}
+\author[Galaxy Bar project]{Galaxy Bar project\thanks{Human project maintainer: \href{https://github.com/djova}{djova}.
+Contact and criticism: \url{https://github.com/djova/bar-halo-benchmark/issues}.
+Analysis, software and exposition were developed with AI assistance. Scientific authorship beyond the existing project role is not asserted.}}
+\date{Unreviewed manuscript, 24 September 2026. Not submitted to or accepted by MNRAS.}
+\pubyear{2026}
+% Suppress the template's fictitious journal-volume masthead in this draft.
+\makeatletter
+\renewcommand{\@journal}{\hbox{MNRAS-format manuscript \quad | \quad Unreviewed draft}}
+\let\originalheadings\ps@headings
+\renewcommand{\ps@headings}{\originalheadings
+ \def\@oddfoot{\hfill\small Unreviewed manuscript --- PDF export 2026-09-24.1}
+ \def\@evenfoot{\small Unreviewed manuscript --- PDF export 2026-09-24.1\hfil}}
+\pagestyle{headings}
+\makeatother
+\begin{document}
+\label{firstpage}
+\pagerange{\pageref{firstpage}--\pageref{LastPage}}
+\maketitle
+
+\begin{abstract}
+A local resonance calculation must specify which orbital population its dynamics act upon. We demonstrate \textbf{finite-time population-selection bias in a prescribed noisy sweeping-resonance model}, and provide a reproducible response-kernel diagnostic and variance-reduced estimator for assessing that bias. At matched central density and slope, a selected Gaussian and reference-halo weighting in the tested action slice give opposite early noise effects. Their later suppression magnitudes differ by a factor of \textbf{4.735323}. A slope-matched exponential closely follows the halo calculation. At one new sweep rate, all \textbf{eight advance 5\% qualifications} survive independent numerical comparison; four other accurate comparisons are conservatively rejected. This is a bounded computational-methods result. It does not establish a new physical torque mechanism, a complete halo torque, or a validated prediction for a live galaxy. The galaxy simulations are collisionless. The local noise model is not a calibrated SIDM collision operator. \textbf{These experiments do not test CDM against SIDM.}
+\end{abstract}
+\begin{keywords}
+methods: numerical -- galaxies: kinematics and dynamics -- galaxies: haloes
+\end{keywords}
+\section{Which physical system is being discussed?}\label{models}
+
+\textbf{GAL-LIVE --- Self-gravitating galaxy and its fixed-field controls.} Stellar and halo particles; live components alter gravity. Named frozen/static controls remove specified response. Behavior and numerical sensitivity of the specified galaxy models. No SIDM comparison; no converged universal bar-strength prediction. Clock: Gyr; kpc; solar masses.
+
+\textbf{CART-EXT --- Prescribed-field Cartesian orbits.} Test particles in an external analytical field, imposed bar and disturbances; cloud does not react collectively. Particle response to those specified external fields. Not live-halo validation. Clock: Analytical-potential model time/action.
+
+\textbf{RES-POS --- Reduced noisy resonance, positive population.} Slow action and resonant angle; constant additive action diffusion; fixed fast-action slice. Population response and numerical accuracy within this local operator. Not full-halo torque, SIDM or general confidence coverage. Clock: Dimensionless T, x and impulse B.
+
+\textbf{RES-SIGNED --- Earlier signed perturbation with reservoirs.} Signed deviation with its own reservoir/boundary conditions. Verification and response of that separate setup. Not interchangeable with positive-population results. Clock: Its documented reduced-model units.
+
+\textbf{SYNTH --- Synthetic controls.} Known stochastic laws or analytical limiting processes. Verification of estimators, coordinates or numerical algorithms. Not a new astrophysical measurement. Clock: Control-specific units.
+
+The results below concern model \textbf{RES-POS}, a positive initial population in a local resonance with imposed noise. Earlier signed-perturbation calculations with reservoirs (\textbf{RES-SIGNED}) have different initial and boundary conditions. They are retained as supporting experiments, not interchangeable resolutions of RES-POS. The original self-gravitating galaxies motivate the question; they do not validate the reduction. Even a successful prescribed-field Cartesian test would still leave collective live-halo response untested.
+
+\section{What was already known?}\label{previous-work}
+
+\citet{Hamilton2023} studied how diffusion sustains stationary resonant friction, including an initially linear local distribution. \citet{Chiba2023} studied moving-resonance feedback, compared collisionless reduced dynamics with three-dimensional calculations, and anticipated that diffusion can replenish a friction-producing gradient while erasing a trapped--untrapped density contrast. \citet{OgilvieLubow2006} treated a related migration--diffusion competition at planetary corotation in gas. Different physical assumptions prevent treating that analogue as a galactic-halo prediction.
+
+Variance reduction also has direct astrophysical predecessors. \citet{Elbers2021} (sections 2--2.3) use a \(\delta f\) decomposition to sample departures from a model neutrino distribution and explicitly formulate its control-variate interpretation. Their cosmological calculation includes gravitational feedback. Here the control instead uses a zero-integral primitive identity for accumulated bar impulse under a prescribed canonical map. This is a useful comparison of constructions and assumptions; equivalence, optimality and priority of our specific estimator remain unestablished. We do not claim the control-variate principle as new.
+
+Our addition is the quantified population counterexample, a reusable recorded response calculation, and a prospectively tested accuracy procedure with a measured estimator-cost comparison. A targeted literature review is not an exhaustive priority search. \href{https://djova.ca/galaxy-bar/diagnostics/population-accuracy/SOURCES.md}{Detailed scholarly positioning}.
+
+\section{Model, populations and observable}\label{model}
+
+The implemented frequency gradient is negative. In dimensionless slow action \(j\) and resonant angle \(\psi\), measured relative to the moving resonance:
+
+\begin{equation}\label{EQ-DYN-01}
+\begin{aligned}
+\mathrm d\psi &= -j\,\mathrm dt,\\
+\mathrm dj &= (-\sin\psi-s)\,\mathrm dt + \sqrt{2D}\,\mathrm dW_t,\\
+D &= \frac{2\eta}{\pi}.
+\end{aligned}
+\end{equation}
+
+\begin{equation}\label{EQ-OBS-01}
+B(T)=-\int_0^T\sin\psi\,\mathrm dt.
+\end{equation}
+
+The accumulated bar impulse \(B\) excludes the moving-coordinate term \(-sT\) and Brownian impulse. The path budget checks all three separately. Our response is \textbf{noise minus smooth accumulated bar-mediated transfer}, not instantaneous torque. Positive means more transfer from the imposed bar to the sampled slice. Negative means less than the smooth control, and need not mean that the bar gains angular momentum.
+
+The initial resonant phase is uniform. The reference is an analytical isochrone-halo distribution function evaluated at fixed fast actions: radial action 0.08 and vertical action 0.05, central slow action \(J_{s,0}=0.25\). Set \(x=(J_s-J_{s,0})/u\), \(u\approx0.0005633691\). The initial logarithmic slope is \(g\approx-0.0047493212\). Before the common compact window:
+
+\begin{equation}\label{EQ-POP-01}
+\begin{aligned}
+w_{\mathrm H}(x)&=\frac{f_{\mathrm{halo}}(J_s;J_r,J_z)}{f_{\mathrm{ref}}},\\
+w_{\mathrm E}(x)&=\exp(gx),\\
+w_{\sigma}(x)&=\exp\!\left(gx-\frac{x^2}{2\sigma^2}\right).
+\end{aligned}
+\end{equation}
+
+Central density and slope are held fixed; populations are \textbf{not renormalized to unit mass}. The primary window has plateau 24 and cutoff 40; the wider comparison has plateau 48 and cutoff 64 in x. Moving this physical taper differs from enlarging the solver domain or auxiliary sampling support. These are conditional contributions from one slice, not integrals over an entire halo.
+
+All response tables display dimensionless \(\int wK_B\,\mathrm dx\). Multiplication by \(4u^2(2\pi)^3 f_{\mathrm{ref}}\approx2.7022892\times10^{-6}\) gives the angular-momentum contribution \textbf{per unit fast-action area} in the analytical model's units. The local time T is dimensionless; it is not the original galaxy's Gyr clock. T = 20 is about 3.18 reference librations. \href{https://djova.ca/galaxy-bar/population-methods.html}{Exact calibration, windows and numerical algorithms}.
+
+\section{Population choice changes the finite-time answer}\label{population-result}
+
+\textbf{POP-01.} At s=0.25, Gaussian and reference-halo weighting in the tested slice have opposite T=10 responses; their T=20 suppression magnitudes differ by 4.735323.
+
+\begin{figure*}
+\centering
+\includegraphics[width=\textwidth]{population-comparison.png}
+\caption{F-POP-01. Sweep s = 0.25, imposed noise \(\eta\) = 0.1, cutoff 40, two recorded endpoints. Intervals are pointwise 95\% Student-t intervals across eight independent trajectory batches, with paired controls retained separately. The early signs survive the declared timestep/window allowances. The late ratio is conditional on this population, slice and duration. \href{https://djova.ca/galaxy-bar/results/populations.json}{Complete values and numerical controls}; \href{https://djova.ca/galaxy-bar/population-response.html\#population-explorer}{interactive weighting}. Analysis version and checksums: \href{https://djova.ca/galaxy-bar/datasets.json}{DS-POP}.}\label{F-POP-01}
+\end{figure*}
+
+\begin{table*}
+\centering
+\caption{Original population comparison (F-POP-01). Dimensionless noise-minus-smooth accumulated transfer at $s=0.25$, $\eta=0.1$ and cutoff 40. Pointwise 95 per cent intervals use eight independent batches. All six rows pass the declared numerical/window checks. Central density is fixed; weights are not normalized to unit mass.}\label{tab-pop}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrr}
+\toprule
+Population & $T$ & $\mathcal R$ & 95 per cent lower & 95 per cent upper \\
+\midrule
+Gaussian $\sigma=8$ & 10 & 0.00150764622 & 0.00128939881 & 0.00172589363 \\
+Halo & 10 & -0.00390067586 & -0.00396285817 & -0.00383849356 \\
+Exponential & 10 & -0.0038987336 & -0.00396095025 & -0.00383651696 \\
+Gaussian $\sigma=8$ & 20 & -0.161949145 & -0.162575063 & -0.161323226 \\
+Halo & 20 & -0.0342002314 & -0.034326595 & -0.0340738678 \\
+Exponential & 20 & -0.0342234835 & -0.0343499518 & -0.0340970151 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+The exponential's point differences are about 0.050\% and 0.068\%. These are not certified sub-0.1\% accuracies. The paired sampling and numerical assessment is in \href{https://djova.ca/galaxy-bar/diagnostics/population-accuracy/joint-error-assessment.json}{the difference record}. Matching a slope at one point can impose the wrong curvature; preserving the gradient over the sensitive region can work well.
+
+At T = 10, the Gaussian's gradient-coordinate contributions inside and outside radius four are approximately \(-0.011058+0.012565=+0.001508\). For the halo they are \(-0.004835+0.000934=-0.003901\). Different cancellation changes the sign. \textbf{These terms are an integral decomposition, not two literal orbital cohorts.} The \href{https://djova.ca/galaxy-bar/population-response.html}{original explorer} distinguishes these coordinates from initial-orbit cohorts.
+
+\section{Why a response kernel is reusable}\label{kernel}
+
+For fixed, population-independent evolution, define the phase/noise-averaged action response \(K_B(x)\). Let \(Q_{\mathrm p}\) denote its primitive; the subscript distinguishes it from the galaxy's Toomre Q.
+
+\begin{equation}\label{EQ-KER-01}
+\begin{aligned}
+K_B(x)&=\mathbb E[B_{\mathrm{noise}}-B_{\mathrm{smooth}}\mid x],\\
+\mathcal R[w]&=\int w(x)K_B(x)\,\mathrm dx\\
+&=[wQ_{\mathrm p}]_{\mathrm{boundary}}-\int w'(x)Q_{\mathrm p}(x)\,\mathrm dx.
+\end{aligned}
+\end{equation}
+
+For the common compact support, the boundary term vanishes. Nonlinear trapping of individual orbits is compatible with linear dependence on the initial population. This identity does not automatically apply to a self-consistent gravitational field or a collision law whose coefficients depend on the evolving population.
+
+The kernel separates dynamical sensitivity from how much material occupies each action. Forecasting another population tests the accuracy and reuse of this numerical calculation; it does not discover a new linearity principle. A new dynamical condition needs its own kernel.
+
+\section{An error allowance that can decline to predict}\label{accuracy}
+
+For a candidate approximation v and reference h, the exact-kernel inequality is:
+
+\begin{equation}\label{EQ-ERR-01}
+\left|\mathcal R[v]-\mathcal R[h]\right|
+\leq \int\left|v'(x)-h'(x)\right|\left|Q_{\mathrm p}(x)\right|\,\mathrm dx.
+\end{equation}
+
+Include the boundary mismatch if it is nonzero. The implemented kernel is estimated, so its plug-in integral alone is not a rigorous bound. The protocol uses eight independent batch estimates, a nominal simultaneous Student-t envelope with Bonferroni allocation across finite kernel cells and scalar contractions, paired timestep differences, and factor-two mesh refinements. Population contractions retain covariance from shared paths. Antithetic partners, times, windows and population weights are not independent batches.
+
+The full allowance combines population mismatch and the approximate response's sampling/numerical allowance. Its 5\% target uses a conservative lower estimate of the halo response. Near cancellation, report absolute error and leave the percentage unqualified. Measured refinement differences are \textbf{numerical proxies}, not proved bounds; general confidence coverage has not been established.
+
+\textbf{PA-ACC-01.} Eight advance 5\% qualifications are supported by independent numerical comparison at one new sweep rate, s=0.5.
+
+The prospective condition has s = 0.5, \(\eta\) = 0.1. Populations, both times, both windows, forecasts and criteria were frozen before independent evolution. Fourteen independent numerical cases combine positive distribution evolution with collisionless characteristic calculations, including timestep, mesh and domain controls. They are distinct computational pathways; the stochastic kernel was not fitted to their outcomes. \href{https://djova.ca/galaxy-bar/protocols/ACCURACY_PLAN.md}{Frozen protocol} · \href{https://djova.ca/galaxy-bar/diagnostics/population-accuracy/ACCURACY_OUTCOME_01.md}{full outcome}.
+
+\begin{figure*}
+\centering
+\includegraphics[width=\textwidth]{population-accuracy.png}
+\caption{F-ACC-01. All twenty candidates at one new condition. Orange circles show full forecast allowances; blue crosses show approximate-kernel forecast discrepancy against the independently evolved halo, including its numerical proxy. Both are scaled by the frozen 5\% target. This discrepancy is distinct from \textbf{intrinsic population error}, R{[}v{]} − R{[}h{]}, which the paired independent calculation also measures. The four halo self-references are excluded from candidate counts. Table \ref{tab-acc} · \href{https://djova.ca/galaxy-bar/datasets.json}{DS-ACC metadata}.}\label{F-ACC-01}
+\end{figure*}
+
+\href{https://djova.ca/galaxy-bar/paper.html\#interactive-decision}{Interrogate a recorded accuracy decision in the interactive article}.
+
+Complete values are in Appendix \ref{app-accuracy}; the interactive article provides the downloadable unrounded records.
+
+\textbf{PA-ACC-02.} Four Gaussian-128 comparisons meet 5\% in the independent assessment but are not qualified by the conservative absolute-gradient allowance.
+
+At primary-window T = 10, Gaussian 128's signed mean-kernel contrast has magnitude about 0.00009479, whereas the absolute-gradient integral is about 0.00052005, already above the 0.00043771 target before explicit kernel uncertainty. Discarding cancellation explains part of the conservative rejection. More samples alone need not repair it. All twenty independent population discrepancies plus their proxies fit their stated gradient allowances. All new-condition responses are negative: this prospective test does not validate performance across both signs.
+
+The new kernel cost about 5,105 worker CPU-seconds; the six-profile diagnostic took about 0.8 seconds. If the full DF and kernel are already known, the full contraction is also cheap. The diagnostic audits a simplifying assumption; it does not make the kernel free or always beat direct use of the known DF.
+
+\section{Estimating a small response efficiently}\label{estimator}
+
+Let \(F'=w\). Here \(W_t\) is a standard Wiener process, with independent increments of mean zero and variance equal to the elapsed time. Define the accumulated action-noise impulse \(\Xi_T=\sqrt{2D}\,W_T\), starting from \(W_0=0\), so that \(y=j+sT-\Xi_T=x+B\). Under the stated external additive noise, uniform initial phase and canonical evolution, a zero-integral primitive identity gives:
+
+\begin{equation}\label{EQ-EST-01}
+\begin{aligned}
+\int w(x)\,\mathbb E[B]\,\mathrm dx
+&=-\int\mathbb E\!\left[R_w(x,B)\right]\,\mathrm dx,\\
+R_w(x,B)&=F(x+B)-F(x)-w(x)B.
+\end{aligned}
+\end{equation}
+
+The finite-displacement control \(F(x+B)-F(x)\) has zero integrated expectation under the stated assumptions. Subtracting it from the weighted impulse \(w(x)B\) leaves the negative nonlinear remainder. The first-order weighted impulse itself is \textbf{not} assumed to have zero expectation: its integrated expectation is the physical signal. The remainder begins with \(w'B^2/2\) for a slowly varying weight; the estimator uses its negative. The derivation requires more than area preservation alone. Auxiliary initial-action support must extend beyond the physical window by the maximum bar impulse; those samples do not add physical halo mass. Do not transplant this identity to action-dependent forcing/noise, nonuniform phases or live response without another derivation. \href{https://djova.ca/galaxy-bar/methods/CUMULATIVE_IDENTITY.md}{Complete derivation and support restrictions}.
+
+\textbf{EST-01.} The matched estimator has a large conditional cost-times-variance advantage for broad halo weights; the advantage disappears for the narrowest stress population.
+
+\begin{figure*}
+\centering
+\includegraphics[width=\textwidth]{estimator-efficiency.png}
+\caption{F-COST-01. Matched raw and remainder estimates use identical paths and discrete weights. Cost includes integration to T = 20, the paired timestep control, setup and method-specific evaluation; I/O and common covariance assembly are excluded from both. T = 10 is charged that same workload. Conditional and between-batch variance estimates differ. Error bars are whole-batch bootstrap intervals, not universal runtime guarantees. Tables \ref{tab-cost} and \ref{tab-consistency} · \href{https://djova.ca/galaxy-bar/datasets.json}{DS-COST metadata}.}\label{F-COST-01}
+\end{figure*}
+
+\href{https://djova.ca/galaxy-bar/paper.html\#estimator}{Explore matched estimator costs in the interactive article}.
+
+Complete values are in Appendix \ref{app-cost}, with paired intervals for every recorded endpoint.
+
+For moving T = 20 halo weighting, batch costs are about 18.40 versus 18.56 CPU seconds. The advantage comes from variance reduction, not faster trajectory integration. The conditional cost-times-variance ratio is about 6,928, while the noisier between-batch ratio is about 2,749. At Gaussian width 1/64 the ratio is about 0.993: the advantage disappears. One of 24 pointwise raw-minus-remainder intervals excludes zero; this retained multiple-comparison flag is not itself proof of bias. The earlier unmatched-weight timing attempt and corrected benchmark remain in \href{https://djova.ca/galaxy-bar/archive.html}{provenance}.
+
+\section{What remains unestablished}\label{limitations}
+
+\textbf{LIM-01.} One isochrone fast-action slice and finite windows/times; no total halo torque or universal 4.7 correction.
+
+\textbf{LIM-02.} Imposed bar and population-independent additive noise; no collective halo response or calibrated SIDM operator.
+
+\textbf{LIM-03.} Approximate sampling coverage and numerical-refinement proxies; no rigorous operational 5\% guarantee.
+
+\textbf{LIM-04.} Eight qualified comparisons share one new dynamical condition and correlated kernel; no eight independent physical regimes.
+
+\textbf{LIM-05.} Prescribed-field 3D transfer remains unresolved; even successful transfer would not validate a live halo.
+
+\textbf{LIM-06.} Cost-times-variance ratios project precision under a fixed workflow; no measured 6900-fold faster simulation.
+
+\textbf{LIM-07.} Specific estimator priority and astrophysical generalization remain open; not externally reviewed.
+
+\textbf{LIM-08.} Software reproduction and deployment checks do not independently confirm physics.
+
+The earlier 24 population forecasts all passed their original operational criterion, max(0.0002, 5\% of forecast). A later combined-proxy assessment leaves two early Gaussian-12 window comparisons marginal, retaining 22 qualifications. Historical passes are preserved; they do not become uniform 5\% claims. \href{https://djova.ca/galaxy-bar/diagnostics/population-accuracy/joint-error-assessment.json}{Exact old and expanded assessments}.
+
+The earlier smooth response is \textbf{independent-phase replication at the same actions and forcing}. Constant diffusion with restoring drift can fail the old pooled finite-lag flatness screen; its failure alone does not establish non-Markovian physics. These corrections remain in the \href{https://djova.ca/galaxy-bar/response.html}{prescribed-field study} and \href{https://djova.ca/galaxy-bar/learn.html\#learn-5}{learning example}.
+
+\section{Reproduction, criticism and revision history}\label{reproduction}
+
+\textbf{REP-01.} The project receipt documents exact reproduction of 162 saved arrays from the released numerical source. This publication campaign does not claim a new rerun.
+
+A fresh public-source run at numerical revision 66143eb reproduced the accuracy calculation's 162 saved arrays exactly and checked the central figure. This is a \textbf{project reproduction receipt}, not an external audit and not additional independent physical samples. The current publication redesign does not rerun those experiments. \href{https://djova.ca/galaxy-bar/diagnostics/population-accuracy/accuracy-reproduction.json}{Receipt}.
+
+Use the \href{https://djova.ca/galaxy-bar/reproduce.html}{per-study reproduction map} to distinguish reading, checking supplied records, and rerunning underlying evolution. Original galaxy outputs are public; the public reduced benchmark does not promise complete reproduction of every galaxy initial condition and trajectory. The private working repository is not required to read or reproduce the released local-model results.
+
+For criticism, cite a claim ID such as \textbf{PA-ACC-01}, figure ID, dataset version and exact row. \href{https://github.com/djova/bar-halo-benchmark/issues}{Open a public issue}. In particular: is an equivalent cumulative estimator already published; is its scope useful; which error source is missing; and which test would most efficiently falsify the proposed application? No outside review or endorsement is claimed.
+
+This PDF export, 2026-09-24.1, typesets the scientific article 2026-09-23.4. It changes the medium, not the underlying numerical evidence or historical criteria. Earlier releases remain archived. The \href{https://djova.ca/galaxy-bar/paper.html}{interactive article} provides the original navigation, selection controls and versioned claim registry.
+
+\section*{Acknowledgements and disclosure}
+This manuscript typesets the existing Galaxy Bar interactive publication \citep{GalaxyBar2026}. The human project maintainer is djova; analysis, software and exposition were developed with AI assistance. No institutional affiliation, independent scientific review or journal endorsement is asserted. The MNRAS class and BibTeX style are supplied by the Royal Astronomical Society under the LaTeX Project Public License.
+\section*{Data availability}
+The article, protocols, numerical records and executable benchmark are public at \url{https://github.com/djova/bar-halo-benchmark}. The interactive article is \url{https://djova.ca/galaxy-bar/paper.html}. Scientific evidence is pinned by publication release 2026-09-23.4. This PDF is export 2026-09-24.1; it does not report a new simulation. Complete derivations and data definitions are linked from the article. The benchmark's MIT licence applies as recorded there; third-party works retain their own terms.
+\bibliographystyle{mnras}
+\bibliography{references}
+\clearpage
+\onecolumn
+\makeatletter
+\def\fps@table{!h}
+\makeatother
+\appendix
+\renewcommand{\theHtable}{\thesection.\arabic{table}}
+\section{Complete accuracy records}\label{app-accuracy}
+
+At \(s=0.5\) and \(\eta=0.1\), Q/NQ denotes the advance qualification; in/out denotes whether the independent comparison supports accuracy within 5 per cent or lies outside it. The 24 rows contain twenty candidates and four halo references; they share one dynamical condition. Tables report rounded values; the public JSON/CSV retains full precision.
+
+\begin{table}
+\centering
+\caption{Prospective operational decisions (PA-ACC-01, PA-ACC-02). $c$ is the physical window cutoff, $\widehat{\mathcal R}$ the kernel forecast, $\mathcal R_{\rm ind}[v]$ independent evolution of the indicated population, $A$ the full allowance and $\epsilon$ the frozen absolute 5 per cent target. The in/out assessment compares the forecast with the independently evolved halo, with the supplied numerical proxy; it is not a general confidence guarantee.}\label{tab-acc}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrrrl}
+\toprule
+Population & $T$ & $c$ & $\widehat{\mathcal R}$ & $\mathcal R_{\rm ind}[v]$ & $A$ & $\epsilon$ & Decision \\
+\midrule
+Halo (ref.) & 10 & 40 & -0.00886739 & -0.00884001 & 0.000113244 & 0.000437707 & Q/in \\
+Exponential & 10 & 40 & -0.00887235 & -0.00884492 & 0.000148862 & 0.000437707 & Q/in \\
+Gaussian 8 & 10 & 40 & -0.0398136 & -0.039611 & 0.113124 & 0.000437707 & NQ/out \\
+Gaussian 32 & 10 & 40 & -0.0103457 & -0.0103051 & 0.0100395 & 0.000437707 & NQ/out \\
+Gaussian 128 & 10 & 40 & -0.00896218 & -0.00893389 & 0.000794601 & 0.000437707 & NQ/in \\
+Gaussian 512 & 10 & 40 & -0.00887795 & -0.00885047 & 0.000189338 & 0.000437707 & Q/in \\
+Halo (ref.) & 10 & 64 & -0.00886971 & -0.00884243 & 0.000125126 & 0.000437229 & Q/in \\
+Exponential & 10 & 64 & -0.00887466 & -0.00884733 & 0.000167582 & 0.000437229 & Q/in \\
+Gaussian 8 & 10 & 64 & -0.0398136 & -0.039611 & 0.112054 & 0.000437229 & NQ/out \\
+Gaussian 32 & 10 & 64 & -0.0103469 & -0.0103062 & 0.0108583 & 0.000437229 & NQ/out \\
+Gaussian 128 & 10 & 64 & -0.00896442 & -0.00893618 & 0.000929585 & 0.000437229 & NQ/in \\
+Gaussian 512 & 10 & 64 & -0.00888026 & -0.00885287 & 0.000215717 & 0.000437229 & Q/in \\
+Halo (ref.) & 20 & 40 & -0.0661634 & -0.0661332 & 0.000546073 & 0.00328087 & Q/in \\
+Exponential & 20 & 40 & -0.0662763 & -0.0662461 & 0.000753038 & 0.00328087 & Q/in \\
+Gaussian 8 & 20 & 40 & -0.570825 & -0.570686 & 0.675507 & 0.00328087 & NQ/out \\
+Gaussian 32 & 20 & 40 & -0.0991752 & -0.0991428 & 0.0593474 & 0.00328087 & NQ/out \\
+Gaussian 128 & 20 & 40 & -0.0683291 & -0.0682987 & 0.00451777 & 0.00328087 & NQ/in \\
+Gaussian 512 & 20 & 40 & -0.0664046 & -0.0663743 & 0.000988743 & 0.00328087 & Q/in \\
+Halo (ref.) & 20 & 64 & -0.0661736 & -0.0661429 & 0.000519889 & 0.00328269 & Q/in \\
+Exponential & 20 & 64 & -0.0662865 & -0.0662558 & 0.000733738 & 0.00328269 & Q/in \\
+Gaussian 8 & 20 & 64 & -0.570825 & -0.570686 & 0.674266 & 0.00328269 & NQ/out \\
+Gaussian 32 & 20 & 64 & -0.0991807 & -0.0991478 & 0.0601307 & 0.00328269 & NQ/out \\
+Gaussian 128 & 20 & 64 & -0.0683388 & -0.068308 & 0.00461589 & 0.00328269 & NQ/in \\
+Gaussian 512 & 20 & 64 & -0.0664147 & -0.066384 & 0.000977177 & 0.00328269 & Q/in \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}
+\centering
+\caption{Independent intrinsic population error and forecast discrepancy. $e=\mathcal R_{\rm ind}[v]-\mathcal R_{\rm ind}[h]$; $p_e$ is its numerical-refinement proxy; $\delta=\widehat{\mathcal R}[v]-\mathcal R_{\rm ind}[h]$; $p_h$ is the halo proxy. All quantities are dimensionless accumulated response differences. Proxies are not sampling intervals or proved bounds.}\label{tab-errors}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrrr}
+\toprule
+Population & $T$ & $c$ & $e$ & $p_e$ & $\delta$ & $p_h$ \\
+\midrule
+Halo & 10 & 40 & 0 & 0 & -2.73791e-05 & 2.34302e-06 \\
+Exponential & 10 & 40 & -4.91079e-06 & 7.70468e-09 & -3.23376e-05 & 2.34302e-06 \\
+Gaussian 8 & 10 & 40 & -0.030771 & 3.05131e-05 & -0.0309736 & 2.34302e-06 \\
+Gaussian 32 & 10 & 40 & -0.00146509 & 2.23114e-06 & -0.00150574 & 2.34302e-06 \\
+Gaussian 128 & 10 & 40 & -9.38843e-05 & 1.47467e-07 & -0.000122174 & 2.34302e-06 \\
+Gaussian 512 & 10 & 40 & -1.04625e-05 & 1.64426e-08 & -3.79434e-05 & 2.34302e-06 \\
+Halo & 10 & 64 & 0 & 0 & -2.72805e-05 & 3.59106e-06 \\
+Exponential & 10 & 64 & -4.90328e-06 & 1.07603e-08 & -3.22344e-05 & 3.59106e-06 \\
+Gaussian 8 & 10 & 64 & -0.0307685 & 2.96698e-05 & -0.0309711 & 3.59106e-06 \\
+Gaussian 32 & 10 & 64 & -0.00146374 & 2.43893e-06 & -0.00150452 & 3.59106e-06 \\
+Gaussian 128 & 10 & 64 & -9.37495e-05 & 1.95532e-07 & -0.000121991 & 3.59106e-06 \\
+Gaussian 512 & 10 & 64 & -1.04468e-05 & 2.24912e-08 & -3.78352e-05 & 3.59106e-06 \\
+Halo & 20 & 40 & 0 & 0 & -3.0203e-05 & 7.69542e-05 \\
+Exponential & 20 & 40 & -0.000112873 & 3.18237e-07 & -0.000143083 & 7.69542e-05 \\
+Gaussian 8 & 20 & 40 & -0.504552 & 0.000928533 & -0.504691 & 7.69542e-05 \\
+Gaussian 32 & 20 & 40 & -0.0330096 & 9.04521e-05 & -0.033042 & 7.69542e-05 \\
+Gaussian 128 & 20 & 40 & -0.00216553 & 6.11218e-06 & -0.00219586 & 7.69542e-05 \\
+Gaussian 512 & 20 & 40 & -0.000241147 & 6.80996e-07 & -0.000271365 & 7.69542e-05 \\
+Halo & 20 & 64 & 0 & 0 & -3.07105e-05 & 7.85303e-05 \\
+Exponential & 20 & 64 & -0.000112849 & 3.14117e-07 & -0.000143568 & 7.85303e-05 \\
+Gaussian 8 & 20 & 64 & -0.504543 & 0.00092746 & -0.504682 & 7.85303e-05 \\
+Gaussian 32 & 20 & 64 & -0.0330049 & 8.97729e-05 & -0.0330378 & 7.85303e-05 \\
+Gaussian 128 & 20 & 64 & -0.00216509 & 6.04033e-06 & -0.00219594 & 7.85303e-05 \\
+Gaussian 512 & 20 & 64 & -0.000241097 & 6.72499e-07 & -0.000271824 & 7.85303e-05 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\clearpage
+\section{Complete matched estimator records}\label{app-cost}
+
+These are cost-times-variance ratios under the specified matched workload, not direct simulation speedups. All 24 endpoints retain their numerical values and paired method-consistency intervals. Gaussian stress labels give the width \(\sigma\).
+
+\begin{table}
+\centering
+\caption{Matched estimator costs and variance ratios (EST-01). $C_{\rm raw}$ and $C_{\rm rem}$ are mean CPU seconds per accounted batch; $V_C$ is the conditional raw/remainder cost-times-variance ratio; brackets give its whole-batch bootstrap interval; $V_B$ uses between-batch variance. All $T=10$ endpoints carry the same full $T=20$ workload cost.}\label{tab-cost}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrrlr}
+\toprule
+Population & $s$ & $T$ & $C_{\rm raw}$ & $C_{\rm rem}$ & $V_C$ & Bootstrap interval & $V_B$ \\
+\midrule
+Halo & 0.0 & 10 & 18.293 & 18.464 & 38988.6 & [38009, 40044] & 89013.1 \\
+Exponential & 0.0 & 10 & 18.287 & 18.451 & 39002.9 & [38024, 40063] & 89093.7 \\
+Gaussian 8 & 0.0 & 10 & 18.288 & 18.447 & 3730.44 & [3579.9, 3919.3] & 6777.03 \\
+Gaussian 1 & 0.0 & 10 & 18.289 & 18.446 & 3.57294 & [3.4604, 3.6932] & 2.10966 \\
+Gaussian 1/8 & 0.0 & 10 & 18.289 & 18.453 & 1.01674 & [0.99736, 1.0364] & 0.689487 \\
+Gaussian 1/64 & 0.0 & 10 & 18.288 & 18.452 & 0.992355 & [0.9825, 0.99866] & 1.17587 \\
+Halo & 0.0 & 20 & 18.293 & 18.464 & 25391.9 & [24625, 26167] & 13958 \\
+Exponential & 0.0 & 20 & 18.287 & 18.451 & 25401.5 & [24632, 26180] & 13964.1 \\
+Gaussian 8 & 0.0 & 20 & 18.288 & 18.447 & 1999.35 & [1891.7, 2113.3] & 1984.37 \\
+Gaussian 1 & 0.0 & 20 & 18.289 & 18.446 & 3.15316 & [3.0812, 3.2257] & 2.33289 \\
+Gaussian 1/8 & 0.0 & 20 & 18.289 & 18.453 & 1.01791 & [0.99051, 1.0416] & 1.01849 \\
+Gaussian 1/64 & 0.0 & 20 & 18.288 & 18.452 & 0.992679 & [0.98239, 0.99954] & 1.06109 \\
+Halo & 0.25 & 10 & 18.395 & 18.556 & 21774.2 & [21232, 22389] & 15771.5 \\
+Exponential & 0.25 & 10 & 18.389 & 18.549 & 21737.7 & [21193, 22346] & 15751.2 \\
+Gaussian 8 & 0.25 & 10 & 18.39 & 18.554 & 655.057 & [642.44, 668.69] & 595.86 \\
+Gaussian 1 & 0.25 & 10 & 18.391 & 18.558 & 1.76013 & [1.7269, 1.7919] & 1.51852 \\
+Gaussian 1/8 & 0.25 & 10 & 18.392 & 18.555 & 0.95067 & [0.92971, 0.97081] & 1.21402 \\
+Gaussian 1/64 & 0.25 & 10 & 18.391 & 18.556 & 0.982318 & [0.97679, 0.98715] & 1.00221 \\
+Halo & 0.25 & 20 & 18.395 & 18.556 & 6928.35 & [6734.7, 7229.1] & 2749.4 \\
+Exponential & 0.25 & 20 & 18.389 & 18.549 & 6909.88 & [6719.3, 7205.8] & 2741.03 \\
+Gaussian 8 & 0.25 & 20 & 18.39 & 18.554 & 122.402 & [118.57, 126.06] & 48.8071 \\
+Gaussian 1 & 0.25 & 20 & 18.391 & 18.558 & 1.59023 & [1.5738, 1.6053] & 1.23894 \\
+Gaussian 1/8 & 0.25 & 20 & 18.392 & 18.555 & 1.00717 & [1.0008, 1.0131] & 1.08977 \\
+Gaussian 1/64 & 0.25 & 20 & 18.391 & 18.556 & 0.992683 & [0.99099, 0.99423] & 1.04132 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}
+\centering
+\caption{Paired raw-minus-remainder method comparison. Intervals are pointwise 95 per cent sampling intervals, not simultaneous tests across all 24 rows. A retained exclusion of zero is a multiple-comparison flag, not by itself proof of estimator bias.}\label{tab-consistency}
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrrl}
+\toprule
+Population & $s$ & $T$ & Raw minus remainder & 95 per cent lower & 95 per cent upper & Contains zero \\
+\midrule
+Halo & 0.0 & 10 & 0.0321698 & -0.0469248 & 0.111264 & yes \\
+Exponential & 0.0 & 10 & 0.0321692 & -0.046922 & 0.11126 & yes \\
+Gaussian 8 & 0.0 & 10 & 0.032983 & -0.0370078 & 0.102974 & yes \\
+Gaussian 1 & 0.0 & 10 & 0.0362236 & 0.00189735 & 0.0705499 & no \\
+Gaussian 1/8 & 0.0 & 10 & 0.00903438 & -0.00255065 & 0.0206194 & yes \\
+Gaussian 1/64 & 0.0 & 10 & 0.00134259 & -0.000333731 & 0.00301891 & yes \\
+Halo & 0.0 & 20 & 0.0559024 & -0.038755 & 0.15056 & yes \\
+Exponential & 0.0 & 20 & 0.0558992 & -0.0387521 & 0.150551 & yes \\
+Gaussian 8 & 0.0 & 20 & 0.0537144 & -0.030226 & 0.137655 & yes \\
+Gaussian 1 & 0.0 & 20 & 0.0316587 & -0.0199932 & 0.0833106 & yes \\
+Gaussian 1/8 & 0.0 & 20 & 0.0053972 & -0.0068051 & 0.0175995 & yes \\
+Gaussian 1/64 & 0.0 & 20 & 0.000535115 & -0.00124154 & 0.00231177 & yes \\
+Halo & 0.25 & 10 & -0.0514801 & -0.154479 & 0.0515188 & yes \\
+Exponential & 0.25 & 10 & -0.0514813 & -0.154478 & 0.0515152 & yes \\
+Gaussian 8 & 0.25 & 10 & -0.049866 & -0.145109 & 0.0453768 & yes \\
+Gaussian 1 & 0.25 & 10 & -0.010653 & -0.043042 & 0.0217359 & yes \\
+Gaussian 1/8 & 0.25 & 10 & -0.00136648 & -0.00742977 & 0.00469681 & yes \\
+Gaussian 1/64 & 0.25 & 10 & -0.000182043 & -0.00100055 & 0.000636463 & yes \\
+Halo & 0.25 & 20 & -0.0525512 & -0.200904 & 0.0958019 & yes \\
+Exponential & 0.25 & 20 & -0.0525555 & -0.200907 & 0.0957963 & yes \\
+Gaussian 8 & 0.25 & 20 & -0.0567175 & -0.193001 & 0.079566 & yes \\
+Gaussian 1 & 0.25 & 20 & -0.0206914 & -0.0522396 & 0.0108569 & yes \\
+Gaussian 1/8 & 0.25 & 20 & -0.00043361 & -0.00642131 & 0.00555409 & yes \\
+Gaussian 1/64 & 0.25 & 20 & -0.000116105 & -0.0010129 & 0.000780686 & yes \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\clearpage
+\end{document}
