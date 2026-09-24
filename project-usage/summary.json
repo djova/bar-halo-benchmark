@@ -1,0 +1,210 @@
+{
+  "schema_version": 1,
+  "snapshot": "2026-09-24-session-accounting",
+  "cutoff_utc": "2026-09-24T01:45:24.312Z",
+  "started_utc": "2026-09-20T14:25:46.798Z",
+  "last_usage_utc": "2026-09-23T21:54:11.291Z",
+  "scope": "This single Galaxy Bar thread, before the accounting request; no other chats or this accounting/deployment turn.",
+  "tokens": {
+    "input_tokens": 1028644692,
+    "cached_input_tokens": 1001658112,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 5428768,
+    "reasoning_output_tokens": 2403599,
+    "total_tokens": 1034073460
+  },
+  "uncached_input_tokens": 26986580,
+  "requests": 6976,
+  "models": {
+    "gpt-6-astra": 6976
+  },
+  "request_counts_by_reasoning_effort": {
+    "low": 96,
+    "high": 3039,
+    "xhigh": 3841
+  },
+  "max_request_input_tokens": 250957,
+  "long_context_requests": 0,
+  "cache_input_fraction": 0.9737649159035373,
+  "timing": {
+    "elapsed_to_cutoff_seconds": 299977.514,
+    "active_turn_seconds": 231741.102,
+    "completed_turns": 191,
+    "aborted_turns": 3,
+    "model_item_seconds": 100585.735,
+    "item_seconds_by_type": {
+      "AgentMessage": 3102.215,
+      "CommandExecution": 166486.167,
+      "ContextCompaction": 12950.359,
+      "Extension": 21943.024,
+      "McpToolCall": 373.677,
+      "Reasoning": 84533.161
+    },
+    "tool_interval_union_seconds": 174751.124,
+    "server_gpu_seconds": null
+  },
+  "phases": [
+    {
+      "id": "galaxies",
+      "title": "Galaxy simulations, controls and first website",
+      "start_utc": "2026-09-20T14:25:46.798Z",
+      "end_utc": "2026-09-21T17:41:00.222Z",
+      "requests": 3135,
+      "tokens": {
+        "input_tokens": 455299333,
+        "cached_input_tokens": 444717056,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1853748,
+        "reasoning_output_tokens": 716093,
+        "total_tokens": 457153081
+      },
+      "standard_cost_usd": 643.227226,
+      "model_interval_seconds": 31723.132,
+      "active_turn_seconds": 87785.466
+    },
+    {
+      "id": "response",
+      "title": "Prescribed-field response and numerical diagnostics",
+      "start_utc": "2026-09-21T17:41:00.222Z",
+      "end_utc": "2026-09-22T02:46:12.854Z",
+      "requests": 789,
+      "tokens": {
+        "input_tokens": 115070681,
+        "cached_input_tokens": 110975616,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 878960,
+        "reasoning_output_tokens": 394143,
+        "total_tokens": 115949641
+      },
+      "standard_cost_usd": 195.874266,
+      "model_interval_seconds": 15521.297,
+      "active_turn_seconds": 31363.263
+    },
+    {
+      "id": "resonance",
+      "title": "Noisy moving-resonance benchmark and reproduction",
+      "start_utc": "2026-09-22T02:46:12.854Z",
+      "end_utc": "2026-09-22T23:30:39.293Z",
+      "requests": 1687,
+      "tokens": {
+        "input_tokens": 252357710,
+        "cached_input_tokens": 245256064,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1448958,
+        "reasoning_output_tokens": 721835,
+        "total_tokens": 253806668
+      },
+      "standard_cost_usd": 388.720424,
+      "model_interval_seconds": 29651.581,
+      "active_turn_seconds": 61206.94
+    },
+    {
+      "id": "population",
+      "title": "Halo population weighting and response kernels",
+      "start_utc": "2026-09-22T23:30:39.293Z",
+      "end_utc": "2026-09-23T11:31:49.545Z",
+      "requests": 608,
+      "tokens": {
+        "input_tokens": 92520858,
+        "cached_input_tokens": 89989376,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 630068,
+        "reasoning_output_tokens": 317343,
+        "total_tokens": 93150926
+      },
+      "standard_cost_usd": 146.807596,
+      "model_interval_seconds": 12293.876,
+      "active_turn_seconds": 24458.171
+    },
+    {
+      "id": "accuracy",
+      "title": "Population accuracy diagnostic and estimator cost",
+      "start_utc": "2026-09-23T11:31:49.545Z",
+      "end_utc": "2026-09-23T17:18:19.443Z",
+      "requests": 431,
+      "tokens": {
+        "input_tokens": 62445427,
+        "cached_input_tokens": 60811392,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 372882,
+        "reasoning_output_tokens": 175344,
+        "total_tokens": 62818309
+      },
+      "standard_cost_usd": 95.795842,
+      "model_interval_seconds": 7788.856,
+      "active_turn_seconds": 16982.367
+    },
+    {
+      "id": "publication",
+      "title": "Canonical article, learning guide and editorial releases",
+      "start_utc": "2026-09-23T17:18:19.443Z",
+      "end_utc": "2026-09-24T01:45:24.312Z",
+      "requests": 326,
+      "tokens": {
+        "input_tokens": 50950683,
+        "cached_input_tokens": 49908608,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 244152,
+        "reasoning_output_tokens": 78841,
+        "total_tokens": 51194835
+      },
+      "standard_cost_usd": 72.536958,
+      "model_interval_seconds": 3606.993,
+      "active_turn_seconds": 9944.895
+    }
+  ],
+  "pricing": {
+    "checked_utc": "2026-09-24",
+    "currency": "USD",
+    "per_million": {
+      "uncached_input": 10,
+      "cached_input": 1,
+      "cache_write": 12.5,
+      "output": 50
+    },
+    "standard_estimate_usd": 1542.962312,
+    "fast_estimate_usd": 3085.924624,
+    "actual_service_tier": "not recorded",
+    "sources": [
+      "https://developers.openai.com/api/docs/models/gpt-6-astra",
+      "https://developers.openai.com/api/docs/pricing",
+      "https://developers.openai.com/api/docs/guides/prompt-caching"
+    ]
+  },
+  "reconciliation": {
+    "unique_response_records": 6976,
+    "duplicate_response_records": 0,
+    "per_response_sum_equals_thread_cumulative": true,
+    "source_prefix_sha256": "698cb4a6847453982d1e614819100ddc7fdc77824c7da86a8ec981feaba2b084",
+    "raw_transcript_published": false
+  },
+  "top_level_tools": {
+    "exec": 5983,
+    "request_user_input_async": 6,
+    "sleep": 507,
+    "wait": 229
+  },
+  "limits": [
+    "Repeated cached context is counted on each request; this is not unique authored text.",
+    "Reasoning tokens are a subset of output tokens, not an additional billed category.",
+    "Model-item intervals are client-recorded latency, not provider GPU execution time; prefill, queueing and unreported work are not separately measured.",
+    "Active turns include tool execution, computation monitoring and waiting. Tool intervals overlap each other and model intervals, so their durations must not be added.",
+    "Phase labels summarize the task timeline; they are not a claim that every moment within a phase was spent on that topic.",
+    "API estimates are hypothetical token-only prices at the snapshot date, not a ChatGPT subscription invoice. They exclude tool fees, hardware, electricity, hosting and external reviewers.",
+    "The raw session and private instructions are not published; the public data contain accounting metadata only."
+  ],
+  "files": {
+    "requests.csv": {
+      "bytes": 699409,
+      "sha256": "854bec5e64b1b647b256109ff89df72b2606e3b95524f31d4fd2c6fe9c9b1f25"
+    },
+    "timings.csv": {
+      "bytes": 642759,
+      "sha256": "e56614d1ed8b923bb09180ea4843faf0c1c5aa9452b1c141c5ce0decfbc5677e"
+    },
+    "turns.csv": {
+      "bytes": 3987,
+      "sha256": "35ad69784c0fcb6e1bc1e6249d5f0e83abec3f11220e9978f9cce3d47b7db266"
+    }
+  }
+}

@@ -159,3 +159,11 @@ Neither opposing noise effects nor linearity in an externally evolved initial
 population is claimed as a discovery. The bounded addition is a quantitatively
 checked population dependence, reusable response data and prospectively tested
 population predictions, with an explicit unsuccessful route to a 3D test.
+
+## Project process accounting
+
+[Model, tokens, recorded time and API-equivalent cost](project-usage/README.md)
+covers the originating Galaxy Bar conversation through 24 September 2026,
+01:45 UTC. This is AI workflow accounting, separate from the scientific
+estimator-efficiency comparison. Sanitized operands and a verifier are included;
+the private session is not published.
