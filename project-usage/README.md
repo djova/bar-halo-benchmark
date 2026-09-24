@@ -50,7 +50,8 @@ Durations use client `item_completed` start/end timestamps. Reasoning,
 message and context-compaction intervals are merged before summing. Active-turn
 intervals use completion/abort timestamp minus reported duration. Overlapping
 background commands are not summed into model time. These are latency records,
-not provider GPU seconds; they do not separately identify prefill or queueing.
+not a complete inference timer or provider GPU seconds. Tool-argument generation,
+prefill and queueing are not separately timed.
 The timing CSVs contain only relative times and item types, never item text.
 
 All requests are below 272,000 input tokens. At the rates checked on 24 September
