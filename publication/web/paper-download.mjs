@@ -1,6 +1,6 @@
 // Versioned PDF supplement; numerical article release and archived bytes stay fixed.
 import {readFileSync} from 'node:fs';
-const directory='downloads/mnras-2026-09-24.1/';
+const directory='downloads/mnras-2026-09-24.2/';
 export const printExport=JSON.parse(readFileSync(new URL('./'+directory+'manifest.json',import.meta.url),'utf8'));
 export function decorateDownload(document){
  if(document.querySelector('#paper-downloads'))return;

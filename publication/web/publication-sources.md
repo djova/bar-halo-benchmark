@@ -13,3 +13,17 @@
 
 Earlier Hamilton, Chiba and Ogilvie–Lubow positioning is retained in the accuracy
 study's SOURCES.md. No external author has been contacted or endorsed this work.
+
+## Editorial and phase-space clarification, 24 September 2026
+
+The [communication review](diagnostics/communication/WRITING_REVIEW_2026-09-24.md)
+records the 230-record screen and twelve focused body reviews used to revise the
+argument. This is not an exhaustive scientific priority assessment.
+
+One directly relevant scientific citation was added: Dattathri et al., *Not all
+cores are equal: Phase-space origins of dynamical friction, stalling and buoyancy*,
+The Open Journal of Astrophysics 9 (2026), DOI10.33232/001c.169864. Inspected
+[arXiv:2511.11804v2](https://arxiv.org/abs/2511.11804v2), introduction and discussion.
+Its self-consistent host and collective effects are explicitly distinguished from
+our external-field population-weighting calculation. Title, authors, publication
+and DOI were checked against arXiv and Crossref; no unverified page number is supplied.

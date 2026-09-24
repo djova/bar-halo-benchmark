@@ -1,6 +1,6 @@
 # MNRAS-format print companion
 
-PDF export **2026-09-24.1** of the canonical scientific article **2026-09-23.4**.
+PDF export **2026-09-24.2** of the canonical scientific article **2026-09-24.1**.
 This is an unreviewed manuscript, not a journal submission or acceptance.
 The existing project attribution and AI-assistance disclosure are retained;
 no scientific author list or institutional affiliation has been invented.
@@ -41,9 +41,16 @@ Journal metadata were checked against primary pages on 24 September 2026:
   https://academic.oup.com/mnras/article/370/2/784/968223
 - Elbers et al. 2021, MNRAS, 507, 2614–2631; DOI 10.1093/mnras/stab2260.
   https://academic.oup.com/mnras/article/507/2/2614/6343051
+- Dattathri et al. 2026, The Open Journal of Astrophysics, 9;
+  DOI 10.33232/001c.169864; inspected arXiv:2511.11804v2.
+  https://arxiv.org/abs/2511.11804v2
 - The project's pinned canonical publication is cited separately.
 
 The template and bibliography style are maintained by the Royal Astronomical
 Society and licensed under LPPL 1.3 or later. The complete original package is
 retrieved from https://ctan.org/pkg/mnras. Original project text/code and derived
 tables retain the benchmark's MIT terms; this does not relicense cited papers.
+
+This export applies the 24 September literature-grounded editorial revision.
+The preceding PDF export 2026-09-24.1 remains unchanged. The reading record and
+updated communication skill are linked from the interactive article.

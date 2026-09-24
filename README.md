@@ -1,3 +1,9 @@
+> **Editorial revision, 24 September 2026:** the [article](publication/web/paper.md)
+> and [MNRAS PDF](manuscript/galaxy-bar-mnras.pdf) now organize the argument around
+> population approximation, signed cancellation and an operational accuracy decision.
+> [Reading review and updated writing skill](publication/web/diagnostics/communication/WRITING_REVIEW_2026-09-24.md).
+> Numerical evidence is unchanged.
+
 > **Canonical interactive article:** [Galaxy Bar research](https://djova.ca/galaxy-bar/paper.html).
 > The clean [article source and evidence package](publication/README.md) provides
 > the full argument, learning route and machine-readable claim registry. Its
@@ -6,11 +12,11 @@
 > reproducible from this repository.
 
 
-> **Anonymous reading fallback (release 2026-09-23.4):**
-> [tagged article](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/paper.md),
-> [claims](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/claims.json),
-> [accuracy values](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/results/accuracy.json), and
-> [agent guide with derivation, source and link-resolution rules](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-23.4/publication/web/agents.md).
+> **Anonymous reading fallback (release 2026-09-24.1):**
+> [tagged article](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.1/publication/web/paper.md),
+> [claims](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.1/publication/web/claims.json),
+> [accuracy values](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.1/publication/web/results/accuracy.json), and
+> [agent guide with derivation, source and link-resolution rules](https://raw.githubusercontent.com/djova/bar-halo-benchmark/publication-2026-09-24.1/publication/web/agents.md).
 > These need no custom user agent or private connector. Canonical-site access
 > remains partial for some automated clients. Historical website-only explorers
 > are labelled separately; the central evidence is included in this mirror.
@@ -170,6 +176,6 @@ the private session is not published.
 
 ## MNRAS-format PDF
 
-The [nine-page manuscript and LaTeX source](manuscript/README.md) typeset the
+The [ten-page manuscript and LaTeX source](manuscript/README.md) typeset the
 current research, figures, complete records and bibliography. This print export
 is an unreviewed companion to the interactive article, not new scientific evidence.

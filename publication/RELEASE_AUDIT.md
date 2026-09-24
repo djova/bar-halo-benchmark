@@ -1,3 +1,26 @@
+# Editorial release 2026-09-24.1
+
+The article and PDF export 2026-09-24.2 share a revised narrative. A 230-record
+arXiv screen and twelve focused body reviews inform the updated communication
+skill; exact reading depths, versions and limits are recorded in the
+[communication review](web/diagnostics/communication/WRITING_REVIEW_2026-09-24.md).
+This is editorial work, not external scientific review or a new experiment.
+
+The project consistency checker reconstructs the same central numerical results.
+All published population, accuracy and cost rows, their CSV values and the three
+principal figures were compared with the prior commit and are unchanged. Earlier
+publication releases and the preceding PDF export retain their original bytes.
+The revised PDF has ten pages, three figures and six bibliography entries.
+No unresolved citations or overflowing TeX boxes were found; rendered pages were
+visually inspected. Desktop/mobile Chromium and WebKit checks cover the PDF link,
+no-JavaScript reading, keyboard focus, layout and downloaded file hash. These are
+project-reported publication checks, not astrophysical validation.
+
+Canonical automated-client access remains partial. The pinned public GitHub
+mirror remains the fallback; no universal crawler-access claim is made.
+
+---
+
 # Publication release 2026-09-23.1 — reading and verification audit
 
 The canonical article, learning guide and evidence interface are published at

@@ -7,7 +7,7 @@ import argparse,hashlib,json,re,shutil,subprocess,os
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2]
 W=ROOT/'web';SRC=ROOT/'research/publication';M=SRC/'mnras'
-EXPORT='2026-09-24.1'; SCIENCE_RELEASE='2026-09-23.4'
+EXPORT='2026-09-24.2'; SCIENCE_RELEASE='2026-09-24.1'
 BASE='https://djova.ca/galaxy-bar/'
 def load(name):return json.loads((W/name).read_text())
 def raw(s):return '\n\n```{=latex}\n'+s+'\n```\n\n'
@@ -39,10 +39,10 @@ body=body.replace('{{ACCURACY_TABLE}}',r'Complete values are in Appendix `\ref{a
 body=body.replace('{{COST_TABLE}}',r'Complete values are in Appendix `\ref{app-cost}`{=latex}, with paired intervals for every recorded endpoint.')
 body=body.replace('### Interrogate the decision {#interactive-decision}\n\n{{ACCURACY_INTERACTIVE}}', '[Interrogate a recorded accuracy decision in the interactive article](paper.html#interactive-decision).')
 body=body.replace('{{COST_INTERACTIVE}}','[Explore matched estimator costs in the interactive article](paper.html#estimator).')
-body=body.replace('{{REVISION}}','This PDF export, '+EXPORT+', typesets the scientific article '+SCIENCE_RELEASE+'. It changes the medium, not the underlying numerical evidence or historical criteria. Earlier releases remain archived. The [interactive article](paper.html) provides the original navigation, selection controls and versioned claim registry.')
+body=body.replace('{{REVISION}}','This PDF export, '+EXPORT+', typesets the scientific article '+SCIENCE_RELEASE+'. It carries the editorial revision in both media; the numerical evidence and historical criteria are unchanged. Earlier releases remain archived. The [interactive article](paper.html) provides the original navigation, selection controls and versioned claim registry.')
 body=body.replace('{{BIBLIOGRAPHY}}','')
 # Cite scholarly sources through the MNRAS author-year bibliography.
-cites={'https://arxiv.org/abs/2208.03855':'Hamilton2023','https://arxiv.org/abs/2305.00022':'Chiba2023','https://doi.org/10.1111/j.1365-2966.2006.10506.x':'OgilvieLubow2006','https://arxiv.org/pdf/2010.07321':'Elbers2021'}
+cites={'https://arxiv.org/abs/2208.03855':'Hamilton2023','https://arxiv.org/abs/2305.00022':'Chiba2023','https://doi.org/10.1111/j.1365-2966.2006.10506.x':'OgilvieLubow2006','https://arxiv.org/pdf/2010.07321':'Elbers2021','https://arxiv.org/abs/2511.11804v2':'Dattathri2026'}
 for url,key in cites.items():
  body=re.sub(r'\[[^\]]+\]\('+re.escape(url)+r'\)',lambda m:'`\\citet{'+key+'}`{=latex}'+(' (sections 2–2.3)'if key=='Elbers2021'else''),body)
 # Preserve equations and scientific identifiers, while making them native LaTeX.
@@ -87,7 +87,7 @@ ack=r'''
 \section*{Acknowledgements and disclosure}
 This manuscript typesets the existing Galaxy Bar interactive publication \citep{GalaxyBar2026}. The human project maintainer is djova; analysis, software and exposition were developed with AI assistance. No institutional affiliation, independent scientific review or journal endorsement is asserted. The MNRAS class and BibTeX style are supplied by the Royal Astronomical Society under the LaTeX Project Public License.
 \section*{Data availability}
-The article, protocols, numerical records and executable benchmark are public at \url{https://github.com/djova/bar-halo-benchmark}. The interactive article is \url{https://djova.ca/galaxy-bar/paper.html}. Scientific evidence is pinned by publication release 2026-09-23.4. This PDF is export 2026-09-24.1; it does not report a new simulation. Complete derivations and data definitions are linked from the article. The benchmark's MIT licence applies as recorded there; third-party works retain their own terms.
+The article, protocols, numerical records and executable benchmark are public at \url{https://github.com/djova/bar-halo-benchmark}. The interactive article is \url{https://djova.ca/galaxy-bar/paper.html}. Scientific evidence is pinned by publication release 2026-09-24.1. This PDF is export 2026-09-24.2; it does not report a new simulation. Complete derivations and data definitions are linked from the article. The benchmark's MIT licence applies as recorded there; third-party works retain their own terms.
 \bibliographystyle{mnras}
 \bibliography{references}
 '''

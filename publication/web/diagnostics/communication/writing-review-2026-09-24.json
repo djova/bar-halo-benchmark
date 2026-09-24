@@ -1,0 +1,3482 @@
+{
+  "review_date": "2026-09-24",
+  "purpose": "Scientific argument and communication review for the Galaxy Bar article and writing skill",
+  "discovery": [
+    "https://arxiv.org/search/?query=Bosch%2C+Frank&searchtype=author&abstracts=show&order=-announced_date_first&size=200",
+    "https://arxiv.org/search/?query=Bosch%2C+Frank&searchtype=author&abstracts=show&order=-announced_date_first&size=200&start=200",
+    "https://campuspress.yale.edu/vdbosch/"
+  ],
+  "coverage": {
+    "discovered_records": 230,
+    "broad_screened": 230,
+    "first_submission_year_range": [
+      1994,
+      2026
+    ],
+    "focused_body_reviews": 12,
+    "focused_first_submitted_2024_or_later": 9,
+    "visually_reviewed_pdf_pages": 3
+  },
+  "limits": [
+    "The author-search discovery set is not a certified complete journal bibliography. It includes proceedings, white papers and other coauthored records.",
+    "Broad screening reads titles and selected abstract passages. Only the named focused records received body/caption review in this pass.",
+    "The earlier 77-paper review is retained separately; its reading depth is not silently promoted.",
+    "Coauthorship does not identify who wrote a passage. These are our interpretations of published choices, not private intentions or endorsement.",
+    "No third-party full text or figure images are redistributed. Numerical evidence was not changed or rerun."
+  ],
+  "papers": [
+    {
+      "id": "2609.13009",
+      "url": "https://arxiv.org/abs/2609.13009",
+      "title": "How Good Are Frontier Models at Physics? Expert Re-Grading Reveals Broken Evaluations and Near-Saturation of Leading Benchmarks",
+      "authors": [
+        "Ali Ansari",
+        "Haoran Sun",
+        "Andy Zeyi Liu",
+        "Mark Jabbour",
+        "Yongshan Ding",
+        "Steven Girvin",
+        "Yu He",
+        "Sohrab Ismail-Beigi",
+        "Aleksander Kubica",
+        "Owen D. Miller",
+        "Corey O'Hern",
+        "Vidvuds Ozolins",
+        "David Poland",
+        "A. Douglas Stone",
+        "Frank C. van den Bosch",
+        "Logan Wright",
+        "Navid Akbari",
+        "Santanu Antu",
+        "Kangle Cai",
+        "Andrew Calabrese-Day",
+        "Mateo Cárdenes Wuttig",
+        "Meng Cheng",
+        "Barry T. Chiang",
+        "Ali Ghorashi",
+        "Shouzhen Gu"
+      ],
+      "submitted": "Submitted 11 September, 2026; originally announced September 2026.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "2608.26249",
+      "url": "https://arxiv.org/abs/2608.26249",
+      "title": "Scatter, bias, and chaos of satellite orbits in triaxial dark matter haloes",
+      "authors": [
+        "Barry T. Chiang",
+        "Frank C. van den Bosch",
+        "Michael A. Keim"
+      ],
+      "submitted": "Submitted 26 August, 2026; originally announced August 2026.",
+      "reading": "Focused body passages and captions",
+      "sections": "Introduction and setup; figure 4 and accompanying body",
+      "lesson": "Separate median bias, individual scatter and inferred uncertainty when testing a convenient approximation.",
+      "version": 1,
+      "pdf_pages": 14,
+      "pdf_sha256": "08afa181e53eeda97110ffb24e6ac90c792ebae60ce4c4ddc1c97d3d50b32ce4",
+      "visual_pdf_page": 6,
+      "versioned_url": "https://arxiv.org/abs/2608.26249v1"
+    },
+    {
+      "id": "2606.27480",
+      "url": "https://arxiv.org/abs/2606.27480",
+      "title": "Self-interacting dark matter promotes bar formation in disk galaxies",
+      "authors": [
+        "Shashank Dattathri",
+        "Frank C. van den Bosch",
+        "HanYuan Zhang",
+        "Martin D. Weinberg",
+        "Eugene Vasiliev",
+        "Priyamvada Natarajan",
+        "Vasily Belokurov"
+      ],
+      "submitted": "Submitted 25 June, 2026; originally announced June 2026.",
+      "reading": "Focused body passages and captions",
+      "sections": "Introduction; section 3.3.2, figure 5 caption; section 5",
+      "lesson": "Use an intervention to distinguish competing mechanisms; do not equate this SIDM operator with our additive noise.",
+      "version": 1,
+      "pdf_pages": 16,
+      "pdf_sha256": "848f024607e98bb8fd8a7ada10d07b54415c22e6bc64f306f3c0df788267cf82",
+      "visual_pdf_page": null,
+      "versioned_url": "https://arxiv.org/abs/2606.27480v1"
+    },
+    {
+      "id": "2603.24020",
+      "url": "https://arxiv.org/abs/2603.24020",
+      "title": "Imprints of tidal interactions on the stellar distribution of satellite galaxies: implications for dark matter deficient galaxies",
+      "authors": [
+        "Zhihao Yin",
+        "Go Ogiya",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 20 May, 2026; v1 submitted 25 March, 2026; originally announced March 2026.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "2603.10104",
+      "url": "https://arxiv.org/abs/2603.10104",
+      "title": "A Kiloparsec-Scale Stellar Cavity in the Center of Abell402-BCG May be Caused by Dynamic Interactions with an Ultramassive Black Hole",
+      "authors": [
+        "Michael McDonald",
+        "Gourav Khullar",
+        "David Lagattuta",
+        "Guillaume Mahler",
+        "Shashank Dattathri",
+        "Jose M. Diego",
+        "Alastair C. Edge",
+        "Benjamin Floyd",
+        "Michael D. Gladders",
+        "Scott A. Hughes",
+        "Mathilde Jauzac",
+        "Nader Khonji",
+        "Gavin Leroy",
+        "Richard Massey",
+        "Mireia Montes",
+        "Priyamvada Natarajan",
+        "Michael Reefe",
+        "Keren Sharon",
+        "Frank van den Bosch",
+        "Stepane Werner",
+        "Adi Zitrin"
+      ],
+      "submitted": "Submitted 10 March, 2026; originally announced March 2026.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "2601.18954",
+      "url": "https://arxiv.org/abs/2601.18954",
+      "title": "Statistical Predictions of the Accreted Stellar Halos around Milky Way-Like Galaxies",
+      "authors": [
+        "J. Sebastian Monzon",
+        "Frank C. van den Bosch",
+        "Martin P. Rey"
+      ],
+      "submitted": "Submitted 7 April, 2026; v1 submitted 26 January, 2026; originally announced January 2026.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "2512.14889",
+      "url": "https://arxiv.org/abs/2512.14889",
+      "title": "BASILISK IV. No $S_8$ Tension with Satellite Kinematics",
+      "authors": [
+        "Kaustav Mitra",
+        "Frank C. van den Bosch",
+        "Josephine Baggen",
+        "Johannes U. Lange"
+      ],
+      "submitted": "Submitted 16 December, 2025; originally announced December 2025.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "2512.14695",
+      "url": "https://arxiv.org/abs/2512.14695",
+      "title": "JWST Observations of the Double Nucleus in NGC 4486B: Possible Evidence for a Recent Binary SMBH Merger and Recoil",
+      "authors": [
+        "Behzad Tahmasebzadeh",
+        "Monica Valluri",
+        "Shashank Dattathri",
+        "Tatsuya Akiba",
+        "Fazeel Mahmood Khan",
+        "Matthew A. Taylor",
+        "Haruka Yoshino",
+        "Solveig Thompson",
+        "Ann-Marie Madigan",
+        "Frank C. van den Bosch",
+        "Kelly holley-bockelmann",
+        "Patrick Côté",
+        "Laura Ferrarese",
+        "Michael J. Drinkwater",
+        "Holger Baumgardt",
+        "Misty C. Bentz",
+        "Kristen Dage",
+        "Eric W. Peng",
+        "Somya Jha",
+        "Andrea V. Macciò",
+        "Chengze Liu",
+        "Tyrone E. Woods"
+      ],
+      "submitted": "Submitted 13 March, 2026; v1 submitted 16 December, 2025; originally announced December 2025.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "2511.21814",
+      "url": "https://arxiv.org/abs/2511.21814",
+      "title": "Statistical Properties of Cold Streams In Massive Star-Forming Halos in TNG50",
+      "authors": [
+        "Isabel Medlock",
+        "Daisuke Nagai",
+        "Nir Mandelker",
+        "Volker Springel",
+        "Frank C. van den Bosch",
+        "Elad Zinger",
+        "Barry T. Chiang"
+      ],
+      "submitted": "Submitted 30 March, 2026; v1 submitted 26 November, 2025; originally announced November 2025.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "2511.14912",
+      "url": "https://arxiv.org/abs/2511.14912",
+      "title": "Dynamics in the Cores of Self-Interacting Dark Matter Halos: Reduced Stalling and Accelerated Core Collapse",
+      "authors": [
+        "Frank C. van den Bosch",
+        "Shashank Dattathri"
+      ],
+      "submitted": "Submitted 13 February, 2026; v1 submitted 18 November, 2025; originally announced November 2025.",
+      "reading": "Focused body passages and captions",
+      "sections": "Introduction; section 2 physical gain/loss balance; section 4; figure 12 and body",
+      "lesson": "Explain the physical balance before the torque formula; DF structure and evolution carry information absent from density.",
+      "version": 3,
+      "pdf_pages": 25,
+      "pdf_sha256": "65dd64ac0d9174b9d82fbcbf9336d4267663d1ee9384ec7fee5a8ebf5bfb28a5",
+      "visual_pdf_page": 18,
+      "versioned_url": "https://arxiv.org/abs/2511.14912v3"
+    },
+    {
+      "id": "2511.11804",
+      "url": "https://arxiv.org/abs/2511.11804",
+      "title": "Not all cores are equal: Phase-space origins of dynamical friction, stalling and buoyancy",
+      "authors": [
+        "Shashank Dattathri",
+        "Frank C. van den Bosch",
+        "Uddipan Banik",
+        "Martin Weinberg",
+        "Priyamvada Natarajan",
+        "Zhaozhou Li",
+        "Avishai Dekel"
+      ],
+      "submitted": "Submitted 3 September, 2026; v1 submitted 14 November, 2025; originally announced November 2025.",
+      "reading": "Focused body passages and captions",
+      "sections": "Introduction; discussion and conclusion passages in sections 5–9",
+      "lesson": "Distinguish structural agreement from phase-space equivalence and state which proposed mechanisms are absent from the comparison.",
+      "version": 2,
+      "pdf_pages": 20,
+      "pdf_sha256": "89efc8717bb9f0ba2d74672c10e665ada76b46c879ef8ecd9799e10a0e9f3043",
+      "visual_pdf_page": null,
+      "versioned_url": "https://arxiv.org/abs/2511.11804v2"
+    },
+    {
+      "id": "2510.26901",
+      "url": "https://arxiv.org/abs/2510.26901",
+      "title": "Universal numerical convergence criteria for subhalo tidal evolution",
+      "authors": [
+        "Barry T. Chiang",
+        "Frank C. van den Bosch",
+        "Hsi-Yu Schive"
+      ],
+      "submitted": "Submitted 13 January, 2026; v1 submitted 30 October, 2025; originally announced October 2025.",
+      "reading": "Focused body passages and captions",
+      "sections": "Sections 3–4 and figure 3 caption/body; section 7",
+      "lesson": "Treat systematic numerical bias and realization scatter separately; test the domain of an old convergence criterion.",
+      "version": 2,
+      "pdf_pages": 18,
+      "pdf_sha256": "f57683992aa0d62af46980a05d75d86a3d88c97961513230774960737647c433",
+      "visual_pdf_page": null,
+      "versioned_url": "https://arxiv.org/abs/2510.26901v2"
+    },
+    {
+      "id": "2510.08421",
+      "url": "https://arxiv.org/abs/2510.08421",
+      "title": "BASILISK III. Stress-testing the Conditional Luminosity Function model",
+      "authors": [
+        "Kaustav Mitra",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 9 October, 2025; originally announced October 2025.",
+      "reading": "Focused body passages and captions",
+      "sections": "Introduction; sections 5–6 and figures 3–4; section 8",
+      "lesson": "Test parameterization on known inputs before observations; precision within a restricted model is not proof of adequacy.",
+      "version": 1,
+      "pdf_pages": 21,
+      "pdf_sha256": "734e000770885b702278e421aba7306a0638b90d3e8e485d6e60888e766e002f",
+      "visual_pdf_page": 12,
+      "versioned_url": "https://arxiv.org/abs/2510.08421v1"
+    },
+    {
+      "id": "2509.01690",
+      "url": "https://arxiv.org/abs/2509.01690",
+      "title": "The Impact of Baryonic Effects on the Dynamical Masses Inferred Using Satellite Kinematics",
+      "authors": [
+        "Josephine F. W. Baggen",
+        "Frank C. van den Bosch",
+        "Kaustav Mitra"
+      ],
+      "submitted": "Submitted 20 February, 2026; v1 submitted 1 September, 2025; originally announced September 2025.",
+      "reading": "Focused body passages and captions",
+      "sections": "Abstract; section 5 and figure 7 caption",
+      "lesson": "Trace a small measured change through the inference and identify the uncertain parameter controlling a correction.",
+      "version": 2,
+      "pdf_pages": 19,
+      "pdf_sha256": "abd7731bfc5113b898798d36bc04aa71f1cea9fec90ec52f515486199bb45b1d",
+      "visual_pdf_page": null,
+      "versioned_url": "https://arxiv.org/abs/2509.01690v2"
+    },
+    {
+      "id": "2505.23905",
+      "url": "https://arxiv.org/abs/2505.23905",
+      "title": "The Dipole Instability in Gravitational $N$-body Systems: A Natural Explanation for Lopsidedness and Off-Centered Nuclei in Galaxies",
+      "authors": [
+        "Shashank Dattathri",
+        "Frank C. van den Bosch",
+        "Martin D. Weinberg",
+        "Uddipan Banik"
+      ],
+      "submitted": "Submitted 29 May, 2025; originally announced May 2025.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "2411.03192",
+      "url": "https://arxiv.org/abs/2411.03192",
+      "title": "The tidal evolution of anisotropic subhaloes: A new pathway to creating isotropic and cored satellites",
+      "authors": [
+        "Barry T. Chiang",
+        "Frank C. van den Bosch",
+        "Hsi-Yu Schive"
+      ],
+      "submitted": "Submitted 3 November, 2025; v1 submitted 5 November, 2024; originally announced November 2024.",
+      "reading": "Focused body passages and captions",
+      "sections": "Methods and figure 3 body; section 5",
+      "lesson": "Hold density fixed to isolate orbital anisotropy, then explain the dynamical path from orbital geometry to stripping.",
+      "version": 2,
+      "pdf_pages": 17,
+      "pdf_sha256": "4a5190bea445e717bf3fc7c228b861d843949043b80dcaeda0ec831a16b0986b",
+      "visual_pdf_page": null,
+      "versioned_url": "https://arxiv.org/abs/2411.03192v2"
+    },
+    {
+      "id": "2410.02873",
+      "url": "https://arxiv.org/abs/2410.02873",
+      "title": "Constraining the Low Mass End of the Stellar Halo Mass Relation with Surveys of Satellite Galaxies",
+      "authors": [
+        "J. Sebastian Monzon",
+        "Frank C. van den Bosch",
+        "Kaustav Mitra"
+      ],
+      "submitted": "Submitted 8 October, 2024; v1 submitted 3 October, 2024; originally announced October 2024.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "2409.18605",
+      "url": "https://arxiv.org/abs/2409.18605",
+      "title": "Growth of Massive Black-Holes in FFB Galaxies at Cosmic Dawn",
+      "authors": [
+        "Avishai Dekel",
+        "Nicholas C. Stone",
+        "Dhruba Dutta Chowdhury",
+        "Shmuel Gilbaum",
+        "Zhaozhou Li",
+        "Nir Mandelker",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 23 December, 2024; v1 submitted 27 September, 2024; originally announced September 2024.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "2409.03105",
+      "url": "https://arxiv.org/abs/2409.03105",
+      "title": "BASILISK II. Improved Constraints on the Galaxy-Halo Connection from Satellite Kinematics in SDSS",
+      "authors": [
+        "Kaustav Mitra",
+        "Frank C. van den Bosch",
+        "Johannes U. Lange"
+      ],
+      "submitted": "Submitted 4 September, 2024; originally announced September 2024.",
+      "reading": "Focused body passages and captions",
+      "sections": "Introduction and summary",
+      "lesson": "Motivate a new probe through the information it adds and the degeneracies it resolves.",
+      "version": 1,
+      "pdf_pages": 30,
+      "pdf_sha256": "04cdccd53c7e1037c632fdceabfb2775b5d77b723c887b7a7386d9477ba0ec9d",
+      "visual_pdf_page": null,
+      "versioned_url": "https://arxiv.org/abs/2409.03105v1"
+    },
+    {
+      "id": "2408.07128",
+      "url": "https://arxiv.org/abs/2408.07128",
+      "title": "Denser Environments Cultivate Larger Galaxies: A Comprehensive Study beyond the Local Universe with 3 Million Hyper Suprime-Cam Galaxies",
+      "authors": [
+        "Aritra Ghosh",
+        "C. Megan Urry",
+        "Meredith C. Powell",
+        "Rhythm Shimakawa",
+        "Frank C. van den Bosch",
+        "Daisuke Nagai",
+        "Kaustav Mitra",
+        "Andrew J. Connolly"
+      ],
+      "submitted": "Submitted 13 August, 2024; originally announced August 2024.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "2403.00912",
+      "url": "https://arxiv.org/abs/2403.00912",
+      "title": "Entrainment of Hot Gas into Cold Streams: The Origin of Excessive Star-formation Rates at Cosmic Noon",
+      "authors": [
+        "Han Aung",
+        "Nir Mandelker",
+        "Avishai Dekel",
+        "Daisuke Nagai",
+        "Vadim Semenov",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 13 July, 2024; v1 submitted 1 March, 2024; originally announced March 2024.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "2306.03966",
+      "url": "https://arxiv.org/abs/2306.03966",
+      "title": "The Structure and Dynamics of Massive High-$z$ Cosmic-Web Filaments: Three Radial Zones in Filament Cross-Sections",
+      "authors": [
+        "Yue Samuel Lu",
+        "Nir Mandelker",
+        "S. Peng Oh",
+        "Avishai Dekel",
+        "Frank C. van den Bosch",
+        "Volker Springel",
+        "Daisuke Nagai",
+        "Freeke van de Voort"
+      ],
+      "submitted": "Submitted 20 November, 2023; v1 submitted 6 June, 2023; originally announced June 2023.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "2303.08846",
+      "url": "https://arxiv.org/abs/2303.08846",
+      "title": "On the Dynamical Heating of Dwarf Galaxies in a Fuzzy Dark Matter Halo",
+      "authors": [
+        "Dhruba Dutta Chowdhury",
+        "Frank C. van den Bosch",
+        "Pieter van Dokkum",
+        "Victor Robles",
+        "Hsi-Yu Schive",
+        "Tzihong Chiueh"
+      ],
+      "submitted": "Submitted 22 March, 2023; v1 submitted 15 March, 2023; originally announced March 2023.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "2303.00034",
+      "url": "https://arxiv.org/abs/2303.00034",
+      "title": "A Comprehensive Perturbative Formalism for Phase Mixing in Perturbed Disks. II. Phase Spirals in an Inhomogeneous Disk Galaxy with a Non-responsive Dark Matter Halo",
+      "authors": [
+        "Uddipan Banik",
+        "Frank C. van den Bosch",
+        "Martin D. Weinberg"
+      ],
+      "submitted": "Submitted 28 February, 2023; originally announced March 2023.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "2302.04888",
+      "url": "https://arxiv.org/abs/2302.04888",
+      "title": "A candidate runaway supermassive black hole identified by shocks and star formation in its wake",
+      "authors": [
+        "Pieter van Dokkum",
+        "Imad Pasha",
+        "Maria Luisa Buzzo",
+        "Stephanie LaMassa",
+        "Zili Shen",
+        "Michael A. Keim",
+        "Roberto Abraham",
+        "Charlie Conroy",
+        "Shany Danieli",
+        "Kaustav Mitra",
+        "Daisuke Nagai",
+        "Priyamvada Natarajan",
+        "Aaron J. Romanowsky",
+        "Grant Tremblay",
+        "C. Megan Urry",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 9 February, 2023; originally announced February 2023.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "2301.08692",
+      "url": "https://arxiv.org/abs/2301.08692",
+      "title": "Constraints on $S_8$ from a full-scale and full-shape analysis of redshift-space clustering and galaxy-galaxy lensing in BOSS",
+      "authors": [
+        "Johannes U. Lange",
+        "Andrew P. Hearin",
+        "Alexie Leauthaud",
+        "Frank C. van den Bosch",
+        "Enia Xhakaj",
+        "Hong Guo",
+        "Risa H. Wechsler",
+        "Joseph DeRose"
+      ],
+      "submitted": "Submitted 20 January, 2023; originally announced January 2023.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "2211.05993",
+      "url": "https://arxiv.org/abs/2211.05993",
+      "title": "Testing the galaxy collision induced formation scenario for the trail of dark matter deficient galaxies with the susceptibility of globular clusters to the tidal force",
+      "authors": [
+        "Go Ogiya",
+        "Frank C. van den Bosch",
+        "Andreas Burkert",
+        "Xi Kang"
+      ],
+      "submitted": "Submitted 10 November, 2022; originally announced November 2022.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "2208.05038",
+      "url": "https://arxiv.org/abs/2208.05038",
+      "title": "A Comprehensive Perturbative Formalism for Phase-Mixing in Perturbed Disks. I. Phase spirals in an Infinite, Isothermal Slab",
+      "authors": [
+        "Uddipan Banik",
+        "Martin D. Weinberg",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 9 August, 2022; originally announced August 2022.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "2204.05332",
+      "url": "https://arxiv.org/abs/2204.05332",
+      "title": "Evidence of Galaxy Assembly Bias in SDSS DR7 Galaxy Samples from Count Statistics",
+      "authors": [
+        "Kuan Wang",
+        "Yao-Yuan Mao",
+        "Andrew R. Zentner",
+        "Hong Guo",
+        "Johannes U. Lange",
+        "Frank C. van den Bosch",
+        "Lorena Mezini"
+      ],
+      "submitted": "Submitted 20 September, 2022; v1 submitted 11 April, 2022; originally announced April 2022.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "2204.04097",
+      "url": "https://arxiv.org/abs/2204.04097",
+      "title": "Quenching in Cosmic Sheets: Tracing the Impact of Large Scale Structure Collapse on the Evolution of Dwarf Galaxies",
+      "authors": [
+        "Imad Pasha",
+        "Nir Mandelker",
+        "Frank C. van den Bosch",
+        "Volker Springel",
+        "Freeke van de Voort"
+      ],
+      "submitted": "Submitted 8 April, 2022; originally announced April 2022.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "2112.06944",
+      "url": "https://arxiv.org/abs/2112.06944",
+      "title": "Dynamical Friction, Buoyancy and Core-Stalling -- I. A Non-perturbative Orbit-based Analysis",
+      "authors": [
+        "Uddipan Banik",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 13 December, 2021; originally announced December 2021.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "2111.12104",
+      "url": "https://arxiv.org/abs/2111.12104",
+      "title": "On the Tidal Formation of Dark Matter Deficient Galaxies",
+      "authors": [
+        "Go Ogiya",
+        "Frank C. van den Bosch",
+        "Andreas Burkert"
+      ],
+      "submitted": "Submitted 10 December, 2021; v1 submitted 23 November, 2021; originally announced November 2021.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "2110.13044",
+      "url": "https://arxiv.org/abs/2110.13044",
+      "title": "SatGen -- II. Assessing the impact of a disc potential on subhalo populations",
+      "authors": [
+        "Sheridan B. Green",
+        "Frank C. van den Bosch",
+        "Fangzhou Jiang"
+      ],
+      "submitted": "Submitted 25 October, 2021; originally announced October 2021.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "2107.03395",
+      "url": "https://arxiv.org/abs/2107.03395",
+      "title": "Thermal Instabilities and Shattering in the High-Redshift WHIM: Convergence Criteria and Implications for Low-Metallicity Strong HI Absorbers",
+      "authors": [
+        "Nir Mandelker",
+        "Frank C. van den Bosch",
+        "Volker Springel",
+        "Freeke van de Voort",
+        "Joseph N. Burchett",
+        "Iryna S. Butsky",
+        "Daisuke Nagai",
+        "S. Peng Oh"
+      ],
+      "submitted": "Submitted 7 July, 2021; originally announced July 2021.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "2105.05268",
+      "url": "https://arxiv.org/abs/2105.05268",
+      "title": "On the Random Motion of Nuclear Objects in a Fuzzy Dark Matter Halo",
+      "authors": [
+        "Dhruba Dutta Chowdhury",
+        "Frank C. van den Bosch",
+        "Victor H. Robles",
+        "Pieter van Dokkum",
+        "Hsi-Yu Schive",
+        "Tzihong Chiueh",
+        "Tom Broadhurst"
+      ],
+      "submitted": "Submitted 27 July, 2021; v1 submitted 11 May, 2021; originally announced May 2021.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "2103.05004",
+      "url": "https://arxiv.org/abs/2103.05004",
+      "title": "A Self-Consistent, Time-Dependent Treatment of Dynamical Friction: New Insights regarding Core Stalling and Dynamical Buoyancy",
+      "authors": [
+        "Uddipan Banik",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 8 March, 2021; originally announced March 2021.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "2103.01227",
+      "url": "https://arxiv.org/abs/2103.01227",
+      "title": "The tidal evolution of dark matter substructure -- II. The impact of artificial disruption on subhalo mass functions and radial profiles",
+      "authors": [
+        "Sheridan B. Green",
+        "Frank C. van den Bosch",
+        "Fangzhou Jiang"
+      ],
+      "submitted": "Submitted 26 September, 2021; v1 submitted 1 March, 2021; originally announced March 2021.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "2101.12261",
+      "url": "https://arxiv.org/abs/2101.12261",
+      "title": "Five-percent measurements of the growth rate from simulation-based modelling of redshift-space clustering in BOSS LOWZ",
+      "authors": [
+        "Johannes U. Lange",
+        "Andrew P. Hearin",
+        "Alexie Leauthaud",
+        "Frank C. van den Bosch",
+        "Hong Guo",
+        "Joseph DeRose"
+      ],
+      "submitted": "Submitted 28 January, 2021; originally announced January 2021.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "2010.06632",
+      "url": "https://arxiv.org/abs/2010.06632",
+      "title": "A Fully General, Non-Perturbative Treatment of Impulsive Heating",
+      "authors": [
+        "Uddipan Banik",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 18 January, 2021; v1 submitted 13 October, 2020; originally announced October 2020.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "2008.05490",
+      "url": "https://arxiv.org/abs/2008.05490",
+      "title": "On the Evolution of the Globular Cluster System in NGC 1052-DF2: Dynamical Friction, Globular-Globular Interactions and Galactic Tides",
+      "authors": [
+        "Dhruba Dutta Chowdhury",
+        "Frank C. van den Bosch",
+        "Pieter van Dokkum"
+      ],
+      "submitted": "Submitted 15 September, 2020; v1 submitted 12 August, 2020; originally announced August 2020.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "2005.05974",
+      "url": "https://arxiv.org/abs/2005.05974",
+      "title": "SatGen: a semi-analytical satellite galaxy generator -- I. The model and its application to Local-Group satellite statistics",
+      "authors": [
+        "Fangzhou Jiang",
+        "Avishai Dekel",
+        "Jonathan Freundlich",
+        "Frank C. van den Bosch",
+        "Sheridan B. Green",
+        "Philip F. Hopkins",
+        "Andrew Benson",
+        "Xiaolong Du"
+      ],
+      "submitted": "Submitted 12 May, 2020; originally announced May 2020.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "2004.13732",
+      "url": "https://arxiv.org/abs/2004.13732",
+      "title": "Concentrations of Dark Haloes Emerge from Their Merger Histories",
+      "authors": [
+        "Kuan Wang",
+        "Yao-Yuan Mao",
+        "Andrew R. Zentner",
+        "Johannes U. Lange",
+        "Frank C. van den Bosch",
+        "Risa H. Wechsler"
+      ],
+      "submitted": "Submitted 27 September, 2020; v1 submitted 28 April, 2020; originally announced April 2020.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "2003.01724",
+      "url": "https://arxiv.org/abs/2003.01724",
+      "title": "Ly$α$ Blobs from Cold Streams Undergoing Kelvin-Helmholtz Instabilities",
+      "authors": [
+        "Nir Mandelker",
+        "Frank C. van den Bosch",
+        "Daisuke Nagai",
+        "Avishai Dekel",
+        "Yuval Birnboim",
+        "Han Aung"
+      ],
+      "submitted": "Submitted 30 July, 2020; v1 submitted 3 March, 2020; originally announced March 2020.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "2002.01934",
+      "url": "https://arxiv.org/abs/2002.01934",
+      "title": "Scatter in Sunyaev--Zel'dovich effect scaling relations explained by inter-cluster variance in mass accretion histories",
+      "authors": [
+        "Sheridan B. Green",
+        "Han Aung",
+        "Daisuke Nagai",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 11 June, 2020; v1 submitted 5 February, 2020; originally announced February 2020.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "2001.06489",
+      "url": "https://arxiv.org/abs/2001.06489",
+      "title": "Dynamical self-friction: how mass loss slows you down",
+      "authors": [
+        "Tim B. Miller",
+        "Frank C. van den Bosch",
+        "Sheridan B. Green",
+        "Go Ogiya"
+      ],
+      "submitted": "Submitted 17 January, 2020; originally announced January 2020.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1912.05969",
+      "url": "https://arxiv.org/abs/1912.05969",
+      "title": "The Dearth of Difference between Central and Satellite Galaxies III. Environmental Dependence of Mass-Size and Mass-Structure Relations",
+      "authors": [
+        "Enci Wang",
+        "Huiyuan Wang",
+        "Houjun Mo",
+        "Frank C. van den Bosch",
+        "Xiaohu Yang"
+      ],
+      "submitted": "Submitted 12 December, 2019; originally announced December 2019.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1910.05344",
+      "url": "https://arxiv.org/abs/1910.05344",
+      "title": "Instability of Supersonic Cold Streams Feeding Galaxies IV: Survival of Radiatively Cooling Streams",
+      "authors": [
+        "Nir Mandelker",
+        "Daisuke Nagai",
+        "Han Aung",
+        "Avishai Dekel",
+        "Yuval Birnboim",
+        "Frank van den Bosch"
+      ],
+      "submitted": "Submitted 9 March, 2020; v1 submitted 11 October, 2019; originally announced October 2019.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1909.03107",
+      "url": "https://arxiv.org/abs/1909.03107",
+      "title": "Cosmological Evidence Modelling: a new simulation-based approach to constrain cosmology on non-linear scales",
+      "authors": [
+        "Johannes U. Lange",
+        "Frank C. van den Bosch",
+        "Andrew R. Zentner",
+        "Kuan Wang",
+        "Andrew P. Hearin",
+        "Hong Guo"
+      ],
+      "submitted": "Submitted 6 September, 2019; originally announced September 2019.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1908.08537",
+      "url": "https://arxiv.org/abs/1908.08537",
+      "title": "The tidal evolution of dark matter substructure -- I. Subhalo density profiles",
+      "authors": [
+        "Sheridan B. Green",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 30 September, 2019; v1 submitted 22 August, 2019; originally announced August 2019.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1908.07547",
+      "url": "https://arxiv.org/abs/1908.07547",
+      "title": "BASILISK: Bayesian Hierarchical Inference of the Galaxy-Halo Connection using Satellite Kinematics--I. Method and Validation",
+      "authors": [
+        "Frank C. van den Bosch",
+        "Johannes U. Lange",
+        "Andrew R. Zentner"
+      ],
+      "submitted": "Submitted 20 August, 2019; originally announced August 2019.",
+      "reading": "Focused body passages and captions",
+      "sections": "Section 7 assumptions and three validation tiers",
+      "lesson": "Separate verification under the model assumptions from tests that relax those assumptions.",
+      "version": 1,
+      "pdf_pages": 30,
+      "pdf_sha256": "bdfaee88bacee7e03c2d2455fdf00b339ac54d58fbf12021f0873d75aa97c1dc",
+      "visual_pdf_page": null,
+      "versioned_url": "https://arxiv.org/abs/1908.07547v1"
+    },
+    {
+      "id": "1906.10693",
+      "url": "https://arxiv.org/abs/1906.10693",
+      "title": "Shattering of Cosmic Sheets due to Thermal Instabilities: a Formation Channel for Metal-Free Lyman Limit Systems",
+      "authors": [
+        "Nir Mandelker",
+        "Frank C. van den Bosch",
+        "Volker Springel",
+        "Freeke van de Voort"
+      ],
+      "submitted": "Submitted 25 June, 2019; originally announced June 2019.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1906.08680",
+      "url": "https://arxiv.org/abs/1906.08680",
+      "title": "New perspectives on the BOSS small-scale lensing discrepancy for the Planck $Λ$CDM Cosmology",
+      "authors": [
+        "Johannes U. Lange",
+        "Xiaohu Yang",
+        "Hong Guo",
+        "Wentao Luo",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 20 June, 2019; originally announced June 2019.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1903.09656",
+      "url": "https://arxiv.org/abs/1903.09656",
+      "title": "How to Optimally Constrain Galaxy Assembly Bias: Supplement Projected Correlation Functions with Count-in-cells Statistics",
+      "authors": [
+        "Kuan Wang",
+        "Yao-Yuan Mao",
+        "Andrew R. Zentner",
+        "Frank C. van den Bosch",
+        "Johannes U. Lange",
+        "Chad M. Schafer",
+        "Antonia S. Villarreal",
+        "Andrew P. Hearin",
+        "Duncan Campbell"
+      ],
+      "submitted": "Submitted 6 September, 2019; v1 submitted 22 March, 2019; originally announced March 2019.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1903.05644",
+      "url": "https://arxiv.org/abs/1903.05644",
+      "title": "Understanding the circumgalactic medium is critical for understanding galaxy evolution",
+      "authors": [
+        "Molly S. Peeples",
+        "Peter Behroozi",
+        "Rongmon Bordoloi",
+        "Alyson Brooks",
+        "James S. Bullock",
+        "Joseph N. Burchett",
+        "Hsiao-Wen Chen",
+        "John Chisholm",
+        "Charlotte Christensen",
+        "Alison Coil",
+        "Lauren Corlies",
+        "Aleksandar Diamond-Stanic",
+        "Megan Donahue",
+        "Claude-André Faucher-Giguère",
+        "Henry Ferguson",
+        "Drummond Fielding",
+        "Andrew J. Fox",
+        "David M. French",
+        "Steven R. Furlanetto",
+        "Mario Gennaro",
+        "Karoline M. Gilbert",
+        "Erika Hamden",
+        "Nimish Hathi",
+        "Matthew Hayes",
+        "Alaina Henry"
+      ],
+      "submitted": "Submitted 13 March, 2019; originally announced March 2019.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1903.04509",
+      "url": "https://arxiv.org/abs/1903.04509",
+      "title": "Astro2020: Empirically Constraining Galaxy Evolution",
+      "authors": [
+        "Peter Behroozi",
+        "Matthew R. Becker",
+        "Frank C. van den Bosch",
+        "Jarle Brinchmann",
+        "Charlie Conroy",
+        "Mark Dickinson",
+        "Christopher M. Hirata",
+        "Andrew Hearin",
+        "Alexie Leauthaud",
+        "Chun Ly",
+        "Yao-Yuan Mao",
+        "Benjamin P. Moster",
+        "Christine O'Donnell",
+        "Casey Papovich",
+        "Aldo Rodríguez-Puebla",
+        "Rachel Somerville",
+        "Erik Tollerud",
+        "Jeremy Tinker",
+        "Yun Wang",
+        "Risa H. Wechsler",
+        "Charity Woodrum",
+        "Ann Zabludoff",
+        "Dennis Zaritsky",
+        "Andrew R. Zentner",
+        "Huanian Zhang"
+      ],
+      "submitted": "Submitted 11 March, 2019; originally announced March 2019.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1902.05959",
+      "url": "https://arxiv.org/abs/1902.05959",
+      "title": "On the Orbital Decay of Globular Clusters in NGC1052-DF2: Testing a Baryon-Only Mass Model",
+      "authors": [
+        "Dhruba Dutta Chowdhury",
+        "Frank C. van den Bosch",
+        "Pieter van Dokkum"
+      ],
+      "submitted": "Submitted 23 April, 2019; v1 submitted 15 February, 2019; originally announced February 2019.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1901.08601",
+      "url": "https://arxiv.org/abs/1901.08601",
+      "title": "DASH: a library of dynamical subhalo evolution",
+      "authors": [
+        "Go Ogiya",
+        "Frank C. van den Bosch",
+        "Oliver Hahn",
+        "Sheridan B. Green",
+        "Tim B. Miller",
+        "Andreas Burkert"
+      ],
+      "submitted": "Submitted 24 January, 2019; originally announced January 2019.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1811.03596",
+      "url": "https://arxiv.org/abs/1811.03596",
+      "title": "Updated Results on the Galaxy-Halo Connection from Satellite Kinematics in SDSS",
+      "authors": [
+        "Johannes U. Lange",
+        "Frank C. van den Bosch",
+        "Andrew R. Zentner",
+        "Kuan Wang",
+        "Antonia S. Villarreal"
+      ],
+      "submitted": "Submitted 8 November, 2018; originally announced November 2018.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1811.00637",
+      "url": "https://arxiv.org/abs/1811.00637",
+      "title": "Constraining the mass density of free-floating black holes using razor-thin lensing arcs",
+      "authors": [
+        "Uddipan Banik",
+        "Frank C. van den Bosch",
+        "Michael Tremmel",
+        "Anupreeta More",
+        "Giulia Despali",
+        "Surhud More",
+        "Simona Vegetti",
+        "John P. McKean"
+      ],
+      "submitted": "Submitted 19 December, 2018; v1 submitted 1 November, 2018; originally announced November 2018.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1810.10511",
+      "url": "https://arxiv.org/abs/1810.10511",
+      "title": "Maturing Satellite Kinematics into a Competitive Probe of the Galaxy-Halo Connection",
+      "authors": [
+        "Johannes U. Lange",
+        "Frank C. van den Bosch",
+        "Andrew R. Zentner",
+        "Kuan Wang",
+        "Antonia S. Villarreal"
+      ],
+      "submitted": "Submitted 24 October, 2018; originally announced October 2018.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1808.04369",
+      "url": "https://arxiv.org/abs/1808.04369",
+      "title": "Cosmological simulations of the circumgalactic medium with 1 kpc resolution: enhanced HI column densities",
+      "authors": [
+        "Freeke van de Voort",
+        "Volker Springel",
+        "Nir Mandelker",
+        "Frank C. van den Bosch",
+        "Rüdiger Pakmor"
+      ],
+      "submitted": "Submitted 5 October, 2018; v1 submitted 13 August, 2018; originally announced August 2018.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1807.08198",
+      "url": "https://arxiv.org/abs/1807.08198",
+      "title": "The dearth of difference between central and satellite galaxies II. Comparison of observations with L-GALAXIES and EAGLE in star formation quenching",
+      "authors": [
+        "Enci Wang",
+        "Huiyuan Wang",
+        "Houjun Mo",
+        "Frank C. van den Bosch",
+        "S. H. Lim",
+        "Lixin Wang",
+        "Xiaohu Yang",
+        "Sihan Chen"
+      ],
+      "submitted": "Submitted 21 July, 2018; originally announced July 2018.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1805.04004",
+      "url": "https://arxiv.org/abs/1805.04004",
+      "title": "The Dearth of Difference between Central and Satellite Galaxies I. Perspectives on star formation quenching and AGN activities",
+      "authors": [
+        "Enci Wang",
+        "Huiyuan Wang",
+        "Houjun Mo",
+        "S. H. Lim",
+        "Frank C. van den Bosch",
+        "Xu Kong",
+        "Lixin Wang",
+        "Xiaohu Yang",
+        "Sihan Chen"
+      ],
+      "submitted": "Submitted 10 May, 2018; originally announced May 2018.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1801.05427",
+      "url": "https://arxiv.org/abs/1801.05427",
+      "title": "Dark Matter Substructure in Numerical Simulations: A Tale of Discreteness Noise, Runaway Instabilities, and Artificial Disruption",
+      "authors": [
+        "Frank C. van den Bosch",
+        "Go Ogiya"
+      ],
+      "submitted": "Submitted 16 January, 2018; originally announced January 2018.",
+      "reading": "Focused body passages and captions",
+      "sections": "Section 4 timestep discussion; figures 4–5 captions; conclusions",
+      "lesson": "Physical and numerical interventions answer different questions; a reliable calculation needs both distinctions.",
+      "version": 1,
+      "pdf_pages": 25,
+      "pdf_sha256": "146e554bdfb734fba7b7125614247af4ba81179ba60242506c39284fe8e35ca4",
+      "visual_pdf_page": null,
+      "versioned_url": "https://arxiv.org/abs/1801.05427v1"
+    },
+    {
+      "id": "1712.04163",
+      "url": "https://arxiv.org/abs/1712.04163",
+      "title": "Mapping the Real Space Distributions of Galaxies in SDSS DR7: II. Measuring the growth rate, clustering amplitude of matter and biases of galaxies at redshift $0.1$",
+      "authors": [
+        "Feng Shi",
+        "Xiaohu Yang",
+        "Huiyuan Wang",
+        "Youcai Zhang",
+        "H. J. Mo",
+        "Frank C. van den Bosch",
+        "Wentao Luo",
+        "Dylan Tweed",
+        "Shijie Li",
+        "Chengze Liu",
+        "Yi Lu",
+        "Lei Yang"
+      ],
+      "submitted": "Submitted 27 June, 2018; v1 submitted 12 December, 2017; originally announced December 2017.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1712.00883",
+      "url": "https://arxiv.org/abs/1712.00883",
+      "title": "ELUCID V. Lighting dark matter halos with galaxies",
+      "authors": [
+        "Xiaohu Yang",
+        "Youcai Zhang",
+        "Huiyuan Wang",
+        "Chengze Liu",
+        "Tianhuan Lu",
+        "Shijie Li",
+        "Feng Shi",
+        "Y. P. Jing",
+        "H. J. Mo",
+        "Frank C. van den Bosch",
+        "Xi Kang",
+        "Weiguang Cui",
+        "Hong Guo",
+        "Guoliang Li",
+        "S. H. Lim",
+        "Yi Lu",
+        "Wentao Luo",
+        "Chengliang Wei",
+        "Lei Yang"
+      ],
+      "submitted": "Submitted 3 May, 2018; v1 submitted 3 December, 2017; originally announced December 2017.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1711.09108",
+      "url": "https://arxiv.org/abs/1711.09108",
+      "title": "Cold Filamentary Accretion and the Formation of Metal Poor Globular Clusters and Halo Stars",
+      "authors": [
+        "Nir Mandelker",
+        "Pieter G. van Dokkum",
+        "Jean P. Brodie",
+        "Frank C. van den Bosch",
+        "Daniel Ceverino"
+      ],
+      "submitted": "Submitted 11 January, 2019; v1 submitted 24 November, 2017; originally announced November 2017.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1711.05276",
+      "url": "https://arxiv.org/abs/1711.05276",
+      "title": "Disruption of Dark Matter Substructure: Fact or Fiction?",
+      "authors": [
+        "Frank C. van den Bosch",
+        "Go Ogiya",
+        "Oliver Hahn",
+        "Andreas Burkert"
+      ],
+      "submitted": "Submitted 14 November, 2017; originally announced November 2017.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1710.05029",
+      "url": "https://arxiv.org/abs/1710.05029",
+      "title": "Modelling the line-of-sight contribution in substructure lensing",
+      "authors": [
+        "Giulia Despali",
+        "Simona Vegetti",
+        "Simon D. M. White",
+        "Carlo Giocoli",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 26 January, 2018; v1 submitted 13 October, 2017; originally announced October 2017.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1707.09002",
+      "url": "https://arxiv.org/abs/1707.09002",
+      "title": "ELUCID IV: Galaxy Quenching and its Relation to Halo Mass, Environment, and Assembly Bias",
+      "authors": [
+        "Huiyuan Wang",
+        "H. J. Mo",
+        "Sihan Chen",
+        "Yang Yang",
+        "Xiaohu Yang",
+        "Enci Wang",
+        "Frank C. van den Bosch",
+        "Yipeng Jing",
+        "Xi Kang",
+        "Weipeng Lin",
+        "S. H. Lim",
+        "Shuiyao Huang",
+        "Yi Lu",
+        "Shijie Li",
+        "Weiguang Cui",
+        "Youcai Zhang",
+        "Dylan Tweed",
+        "Chengliang Wei",
+        "Guoliang Li",
+        "Feng Shi"
+      ],
+      "submitted": "Submitted 5 November, 2017; v1 submitted 27 July, 2017; originally announced July 2017.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1707.06264",
+      "url": "https://arxiv.org/abs/1707.06264",
+      "title": "On stellar mass loss from galaxies in groups and clusters",
+      "authors": [
+        "Édouard Tollet",
+        "Andrea Cattaneo",
+        "Gary Mamon",
+        "Thibaud Moutard",
+        "Frank van den Bosch"
+      ],
+      "submitted": "Submitted 19 July, 2017; originally announced July 2017.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1705.06347",
+      "url": "https://arxiv.org/abs/1705.06347",
+      "title": "The Galaxy Clustering Crisis in Abundance Matching",
+      "authors": [
+        "Duncan Campbell",
+        "Frank C. van den Bosch",
+        "Nikhil Padmanabhan",
+        "Yao-Yuan Mao",
+        "Andrew R. Zentner",
+        "Johannes U. Lange",
+        "Fangzhou Jiang",
+        "Antonia Villarreal"
+      ],
+      "submitted": "Submitted 17 May, 2017; originally announced May 2017.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1705.05043",
+      "url": "https://arxiv.org/abs/1705.05043",
+      "title": "Brightest galaxies as halo centre tracers in SDSS DR7",
+      "authors": [
+        "Johannes U. Lange",
+        "Frank C. van den Bosch",
+        "Andrew Hearin",
+        "Duncan Campbell",
+        "Andrew R. Zentner",
+        "Antonia Villarreal",
+        "Yao-Yuan Mao"
+      ],
+      "submitted": "Submitted 28 November, 2017; v1 submitted 14 May, 2017; originally announced May 2017.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1705.04327",
+      "url": "https://arxiv.org/abs/1705.04327",
+      "title": "The Immitigable Nature of Assembly Bias: The Impact of Halo Definition on Assembly Bias",
+      "authors": [
+        "Antonia S. Villarreal",
+        "Andrew R. Zentner",
+        "Yao-Yuan Mao",
+        "Chris W. Purcell",
+        "Frank C. van den Bosch",
+        "Benedikt Diemer",
+        "Johannes U. Lange",
+        "Kuan Wang",
+        "Duncan Campbell"
+      ],
+      "submitted": "Submitted 16 September, 2017; v1 submitted 11 May, 2017; originally announced May 2017.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1702.04348",
+      "url": "https://arxiv.org/abs/1702.04348",
+      "title": "Mapping substructure in the HST Frontier Fields cluster lenses and in cosmological simulations",
+      "authors": [
+        "Priyamvada Natarajan",
+        "Urmila Chadayammuri",
+        "Mathilde Jauzac",
+        "Johan Richard",
+        "Jean-Paul Kneib",
+        "Harald Ebeling",
+        "Fangzhou Jiang",
+        "Frank van den Bosch",
+        "Marceau Limousin",
+        "Eric Jullo",
+        "Hakim Atek",
+        "Annalisa Pillepich",
+        "Cristina Popa",
+        "Federico Marinacci",
+        "Lars Hernquist",
+        "Massimo Meneghetti",
+        "Mark Vogelsberger"
+      ],
+      "submitted": "Submitted 26 February, 2017; v1 submitted 14 February, 2017; originally announced February 2017.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1611.02657",
+      "url": "https://arxiv.org/abs/1611.02657",
+      "title": "Dissecting the Evolution of Dark Matter Subhaloes in the Bolshoi Simulation",
+      "authors": [
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 8 November, 2016; originally announced November 2016.",
+      "reading": "Focused body passages and captions",
+      "sections": "Evolution-channel definitions and summary",
+      "lesson": "Define operational categories before interpreting apparent changes physically.",
+      "version": 1,
+      "pdf_pages": 26,
+      "pdf_sha256": "41e2f6d445a9968d99bff8a0955f6e5b0a7faadc6de976b9c81fe08a2c210e11",
+      "visual_pdf_page": null,
+      "versioned_url": "https://arxiv.org/abs/1611.02657v1"
+    },
+    {
+      "id": "1610.02399",
+      "url": "https://arxiv.org/abs/1610.02399",
+      "title": "Statistics of Dark Matter Substructure: III. Halo-to-Halo Variance",
+      "authors": [
+        "Fangzhou Jiang",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 7 October, 2016; originally announced October 2016.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1608.02313",
+      "url": "https://arxiv.org/abs/1608.02313",
+      "title": "Mapping the real space distributions of galaxies in SDSS DR7: I. Two Point Correlation Functions",
+      "authors": [
+        "Feng Shi",
+        "Xiaohu Yang",
+        "Huiyuan Wang",
+        "Youcai Zhang",
+        "H. J. Mo",
+        "Frank C. van den Bosch",
+        "Shijie Li",
+        "Chengze Liu",
+        "Yi Lu",
+        "Dylan Tweed",
+        "Lei Yang"
+      ],
+      "submitted": "Submitted 6 November, 2016; v1 submitted 8 August, 2016; originally announced August 2016.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1607.05406",
+      "url": "https://arxiv.org/abs/1607.05406",
+      "title": "Galaxy-Galaxy Weak Lensing Measurements from SDSS: I. Image Processing and Lensing signals",
+      "authors": [
+        "Wentao Luo",
+        "Xiaohu Yang",
+        "Jun Zhang",
+        "Dylan Tweed",
+        "Liping Fu",
+        "H. J. Mo",
+        "Frank C. van den Bosch",
+        "Chenggang Shu",
+        "Ran Li",
+        "Nan Li",
+        "Xiangkun Liu",
+        "Chuzhong Pan",
+        "Yiran Wang",
+        "Mario Radovich"
+      ],
+      "submitted": "Submitted 19 July, 2016; originally announced July 2016.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1606.07817",
+      "url": "https://arxiv.org/abs/1606.07817",
+      "title": "Constraints on Assembly Bias from Galaxy Clustering",
+      "authors": [
+        "Andrew R. Zentner",
+        "Andrew Hearin",
+        "Frank C. van den Bosch",
+        "Johannes U. Lange",
+        "Antonia Villarreal"
+      ],
+      "submitted": "Submitted 24 June, 2016; originally announced June 2016.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1602.02757",
+      "url": "https://arxiv.org/abs/1602.02757",
+      "title": "A Slippery Slope: Systematic Uncertainties in the Line Width Baryonic Tully-Fisher Relation",
+      "authors": [
+        "Jeremy D. Bradford",
+        "Marla C. Geha",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 17 October, 2016; v1 submitted 8 February, 2016; originally announced February 2016.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1512.03050",
+      "url": "https://arxiv.org/abs/1512.03050",
+      "title": "Introducing Decorated HODs: modeling assembly bias in the galaxy-halo connection",
+      "authors": [
+        "Andrew P. Hearin",
+        "Andrew R. Zentner",
+        "Frank C. van den Bosch",
+        "Duncan Campbell",
+        "Erik Tollerud"
+      ],
+      "submitted": "Submitted 9 December, 2015; originally announced December 2015.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1510.01733",
+      "url": "https://arxiv.org/abs/1510.01733",
+      "title": "Detecting Direct Collapse Black Holes: making the case for CR7",
+      "authors": [
+        "Bhaskar Agarwal",
+        "Jarrett L. Johnson",
+        "Erik Zackrisson",
+        "Ivo Labbe",
+        "Frank C. van den Bosch",
+        "Priyamvada Natarajan",
+        "Sadegh Khochfar"
+      ],
+      "submitted": "Submitted 1 September, 2016; v1 submitted 6 October, 2015; originally announced October 2015.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1510.01586",
+      "url": "https://arxiv.org/abs/1510.01586",
+      "title": "On the Segregation of Dark Matter Substructure",
+      "authors": [
+        "Frank C. van den Bosch",
+        "Fangzhou Jiang",
+        "Duncan Campbell",
+        "Peter Behroozi"
+      ],
+      "submitted": "Submitted 6 October, 2015; originally announced October 2015.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1508.02715",
+      "url": "https://arxiv.org/abs/1508.02715",
+      "title": "Comprehensive Assessment of the Too-Big-to-Fail Problem",
+      "authors": [
+        "Fangzhou Jiang",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 11 August, 2015; originally announced August 2015.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1507.03999",
+      "url": "https://arxiv.org/abs/1507.03999",
+      "title": "Where stars form: inside-out growth and coherent star formation from HST Halpha maps of 2676 galaxies across the main sequence at z~1",
+      "authors": [
+        "Erica June Nelson",
+        "Pieter G. van Dokkum",
+        "Natascha M. Förster Schreiber",
+        "Marijn Franx",
+        "Gabriel B. Brammer",
+        "Ivelina G. Momcheva",
+        "Stijn Wuyts",
+        "Katherine E. Whitaker",
+        "Rosalind E. Skelton",
+        "Mattia Fumagalli",
+        "Mariska Kriek",
+        "Ivo Labbé",
+        "Joel Leja",
+        "Hans-Walter Rix",
+        "Linda J. Tacconi",
+        "Arjen van der Wel",
+        "Frank C. van den Bosch",
+        "Pascal A. Oesch",
+        "Claire Dickey",
+        "Johannes Ulf Lange"
+      ],
+      "submitted": "Submitted 14 July, 2015; originally announced July 2015.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1505.04798",
+      "url": "https://arxiv.org/abs/1505.04798",
+      "title": "Assessing Colour-dependent Occupation Statistics Inferred from Galaxy Group Catalogues",
+      "authors": [
+        "Duncan Campbell",
+        "Frank C van den Bosch",
+        "Andrew Hearin",
+        "Nikhil Padmanabhan",
+        "Andreas Berlind",
+        "H. J. Mo",
+        "Jeremy Tinker",
+        "Xiaohu Yang"
+      ],
+      "submitted": "Submitted 18 May, 2015; originally announced May 2015.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1504.05578",
+      "url": "https://arxiv.org/abs/1504.05578",
+      "title": "On the Physical Origin of Galactic Conformity",
+      "authors": [
+        "Andrew P. Hearin",
+        "Peter S. Behroozi",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 21 April, 2015; originally announced April 2015.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1502.03429",
+      "url": "https://arxiv.org/abs/1502.03429",
+      "title": "Internal Alignments of Red Versus Blue Discs in Dark Matter Halos",
+      "authors": [
+        "Victor P. Debattista",
+        "Frank C. van den Bosch",
+        "Rok Roskar",
+        "Thomas Quinn",
+        "Ben Moore",
+        "David R. Cole"
+      ],
+      "submitted": "Submitted 19 August, 2015; v1 submitted 11 February, 2015; originally announced February 2015.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1409.7150",
+      "url": "https://arxiv.org/abs/1409.7150",
+      "title": "Spin alignments of spiral galaxies within the large-scale structure from SDSS DR7",
+      "authors": [
+        "Youcai Zhang",
+        "Xiaohu Yang",
+        "Huiyuan Wang",
+        "Lei Wang",
+        "Wentao Luo",
+        "H. J. Mo",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 15 December, 2014; v1 submitted 25 September, 2014; originally announced September 2014.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1409.2750",
+      "url": "https://arxiv.org/abs/1409.2750",
+      "title": "Coming of Age in the Dark Sector: How Dark Matter Haloes grow their Gravitational Potential Wells",
+      "authors": [
+        "Frank C. van den Bosch",
+        "Fangzhou Jiang",
+        "Andrew Hearin",
+        "Duncan Campbell",
+        "Douglas Watson",
+        "Nikhil Padmanabhan"
+      ],
+      "submitted": "Submitted 9 September, 2014; originally announced September 2014.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1406.5068",
+      "url": "https://arxiv.org/abs/1406.5068",
+      "title": "Star Formation and Stellar Mass Assembly in Dark Matter Halos: From Giants to Dwarfs",
+      "authors": [
+        "Zhankui Lu",
+        "H. J. Mo",
+        "Yu Lu",
+        "Neal Katz",
+        "Martin D. Weinberg",
+        "Frank C. van den Bosch",
+        "Xiaohu Yang"
+      ],
+      "submitted": "Submitted 31 March, 2015; v1 submitted 19 June, 2014; originally announced June 2014.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1404.6524",
+      "url": "https://arxiv.org/abs/1404.6524",
+      "title": "Beyond Halo Mass: Galactic Conformity as a Smoking Gun of Central Galaxy Assembly Bias",
+      "authors": [
+        "Andrew P. Hearin",
+        "Douglas F. Watson",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 25 April, 2014; originally announced April 2014.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1403.6835",
+      "url": "https://arxiv.org/abs/1403.6835",
+      "title": "Statistics of Dark Matter Substructure: II. Comparison of Model with Simulation Results",
+      "authors": [
+        "Frank C. van den Bosch",
+        "Fangzhou Jiang"
+      ],
+      "submitted": "Submitted 26 March, 2014; originally announced March 2014.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1403.6827",
+      "url": "https://arxiv.org/abs/1403.6827",
+      "title": "Statistics of Dark Matter Substructure: I. Model and Universal Fitting Functions",
+      "authors": [
+        "Fangzhou Jiang",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 26 March, 2014; originally announced March 2014.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1403.1578",
+      "url": "https://arxiv.org/abs/1403.1578",
+      "title": "Predicting Galaxy Star Formation Rates via the Co-evolution of Galaxies and Halos",
+      "authors": [
+        "Douglas F. Watson",
+        "Andrew P. Hearin",
+        "Andreas A. Berlind",
+        "Matthew R. Becker",
+        "Peter S. Behroozi",
+        "Ramin A. Skibba",
+        "Reinabelle Reyes",
+        "Andrew R. Zentner",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 6 October, 2014; v1 submitted 6 March, 2014; originally announced March 2014.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1312.7417",
+      "url": "https://arxiv.org/abs/1312.7417",
+      "title": "Measuring the X-ray luminosities of SDSS DR7 clusters from RASS",
+      "authors": [
+        "Lei Wang",
+        "Xiaohu Yang",
+        "Shiyin Shen",
+        "H. J. Mo",
+        "Frank C. van den Bosch",
+        "Wentao Luo",
+        "Yu Wang",
+        "Erwin T. Lau",
+        "Q. D. Wang",
+        "Xi Kang",
+        "Ran Li"
+      ],
+      "submitted": "Submitted 28 December, 2013; originally announced December 2013.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1311.6523",
+      "url": "https://arxiv.org/abs/1311.6523",
+      "title": "First Galaxy-Galaxy Lensing Measurement of Satellite Halo Mass in the CFHT Stripe-82 Survey",
+      "authors": [
+        "Ran Li",
+        "Huanyuan Shan",
+        "HouJun Mo",
+        "Jean-Paul Kneib",
+        "Xiaohu Yang",
+        "Wentao Luo",
+        "Frank C. van den Bosch",
+        "Thomas Erben",
+        "Bruno Moraes",
+        "Martin Makler"
+      ],
+      "submitted": "Submitted 12 December, 2013; v1 submitted 25 November, 2013; originally announced November 2013.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1311.5225",
+      "url": "https://arxiv.org/abs/1311.5225",
+      "title": "Generating Merger Trees for Dark Matter Haloes: A Comparison of Methods",
+      "authors": [
+        "Fangzhou Jiang",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 20 November, 2013; originally announced November 2013.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1311.1818",
+      "url": "https://arxiv.org/abs/1311.1818",
+      "title": "Galaxy Assembly Bias: A Significant Source of Systematic Error in the Galaxy-Halo Relationship",
+      "authors": [
+        "Andrew R. Zentner",
+        "Andrew P. Hearin",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 10 February, 2015; v1 submitted 7 November, 2013; originally announced November 2013.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1309.3847",
+      "url": "https://arxiv.org/abs/1309.3847",
+      "title": "Alignments of galaxies within cosmic filaments from SDSS DR7",
+      "authors": [
+        "Youcai Zhang",
+        "Xiaohu Yang",
+        "Huiyuan Wang",
+        "Lei Wang",
+        "H. J. Mo",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 13 November, 2013; v1 submitted 16 September, 2013; originally announced September 2013.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1308.0054",
+      "url": "https://arxiv.org/abs/1308.0054",
+      "title": "A new population of recently quenched elliptical galaxies in the SDSS",
+      "authors": [
+        "Daniel H. McIntosh",
+        "Cory Wagner",
+        "Andrew Cooper",
+        "Eric F. Bell",
+        "Dusan Keres",
+        "Frank C. van den Bosch",
+        "Anna Gallazzi",
+        "Tim Haines",
+        "Justin Mann",
+        "Anna Pasquali",
+        "Allison M. Christian"
+      ],
+      "submitted": "Submitted 27 May, 2014; v1 submitted 31 July, 2013; originally announced August 2013.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1307.5107",
+      "url": "https://arxiv.org/abs/1307.5107",
+      "title": "The statistical nature of the brightest group galaxies",
+      "authors": [
+        "Shiyin Shen",
+        "Xiaohu Yang",
+        "Houjun Mo",
+        "Frank van den Bosch",
+        "Surhud More"
+      ],
+      "submitted": "Submitted 3 January, 2014; v1 submitted 18 July, 2013; originally announced July 2013.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1306.0650",
+      "url": "https://arxiv.org/abs/1306.0650",
+      "title": "An Empirical Model for the Star Formation History in Dark Matter Halos",
+      "authors": [
+        "Zhankui Lu",
+        "Houjun Mo",
+        "Yu Lu",
+        "Neal Katz",
+        "Martin D. Weinberg",
+        "Frank C. van den Bosch",
+        "Xiaohu Yang"
+      ],
+      "submitted": "Submitted 9 January, 2014; v1 submitted 4 June, 2013; originally announced June 2013.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1303.7231",
+      "url": "https://arxiv.org/abs/1303.7231",
+      "title": "Galaxy evolution near groups and clusters: ejected satellites and the spatial extent of environmental quenching",
+      "authors": [
+        "Andrew R. Wetzel",
+        "Jeremy L. Tinker",
+        "Charlie Conroy",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 20 February, 2014; v1 submitted 28 March, 2013; originally announced March 2013.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1302.1265",
+      "url": "https://arxiv.org/abs/1302.1265",
+      "title": "Constraining the Star Formation Histories in Dark Matter Halos: I. Central Galaxies",
+      "authors": [
+        "Xiaohu Yang",
+        "H. J. Mo",
+        "Frank C. van den Bosch",
+        "Ana Bonaca",
+        "Shijie Li",
+        "Yi Lu",
+        "Yu Lu",
+        "Zhankui Lu"
+      ],
+      "submitted": "Submitted 30 April, 2013; v1 submitted 6 February, 2013; originally announced February 2013.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1301.2669",
+      "url": "https://arxiv.org/abs/1301.2669",
+      "title": "Disk Assembly and the M_BH-sigma Relation of Supermassive Black Holes",
+      "authors": [
+        "Victor P. Debattista",
+        "Stelios Kazantzidis",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 12 January, 2013; originally announced January 2013.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1301.1348",
+      "url": "https://arxiv.org/abs/1301.1348",
+      "title": "Reconstructing the Initial Density Field of the Local Universe: Method and Test with Mock Catalogs",
+      "authors": [
+        "Huiyuan Wang",
+        "H. J. Mo",
+        "Xiaohu Yang",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 30 May, 2013; v1 submitted 7 January, 2013; originally announced January 2013.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1211.3976",
+      "url": "https://arxiv.org/abs/1211.3976",
+      "title": "The clustering of galaxies in the SDSS-III Baryon Oscillation Spectroscopic Survey: the low redshift sample",
+      "authors": [
+        "John K. Parejko",
+        "Tomomi Sunayama",
+        "Nikhil Padmanabhan",
+        "David A. Wake",
+        "Andreas A. Berlind",
+        "Dmitry Bizyaev",
+        "Michael Blanton",
+        "Adam S. Bolton",
+        "Frank van den Bosch",
+        "Jon Brinkmann",
+        "Joel R. Brownstein",
+        "Luiz Alberto Nicolaci da Costa",
+        "Daniel J. Eisenstein",
+        "Hong Guo",
+        "Eyal Kazin",
+        "Marcio Maia",
+        "Elena Malanushenko",
+        "Claudia Maraston",
+        "Cameron K. McBride",
+        "Robert C. Nichol",
+        "Daniel J. Oravetz",
+        "Kaike Pan",
+        "Will J. Percival",
+        "Francisco Prada",
+        "Ashley J. Ross"
+      ],
+      "submitted": "Submitted 16 November, 2012; originally announced November 2012.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1210.2480",
+      "url": "https://arxiv.org/abs/1210.2480",
+      "title": "Constraining the substructure of dark matter haloes with galaxy-galaxy lensing",
+      "authors": [
+        "Ran Li",
+        "Houjun Mo",
+        "Zuhui Fan",
+        "Xiaohu Yang",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 1 March, 2013; v1 submitted 8 October, 2012; originally announced October 2012.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1207.0503",
+      "url": "https://arxiv.org/abs/1207.0503",
+      "title": "Cosmological Constraints from a Combination of Galaxy Clustering and Lensing -- III. Application to SDSS Data",
+      "authors": [
+        "Marcello Cacciato",
+        "Frank C. van den Bosch",
+        "Surhud More",
+        "Houjun Mo",
+        "Xiaohu Yang"
+      ],
+      "submitted": "Submitted 2 July, 2012; originally announced July 2012.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1207.0004",
+      "url": "https://arxiv.org/abs/1207.0004",
+      "title": "Cosmological Constraints from a Combination of Galaxy Clustering & Lensing -- II. Fisher Matrix Analysis",
+      "authors": [
+        "Surhud More",
+        "Frank van den Bosch",
+        "Marcello Cacciato",
+        "Anupreeta More",
+        "Houjun Mo",
+        "Xiaohu Yang"
+      ],
+      "submitted": "Submitted 29 June, 2012; originally announced July 2012.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1206.6890",
+      "url": "https://arxiv.org/abs/1206.6890",
+      "title": "Cosmological Constraints from a Combination of Galaxy Clustering and Lensing -- I. Theoretical Framework",
+      "authors": [
+        "Frank van den Bosch",
+        "Surhud More",
+        "Marcello Cacciato",
+        "Houjun Mo",
+        "Xiaohu Yang"
+      ],
+      "submitted": "Submitted 28 June, 2012; originally announced June 2012.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1206.3571",
+      "url": "https://arxiv.org/abs/1206.3571",
+      "title": "Galaxy evolution in groups and clusters: satellite star formation histories and quenching timescales in a hierarchical Universe",
+      "authors": [
+        "Andrew R. Wetzel",
+        "Jeremy L. Tinker",
+        "Charlie Conroy",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 1 April, 2013; v1 submitted 15 June, 2012; originally announced June 2012.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1206.3566",
+      "url": "https://arxiv.org/abs/1206.3566",
+      "title": "Internal kinematics of groups of galaxies in the Sloan Digital Sky Survey data release 7",
+      "authors": [
+        "Cheng Li",
+        "Y. P. Jing",
+        "Shude Mao",
+        "Jiaxin Han",
+        "Qiuying Peng",
+        "Xiaohu Yang",
+        "H. J. Mo",
+        "Frank van den Bosch"
+      ],
+      "submitted": "Submitted 25 August, 2012; v1 submitted 15 June, 2012; originally announced June 2012.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1206.3458",
+      "url": "https://arxiv.org/abs/1206.3458",
+      "title": "The Gas-Phase Metallicity of Central and Satellite Galaxies in the SDSS",
+      "authors": [
+        "Anna Pasquali",
+        "Anna Gallazzi",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 15 June, 2012; originally announced June 2012.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1204.0786",
+      "url": "https://arxiv.org/abs/1204.0786",
+      "title": "The Galaxy-Dark Matter Connection: A Cosmological Perspective",
+      "authors": [
+        "Surhud More",
+        "Frank van den Bosch",
+        "Marcello Cacciato",
+        "Anupreeta More",
+        "Houjun Mo",
+        "Xiaohu Yang"
+      ],
+      "submitted": "Submitted 3 April, 2012; originally announced April 2012.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1203.2616",
+      "url": "https://arxiv.org/abs/1203.2616",
+      "title": "On Combining Galaxy Clustering and Weak Lensing to Unveil Galaxy Biasing via the Halo Model",
+      "authors": [
+        "Marcello Cacciato",
+        "Ofer Lahav",
+        "Frank C. van den Bosch",
+        "Henk Hoekstra",
+        "Avishai Dekel"
+      ],
+      "submitted": "Submitted 12 March, 2012; originally announced March 2012.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1110.1987",
+      "url": "https://arxiv.org/abs/1110.1987",
+      "title": "Cross identification between X-ray and Optical Clusters of Galaxies in the SDSS DR7 Field",
+      "authors": [
+        "Lei Wang",
+        "Xiaohu Yang",
+        "Wentao Luo",
+        "Erwin T. Lau",
+        "Yu Wang",
+        "H. J. Mo",
+        "Frank C. van den Bosch",
+        "Q. D. Wang"
+      ],
+      "submitted": "Submitted 9 January, 2012; v1 submitted 10 October, 2011; originally announced October 2011.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1110.1420",
+      "url": "https://arxiv.org/abs/1110.1420",
+      "title": "Evolution of the Galaxy - Dark Matter Connection and the Assembly of Galaxies in Dark Matter Halos",
+      "authors": [
+        "Xiaohu Yang",
+        "H. J. Mo",
+        "Frank C. van den Bosch",
+        "Youcai Zhang",
+        "Jiaxin Han"
+      ],
+      "submitted": "Submitted 27 March, 2012; v1 submitted 6 October, 2011; originally announced October 2011.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1108.1392",
+      "url": "https://arxiv.org/abs/1108.1392",
+      "title": "Mass growth and mergers: direct observations of the luminosity function of LRG satellite galaxies out to z=0.7 from SDSS and BOSS images",
+      "authors": [
+        "Tomer Tal",
+        "David A. Wake",
+        "Pieter G. van Dokkum",
+        "Frank C. van den Bosch",
+        "Donald P. Schneider",
+        "Jon Brinkmann",
+        "Benjamin A. Weaver"
+      ],
+      "submitted": "Submitted 3 February, 2012; v1 submitted 5 August, 2011; originally announced August 2011.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1108.1008",
+      "url": "https://arxiv.org/abs/1108.1008",
+      "title": "Reconstructing the Cosmic Velocity and Tidal Fields with Galaxy Groups Selected from the Sloan Digital Sky Survey",
+      "authors": [
+        "Huiyuan Wang",
+        "H. J. Mo",
+        "Xiaohu Yang",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 30 November, 2011; v1 submitted 4 August, 2011; originally announced August 2011.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1108.0663",
+      "url": "https://arxiv.org/abs/1108.0663",
+      "title": "The angular momentum of disc galaxies: implications for gas accretion, outflows, and dynamical friction",
+      "authors": [
+        "Aaron A. Dutton",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 7 January, 2012; v1 submitted 2 August, 2011; originally announced August 2011.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1104.1757",
+      "url": "https://arxiv.org/abs/1104.1757",
+      "title": "An analytical model for the accretion of dark matter subhalos",
+      "authors": [
+        "Xiaohu Yang",
+        "H. J. Mo",
+        "Youcai Zhang",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 8 August, 2011; v1 submitted 10 April, 2011; originally announced April 2011.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1101.3244",
+      "url": "https://arxiv.org/abs/1101.3244",
+      "title": "The dependence of low redshift galaxy properties on environment",
+      "authors": [
+        "Simone M. Weinmann",
+        "Frank C. van den Bosch",
+        "Anna Pasquali"
+      ],
+      "submitted": "Submitted 17 January, 2011; originally announced January 2011.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1012.5859",
+      "url": "https://arxiv.org/abs/1012.5859",
+      "title": "Dark halo response and the stellar initial mass function in early-type and late-type galaxies",
+      "authors": [
+        "Aaron A. Dutton",
+        "Charlie Conroy",
+        "Frank C. van den Bosch",
+        "Luc Simard",
+        "J. Trevor Mendel",
+        "Stephane Courteau",
+        "Avishai Dekel",
+        "Surhud More",
+        "Francisco Prada"
+      ],
+      "submitted": "Submitted 9 May, 2011; v1 submitted 28 December, 2010; originally announced December 2010.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1007.0023",
+      "url": "https://arxiv.org/abs/1007.0023",
+      "title": "An Improved Model for the Dynamical Evolution of Dark Matter Subhaloes",
+      "authors": [
+        "JianLing Gan",
+        "Xi Kang",
+        "Frank C. van den Bosch",
+        "JinLiang Hou"
+      ],
+      "submitted": "Submitted 30 June, 2010; originally announced July 2010.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1006.5717",
+      "url": "https://arxiv.org/abs/1006.5717",
+      "title": "The dependence of AGN activity on stellar and halo mass in Semi-Analytic Models",
+      "authors": [
+        "Fabio Fontanot",
+        "Anna Pasquali",
+        "Gabriella De Lucia",
+        "Frank C. van den Bosch",
+        "Rachel S. Somerville",
+        "Xi Kang"
+      ],
+      "submitted": "Submitted 17 December, 2010; v1 submitted 29 June, 2010; originally announced June 2010.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1006.4760",
+      "url": "https://arxiv.org/abs/1006.4760",
+      "title": "Probing Hot Gas in Galaxy Groups through the Sunyaev-Zeldovich Effect",
+      "authors": [
+        "Ran Li",
+        "H. J. Mo",
+        "Zuhui Fan",
+        "Frank C. van den Bosch",
+        "Xiaohu Yang"
+      ],
+      "submitted": "Submitted 19 January, 2011; v1 submitted 24 June, 2010; originally announced June 2010.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1006.3558",
+      "url": "https://arxiv.org/abs/1006.3558",
+      "title": "On the Evolution of the Velocity-Mass-Size Relations of Disk-Dominated Galaxies over the Past 10 Billion Years",
+      "authors": [
+        "Aaron A. Dutton",
+        "Frank C. van den Bosch",
+        "S. M. Faber",
+        "Luc Simard",
+        "Susan A. Kassin",
+        "David C. Koo",
+        "Kevin Bundy",
+        "Jiasheng Huang",
+        "Benjamin J. Weiner",
+        "Michael C. Cooper",
+        "Jeffrey A. Newman",
+        "Mark Mozena",
+        "Anton Koekemoer"
+      ],
+      "submitted": "Submitted 14 September, 2010; v1 submitted 17 June, 2010; originally announced June 2010.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1004.5593",
+      "url": "https://arxiv.org/abs/1004.5593",
+      "title": "Equilibrium Initialization and Stability of Three-Dimensional Gas Disks",
+      "authors": [
+        "Hsiang-Hsu Wang",
+        "Ralf S. Klessen",
+        "Cornelis P. Dullemond",
+        "Frank C. van den Bosch",
+        "Burkhard Fuchs"
+      ],
+      "submitted": "Submitted 30 April, 2010; originally announced April 2010.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1004.4626",
+      "url": "https://arxiv.org/abs/1004.4626",
+      "title": "The Kinematic Connection Between Galaxies and Dark Matter Haloes",
+      "authors": [
+        "Aaron A. Dutton",
+        "Charlie Conroy",
+        "Frank C. van den Bosch",
+        "Francisco Prada",
+        "Surhud More"
+      ],
+      "submitted": "Submitted 26 April, 2010; originally announced April 2010.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1004.2708",
+      "url": "https://arxiv.org/abs/1004.2708",
+      "title": "Mergers in Lambda-CDM: Uncertainties in Theoretical Predictions and Interpretations of the Merger Rate",
+      "authors": [
+        "Philip F. Hopkins",
+        "Darren Croton",
+        "Kevin Bundy",
+        "Sadegh Khochfar",
+        "Frank van den Bosch",
+        "Rachel S. Somerville",
+        "Andrew Wetzel",
+        "Dusan Keres",
+        "Lars Hernquist",
+        "Kyle Stewart",
+        "Joshua D. Younger",
+        "Shy Genel",
+        "Chung-Pei Ma"
+      ],
+      "submitted": "Submitted 24 September, 2010; v1 submitted 15 April, 2010; originally announced April 2010.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1003.3203",
+      "url": "https://arxiv.org/abs/1003.3203",
+      "title": "Satellite Kinematics III: Halo Masses of Central Galaxies in SDSS",
+      "authors": [
+        "Surhud More",
+        "Frank C. van den Bosch",
+        "Marcello Cacciato",
+        "Ramin Skibba",
+        "H. J. Mo",
+        "Xiaohu Yang"
+      ],
+      "submitted": "Submitted 16 March, 2010; originally announced March 2010.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1001.4533",
+      "url": "https://arxiv.org/abs/1001.4533",
+      "title": "Are Brightest Halo Galaxies Central Galaxies?",
+      "authors": [
+        "Ramin A. Skibba",
+        "Frank C. van den Bosch",
+        "Xiaohu Yang",
+        "Surhud More",
+        "Houjun Mo",
+        "Fabio Fontanot"
+      ],
+      "submitted": "Submitted 22 July, 2011; v1 submitted 25 January, 2010; originally announced January 2010.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "1001.3406",
+      "url": "https://arxiv.org/abs/1001.3406",
+      "title": "The Impact of Feedback on Disk Galaxy Scaling Relations",
+      "authors": [
+        "Aaron A. Dutton",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 19 January, 2010; originally announced January 2010.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "0912.2169",
+      "url": "https://arxiv.org/abs/0912.2169",
+      "title": "On the Origin of the Galaxy Star-Formation-Rate Sequence: Evolution and Scatter",
+      "authors": [
+        "Aaron A. Dutton",
+        "Frank C. van den Bosch",
+        "Avishai Dekel"
+      ],
+      "submitted": "Submitted 24 March, 2010; v1 submitted 11 December, 2009; originally announced December 2009.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "0912.1853",
+      "url": "https://arxiv.org/abs/0912.1853",
+      "title": "Stellar Ages and Metallicities of Central and Satellite Galaxies: Implications for Galaxy Formation and Evolution",
+      "authors": [
+        "Anna Pasquali",
+        "Anna Gallazzi",
+        "Fabio Fontanot",
+        "Frank C. van den Bosch",
+        "Gabriella De Lucia",
+        "H. J. Mo",
+        "Xiaohu Yang"
+      ],
+      "submitted": "Submitted 9 December, 2009; originally announced December 2009.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "0912.1257",
+      "url": "https://arxiv.org/abs/0912.1257",
+      "title": "The Stellar Mass Components of Galaxies: Comparing Semi-Analytical Models with Observation",
+      "authors": [
+        "Lei Liu",
+        "Xiaohu Yang",
+        "H. J. Mo",
+        "Frank C. van den Bosch",
+        "Volker Springel"
+      ],
+      "submitted": "Submitted 8 February, 2010; v1 submitted 7 December, 2009; originally announced December 2009.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "0911.0436",
+      "url": "https://arxiv.org/abs/0911.0436",
+      "title": "The Substructure Hierarchy in Dark Matter Haloes",
+      "authors": [
+        "Carlo Giocoli",
+        "Giuseppe Tormen",
+        "Ravi K. Sheth",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 7 January, 2010; v1 submitted 2 November, 2009; originally announced November 2009.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "0903.4857",
+      "url": "https://arxiv.org/abs/0903.4857",
+      "title": "On the Size and Comoving Mass Density Evolution of Early-Type Galaxies",
+      "authors": [
+        "Arjen van der Wel",
+        "Eric F. Bell",
+        "Frank C. van den Bosch",
+        "Anna Gallazzi",
+        "Hans-Walter Rix"
+      ],
+      "submitted": "Submitted 24 April, 2009; v1 submitted 27 March, 2009; originally announced March 2009.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "0903.4682",
+      "url": "https://arxiv.org/abs/0903.4682",
+      "title": "Constraints on the relationship between stellar mass and halo mass at low and high redshift",
+      "authors": [
+        "Benjamin P. Moster",
+        "Rachel S. Somerville",
+        "Christian Maulbetsch",
+        "Frank C. van den Bosch",
+        "Andrea V. Maccio'",
+        "Thorsten Naab",
+        "Ludwig Oser"
+      ],
+      "submitted": "Submitted 14 December, 2009; v1 submitted 27 March, 2009; originally announced March 2009.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "0901.1150",
+      "url": "https://arxiv.org/abs/0901.1150",
+      "title": "Structural Properties of Central Galaxies in Groups and Clusters",
+      "authors": [
+        "Yicheng Guo",
+        "Daniel H. McIntosh",
+        "H. J. Mo",
+        "Neal Katz",
+        "Frank C. van den Bosch",
+        "Martin Weinberg",
+        "Simone M. Weinmann",
+        "Anna Pasqual",
+        "Xiaohu Yang"
+      ],
+      "submitted": "Submitted 11 January, 2009; v1 submitted 9 January, 2009; originally announced January 2009.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "0812.3723",
+      "url": "https://arxiv.org/abs/0812.3723",
+      "title": "The nature of red dwarf galaxies",
+      "authors": [
+        "Yu Wang",
+        "Xiaohu Yang",
+        "H. J. Mo",
+        "Frank C. van den Bosch",
+        "Neal katz",
+        "Anna Pasquali",
+        "Daniel H. McIntosh",
+        "Simone M. Weinmann"
+      ],
+      "submitted": "Submitted 28 February, 2009; v1 submitted 19 December, 2008; originally announced December 2008.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "0810.4963",
+      "url": "https://arxiv.org/abs/0810.4963",
+      "title": "The Impact of Feedback on Disk Galaxy Scaling Relations",
+      "authors": [
+        "Aaron A. Dutton",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 3 May, 2009; v1 submitted 27 October, 2008; originally announced October 2008.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "0810.2794",
+      "url": "https://arxiv.org/abs/0810.2794",
+      "title": "The Correlation of Star Formation Quenching with Internal Galaxy Properties and Environment",
+      "authors": [
+        "Taysun Kimm",
+        "Rachel S. Somerville",
+        "Sukyoung K. Yi",
+        "Frank C. van den Bosch",
+        "Samir Salim",
+        "Fabio Fontanot",
+        "Pierluigi Monaco",
+        "Houjun Mo",
+        "Anna Pasquali",
+        "R. M. Rich",
+        "Xiaohu Yang"
+      ],
+      "submitted": "Submitted 4 January, 2009; v1 submitted 15 October, 2008; originally announced October 2008.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "0809.2283",
+      "url": "https://arxiv.org/abs/0809.2283",
+      "title": "Environmental Effects on Satellite Galaxies: The Link Between Concentration, Size and Colour Profile",
+      "authors": [
+        "Simone M. Weinmann",
+        "Guinevere Kauffmann",
+        "Frank C. van den Bosch",
+        "Anna Pasquali",
+        "Daniel H. McIntosh",
+        "Houjun Mo",
+        "Xiaohu Yang",
+        "Yicheng Guo"
+      ],
+      "submitted": "Submitted 18 December, 2008; v1 submitted 13 September, 2008; originally announced September 2008.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "0808.2526",
+      "url": "https://arxiv.org/abs/0808.2526",
+      "title": "The subhalo - satellite connection and the fate of disrupted satellite galaxies",
+      "authors": [
+        "Xiaohu Yang",
+        "H. J. Mo",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 13 November, 2008; v1 submitted 19 August, 2008; originally announced August 2008.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "0808.0539",
+      "url": "https://arxiv.org/abs/0808.0539",
+      "title": "Galaxy Groups in the SDSS DR4: III. the luminosity and stellar mass functions",
+      "authors": [
+        "Xiaohu Yang",
+        "H. J. Mo",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 13 January, 2009; v1 submitted 4 August, 2008; originally announced August 2008.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "0807.4934",
+      "url": "https://arxiv.org/abs/0807.4934",
+      "title": "Modeling Galaxy-Galaxy Weak Lensing with SDSS Groups",
+      "authors": [
+        "Ran Li",
+        "H. J. Mo",
+        "Zuhui Fan",
+        "Marcello Cacciato",
+        "Frank C. van den Bosch",
+        "Xiaohu Yang",
+        "Surhud More"
+      ],
+      "submitted": "Submitted 15 January, 2009; v1 submitted 30 July, 2008; originally announced July 2008.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "0807.4932",
+      "url": "https://arxiv.org/abs/0807.4932",
+      "title": "Galaxy Clustering & Galaxy-Galaxy Lensing: A Promising Union to Constrain Cosmological Parameters",
+      "authors": [
+        "Marcello Cacciato",
+        "Frank C. van den Bosch",
+        "Surhud More",
+        "Ran Li",
+        "H. J. Mo",
+        "Xiaohu Yang"
+      ],
+      "submitted": "Submitted 30 July, 2008; originally announced July 2008.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "0807.4532",
+      "url": "https://arxiv.org/abs/0807.4532",
+      "title": "Satellite Kinematics II: The Halo Mass-Luminosity Relation of Central Galaxies in SDSS",
+      "authors": [
+        "Surhud More",
+        "Frank C. van den Bosch",
+        "Marcello Cacciato",
+        "Houjun Mo",
+        "Xiaohu Yang",
+        "Ran Li"
+      ],
+      "submitted": "Submitted 30 July, 2008; v1 submitted 28 July, 2008; originally announced July 2008.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "0807.4529",
+      "url": "https://arxiv.org/abs/0807.4529",
+      "title": "Satellite Kinematics I: A New Method to Constrain the Halo Mass-Luminosity Relation of Central Galaxies",
+      "authors": [
+        "Surhud More",
+        "Frank C. van den Bosch",
+        "Marcello Cacciato"
+      ],
+      "submitted": "Submitted 28 July, 2008; originally announced July 2008.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "0807.4178",
+      "url": "https://arxiv.org/abs/0807.4178",
+      "title": "The Rise and Fall of Galaxy Activity in Dark Matter Haloes",
+      "authors": [
+        "Anna Pasquali",
+        "Frank C. van den Bosch",
+        "H. J. Mo",
+        "Xiaohu Yang",
+        "Rachel Somerville"
+      ],
+      "submitted": "Submitted 25 July, 2008; originally announced July 2008.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "0805.1926",
+      "url": "https://arxiv.org/abs/0805.1926",
+      "title": "Concentration, Spin and Shape of Dark Matter Haloes as a Function of the Cosmological Model: WMAP1, WMAP3 and WMAP5 results",
+      "authors": [
+        "Andrea V. Maccio'",
+        "Aaron A. Dutton",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 1 October, 2008; v1 submitted 14 May, 2008; originally announced May 2008.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "0805.0002",
+      "url": "https://arxiv.org/abs/0805.0002",
+      "title": "Satellite Ecology: The Dearth of Environment Dependence",
+      "authors": [
+        "Frank C. van den Bosch",
+        "Anna Pasquali",
+        "Xiaohu Yang",
+        "H. J. Mo",
+        "Simone Weinmann",
+        "Daniel H. McIntosh",
+        "Daniel Aquino"
+      ],
+      "submitted": "Submitted 1 May, 2008; originally announced May 2008.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "0803.1213",
+      "url": "https://arxiv.org/abs/0803.1213",
+      "title": "Reconstructing the cosmic density field with the distribution of dark matter halos",
+      "authors": [
+        "H. Y. Wang",
+        "H. J. Mo",
+        "Y. P. Jing",
+        "Y. C. Guo",
+        "Frank C. van den Bosch",
+        "X. H. Yang"
+      ],
+      "submitted": "Submitted 28 November, 2008; v1 submitted 7 March, 2008; originally announced March 2008.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "0801.1843",
+      "url": "https://arxiv.org/abs/0801.1843",
+      "title": "New Constraints on the Efficiencies of Ram-Pressure Stripping and the Tidal Disruption of Satellite Galaxies",
+      "authors": [
+        "X. Kang",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 22 February, 2008; v1 submitted 11 January, 2008; originally announced January 2008.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "0801.1505",
+      "url": "https://arxiv.org/abs/0801.1505",
+      "title": "The Tully-Fisher Zero Point Problem",
+      "authors": [
+        "Aaron A. Dutton",
+        "Frank C. van den Bosch",
+        "Stéphane Courteau"
+      ],
+      "submitted": "Submitted 9 January, 2008; originally announced January 2008.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "0712.1563",
+      "url": "https://arxiv.org/abs/0712.1563",
+      "title": "The Population of Dark Matter Subhaloes: Mass Functions and Average Mass Loss Rates",
+      "authors": [
+        "Carlo Giocoli",
+        "Giuseppe Tormen",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 10 December, 2007; originally announced December 2007.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "0711.4431",
+      "url": "https://arxiv.org/abs/0711.4431",
+      "title": "The clustering of SDSS galaxy groups: mass and color dependence",
+      "authors": [
+        "Yu Wang",
+        "Xiaohu Yang",
+        "H. J. Mo",
+        "Frank C. van den Bosch",
+        "Simone M. Weinmann",
+        "Yaoquan Chu"
+      ],
+      "submitted": "Submitted 14 July, 2008; v1 submitted 28 November, 2007; originally announced November 2007.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "0710.5096",
+      "url": "https://arxiv.org/abs/0710.5096",
+      "title": "Galaxy Groups in the SDSS DR4: II. halo occupation statistics",
+      "authors": [
+        "Xiaohu Yang",
+        "H. J. Mo",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 19 December, 2007; v1 submitted 26 October, 2007; originally announced October 2007.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "0710.3164",
+      "url": "https://arxiv.org/abs/0710.3164",
+      "title": "The Importance of Satellite Quenching for the Build-Up of the Red Sequence of Present Day Galaxies",
+      "authors": [
+        "Frank C. van den Bosch",
+        "Daniel Aquino",
+        "Xiaohu Yang",
+        "H. J. Mo",
+        "Anna Pasquali",
+        "Daniel H. McIntosh",
+        "Simone M. Weinmann",
+        "Xi Kang"
+      ],
+      "submitted": "Submitted 16 October, 2007; originally announced October 2007.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "0710.2618",
+      "url": "https://arxiv.org/abs/0710.2618",
+      "title": "Probing the Intrinsic Shape and Alignment of Dark Matter Haloes using SDSS Galaxy Groups",
+      "authors": [
+        "Yougang Wang",
+        "Xiaohu Yang",
+        "H. J. Mo",
+        "Cheng Li",
+        "Frank C. van den Bosch",
+        "Zuhui Fan",
+        "Xuelei Chen"
+      ],
+      "submitted": "Submitted 7 January, 2008; v1 submitted 13 October, 2007; originally announced October 2007.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "0710.2157",
+      "url": "https://arxiv.org/abs/0710.2157",
+      "title": "Ongoing Assembly of Massive Galaxies by Major Merging in Large Groups and Clusters from the SDSS",
+      "authors": [
+        "Daniel H. McIntosh",
+        "Yicheng Guo",
+        "Jen Hertzberg",
+        "Neal Katz",
+        "H. J. Mo",
+        "Frank C. van den Bosch",
+        "Xiaohu Yang"
+      ],
+      "submitted": "Submitted 11 October, 2007; v1 submitted 11 October, 2007; originally announced October 2007.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "0707.4640",
+      "url": "https://arxiv.org/abs/0707.4640",
+      "title": "Galaxy Groups in the SDSS DR4: I. The Catalogue and Basic Properties",
+      "authors": [
+        "Xiaohu Yang",
+        "H. J. Mo",
+        "Frank C. van den Bosch",
+        "Anna Pasquali",
+        "Cheng Li",
+        "Marco Barden"
+      ],
+      "submitted": "Submitted 16 September, 2008; v1 submitted 31 July, 2007; originally announced July 2007.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "0706.0262",
+      "url": "https://arxiv.org/abs/0706.0262",
+      "title": "Spatial and kinematic alignments between central and satellite halos",
+      "authors": [
+        "A. Faltenbacher",
+        "Y. P. Jing",
+        "Cheng Li",
+        "Shude Mao",
+        "H. J. Mo",
+        "Anna Pasquali",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 18 December, 2007; v1 submitted 2 June, 2007; originally announced June 2007.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "0704.0932",
+      "url": "https://arxiv.org/abs/0704.0932",
+      "title": "On the Origin of the Dichotomy of Early-Type Galaxies: The Role of Dry Mergers and AGN Feedback",
+      "authors": [
+        "Xi Kang",
+        "Frank C. van den Bosch",
+        "Anna Pasquali"
+      ],
+      "submitted": "Submitted 6 April, 2007; originally announced April 2007.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "0704.0931",
+      "url": "https://arxiv.org/abs/0704.0931",
+      "title": "The Isophotal Structure of Early-Type Galaxies in the SDSS: Dependence on AGN Activity and Environment",
+      "authors": [
+        "Anna Pasquali",
+        "Frank C. van den Bosch",
+        "Hans-Walter Rix"
+      ],
+      "submitted": "Submitted 6 April, 2007; originally announced April 2007.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "0704.0674",
+      "url": "https://arxiv.org/abs/0704.0674",
+      "title": "Three Different Types of Galaxy Alignment within Dark Matter Halos",
+      "authors": [
+        "A. Faltenbacher",
+        "Cheng Li",
+        "Shude Mao",
+        "Frank C. van den Bosch",
+        "Xiaohu Yang",
+        "Y. P. Jing",
+        "Anna Pasquali",
+        "H. J. Mo"
+      ],
+      "submitted": "Submitted 8 June, 2007; v1 submitted 4 April, 2007; originally announced April 2007.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0703253",
+      "url": "https://arxiv.org/abs/astro-ph/0703253",
+      "title": "The cross-correlation between galaxies of different luminosities and Colors",
+      "authors": [
+        "Yu Wang",
+        "Xiaohu Yang",
+        "H. J. Mo",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 26 April, 2007; v1 submitted 12 March, 2007; originally announced March 2007.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0701130",
+      "url": "https://arxiv.org/abs/astro-ph/0701130",
+      "title": "The Alignment between Satellites and Central Galaxies: Theory vs. Observations",
+      "authors": [
+        "X. Kang",
+        "Frank C. van den Bosch",
+        "Xiaohu Yang",
+        "Shude Mao",
+        "H. J. Mo",
+        "Cheng Li",
+        "Y. P. Jing"
+      ],
+      "submitted": "Submitted 24 April, 2007; v1 submitted 5 January, 2007; originally announced January 2007.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0610686",
+      "url": "https://arxiv.org/abs/astro-ph/0610686",
+      "title": "Towards a Concordant Model of Halo Occupation Statistics",
+      "authors": [
+        "Frank C. van den Bosch",
+        "Xiaohu Yang",
+        "H. J. Mo",
+        "Simone M. Weinmann",
+        "Andrea Maccio",
+        "Surhud More",
+        "Marcello Cacciato",
+        "Ramin Skibba",
+        "Kang Xi"
+      ],
+      "submitted": "Submitted 23 October, 2006; originally announced October 2006.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0608157",
+      "url": "https://arxiv.org/abs/astro-ph/0608157",
+      "title": "Concentration, Spin and Shape of Dark Matter Haloes: Scatter and the Dependence on Mass and Environment",
+      "authors": [
+        "Andrea V. Maccio'",
+        "Aaron A. Dutton",
+        "Frank C. van den Bosch",
+        "Ben Moore",
+        "Doug Potter",
+        "Joachim Stadel"
+      ],
+      "submitted": "Submitted 2 April, 2007; v1 submitted 7 August, 2006; originally announced August 2006.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0607585",
+      "url": "https://arxiv.org/abs/astro-ph/0607585",
+      "title": "The Dependence of Galaxy Type on Host Halo Mass",
+      "authors": [
+        "Simone M. Weinmann",
+        "Frank C. van den Bosch",
+        "Xiaohu Yang",
+        "H. J. Mo"
+      ],
+      "submitted": "Submitted 26 July, 2006; originally announced July 2006.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0607552",
+      "url": "https://arxiv.org/abs/astro-ph/0607552",
+      "title": "Weak Lensing by Galaxies in Groups and Clusters: I.--Theoretical Expectations",
+      "authors": [
+        "Xiaohu Yang",
+        "H. J. Mo",
+        "Frank C. van den Bosch",
+        "Y. P. Jing",
+        "Simone M. Weinmann",
+        "M. Meneghetti"
+      ],
+      "submitted": "Submitted 21 September, 2006; v1 submitted 24 July, 2006; originally announced July 2006.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0606458",
+      "url": "https://arxiv.org/abs/astro-ph/0606458",
+      "title": "Properties of Galaxy Groups in the SDSS: II.- AGN Feedback and Star Formation Truncation",
+      "authors": [
+        "Simone M. Weinmann",
+        "Frank C. van den Bosch",
+        "Xiaohu Yang",
+        "H. J. Mo",
+        "Darren J. Croton",
+        "Ben Moore"
+      ],
+      "submitted": "Submitted 19 June, 2006; originally announced June 2006.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0605045",
+      "url": "https://arxiv.org/abs/astro-ph/0605045",
+      "title": "Natural Downsizing in Hierarchical Galaxy Formation",
+      "authors": [
+        "Eyal Neistein",
+        "Frank C. van den Bosch",
+        "Avishai Dekel"
+      ],
+      "submitted": "Submitted 20 October, 2006; v1 submitted 1 May, 2006; originally announced May 2006.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0604553",
+      "url": "https://arxiv.org/abs/astro-ph/0604553",
+      "title": "A Revised Model for the Formation of Disk Galaxies: Low Spin and Dark-Halo Expansion",
+      "authors": [
+        "Aaron A. Dutton",
+        "Frank C. van den Bosch",
+        "Avishai Dekel",
+        "Stephane Courteau"
+      ],
+      "submitted": "Submitted 9 January, 2007; v1 submitted 27 April, 2006; originally announced April 2006.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0601040",
+      "url": "https://arxiv.org/abs/astro-ph/0601040",
+      "title": "The Alignment between the Distribution of Satellites and the Orientation of their Central Galaxy",
+      "authors": [
+        "Xiaohu Yang",
+        "Frank C. van den Bosch",
+        "H. J. Mo",
+        "Shude Mao",
+        "Xi Kang",
+        "Simone M. Weinmann",
+        "Yicheng Guo",
+        "Y. P. Jing"
+      ],
+      "submitted": "Submitted 23 March, 2006; v1 submitted 2 January, 2006; originally announced January 2006.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0510372",
+      "url": "https://arxiv.org/abs/astro-ph/0510372",
+      "title": "On The Assembly History of Dark Matter Haloes",
+      "authors": [
+        "Yun Li",
+        "H. J. Mo",
+        "Frank C. van den Bosch",
+        "W. P. Lin"
+      ],
+      "submitted": "Submitted 4 May, 2007; v1 submitted 12 October, 2005; originally announced October 2005.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0509626",
+      "url": "https://arxiv.org/abs/astro-ph/0509626",
+      "title": "Observational Evidence for an Age Dependence of Halo Bias",
+      "authors": [
+        "Xiaohu Yang",
+        "H. J. Mo",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 10 January, 2006; v1 submitted 21 September, 2005; originally announced September 2005.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0509147",
+      "url": "https://arxiv.org/abs/astro-ph/0509147",
+      "title": "Properties of Galaxy Groups in the SDSS: I.-- The Dependence of Colour, Star Formation, and Morphology on Halo Mass",
+      "authors": [
+        "Simone M. Weinmann",
+        "Frank C. van den Bosch",
+        "Xiaohu Yang",
+        "H. J. Mo"
+      ],
+      "submitted": "Submitted 6 September, 2005; originally announced September 2005.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0506516",
+      "url": "https://arxiv.org/abs/astro-ph/0506516",
+      "title": "Preheating by Previrialization and its Impact on Galaxy Formation",
+      "authors": [
+        "H. J. Mo",
+        "Xiaohu Yang",
+        "Frank C. van den Bosch",
+        "Neal Katz"
+      ],
+      "submitted": "Submitted 12 August, 2005; v1 submitted 21 June, 2005; originally announced June 2005.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0504477",
+      "url": "https://arxiv.org/abs/astro-ph/0504477",
+      "title": "The Cross-Correlation between Galaxies and Groups: Probing the Galaxy Distribution in and around Dark Matter Haloes",
+      "authors": [
+        "Xiaohu Yang",
+        "H. J. Mo",
+        "Frank C. van den Bosch",
+        "Simone M. Weinmann",
+        "Cheng Li",
+        "Y. P. Jing"
+      ],
+      "submitted": "Submitted 27 June, 2005; v1 submitted 21 April, 2005; originally announced April 2005.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0502466",
+      "url": "https://arxiv.org/abs/astro-ph/0502466",
+      "title": "The Phase-Space Parameters of Brightest Halo Galaxies",
+      "authors": [
+        "Frank C. van den Bosch",
+        "Simone M. Weinmann",
+        "Xiaohu Yang",
+        "H. J. Mo",
+        "Cheng Li",
+        "Y. P. Jing"
+      ],
+      "submitted": "Submitted 1 March, 2005; v1 submitted 23 February, 2005; originally announced February 2005.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0501256",
+      "url": "https://arxiv.org/abs/astro-ph/0501256",
+      "title": "Origin of the Joint Distribution of Structural Parameters in Disc Galaxies",
+      "authors": [
+        "Aaron A. Dutton",
+        "Frank C. van den Bosch",
+        "Stephane Courteau",
+        "Avishai Dekel"
+      ],
+      "submitted": "Submitted 13 January, 2005; originally announced January 2005.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0412018",
+      "url": "https://arxiv.org/abs/astro-ph/0412018",
+      "title": "The Galaxy Dark Matter Connection",
+      "authors": [
+        "Frank C. van den Bosch",
+        "Xiaohu Yang",
+        "H. J. Mo"
+      ],
+      "submitted": "Submitted 1 December, 2004; originally announced December 2004.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0410114",
+      "url": "https://arxiv.org/abs/astro-ph/0410114",
+      "title": "Galaxy Occupation Statistics of Dark Matter Haloes: Observational Results",
+      "authors": [
+        "Xiaohu Yang",
+        "H. J. Mo",
+        "Y. P. Jing",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 8 December, 2004; v1 submitted 5 October, 2004; originally announced October 2004.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0409201",
+      "url": "https://arxiv.org/abs/astro-ph/0409201",
+      "title": "The Mass Function and Average Mass Loss Rate of Dark Matter Subhaloes",
+      "authors": [
+        "Frank C. van den Bosch",
+        "G. Tormen",
+        "C. Giocoli"
+      ],
+      "submitted": "Submitted 1 March, 2005; v1 submitted 8 September, 2004; originally announced September 2004.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0406593",
+      "url": "https://arxiv.org/abs/astro-ph/0406593",
+      "title": "The Two-Point Correlation of Galaxy Groups: Probing the Clustering of Dark Matter Haloes",
+      "authors": [
+        "Xiaohu Yang",
+        "H. J. Mo",
+        "Frank C. van den Bosch",
+        "Y. P. Jing"
+      ],
+      "submitted": "Submitted 24 November, 2004; v1 submitted 25 June, 2004; originally announced June 2004.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0406246",
+      "url": "https://arxiv.org/abs/astro-ph/0406246",
+      "title": "The Abundance and Radial Distribution of Satellite Galaxies",
+      "authors": [
+        "Frank C. van den Bosch",
+        "Xiaohu Yang",
+        "H. J. Mo",
+        "Peder Norberg"
+      ],
+      "submitted": "Submitted 9 June, 2004; originally announced June 2004.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0405234",
+      "url": "https://arxiv.org/abs/astro-ph/0405234",
+      "title": "A Halo-Based Galaxy Group Finder: Calibration and Application to the 2dFGRS",
+      "authors": [
+        "Xiaohu Yang",
+        "H. J. Mo",
+        "Frank C. van den Bosch",
+        "Y. P. Jing"
+      ],
+      "submitted": "Submitted 28 October, 2004; v1 submitted 12 May, 2004; originally announced May 2004.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0404143",
+      "url": "https://arxiv.org/abs/astro-ph/0404143",
+      "title": "The Three-point Correlation Function of Galaxies: Comparing Halo Occupation Models with Observations",
+      "authors": [
+        "Yu Wang",
+        "Xiaohu Yang",
+        "H. J. Mo",
+        "Frank C. van den Bosch",
+        "YaoQuan Chu"
+      ],
+      "submitted": "Submitted 26 May, 2004; v1 submitted 6 April, 2004; originally announced April 2004.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0404033",
+      "url": "https://arxiv.org/abs/astro-ph/0404033",
+      "title": "Probing Dark Matter Haloes with Satellite Kinematics",
+      "authors": [
+        "Frank C. van den Bosch",
+        "Peder Norberg",
+        "H. J. Mo",
+        "Xiaohu Yang"
+      ],
+      "submitted": "Submitted 14 May, 2004; v1 submitted 1 April, 2004; originally announced April 2004.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0310440",
+      "url": "https://arxiv.org/abs/astro-ph/0310440",
+      "title": "Scaling Relations of Local Spiral Galaxies.I. Observational Foundations",
+      "authors": [
+        "Stephane Courteau",
+        "Lauren A. MacArthur",
+        "Avishai Dekel",
+        "Frank van den Bosch",
+        "Daniel H. McIntosh",
+        "Daniel Dale"
+      ],
+      "submitted": "Submitted 15 October, 2003; originally announced October 2003.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0310147",
+      "url": "https://arxiv.org/abs/astro-ph/0310147",
+      "title": "The Dependence of the Galaxy Luminosity Function on Large-Scale Environment",
+      "authors": [
+        "H. J. Mo",
+        "Xiaohu Yang",
+        "Frank C. van den Bosch",
+        "Y. P Jing"
+      ],
+      "submitted": "Submitted 23 March, 2004; v1 submitted 6 October, 2003; originally announced October 2003.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0308117",
+      "url": "https://arxiv.org/abs/astro-ph/0308117",
+      "title": "The Angular Momentum of Gas in Proto-Galaxies: II -- The Impact of Preheating",
+      "authors": [
+        "Frank C. van den Bosch",
+        "Tom Abel",
+        "Lars Hernquist"
+      ],
+      "submitted": "Submitted 7 August, 2003; originally announced August 2003.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0303524",
+      "url": "https://arxiv.org/abs/astro-ph/0303524",
+      "title": "Populating Dark Matter Haloes with Galaxies: Comparing the 2dFGRS with Mock Galaxy Redshift Surveys",
+      "authors": [
+        "Xiaohu Yang",
+        "H. J. Mo",
+        "Y. P. Jing",
+        "Frank C. van den Bosch",
+        "YaoQuan Chu"
+      ],
+      "submitted": "Submitted 20 February, 2004; v1 submitted 24 March, 2003; originally announced March 2003.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0301104",
+      "url": "https://arxiv.org/abs/astro-ph/0301104",
+      "title": "Towards Cosmological Concordance on Galactic Scales",
+      "authors": [
+        "Frank C. van den Bosch",
+        "H. J. Mo",
+        "Xiaohu Yang"
+      ],
+      "submitted": "Submitted 9 December, 2003; v1 submitted 7 January, 2003; originally announced January 2003.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0210495",
+      "url": "https://arxiv.org/abs/astro-ph/0210495",
+      "title": "Linking Early and Late Type Galaxies to their Dark Matter Haloes",
+      "authors": [
+        "Frank C. van den Bosch",
+        "Xiaohu Yang",
+        "H. J. Mo"
+      ],
+      "submitted": "Submitted 9 December, 2003; v1 submitted 22 October, 2002; originally announced October 2002.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0208524",
+      "url": "https://arxiv.org/abs/astro-ph/0208524",
+      "title": "New Problems for the Formation of Disk Galaxies",
+      "authors": [
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 29 August, 2002; originally announced August 2002.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0207019",
+      "url": "https://arxiv.org/abs/astro-ph/0207019",
+      "title": "Constraining Galaxy Formation and Cosmology with the Conditional Luminosity Function of Galaxies",
+      "authors": [
+        "Xiaohu Yang",
+        "H. J. Mo",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 1 July, 2002; originally announced July 2002.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0202024",
+      "url": "https://arxiv.org/abs/astro-ph/0202024",
+      "title": "The Origin of the Correlation between the Spin Parameter and the Baryon Fraction of Galactic Disks",
+      "authors": [
+        "Andreas Burkert",
+        "Frank C. van den Bosch",
+        "Rob A. Swaters"
+      ],
+      "submitted": "Submitted 1 February, 2002; originally announced February 2002.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0201095",
+      "url": "https://arxiv.org/abs/astro-ph/0201095",
+      "title": "The Angular Momentum of Gas in Proto-Galaxies I. Implications for the Formation of Disk Galaxies",
+      "authors": [
+        "Frank C. van den Bosch",
+        "Tom Abel",
+        "Rupert A. C. Croft",
+        "Lars Hernquist",
+        "Simon D. M. White"
+      ],
+      "submitted": "Submitted 6 May, 2002; v1 submitted 7 January, 2002; originally announced January 2002.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0201006",
+      "url": "https://arxiv.org/abs/astro-ph/0201006",
+      "title": "Measuring the Virial Masses of Disk Galaxies",
+      "authors": [
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 2 January, 2002; originally announced January 2002.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0112566",
+      "url": "https://arxiv.org/abs/astro-ph/0112566",
+      "title": "The Impact of Cooling and Feedback on Disc Galaxies",
+      "authors": [
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 31 December, 2001; originally announced December 2001.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0110185",
+      "url": "https://arxiv.org/abs/astro-ph/0110185",
+      "title": "Galaxy Cores as Relics of Black Hole Mergers",
+      "authors": [
+        "Milos Milosavljevic",
+        "David Merritt",
+        "Armin Rest",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 22 February, 2002; v1 submitted 8 October, 2001; originally announced October 2001.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0107195",
+      "url": "https://arxiv.org/abs/astro-ph/0107195",
+      "title": "The Origin of the Density Distribution of Disk Galaxies: A New Problem for the Standard Model of Disk Formation",
+      "authors": [
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 11 July, 2001; originally announced July 2001.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0105158",
+      "url": "https://arxiv.org/abs/astro-ph/0105158",
+      "title": "The Universal Mass Accretion History of CDM Haloes",
+      "authors": [
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 28 December, 2001; v1 submitted 9 May, 2001; originally announced May 2001.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0105082",
+      "url": "https://arxiv.org/abs/astro-ph/0105082",
+      "title": "The Angular Momentum Content of Dwarf Galaxies: New Challenges for the Theory of Galaxy Formation",
+      "authors": [
+        "Frank C. van den Bosch",
+        "Andreas Burkert",
+        "Rob A. Swaters"
+      ],
+      "submitted": "Submitted 4 May, 2001; originally announced May 2001.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0102286",
+      "url": "https://arxiv.org/abs/astro-ph/0102286",
+      "title": "WFPC2 Images of the Central Regions of Early-Type Galaxies - I. The Data",
+      "authors": [
+        "Armin Rest",
+        "Frank C. van den Bosch",
+        "Walter Jaffe",
+        "Hien Tran",
+        "Zlatan Tsvetanov",
+        "Holland C. Ford",
+        "James Davies",
+        "Joanna Schafer"
+      ],
+      "submitted": "Submitted 15 February, 2001; originally announced February 2001.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0007121",
+      "url": "https://arxiv.org/abs/astro-ph/0007121",
+      "title": "Disk Galaxies as Cosmological Benchmarks: Cold Dark Matter versus Modified Newtonian Dynamics",
+      "authors": [
+        "Frank C. van den Bosch",
+        "Julianne J. Dalcanton"
+      ],
+      "submitted": "Submitted 10 July, 2000; originally announced July 2000.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/0006048",
+      "url": "https://arxiv.org/abs/astro-ph/0006048",
+      "title": "Dwarf Galaxy Rotation Curves and the Core Problem of Dark Matter Halos",
+      "authors": [
+        "Frank C. van den Bosch",
+        "Rob A. Swaters"
+      ],
+      "submitted": "Submitted 28 February, 2001; v1 submitted 5 June, 2000; originally announced June 2000.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/9912004",
+      "url": "https://arxiv.org/abs/astro-ph/9912004",
+      "title": "Semi-Analytical Models for the Formation of Disk Galaxies II. Dark Matter versus Modified Newtonian Dynamics",
+      "authors": [
+        "Frank C. van den Bosch",
+        "Julianne J. Dalcanton"
+      ],
+      "submitted": "Submitted 30 November, 1999; originally announced December 1999.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/9911372",
+      "url": "https://arxiv.org/abs/astro-ph/9911372",
+      "title": "Constraints on the Structure of Dark Matter Halos from the Rotation Curves of Low Surface Brightness Galaxies",
+      "authors": [
+        "Frank C. van den Bosch",
+        "Brant E. Robertson",
+        "Julianne J. Dalcanton",
+        "W. J. G de Blok"
+      ],
+      "submitted": "Submitted 18 November, 1999; originally announced November 1999.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/9909501",
+      "url": "https://arxiv.org/abs/astro-ph/9909501",
+      "title": "Constraints on Galaxy Formation from the Tully-Fisher Relation",
+      "authors": [
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 29 September, 1999; originally announced September 1999.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/9909298",
+      "url": "https://arxiv.org/abs/astro-ph/9909298",
+      "title": "Semi-Analytical Models for the Formation of Disk Galaxies: I. Constraints from the Tully-Fisher Relation",
+      "authors": [
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 16 September, 1999; originally announced September 1999.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/9901423",
+      "url": "https://arxiv.org/abs/astro-ph/9901423",
+      "title": "Inside-Out Bulge Formation and the Origin of the Hubble Sequence",
+      "authors": [
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 29 January, 1999; originally announced January 1999.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/9811229",
+      "url": "https://arxiv.org/abs/astro-ph/9811229",
+      "title": "Substructure in Dark Halos: Orbital Eccentricities and Dynamical Friction",
+      "authors": [
+        "Frank C. van den Bosch",
+        "Geraint F. Lewis",
+        "George Lake",
+        "Joachim Stadel"
+      ],
+      "submitted": "Submitted 13 November, 1998; originally announced November 1998.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/9811180",
+      "url": "https://arxiv.org/abs/astro-ph/9811180",
+      "title": "Evidence for a Massive Black Hole in the S0 Galaxy NGC 4342",
+      "authors": [
+        "Nicolas Cretton",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 11 November, 1998; originally announced November 1998.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/9806078",
+      "url": "https://arxiv.org/abs/astro-ph/9806078",
+      "title": "Nuclear stellar discs in early-type galaxies --- II. Photometric properties",
+      "authors": [
+        "Cecilia Scorza",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 4 June, 1998; originally announced June 1998.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/9805324",
+      "url": "https://arxiv.org/abs/astro-ph/9805324",
+      "title": "Evidence for a massive BH in the S0 galaxy NGC 4342",
+      "authors": [
+        "Nicolas Cretton",
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 26 May, 1998; originally announced May 1998.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/9805113",
+      "url": "https://arxiv.org/abs/astro-ph/9805113",
+      "title": "The Formation of Disk-Bulge-Halo Systems and the Origin of the Hubble Sequence",
+      "authors": [
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 8 May, 1998; originally announced May 1998.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/9804039",
+      "url": "https://arxiv.org/abs/astro-ph/9804039",
+      "title": "Bar driven evolution of S0s: the edge-on galaxy NGC 4570",
+      "authors": [
+        "Frank C. van den Bosch",
+        "Eric Emsellem"
+      ],
+      "submitted": "Submitted 3 April, 1998; originally announced April 1998.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/9708027",
+      "url": "https://arxiv.org/abs/astro-ph/9708027",
+      "title": "Nuclear stellar discs in early-type galaxies -- I. HST and WHT observations",
+      "authors": [
+        "Frank C. van den Bosch",
+        "Walter Jaffe",
+        "Roeland P. van der Marel"
+      ],
+      "submitted": "Submitted 4 August, 1997; originally announced August 1997.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/9611146",
+      "url": "https://arxiv.org/abs/astro-ph/9611146",
+      "title": "A Nuclear Disk and massive BH in NGC 4342",
+      "authors": [
+        "Frank C. van den Bosch",
+        "Walter Jaffe"
+      ],
+      "submitted": "Submitted 19 November, 1996; originally announced November 1996.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/9611145",
+      "url": "https://arxiv.org/abs/astro-ph/9611145",
+      "title": "On the Uncertainties of the Central Density in Axisymmetric Galaxies due to Deprojection",
+      "authors": [
+        "Frank C. van den Bosch"
+      ],
+      "submitted": "Submitted 19 November, 1996; originally announced November 1996.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/9607035",
+      "url": "https://arxiv.org/abs/astro-ph/9607035",
+      "title": "Self-Consistent, Axisymmetric Two_Integral Models of Elliptical Galaxies with embedded Nuclear Discs",
+      "authors": [
+        "Frank C. van den Bosch",
+        "P. Tim de Zeeuw"
+      ],
+      "submitted": "Submitted 5 July, 1996; originally announced July 1996.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    },
+    {
+      "id": "astro-ph/9412041",
+      "url": "https://arxiv.org/abs/astro-ph/9412041",
+      "title": "Dynamics of the nuclear gas & dust disc in the E4 radio galaxy NGC 7052",
+      "authors": [
+        "Frank C. van den Bosch",
+        "Roeland P. van der Marel"
+      ],
+      "submitted": "Submitted 12 December, 1994; originally announced December 1994.",
+      "reading": "Title and selected abstract passages screened; not a full-paper review"
+    }
+  ]
+}

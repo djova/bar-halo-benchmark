@@ -1,6 +1,6 @@
 # Galaxy Bar: MNRAS-format manuscript
 
-Export 2026-09-24.1 of scientific article 2026-09-23.4. Unreviewed; not
+Export 2026-09-24.2 of scientific article 2026-09-24.1. Unreviewed; not
 submitted to or accepted by MNRAS. No numerical evidence was changed.
 
 [Download the PDF](galaxy-bar-mnras.pdf) · [Interactive article](https://djova.ca/galaxy-bar/paper.html)
@@ -31,3 +31,6 @@ verifies the complete upstream archive before extraction. See
 The manifest identifies input and output hashes. Input paths resolve relative
 to the `publication/` directory. The generated manuscript can be compiled directly
 without regenerating the article, running any simulation or accessing private files.
+
+The editorial revision is documented in the [reading review](../publication/web/diagnostics/communication/WRITING_REVIEW_2026-09-24.md).
+It changes the exposition, not the underlying measurements or frozen criteria.
