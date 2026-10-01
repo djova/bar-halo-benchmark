@@ -1,0 +1,38 @@
+{
+  "gates": {
+    "harmonic_reference": true,
+    "conservative_operator": true,
+    "fourth_angular_ratio": true,
+    "constant_shear_echo": true
+  },
+  "all_known_limit_controls_pass": true,
+  "jobs": [
+    {
+      "id": "inertia",
+      "source": "inertia_screen.py",
+      "source_sha256": "ce170268f57adac6b4b91d8564959082a9275b38b4b1684ef8bf2c8813683bf0",
+      "exit_code": 0,
+      "wall_seconds": 0.8163351921830326,
+      "cpu_seconds": 0.7748399999999999
+    },
+    {
+      "id": "elastic_operator",
+      "source": "scatter_moment_screen.py",
+      "source_sha256": "569847bbf8af1909cc1af4deda9183b6c649eecef4788dee0a93184e6ea0945d",
+      "exit_code": 0,
+      "wall_seconds": 0.5156456208787858,
+      "cpu_seconds": 0.49367100000000014
+    },
+    {
+      "id": "known_echo",
+      "source": "echo_reduced.py",
+      "source_sha256": "e93ad1ab30e0791e02510d94ebb3a18c9116d6b4401010ce3ffba4149fb2b786",
+      "exit_code": 0,
+      "wall_seconds": 58.16284858295694,
+      "cpu_seconds": 58.15782
+    }
+  ],
+  "summed_child_cpu_seconds": 59.426331,
+  "scope": "Regenerates known-limit controls from equations and seeds. Does not reproduce halo echoes, collision-law response ensembles, heating, twins, live galaxies or observations.",
+  "uncertainty": "Deterministic reference checks and fixed-seed operator checks; no new independent physical evidence."
+}

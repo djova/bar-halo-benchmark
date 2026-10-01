@@ -1,0 +1,1062 @@
+{
+  "schema_version": 1,
+  "campaign": "discovery-20261001",
+  "branch": "scattering",
+  "status": "terminal",
+  "release": {
+    "status": "pending_clean_release",
+    "note": "Source and reproduction bundle await a clean public release. Evidence record IDs identify archived inputs; they are not live public URLs."
+  },
+  "title": "A collision-law contrast did not pass the selected numerical checks",
+  "finding": "Conservative laws with matched conditional velocity drift and the full raw second tensor passed ordinary controls. Their small original-waveform impulse contrast lost its resolved sign in both selected refinements; the second waveform was unresolved.",
+  "inference": "No numerically qualified full-moment resonance discriminator emerged in this prescribed gas screen.",
+  "model": {
+    "system": "One periodic position x in [0, 2 pi), three velocity components, equal-mass exact elastic pair collisions in spatial cells.",
+    "potential_per_unit_mass": "U(x,t) = -epsilon cos(x - phi(t))",
+    "phase": "phi(t) = omega0 t + sweep t^2 / 2",
+    "initial_state": "Uniform x and a Maxwell distribution with each velocity-component dispersion equal to 1.",
+    "common_parameters": {
+      "particles": 8192,
+      "duration": 40,
+      "omega0": 0.5,
+      "kappa": 0.02
+    },
+    "laws": [
+      {
+        "law": "A",
+        "cosine_support": [
+          0,
+          0.6666666666666666
+        ],
+        "probabilities": [
+          0.25,
+          0.75
+        ]
+      },
+      {
+        "law": "B",
+        "cosine_support": [
+          0.3333333333333333
+        ],
+        "probabilities": [
+          1
+        ]
+      }
+    ],
+    "matching": {
+      "relative_event_rate": "Gamma_B(g) = 3 Gamma_A(g) / 4",
+      "conditional_velocity_drift": "-Gamma_A u / 4",
+      "conditional_raw_second_tensor": "Gamma_A |u|^2 I / 12",
+      "fourth_angular_decay_ratio_A_over_B": 1.65625
+    },
+    "matching_limit": "Matches increments of the linear coordinate J = v_x. Nonlinear energy increments and halo actions are outside this match."
+  },
+  "observable": {
+    "name": "Final external impulse per unit particle mass",
+    "definition": "I = integral from 0 to 40 of the particle mean of -epsilon sin(x - phi(t)) dt.",
+    "contrast": "I_B minus I_A, paired by initial-state seed.",
+    "units": "Reference velocity unit; the initial one-component Maxwell velocity dispersion is 1. No astrophysical calibration is supplied."
+  },
+  "uncertainty": {
+    "method": "Nominal per-condition 95% Student-t interval for the mean of 16 independent initial-state seed contrasts; 15 degrees of freedom.",
+    "pairing": "Laws share initial states. Stochastic collision trajectories are distinct; pathwise common-random-number cancellation is not assumed.",
+    "multiplicity": "Two waveform endpoints supply separate refinement triggers. No overall multiple-test pass was defined. The supplementary Bonferroni intervals cover only these two endpoints under the Student-t model, not the adaptive campaign or selected refinements.",
+    "zero": "An interval containing zero is unresolved; it does not demonstrate equal dynamics or convergence."
+  },
+  "controls": {
+    "operator_pass": true,
+    "ordinary_controls_pass": true,
+    "stress_equivalence_margin": 0.05,
+    "maximum_absolute_stress_interval_endpoint": 0.045236983023546624,
+    "stress_interval_scope": "Nominal 95% pointwise Student-t intervals across four initial-state seeds; not simultaneous history bands.",
+    "max_candidate_probability": 0.003069167220411411,
+    "max_operator_pair_energy_residual": 2.1210810885463616e-13,
+    "max_operator_pair_momentum_residual": 8.881784197001252e-16,
+    "evidence": [
+      {
+        "evidence_id": "operator",
+        "json_pointer": "/all_pass"
+      },
+      {
+        "evidence_id": "controls",
+        "json_pointer": "/all_control_gates_pass"
+      },
+      {
+        "evidence_id": "controls",
+        "json_pointer": "/stress_maximum_abs_interval_endpoint"
+      },
+      {
+        "evidence_id": "controls",
+        "json_pointer": "/numerics"
+      }
+    ]
+  },
+  "decision": {
+    "original_nominal_refinement_trigger": true,
+    "second_nominal_refinement_trigger": false,
+    "signed_signal_at_all_selected_discretizations": false,
+    "numerical_qualification": "failed_selected_sign_endpoint",
+    "continuum_magnitude": "unresolved",
+    "second_waveform_refinements": "Not selected because the primary interval included zero.",
+    "evidence": [
+      {
+        "evidence_id": "multiplicity",
+        "json_pointer": "/rows/0/original_operational_refinement_trigger"
+      },
+      {
+        "evidence_id": "multiplicity",
+        "json_pointer": "/rows/1/original_operational_refinement_trigger"
+      },
+      {
+        "evidence_id": "refinement",
+        "json_pointer": "/signed_signal_at_all_selected_discretizations"
+      }
+    ]
+  },
+  "figure": {
+    "type": "signed_contrast_intervals",
+    "x_label": "B minus A external impulse (reference velocity units)",
+    "reference_value": 0,
+    "default_rows": [
+      "full_moment_original",
+      "full_moment_original_halfdt",
+      "full_moment_original_cells64",
+      "full_moment_second"
+    ],
+    "rows": [
+      {
+        "row_key": "full_moment_original",
+        "label": "Original waveform",
+        "condition": "original",
+        "variant": "baseline",
+        "epsilon": 0.25,
+        "sweep": 0.025,
+        "dt": 0.01,
+        "cells": 32,
+        "n_seeds": 16,
+        "estimate": {
+          "mean": -0.00537311707473891,
+          "se": 0.0024704414350256655,
+          "low": -0.010638738348756404,
+          "high": -0.00010749580072141451
+        },
+        "nominal_interval_excludes_zero": true,
+        "control_status": "passed",
+        "evidence": {
+          "evidence_id": "original",
+          "json_pointer": "/primary_B_minus_A"
+        },
+        "law_impulse_means": {
+          "A": 0.30475105927294455,
+          "B": 0.29937794219820557
+        },
+        "law_means_evidence": {
+          "A": {
+            "evidence_id": "original",
+            "json_pointer": "/groups/A/impulse/mean"
+          },
+          "B": {
+            "evidence_id": "original",
+            "json_pointer": "/groups/B/impulse/mean"
+          }
+        },
+        "paired_seed_output_correlation": 0.42487291010875494,
+        "supplementary_two_waveform_bonferroni_interval": {
+          "mean": -0.00537311707473891,
+          "low": -0.011524219062445053,
+          "high": 0.0007779849129672337
+        },
+        "supplementary_interval_evidence": {
+          "evidence_id": "multiplicity",
+          "json_pointer": "/rows/0/supplementary_Bonferroni95_two_waveform_family"
+        },
+        "seed_operands": {
+          "seeds": [
+            260521,
+            260522,
+            260523,
+            260524,
+            260525,
+            260526,
+            260527,
+            260528,
+            260529,
+            260530,
+            260531,
+            260532,
+            260533,
+            260534,
+            260535,
+            260536
+          ],
+          "A": [
+            0.3029488108203531,
+            0.3045258769174398,
+            0.3122269918422999,
+            0.3095030490729737,
+            0.2932058542097651,
+            0.30921472459292565,
+            0.3115339290068858,
+            0.3165341032169589,
+            0.3024275769774664,
+            0.3190949857866602,
+            0.3032639462285198,
+            0.29212723849699684,
+            0.308266310797953,
+            0.2874900169539099,
+            0.31117448496788414,
+            0.29247904847812
+          ],
+          "B": [
+            0.3029290008528427,
+            0.3086899847915563,
+            0.31332862902692593,
+            0.3041663439110256,
+            0.29367874891594714,
+            0.30541638847948843,
+            0.29541793616886836,
+            0.30279350172280634,
+            0.2900066536606419,
+            0.29542172131104816,
+            0.2810913695756324,
+            0.30001954796317487,
+            0.3013710596324223,
+            0.283275139392705,
+            0.310882271666905,
+            0.3015587780992994
+          ],
+          "B_minus_A": [
+            -1.9809967510386883e-05,
+            0.004164107874116474,
+            0.0011016371846260253,
+            -0.005336705161948119,
+            0.00047289470618205875,
+            -0.0037983361134372173,
+            -0.016115992838017457,
+            -0.013740601494152571,
+            -0.01242092331682454,
+            -0.02367326447561202,
+            -0.02217257665288741,
+            0.007892309466178027,
+            -0.006895251165530747,
+            -0.004214877561204922,
+            -0.00029221330097911613,
+            0.009079729621179367
+          ],
+          "record_id_pattern": "results/discovery-20261001/scattering/moment-original-{law}-{seed}/result.json",
+          "json_pointer": "/history/79/impulse",
+          "record_sha256": {
+            "A": [
+              "e231e43591a29ff8680f968e04da8223ff2f0a15819bbdb814ceb7413686c13c",
+              "58160336132fb75b587dc15d0fd5ff3338b5dff7000efb2e3bd8e3146afec1a4",
+              "15c83265523df66bc16727914ff59a3070166b858a2c1a2cd06d282e96d4b9e9",
+              "25e2ee36fbd19fc007c6ef8533213d5c3d89e5a8f051077c2914b4f00029abbf",
+              "e417217bdb9cf2940671e078396af989f139487f484dd1cc3a9621743726c7f5",
+              "7f0c9dfa0a0c4fc7bcb25770a14edb2842dc125ab5a65d91aadf2003bab22cee",
+              "99bb4be3f22662bb1128140466a5f94decfd1006e93e5824e6c46a7629b47179",
+              "4bfb0ae7d38414d5b8d8a9dc9766e8529136873e8b6d5671f67f73b02921cd48",
+              "7243ed4193264d3493adc75158cb2c748f157607394d0ec24b1cd2f16dc58040",
+              "bd77374e43527b9886b4a956ac1b04e1ea6a310840da0265c3919f9b249ce63a",
+              "7d056f573ed78f23ab67bac2342a2910002644cee87df37d2842109badd8085e",
+              "b4c1f735b8d70cf5b4cbf7c234d37af17bbd2560e4e9201019b95db783cdf7bd",
+              "61c4bb04a0deb910b683fb90eecf7405572bab638862c00d9b302f3b7b7e2040",
+              "63624944ecd8d8d51b5176d2ec8049b274214d775300cc0098b16fd15fbd8994",
+              "d1211143cc934d5e5f7dacb4df455ea093f97c4784e912ce8f9a9fd5bc0cc7db",
+              "b4e10d9a989f60a2fa5210ed98000a1c6d892d5144186582eccf1ce0604b6e41"
+            ],
+            "B": [
+              "268eb2292520ea87c3efa3836a2380efea2dab7d1dfe3a3d64bb2f57b7bf54f5",
+              "3d2b9aef742772761212826edb41f17b36c704235d65a44cf3c422640668ad91",
+              "5811c6f9c509f5ce0a3ca5d7997d11dc5e6e2a0f072b1137924841367afb2c9a",
+              "131eb1b74af874bff8b026e5d9219538af0f97c394442cad186e04f5721fcb68",
+              "5b0610b360e39468f1914b681daa3c188d258f91edb6f5cbc4208e1c53a4cf2b",
+              "25d3a7fb8a119c48e7f2201d8ed7bf87e382e177f0d7a521d94907cf226cfceb",
+              "638eb6d21101a76905423176e875b3941e9ca6d3bfeb405b6242bce5ec2517ef",
+              "c07c8af533ac8033d2433ea9de405e433c4d76d363a2a0bd17c9ab36e5832896",
+              "4f2d809a83854b3be31ec77e435159cd7d2f56cfdc9c8393a96efe2293ddebb5",
+              "165caf50bac04006a5c0d6e94b88faaee50d857aa3dc7506b6301b02823df85b",
+              "4c4f89146fb3c3f106d6505ff11c4fc6e687d175a8e7bf9daa4d4517cfd6695f",
+              "2caf7439c9b71efc53bcf250486adb1f3f561e866760101608498f8c6d312e33",
+              "3b2f7cc150140c9e954d931f8410c0500e2487dae01acf0a642e7ec586b3986e",
+              "e3365ee16b1431e38ce3ac2323def50b1a3323c908de9da1a0ef2fca66e18710",
+              "4c7f3844bcbffa5e604fdc382ab8ed5c6616607cfccad3e204fa292da1dc2211",
+              "05592d5ed8211521205e988e177a0e3f4d0fe34ec5bd217c4238b204a3ea72c6"
+            ]
+          },
+          "note": "Arrays share the stated seed order. Each hash identifies the original archived operand record; records await clean release."
+        }
+      },
+      {
+        "row_key": "full_moment_original_halfdt",
+        "label": "Original: half timestep",
+        "condition": "original",
+        "variant": "halfdt",
+        "epsilon": 0.25,
+        "sweep": 0.025,
+        "dt": 0.005,
+        "cells": 32,
+        "n_seeds": 16,
+        "estimate": {
+          "mean": -0.004946244833334199,
+          "se": 0.002602200580160585,
+          "low": -0.010492704077372864,
+          "high": 0.0006002144107044652
+        },
+        "nominal_interval_excludes_zero": false,
+        "control_status": "passed",
+        "evidence": {
+          "evidence_id": "refinement",
+          "json_pointer": "/rows/0/contrast"
+        },
+        "seed_operands": {
+          "seeds": [
+            260521,
+            260522,
+            260523,
+            260524,
+            260525,
+            260526,
+            260527,
+            260528,
+            260529,
+            260530,
+            260531,
+            260532,
+            260533,
+            260534,
+            260535,
+            260536
+          ],
+          "A": [
+            0.2912204280080613,
+            0.2937342720342408,
+            0.2993178654099448,
+            0.3204786398436458,
+            0.3075836246894583,
+            0.3123894234540215,
+            0.3103637811494409,
+            0.3031854034208099,
+            0.28585545872782575,
+            0.30300450527635525,
+            0.2855604329865568,
+            0.30022877675155196,
+            0.30723372009306604,
+            0.2984267365263968,
+            0.31749580275790645,
+            0.3060478759466661
+          ],
+          "B": [
+            0.28906263479958116,
+            0.294704718846579,
+            0.2999695234348895,
+            0.2994708829062063,
+            0.29234173787297657,
+            0.3012115117352942,
+            0.30248997126689275,
+            0.3125277398435228,
+            0.2845411660365436,
+            0.3055795748325388,
+            0.2862644677018625,
+            0.31424739686206443,
+            0.3021124676466353,
+            0.2916488460595223,
+            0.30656870469535635,
+            0.28024548520213577
+          ],
+          "B_minus_A": [
+            -0.002157793208480141,
+            0.0009704468123382104,
+            0.0006516580249446569,
+            -0.021007756937439448,
+            -0.015241886816481753,
+            -0.011177911718727285,
+            -0.007873809882548155,
+            0.009342336422712871,
+            -0.0013142926912821373,
+            0.002575069556183529,
+            0.0007040347153056681,
+            0.01401862011051247,
+            -0.005121252446430746,
+            -0.006777890466874492,
+            -0.0109270980625501,
+            -0.025802390744530335
+          ],
+          "record_id_pattern": "results/discovery-20261001/scattering/moment-original-halfdt-{law}-{seed}/result.json",
+          "json_pointer": "/history/79/impulse",
+          "record_sha256": {
+            "A": [
+              "ebd7184e17e426c57ea4b2d3844da8eb126c6aeed92ba47139e92b6c40c4bcc5",
+              "c4a9b86811168ab381ec4e1d8ea57453369a219d1772a003f8572a6795af6f24",
+              "d25c171390f936d2bc636e3a82462c44f1c871bda227095a2939f7fb7f39a1d2",
+              "ddccdb20b6a853c06c26cd361b2bfec5cbf9704c5268b892968628a5c274094b",
+              "ba03da1cc5201247a99e9fd71687062d006f571434dc82cb117028d092603f65",
+              "eb420ed0c73eaf5e150e5b1c56c16c6a44d7892e16ae255de630d354972b6b38",
+              "9dffdf967b09201de2f9eb858a9fe4e6326b1e665bbfb626b0177cb15bc985df",
+              "27f408e7b115a65944dd557574d088c186aa697856abfa7c2787301c11c2076d",
+              "c3f05c2d82a45cc676ac588cf8678a3b42466f6b47d673ce22245004da3dcaf5",
+              "ff356e07c39d8e310b03eb35699efbe175271a87186c154476e1e7efdd50e3dd",
+              "c14e487989885f6209de5af02d1ad049d10d9c7c83dc51c9871ccfb49f49e22e",
+              "fa6a82cf4dc82770ce511e74cf242be59057890b7c087239c2c7a976917c8a49",
+              "3e3eaa79985308ad891f71ccd7b1d095ef712cf0974fe20f51df027046cfcabf",
+              "c9692545fcd5e7b309d7e1a70dce7abae84d5362818c460de8a00aa65ca13852",
+              "c6db95e1f48e806dfd8a0b85fe50a28a946c90501ae4bb0552d649e23b113d64",
+              "eb92b3aa3a4abe25d1d43fdb19ad450971126f3be9efd2f5a827b759f542be20"
+            ],
+            "B": [
+              "096adc952e9f36a3456d2eaca04dbadf4d19f9136e6790774de5a0fd80fd5bbe",
+              "fc8636e3100a9cdc0c9f6361eecf032cdb6148e84c51a1e5f5b3dc56bef5c9a9",
+              "de3793275d3bd52955aff212bae193b3dfb2f15e0a4b8e2b028a5c5153d00fe2",
+              "8d5160261cc8bf2af20a80ed0c18b5379edbdec4cf74fe60b3c3b90beb9b43ec",
+              "08a3c8d8162f9baeb39edcf60a1bc28c490862e8222050f009b590ae4143e03a",
+              "a9b8c4cd89cde4e164ec3649df0914fe1d94b6a9e8fdf542d30902381094ad4b",
+              "1de80b7e6fed00d8ce6bc5e6a904a7136c56bf2f3f688fb431a5b263590b673e",
+              "2e09ccb5ed4eb2ab3261230a1883a9286102094fbb8e9716c5282c7ea3525011",
+              "f0d20b1f8a8b6b489fe5f13990aaa878df44f62046968115a7d88e071eb6af6c",
+              "98235edf6bac20befe6f3e767146ba4ca8c1dfd05d05ee6412976caeca74f86e",
+              "dc9dc5e2ba3fc01a79199dc75026e59dfcd82cbf9e871fed175ee5c8a2c0cc23",
+              "cf8395e71bf601390b434a8773ff984ecc0b55859a28bc189e736826e3def086",
+              "fc7c8f421c1364437d37c81c75804cf9b010087ec1ffd0636c719298c3b2eb67",
+              "8ba9f52414d10c6e3029eeb3c7e1947be185b250fd55dc91c77a57ac83ee7e9d",
+              "0744d1bbc5a29b0eccf8ce908c6f0bd99fd252897752b38d526113edc61fcdce",
+              "e75ce25a00166ab4103c68e1c639b3c9c39daa2717b33080f0eb462a19d048e2"
+            ]
+          },
+          "note": "Arrays share the stated seed order. Each hash identifies the original archived operand record; records await clean release."
+        }
+      },
+      {
+        "row_key": "full_moment_original_cells64",
+        "label": "Original: 64 cells",
+        "condition": "original",
+        "variant": "cells64",
+        "epsilon": 0.25,
+        "sweep": 0.025,
+        "dt": 0.01,
+        "cells": 64,
+        "n_seeds": 16,
+        "estimate": {
+          "mean": -0.002128846121516339,
+          "se": 0.0027378592335260505,
+          "low": -0.007964454940622076,
+          "high": 0.0037067626975893983
+        },
+        "nominal_interval_excludes_zero": false,
+        "control_status": "passed",
+        "evidence": {
+          "evidence_id": "refinement",
+          "json_pointer": "/rows/1/contrast"
+        },
+        "seed_operands": {
+          "seeds": [
+            260521,
+            260522,
+            260523,
+            260524,
+            260525,
+            260526,
+            260527,
+            260528,
+            260529,
+            260530,
+            260531,
+            260532,
+            260533,
+            260534,
+            260535,
+            260536
+          ],
+          "A": [
+            0.2946248463583249,
+            0.30031502022000084,
+            0.31454916719156273,
+            0.295765381507617,
+            0.3039453482485264,
+            0.30638634972826,
+            0.32160906377004633,
+            0.30964508582151606,
+            0.2842229801572991,
+            0.3079147955109327,
+            0.30513723034224394,
+            0.2906477652818907,
+            0.3016055412698176,
+            0.30240865448143717,
+            0.3187270099139447,
+            0.3095397600053361
+          ],
+          "B": [
+            0.2932978336687434,
+            0.29301300661278656,
+            0.3053545267140517,
+            0.3115544443206266,
+            0.3137976169509202,
+            0.3102712028244778,
+            0.31096260152875355,
+            0.30554106833751105,
+            0.2886610162152571,
+            0.30450267314055857,
+            0.280447117594026,
+            0.28773640134847434,
+            0.32029001968389165,
+            0.2977711332278677,
+            0.31445321697331563,
+            0.29532858272323304
+          ],
+          "B_minus_A": [
+            -0.0013270126895815193,
+            -0.007302013607214275,
+            -0.009194640477511007,
+            0.015789062813009624,
+            0.009852268702393752,
+            0.0038848530962177774,
+            -0.010646462241292787,
+            -0.004104017484005018,
+            0.004438036057958006,
+            -0.0034121223703741377,
+            -0.02469011274821792,
+            -0.0029113639334163444,
+            0.018684478414074057,
+            -0.0046375212535694765,
+            -0.004273792940629073,
+            -0.014211177282103082
+          ],
+          "record_id_pattern": "results/discovery-20261001/scattering/moment-original-cells64-{law}-{seed}/result.json",
+          "json_pointer": "/history/79/impulse",
+          "record_sha256": {
+            "A": [
+              "beb02f7f8ed7e22d70a4b402860a7d2593e7ea46226a7b7c24da9aa975091c9c",
+              "331175b3b346a937151987f44d9f8e045b1640af932724cd339c66cdfcea2ed8",
+              "5e7b6c96d512fd2b6d520447f170f384bec44590b684bd0d999b72d9eb491a3f",
+              "b7300654e31e7841b40ec5f4fa1a6c2b05c1efa4dbbf9f655212ebe29fbfd3cd",
+              "1e917704014641e65f56f33b6bebc1a728704679a75ee608a976b1f3a1e73be0",
+              "0ae893436af0b44f4ad5ca515bf91f386f52bab1f853163f81ca438a786852dd",
+              "5e171b76800092c642ad175bad000434c72a75f7779c5f4ff43677f14c0432fc",
+              "b9d63aa2d25f868c2e13d94c19de15a424143a41359102d8bb65175bc04f3ed1",
+              "1f505c1341e8b654593b968602d76d22e18e3ac19b4c8a1fefe6f0582eacb7e9",
+              "861429b5f5eb4754eaa8ad76f1a443253bc56117413d36182c290619bfbf7d0c",
+              "3d80254dec3afe572188dc47a2f685e7c1decca16450f5b1b07188440014c061",
+              "360ab6173b7f6b6e4936347e073ce19d7f341bb6b54d9bf0495091d465a8da0d",
+              "999e8ca1c3b5228c803dd734a8175a4313b88f137533bfae446e3a943e57922a",
+              "2b7a3708285d4b6d7235a171d28df62652a0902bc3528bab28c420f7b875d198",
+              "363df1b30c6ca1cc913d27aef7a2119a9ff163ebb28b3cb4331f006ac7df9100",
+              "87ef0f2265672ebb4c2f4f0b37c3241bc3f25246e652f566d794e3990f620c38"
+            ],
+            "B": [
+              "b0db407badd52c3cc8c8f88309e03a86ec0322b22640cead8da132f78b8ab3b5",
+              "c20340d0eec801167f3c71d2bb3adc311bcbf433dca13537c4137c453d3075ab",
+              "945dd46a2f0b8664a333a6a0f95f96e5d94e8af31a8095f41d135fc0b64005a3",
+              "3973ae58ea93320e9ebaa7be364aab428506777eba21c2ede7068a5eacba19c1",
+              "7bd10ab412c8f7cfab04dcaf5524d9bc3b75123633f9f20de7dbc7cff95a5043",
+              "392e13eb90ab1d2b1356f3432ab79514246bae921aa0db4643f3a19057c681c2",
+              "22f9bf67371d0955e57a57f74e3220049a89952e84f01c954b7c80aa8013f799",
+              "da1961405d1999c07f57884e732ebe3a2effe2f1b28818942df005a50546365e",
+              "2275970d7baeda7dca6bc969f53f4b0ae5448a80579fa5b9d9293da71aaebf28",
+              "a32d140a1cf5a48c068633adceb6c0158dd3bbafdc35610c2e64b414a4ef791e",
+              "78f175289edb3dfe639be662a7525cd86004c6ec7c52889cf301b8e6b8bae330",
+              "82d98e087e9f11341781517e009ab760dd2bc42b1619c41249f1ae9e198d9ce4",
+              "f1661db0fe75703ba8e6a48de997018082b7f6a1196f9783a1d575aa87b9e6d9",
+              "17d8e868c92ed044df52a96e83f600756fe9e8600a3c0af8bf301fef586d20d3",
+              "a9d621721e0297f1033657bc4cd8cac984bcb83daecbde05c686be74003fba0f",
+              "cd9e0d51c3c23fcbc9318910bca4047906510cbfe8cb8302e10d342b72d34bf4"
+            ]
+          },
+          "note": "Arrays share the stated seed order. Each hash identifies the original archived operand record; records await clean release."
+        }
+      },
+      {
+        "row_key": "full_moment_second",
+        "label": "Second waveform",
+        "condition": "second",
+        "variant": "baseline",
+        "epsilon": 0.16,
+        "sweep": 0.04,
+        "dt": 0.01,
+        "cells": 32,
+        "n_seeds": 16,
+        "estimate": {
+          "mean": 1.2856412825171942e-05,
+          "se": 0.002054273740945386,
+          "low": -0.0043657244187682515,
+          "high": 0.004391437244418595
+        },
+        "nominal_interval_excludes_zero": false,
+        "control_status": "passed",
+        "evidence": {
+          "evidence_id": "second",
+          "json_pointer": "/primary_B_minus_A"
+        },
+        "law_impulse_means": {
+          "A": 0.22668745373103136,
+          "B": 0.22670031014385655
+        },
+        "law_means_evidence": {
+          "A": {
+            "evidence_id": "second",
+            "json_pointer": "/groups/A/impulse/mean"
+          },
+          "B": {
+            "evidence_id": "second",
+            "json_pointer": "/groups/B/impulse/mean"
+          }
+        },
+        "paired_seed_output_correlation": 0.5993853733122086,
+        "supplementary_two_waveform_bonferroni_interval": {
+          "mean": 1.2856412825171942e-05,
+          "low": -0.005102038080146454,
+          "high": 0.005127750905796798
+        },
+        "supplementary_interval_evidence": {
+          "evidence_id": "multiplicity",
+          "json_pointer": "/rows/1/supplementary_Bonferroni95_two_waveform_family"
+        },
+        "seed_operands": {
+          "seeds": [
+            260541,
+            260542,
+            260543,
+            260544,
+            260545,
+            260546,
+            260547,
+            260548,
+            260549,
+            260550,
+            260551,
+            260552,
+            260553,
+            260554,
+            260555,
+            260556
+          ],
+          "A": [
+            0.22252040986284413,
+            0.22740109114419227,
+            0.23670196634434998,
+            0.22225237547552507,
+            0.24347083589356402,
+            0.22308477530096987,
+            0.2306216429724015,
+            0.2346192016600342,
+            0.22034160426444707,
+            0.22091037665128768,
+            0.22760441541907703,
+            0.20642682752369612,
+            0.2279324475420305,
+            0.2342761391191807,
+            0.23325256939570424,
+            0.21558258112719755
+          ],
+          "B": [
+            0.22657043064869312,
+            0.2230335073969353,
+            0.23212685792071658,
+            0.2217082644240289,
+            0.2407200941289879,
+            0.22720507765768636,
+            0.23537518006090422,
+            0.23105801137658008,
+            0.22903960116962788,
+            0.21499389787610665,
+            0.21303049047636907,
+            0.22749525961406955,
+            0.22245759313036997,
+            0.23566162994149614,
+            0.2391000779110212,
+            0.20762898856811174
+          ],
+          "B_minus_A": [
+            0.0040500207858489845,
+            -0.004367583747256959,
+            -0.0045751084236334005,
+            -0.0005441110514961545,
+            -0.0027507417645761256,
+            0.004120302356716482,
+            0.004753537088502707,
+            -0.003561190283454113,
+            0.008697996905180805,
+            -0.005916478775181033,
+            -0.014573924942707955,
+            0.02106843209037343,
+            -0.0054748544116605125,
+            0.001385490822315455,
+            0.005847508515316957,
+            -0.007953592559085815
+          ],
+          "record_id_pattern": "results/discovery-20261001/scattering/moment-second-{law}-{seed}/result.json",
+          "json_pointer": "/history/79/impulse",
+          "record_sha256": {
+            "A": [
+              "2d956fc2c371d34e61ecaebb647167eb293459aec3fcd28d6ac6e2137528c105",
+              "8734eef59cfd7be6d9da7497fa67141e3aeced0dc36d442f666bfb456a9cb192",
+              "ab0010d144cbb3aa7d899f0d7e0aeb3e3165843695c149da2a760e0e9ef6961c",
+              "c64da947f288fbb12d80a25035ebdb7c15d4404905bf94002f2f13bc55e979f1",
+              "9553a15ad333e6da170b1ec87b8453b8af1c58d4a41e09e7d776098ed8c28054",
+              "0d101fcb274858be2529857816821b19aff7c4a05a65dc5f7e70e8c228dc77f8",
+              "a28a5a71ffab3351baa9a7db2bf92e0347cfe97162a7c6b72b6f31f7adaea07b",
+              "e1c79001839b17778a0f9996930f5eb70b9f73d1aba392b35e07fbf56ae9bcdd",
+              "83516142632d4a5d38c7b474a404d2367b06f864006b6b366317b888452ee4ba",
+              "6eb0ef6190f2afa571f8c241110e355aaa405e588fa78ad36891be2cdf39082d",
+              "072811c0d9253972b3c0c4f581ca1832494a42b12781656b173c0028fd63d227",
+              "4c8859c020817ffe68bb797ce6914a8579fe7dcf5c3d16fc9636a5c9784f7f2e",
+              "16e78b26c9949f77571ad9be2451d9f9d2e42515d0c2919125d4ca8b682fb092",
+              "92094b6fe534953e9e0e0c9901edbcf5edf8921eb084f4af8e137d6ba0beb377",
+              "b52019fba62cf392cb5a135e61df987588acae34829e96868c8581c893714e49",
+              "73d7850450026c0ae0d8b911281e5968b26ee4a3361b0521a5cd7d5b3f3adff1"
+            ],
+            "B": [
+              "febb4799cbca55b12602ac4b43043a2d5bca16ae9b8be14aa8784f7765e33bda",
+              "cb3199c65c5387c4d4883f7c9138024ed8daf3ff04533416d548ce4f246b753a",
+              "195dc730c742c3a4e5fc94e7fd5d48a6e76c1b949467a701bd862d0aa6c948f2",
+              "ddad21dac885e88764bbf711c70af6197d42e1afdce2b9b4cce0a5f046957f49",
+              "9c85e347967486f2d548fa0ae51bb0341e757938e512f926fb374067639d9777",
+              "b8b4649f88933311789df6f17e410eb6a796f1421625c66d4655991ba2803347",
+              "de2baf6aef1b3328dc825ef107da9dbdf6eb6d3770d044e07e87a92cd033cf0c",
+              "75b674fd3b3b053b16cc83c6b9572b8481b461fd9881f5e24c819b41b30d1351",
+              "81b7480c4092ff28bc12ea93cd98926cd6487402b9b63abbd3e22c1f8d36648e",
+              "947f5d9f5f6dd2aaa53c1411f931a5fb370faa1f46964b5d6e474e13f3f4e989",
+              "567cb9fa3998da9c2bd4494312836c502c722386e0d4755e03d7296904958f39",
+              "32ce3847ce8d670f0bed2b15329b0e5788a9497229ff7c06514c89b4c0a1f77b",
+              "cc75083be5c713c0008571b239ab5af66beaa95155b397a21664f55e53f3c3a4",
+              "3e7b9554e33d6731409ade062355ae8bdca91164214e73bb96e888cf0ccecfc7",
+              "17f40a068f6e084d5d11d650088162a67436da18a980ac81cd1abd6237f1e876",
+              "fd2d67fd0b89a2168a1a98855ddecf6dd35a60f2cff9b3354c7f33e0e90a766f"
+            ]
+          },
+          "note": "Arrays share the stated seed order. Each hash identifies the original archived operand record; records await clean release."
+        }
+      }
+    ],
+    "caption": "Points show mean B-minus-A external impulse; whiskers show nominal per-condition 95% seed intervals. Original and second waveforms change epsilon and sweep together. Original refinements independently halve the timestep or double the cell count with the same 16 initial-state seeds. Only the original baseline interval excludes zero, so its provisional refinement trigger does not pass numerical qualification. Supplementary two-waveform intervals both include zero."
+  },
+  "refinement_changes": [
+    {
+      "row_key": "full_moment_change_halfdt",
+      "variant": "halfdt",
+      "estimate": {
+        "mean": 0.0004268722414047105,
+        "se": 0.004016938034600186,
+        "low": -0.008135028506985635,
+        "high": 0.008988772989795056
+      },
+      "definition": "Refined B-minus-A impulse minus original B-minus-A impulse, paired by initial-state seed.",
+      "evidence": {
+        "evidence_id": "refinement",
+        "json_pointer": "/rows/0/change"
+      }
+    },
+    {
+      "row_key": "full_moment_change_cells64",
+      "variant": "cells64",
+      "estimate": {
+        "mean": 0.003244270953222571,
+        "se": 0.0034262997797877034,
+        "low": -0.0040587141553574905,
+        "high": 0.010547256061802632
+      },
+      "definition": "Refined B-minus-A impulse minus original B-minus-A impulse, paired by initial-state seed.",
+      "evidence": {
+        "evidence_id": "refinement",
+        "json_pointer": "/rows/1/change"
+      }
+    }
+  ],
+  "earlier_stage": {
+    "scope": "Scalar viscosity matching, which does not match the full local linear-action drift and diffusion tensors.",
+    "global_original_controls_pass": false,
+    "failed_point_two_stress_endpoint": 0.05735895483303181,
+    "point_two_stress_margin": 0.05,
+    "point_one_controls_pass": true,
+    "outcome": "The 0.1 radian original contrast retained its sign at selected discretizations, but its magnitude remained unresolved and its positive-sign endpoints failed under the second waveform and weaker transport.",
+    "rows": [
+      {
+        "row_key": "viscosity_original",
+        "label": "Original waveform",
+        "contrast": "0.1 radian law minus isotropic",
+        "epsilon": 0.25,
+        "sweep": 0.025,
+        "kappa": 0.02,
+        "n_seeds": 4,
+        "estimate": {
+          "mean": 0.030514793184754516,
+          "se": 0.004196301009953858,
+          "low": 0.01716029053976857,
+          "high": 0.04386929582974046
+        },
+        "evidence": {
+          "evidence_id": "earlier_original",
+          "json_pointer": "/comparisons/2/paired"
+        }
+      },
+      {
+        "row_key": "viscosity_halfdt",
+        "label": "Original: half timestep",
+        "contrast": "0.1 radian law minus isotropic",
+        "epsilon": 0.25,
+        "sweep": 0.025,
+        "kappa": 0.02,
+        "n_seeds": 4,
+        "estimate": {
+          "mean": 0.03435640552832109,
+          "se": 0.0020974587265934264,
+          "low": 0.027681355753388766,
+          "high": 0.04103145530325341
+        },
+        "evidence": {
+          "evidence_id": "earlier_refinement",
+          "json_pointer": "/rows/4/refined_contrast"
+        }
+      },
+      {
+        "row_key": "viscosity_cells64",
+        "label": "Original: 64 cells",
+        "contrast": "0.1 radian law minus isotropic",
+        "epsilon": 0.25,
+        "sweep": 0.025,
+        "kappa": 0.02,
+        "n_seeds": 4,
+        "estimate": {
+          "mean": 0.04180878108153473,
+          "se": 0.0031241479137627376,
+          "low": 0.0318663480962207,
+          "high": 0.05175121406684875
+        },
+        "evidence": {
+          "evidence_id": "earlier_refinement",
+          "json_pointer": "/rows/10/refined_contrast"
+        }
+      },
+      {
+        "row_key": "viscosity_second",
+        "label": "Second waveform",
+        "contrast": "0.1 radian law minus isotropic",
+        "epsilon": 0.16,
+        "sweep": 0.04,
+        "kappa": 0.02,
+        "n_seeds": 4,
+        "estimate": {
+          "mean": -0.006272077847170987,
+          "se": 0.007259335599018344,
+          "low": -0.029374523603081407,
+          "high": 0.016830367908739433
+        },
+        "evidence": {
+          "evidence_id": "earlier_second",
+          "json_pointer": "/comparisons/2/paired"
+        }
+      },
+      {
+        "row_key": "viscosity_weaker_transport",
+        "label": "Weaker transport",
+        "contrast": "0.1 radian law minus isotropic",
+        "epsilon": 0.25,
+        "sweep": 0.025,
+        "kappa": 0.01,
+        "n_seeds": 4,
+        "estimate": {
+          "mean": -0.0014656379787540766,
+          "se": 0.007563222325129084,
+          "low": -0.025535186923400382,
+          "high": 0.02260391096589223
+        },
+        "evidence": {
+          "evidence_id": "earlier_transport",
+          "json_pointer": "/comparisons/2/paired"
+        }
+      }
+    ],
+    "small_angle_fresh_seed_controls_pass": true,
+    "small_angle_point_one_minus_isotropic": {
+      "estimate": {
+        "mean": 0.021898714738916206,
+        "se": 0.0049726857779426705,
+        "low": 0.006073409257565714,
+        "high": 0.0377240202202667
+      },
+      "evidence": {
+        "evidence_id": "small_angle_response",
+        "json_pointer": "/comparisons/2/paired"
+      }
+    },
+    "small_angle_point_zero_five_minus_isotropic": {
+      "estimate": {
+        "mean": 0.02342013619641932,
+        "se": 0.007088217016190609,
+        "low": 0.0008622661421944094,
+        "high": 0.04597800625064423
+      },
+      "evidence": {
+        "evidence_id": "small_angle_response",
+        "json_pointer": "/comparisons/0/paired"
+      }
+    },
+    "small_angle_change_point_zero_five_minus_point_one": {
+      "estimate": {
+        "mean": 0.0015214214575031137,
+        "se": 0.007266392437721979,
+        "low": -0.021603482308666672,
+        "high": 0.0246463252236729
+      },
+      "evidence": {
+        "evidence_id": "small_angle_response",
+        "json_pointer": "/comparisons/4/paired"
+      }
+    },
+    "small_angle_magnitude_convergence": "unresolved",
+    "evidence": [
+      {
+        "evidence_id": "earlier_controls",
+        "json_pointer": "/all_control_gates_pass"
+      },
+      {
+        "evidence_id": "earlier_controls",
+        "json_pointer": "/stress_equivalence/0"
+      },
+      {
+        "evidence_id": "earlier_controls",
+        "json_pointer": "/stress_equivalence/1"
+      },
+      {
+        "evidence_id": "small_angle_controls",
+        "json_pointer": "/all_control_gates_pass"
+      }
+    ]
+  },
+  "limits": [
+    "Prescribed gas with no self-gravity or responsive disk.",
+    "Instantaneous separatrix population is a secondary snapshot; it does not measure capture or sustained trapping.",
+    "A smooth finite-angle construction was derived but not simulated."
+  ],
+  "primary_sources": [
+    {
+      "id": "fischer_sagunski_2024",
+      "title": "Dynamical friction from self-interacting dark matter",
+      "url": "https://arxiv.org/html/2405.19392v2",
+      "location": "Section 4.4; Figure 12",
+      "role": "Existing evidence that viscosity matching can approximate response across angular laws."
+    },
+    {
+      "id": "arido_fischer_garny_2025",
+      "title": "Simulating realistic self-interacting dark matter models including small and large-angle scattering",
+      "url": "https://arxiv.org/abs/2410.07175v2",
+      "role": "Existing validated hybrid treatment of small and large scattering angles."
+    }
+  ],
+  "recorded_provenance": {
+    "source_sha256": "531aca96f86e37d3e6243a63276c39d6d4c5726b19760197fe5169f379bac19c",
+    "wrapper_source_sha256": "569847bbf8af1909cc1af4deda9183b6c649eecef4788dee0a93184e6ea0945d",
+    "moment_protocol_sha256": "fb322494e8e8f3771cb89e9c5fe18cf7eeaef1bfd13cc02cc00ce2d24eefbf84"
+  },
+  "evidence": {
+    "operator": {
+      "record_id": "results/discovery-20261001/scattering/moment-operator-01/result.json",
+      "sha256": "7b4e1a1229afdb4793078a1a5e2efebf0268a96041eb65e854d6c86b6452e887",
+      "json_pointers": [
+        "/all_pass",
+        "/rows/0",
+        "/rows/1",
+        "/l4_decay_ratio"
+      ]
+    },
+    "controls": {
+      "record_id": "results/discovery-20261001/scattering/moment-control-analysis-01/result.json",
+      "sha256": "c8b795362ec933f9ed44b855b2c1e4808033df51d220ff149dd7bf170b7fec4c",
+      "json_pointers": [
+        "/all_control_gates_pass",
+        "/stress_maximum_abs_interval_endpoint",
+        "/numerics"
+      ]
+    },
+    "original": {
+      "record_id": "results/discovery-20261001/scattering/moment-original-analysis-01/result.json",
+      "sha256": "9ce6eca37f73d9e205be412d88fbe07ac618458e816614fe7bb813d6db24db96",
+      "json_pointers": [
+        "/primary_B_minus_A",
+        "/groups/A/impulse",
+        "/groups/B/impulse",
+        "/paired_seed_output_correlation"
+      ]
+    },
+    "refinement": {
+      "record_id": "results/discovery-20261001/scattering/moment-original-refinement-analysis-01/result.json",
+      "sha256": "cd7551b0552f04ef6dff28b45d157c78221ebf1ee1181e60e3e585cd21921b12",
+      "json_pointers": [
+        "/rows/0/contrast",
+        "/rows/0/change",
+        "/rows/1/contrast",
+        "/rows/1/change",
+        "/signed_signal_at_all_selected_discretizations"
+      ]
+    },
+    "second": {
+      "record_id": "results/discovery-20261001/scattering/moment-second-analysis-01/result.json",
+      "sha256": "c6ceb1f0d5675748019035cf25549e276189a1664467f6d9b29e3984c15113cb",
+      "json_pointers": [
+        "/primary_B_minus_A",
+        "/groups/A/impulse",
+        "/groups/B/impulse",
+        "/paired_seed_output_correlation"
+      ]
+    },
+    "multiplicity": {
+      "record_id": "results/discovery-20261001/scattering/moment-multiplicity-analysis-01/result.json",
+      "sha256": "f267285e85b3de11574f6b0edcc686cb06db7bedd43d1d6e860c011634704e36",
+      "json_pointers": [
+        "/rows/0",
+        "/rows/1"
+      ]
+    },
+    "earlier_controls": {
+      "record_id": "results/discovery-20261001/scattering/control-analysis-01/result.json",
+      "sha256": "e981950bb8145b004227948711fcdc499378567f1d6538f8d5df6e84206b8320",
+      "json_pointers": [
+        "/all_control_gates_pass",
+        "/stress_equivalence/0",
+        "/stress_equivalence/1"
+      ]
+    },
+    "earlier_original": {
+      "record_id": "results/discovery-20261001/scattering/resonance-analysis-01/result.json",
+      "sha256": "49a1c7e58f0c2ca32a6c26c4e9ed93454c2946c2379434887e9cf8c81ce0c795",
+      "json_pointers": [
+        "/comparisons/2/paired"
+      ]
+    },
+    "earlier_refinement": {
+      "record_id": "results/discovery-20261001/scattering/refinement-analysis-01/result.json",
+      "sha256": "d80992a08eff263acd34dce43da794da5dcd3b0a675f2b9e36470617652fef3b",
+      "json_pointers": [
+        "/rows/4/refined_contrast",
+        "/rows/10/refined_contrast"
+      ]
+    },
+    "earlier_second": {
+      "record_id": "results/discovery-20261001/scattering/heldout-analysis-01/result.json",
+      "sha256": "70b81d8120f242708cc635e1b7e13d80e25e31fc858eb10bec68cd2844e6a496",
+      "json_pointers": [
+        "/comparisons/2/paired"
+      ]
+    },
+    "earlier_transport": {
+      "record_id": "results/discovery-20261001/scattering/transport-analysis-01/result.json",
+      "sha256": "d27bfe7b6cc99d2ce8fbcfc6586d3d69c19dd007cfc4542cf0f0b621ce37d204",
+      "json_pointers": [
+        "/comparisons/2/paired"
+      ]
+    },
+    "small_angle_controls": {
+      "record_id": "results/discovery-20261001/scattering/limit-control-analysis-01/result.json",
+      "sha256": "c5928ad8036f556d1856ae0a774a867a20b47721013618bae9a5dd89da4b85ee",
+      "json_pointers": [
+        "/all_control_gates_pass"
+      ]
+    },
+    "small_angle_response": {
+      "record_id": "results/discovery-20261001/scattering/limit-analysis-01/result.json",
+      "sha256": "c922c946133a5b090db80a313d00649b7ba4d250a5b052e4a2758e602e41eaf6",
+      "json_pointers": [
+        "/comparisons/0/paired",
+        "/comparisons/2/paired",
+        "/comparisons/4/paired"
+      ]
+    }
+  }
+}

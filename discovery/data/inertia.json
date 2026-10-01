@@ -1,0 +1,431 @@
+{
+  "schema_version": 1,
+  "campaign": "discovery-20261001",
+  "branch": "inertia",
+  "status": "terminal",
+  "release": {
+    "status": "pending_clean_release",
+    "note": "Source and reproduction bundle await a clean public release. Evidence record IDs identify archived inputs; they are not live public URLs."
+  },
+  "title": "Circular calibration leaves harmonic frequencies undetermined",
+  "finding": "All frozen harmonic benchmark checks pass. With identical circular calibration, changing the published frequency filter family changes the second-axis frequency by 65.21% in the selected reference case. Coincident frequencies expose the known sharp-spectrum grouping singularity.",
+  "inference": "This is an exact harmonic reference laboratory with substantial filter sensitivity and an unresolved finite-window extension.",
+  "model": {
+    "system": "Complete periodic harmonic histories in a prescribed separable two-axis force field.",
+    "interpolation": "mu(x) = x / (1 + x)",
+    "filter": "Theta_q(y) = 2 / (1 + |y|^q)",
+    "q_values": [
+      2,
+      4,
+      8
+    ],
+    "acceleration_measure": "A_n = sum_k omega_k^2 r_k Theta_q(omega_k / omega_n)",
+    "frequency_equation": "omega_n^2 mu(A_n / a0) = omega_N,n^2",
+    "amplitude_convention": "r_k is a root mean square amplitude. A cosine peak amplitude is sqrt(2) times r_k.",
+    "circular_normalization": "Theta_q(1) = 1 for every q, so the single-frequency circular relation is identical.",
+    "single_frequency_solution": "omega^2 = [omega_N^2 + sqrt(omega_N^4 + 4 omega_N^2 a0 / r)] / 2"
+  },
+  "observable": {
+    "name": "Self-consistent angular frequency of each harmonic axis",
+    "units": "Inverse reference time. RMS amplitudes use reference length; the selected two-axis cases use a0 = 1 reference length / reference time^2.",
+    "uncertainty": "Deterministic equation solutions; no statistical confidence interval or observational error bar."
+  },
+  "conditions": {
+    "selected": {
+      "newtonian_frequencies": [
+        1,
+        0.25
+      ],
+      "rms_amplitudes": [
+        0.15,
+        0.0045
+      ],
+      "a0": 1
+    },
+    "two_axis_matrix": {
+      "cases": 126,
+      "amplitude_ratios": [
+        0.03,
+        0.1,
+        0.3,
+        1,
+        3,
+        10,
+        30
+      ],
+      "newtonian_frequency_ratios": [
+        0.25,
+        0.5,
+        0.9,
+        1.1,
+        2,
+        4
+      ],
+      "initial_frequency_guess_factors": [
+        0.3,
+        1,
+        3
+      ]
+    },
+    "single_frequency_checks": {
+      "cases": 9,
+      "newtonian_frequency": 0.7,
+      "rms_amplitude": 0.8,
+      "a0_values": [
+        1e-08,
+        1,
+        100000000.0
+      ]
+    }
+  },
+  "controls": {
+    "all_benchmark_gates_pass": true,
+    "gates": {
+      "frequency_equations": true,
+      "multiple_guesses_agree": true,
+      "single_frequency_analytic": true,
+      "harmonic_energy": true,
+      "filters": true
+    },
+    "maxima": {
+      "residual": {
+        "value": 3.1197266991967385e-14,
+        "evidence": {
+          "evidence_id": "benchmark",
+          "json_pointer": "/benchmarks/26/residual"
+        }
+      },
+      "guess_spread": {
+        "value": 1.2002101385092867e-14,
+        "evidence": {
+          "evidence_id": "benchmark",
+          "json_pointer": "/benchmarks/36/guess_spread"
+        }
+      },
+      "relative_analytic_error": {
+        "value": 1.1102230246251565e-16,
+        "evidence": {
+          "evidence_id": "benchmark",
+          "json_pointer": "/benchmarks/92/relative_analytic_error"
+        }
+      },
+      "force_relative_residual": {
+        "value": 2.5259889805271625e-14,
+        "evidence": {
+          "evidence_id": "benchmark",
+          "json_pointer": "/benchmarks/36/force_relative_residual"
+        }
+      },
+      "modified_energy_relative_drift": {
+        "value": 2.5723200133391925e-14,
+        "evidence": {
+          "evidence_id": "benchmark",
+          "json_pointer": "/benchmarks/36/modified_energy_relative_drift"
+        }
+      }
+    },
+    "thresholds": {
+      "frequency_equations": 1e-10,
+      "multiple_guess_spread": 1e-08,
+      "single_frequency_analytic": 1e-10,
+      "harmonic_energy_relative_drift": 1e-10,
+      "force_relative_residual": 1e-10
+    },
+    "evidence": [
+      {
+        "evidence_id": "benchmark",
+        "json_pointer": "/gates"
+      },
+      {
+        "evidence_id": "benchmark",
+        "json_pointer": "/all_benchmark_gates_pass"
+      }
+    ]
+  },
+  "figure": {
+    "type": "frequency_comparison",
+    "x_label": "Filter exponent q",
+    "y_label": "Angular frequency (inverse reference time)",
+    "series": [
+      {
+        "key": "axis_1",
+        "label": "First axis"
+      },
+      {
+        "key": "axis_2",
+        "label": "Second axis"
+      }
+    ],
+    "rows": [
+      {
+        "row_key": "harmonic_filter_q2",
+        "q": 2,
+        "axis_1": 1.766108831231817,
+        "axis_2": 0.721856660776525,
+        "equation_residual": 2.220446049250313e-16,
+        "guess_spread": 6.2862661971448475e-16,
+        "evidence": {
+          "evidence_id": "benchmark",
+          "json_pointer": "/benchmarks/3"
+        }
+      },
+      {
+        "row_key": "harmonic_filter_q4",
+        "q": 4,
+        "axis_1": 1.763522079396894,
+        "axis_2": 0.9453635195105983,
+        "equation_residual": 1.1102230246251565e-16,
+        "guess_spread": 1.1743874199841176e-16,
+        "evidence": {
+          "evidence_id": "benchmark",
+          "json_pointer": "/benchmarks/48"
+        }
+      },
+      {
+        "row_key": "harmonic_filter_q8",
+        "q": 8,
+        "axis_1": 1.7598793138808009,
+        "axis_2": 1.1925995882222962,
+        "equation_residual": 2.220446049250313e-16,
+        "guess_spread": 1.86185377823259e-16,
+        "evidence": {
+          "evidence_id": "benchmark",
+          "json_pointer": "/benchmarks/93"
+        }
+      }
+    ],
+    "relative_range_axis_1": 0.0035272556486063964,
+    "relative_range_axis_2": 0.652127981945027,
+    "range_definition": "(maximum frequency across q minus minimum frequency across q) / q=2 frequency.",
+    "range_evidence": {
+      "evidence_id": "benchmark",
+      "json_pointer": "/model_comparisons/0/relative_range"
+    },
+    "caption": "The force constants, RMS amplitudes, interpolation and a0 stay fixed while q changes from 2 to 4 to 8. The second-axis frequency rises by 65.21% relative to q=2, while the first-axis range is 0.35%. All three filters share the same circular normalization. These are deterministic harmonic solutions with no observational calibration."
+  },
+  "mode_grouping": {
+    "status": "finite_window_extension_unresolved",
+    "conditions": {
+      "near_equal_newtonian_frequencies": [
+        1,
+        1.00000001
+      ],
+      "rms_amplitudes": [
+        0.15,
+        0.15
+      ],
+      "exact_equal_newtonian_frequency": 1,
+      "a0": 1
+    },
+    "rule": "Exactly coincident frequencies must first be grouped into one complex vector amplitude. Adding separate scalar norms gives a different model.",
+    "rows": [
+      {
+        "row_key": "mode_grouping_q2",
+        "q": 2,
+        "distinct_frequency_limit": [
+          1.5469225724612976,
+          1.54692258444315
+        ],
+        "merged_vector_rms": 0.21213203435596426,
+        "exact_merged_frequency": 1.6516699839930817,
+        "relative_discontinuity": -0.06341909252267608,
+        "residual": 2.2204460492503128e-16,
+        "evidence": {
+          "evidence_id": "benchmark",
+          "json_pointer": "/degenerate_frequency_limit/0"
+        }
+      },
+      {
+        "row_key": "mode_grouping_q4",
+        "q": 4,
+        "distinct_frequency_limit": [
+          1.5469225735634256,
+          1.5469225833410223
+        ],
+        "merged_vector_rms": 0.21213203435596426,
+        "exact_merged_frequency": 1.6516699839930817,
+        "relative_discontinuity": -0.06341909185539507,
+        "residual": 2.2204460492503128e-16,
+        "evidence": {
+          "evidence_id": "benchmark",
+          "json_pointer": "/degenerate_frequency_limit/1"
+        }
+      },
+      {
+        "row_key": "mode_grouping_q8",
+        "q": 8,
+        "distinct_frequency_limit": [
+          1.5469225748783642,
+          1.5469225820260835
+        ],
+        "merged_vector_rms": 0.21213203435596426,
+        "exact_merged_frequency": 1.6516699839930817,
+        "relative_discontinuity": -0.06341909105926835,
+        "residual": 2.220446049250313e-16,
+        "evidence": {
+          "evidence_id": "benchmark",
+          "json_pointer": "/degenerate_frequency_limit/2"
+        }
+      }
+    ],
+    "gap_definition": "Near-equal first-axis frequency / exactly grouped frequency minus 1.",
+    "inference": "The approximately 6.34% gap measures the published sharp-frequency singular limit. A finite-window spectral grouping and regularization must be defined before broader orbit calculations."
+  },
+  "high_frequency_suppression": {
+    "contamination_fraction": "(a_internal / a_external) * 2 / [1 + (omega_internal / omega_external)^q]",
+    "required_ratio": "[2 a_internal / (epsilon a_external) - 1]^(1/q)",
+    "acceleration_ratio": 1000000000000.0,
+    "epsilon": 0.01,
+    "rows": [
+      {
+        "row_key": "contamination_q2_ratio100",
+        "q": 2,
+        "frequency_ratio": 100.0,
+        "acceleration_ratio": 1000000000000.0,
+        "low_frequency_contamination_fraction": 199980001.99980003,
+        "evidence": {
+          "evidence_id": "benchmark",
+          "json_pointer": "/composite_decoupling/0"
+        }
+      },
+      {
+        "row_key": "contamination_q2_ratio10000",
+        "q": 2,
+        "frequency_ratio": 10000.0,
+        "acceleration_ratio": 1000000000000.0,
+        "low_frequency_contamination_fraction": 19999.9998,
+        "evidence": {
+          "evidence_id": "benchmark",
+          "json_pointer": "/composite_decoupling/1"
+        }
+      },
+      {
+        "row_key": "contamination_q2_ratio1000000",
+        "q": 2,
+        "frequency_ratio": 1000000.0,
+        "acceleration_ratio": 1000000000000.0,
+        "low_frequency_contamination_fraction": 1.9999999999979998,
+        "evidence": {
+          "evidence_id": "benchmark",
+          "json_pointer": "/composite_decoupling/2"
+        }
+      },
+      {
+        "row_key": "contamination_q4_ratio100",
+        "q": 4,
+        "frequency_ratio": 100.0,
+        "acceleration_ratio": 1000000000000.0,
+        "low_frequency_contamination_fraction": 19999.9998,
+        "evidence": {
+          "evidence_id": "benchmark",
+          "json_pointer": "/composite_decoupling/3"
+        }
+      },
+      {
+        "row_key": "contamination_q4_ratio10000",
+        "q": 4,
+        "frequency_ratio": 10000.0,
+        "acceleration_ratio": 1000000000000.0,
+        "low_frequency_contamination_fraction": 0.00019999999999999998,
+        "evidence": {
+          "evidence_id": "benchmark",
+          "json_pointer": "/composite_decoupling/4"
+        }
+      },
+      {
+        "row_key": "contamination_q4_ratio1000000",
+        "q": 4,
+        "frequency_ratio": 1000000.0,
+        "acceleration_ratio": 1000000000000.0,
+        "low_frequency_contamination_fraction": 2.0000000000000004e-12,
+        "evidence": {
+          "evidence_id": "benchmark",
+          "json_pointer": "/composite_decoupling/5"
+        }
+      },
+      {
+        "row_key": "contamination_q8_ratio100",
+        "q": 8,
+        "frequency_ratio": 100.0,
+        "acceleration_ratio": 1000000000000.0,
+        "low_frequency_contamination_fraction": 0.00019999999999999998,
+        "evidence": {
+          "evidence_id": "benchmark",
+          "json_pointer": "/composite_decoupling/6"
+        }
+      },
+      {
+        "row_key": "contamination_q8_ratio10000",
+        "q": 8,
+        "frequency_ratio": 10000.0,
+        "acceleration_ratio": 1000000000000.0,
+        "low_frequency_contamination_fraction": 2e-20,
+        "evidence": {
+          "evidence_id": "benchmark",
+          "json_pointer": "/composite_decoupling/7"
+        }
+      },
+      {
+        "row_key": "contamination_q8_ratio1000000",
+        "q": 8,
+        "frequency_ratio": 1000000.0,
+        "acceleration_ratio": 1000000000000.0,
+        "low_frequency_contamination_fraction": 2e-36,
+        "evidence": {
+          "evidence_id": "benchmark",
+          "json_pointer": "/composite_decoupling/8"
+        }
+      }
+    ],
+    "inference": "A filter approaching zero at high frequency is insufficient by itself; amplitude ratios enter the bound. These are illustrative structural ratios."
+  },
+  "limits": [
+    "Agreement across three guesses supports these benchmark solutions but proves no general uniqueness theorem.",
+    "Harmonic conservation checks apply to the recorded orthogonal modes; arbitrary histories and forced-response causality are unresolved.",
+    "Stellar populations, observed kinematics, lensing, cosmology and general galaxy evolution were not tested."
+  ],
+  "implementation_correction": "The original sampled strict-decrease assertion failed when floating values rounded to 2. The retained second screen checks sampled nonincrease and the negative analytical derivative. Frequency results and model parameters were unchanged.",
+  "primary_sources": [
+    {
+      "id": "milgrom_2022_v3",
+      "title": "Models of modified-inertia formulation of MOND",
+      "url": "https://arxiv.org/pdf/2208.07073v3",
+      "locations": [
+        "Equations 3, 20, 27\u201332",
+        "Page 10: warning below equation 32 about equal frequencies",
+        "Page 12: q=2 filter example",
+        "Section II.A: unresolved general history uniqueness"
+      ],
+      "role": "The reference frequency equations, harmonic solutions and q=2 filter are published; q=4 and q=8 vary that framework."
+    }
+  ],
+  "recorded_provenance": {
+    "source_sha256": "ce170268f57adac6b4b91d8564959082a9275b38b4b1684ef8bf2c8813683bf0",
+    "protocol_sha256": "332cefcb4223280f0041ef249e6a0b306cf2eeea9df7808d69a51d0a5928b5ed"
+  },
+  "evidence": {
+    "benchmark": {
+      "record_id": "results/discovery-20261001/inertia/screen-02/result.json",
+      "sha256": "7185f9ab8168a8b9bdd2bee8268ca5936e88c7ad5481dddd6899509a86fe60c3",
+      "json_pointers": [
+        "/benchmarks/3",
+        "/benchmarks/48",
+        "/benchmarks/93",
+        "/gates",
+        "/all_benchmark_gates_pass",
+        "/model_comparisons/0",
+        "/degenerate_frequency_limit",
+        "/composite_decoupling"
+      ]
+    },
+    "original_assertion": {
+      "record_id": "results/discovery-20261001/inertia/screen-01/result.json",
+      "sha256": "155af009ce7f246b01595fa4c4c46b75bd0998b03d36d76813385ae64cab560e",
+      "json_pointers": [
+        "/filter_checks",
+        "/gates/filters",
+        "/all_benchmark_gates_pass"
+      ]
+    }
+  }
+}
