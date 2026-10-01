@@ -1,0 +1,17 @@
+{
+  "all_published_comparisons_pass": true,
+  "compared_numeric_values": 808,
+  "maximum_absolute_difference": 0,
+  "absolute_slack": 1e-17,
+  "relative_slack": 1e-12,
+  "source_sha256": "19c6dd5834897e04637ec15a4f24593a61fb63b3e13336612fb2ebbc8f01b465",
+  "operand_manifest_sha256": "2e678d2f10e4659ee2e1b0d1c9fe4928df7cdffee48ba681aaf99f609b5a3500",
+  "published_export_sha256": "313539c8e2e9a3f6a560e67b79be512c01fa776d98c0e8071c393e8e18396177",
+  "frozen_populations_sha256": "dc97087897f70d889aefe827499cf68a966a25c18f3ed5e9cb9cd44b82aade31",
+  "environment": {
+    "python": "3.11.14",
+    "numpy": "1.26.4",
+    "scipy": "1.17.1"
+  },
+  "scope": "Software/arithmetic replay of fixed stored impulses, frozen populations and stored sampling densities. No new physical sample, AGAMA DF regeneration, orbit evolution or growth-history prediction."
+}

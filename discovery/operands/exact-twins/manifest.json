@@ -1,0 +1,772 @@
+{
+  "schema_version": 1,
+  "scope": "Compact saved-history analysis operands; no initial states, angle samples, trajectories or movie arrays. Sampling Fq was evaluated once from the archived actions with the pinned AGAMA DF; public replay consumes these stored density values and does not import AGAMA.",
+  "df_series_terms": 96,
+  "sampling_potential": {
+    "type": "Isochrone",
+    "mass": 1,
+    "scaleRadius": 0.5
+  },
+  "sampling_DF": "AGAMA QuasiSpherical in the stated potential",
+  "sampling_library_sha256": "f6c04e4941aff3538d3bb08f6446d731b788d85406af94092cf856fbd139d000",
+  "parent_config_record_id": "twins/randomized-01/config.json",
+  "parent_config_sha256": "ecc3bc532f2de9e3738c70da8faa8bc8aed3d6b8ddd3d0a804f39a99a7c00447",
+  "derived_array_definitions": {
+    "L": "J_z + abs(J_phi)",
+    "Lz": "abs(J_phi); impulses contain the prograde and full-velocity-reversed partners",
+    "e": "0.5 / [J_r + 0.5 (L + sqrt(L^2 + 2))]^2",
+    "masses": "Original common absolute mass array; no per-library or population renormalization",
+    "sampling_DF_Fq": "Pinned QuasiSpherical DF evaluated at the original saved actions"
+  },
+  "libraries": [
+    {
+      "library_id": 0,
+      "path": "library-0.npz",
+      "sha256": "8442737c732c058c043bd793fbcfcfa4443a7136f2a5f82e055b128c106e92c2",
+      "arrays": {
+        "e": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "L": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "Lz": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "masses": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "sampling_DF_Fq": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "reference_Ipro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "reference_Iretro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "frequency_Ipro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "frequency_Iretro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "phase_double_0_Ipro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "phase_double_0_Iretro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "halfstep_reference_0_Ipro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "halfstep_reference_0_Iretro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "halfstep_frequency_0_Ipro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "halfstep_frequency_0_Iretro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        }
+      },
+      "original_input_sha256": {
+        "twins/randomized-01/library-0.npz": "dbc519aa6e0185284f72e9249a86c13f9f6a763743a56c336e5883bcd8faf4fa",
+        "twins/randomized-01/reference-0.npz": "87f29f00677a6d887eab465c2177dd6322718d005aeaa5e15475047a02b14723",
+        "twins/randomized-01/frequency-0.npz": "ca3fac657ad502225b3b0496b2305356fd6ef6d624b23be541a14aa49c7d1b2d",
+        "twins/randomized-01/phase-double-0.npz": "958b5127e3f05df5809be7d5c461c22e7671018e0bf945e61d2555ca10930716",
+        "twins/randomized-01/halfstep-reference-0.npz": "347f6bcdbb6bb10dcc251c8a3ba00d12248473cee3f03af0920cd6e49e2ef4f7",
+        "twins/randomized-01/halfstep-frequency-0.npz": "949301755b43ec73720da53ce076227916462d8ef4e6af15468e148375053e6d"
+      },
+      "original_array_selections": {
+        "twins/randomized-01/library-0.npz": [
+          "actions",
+          "mass"
+        ],
+        "twins/randomized-01/reference-0.npz": {
+          "array": "family_impulse",
+          "Ipro_column": 0,
+          "Iretro_column": 1,
+          "selection": "all 512 families"
+        },
+        "twins/randomized-01/frequency-0.npz": {
+          "array": "family_impulse",
+          "Ipro_column": 0,
+          "Iretro_column": 1,
+          "selection": "all 512 families"
+        },
+        "twins/randomized-01/phase-double-0.npz": {
+          "array": "family_impulse",
+          "Ipro_column": 0,
+          "Iretro_column": 1,
+          "selection": "all 512 families"
+        },
+        "twins/randomized-01/halfstep-reference-0.npz": {
+          "array": "family_impulse",
+          "Ipro_column": 0,
+          "Iretro_column": 1,
+          "selection": "all 512 families"
+        },
+        "twins/randomized-01/halfstep-frequency-0.npz": {
+          "array": "family_impulse",
+          "Ipro_column": 0,
+          "Iretro_column": 1,
+          "selection": "all 512 families"
+        }
+      }
+    },
+    {
+      "library_id": 1,
+      "path": "library-1.npz",
+      "sha256": "d61d2863814ecf4cfbd940cc0f1d0db9b7d4a9fca102a8d482dacf537fb99808",
+      "arrays": {
+        "e": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "L": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "Lz": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "masses": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "sampling_DF_Fq": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "reference_Ipro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "reference_Iretro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "frequency_Ipro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "frequency_Iretro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "phase_double_1_Ipro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "phase_double_1_Iretro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        }
+      },
+      "original_input_sha256": {
+        "twins/randomized-01/library-1.npz": "5ce701bbb1281725cb491a71a7c3e98b3775550fb7b4140346d6580f6d845a44",
+        "twins/randomized-01/reference-1.npz": "5f15c5a16d0d589a79833359ae707c59e319eda056db5ee8263245a2eaf2e55c",
+        "twins/randomized-01/frequency-1.npz": "d44e95241a09a176e6ab0e25ed0e8b986ddfa0d9fb8021ba4d2a589942b4435e",
+        "twins/randomized-01/phase-double-1.npz": "2348ff203667bcdb09a818a7a5c3140bc9cc5c3cd5b1bda8e94a1671cb32a390"
+      },
+      "original_array_selections": {
+        "twins/randomized-01/library-1.npz": [
+          "actions",
+          "mass"
+        ],
+        "twins/randomized-01/reference-1.npz": {
+          "array": "family_impulse",
+          "Ipro_column": 0,
+          "Iretro_column": 1,
+          "selection": "all 512 families"
+        },
+        "twins/randomized-01/frequency-1.npz": {
+          "array": "family_impulse",
+          "Ipro_column": 0,
+          "Iretro_column": 1,
+          "selection": "all 512 families"
+        },
+        "twins/randomized-01/phase-double-1.npz": {
+          "array": "family_impulse",
+          "Ipro_column": 0,
+          "Iretro_column": 1,
+          "selection": "all 512 families"
+        }
+      }
+    },
+    {
+      "library_id": 2,
+      "path": "library-2.npz",
+      "sha256": "fc9173ce3326feb2c3d3601c08b0f61968e772c910cd47ce0b78e81b5f4af9e0",
+      "arrays": {
+        "e": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "L": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "Lz": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "masses": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "sampling_DF_Fq": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "reference_Ipro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "reference_Iretro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "frequency_Ipro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "frequency_Iretro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        }
+      },
+      "original_input_sha256": {
+        "twins/randomized-01/library-2.npz": "c7f78a8e978613748db26a5326b17ca59d6a4cb339a006bf5aa6fb0fd5c99013",
+        "twins/randomized-01/reference-2.npz": "b54743d0b9bc1d74c55ca06ba6e312f4fb8413facd440942ed0f729012bc1d8a",
+        "twins/randomized-01/frequency-2.npz": "67355579f50023269a6a802b0e6a59d7b8dcb47d8f019468da86a216cdee3ad1"
+      },
+      "original_array_selections": {
+        "twins/randomized-01/library-2.npz": [
+          "actions",
+          "mass"
+        ],
+        "twins/randomized-01/reference-2.npz": {
+          "array": "family_impulse",
+          "Ipro_column": 0,
+          "Iretro_column": 1,
+          "selection": "all 512 families"
+        },
+        "twins/randomized-01/frequency-2.npz": {
+          "array": "family_impulse",
+          "Ipro_column": 0,
+          "Iretro_column": 1,
+          "selection": "all 512 families"
+        }
+      }
+    },
+    {
+      "library_id": 3,
+      "path": "library-3.npz",
+      "sha256": "e7a4661a8608de01dba98da41a62d43bfd1bc4fd0186f84a283613895ac3d57f",
+      "arrays": {
+        "e": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "L": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "Lz": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "masses": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "sampling_DF_Fq": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "reference_Ipro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "reference_Iretro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "frequency_Ipro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "frequency_Iretro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        }
+      },
+      "original_input_sha256": {
+        "twins/randomized-01/library-3.npz": "4c7645de7aae27f7a1c93b08dcc13e784fc55c4f1ef14022b6da70c110d572ad",
+        "twins/randomized-01/reference-3.npz": "4bd57fd9da33e004744beaedba72b19fb6be9c9ce67e1ce86ae17146520df6d2",
+        "twins/randomized-01/frequency-3.npz": "ad6ab46dcb69ee8bde2e3de66a96c9b30903a4b6270d7ff24545310bbb1e171d"
+      },
+      "original_array_selections": {
+        "twins/randomized-01/library-3.npz": [
+          "actions",
+          "mass"
+        ],
+        "twins/randomized-01/reference-3.npz": {
+          "array": "family_impulse",
+          "Ipro_column": 0,
+          "Iretro_column": 1,
+          "selection": "all 512 families"
+        },
+        "twins/randomized-01/frequency-3.npz": {
+          "array": "family_impulse",
+          "Ipro_column": 0,
+          "Iretro_column": 1,
+          "selection": "all 512 families"
+        }
+      }
+    },
+    {
+      "library_id": 4,
+      "path": "library-4.npz",
+      "sha256": "0fc9de1c878844caaf3c5026d6ad4f4111502973a32649bd1c3dfc87eeea4033",
+      "arrays": {
+        "e": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "L": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "Lz": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "masses": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "sampling_DF_Fq": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "reference_Ipro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "reference_Iretro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "frequency_Ipro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "frequency_Iretro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        }
+      },
+      "original_input_sha256": {
+        "twins/randomized-01/library-4.npz": "728ba0ea27d8a5e409b7e57ba80f9ba4a17014776bacf11efed0a234d0c81d9a",
+        "twins/randomized-01/reference-4.npz": "1ce162fd5e0a6e87ba777e86f1f8f82a04ad44400d7f187e236a043cbb31eaeb",
+        "twins/randomized-01/frequency-4.npz": "77bb6fcf1ce656ab0f9510be8c48871b237bf25effa15895823d0135d9a25195"
+      },
+      "original_array_selections": {
+        "twins/randomized-01/library-4.npz": [
+          "actions",
+          "mass"
+        ],
+        "twins/randomized-01/reference-4.npz": {
+          "array": "family_impulse",
+          "Ipro_column": 0,
+          "Iretro_column": 1,
+          "selection": "all 512 families"
+        },
+        "twins/randomized-01/frequency-4.npz": {
+          "array": "family_impulse",
+          "Ipro_column": 0,
+          "Iretro_column": 1,
+          "selection": "all 512 families"
+        }
+      }
+    },
+    {
+      "library_id": 5,
+      "path": "library-5.npz",
+      "sha256": "873b4b4e9cf7c1f6caf7651a90cfb0a3ae38124733f05d48b97536f2ca77c14a",
+      "arrays": {
+        "e": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "L": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "Lz": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "masses": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "sampling_DF_Fq": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "reference_Ipro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "reference_Iretro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "frequency_Ipro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "frequency_Iretro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        }
+      },
+      "original_input_sha256": {
+        "twins/randomized-01/library-5.npz": "69a14709539b9853fd991ae87696ef5c0a79b989f56789e81d21b6a0455c4d36",
+        "twins/randomized-01/reference-5.npz": "20f4359a0af4d69d29a944a221b793a002fd10409dcf699b5b887aace9943be0",
+        "twins/randomized-01/frequency-5.npz": "d1b6d9091c7ed6f3e73511bbefd2ad9415d0a311d3444802d1a4b7ff2625786f"
+      },
+      "original_array_selections": {
+        "twins/randomized-01/library-5.npz": [
+          "actions",
+          "mass"
+        ],
+        "twins/randomized-01/reference-5.npz": {
+          "array": "family_impulse",
+          "Ipro_column": 0,
+          "Iretro_column": 1,
+          "selection": "all 512 families"
+        },
+        "twins/randomized-01/frequency-5.npz": {
+          "array": "family_impulse",
+          "Ipro_column": 0,
+          "Iretro_column": 1,
+          "selection": "all 512 families"
+        }
+      }
+    },
+    {
+      "library_id": 6,
+      "path": "library-6.npz",
+      "sha256": "47dfb4fa9cab3e34b02fdeb66b9bdcdc91d4daaade2c312ff542a774754e79c2",
+      "arrays": {
+        "e": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "L": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "Lz": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "masses": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "sampling_DF_Fq": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "reference_Ipro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "reference_Iretro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "frequency_Ipro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "frequency_Iretro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        }
+      },
+      "original_input_sha256": {
+        "twins/randomized-01/library-6.npz": "16623bee3364ec7009272624958fecd5d50772b32c056638c3d3720059a4d306",
+        "twins/randomized-01/reference-6.npz": "db420430197c5fcf86a3e4279284770e406b32c7dcc4998c5f87c1c57595092c",
+        "twins/randomized-01/frequency-6.npz": "82750e65a9a95f3fe57f75f504a27410050ec463325ad127286475bbac04904a"
+      },
+      "original_array_selections": {
+        "twins/randomized-01/library-6.npz": [
+          "actions",
+          "mass"
+        ],
+        "twins/randomized-01/reference-6.npz": {
+          "array": "family_impulse",
+          "Ipro_column": 0,
+          "Iretro_column": 1,
+          "selection": "all 512 families"
+        },
+        "twins/randomized-01/frequency-6.npz": {
+          "array": "family_impulse",
+          "Ipro_column": 0,
+          "Iretro_column": 1,
+          "selection": "all 512 families"
+        }
+      }
+    },
+    {
+      "library_id": 7,
+      "path": "library-7.npz",
+      "sha256": "9a16f4387304050159f02d13aef935062f567fdbe65e1d1b95934e8f82ac0ed3",
+      "arrays": {
+        "e": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "L": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "Lz": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "masses": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "sampling_DF_Fq": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "reference_Ipro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "reference_Iretro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "frequency_Ipro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        },
+        "frequency_Iretro": {
+          "shape": [
+            512
+          ],
+          "dtype": "float64"
+        }
+      },
+      "original_input_sha256": {
+        "twins/randomized-01/library-7.npz": "68caae44b0d815cfecaa0a1ea8920208a974979574d03cb8b0fa3752e75db3a9",
+        "twins/randomized-01/reference-7.npz": "2481e21cdeb5f96dca1a9b1d7ce6933b1d4de4f6167b36c8e15046b7c18d7287",
+        "twins/randomized-01/frequency-7.npz": "3dd2bd68642df9497a1002d522c3e6f9d7b1e698a17ef7e50a7321fac2f50973"
+      },
+      "original_array_selections": {
+        "twins/randomized-01/library-7.npz": [
+          "actions",
+          "mass"
+        ],
+        "twins/randomized-01/reference-7.npz": {
+          "array": "family_impulse",
+          "Ipro_column": 0,
+          "Iretro_column": 1,
+          "selection": "all 512 families"
+        },
+        "twins/randomized-01/frequency-7.npz": {
+          "array": "family_impulse",
+          "Ipro_column": 0,
+          "Iretro_column": 1,
+          "selection": "all 512 families"
+        }
+      }
+    }
+  ],
+  "fixed_sampling_mass": 1.0000002022539816
+}

@@ -1,0 +1,3667 @@
+{
+  "schema_version": 1,
+  "campaign": "discovery-20261001",
+  "branch": "halo_twins",
+  "status": "preliminary_prescribed_field_evidence",
+  "title": "Identical ordinary halo moments, different prescribed-bar response",
+  "finding": "The p=8 pair has a positive accumulated-transfer contrast at the reference frequency and passes the selected phase and timestep screens. Density, local mean velocity and every even velocity moment match analytically; higher odd moments differ.",
+  "inference": "A bounded response of analytic halo populations to specified external fields, not different self-consistent bar evolution.",
+  "release": {
+    "status": "limited_exact_twin_source_and_analysis_release",
+    "source_scope": "Frozen positive populations, unforced algebra challenge, archived inspection sources and compact saved-response operands.",
+    "reproduction_scope": "The portable NumPy/SciPy replay recomputes six contractions, seed-library intervals, reference uncertainty, covariance and selected paired numerical changes from supplied impulses and stored sampling DF values. It does not regenerate the sampled orbits, the velocity-marginal quadrature, live dynamics or a new forcing history.",
+    "analysis_guide": "../README.md#exact-moment-halo-twins",
+    "operand_manifest": "../operands/exact-twins/manifest.json",
+    "note": "Original archived input/evidence hashes remain unchanged. New release metadata identifies the compact analysis bundle; complete trajectory-array evolution is not supplied."
+  },
+  "model": {
+    "id": "prescribed_cartesian_isochrone_twins",
+    "system": "Collisionless tracer orbits; the halo and bar fields do not react.",
+    "reference_potential": "Phi0(r)=-1/[b+sqrt(b^2+r^2)]",
+    "parameters": {
+      "G": 1,
+      "mass": 1,
+      "b": 0.5,
+      "quadrupole_amplitude": 0.03,
+      "quadrupole_scale_radius": 0.5,
+      "duration": 300,
+      "maximum_timestep": 0.01,
+      "independent_libraries": 8,
+      "action_families_per_library": 512,
+      "phase_points_per_sense": 256
+    },
+    "forcing": "The full rotating quadrupole is present at time zero; no growth ramp.",
+    "source_scope": "The total isochrone-plus-quadrupole source is positive; the quadrupole alone is a signed zero-total-mass density. This is an imposed source, not a stellar disc.",
+    "histories": [
+      {
+        "id": "reference",
+        "initial_slow_action": 0.3,
+        "reference_radial_action": 0.08,
+        "reference_vertical_action": 0.05,
+        "slow_action_sweep_rate": 0.0,
+        "constant_pattern_frequency": 0.4278921802140728
+      },
+      {
+        "id": "frequency",
+        "initial_slow_action": 0.4,
+        "reference_radial_action": 0.08,
+        "reference_vertical_action": 0.05,
+        "slow_action_sweep_rate": 0.0,
+        "constant_pattern_frequency": 0.3220113249837342
+      }
+    ]
+  },
+  "population": {
+    "definition": "Fplus/minus=F0(e) +/- alpha_p Lz[g0_p(e)+L^2 e^p]",
+    "binding_energy": "e=-E=Psi-v^2/2 in (0,1); L=|r cross v|",
+    "g0": "-4p e^(p-1)/[(p+5/2)(p+7/2)] + 8b e^p/(p+7/2)",
+    "fixed_family": [
+      4,
+      6,
+      8
+    ],
+    "frozen_before_new_family_response_read": true,
+    "fit_to_forced_response": false,
+    "normalizations": [
+      {
+        "p": 4,
+        "polynomial_ratio_upper_numerator": 67,
+        "polynomial_ratio_upper_denominator": 390,
+        "polynomial_ratio_upper_float": 0.1717948717948718,
+        "maximum_deltaF_over_F0_bound": 3.3291995794552687,
+        "alpha": 0.1501862498978842,
+        "alpha_exact_expression": "4 / (5 pi^3 B_p), where B_p is the recorded exact rational bound",
+        "multiplier_bound": 0.5,
+        "positivity_minimum_Fplus_over_F0": 0.5,
+        "positivity_minimum_Fminus_over_F0": 0.5,
+        "denominator_series_terms": 13,
+        "dyadic_subdivision_depth": 4,
+        "boxes": 256,
+        "arithmetic": "Exact Fraction coefficients and de Casteljau subdivisions; the reported alpha is a floating evaluation of the exact expression",
+        "numerical_maximum_diagnostic": {
+          "maximum": 3.3291995794552687,
+          "binding_energy": 0.0,
+          "L_over_Lmax": 1.0,
+          "endpoint_is_escape_limit": true,
+          "scope": "Numerical diagnostic; not the positivity certificate"
+        },
+        "maximum_diagnostic_normalized_multiplier": 0.5
+      },
+      {
+        "p": 6,
+        "polynomial_ratio_upper_numerator": 1132034480781204,
+        "polynomial_ratio_upper_denominator": 433439973399677645,
+        "polynomial_ratio_upper_float": 0.0026117445327022205,
+        "maximum_deltaF_over_F0_bound": 0.050612795999515875,
+        "alpha": 9.878924689416143,
+        "alpha_exact_expression": "4 / (5 pi^3 B_p), where B_p is the recorded exact rational bound",
+        "multiplier_bound": 0.5,
+        "positivity_minimum_Fplus_over_F0": 0.5,
+        "positivity_minimum_Fminus_over_F0": 0.5,
+        "denominator_series_terms": 13,
+        "dyadic_subdivision_depth": 4,
+        "boxes": 256,
+        "arithmetic": "Exact Fraction coefficients and de Casteljau subdivisions; the reported alpha is a floating evaluation of the exact expression",
+        "numerical_maximum_diagnostic": {
+          "maximum": 0.050544418306447736,
+          "binding_energy": 0.27566330661887906,
+          "L_over_Lmax": 1.0,
+          "endpoint_is_escape_limit": false,
+          "scope": "Numerical diagnostic; not the positivity certificate"
+        },
+        "maximum_diagnostic_normalized_multiplier": 0.4993245019197438
+      },
+      {
+        "p": 8,
+        "polynomial_ratio_upper_numerator": 356211155200921020,
+        "polynomial_ratio_upper_denominator": 870472444109974950221,
+        "polynomial_ratio_upper_float": 0.00040921588915446185,
+        "maximum_deltaF_over_F0_bound": 0.007930163175686341,
+        "alpha": 63.05040500717388,
+        "alpha_exact_expression": "4 / (5 pi^3 B_p), where B_p is the recorded exact rational bound",
+        "multiplier_bound": 0.5,
+        "positivity_minimum_Fplus_over_F0": 0.5,
+        "positivity_minimum_Fminus_over_F0": 0.5,
+        "denominator_series_terms": 13,
+        "dyadic_subdivision_depth": 4,
+        "boxes": 256,
+        "arithmetic": "Exact Fraction coefficients and de Casteljau subdivisions; the reported alpha is a floating evaluation of the exact expression",
+        "numerical_maximum_diagnostic": {
+          "maximum": 0.007902183891172403,
+          "binding_energy": 0.835536271262685,
+          "L_over_Lmax": 1.0,
+          "endpoint_is_escape_limit": false,
+          "scope": "Numerical diagnostic; not the positivity certificate"
+        },
+        "maximum_diagnostic_normalized_multiplier": 0.49823589477958524
+      }
+    ],
+    "exact_local_equalities": [
+      "density",
+      "all three mean velocities",
+      "all even-total-degree velocity moments"
+    ],
+    "positivity": "Fplus and Fminus are at least F0/2 throughout the bound orbital domain.",
+    "equilibrium_scope": "Stationary and self-consistent in the unsoftened spherical reference only; collective stability and a live disc are untested.",
+    "physical_weighting": "Exact analytic F0 plus/minus alpha deltaF divided by AGAMA sampling DF; common fixed sampling mass retained, no per-population or per-library renormalization",
+    "importance_formula": "m_i(F0 +/- alpha deltaF)/Fq; Fq is the actual AGAMA sampling DF",
+    "derivation_id": "documents/TWINS_EXACT_MOMENTS_DERIVATION.md",
+    "independent_internal_derivation_id": "documents/TWINS_EXACT_MOMENTS_CHALLENGE.md"
+  },
+  "observable": {
+    "name": "Accumulated bar-mediated angular-momentum transfer",
+    "contrast": "Total transfer to Fplus minus total transfer to Fminus, through T=300",
+    "sign": "Positive transfer means Lz supplied by the imposed bar to the tracer population.",
+    "units": "Reference mass times length squared per time; G=M=1 and b=0.5, no galaxy calibration.",
+    "reference": "Same prescribed history, velocity-even exact analytic F0 with mass one.",
+    "ratio": "Ratio of ensemble point means; no qualified ratio interval or factor threshold.",
+    "not_a_noise_contrast": true
+  },
+  "figure": {
+    "id": "TW-EXACT-FIG-01",
+    "default_row_key": "reference_p8",
+    "title": "Paired accumulated-transfer contrasts",
+    "caption": "Fplus minus Fminus in the same prescribed rotating field, through T=300. Nominal intervals use eight whole libraries; populations and histories are correlated. Selected numerical screens and sampling intervals are separate assessments.",
+    "rows": [
+      {
+        "row_key": "reference_p4",
+        "history": "reference",
+        "p": 4,
+        "contrast": 2.8187446911667637e-06,
+        "nominal_95_interval": [
+          -1.0706391274890354e-06,
+          6.708128509822562e-06
+        ],
+        "supplementary_Bonferroni_six_interval": [
+          -3.1615080044448324e-06,
+          8.79899738677836e-06
+        ],
+        "plus": 0.0002342892982722238,
+        "minus": 0.00023147055358105706,
+        "reference_transfer": 0.00023287992592664045,
+        "selected_refinement_status": "selected_phase_screen_failed",
+        "source": {
+          "record_id": "twins/exact-response-final-01/result.json",
+          "json_pointer": "/summaries/0"
+        }
+      },
+      {
+        "row_key": "reference_p6",
+        "history": "reference",
+        "p": 6,
+        "contrast": 4.817826084392226e-05,
+        "nominal_95_interval": [
+          1.7652838465138696e-05,
+          7.870368322270582e-05
+        ],
+        "supplementary_Bonferroni_six_interval": [
+          1.2428726238690438e-06,
+          9.511364906397547e-05
+        ],
+        "plus": 0.0002569690563486016,
+        "minus": 0.0002087907955046793,
+        "reference_transfer": 0.00023287992592664045,
+        "selected_refinement_status": "selected_phase_and_timestep_pass",
+        "source": {
+          "record_id": "twins/exact-response-final-01/result.json",
+          "json_pointer": "/summaries/1"
+        }
+      },
+      {
+        "row_key": "reference_p8",
+        "history": "reference",
+        "p": 8,
+        "contrast": 8.494851063958198e-05,
+        "nominal_95_interval": [
+          5.536516361302028e-05,
+          0.00011453185766614369
+        ],
+        "supplementary_Bonferroni_six_interval": [
+          3.946164201216211e-05,
+          0.00013043537926700184
+        ],
+        "plus": 0.0002753541812464314,
+        "minus": 0.0001904056706068495,
+        "reference_transfer": 0.00023287992592664045,
+        "selected_refinement_status": "selected_phase_and_timestep_pass",
+        "source": {
+          "record_id": "twins/exact-response-final-01/result.json",
+          "json_pointer": "/summaries/2"
+        }
+      },
+      {
+        "row_key": "frequency_p4",
+        "history": "frequency",
+        "p": 4,
+        "contrast": 5.111457156294125e-06,
+        "nominal_95_interval": [
+          7.288553629842476e-07,
+          9.494058949604002e-06
+        ],
+        "supplementary_Bonferroni_six_interval": [
+          -1.6271593984720402e-06,
+          1.185007371106029e-05
+        ],
+        "plus": 0.00020891810497616003,
+        "minus": 0.00020380664781986593,
+        "reference_transfer": 0.00020636237639801296,
+        "selected_refinement_status": "timestep_pass_phase_untested",
+        "source": {
+          "record_id": "twins/exact-response-final-01/result.json",
+          "json_pointer": "/summaries/3"
+        }
+      },
+      {
+        "row_key": "frequency_p6",
+        "history": "frequency",
+        "p": 6,
+        "contrast": 6.195526149237384e-05,
+        "nominal_95_interval": [
+          2.256398108623893e-05,
+          0.00010134654189850875
+        ],
+        "supplementary_Bonferroni_six_interval": [
+          1.387875547472338e-06,
+          0.00012252264743727536
+        ],
+        "plus": 0.00023734000714419992,
+        "minus": 0.0001753847456518261,
+        "reference_transfer": 0.00020636237639801296,
+        "selected_refinement_status": "timestep_pass_phase_untested",
+        "source": {
+          "record_id": "twins/exact-response-final-01/result.json",
+          "json_pointer": "/summaries/4"
+        }
+      },
+      {
+        "row_key": "frequency_p8",
+        "history": "frequency",
+        "p": 8,
+        "contrast": 6.373217320557627e-05,
+        "nominal_95_interval": [
+          1.6678848479764196e-05,
+          0.00011078549793138835
+        ],
+        "supplementary_Bonferroni_six_interval": [
+          -8.616246273958732e-06,
+          0.0001360805926851113
+        ],
+        "plus": 0.00023822846300080116,
+        "minus": 0.00017449628979522488,
+        "reference_transfer": 0.00020636237639801296,
+        "selected_refinement_status": "timestep_pass_phase_untested",
+        "source": {
+          "record_id": "twins/exact-response-final-01/result.json",
+          "json_pointer": "/summaries/5"
+        }
+      }
+    ]
+  },
+  "summaries": [
+    {
+      "history": "reference",
+      "p": 4,
+      "plus": 0.0002342892982722238,
+      "minus": 0.00023147055358105706,
+      "plus_standard_error": 6.566220317351968e-05,
+      "minus_standard_error": 6.516894816372406e-05,
+      "plus_nominal_pointwise_95_interval": [
+        7.90228602351065e-05,
+        0.0003895557363093411
+      ],
+      "minus_nominal_pointwise_95_interval": [
+        7.737047830232212e-05,
+        0.000385570628859792
+      ],
+      "contrast": 2.8187446911667637e-06,
+      "standard_error": 1.6448210814195761e-06,
+      "nominal_95_interval": [
+        -1.0706391274890354e-06,
+        6.708128509822562e-06
+      ],
+      "supplementary_Bonferroni_six_interval": [
+        -3.1615080044448324e-06,
+        8.79899738677836e-06
+      ],
+      "nominal_pointwise_sign_resolved": false,
+      "supplementary_family_sign_resolved": false,
+      "reference_transfer": 0.00023287992592664045,
+      "contrast_over_reference": 0.012103854292940204,
+      "plus_over_minus": 1.0121775519501648,
+      "ratio_scope": "Ratios of ensemble point means only; no qualified ratio interval or factor threshold claim",
+      "paired_contrast_reference_covariance_of_mean": [
+        [
+          2.7054363898822638e-12,
+          3.226656041721207e-11
+        ],
+        [
+          3.226656041721207e-11,
+          4.278582006085895e-09
+        ]
+      ],
+      "selected_material_error_screen": {
+        "available_comparisons": 3,
+        "phase_comparisons": 2,
+        "timestep_comparisons": 1,
+        "all_available_pass": false,
+        "both_phase_and_timestep_tested": true,
+        "scope": "Selected paired changes only; missing tests remain untested, not passed"
+      },
+      "id": "TW-EXACT-REFERENCE-P4",
+      "source": {
+        "record_id": "twins/exact-response-final-01/result.json",
+        "json_pointer": "/summaries/0"
+      },
+      "largest_selected_contrast_shift": 5.936560414406872e-07,
+      "sampling_and_refinement_joint_caution": "Nominal intervals and selected refinement flags are reported separately; they are not a rigorously combined error or confidence guarantee."
+    },
+    {
+      "history": "reference",
+      "p": 6,
+      "plus": 0.0002569690563486016,
+      "minus": 0.0002087907955046793,
+      "plus_standard_error": 6.861448138231197e-05,
+      "minus_standard_error": 6.27099733771574e-05,
+      "plus_nominal_pointwise_95_interval": [
+        9.472158966152512e-05,
+        0.00041921652303567806
+      ],
+      "minus_nominal_pointwise_95_interval": [
+        6.050527164031509e-05,
+        0.00035707631936904353
+      ],
+      "contrast": 4.817826084392226e-05,
+      "standard_error": 1.2909206339325154e-05,
+      "nominal_95_interval": [
+        1.7652838465138696e-05,
+        7.870368322270582e-05
+      ],
+      "supplementary_Bonferroni_six_interval": [
+        1.2428726238690438e-06,
+        9.511364906397547e-05
+      ],
+      "nominal_pointwise_sign_resolved": true,
+      "supplementary_family_sign_resolved": true,
+      "reference_transfer": 0.00023287992592664045,
+      "contrast_over_reference": 0.2068802652363386,
+      "plus_over_minus": 1.2307489692132645,
+      "ratio_scope": "Ratios of ensemble point means only; no qualified ratio interval or factor threshold claim",
+      "paired_contrast_reference_covariance_of_mean": [
+        [
+          1.6664760831127275e-10,
+          3.877031471999228e-10
+        ],
+        [
+          3.877031471999228e-10,
+          4.278582006085895e-09
+        ]
+      ],
+      "selected_material_error_screen": {
+        "available_comparisons": 3,
+        "phase_comparisons": 2,
+        "timestep_comparisons": 1,
+        "all_available_pass": true,
+        "both_phase_and_timestep_tested": true,
+        "scope": "Selected paired changes only; missing tests remain untested, not passed"
+      },
+      "id": "TW-EXACT-REFERENCE-P6",
+      "source": {
+        "record_id": "twins/exact-response-final-01/result.json",
+        "json_pointer": "/summaries/1"
+      },
+      "largest_selected_contrast_shift": 2.9227167074552024e-06,
+      "sampling_and_refinement_joint_caution": "Nominal intervals and selected refinement flags are reported separately; they are not a rigorously combined error or confidence guarantee. The largest phase shift exceeds the small positive lower margin of the supplementary six-comparison interval."
+    },
+    {
+      "history": "reference",
+      "p": 8,
+      "plus": 0.0002753541812464314,
+      "minus": 0.0001904056706068495,
+      "plus_standard_error": 6.94008391031099e-05,
+      "minus_standard_error": 6.179763453160733e-05,
+      "plus_nominal_pointwise_95_interval": [
+        0.00011124727402232892,
+        0.0004394610884705339
+      ],
+      "minus_nominal_pointwise_95_interval": [
+        4.4277485302343135e-05,
+        0.00033653385591135587
+      ],
+      "contrast": 8.494851063958198e-05,
+      "standard_error": 1.2510802511914822e-05,
+      "nominal_95_interval": [
+        5.536516361302028e-05,
+        0.00011453185766614369
+      ],
+      "supplementary_Bonferroni_six_interval": [
+        3.946164201216211e-05,
+        0.00013043537926700184
+      ],
+      "nominal_pointwise_sign_resolved": true,
+      "supplementary_family_sign_resolved": true,
+      "reference_transfer": 0.00023287992592664045,
+      "contrast_over_reference": 0.36477386490728114,
+      "plus_over_minus": 1.4461448567620865,
+      "ratio_scope": "Ratios of ensemble point means only; no qualified ratio interval or factor threshold claim",
+      "paired_contrast_reference_covariance_of_mean": [
+        [
+          1.5652017949213423e-10,
+          4.987644172568217e-10
+        ],
+        [
+          4.987644172568217e-10,
+          4.278582006085895e-09
+        ]
+      ],
+      "selected_material_error_screen": {
+        "available_comparisons": 3,
+        "phase_comparisons": 2,
+        "timestep_comparisons": 1,
+        "all_available_pass": true,
+        "both_phase_and_timestep_tested": true,
+        "scope": "Selected paired changes only; missing tests remain untested, not passed"
+      },
+      "id": "TW-EXACT-REFERENCE-P8",
+      "source": {
+        "record_id": "twins/exact-response-final-01/result.json",
+        "json_pointer": "/summaries/2"
+      },
+      "largest_selected_contrast_shift": 2.81993095198375e-06,
+      "sampling_and_refinement_joint_caution": "Nominal intervals and selected refinement flags are reported separately; they are not a rigorously combined error or confidence guarantee."
+    },
+    {
+      "history": "frequency",
+      "p": 4,
+      "plus": 0.00020891810497616003,
+      "minus": 0.00020380664781986593,
+      "plus_standard_error": 6.600710964196073e-05,
+      "minus_standard_error": 6.598808133737456e-05,
+      "plus_nominal_pointwise_95_interval": [
+        5.2836092739235786e-05,
+        0.00036500011721308427
+      ],
+      "minus_nominal_pointwise_95_interval": [
+        4.7769630373432865e-05,
+        0.00035984366526629896
+      ],
+      "contrast": 5.111457156294125e-06,
+      "standard_error": 1.8534030471681945e-06,
+      "nominal_95_interval": [
+        7.288553629842476e-07,
+        9.494058949604002e-06
+      ],
+      "supplementary_Bonferroni_six_interval": [
+        -1.6271593984720402e-06,
+        1.185007371106029e-05
+      ],
+      "nominal_pointwise_sign_resolved": true,
+      "supplementary_family_sign_resolved": false,
+      "reference_transfer": 0.00020636237639801296,
+      "contrast_over_reference": 0.02476932687785884,
+      "plus_over_minus": 1.02507993341224,
+      "ratio_scope": "Ratios of ensemble point means only; no qualified ratio interval or factor threshold claim",
+      "paired_contrast_reference_covariance_of_mean": [
+        [
+          3.4351028552523487e-12,
+          1.25582234893058e-12
+        ],
+        [
+          1.25582234893058e-12,
+          4.354823925223079e-09
+        ]
+      ],
+      "selected_material_error_screen": {
+        "available_comparisons": 1,
+        "phase_comparisons": 0,
+        "timestep_comparisons": 1,
+        "all_available_pass": true,
+        "both_phase_and_timestep_tested": false,
+        "scope": "Selected paired changes only; missing tests remain untested, not passed"
+      },
+      "id": "TW-EXACT-FREQUENCY-P4",
+      "source": {
+        "record_id": "twins/exact-response-final-01/result.json",
+        "json_pointer": "/summaries/3"
+      },
+      "largest_selected_contrast_shift": 1.133357030667354e-12,
+      "sampling_and_refinement_joint_caution": "Nominal intervals and selected refinement flags are reported separately; they are not a rigorously combined error or confidence guarantee."
+    },
+    {
+      "history": "frequency",
+      "p": 6,
+      "plus": 0.00023734000714419992,
+      "minus": 0.0001753847456518261,
+      "plus_standard_error": 6.846754448881559e-05,
+      "minus_standard_error": 6.450269244636362e-05,
+      "plus_nominal_pointwise_95_interval": [
+        7.54399909989387e-05,
+        0.0003992400232894611
+      ],
+      "minus_nominal_pointwise_95_interval": [
+        2.2860114800123978e-05,
+        0.0003279093765035282
+      ],
+      "contrast": 6.195526149237384e-05,
+      "standard_error": 1.6658579213843973e-05,
+      "nominal_95_interval": [
+        2.256398108623893e-05,
+        0.00010134654189850875
+      ],
+      "supplementary_Bonferroni_six_interval": [
+        1.387875547472338e-06,
+        0.00012252264743727536
+      ],
+      "nominal_pointwise_sign_resolved": true,
+      "supplementary_family_sign_resolved": true,
+      "reference_transfer": 0.00020636237639801296,
+      "contrast_over_reference": 0.3002255671493149,
+      "plus_over_minus": 1.3532534215681873,
+      "ratio_scope": "Ratios of ensemble point means only; no qualified ratio interval or factor threshold claim",
+      "paired_contrast_reference_covariance_of_mean": [
+        [
+          2.7750826142391456e-10,
+          2.6360365774888314e-10
+        ],
+        [
+          2.6360365774888314e-10,
+          4.354823925223079e-09
+        ]
+      ],
+      "selected_material_error_screen": {
+        "available_comparisons": 1,
+        "phase_comparisons": 0,
+        "timestep_comparisons": 1,
+        "all_available_pass": true,
+        "both_phase_and_timestep_tested": false,
+        "scope": "Selected paired changes only; missing tests remain untested, not passed"
+      },
+      "id": "TW-EXACT-FREQUENCY-P6",
+      "source": {
+        "record_id": "twins/exact-response-final-01/result.json",
+        "json_pointer": "/summaries/4"
+      },
+      "largest_selected_contrast_shift": 4.815433758140812e-12,
+      "sampling_and_refinement_joint_caution": "Nominal intervals and selected refinement flags are reported separately; they are not a rigorously combined error or confidence guarantee."
+    },
+    {
+      "history": "frequency",
+      "p": 8,
+      "plus": 0.00023822846300080116,
+      "minus": 0.00017449628979522488,
+      "plus_standard_error": 7.043352835585873e-05,
+      "minus_standard_error": 6.282315042919418e-05,
+      "plus_nominal_pointwise_95_interval": [
+        7.167963372528956e-05,
+        0.0004047772922763128
+      ],
+      "minus_nominal_pointwise_95_interval": [
+        2.594314472889069e-05,
+        0.00032304943486155904
+      ],
+      "contrast": 6.373217320557627e-05,
+      "standard_error": 1.989885906571308e-05,
+      "nominal_95_interval": [
+        1.6678848479764196e-05,
+        0.00011078549793138835
+      ],
+      "supplementary_Bonferroni_six_interval": [
+        -8.616246273958732e-06,
+        0.0001360805926851113
+      ],
+      "nominal_pointwise_sign_resolved": true,
+      "supplementary_family_sign_resolved": false,
+      "reference_transfer": 0.00020636237639801296,
+      "contrast_over_reference": 0.30883620511645715,
+      "plus_over_minus": 1.3652351192129493,
+      "ratio_scope": "Ratios of ensemble point means only; no qualified ratio interval or factor threshold claim",
+      "paired_contrast_reference_covariance_of_mean": [
+        [
+          3.959645921171115e-10,
+          5.070668434031977e-10
+        ],
+        [
+          5.070668434031977e-10,
+          4.354823925223079e-09
+        ]
+      ],
+      "selected_material_error_screen": {
+        "available_comparisons": 1,
+        "phase_comparisons": 0,
+        "timestep_comparisons": 1,
+        "all_available_pass": true,
+        "both_phase_and_timestep_tested": false,
+        "scope": "Selected paired changes only; missing tests remain untested, not passed"
+      },
+      "id": "TW-EXACT-FREQUENCY-P8",
+      "source": {
+        "record_id": "twins/exact-response-final-01/result.json",
+        "json_pointer": "/summaries/5"
+      },
+      "largest_selected_contrast_shift": 4.359540282879345e-12,
+      "sampling_and_refinement_joint_caution": "Nominal intervals and selected refinement flags are reported separately; they are not a rigorously combined error or confidence guarantee."
+    }
+  ],
+  "reference_summaries": [
+    {
+      "history": "reference",
+      "transfer": 0.00023287992592664045,
+      "standard_error": 6.541087070270426e-05,
+      "nominal_pointwise_95_interval": [
+        7.820779474522604e-05,
+        0.0003875520571080548
+      ],
+      "interval_scope": "Supplementary pointwise reference uncertainty, not part of the six-contrast Bonferroni decisions"
+    },
+    {
+      "history": "frequency",
+      "transfer": 0.00020636237639801296,
+      "standard_error": 6.599108974113912e-05,
+      "nominal_pointwise_95_interval": [
+        5.031824520707962e-05,
+        0.0003624065075889463
+      ],
+      "interval_scope": "Supplementary pointwise reference uncertainty, not part of the six-contrast Bonferroni decisions"
+    }
+  ],
+  "uncertainty": {
+    "unit": "Eight independent method-4 action libraries with independently randomized shared phase rules",
+    "pointwise": "Nominal two-sided 95% Student-t with seven degrees of freedom",
+    "supplementary": "Bonferroni nominal 95% family for these six contrasts, not the complete adaptive campaign",
+    "coverage": "Uncalibrated; neither Student-t approximation nor general coverage is established",
+    "correlations": "Populations and histories share each library; covariance retained"
+  },
+  "sampling": {
+    "method": "AGAMA method 4 PRNG actions; scrambled Sobol phase rule and random azimuth offset",
+    "library_seeds": [
+      29301,
+      29401,
+      29501,
+      29601,
+      29701,
+      29801,
+      29901,
+      30001
+    ],
+    "phase_sectors": 16,
+    "shared_phase_partners": "Full velocity reversal at the same position",
+    "no_separate_population_mass_renormalization": true,
+    "library_checks": [
+      {
+        "reference_sampling_mass": 1.0000002022539816,
+        "represented_exact_population_mass": 1.0000000172801484,
+        "target_population_mass": 1.0,
+        "renormalized": false,
+        "energy_minimum": 0.001499323524690231,
+        "energy_maximum": 0.9733627391876598,
+        "exact_over_sampling_DF_minimum": 0.9999970116232513,
+        "exact_over_sampling_DF_maximum": 1.0000008625851864,
+        "maximum_sampled_analytic_multipliers": [
+          0.2715179859992559,
+          0.3991612438629093,
+          0.3785877315113025
+        ],
+        "sampling_DF_velocity_reversal_relative_error": 0.0,
+        "library_id": 0,
+        "sampler_returned_mass": 1.0017829850166629
+      },
+      {
+        "reference_sampling_mass": 1.0000002022539816,
+        "represented_exact_population_mass": 1.000000016916172,
+        "target_population_mass": 1.0,
+        "renormalized": false,
+        "energy_minimum": 0.0029194835501585225,
+        "energy_maximum": 0.9042955103435447,
+        "exact_over_sampling_DF_minimum": 0.9999971509343805,
+        "exact_over_sampling_DF_maximum": 1.0000009096823286,
+        "maximum_sampled_analytic_multipliers": [
+          0.2964004746702609,
+          0.40879518059271236,
+          0.3909785162305679
+        ],
+        "sampling_DF_velocity_reversal_relative_error": 0.0,
+        "library_id": 1,
+        "sampler_returned_mass": 0.9916640235140757
+      },
+      {
+        "reference_sampling_mass": 1.0000002022539816,
+        "represented_exact_population_mass": 0.999999980074243,
+        "target_population_mass": 1.0,
+        "renormalized": false,
+        "energy_minimum": 0.0036355053427049745,
+        "energy_maximum": 0.9071797639449992,
+        "exact_over_sampling_DF_minimum": 0.9999923324889082,
+        "exact_over_sampling_DF_maximum": 1.0000006541085407,
+        "maximum_sampled_analytic_multipliers": [
+          0.2932198795405731,
+          0.3599970802672756,
+          0.43430872886913957
+        ],
+        "sampling_DF_velocity_reversal_relative_error": 0.0,
+        "library_id": 2,
+        "sampler_returned_mass": 1.0108652280384847
+      },
+      {
+        "reference_sampling_mass": 1.0000002022539816,
+        "represented_exact_population_mass": 0.999999998420257,
+        "target_population_mass": 1.0,
+        "renormalized": false,
+        "energy_minimum": 0.0001669488622247521,
+        "energy_maximum": 0.8987791190461801,
+        "exact_over_sampling_DF_minimum": 0.9999971489690268,
+        "exact_over_sampling_DF_maximum": 1.000000915656637,
+        "maximum_sampled_analytic_multipliers": [
+          0.28533141166431514,
+          0.3623431399124196,
+          0.4269055083038133
+        ],
+        "sampling_DF_velocity_reversal_relative_error": 0.0,
+        "library_id": 3,
+        "sampler_returned_mass": 1.0529936386507077
+      },
+      {
+        "reference_sampling_mass": 1.0000002022539816,
+        "represented_exact_population_mass": 0.9999999600896706,
+        "target_population_mass": 1.0,
+        "renormalized": false,
+        "energy_minimum": 0.005161396597143956,
+        "energy_maximum": 0.9625474944228897,
+        "exact_over_sampling_DF_minimum": 0.9999791498020414,
+        "exact_over_sampling_DF_maximum": 1.000000937551578,
+        "maximum_sampled_analytic_multipliers": [
+          0.42911075210483135,
+          0.3551309245899529,
+          0.3840040930765513
+        ],
+        "sampling_DF_velocity_reversal_relative_error": 0.0,
+        "library_id": 4,
+        "sampler_returned_mass": 1.0136708193429713
+      },
+      {
+        "reference_sampling_mass": 1.0000002022539816,
+        "represented_exact_population_mass": 1.0000000087383007,
+        "target_population_mass": 1.0,
+        "renormalized": false,
+        "energy_minimum": 0.00038094465078867076,
+        "energy_maximum": 0.914970849515182,
+        "exact_over_sampling_DF_minimum": 0.9999924917352893,
+        "exact_over_sampling_DF_maximum": 1.0000009145107371,
+        "maximum_sampled_analytic_multipliers": [
+          0.3703758275634038,
+          0.3780322746847124,
+          0.4166694696730281
+        ],
+        "sampling_DF_velocity_reversal_relative_error": 0.0,
+        "library_id": 5,
+        "sampler_returned_mass": 0.9909705979779377
+      },
+      {
+        "reference_sampling_mass": 1.0000002022539816,
+        "represented_exact_population_mass": 0.9999999841760199,
+        "target_population_mass": 1.0,
+        "renormalized": false,
+        "energy_minimum": 0.000495442417082133,
+        "energy_maximum": 0.9558428509537487,
+        "exact_over_sampling_DF_minimum": 0.9999959918160729,
+        "exact_over_sampling_DF_maximum": 1.0000007071412502,
+        "maximum_sampled_analytic_multipliers": [
+          0.20302491817978874,
+          0.4196306657242032,
+          0.399382438452465
+        ],
+        "sampling_DF_velocity_reversal_relative_error": 0.0,
+        "library_id": 6,
+        "sampler_returned_mass": 1.019542768523216
+      },
+      {
+        "reference_sampling_mass": 1.0000002022539816,
+        "represented_exact_population_mass": 1.000000032306209,
+        "target_population_mass": 1.0,
+        "renormalized": false,
+        "energy_minimum": 0.0007195969357137073,
+        "energy_maximum": 0.9307454986505096,
+        "exact_over_sampling_DF_minimum": 0.999996999504094,
+        "exact_over_sampling_DF_maximum": 1.000000814268529,
+        "maximum_sampled_analytic_multipliers": [
+          0.43248992537857855,
+          0.4208232187384,
+          0.3462913234129003
+        ],
+        "sampling_DF_velocity_reversal_relative_error": 0.0,
+        "library_id": 7,
+        "sampler_returned_mass": 0.9719063142275138
+      }
+    ]
+  },
+  "records": [
+    {
+      "library_id": 0,
+      "histories": {
+        "reference": {
+          "rows": [
+            {
+              "p": 4,
+              "alpha": 0.1501862498978842,
+              "plus": 0.0005465719862001233,
+              "minus": 0.0005450385939031648,
+              "contrast": 1.5333922969584258e-06,
+              "reference": 0.0005458052900516441,
+              "contrast_over_reference": 0.0028094126695132186
+            },
+            {
+              "p": 6,
+              "alpha": 9.878924689416143,
+              "plus": 0.0005649556189727976,
+              "minus": 0.0005266549611304907,
+              "contrast": 3.830065784230681e-05,
+              "reference": 0.0005458052900516441,
+              "contrast_over_reference": 0.07017274940424781
+            },
+            {
+              "p": 8,
+              "alpha": 63.05040500717388,
+              "plus": 0.000588551763770039,
+              "minus": 0.0005030588163332493,
+              "contrast": 8.549294743678974e-05,
+              "reference": 0.0005458052900516441,
+              "contrast_over_reference": 0.15663634815393673
+            }
+          ],
+          "initial_invariant_checks": {
+            "mass": 1.000000202253982,
+            "sampler_returned_mass": 1.0017829850166629,
+            "fixed_mass_definition": "Reference DF totalMass deterministic integration; common physical normalization for all libraries and populations",
+            "energy_max": 8.570921750106208e-14,
+            "angular_max": 2.4868995751603507e-14,
+            "Lz_max": 1.7763568394002505e-15
+          }
+        },
+        "frequency": {
+          "rows": [
+            {
+              "p": 4,
+              "alpha": 0.1501862498978842,
+              "plus": 0.00020781284689344018,
+              "minus": 0.00019159536781524633,
+              "contrast": 1.6217479078193875e-05,
+              "reference": 0.00019970410735434323,
+              "contrast_over_reference": 0.08120753895871823
+            },
+            {
+              "p": 6,
+              "alpha": 9.878924689416143,
+              "plus": 0.00026413140208479213,
+              "minus": 0.00013527681262389443,
+              "contrast": 0.0001288545894608977,
+              "reference": 0.00019970410735434323,
+              "contrast_over_reference": 0.6452275377204221
+            },
+            {
+              "p": 8,
+              "alpha": 63.05040500717388,
+              "plus": 0.0002577487168143001,
+              "minus": 0.0001416594978943865,
+              "contrast": 0.00011608921891991359,
+              "reference": 0.00019970410735434323,
+              "contrast_over_reference": 0.5813061156220072
+            }
+          ],
+          "initial_invariant_checks": {
+            "mass": 1.000000202253982,
+            "sampler_returned_mass": 1.0017829850166629,
+            "fixed_mass_definition": "Reference DF totalMass deterministic integration; common physical normalization for all libraries and populations",
+            "energy_max": 8.570921750106208e-14,
+            "angular_max": 2.4868995751603507e-14,
+            "Lz_max": 1.7763568394002505e-15
+          }
+        }
+      }
+    },
+    {
+      "library_id": 1,
+      "histories": {
+        "reference": {
+          "rows": [
+            {
+              "p": 4,
+              "alpha": 0.1501862498978842,
+              "plus": 0.0001362295921981971,
+              "minus": 0.00013515742912319524,
+              "contrast": 1.072163075001827e-06,
+              "reference": 0.00013569351066069612,
+              "contrast_over_reference": 0.007901358508460942
+            },
+            {
+              "p": 6,
+              "alpha": 9.878924689416143,
+              "plus": 0.00014284601320302832,
+              "minus": 0.00012854100811836406,
+              "contrast": 1.43050050846641e-05,
+              "reference": 0.00013569351066069612,
+              "contrast_over_reference": 0.10542143846829936
+            },
+            {
+              "p": 8,
+              "alpha": 63.05040500717388,
+              "plus": 0.00016900652026067336,
+              "minus": 0.00010238050106071899,
+              "contrast": 6.662601919995442e-05,
+              "reference": 0.00013569351066069612,
+              "contrast_over_reference": 0.4910037250532481
+            }
+          ],
+          "initial_invariant_checks": {
+            "mass": 1.000000202253982,
+            "sampler_returned_mass": 0.9916640235140757,
+            "fixed_mass_definition": "Reference DF totalMass deterministic integration; common physical normalization for all libraries and populations",
+            "energy_max": 1.0547118733938987e-14,
+            "angular_max": 9.692247004977617e-14,
+            "Lz_max": 1.7763568394002505e-15
+          }
+        },
+        "frequency": {
+          "rows": [
+            {
+              "p": 4,
+              "alpha": 0.1501862498978842,
+              "plus": 8.952175676237869e-05,
+              "minus": 8.165208277330032e-05,
+              "contrast": 7.869673989078334e-06,
+              "reference": 8.558691976783949e-05,
+              "contrast_over_reference": 0.09194949427348684
+            },
+            {
+              "p": 6,
+              "alpha": 9.878924689416143,
+              "plus": 0.00012807576878951052,
+              "minus": 4.309807074616852e-05,
+              "contrast": 8.497769804334205e-05,
+              "reference": 8.558691976783949e-05,
+              "contrast_over_reference": 0.9928818360778727
+            },
+            {
+              "p": 8,
+              "alpha": 63.05040500717388,
+              "plus": 0.00012666180278927893,
+              "minus": 4.4512036746400156e-05,
+              "contrast": 8.214976604287883e-05,
+              "reference": 8.558691976783949e-05,
+              "contrast_over_reference": 0.9598401983120297
+            }
+          ],
+          "initial_invariant_checks": {
+            "mass": 1.000000202253982,
+            "sampler_returned_mass": 0.9916640235140757,
+            "fixed_mass_definition": "Reference DF totalMass deterministic integration; common physical normalization for all libraries and populations",
+            "energy_max": 1.0547118733938987e-14,
+            "angular_max": 9.692247004977617e-14,
+            "Lz_max": 1.7763568394002505e-15
+          }
+        }
+      }
+    },
+    {
+      "library_id": 2,
+      "histories": {
+        "reference": {
+          "rows": [
+            {
+              "p": 4,
+              "alpha": 0.1501862498978842,
+              "plus": 5.524560067116544e-05,
+              "minus": 5.730272619944795e-05,
+              "contrast": -2.0571255282824643e-06,
+              "reference": 5.6274163435306775e-05,
+              "contrast_over_reference": -0.03655541731237555
+            },
+            {
+              "p": 6,
+              "alpha": 9.878924689416143,
+              "plus": 5.8550872137184804e-05,
+              "minus": 5.3997454733428706e-05,
+              "contrast": 4.553417403756087e-06,
+              "reference": 5.6274163435306775e-05,
+              "contrast_over_reference": 0.08091488395008718
+            },
+            {
+              "p": 8,
+              "alpha": 63.05040500717388,
+              "plus": 7.335678886926949e-05,
+              "minus": 3.919153800134395e-05,
+              "contrast": 3.416525086792558e-05,
+              "reference": 5.6274163435306775e-05,
+              "contrast_over_reference": 0.6071214351716169
+            }
+          ],
+          "initial_invariant_checks": {
+            "mass": 1.000000202253982,
+            "sampler_returned_mass": 1.0108652280384847,
+            "fixed_mass_definition": "Reference DF totalMass deterministic integration; common physical normalization for all libraries and populations",
+            "energy_max": 8.731904088676856e-14,
+            "angular_max": 3.949063298591682e-13,
+            "Lz_max": 1.7763568394002505e-15
+          }
+        },
+        "frequency": {
+          "rows": [
+            {
+              "p": 4,
+              "alpha": 0.1501862498978842,
+              "plus": -3.8633642481917786e-05,
+              "minus": -4.016142277011458e-05,
+              "contrast": 1.52778028819684e-06,
+              "reference": -3.939753262601617e-05,
+              "contrast_over_reference": -0.03877857790485006
+            },
+            {
+              "p": 6,
+              "alpha": 9.878924689416143,
+              "plus": -8.41673532766575e-06,
+              "minus": -7.037832992436656e-05,
+              "contrast": 6.19615945967008e-05,
+              "reference": -3.939753262601617e-05,
+              "contrast_over_reference": -1.5727277945265141
+            },
+            {
+              "p": 8,
+              "alpha": 63.05040500717388,
+              "plus": -3.5172010172328347e-06,
+              "minus": -7.527786423479955e-05,
+              "contrast": 7.176066321756659e-05,
+              "reference": -3.939753262601617e-05,
+              "contrast_over_reference": -1.8214506958788435
+            }
+          ],
+          "initial_invariant_checks": {
+            "mass": 1.000000202253982,
+            "sampler_returned_mass": 1.0108652280384847,
+            "fixed_mass_definition": "Reference DF totalMass deterministic integration; common physical normalization for all libraries and populations",
+            "energy_max": 8.731904088676856e-14,
+            "angular_max": 3.949063298591682e-13,
+            "Lz_max": 1.7763568394002505e-15
+          }
+        }
+      }
+    },
+    {
+      "library_id": 3,
+      "histories": {
+        "reference": {
+          "rows": [
+            {
+              "p": 4,
+              "alpha": 0.1501862498978842,
+              "plus": 0.0002587286282395421,
+              "minus": 0.0002473524344951745,
+              "contrast": 1.1376193744367626e-05,
+              "reference": 0.0002530405313673583,
+              "contrast_over_reference": 0.04495799025908594
+            },
+            {
+              "p": 6,
+              "alpha": 9.878924689416143,
+              "plus": 0.0002941291582019823,
+              "minus": 0.0002119519045327342,
+              "contrast": 8.217725366924805e-05,
+              "reference": 0.0002530405313673583,
+              "contrast_over_reference": 0.3247592519079287
+            },
+            {
+              "p": 8,
+              "alpha": 63.05040500717388,
+              "plus": 0.00030100746427440847,
+              "minus": 0.00020507359846030812,
+              "contrast": 9.593386581410045e-05,
+              "reference": 0.0002530405313673583,
+              "contrast_over_reference": 0.379124503476583
+            }
+          ],
+          "initial_invariant_checks": {
+            "mass": 1.000000202253982,
+            "sampler_returned_mass": 1.0529936386507077,
+            "fixed_mass_definition": "Reference DF totalMass deterministic integration; common physical normalization for all libraries and populations",
+            "energy_max": 2.983724378680108e-14,
+            "angular_max": 6.283862319378386e-13,
+            "Lz_max": 2.6645352591003757e-15
+          }
+        },
+        "frequency": {
+          "rows": [
+            {
+              "p": 4,
+              "alpha": 0.1501862498978842,
+              "plus": 0.0005619134706263587,
+              "minus": 0.0005575243046116157,
+              "contrast": 4.389166014742863e-06,
+              "reference": 0.0005597188876189871,
+              "contrast_over_reference": 0.007841732898123432
+            },
+            {
+              "p": 6,
+              "alpha": 9.878924689416143,
+              "plus": 0.0006200143718130776,
+              "minus": 0.0004994234034248966,
+              "contrast": 0.00012059096838818088,
+              "reference": 0.0005597188876189871,
+              "contrast_over_reference": 0.21544916752973647
+            },
+            {
+              "p": 8,
+              "alpha": 63.05040500717388,
+              "plus": 0.0006396456555404304,
+              "minus": 0.000479792119697544,
+              "contrast": 0.00015985353584288634,
+              "reference": 0.0005597188876189871,
+              "contrast_over_reference": 0.28559610793713675
+            }
+          ],
+          "initial_invariant_checks": {
+            "mass": 1.000000202253982,
+            "sampler_returned_mass": 1.0529936386507077,
+            "fixed_mass_definition": "Reference DF totalMass deterministic integration; common physical normalization for all libraries and populations",
+            "energy_max": 2.983724378680108e-14,
+            "angular_max": 6.283862319378386e-13,
+            "Lz_max": 2.6645352591003757e-15
+          }
+        }
+      }
+    },
+    {
+      "library_id": 4,
+      "histories": {
+        "reference": {
+          "rows": [
+            {
+              "p": 4,
+              "alpha": 0.1501862498978842,
+              "plus": -1.6475444264874323e-05,
+              "minus": -1.5246040088531107e-05,
+              "contrast": -1.2294041763432232e-06,
+              "reference": -1.586074217670271e-05,
+              "contrast_over_reference": 0.07751239901932533
+            },
+            {
+              "p": 6,
+              "alpha": 9.878924689416143,
+              "plus": -1.1686627800707484e-05,
+              "minus": -2.0034856552697878e-05,
+              "contrast": 8.348228751990407e-06,
+              "reference": -1.586074217670271e-05,
+              "contrast_over_reference": -0.5263454042051593
+            },
+            {
+              "p": 8,
+              "alpha": 63.05040500717388,
+              "plus": 3.945626312037738e-06,
+              "minus": -3.566711066544314e-05,
+              "contrast": 3.961273697748088e-05,
+              "reference": -1.586074217670271e-05,
+              "contrast_over_reference": -2.497533629647334
+            }
+          ],
+          "initial_invariant_checks": {
+            "mass": 1.000000202253982,
+            "sampler_returned_mass": 1.0136708193429713,
+            "fixed_mass_definition": "Reference DF totalMass deterministic integration; common physical normalization for all libraries and populations",
+            "energy_max": 2.1510571102112408e-14,
+            "angular_max": 2.113864638886298e-13,
+            "Lz_max": 2.6645352591003757e-15
+          }
+        },
+        "frequency": {
+          "rows": [
+            {
+              "p": 4,
+              "alpha": 0.1501862498978842,
+              "plus": 0.0001325171174725482,
+              "minus": 0.0001258952079520564,
+              "contrast": 6.621909520491881e-06,
+              "reference": 0.0001292061627123023,
+              "contrast_over_reference": 0.05125072505431956
+            },
+            {
+              "p": 6,
+              "alpha": 9.878924689416143,
+              "plus": 0.00013770884432393564,
+              "minus": 0.00012070348110066901,
+              "contrast": 1.700536322326665e-05,
+              "reference": 0.0001292061627123023,
+              "contrast_over_reference": 0.1316141805180899
+            },
+            {
+              "p": 8,
+              "alpha": 63.05040500717388,
+              "plus": 0.00012573636659685453,
+              "minus": 0.00013267595882775007,
+              "contrast": -6.939592230895425e-06,
+              "reference": 0.0001292061627123023,
+              "contrast_over_reference": -0.053709452283228244
+            }
+          ],
+          "initial_invariant_checks": {
+            "mass": 1.000000202253982,
+            "sampler_returned_mass": 1.0136708193429713,
+            "fixed_mass_definition": "Reference DF totalMass deterministic integration; common physical normalization for all libraries and populations",
+            "energy_max": 2.1510571102112408e-14,
+            "angular_max": 2.113864638886298e-13,
+            "Lz_max": 2.6645352591003757e-15
+          }
+        }
+      }
+    },
+    {
+      "library_id": 5,
+      "histories": {
+        "reference": {
+          "rows": [
+            {
+              "p": 4,
+              "alpha": 0.1501862498978842,
+              "plus": 0.0003470570302348584,
+              "minus": 0.00033945663075950433,
+              "contrast": 7.600399475354031e-06,
+              "reference": 0.00034325683049718134,
+              "contrast_over_reference": 0.022142019619377805
+            },
+            {
+              "p": 6,
+              "alpha": 9.878924689416143,
+              "plus": 0.0003869098181182931,
+              "minus": 0.0002996038428760696,
+              "contrast": 8.73059752422236e-05,
+              "reference": 0.00034325683049718134,
+              "contrast_over_reference": 0.2543459226019408
+            },
+            {
+              "p": 8,
+              "alpha": 63.05040500717388,
+              "plus": 0.0004059764423025238,
+              "minus": 0.0002805372186918389,
+              "contrast": 0.00012543922361068493,
+              "reference": 0.00034325683049718134,
+              "contrast_over_reference": 0.36543839034170356
+            }
+          ],
+          "initial_invariant_checks": {
+            "mass": 1.000000202253982,
+            "sampler_returned_mass": 0.9909705979779377,
+            "fixed_mass_definition": "Reference DF totalMass deterministic integration; common physical normalization for all libraries and populations",
+            "energy_max": 1.9162449405030202e-13,
+            "angular_max": 7.633893517322576e-13,
+            "Lz_max": 3.9968028886505635e-15
+          }
+        },
+        "frequency": {
+          "rows": [
+            {
+              "p": 4,
+              "alpha": 0.1501862498978842,
+              "plus": 8.724740719637429e-05,
+              "minus": 8.737744557163598e-05,
+              "contrast": -1.3003837526168024e-07,
+              "reference": 8.731242638400508e-05,
+              "contrast_over_reference": -0.0014893455679465828
+            },
+            {
+              "p": 6,
+              "alpha": 9.878924689416143,
+              "plus": 0.00010543206114410642,
+              "minus": 6.919279162390386e-05,
+              "contrast": 3.62392695202026e-05,
+              "reference": 8.731242638400508e-05,
+              "contrast_over_reference": 0.41505282834335866
+            },
+            {
+              "p": 8,
+              "alpha": 63.05040500717388,
+              "plus": 0.00010705220610758047,
+              "minus": 6.757264666042978e-05,
+              "contrast": 3.9479559447150694e-05,
+              "reference": 8.731242638400508e-05,
+              "contrast_over_reference": 0.45216426896118217
+            }
+          ],
+          "initial_invariant_checks": {
+            "mass": 1.000000202253982,
+            "sampler_returned_mass": 0.9909705979779377,
+            "fixed_mass_definition": "Reference DF totalMass deterministic integration; common physical normalization for all libraries and populations",
+            "energy_max": 1.9162449405030202e-13,
+            "angular_max": 7.633893517322576e-13,
+            "Lz_max": 3.9968028886505635e-15
+          }
+        }
+      }
+    },
+    {
+      "library_id": 6,
+      "histories": {
+        "reference": {
+          "rows": [
+            {
+              "p": 4,
+              "alpha": 0.1501862498978842,
+              "plus": 0.00016627732523449233,
+              "minus": 0.00016196047211133736,
+              "contrast": 4.316853123154953e-06,
+              "reference": 0.0001641188986729149,
+              "contrast_over_reference": 0.026303205530024545
+            },
+            {
+              "p": 6,
+              "alpha": 9.878924689416143,
+              "plus": 0.0002092158014159425,
+              "minus": 0.00011902199592988721,
+              "contrast": 9.019380548605526e-05,
+              "reference": 0.0001641188986729149,
+              "contrast_over_reference": 0.5495637992661003
+            },
+            {
+              "p": 8,
+              "alpha": 63.05040500717388,
+              "plus": 0.00022548627247611071,
+              "minus": 0.00010275152486971898,
+              "contrast": 0.00012273474760639177,
+              "reference": 0.0001641188986729149,
+              "contrast_over_reference": 0.747840429096464
+            }
+          ],
+          "initial_invariant_checks": {
+            "mass": 1.000000202253982,
+            "sampler_returned_mass": 1.019542768523216,
+            "fixed_mass_definition": "Reference DF totalMass deterministic integration; common physical normalization for all libraries and populations",
+            "energy_max": 5.0161264031345354e-14,
+            "angular_max": 6.963318810448982e-13,
+            "Lz_max": 1.9984014443252818e-15
+          }
+        },
+        "frequency": {
+          "rows": [
+            {
+              "p": 4,
+              "alpha": 0.1501862498978842,
+              "plus": 0.00029981045825504103,
+              "minus": 0.0002968011963436735,
+              "contrast": 3.009261911367502e-06,
+              "reference": 0.00029830582729935723,
+              "contrast_over_reference": 0.010087841523617417
+            },
+            {
+              "p": 6,
+              "alpha": 9.878924689416143,
+              "plus": 0.00032294726174145097,
+              "minus": 0.00027366439285726366,
+              "contrast": 4.92828688841873e-05,
+              "reference": 0.00029830582729935723,
+              "contrast_over_reference": 0.16520920603649736
+            },
+            {
+              "p": 8,
+              "alpha": 63.05040500717388,
+              "plus": 0.0003213917317388455,
+              "minus": 0.00027521992285986903,
+              "contrast": 4.617180887897639e-05,
+              "reference": 0.00029830582729935723,
+              "contrast_over_reference": 0.15478011038866446
+            }
+          ],
+          "initial_invariant_checks": {
+            "mass": 1.000000202253982,
+            "sampler_returned_mass": 1.019542768523216,
+            "fixed_mass_definition": "Reference DF totalMass deterministic integration; common physical normalization for all libraries and populations",
+            "energy_max": 5.0161264031345354e-14,
+            "angular_max": 6.963318810448982e-13,
+            "Lz_max": 1.9984014443252818e-15
+          }
+        }
+      }
+    },
+    {
+      "library_id": 7,
+      "histories": {
+        "reference": {
+          "rows": [
+            {
+              "p": 4,
+              "alpha": 0.1501862498978842,
+              "plus": 0.00038067966766428625,
+              "minus": 0.00038074218214516337,
+              "contrast": -6.251448087706476e-08,
+              "reference": 0.0003807109249047248,
+              "contrast_over_reference": -0.00016420458880372132
+            },
+            {
+              "p": 6,
+              "alpha": 9.878924689416143,
+              "plus": 0.00041083179654029164,
+              "minus": 0.0003505900532691579,
+              "contrast": 6.024174327113374e-05,
+              "reference": 0.0003807109249047248,
+              "contrast_over_reference": 0.15823486884756355
+            },
+            {
+              "p": 8,
+              "alpha": 63.05040500717388,
+              "plus": 0.00043550257170638876,
+              "minus": 0.0003259192781030608,
+              "contrast": 0.00010958329360332809,
+              "reference": 0.0003807109249047248,
+              "contrast_over_reference": 0.28783858417184105
+            }
+          ],
+          "initial_invariant_checks": {
+            "mass": 1.000000202253982,
+            "sampler_returned_mass": 0.9719063142275138,
+            "fixed_mass_definition": "Reference DF totalMass deterministic integration; common physical normalization for all libraries and populations",
+            "energy_max": 2.275957200481571e-14,
+            "angular_max": 1.049160758270773e-12,
+            "Lz_max": 3.552713678800501e-15
+          }
+        },
+        "frequency": {
+          "rows": [
+            {
+              "p": 4,
+              "alpha": 0.1501862498978842,
+              "plus": 0.0003311554250850572,
+              "minus": 0.0003297690002615138,
+              "contrast": 1.38642482354338e-06,
+              "reference": 0.0003304622126732855,
+              "contrast_over_reference": 0.004195411064786647
+            },
+            {
+              "p": 6,
+              "alpha": 9.878924689416143,
+              "plus": 0.00032882708258439187,
+              "minus": 0.00033209734276217916,
+              "contrast": -3.270260177787244e-06,
+              "reference": 0.0003304622126732855,
+              "contrast_over_reference": -0.009896018523063078
+            },
+            {
+              "p": 8,
+              "alpha": 63.05040500717388,
+              "plus": 0.00033110842543635215,
+              "minus": 0.0003298159999102189,
+              "contrast": 1.2924255261332173e-06,
+              "reference": 0.0003304622126732855,
+              "contrast_over_reference": 0.003910963119438365
+            }
+          ],
+          "initial_invariant_checks": {
+            "mass": 1.000000202253982,
+            "sampler_returned_mass": 0.9719063142275138,
+            "fixed_mass_definition": "Reference DF totalMass deterministic integration; common physical normalization for all libraries and populations",
+            "energy_max": 2.275957200481571e-14,
+            "angular_max": 1.049160758270773e-12,
+            "Lz_max": 3.552713678800501e-15
+          }
+        }
+      }
+    }
+  ],
+  "comparison_order": [
+    {
+      "history": "reference",
+      "p": 4
+    },
+    {
+      "history": "reference",
+      "p": 6
+    },
+    {
+      "history": "reference",
+      "p": 8
+    },
+    {
+      "history": "frequency",
+      "p": 4
+    },
+    {
+      "history": "frequency",
+      "p": 6
+    },
+    {
+      "history": "frequency",
+      "p": 8
+    }
+  ],
+  "library_contrast_vectors": [
+    [
+      1.5333922969584258e-06,
+      3.830065784230681e-05,
+      8.549294743678974e-05,
+      1.6217479078193875e-05,
+      0.0001288545894608977,
+      0.00011608921891991359
+    ],
+    [
+      1.072163075001827e-06,
+      1.43050050846641e-05,
+      6.662601919995442e-05,
+      7.869673989078334e-06,
+      8.497769804334205e-05,
+      8.214976604287883e-05
+    ],
+    [
+      -2.0571255282824643e-06,
+      4.553417403756087e-06,
+      3.416525086792558e-05,
+      1.52778028819684e-06,
+      6.19615945967008e-05,
+      7.176066321756659e-05
+    ],
+    [
+      1.1376193744367626e-05,
+      8.217725366924805e-05,
+      9.593386581410045e-05,
+      4.389166014742863e-06,
+      0.00012059096838818088,
+      0.00015985353584288634
+    ],
+    [
+      -1.2294041763432232e-06,
+      8.348228751990407e-06,
+      3.961273697748088e-05,
+      6.621909520491881e-06,
+      1.700536322326665e-05,
+      -6.939592230895425e-06
+    ],
+    [
+      7.600399475354031e-06,
+      8.73059752422236e-05,
+      0.00012543922361068493,
+      -1.3003837526168024e-07,
+      3.62392695202026e-05,
+      3.9479559447150694e-05
+    ],
+    [
+      4.316853123154953e-06,
+      9.019380548605526e-05,
+      0.00012273474760639177,
+      3.009261911367502e-06,
+      4.92828688841873e-05,
+      4.617180887897639e-05
+    ],
+    [
+      -6.251448087706476e-08,
+      6.024174327113374e-05,
+      0.00010958329360332809,
+      1.38642482354338e-06,
+      -3.270260177787244e-06,
+      1.2924255261332173e-06
+    ]
+  ],
+  "covariance_of_mean": [
+    [
+      2.7054363898822646e-12,
+      1.700055847754289e-11,
+      1.3137292728986947e-11,
+      -5.606092869397744e-13,
+      1.0776559237903829e-11,
+      1.7993976279549473e-11
+    ],
+    [
+      1.700055847754289e-11,
+      1.6664760831127275e-10,
+      1.514105794130434e-10,
+      -8.390380987166246e-12,
+      3.1236254534653113e-13,
+      3.842182544411146e-11
+    ],
+    [
+      1.3137292728986947e-11,
+      1.514105794130434e-10,
+      1.5652017949213423e-10,
+      -5.756134590094376e-12,
+      -1.4833437964523693e-11,
+      6.419413380918226e-12
+    ],
+    [
+      -5.606092869397744e-13,
+      -8.390380987166246e-12,
+      -5.756134590094376e-12,
+      3.4351028552523487e-12,
+      1.9653823661817018e-11,
+      1.4713537752913135e-11
+    ],
+    [
+      1.0776559237903829e-11,
+      3.1236254534653113e-13,
+      -1.4833437964523693e-11,
+      1.9653823661817018e-11,
+      2.7750826142391456e-10,
+      3.153290992952564e-10
+    ],
+    [
+      1.7993976279549473e-11,
+      3.842182544411146e-11,
+      6.419413380918226e-12,
+      1.4713537752913135e-11,
+      3.153290992952564e-10,
+      3.959645921171115e-10
+    ]
+  ],
+  "joint_contrast_reference_order": [
+    {
+      "history": "reference",
+      "p": 4,
+      "observable": "contrast"
+    },
+    {
+      "history": "reference",
+      "p": 6,
+      "observable": "contrast"
+    },
+    {
+      "history": "reference",
+      "p": 8,
+      "observable": "contrast"
+    },
+    {
+      "history": "frequency",
+      "p": 4,
+      "observable": "contrast"
+    },
+    {
+      "history": "frequency",
+      "p": 6,
+      "observable": "contrast"
+    },
+    {
+      "history": "frequency",
+      "p": 8,
+      "observable": "contrast"
+    },
+    {
+      "history": "reference",
+      "observable": "reference"
+    },
+    {
+      "history": "frequency",
+      "observable": "reference"
+    }
+  ],
+  "joint_contrast_reference_vectors": [
+    [
+      1.5333922969584258e-06,
+      3.830065784230681e-05,
+      8.549294743678974e-05,
+      1.6217479078193875e-05,
+      0.0001288545894608977,
+      0.00011608921891991359,
+      0.0005458052900516441,
+      0.00019970410735434323
+    ],
+    [
+      1.072163075001827e-06,
+      1.43050050846641e-05,
+      6.662601919995442e-05,
+      7.869673989078334e-06,
+      8.497769804334205e-05,
+      8.214976604287883e-05,
+      0.00013569351066069612,
+      8.558691976783949e-05
+    ],
+    [
+      -2.0571255282824643e-06,
+      4.553417403756087e-06,
+      3.416525086792558e-05,
+      1.52778028819684e-06,
+      6.19615945967008e-05,
+      7.176066321756659e-05,
+      5.6274163435306775e-05,
+      -3.939753262601617e-05
+    ],
+    [
+      1.1376193744367626e-05,
+      8.217725366924805e-05,
+      9.593386581410045e-05,
+      4.389166014742863e-06,
+      0.00012059096838818088,
+      0.00015985353584288634,
+      0.0002530405313673583,
+      0.0005597188876189871
+    ],
+    [
+      -1.2294041763432232e-06,
+      8.348228751990407e-06,
+      3.961273697748088e-05,
+      6.621909520491881e-06,
+      1.700536322326665e-05,
+      -6.939592230895425e-06,
+      -1.586074217670271e-05,
+      0.0001292061627123023
+    ],
+    [
+      7.600399475354031e-06,
+      8.73059752422236e-05,
+      0.00012543922361068493,
+      -1.3003837526168024e-07,
+      3.62392695202026e-05,
+      3.9479559447150694e-05,
+      0.00034325683049718134,
+      8.731242638400508e-05
+    ],
+    [
+      4.316853123154953e-06,
+      9.019380548605526e-05,
+      0.00012273474760639177,
+      3.009261911367502e-06,
+      4.92828688841873e-05,
+      4.617180887897639e-05,
+      0.0001641188986729149,
+      0.00029830582729935723
+    ],
+    [
+      -6.251448087706476e-08,
+      6.024174327113374e-05,
+      0.00010958329360332809,
+      1.38642482354338e-06,
+      -3.270260177787244e-06,
+      1.2924255261332173e-06,
+      0.0003807109249047248,
+      0.0003304622126732855
+    ]
+  ],
+  "joint_contrast_reference_covariance_of_mean": [
+    [
+      2.7054363898822646e-12,
+      1.700055847754289e-11,
+      1.3137292728986947e-11,
+      -5.606092869397744e-13,
+      1.0776559237903829e-11,
+      1.7993976279549473e-11,
+      3.226656041721207e-11,
+      7.080156646038235e-11
+    ],
+    [
+      1.700055847754289e-11,
+      1.6664760831127275e-10,
+      1.514105794130434e-10,
+      -8.390380987166246e-12,
+      3.1236254534653113e-13,
+      3.842182544411146e-11,
+      3.877031471999228e-10,
+      5.476239481951892e-10
+    ],
+    [
+      1.3137292728986947e-11,
+      1.514105794130434e-10,
+      1.5652017949213423e-10,
+      -5.756134590094376e-12,
+      -1.4833437964523693e-11,
+      6.419413380918226e-12,
+      4.987644172568216e-10,
+      4.24650128299792e-10
+    ],
+    [
+      -5.606092869397744e-13,
+      -8.390380987166246e-12,
+      -5.756134590094376e-12,
+      3.4351028552523487e-12,
+      1.9653823661817018e-11,
+      1.4713537752913135e-11,
+      4.402238888806379e-11,
+      1.25582234893058e-12
+    ],
+    [
+      1.0776559237903829e-11,
+      3.1236254534653113e-13,
+      -1.4833437964523693e-11,
+      1.9653823661817018e-11,
+      2.7750826142391456e-10,
+      3.153290992952564e-10,
+      3.4731196812246736e-10,
+      2.6360365774888314e-10
+    ],
+    [
+      1.7993976279549473e-11,
+      3.842182544411146e-11,
+      6.419413380918226e-12,
+      1.4713537752913135e-11,
+      3.153290992952564e-10,
+      3.959645921171115e-10,
+      3.927294136836169e-10,
+      5.070668434031977e-10
+    ],
+    [
+      3.226656041721207e-11,
+      3.877031471999228e-10,
+      4.987644172568216e-10,
+      4.402238888806379e-11,
+      3.4731196812246736e-10,
+      3.927294136836169e-10,
+      4.278582006085895e-09,
+      1.3974265990666271e-09
+    ],
+    [
+      7.080156646038235e-11,
+      5.476239481951892e-10,
+      4.24650128299792e-10,
+      1.25582234893058e-12,
+      2.6360365774888314e-10,
+      5.070668434031977e-10,
+      1.3974265990666271e-09,
+      4.354823925223079e-09
+    ]
+  ],
+  "numerical_checks": {
+    "frozen_material_error_screen": "Every selected paired contrast shift <10% of the ensemble contrast",
+    "selected_refinements": [
+      {
+        "id": "phase-double-0",
+        "history": "reference",
+        "library_id": 0,
+        "kind": "phase",
+        "rows": [
+          {
+            "p": 4,
+            "alpha": 0.1501862498978842,
+            "plus": -2.884173948219781e-05,
+            "minus": -2.9075464298445453e-05,
+            "contrast": 2.3372481624764322e-07,
+            "reference": -2.8958601890321637e-05,
+            "contrast_over_reference": -0.008070997941573874,
+            "absolute_weighted_family_difference": 4.328054209073802e-06,
+            "paired_shift_over_ensemble_contrast": 0.0829180510672279,
+            "selected_material_error_screen_pass": true
+          },
+          {
+            "p": 6,
+            "alpha": 9.878924689416143,
+            "plus": -2.9503594470403918e-05,
+            "minus": -2.8413609310239352e-05,
+            "contrast": -1.089985160164574e-06,
+            "reference": -2.8958601890321637e-05,
+            "contrast_over_reference": 0.03763942625036957,
+            "absolute_weighted_family_difference": 2.2852324931664878e-05,
+            "paired_shift_over_ensemble_contrast": 0.022624003877924886,
+            "selected_material_error_screen_pass": true
+          },
+          {
+            "p": 8,
+            "alpha": 63.05040500717388,
+            "plus": -3.0368567366313515e-05,
+            "minus": -2.7548636414329765e-05,
+            "contrast": -2.81993095198375e-06,
+            "reference": -2.8958601890321637e-05,
+            "contrast_over_reference": 0.09737800749718548,
+            "absolute_weighted_family_difference": 2.3656709274897534e-05,
+            "paired_shift_over_ensemble_contrast": 0.03319576683278301,
+            "selected_material_error_screen_pass": true
+          }
+        ]
+      },
+      {
+        "id": "phase-double-1",
+        "history": "reference",
+        "library_id": 1,
+        "kind": "phase",
+        "rows": [
+          {
+            "p": 4,
+            "alpha": 0.1501862498978842,
+            "plus": 8.498766885957524e-06,
+            "minus": 9.09242292739821e-06,
+            "contrast": -5.936560414406872e-07,
+            "reference": 8.795594906677868e-06,
+            "contrast_over_reference": -0.06749470021521416,
+            "absolute_weighted_family_difference": 8.893513530015457e-06,
+            "paired_shift_over_ensemble_contrast": 0.21061007877054486,
+            "selected_material_error_screen_pass": false
+          },
+          {
+            "p": 6,
+            "alpha": 9.878924689416143,
+            "plus": 7.334236552950264e-06,
+            "minus": 1.0256953260405468e-05,
+            "contrast": -2.9227167074552024e-06,
+            "reference": 8.795594906677868e-06,
+            "contrast_over_reference": -0.33229323752009,
+            "absolute_weighted_family_difference": 3.994584933388439e-05,
+            "paired_shift_over_ensemble_contrast": 0.06066463704291033,
+            "selected_material_error_screen_pass": true
+          },
+          {
+            "p": 8,
+            "alpha": 63.05040500717388,
+            "plus": 8.234569215611145e-06,
+            "minus": 9.35662059774458e-06,
+            "contrast": -1.1220513821334296e-06,
+            "reference": 8.795594906677868e-06,
+            "contrast_over_reference": -0.12756969756321268,
+            "absolute_weighted_family_difference": 3.8200380813893176e-05,
+            "paired_shift_over_ensemble_contrast": 0.013208605703448398,
+            "selected_material_error_screen_pass": true
+          }
+        ]
+      },
+      {
+        "id": "halfstep-reference-0",
+        "history": "reference",
+        "library_id": 0,
+        "kind": "timestep",
+        "rows": [
+          {
+            "p": 4,
+            "alpha": 0.1501862498978842,
+            "plus": -1.163834575834607e-11,
+            "minus": -1.0916905343352421e-11,
+            "contrast": -7.21440414993642e-13,
+            "reference": -1.127762555084924e-11,
+            "contrast_over_reference": 0.06397094953549999,
+            "absolute_weighted_family_difference": 5.710107400273729e-12,
+            "paired_shift_over_ensemble_contrast": 2.5594386652131166e-07,
+            "selected_material_error_screen_pass": true
+          },
+          {
+            "p": 6,
+            "alpha": 9.878924689416143,
+            "plus": -1.2281900999388956e-11,
+            "minus": -1.0273350102309539e-11,
+            "contrast": -2.008550897079421e-12,
+            "reference": -1.127762555084924e-11,
+            "contrast_over_reference": 0.17810051309321676,
+            "absolute_weighted_family_difference": 3.5398679240957055e-11,
+            "paired_shift_over_ensemble_contrast": 4.16899834468143e-08,
+            "selected_material_error_screen_pass": true
+          },
+          {
+            "p": 8,
+            "alpha": 63.05040500717388,
+            "plus": -1.022644570758414e-11,
+            "minus": -1.2328805394114358e-11,
+            "contrast": 2.1023596865302173e-12,
+            "reference": -1.127762555084924e-11,
+            "contrast_over_reference": -0.1864186461104752,
+            "absolute_weighted_family_difference": 3.560071654980492e-11,
+            "paired_shift_over_ensemble_contrast": 2.4748635034345348e-08,
+            "selected_material_error_screen_pass": true
+          }
+        ]
+      },
+      {
+        "id": "halfstep-frequency-0",
+        "history": "frequency",
+        "library_id": 0,
+        "kind": "timestep",
+        "rows": [
+          {
+            "p": 4,
+            "alpha": 0.1501862498978842,
+            "plus": -2.2333725750681024e-11,
+            "minus": -2.1200368720013665e-11,
+            "contrast": -1.133357030667354e-12,
+            "reference": -2.176704723534734e-11,
+            "contrast_over_reference": 0.05206755966546093,
+            "absolute_weighted_family_difference": 2.8767405630696254e-12,
+            "paired_shift_over_ensemble_contrast": 2.2172875483691879e-07,
+            "selected_material_error_screen_pass": true
+          },
+          {
+            "p": 6,
+            "alpha": 9.878924689416143,
+            "plus": -2.417476411441775e-11,
+            "minus": -1.9359330356276935e-11,
+            "contrast": -4.815433758140812e-12,
+            "reference": -2.176704723534734e-11,
+            "contrast_over_reference": 0.22122586063584526,
+            "absolute_weighted_family_difference": 1.4139020424020516e-11,
+            "paired_shift_over_ensemble_contrast": 7.772437146009867e-08,
+            "selected_material_error_screen_pass": true
+          },
+          {
+            "p": 8,
+            "alpha": 63.05040500717388,
+            "plus": -2.3946817376787018e-11,
+            "minus": -1.9587277093907668e-11,
+            "contrast": -4.359540282879345e-12,
+            "reference": -2.176704723534734e-11,
+            "contrast_over_reference": 0.20028165675130805,
+            "absolute_weighted_family_difference": 1.3590793232648438e-11,
+            "paired_shift_over_ensemble_contrast": 6.840407385477175e-08,
+            "selected_material_error_screen_pass": true
+          }
+        ]
+      }
+    ],
+    "budget_definition": "Maxima over sampled integration checkpoints and individual trajectories. E includes the full bar at time zero; external work is integrated separately.",
+    "budgets": [
+      {
+        "id": "reference-0",
+        "maximum_timestep": 0.01,
+        "duration": 300,
+        "action_families": 512,
+        "phase_points_per_sense": 256,
+        "maximum_absolute_Lz_minus_initial_Lz_minus_bar_impulse": 5.493731767796709e-13,
+        "maximum_absolute_energy_minus_initial_energy_minus_external_work": 5.14345730069643e-09,
+        "source": {
+          "record_id": "twins/randomized-01/compute-ledger.json",
+          "json_pointer": "/jobs/0"
+        },
+        "array_source": {
+          "record_id": "twins/randomized-01/reference-0.npz",
+          "key": "history",
+          "columns": [
+            0,
+            2,
+            3
+          ],
+          "sha256": "87f29f00677a6d887eab465c2177dd6322718d005aeaa5e15475047a02b14723"
+        }
+      },
+      {
+        "id": "frequency-0",
+        "maximum_timestep": 0.01,
+        "duration": 300,
+        "action_families": 512,
+        "phase_points_per_sense": 256,
+        "maximum_absolute_Lz_minus_initial_Lz_minus_bar_impulse": 4.768487850476745e-13,
+        "maximum_absolute_energy_minus_initial_energy_minus_external_work": 6.696161349148064e-09,
+        "source": {
+          "record_id": "twins/randomized-01/compute-ledger.json",
+          "json_pointer": "/jobs/1"
+        },
+        "array_source": {
+          "record_id": "twins/randomized-01/frequency-0.npz",
+          "key": "history",
+          "columns": [
+            0,
+            2,
+            3
+          ],
+          "sha256": "ca3fac657ad502225b3b0496b2305356fd6ef6d624b23be541a14aa49c7d1b2d"
+        }
+      },
+      {
+        "id": "reference-1",
+        "maximum_timestep": 0.01,
+        "duration": 300,
+        "action_families": 512,
+        "phase_points_per_sense": 256,
+        "maximum_absolute_Lz_minus_initial_Lz_minus_bar_impulse": 4.264325650649777e-13,
+        "maximum_absolute_energy_minus_initial_energy_minus_external_work": 3.7642788632257645e-09,
+        "source": {
+          "record_id": "twins/randomized-01/compute-ledger.json",
+          "json_pointer": "/jobs/2"
+        },
+        "array_source": {
+          "record_id": "twins/randomized-01/reference-1.npz",
+          "key": "history",
+          "columns": [
+            0,
+            2,
+            3
+          ],
+          "sha256": "5f15c5a16d0d589a79833359ae707c59e319eda056db5ee8263245a2eaf2e55c"
+        }
+      },
+      {
+        "id": "frequency-1",
+        "maximum_timestep": 0.01,
+        "duration": 300,
+        "action_families": 512,
+        "phase_points_per_sense": 256,
+        "maximum_absolute_Lz_minus_initial_Lz_minus_bar_impulse": 5.368283090778291e-13,
+        "maximum_absolute_energy_minus_initial_energy_minus_external_work": 3.885531090451477e-09,
+        "source": {
+          "record_id": "twins/randomized-01/compute-ledger.json",
+          "json_pointer": "/jobs/3"
+        },
+        "array_source": {
+          "record_id": "twins/randomized-01/frequency-1.npz",
+          "key": "history",
+          "columns": [
+            0,
+            2,
+            3
+          ],
+          "sha256": "d44e95241a09a176e6ab0e25ed0e8b986ddfa0d9fb8021ba4d2a589942b4435e"
+        }
+      },
+      {
+        "id": "reference-2",
+        "maximum_timestep": 0.01,
+        "duration": 300,
+        "action_families": 512,
+        "phase_points_per_sense": 256,
+        "maximum_absolute_Lz_minus_initial_Lz_minus_bar_impulse": 5.129768594450951e-13,
+        "maximum_absolute_energy_minus_initial_energy_minus_external_work": 5.2996046171274735e-09,
+        "source": {
+          "record_id": "twins/randomized-01/compute-ledger.json",
+          "json_pointer": "/jobs/4"
+        },
+        "array_source": {
+          "record_id": "twins/randomized-01/reference-2.npz",
+          "key": "history",
+          "columns": [
+            0,
+            2,
+            3
+          ],
+          "sha256": "b54743d0b9bc1d74c55ca06ba6e312f4fb8413facd440942ed0f729012bc1d8a"
+        }
+      },
+      {
+        "id": "frequency-2",
+        "maximum_timestep": 0.01,
+        "duration": 300,
+        "action_families": 512,
+        "phase_points_per_sense": 256,
+        "maximum_absolute_Lz_minus_initial_Lz_minus_bar_impulse": 4.603603547762835e-13,
+        "maximum_absolute_energy_minus_initial_energy_minus_external_work": 4.735818061492314e-09,
+        "source": {
+          "record_id": "twins/randomized-01/compute-ledger.json",
+          "json_pointer": "/jobs/5"
+        },
+        "array_source": {
+          "record_id": "twins/randomized-01/frequency-2.npz",
+          "key": "history",
+          "columns": [
+            0,
+            2,
+            3
+          ],
+          "sha256": "67355579f50023269a6a802b0e6a59d7b8dcb47d8f019468da86a216cdee3ad1"
+        }
+      },
+      {
+        "id": "reference-3",
+        "maximum_timestep": 0.01,
+        "duration": 300,
+        "action_families": 512,
+        "phase_points_per_sense": 256,
+        "maximum_absolute_Lz_minus_initial_Lz_minus_bar_impulse": 1.6098671307741357e-12,
+        "maximum_absolute_energy_minus_initial_energy_minus_external_work": 4.514955223924866e-09,
+        "source": {
+          "record_id": "twins/randomized-01/compute-ledger.json",
+          "json_pointer": "/jobs/6"
+        },
+        "array_source": {
+          "record_id": "twins/randomized-01/reference-3.npz",
+          "key": "history",
+          "columns": [
+            0,
+            2,
+            3
+          ],
+          "sha256": "4bd57fd9da33e004744beaedba72b19fb6be9c9ce67e1ce86ae17146520df6d2"
+        }
+      },
+      {
+        "id": "frequency-3",
+        "maximum_timestep": 0.01,
+        "duration": 300,
+        "action_families": 512,
+        "phase_points_per_sense": 256,
+        "maximum_absolute_Lz_minus_initial_Lz_minus_bar_impulse": 9.886662235550733e-13,
+        "maximum_absolute_energy_minus_initial_energy_minus_external_work": 5.264322291888973e-09,
+        "source": {
+          "record_id": "twins/randomized-01/compute-ledger.json",
+          "json_pointer": "/jobs/7"
+        },
+        "array_source": {
+          "record_id": "twins/randomized-01/frequency-3.npz",
+          "key": "history",
+          "columns": [
+            0,
+            2,
+            3
+          ],
+          "sha256": "ad6ab46dcb69ee8bde2e3de66a96c9b30903a4b6270d7ff24545310bbb1e171d"
+        }
+      },
+      {
+        "id": "reference-4",
+        "maximum_timestep": 0.01,
+        "duration": 300,
+        "action_families": 512,
+        "phase_points_per_sense": 256,
+        "maximum_absolute_Lz_minus_initial_Lz_minus_bar_impulse": 6.338565905940117e-13,
+        "maximum_absolute_energy_minus_initial_energy_minus_external_work": 5.1810161432884645e-09,
+        "source": {
+          "record_id": "twins/randomized-01/compute-ledger.json",
+          "json_pointer": "/jobs/8"
+        },
+        "array_source": {
+          "record_id": "twins/randomized-01/reference-4.npz",
+          "key": "history",
+          "columns": [
+            0,
+            2,
+            3
+          ],
+          "sha256": "1ce162fd5e0a6e87ba777e86f1f8f82a04ad44400d7f187e236a043cbb31eaeb"
+        }
+      },
+      {
+        "id": "frequency-4",
+        "maximum_timestep": 0.01,
+        "duration": 300,
+        "action_families": 512,
+        "phase_points_per_sense": 256,
+        "maximum_absolute_Lz_minus_initial_Lz_minus_bar_impulse": 6.087988994755802e-13,
+        "maximum_absolute_energy_minus_initial_energy_minus_external_work": 5.936241313179297e-09,
+        "source": {
+          "record_id": "twins/randomized-01/compute-ledger.json",
+          "json_pointer": "/jobs/9"
+        },
+        "array_source": {
+          "record_id": "twins/randomized-01/frequency-4.npz",
+          "key": "history",
+          "columns": [
+            0,
+            2,
+            3
+          ],
+          "sha256": "77bb6fcf1ce656ab0f9510be8c48871b237bf25effa15895823d0135d9a25195"
+        }
+      },
+      {
+        "id": "reference-5",
+        "maximum_timestep": 0.01,
+        "duration": 300,
+        "action_families": 512,
+        "phase_points_per_sense": 256,
+        "maximum_absolute_Lz_minus_initial_Lz_minus_bar_impulse": 1.2931070735955465e-12,
+        "maximum_absolute_energy_minus_initial_energy_minus_external_work": 4.9936443487219595e-09,
+        "source": {
+          "record_id": "twins/randomized-01/compute-ledger.json",
+          "json_pointer": "/jobs/10"
+        },
+        "array_source": {
+          "record_id": "twins/randomized-01/reference-5.npz",
+          "key": "history",
+          "columns": [
+            0,
+            2,
+            3
+          ],
+          "sha256": "20f4359a0af4d69d29a944a221b793a002fd10409dcf699b5b887aace9943be0"
+        }
+      },
+      {
+        "id": "frequency-5",
+        "maximum_timestep": 0.01,
+        "duration": 300,
+        "action_families": 512,
+        "phase_points_per_sense": 256,
+        "maximum_absolute_Lz_minus_initial_Lz_minus_bar_impulse": 1.3217297856826783e-12,
+        "maximum_absolute_energy_minus_initial_energy_minus_external_work": 6.166768136070533e-09,
+        "source": {
+          "record_id": "twins/randomized-01/compute-ledger.json",
+          "json_pointer": "/jobs/11"
+        },
+        "array_source": {
+          "record_id": "twins/randomized-01/frequency-5.npz",
+          "key": "history",
+          "columns": [
+            0,
+            2,
+            3
+          ],
+          "sha256": "d1b6d9091c7ed6f3e73511bbefd2ad9415d0a311d3444802d1a4b7ff2625786f"
+        }
+      },
+      {
+        "id": "reference-6",
+        "maximum_timestep": 0.01,
+        "duration": 300,
+        "action_families": 512,
+        "phase_points_per_sense": 256,
+        "maximum_absolute_Lz_minus_initial_Lz_minus_bar_impulse": 9.773546782903544e-13,
+        "maximum_absolute_energy_minus_initial_energy_minus_external_work": 4.588449588165122e-09,
+        "source": {
+          "record_id": "twins/randomized-01/compute-ledger.json",
+          "json_pointer": "/jobs/12"
+        },
+        "array_source": {
+          "record_id": "twins/randomized-01/reference-6.npz",
+          "key": "history",
+          "columns": [
+            0,
+            2,
+            3
+          ],
+          "sha256": "db420430197c5fcf86a3e4279284770e406b32c7dcc4998c5f87c1c57595092c"
+        }
+      },
+      {
+        "id": "frequency-6",
+        "maximum_timestep": 0.01,
+        "duration": 300,
+        "action_families": 512,
+        "phase_points_per_sense": 256,
+        "maximum_absolute_Lz_minus_initial_Lz_minus_bar_impulse": 1.1122320201157553e-12,
+        "maximum_absolute_energy_minus_initial_energy_minus_external_work": 5.933581674610888e-09,
+        "source": {
+          "record_id": "twins/randomized-01/compute-ledger.json",
+          "json_pointer": "/jobs/13"
+        },
+        "array_source": {
+          "record_id": "twins/randomized-01/frequency-6.npz",
+          "key": "history",
+          "columns": [
+            0,
+            2,
+            3
+          ],
+          "sha256": "82750e65a9a95f3fe57f75f504a27410050ec463325ad127286475bbac04904a"
+        }
+      },
+      {
+        "id": "reference-7",
+        "maximum_timestep": 0.01,
+        "duration": 300,
+        "action_families": 512,
+        "phase_points_per_sense": 256,
+        "maximum_absolute_Lz_minus_initial_Lz_minus_bar_impulse": 1.272587014835379e-12,
+        "maximum_absolute_energy_minus_initial_energy_minus_external_work": 3.734560101269213e-09,
+        "source": {
+          "record_id": "twins/randomized-01/compute-ledger.json",
+          "json_pointer": "/jobs/14"
+        },
+        "array_source": {
+          "record_id": "twins/randomized-01/reference-7.npz",
+          "key": "history",
+          "columns": [
+            0,
+            2,
+            3
+          ],
+          "sha256": "2481e21cdeb5f96dca1a9b1d7ce6933b1d4de4f6167b36c8e15046b7c18d7287"
+        }
+      },
+      {
+        "id": "frequency-7",
+        "maximum_timestep": 0.01,
+        "duration": 300,
+        "action_families": 512,
+        "phase_points_per_sense": 256,
+        "maximum_absolute_Lz_minus_initial_Lz_minus_bar_impulse": 1.187815269784023e-12,
+        "maximum_absolute_energy_minus_initial_energy_minus_external_work": 4.010397326725812e-09,
+        "source": {
+          "record_id": "twins/randomized-01/compute-ledger.json",
+          "json_pointer": "/jobs/15"
+        },
+        "array_source": {
+          "record_id": "twins/randomized-01/frequency-7.npz",
+          "key": "history",
+          "columns": [
+            0,
+            2,
+            3
+          ],
+          "sha256": "3dd2bd68642df9497a1002d522c3e6f9d7b1e698a17ef7e50a7321fac2f50973"
+        }
+      },
+      {
+        "id": "phase-double-0",
+        "maximum_timestep": 0.01,
+        "duration": 300,
+        "action_families": 512,
+        "phase_points_per_sense": 512,
+        "maximum_absolute_Lz_minus_initial_Lz_minus_bar_impulse": 5.493731767796709e-13,
+        "maximum_absolute_energy_minus_initial_energy_minus_external_work": 5.82228967859269e-09,
+        "source": {
+          "record_id": "twins/randomized-01/compute-ledger.json",
+          "json_pointer": "/jobs/16"
+        },
+        "array_source": {
+          "record_id": "twins/randomized-01/phase-double-0.npz",
+          "key": "history",
+          "columns": [
+            0,
+            2,
+            3
+          ],
+          "sha256": "958b5127e3f05df5809be7d5c461c22e7671018e0bf945e61d2555ca10930716"
+        }
+      },
+      {
+        "id": "phase-double-1",
+        "maximum_timestep": 0.01,
+        "duration": 300,
+        "action_families": 512,
+        "phase_points_per_sense": 512,
+        "maximum_absolute_Lz_minus_initial_Lz_minus_bar_impulse": 6.967479929053929e-13,
+        "maximum_absolute_energy_minus_initial_energy_minus_external_work": 6.059787708082021e-09,
+        "source": {
+          "record_id": "twins/randomized-01/compute-ledger.json",
+          "json_pointer": "/jobs/17"
+        },
+        "array_source": {
+          "record_id": "twins/randomized-01/phase-double-1.npz",
+          "key": "history",
+          "columns": [
+            0,
+            2,
+            3
+          ],
+          "sha256": "2348ff203667bcdb09a818a7a5c3140bc9cc5c3cd5b1bda8e94a1671cb32a390"
+        }
+      },
+      {
+        "id": "halfstep-reference-0",
+        "maximum_timestep": 0.005,
+        "duration": 300,
+        "action_families": 512,
+        "phase_points_per_sense": 256,
+        "maximum_absolute_Lz_minus_initial_Lz_minus_bar_impulse": 7.261538849809979e-13,
+        "maximum_absolute_energy_minus_initial_energy_minus_external_work": 3.2121643712967884e-10,
+        "source": {
+          "record_id": "twins/randomized-01/compute-ledger.json",
+          "json_pointer": "/jobs/18"
+        },
+        "array_source": {
+          "record_id": "twins/randomized-01/halfstep-reference-0.npz",
+          "key": "history",
+          "columns": [
+            0,
+            2,
+            3
+          ],
+          "sha256": "347f6bcdbb6bb10dcc251c8a3ba00d12248473cee3f03af0920cd6e49e2ef4f7"
+        }
+      },
+      {
+        "id": "halfstep-frequency-0",
+        "maximum_timestep": 0.005,
+        "duration": 300,
+        "action_families": 512,
+        "phase_points_per_sense": 256,
+        "maximum_absolute_Lz_minus_initial_Lz_minus_bar_impulse": 6.346418546628216e-13,
+        "maximum_absolute_energy_minus_initial_energy_minus_external_work": 4.183038044636503e-10,
+        "source": {
+          "record_id": "twins/randomized-01/compute-ledger.json",
+          "json_pointer": "/jobs/19"
+        },
+        "array_source": {
+          "record_id": "twins/randomized-01/halfstep-frequency-0.npz",
+          "key": "history",
+          "columns": [
+            0,
+            2,
+            3
+          ],
+          "sha256": "949301755b43ec73720da53ce076227916462d8ef4e6af15468e148375053e6d"
+        }
+      }
+    ],
+    "unforced_preflight_summary": {
+      "maximum_relative_eddington_error": 2.9976021664879227e-15,
+      "maximum_relative_eddington_order_change": 2.9976021664879227e-15,
+      "maximum_relative_density_recovery_error": 8.881784197001252e-16,
+      "maximum_relative_density_order_change": 5.551115123125783e-16,
+      "maximum_absolute_AGAMA_relative_error": 3.239076601824209e-06,
+      "maximum_local_density_difference": 6.7227849653511704e-18,
+      "maximum_local_first_moment_difference": 1.4553933708581698e-15,
+      "maximum_local_second_tensor_difference": 3.2830106303379815e-17
+    },
+    "remaining_checks": [
+      "No doubled-phase frequency history in the parent matrix",
+      "Selected refinements do not prove all-library discretization accuracy",
+      "No live equilibrium, collective stability, formation-history or observational test"
+    ],
+    "not_rigorous_total_error_bounds": true
+  },
+  "velocity_structure": {
+    "question": "What can differ when all ordinary local moments match?",
+    "observable": "(<vphi^3>plus-<vphi^3>minus)/sigma_phi,reference^3",
+    "definition": "Difference of local standardized third moments; means are zero and dispersions match.",
+    "coordinates": {
+      "radius": "Spherical radius in reference length units",
+      "mu": "cos(theta); mu=0 is the equatorial plane"
+    },
+    "default_mu": 0.0,
+    "velocity_quadrature_orders": [
+      12,
+      24
+    ],
+    "rows": [
+      {
+        "p": 4,
+        "radius": 0.01,
+        "mu": 0.0,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.0007857195270066765,
+        "absolute_velocity_order_12_to_24_change": 1.8431436932253575e-18,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/96"
+        }
+      },
+      {
+        "p": 6,
+        "radius": 0.01,
+        "mu": 0.0,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.011588587458390141,
+        "absolute_velocity_order_12_to_24_change": 4.5102810375396984e-17,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/97"
+        }
+      },
+      {
+        "p": 8,
+        "radius": 0.01,
+        "mu": 0.0,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.02293172323497254,
+        "absolute_velocity_order_12_to_24_change": 1.3079815008865125e-15,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/98"
+        }
+      },
+      {
+        "p": 4,
+        "radius": 0.01,
+        "mu": 0.5,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.0006804530706372756,
+        "absolute_velocity_order_12_to_24_change": 2.168404344971009e-18,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/99"
+        }
+      },
+      {
+        "p": 6,
+        "radius": 0.01,
+        "mu": 0.5,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.010036011132943603,
+        "absolute_velocity_order_12_to_24_change": 3.8163916471489756e-17,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/100"
+        }
+      },
+      {
+        "p": 8,
+        "radius": 0.01,
+        "mu": 0.5,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.019859454874040082,
+        "absolute_velocity_order_12_to_24_change": 1.1379786002407855e-15,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/101"
+        }
+      },
+      {
+        "p": 4,
+        "radius": 0.01,
+        "mu": 0.9,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.00034248720161886786,
+        "absolute_velocity_order_12_to_24_change": 8.673617379884035e-19,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/102"
+        }
+      },
+      {
+        "p": 6,
+        "radius": 0.01,
+        "mu": 0.9,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.005051348162950549,
+        "absolute_velocity_order_12_to_24_change": 2.0816681711721685e-17,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/103"
+        }
+      },
+      {
+        "p": 8,
+        "radius": 0.01,
+        "mu": 0.9,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.009995706418248887,
+        "absolute_velocity_order_12_to_24_change": 5.724587470723463e-16,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/104"
+        }
+      },
+      {
+        "p": 4,
+        "radius": 0.01,
+        "mu": 0.999,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -3.5129659762998766e-05,
+        "absolute_velocity_order_12_to_24_change": 8.809142651444724e-20,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/105"
+        }
+      },
+      {
+        "p": 6,
+        "radius": 0.01,
+        "mu": 0.999,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.0005181278058570399,
+        "absolute_velocity_order_12_to_24_change": 2.2768245622195593e-18,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/106"
+        }
+      },
+      {
+        "p": 8,
+        "radius": 0.01,
+        "mu": 0.999,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.0010252814233761474,
+        "absolute_velocity_order_12_to_24_change": 5.876375774871434e-17,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/107"
+        }
+      },
+      {
+        "p": 4,
+        "radius": 0.1,
+        "mu": 0.0,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.007754878939122584,
+        "absolute_velocity_order_12_to_24_change": 3.729655473350135e-17,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/108"
+        }
+      },
+      {
+        "p": 6,
+        "radius": 0.1,
+        "mu": 0.0,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.11113025341158915,
+        "absolute_velocity_order_12_to_24_change": 2.7755575615628914e-16,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/109"
+        }
+      },
+      {
+        "p": 8,
+        "radius": 0.1,
+        "mu": 0.0,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.2135993087337454,
+        "absolute_velocity_order_12_to_24_change": 1.2599088439202433e-12,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/110"
+        }
+      },
+      {
+        "p": 4,
+        "radius": 0.1,
+        "mu": 0.5,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.006715922164553075,
+        "absolute_velocity_order_12_to_24_change": 3.2959746043559335e-17,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/111"
+        }
+      },
+      {
+        "p": 6,
+        "radius": 0.1,
+        "mu": 0.5,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.09624162258343853,
+        "absolute_velocity_order_12_to_24_change": 2.7755575615628914e-16,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/112"
+        }
+      },
+      {
+        "p": 8,
+        "radius": 0.1,
+        "mu": 0.5,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.18498242759421907,
+        "absolute_velocity_order_12_to_24_change": 1.0908773884210632e-12,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/113"
+        }
+      },
+      {
+        "p": 4,
+        "radius": 0.1,
+        "mu": 0.9,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.0033802733615027245,
+        "absolute_velocity_order_12_to_24_change": 1.6046192152785466e-17,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/114"
+        }
+      },
+      {
+        "p": 6,
+        "radius": 0.1,
+        "mu": 0.9,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.04844055441911836,
+        "absolute_velocity_order_12_to_24_change": 1.6653345369377348e-16,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/115"
+        }
+      },
+      {
+        "p": 8,
+        "radius": 0.1,
+        "mu": 0.9,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.09310578011805415,
+        "absolute_velocity_order_12_to_24_change": 5.491024301917946e-13,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/116"
+        }
+      },
+      {
+        "p": 4,
+        "radius": 0.1,
+        "mu": 0.999,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.0003467220162803795,
+        "absolute_velocity_order_12_to_24_change": 1.4094628242311558e-18,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/117"
+        }
+      },
+      {
+        "p": 6,
+        "radius": 0.1,
+        "mu": 0.999,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.004968653390348778,
+        "absolute_velocity_order_12_to_24_change": 1.5612511283791264e-17,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/118"
+        }
+      },
+      {
+        "p": 8,
+        "radius": 0.1,
+        "mu": 0.999,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.009550063074052184,
+        "absolute_velocity_order_12_to_24_change": 5.632994071191888e-14,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/119"
+        }
+      },
+      {
+        "p": 4,
+        "radius": 0.3,
+        "mu": 0.0,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.020840570907433326,
+        "absolute_velocity_order_12_to_24_change": 5.898059818321144e-17,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/120"
+        }
+      },
+      {
+        "p": 6,
+        "radius": 0.3,
+        "mu": 0.0,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.23973499438278947,
+        "absolute_velocity_order_12_to_24_change": 9.43689570931383e-16,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/121"
+        }
+      },
+      {
+        "p": 8,
+        "radius": 0.3,
+        "mu": 0.0,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.36590594599567755,
+        "absolute_velocity_order_12_to_24_change": 2.3390511749710186e-11,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/122"
+        }
+      },
+      {
+        "p": 4,
+        "radius": 0.3,
+        "mu": 0.5,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.01804846383520817,
+        "absolute_velocity_order_12_to_24_change": 5.551115123125783e-17,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/123"
+        }
+      },
+      {
+        "p": 6,
+        "radius": 0.3,
+        "mu": 0.5,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.20761659531161525,
+        "absolute_velocity_order_12_to_24_change": 7.216449660063518e-16,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/124"
+        }
+      },
+      {
+        "p": 8,
+        "radius": 0.3,
+        "mu": 0.5,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.31688384462803365,
+        "absolute_velocity_order_12_to_24_change": 2.0256740729251987e-11,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/125"
+        }
+      },
+      {
+        "p": 4,
+        "radius": 0.3,
+        "mu": 0.9,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.009084194251119565,
+        "absolute_velocity_order_12_to_24_change": 3.2959746043559335e-17,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/126"
+        }
+      },
+      {
+        "p": 6,
+        "radius": 0.3,
+        "mu": 0.9,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.10449806137448701,
+        "absolute_velocity_order_12_to_24_change": 4.0245584642661925e-16,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/127"
+        }
+      },
+      {
+        "p": 8,
+        "radius": 0.3,
+        "mu": 0.9,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.15949470414358088,
+        "absolute_velocity_order_12_to_24_change": 1.0195677635493894e-11,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/128"
+        }
+      },
+      {
+        "p": 4,
+        "radius": 0.3,
+        "mu": 0.999,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.0009317856309794404,
+        "absolute_velocity_order_12_to_24_change": 3.3610267347050637e-18,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/129"
+        }
+      },
+      {
+        "p": 6,
+        "radius": 0.3,
+        "mu": 0.999,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.010718594226665126,
+        "absolute_velocity_order_12_to_24_change": 4.163336342344337e-17,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/130"
+        }
+      },
+      {
+        "p": 8,
+        "radius": 0.3,
+        "mu": 0.999,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.01635971990801386,
+        "absolute_velocity_order_12_to_24_change": 1.045784986386522e-12,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/131"
+        }
+      },
+      {
+        "p": 4,
+        "radius": 1.0,
+        "mu": 0.0,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.017153426340004947,
+        "absolute_velocity_order_12_to_24_change": 8.673617379884035e-17,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/132"
+        }
+      },
+      {
+        "p": 6,
+        "radius": 1.0,
+        "mu": 0.0,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.07838345724262016,
+        "absolute_velocity_order_12_to_24_change": 2.3592239273284576e-16,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/133"
+        }
+      },
+      {
+        "p": 8,
+        "radius": 1.0,
+        "mu": 0.0,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.19466280763706675,
+        "absolute_velocity_order_12_to_24_change": 8.203590584621168e-11,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/134"
+        }
+      },
+      {
+        "p": 4,
+        "radius": 1.0,
+        "mu": 0.5,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.014855302972389415,
+        "absolute_velocity_order_12_to_24_change": 7.806255641895632e-17,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/135"
+        }
+      },
+      {
+        "p": 6,
+        "radius": 1.0,
+        "mu": 0.5,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.06788206520856038,
+        "absolute_velocity_order_12_to_24_change": 1.6653345369377348e-16,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/136"
+        }
+      },
+      {
+        "p": 8,
+        "radius": 1.0,
+        "mu": 0.5,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.16858293658570334,
+        "absolute_velocity_order_12_to_24_change": 7.104525301393494e-11,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/137"
+        }
+      },
+      {
+        "p": 4,
+        "radius": 1.0,
+        "mu": 0.9,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.00747700519515504,
+        "absolute_velocity_order_12_to_24_change": 4.683753385137379e-17,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/138"
+        }
+      },
+      {
+        "p": 6,
+        "radius": 1.0,
+        "mu": 0.9,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.03416655689659227,
+        "absolute_velocity_order_12_to_24_change": 1.1102230246251565e-16,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/139"
+        }
+      },
+      {
+        "p": 8,
+        "radius": 1.0,
+        "mu": 0.9,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.08485155065558722,
+        "absolute_velocity_order_12_to_24_change": 3.5758687677578394e-11,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/140"
+        }
+      },
+      {
+        "p": 4,
+        "radius": 1.0,
+        "mu": 0.999,
+        "third_azimuthal_difference_over_reference_sigma_cubed": -0.0007669327417503709,
+        "absolute_velocity_order_12_to_24_change": 3.903127820947816e-18,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/141"
+        }
+      },
+      {
+        "p": 6,
+        "radius": 1.0,
+        "mu": 0.999,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.003504538310853776,
+        "absolute_velocity_order_12_to_24_change": 9.540979117872439e-18,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/142"
+        }
+      },
+      {
+        "p": 8,
+        "radius": 1.0,
+        "mu": 0.999,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.008703408742878463,
+        "absolute_velocity_order_12_to_24_change": 3.66784380645413e-12,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/143"
+        }
+      },
+      {
+        "p": 4,
+        "radius": 3.0,
+        "mu": 0.0,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.09083401896880267,
+        "absolute_velocity_order_12_to_24_change": 2.498001805406602e-16,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/144"
+        }
+      },
+      {
+        "p": 6,
+        "radius": 3.0,
+        "mu": 0.0,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.24734453565494188,
+        "absolute_velocity_order_12_to_24_change": 6.106226635438361e-16,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/145"
+        }
+      },
+      {
+        "p": 8,
+        "radius": 3.0,
+        "mu": 0.0,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.06172323124509303,
+        "absolute_velocity_order_12_to_24_change": 1.3744311244678897e-11,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/146"
+        }
+      },
+      {
+        "p": 4,
+        "radius": 3.0,
+        "mu": 0.5,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.07866456795482064,
+        "absolute_velocity_order_12_to_24_change": 1.3877787807814457e-16,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/147"
+        }
+      },
+      {
+        "p": 6,
+        "radius": 3.0,
+        "mu": 0.5,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.21420665136444558,
+        "absolute_velocity_order_12_to_24_change": 5.551115123125783e-16,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/148"
+        }
+      },
+      {
+        "p": 8,
+        "radius": 3.0,
+        "mu": 0.5,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.053453886261912,
+        "absolute_velocity_order_12_to_24_change": 1.1902936969399036e-11,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/149"
+        }
+      },
+      {
+        "p": 4,
+        "radius": 3.0,
+        "mu": 0.9,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.03959363093206672,
+        "absolute_velocity_order_12_to_24_change": 1.1102230246251565e-16,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/150"
+        }
+      },
+      {
+        "p": 6,
+        "radius": 3.0,
+        "mu": 0.9,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.10781498351568848,
+        "absolute_velocity_order_12_to_24_change": 3.3306690738754696e-16,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/151"
+        }
+      },
+      {
+        "p": 8,
+        "radius": 3.0,
+        "mu": 0.9,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.026904532746615282,
+        "absolute_velocity_order_12_to_24_change": 5.991016710504837e-12,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/152"
+        }
+      },
+      {
+        "p": 4,
+        "radius": 3.0,
+        "mu": 0.999,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.004061205139493366,
+        "absolute_velocity_order_12_to_24_change": 7.806255641895632e-18,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/153"
+        }
+      },
+      {
+        "p": 6,
+        "radius": 3.0,
+        "mu": 0.999,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.011058818170012467,
+        "absolute_velocity_order_12_to_24_change": 3.642919299551295e-17,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/154"
+        }
+      },
+      {
+        "p": 8,
+        "radius": 3.0,
+        "mu": 0.999,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.0027596566441126374,
+        "absolute_velocity_order_12_to_24_change": 6.145110462152381e-13,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/155"
+        }
+      },
+      {
+        "p": 4,
+        "radius": 10.0,
+        "mu": 0.0,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.21934691488562652,
+        "absolute_velocity_order_12_to_24_change": 8.881784197001252e-16,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/156"
+        }
+      },
+      {
+        "p": 6,
+        "radius": 10.0,
+        "mu": 0.0,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.05665650840173716,
+        "absolute_velocity_order_12_to_24_change": 1.1102230246251565e-16,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/157"
+        }
+      },
+      {
+        "p": 8,
+        "radius": 10.0,
+        "mu": 0.0,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.0015163868914472372,
+        "absolute_velocity_order_12_to_24_change": 3.039155298950602e-13,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/158"
+        }
+      },
+      {
+        "p": 4,
+        "radius": 10.0,
+        "mu": 0.5,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.1899600005326954,
+        "absolute_velocity_order_12_to_24_change": 5.551115123125783e-16,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/159"
+        }
+      },
+      {
+        "p": 6,
+        "radius": 10.0,
+        "mu": 0.5,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.049065975565630846,
+        "absolute_velocity_order_12_to_24_change": 7.632783294297951e-17,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/160"
+        }
+      },
+      {
+        "p": 8,
+        "radius": 10.0,
+        "mu": 0.5,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.0013132295699590226,
+        "absolute_velocity_order_12_to_24_change": 2.631981004669326e-13,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/161"
+        }
+      },
+      {
+        "p": 4,
+        "radius": 10.0,
+        "mu": 0.9,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.09561110355638626,
+        "absolute_velocity_order_12_to_24_change": 2.7755575615628914e-16,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/162"
+        }
+      },
+      {
+        "p": 6,
+        "radius": 10.0,
+        "mu": 0.9,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.024695999461703533,
+        "absolute_velocity_order_12_to_24_change": 4.5102810375396984e-17,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/163"
+        }
+      },
+      {
+        "p": 8,
+        "radius": 10.0,
+        "mu": 0.9,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.0006609777219128288,
+        "absolute_velocity_order_12_to_24_change": 1.324737845462276e-13,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/164"
+        }
+      },
+      {
+        "p": 4,
+        "radius": 10.0,
+        "mu": 0.999,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.009807039567097362,
+        "absolute_velocity_order_12_to_24_change": 2.7755575615628914e-17,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/165"
+        }
+      },
+      {
+        "p": 6,
+        "radius": 10.0,
+        "mu": 0.999,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.00253312256486098,
+        "absolute_velocity_order_12_to_24_change": 6.071532165918825e-18,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/166"
+        }
+      },
+      {
+        "p": 8,
+        "radius": 10.0,
+        "mu": 0.999,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 6.779792754871947e-05,
+        "absolute_velocity_order_12_to_24_change": 1.3588129644907798e-14,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/167"
+        }
+      },
+      {
+        "p": 4,
+        "radius": 30.0,
+        "mu": 0.0,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.27583601754162645,
+        "absolute_velocity_order_12_to_24_change": 1.2212453270876722e-15,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/168"
+        }
+      },
+      {
+        "p": 6,
+        "radius": 30.0,
+        "mu": 0.0,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.00818938125311141,
+        "absolute_velocity_order_12_to_24_change": 2.7755575615628914e-17,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/169"
+        }
+      },
+      {
+        "p": 8,
+        "radius": 30.0,
+        "mu": 0.0,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 2.5725400003867372e-05,
+        "absolute_velocity_order_12_to_24_change": 5.0316840266833446e-15,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/170"
+        }
+      },
+      {
+        "p": 4,
+        "radius": 30.0,
+        "mu": 0.5,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.23888099846977862,
+        "absolute_velocity_order_12_to_24_change": 1.1379786002407855e-15,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/171"
+        }
+      },
+      {
+        "p": 6,
+        "radius": 30.0,
+        "mu": 0.5,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.007092212206470522,
+        "absolute_velocity_order_12_to_24_change": 2.5153490401663703e-17,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/172"
+        }
+      },
+      {
+        "p": 8,
+        "radius": 30.0,
+        "mu": 0.5,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 2.227884992586543e-05,
+        "absolute_velocity_order_12_to_24_change": 4.357557609017959e-15,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/173"
+        }
+      },
+      {
+        "p": 4,
+        "radius": 30.0,
+        "mu": 0.9,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.12023413254526621,
+        "absolute_velocity_order_12_to_24_change": 5.967448757360216e-16,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/174"
+        }
+      },
+      {
+        "p": 6,
+        "radius": 30.0,
+        "mu": 0.9,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.00356966852924391,
+        "absolute_velocity_order_12_to_24_change": 9.974659986866641e-18,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/175"
+        }
+      },
+      {
+        "p": 8,
+        "radius": 30.0,
+        "mu": 0.9,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 1.1213441889901865e-05,
+        "absolute_velocity_order_12_to_24_change": 2.1932545975775555e-15,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/176"
+        }
+      },
+      {
+        "p": 4,
+        "radius": 30.0,
+        "mu": 0.999,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.012332677391299661,
+        "absolute_velocity_order_12_to_24_change": 6.245004513516506e-17,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/177"
+        }
+      },
+      {
+        "p": 6,
+        "radius": 30.0,
+        "mu": 0.999,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.0003661486919986394,
+        "absolute_velocity_order_12_to_24_change": 1.0842021724855044e-18,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/178"
+        }
+      },
+      {
+        "p": 8,
+        "radius": 30.0,
+        "mu": 0.999,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 1.1501872084632925e-06,
+        "absolute_velocity_order_12_to_24_change": 2.2496708035129546e-16,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/179"
+        }
+      },
+      {
+        "p": 4,
+        "radius": 100.0,
+        "mu": 0.0,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.2984148517989717,
+        "absolute_velocity_order_12_to_24_change": 3.3306690738754696e-16,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/180"
+        }
+      },
+      {
+        "p": 6,
+        "radius": 100.0,
+        "mu": 0.0,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.0008079014647867712,
+        "absolute_velocity_order_12_to_24_change": 1.4094628242311558e-18,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/181"
+        }
+      },
+      {
+        "p": 8,
+        "radius": 100.0,
+        "mu": 0.0,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 2.329117875731572e-07,
+        "absolute_velocity_order_12_to_24_change": 4.519103415080944e-17,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/182"
+        }
+      },
+      {
+        "p": 4,
+        "radius": 100.0,
+        "mu": 0.5,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.25843484252447785,
+        "absolute_velocity_order_12_to_24_change": 2.220446049250313e-16,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/183"
+        }
+      },
+      {
+        "p": 6,
+        "radius": 100.0,
+        "mu": 0.5,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.0006996631922600033,
+        "absolute_velocity_order_12_to_24_change": 1.3010426069826053e-18,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/184"
+        }
+      },
+      {
+        "p": 8,
+        "radius": 100.0,
+        "mu": 0.5,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 2.0170752487919864e-07,
+        "absolute_velocity_order_12_to_24_change": 3.9136363234496896e-17,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/185"
+        }
+      },
+      {
+        "p": 4,
+        "radius": 100.0,
+        "mu": 0.9,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.13007601822433848,
+        "absolute_velocity_order_12_to_24_change": 1.942890293094024e-16,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/186"
+        }
+      },
+      {
+        "p": 6,
+        "radius": 100.0,
+        "mu": 0.9,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.0003521560841344021,
+        "absolute_velocity_order_12_to_24_change": 6.505213034913027e-19,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/187"
+        }
+      },
+      {
+        "p": 8,
+        "radius": 100.0,
+        "mu": 0.9,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 1.0152389447908041e-07,
+        "absolute_velocity_order_12_to_24_change": 1.9698254114211187e-17,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/188"
+        }
+      },
+      {
+        "p": 4,
+        "radius": 100.0,
+        "mu": 0.999,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 0.013342181085738121,
+        "absolute_velocity_order_12_to_24_change": 2.2551405187698492e-17,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/189"
+        }
+      },
+      {
+        "p": 6,
+        "radius": 100.0,
+        "mu": 0.999,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 3.612141814536631e-05,
+        "absolute_velocity_order_12_to_24_change": 5.421010862427522e-20,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/190"
+        }
+      },
+      {
+        "p": 8,
+        "radius": 100.0,
+        "mu": 0.999,
+        "third_azimuthal_difference_over_reference_sigma_cubed": 1.041352743695693e-08,
+        "absolute_velocity_order_12_to_24_change": 2.0204879078342765e-18,
+        "source": {
+          "record_id": "twins/exact-moments-preflight-02/result.json",
+          "json_pointer": "/local_moment_rows/191"
+        }
+      }
+    ],
+    "scope": "Unforced initial-population velocity structure, not a time movie or a torque predictor. Values at the eight recorded radii only."
+  },
+  "claim_boundaries": {
+    "reference_p4": "Sampling sign unresolved; one doubled-phase change fails the frozen 10% screen.",
+    "reference_p6": "Selected phase/timestep screen passes and nominal six-comparison interval is positive, but its lower margin is smaller than the selected phase shift.",
+    "reference_p8": "Positive nominal pointwise and six-comparison intervals; selected phase/timestep changes pass. Plus/minus=1.446 is a point estimate only.",
+    "frequency": "No doubled-phase test exists; do not qualify frequency phase accuracy.",
+    "prediction": "Known recorded forcing histories; no prospective new-history prediction.",
+    "original_ambition": "No factor-of-two live-bar result established.",
+    "outside_scope": [
+      "collective stability",
+      "live-halo response",
+      "stellar disc evolution",
+      "formation-history reachability",
+      "observational matching",
+      "CDM versus SIDM",
+      "external peer review",
+      "novelty or universal confidence coverage"
+    ]
+  },
+  "evidence": {
+    "primary_readback_id": "twins/exact-response-final-01/result.json",
+    "preflight_id": "twins/exact-moments-preflight-02/result.json",
+    "sha256_by_record_id": {
+      "twins/exact-moments-preflight-02/frozen-populations.json": "dc97087897f70d889aefe827499cf68a966a25c18f3ed5e9cb9cd44b82aade31",
+      "documents/TWINS_EXACT_RESPONSE_PROTOCOL.md": "f8d003681b3f19aeda3eee21301cc92a77102a1ce3203d2a774acb74f22ef944",
+      "source/twins_exact_response.py": "2adef1e79b868d3ac7a5222aa411ee6a5e646bb529cdbe4b070e2d23633283dd",
+      "source/twins_exact_moments.py": "1d1a175ebd380004458f83c2bc27ef3323be33315d7a4248faa8722d8f7a2f08",
+      "twins/randomized-01/config.json": "ecc3bc532f2de9e3738c70da8faa8bc8aed3d6b8ddd3d0a804f39a99a7c00447",
+      "twins/randomized-01/library-0.npz": "dbc519aa6e0185284f72e9249a86c13f9f6a763743a56c336e5883bcd8faf4fa",
+      "twins/randomized-01/reference-0.npz": "87f29f00677a6d887eab465c2177dd6322718d005aeaa5e15475047a02b14723",
+      "twins/randomized-01/reference-0.json": "75ef11a50cc8384e275fec51226dd85ac1bdb75406b4e8ccdda1928b85957f2f",
+      "twins/randomized-01/frequency-0.npz": "ca3fac657ad502225b3b0496b2305356fd6ef6d624b23be541a14aa49c7d1b2d",
+      "twins/randomized-01/frequency-0.json": "f9239d88d0c22de1dd7df0f00d83e5180a3d4b817e19cf75a8a39f231e61eeaf",
+      "twins/randomized-01/library-1.npz": "5ce701bbb1281725cb491a71a7c3e98b3775550fb7b4140346d6580f6d845a44",
+      "twins/randomized-01/reference-1.npz": "5f15c5a16d0d589a79833359ae707c59e319eda056db5ee8263245a2eaf2e55c",
+      "twins/randomized-01/reference-1.json": "432691dcc535396bd137b1b5cbd86d2b26c832753572f3f63155d44a2bfe17ec",
+      "twins/randomized-01/frequency-1.npz": "d44e95241a09a176e6ab0e25ed0e8b986ddfa0d9fb8021ba4d2a589942b4435e",
+      "twins/randomized-01/frequency-1.json": "1383d4c71a1abfd602eb62c1594d2a9c4e80f525a80c87b6147ac5857094ed8a",
+      "twins/randomized-01/library-2.npz": "c7f78a8e978613748db26a5326b17ca59d6a4cb339a006bf5aa6fb0fd5c99013",
+      "twins/randomized-01/reference-2.npz": "b54743d0b9bc1d74c55ca06ba6e312f4fb8413facd440942ed0f729012bc1d8a",
+      "twins/randomized-01/reference-2.json": "72a3cbcdb6d1215d08b0de2aea44d0187b26bf0bfdd58b271be16aad1b9342c2",
+      "twins/randomized-01/frequency-2.npz": "67355579f50023269a6a802b0e6a59d7b8dcb47d8f019468da86a216cdee3ad1",
+      "twins/randomized-01/frequency-2.json": "83f4ca9bd6a2242346949418ed028bf06807b40797273c32dd55977272806c88",
+      "twins/randomized-01/library-3.npz": "4c7645de7aae27f7a1c93b08dcc13e784fc55c4f1ef14022b6da70c110d572ad",
+      "twins/randomized-01/reference-3.npz": "4bd57fd9da33e004744beaedba72b19fb6be9c9ce67e1ce86ae17146520df6d2",
+      "twins/randomized-01/reference-3.json": "d3b45c37b4e7c7b096916c04f8d33033db3b7c49ebbed43edcad1b2f55c30f46",
+      "twins/randomized-01/frequency-3.npz": "ad6ab46dcb69ee8bde2e3de66a96c9b30903a4b6270d7ff24545310bbb1e171d",
+      "twins/randomized-01/frequency-3.json": "88a93e701da00cb46599754aad5404264b90cc7358b70cd810472610e7d247b9",
+      "twins/randomized-01/library-4.npz": "728ba0ea27d8a5e409b7e57ba80f9ba4a17014776bacf11efed0a234d0c81d9a",
+      "twins/randomized-01/reference-4.npz": "1ce162fd5e0a6e87ba777e86f1f8f82a04ad44400d7f187e236a043cbb31eaeb",
+      "twins/randomized-01/reference-4.json": "fdd793d0b92d66e57f6d66f166322aa0f367f87aec42b4bfef5013009fc775d4",
+      "twins/randomized-01/frequency-4.npz": "77bb6fcf1ce656ab0f9510be8c48871b237bf25effa15895823d0135d9a25195",
+      "twins/randomized-01/frequency-4.json": "fe4e9d202f384bbd43626ce26f0cca15b322043536de515c2b2bfcedfdda92b7",
+      "twins/randomized-01/library-5.npz": "69a14709539b9853fd991ae87696ef5c0a79b989f56789e81d21b6a0455c4d36",
+      "twins/randomized-01/reference-5.npz": "20f4359a0af4d69d29a944a221b793a002fd10409dcf699b5b887aace9943be0",
+      "twins/randomized-01/reference-5.json": "bda98777211b809f11673de5aa7fce07af195b04bbd862930450ab685cda7f41",
+      "twins/randomized-01/frequency-5.npz": "d1b6d9091c7ed6f3e73511bbefd2ad9415d0a311d3444802d1a4b7ff2625786f",
+      "twins/randomized-01/frequency-5.json": "46f99fc9d4d09d6c5f54e7da97d8bebe3ca46c1334d174ff656b7be11de8a0ff",
+      "twins/randomized-01/library-6.npz": "16623bee3364ec7009272624958fecd5d50772b32c056638c3d3720059a4d306",
+      "twins/randomized-01/reference-6.npz": "db420430197c5fcf86a3e4279284770e406b32c7dcc4998c5f87c1c57595092c",
+      "twins/randomized-01/reference-6.json": "5d91c5bae15bf94aefd61ab1a317c55cc4e6c2c8e2262367fbbd9c9c67c5f767",
+      "twins/randomized-01/frequency-6.npz": "82750e65a9a95f3fe57f75f504a27410050ec463325ad127286475bbac04904a",
+      "twins/randomized-01/frequency-6.json": "02524751062f8c07062b8373cf712174aebed0f816da8708ad9bb4800269ed1b",
+      "twins/randomized-01/library-7.npz": "68caae44b0d815cfecaa0a1ea8920208a974979574d03cb8b0fa3752e75db3a9",
+      "twins/randomized-01/reference-7.npz": "2481e21cdeb5f96dca1a9b1d7ce6933b1d4de4f6167b36c8e15046b7c18d7287",
+      "twins/randomized-01/reference-7.json": "6a4df9318a5faf42ad01caeae95a15eba397e73181fd39cd4b3cce97df9207a7",
+      "twins/randomized-01/frequency-7.npz": "3dd2bd68642df9497a1002d522c3e6f9d7b1e698a17ef7e50a7321fac2f50973",
+      "twins/randomized-01/frequency-7.json": "86e13ed4bf5a385b4f1da33e53bfbd188d8b5bb6ebc59108ea57502e462a08fe",
+      "twins/randomized-01/result.json": "742d611b618de3ed19fe4fe1914a37f2f315675db2f4bed03c976f9243100d0a",
+      "twins/randomized-01/compute-ledger.json": "c713f584f2f5a316bd36e7e58e39ad1c7118267e66ab4dbf3d5dcc14e436f739",
+      "twins/randomized-01/phase-double-0.npz": "958b5127e3f05df5809be7d5c461c22e7671018e0bf945e61d2555ca10930716",
+      "twins/randomized-01/phase-double-0.json": "e48e5ef285287d35163d7eed36b1efefee300d099145891d5b77620664eed8f6",
+      "twins/randomized-01/phase-double-1.npz": "2348ff203667bcdb09a818a7a5c3140bc9cc5c3cd5b1bda8e94a1671cb32a390",
+      "twins/randomized-01/phase-double-1.json": "b501956b6714f55a52e8947ba2ffff31ed7c188b60c55486a16d106b06580cb9",
+      "twins/randomized-01/halfstep-reference-0.npz": "347f6bcdbb6bb10dcc251c8a3ba00d12248473cee3f03af0920cd6e49e2ef4f7",
+      "twins/randomized-01/halfstep-reference-0.json": "97c279f91e9f95b31c73977a5d07357ba086e0160c1f2a375b6cd5065343664a",
+      "twins/randomized-01/halfstep-frequency-0.npz": "949301755b43ec73720da53ce076227916462d8ef4e6af15468e148375053e6d",
+      "twins/randomized-01/halfstep-frequency-0.json": "9dda4f59ab873d8bbe92c98a65bb3f5b3c505f2b5d873f2c27c87d3082a78a5c",
+      "twins/exact-response-final-01/result.json": "f8b2be7367a2b0bfe9b715e221283845beadf0d74e90176c076c55eedc94cbe8",
+      "twins/exact-moments-preflight-02/result.json": "11b1dd074f7d168a8cf32fe0d3c3c9db96dfae42b00b7e0f9ffbc871bbb5408a",
+      "documents/TWINS_EXACT_MOMENTS_PROTOCOL.md": "e5c87332f3f790b442d166c8ee3081712b194cd39996c661f8d4c58b52342ba3",
+      "documents/TWINS_EXACT_MOMENTS_DERIVATION.md": "7f11329fd042b4cada48f02a819e398bc2d4c4ed1459acc289cf8f4394036bc2",
+      "documents/TWINS_EXACT_MOMENTS_CHALLENGE.md": "70b30c8faf508777f22a230f947b3efc003ecb9762d4af8969650a6646f02855",
+      "documents/TWINS_EXACT_MOMENTS_CHALLENGE.json": "16919ce554535a5f4b83bde36e408772e2bd7f7b92e3ef939612d3f2a01efdad"
+    },
+    "selector_rule": "JSON pointers use RFC 6901; array keys are literal NPZ keys.",
+    "exporter_sha256": "04d090cba3a37393928beadd89a334e1d07c05eea643bdf3b1057e3eee612fbc"
+  }
+}

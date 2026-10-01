@@ -61,7 +61,9 @@ either-sign criteria were frozen after the delta=.05 stage closed, in
 combined 2-core-hour ceiling. The original waveform is calibration selected
 from earlier results; new-law outcomes on the second waveform are prospective
 but that waveform has already been used with other collision laws. Terminal
-outcomes belong in [SCATTER_FINDINGS.md](SCATTER_FINDINGS.md).
+outcomes are summarized in [PUBLIC_TERMINAL_BRANCHES.md](PUBLIC_TERMINAL_BRANCHES.md).
+The full `SCATTER_FINDINGS.md` is an archived findings record, not a file supplied
+by this limited release.
 
 ## A continuous positive-law extension, derived but not evolved
 

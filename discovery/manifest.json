@@ -1,13 +1,14 @@
 {
   "schema_version": 1,
   "campaign": "discovery-20261001",
-  "status": "limited_known_control_release",
-  "scope": "Three regenerated known-limit controls, terminal source families and compact published operands; not a complete reproduction of all discovery claims.",
+  "status": "limited_controls_exact_twin_analysis_and_published_output_release",
+  "scope": "Three regenerated known-limit controls; terminal collision/inertia and optional echo source families; exact-twin unforced construction and compact saved-response analysis; recorded cored feedback outputs. Not a complete physical reproduction of the campaign.",
   "tested_environment": {
     "python": "3.11.14",
     "numpy": "1.26.4",
     "scipy": "1.17.1",
-    "matplotlib": "3.11.2"
+    "matplotlib": "3.11.2",
+    "optional_mpmath": "1.3.0"
   },
   "upstream_dependency": {
     "optional_agama_revision": "f302756b8af2b763db58e278e30478517dc8eea3",
@@ -30,21 +31,25 @@
     },
     {
       "path": "README.md",
-      "bytes": 10239,
-      "sha256": "488cfe8d75aff0a283444db7ab585470219b6e65d3e67ffb492ba887b74b5666",
+      "bytes": 15738,
+      "sha256": "84f988a7e4ee5a2a3c42064984aca08a48877eeea96ab51c3c65b8f07fbdac77",
       "archived_sha256": "12b58d9ca5e59cfebe4defe8e4e1b57bcef9836faceac4c79a02299b8b704af7",
       "byte_identical_to_archive": false,
-      "release_transformation": "Adapted bundle guide, portable report link and per-condition interval wording. Scientific scope unchanged."
+      "release_transformation": "Adapted bundle guide, links and release scope for exact-twin analysis and closed cored feedback outputs. Prior source and receipt hashes preserved.",
+      "previous_release_sha256": "488cfe8d75aff0a283444db7ab585470219b6e65d3e67ffb492ba887b74b5666"
     },
     {
       "path": "REPORT.md",
-      "bytes": 13542,
-      "sha256": "d818fa7d1bc1e6da7e1dd5aafe8f2146ab9b353ecd3d5e1f6a663345e2442b0c",
+      "bytes": 23136,
+      "sha256": "a74efbe3c70c10d33420febfc674376d2db5dbe993bf3060faf88354f2352055",
       "derived_from": [
+        "research/discovery-20261001/PUBLIC_TWINS_EXACT_SUMMARY.md",
         "research/discovery-20261001/PUBLIC_TERMINAL_BRANCHES.md",
-        "research/discovery-20261001/PUBLIC_ECHO_SUMMARY.md"
+        "research/discovery-20261001/PUBLIC_ECHO_SUMMARY.md",
+        "research/discovery-20261001/FEEDBACK_PUBLIC_SUMMARY.md"
       ],
-      "scope": "Portable checkpoint report; halo twins and feedback remain active and have no final outcome included."
+      "scope": "Closed analytic twin construction and prescribed-field response, collision/inertia references, recorded echo comparisons and cored feedback outputs; pending growth/cuspy outcomes excluded.",
+      "previous_release_sha256": "d818fa7d1bc1e6da7e1dd5aafe8f2146ab9b353ecd3d5e1f6a663345e2442b0c"
     },
     {
       "path": "data/echoes.json",
@@ -53,6 +58,15 @@
       "archived_sha256": "ed06ce140e30c2a0b899f9999f99a196d907e9603aa874df5ef497388d06f5d0",
       "byte_identical_to_archive": false,
       "release_transformation": "Updated only release availability/scope and relative bundle/receipt links. Scientific operands and archived provenance hashes unchanged."
+    },
+    {
+      "path": "data/feedback.json",
+      "bytes": 18140,
+      "sha256": "fb7ae4ac535d4bf857184103f406d8a9654acd3c32cf5bb98c584fb6e41ceb5d",
+      "archived_record_id": "web/data/discovery-20261001/feedback.json",
+      "archived_sha256": "1d6feb31abd2b193202264332e53434883e5e7cd9e58e7d7b0a8e526ad0625fc",
+      "byte_identical_to_archive": false,
+      "release_transformation": "Added only release metadata identifying the supplied sources, operands and limited reproduction scope. Archived scientific fields and evidence hashes unchanged."
     },
     {
       "path": "data/inertia.json",
@@ -69,6 +83,96 @@
       "archived_sha256": "4018dacf6a033737c2436021291306f61ed06ef070129aef3a62d7ab76782f02",
       "byte_identical_to_archive": false,
       "release_transformation": "Updated only release availability/scope and relative bundle/receipt links. Scientific operands and archived provenance hashes unchanged."
+    },
+    {
+      "path": "data/twins-exact.json",
+      "bytes": 137191,
+      "sha256": "313539c8e2e9a3f6a560e67b79be512c01fa776d98c0e8071c393e8e18396177",
+      "archived_record_id": "web/data/discovery-20261001/twins-exact.json",
+      "archived_sha256": "c6d8ebe26b7828e79ea9640ceee08d3d7ba5f1c0f15285f3c7e8231e4412fc44",
+      "byte_identical_to_archive": false,
+      "release_transformation": "Added only release metadata identifying the supplied sources, operands and limited reproduction scope. Archived scientific fields and evidence hashes unchanged."
+    },
+    {
+      "path": "data/twins-velocity.json",
+      "bytes": 98641,
+      "sha256": "4dfd5260554f1ec76d3909caab80cc187f4f4a8db4f164f6ad6ec8b76d21b14d",
+      "archived_record_id": "web/data/discovery-20261001/twins-velocity.json",
+      "archived_sha256": "a2db92ff4d8545da2b4a17c23d6423db90dcbb196f7ae0109a27cad51051eadf",
+      "byte_identical_to_archive": false,
+      "release_transformation": "Added only release metadata identifying the supplied sources, operands and limited reproduction scope. Archived scientific fields and evidence hashes unchanged."
+    },
+    {
+      "path": "operands/exact-twins/README.md",
+      "bytes": 2826,
+      "sha256": "bf2a040f939d24d334b5e640e8b862b32f7a4377bbba17297ba417c7ffeb6df9"
+    },
+    {
+      "path": "operands/exact-twins/frozen-populations.json",
+      "bytes": 3670,
+      "sha256": "dc97087897f70d889aefe827499cf68a966a25c18f3ed5e9cb9cd44b82aade31",
+      "archived_record_id": "results/discovery-20261001/twins/exact-moments-preflight-02/frozen-populations.json",
+      "archived_sha256": "dc97087897f70d889aefe827499cf68a966a25c18f3ed5e9cb9cd44b82aade31",
+      "byte_identical_to_archive": true
+    },
+    {
+      "path": "operands/exact-twins/library-0.npz",
+      "bytes": 58834,
+      "sha256": "8442737c732c058c043bd793fbcfcfa4443a7136f2a5f82e055b128c106e92c2",
+      "scope": "Compact saved family operands. Original complete-input hashes and exact array selections are in operands/exact-twins/manifest.json."
+    },
+    {
+      "path": "operands/exact-twins/library-1.npz",
+      "bytes": 41888,
+      "sha256": "d61d2863814ecf4cfbd940cc0f1d0db9b7d4a9fca102a8d482dacf537fb99808",
+      "scope": "Compact saved family operands. Original complete-input hashes and exact array selections are in operands/exact-twins/manifest.json."
+    },
+    {
+      "path": "operands/exact-twins/library-2.npz",
+      "bytes": 33507,
+      "sha256": "fc9173ce3326feb2c3d3601c08b0f61968e772c910cd47ce0b78e81b5f4af9e0",
+      "scope": "Compact saved family operands. Original complete-input hashes and exact array selections are in operands/exact-twins/manifest.json."
+    },
+    {
+      "path": "operands/exact-twins/library-3.npz",
+      "bytes": 33502,
+      "sha256": "e7a4661a8608de01dba98da41a62d43bfd1bc4fd0186f84a283613895ac3d57f",
+      "scope": "Compact saved family operands. Original complete-input hashes and exact array selections are in operands/exact-twins/manifest.json."
+    },
+    {
+      "path": "operands/exact-twins/library-4.npz",
+      "bytes": 33481,
+      "sha256": "0fc9de1c878844caaf3c5026d6ad4f4111502973a32649bd1c3dfc87eeea4033",
+      "scope": "Compact saved family operands. Original complete-input hashes and exact array selections are in operands/exact-twins/manifest.json."
+    },
+    {
+      "path": "operands/exact-twins/library-5.npz",
+      "bytes": 33483,
+      "sha256": "873b4b4e9cf7c1f6caf7651a90cfb0a3ae38124733f05d48b97536f2ca77c14a",
+      "scope": "Compact saved family operands. Original complete-input hashes and exact array selections are in operands/exact-twins/manifest.json."
+    },
+    {
+      "path": "operands/exact-twins/library-6.npz",
+      "bytes": 33469,
+      "sha256": "47dfb4fa9cab3e34b02fdeb66b9bdcdc91d4daaade2c312ff542a774754e79c2",
+      "scope": "Compact saved family operands. Original complete-input hashes and exact array selections are in operands/exact-twins/manifest.json."
+    },
+    {
+      "path": "operands/exact-twins/library-7.npz",
+      "bytes": 33474,
+      "sha256": "9a16f4387304050159f02d13aef935062f567fdbe65e1d1b95934e8f82ac0ed3",
+      "scope": "Compact saved family operands. Original complete-input hashes and exact array selections are in operands/exact-twins/manifest.json."
+    },
+    {
+      "path": "operands/exact-twins/manifest.json",
+      "bytes": 20441,
+      "sha256": "2e678d2f10e4659ee2e1b0d1c9fe4928df7cdffee48ba681aaf99f609b5a3500",
+      "scope": "Subset hashes and definitions, original complete-input hashes and selected arrays, and stored pinned-AGAMA sampling density; no complete trajectories."
+    },
+    {
+      "path": "proof-optional-requirements.lock.txt",
+      "bytes": 14,
+      "sha256": "a699f46ed76bd216f1081b6b2330e4fb45d7c8c5a5354b208694d6590a5a8645"
     },
     {
       "path": "reproductions/public-controls-01/README.md",
@@ -127,6 +231,31 @@
       "byte_identical_to_archive": true
     },
     {
+      "path": "reproductions/twins-analysis-01/README.md",
+      "bytes": 823,
+      "sha256": "d913a4df97d4571828577fea0788d6905192ca33f101a91350061553be231368"
+    },
+    {
+      "path": "reproductions/twins-analysis-01/receipt.json",
+      "bytes": 853,
+      "sha256": "dd9f38708ddcda56d6041b8ba26d0cda715006a961e1fa672bbe37035466e2d0"
+    },
+    {
+      "path": "reproductions/twins-analysis-01/result.json",
+      "bytes": 40759,
+      "sha256": "94143ba22916b1b1d263fca300ba46c0ed2a81ee75fea9b1b9435beea5463876"
+    },
+    {
+      "path": "reproductions/twins-proof-01/README.md",
+      "bytes": 646,
+      "sha256": "a76fb85a22589f1478b9eb94a4ed1787879b1fc4c92fcfcbe866848398895963"
+    },
+    {
+      "path": "reproductions/twins-proof-01/result.json",
+      "bytes": 3985,
+      "sha256": "f3d6dfb6cba783721964d3001ae91cccee48ce6022a50aa2d5d879847afa8429"
+    },
+    {
       "path": "requirements.lock.txt",
       "bytes": 47,
       "sha256": "c96d7decedb3a43933eff58c7dd915db58207aeeaa6a06ef98ea4375a711760b",
@@ -156,10 +285,21 @@
     },
     {
       "path": "research/discovery-20261001/ECHO_TWO_FREQUENCY_PROTOCOL.md",
-      "bytes": 12072,
-      "sha256": "9dff371088fd26046a8f2335f8d70b32a8ccd90eae3f8fb488697d1cc1a60dca",
+      "bytes": 12223,
+      "sha256": "1357054bc5d9425713da75f544f3bb3d0940c566b5a1fd795045dacac5e06ee3",
       "archived_sha256": "9dff371088fd26046a8f2335f8d70b32a8ccd90eae3f8fb488697d1cc1a60dca",
-      "byte_identical_to_archive": true
+      "byte_identical_to_archive": false,
+      "release_transformation": "Replaced absent raw-run download links with archived record IDs and the supplied scientific export; scientific protocol and recorded values unchanged.",
+      "previous_release_sha256": "9dff371088fd26046a8f2335f8d70b32a8ccd90eae3f8fb488697d1cc1a60dca"
+    },
+    {
+      "path": "research/discovery-20261001/FEEDBACK_PUBLIC_SUMMARY.md",
+      "bytes": 3450,
+      "sha256": "f6be2225becc1656f1c4ff357e79f9cc5efd205244d3537968a92eb86d466fc2",
+      "archived_record_id": "research/discovery-20261001/FEEDBACK_PUBLIC_SUMMARY.md",
+      "archived_sha256": "df10e51060f9d624a7dc3b5e6a393f3740eb530105a3ac541c0091ef0bc869c7",
+      "byte_identical_to_archive": false,
+      "release_transformation": "Restored normal prose spacing and scientific notation, adapted the evidence link, and stated outputs-only release and pending cuspy follow-up; reported numerical values unchanged."
     },
     {
       "path": "research/discovery-20261001/INERTIA_PROTOCOL.md",
@@ -167,6 +307,15 @@
       "sha256": "332cefcb4223280f0041ef249e6a0b306cf2eeea9df7808d69a51d0a5928b5ed",
       "archived_sha256": "332cefcb4223280f0041ef249e6a0b306cf2eeea9df7808d69a51d0a5928b5ed",
       "byte_identical_to_archive": true
+    },
+    {
+      "path": "research/discovery-20261001/LEARNINGS.md",
+      "bytes": 5486,
+      "sha256": "cb8c7cbdaead4becc4453b55c0106f6976ebf934617f7983ba0c355421be8d07",
+      "archived_record_id": "research/discovery-20261001/LEARNINGS.md",
+      "archived_sha256": "3c88f3b9e642c17995bb2d2558a7d39261a04edc218aea49a135bc795297c0de",
+      "byte_identical_to_archive": false,
+      "release_transformation": "Adapted checkpoint links and limited-release status; added reference-frequency twin qualifications and excluded pending cusp/growth outcomes. Science-only interim learning note."
     },
     {
       "path": "research/discovery-20261001/PUBLIC_ECHO_SUMMARY.md",
@@ -185,6 +334,15 @@
       "release_transformation": "Adapted relative links and limited-release availability text. Scientific findings unchanged."
     },
     {
+      "path": "research/discovery-20261001/PUBLIC_TWINS_EXACT_SUMMARY.md",
+      "bytes": 5761,
+      "sha256": "d3d396c17199d709c86216bda1078847c05d00f37b6e5dada5a6f2c9dcbf37c6",
+      "archived_record_id": "research/discovery-20261001/PUBLIC_TWINS_EXACT_SUMMARY.md",
+      "archived_sha256": "4a165746b4692c5009c84334c30bd4ab14b64b2befdae89f4df1aaab131eb8f5",
+      "byte_identical_to_archive": false,
+      "release_transformation": "Adapted relative evidence links, restored normal prose spacing and added the fixed-output replay scope; scientific findings unchanged."
+    },
+    {
       "path": "research/discovery-20261001/SCATTER_MOMENT_PROTOCOL.md",
       "bytes": 5143,
       "sha256": "fb322494e8e8f3771cb89e9c5fe18cf7eeaef1bfd13cc02cc00ce2d24eefbf84",
@@ -193,10 +351,12 @@
     },
     {
       "path": "research/discovery-20261001/SCATTER_NEXT_SCREEN.md",
-      "bytes": 4649,
-      "sha256": "8a2f5954c3bf043ab94f7cf81178dac1ec441eb9f5633074f85cd1a553ae817e",
+      "bytes": 4781,
+      "sha256": "3db967e224c500a8b44ffc85dc3c8395d386f2e265eda32d919f00ee4c22fb86",
       "archived_sha256": "8a2f5954c3bf043ab94f7cf81178dac1ec441eb9f5633074f85cd1a553ae817e",
-      "byte_identical_to_archive": true
+      "byte_identical_to_archive": false,
+      "release_transformation": "Adapted the absent full-findings link to the supplied terminal summary and identified the historical archive; scientific protocol unchanged.",
+      "previous_release_sha256": "8a2f5954c3bf043ab94f7cf81178dac1ec441eb9f5633074f85cd1a553ae817e"
     },
     {
       "path": "research/discovery-20261001/SCATTER_PROTOCOL.md",
@@ -204,6 +364,58 @@
       "sha256": "f5e582e5bb1ac76e84fa93cd0742fab71da59849615e6cbb9595b55c04630d1d",
       "archived_sha256": "f5e582e5bb1ac76e84fa93cd0742fab71da59849615e6cbb9595b55c04630d1d",
       "byte_identical_to_archive": true
+    },
+    {
+      "path": "research/discovery-20261001/TWINS_EXACT_MOMENTS_CHALLENGE.json",
+      "bytes": 2862,
+      "sha256": "ca1d5d53856877257eb6b7578a218f4839281f4a047a0ba1bca9b1f28ab50c73",
+      "archived_record_id": "research/discovery-20261001/TWINS_EXACT_MOMENTS_CHALLENGE.json",
+      "archived_sha256": "16919ce554535a5f4b83bde36e408772e2bd7f7b92e3ef939612d3f2a01efdad",
+      "byte_identical_to_archive": false,
+      "release_transformation": "Omitted CPU accounting; exact algebra and numerical fields unchanged."
+    },
+    {
+      "path": "research/discovery-20261001/TWINS_EXACT_MOMENTS_CHALLENGE.md",
+      "bytes": 6252,
+      "sha256": "b84518d23061bb0a5670fab382bc9d83896ca87e8d74e20f7468ac948507b212",
+      "archived_record_id": "research/discovery-20261001/TWINS_EXACT_MOMENTS_CHALLENGE.md",
+      "archived_sha256": "70b30c8faf508777f22a230f947b3efc003ecb9762d4af8969650a6646f02855",
+      "byte_identical_to_archive": false,
+      "release_transformation": "Adapted challenge-source links and described the portable proof adapter and optional mpmath check; archived scientific challenge unchanged."
+    },
+    {
+      "path": "research/discovery-20261001/TWINS_EXACT_MOMENTS_DERIVATION.md",
+      "bytes": 8846,
+      "sha256": "d0188af93988c2d532a689f8f6c728acce150864b9301f0f3c45d5ca37c2b1b9",
+      "archived_record_id": "research/discovery-20261001/TWINS_EXACT_MOMENTS_DERIVATION.md",
+      "archived_sha256": "7f11329fd042b4cada48f02a819e398bc2d4c4ed1459acc289cf8f4394036bc2",
+      "byte_identical_to_archive": false,
+      "release_transformation": "Adapted preserved-evidence links and clarified that the AGAMA-importing original is an inspection source; scientific derivation unchanged."
+    },
+    {
+      "path": "research/discovery-20261001/TWINS_EXACT_MOMENTS_PROTOCOL.md",
+      "bytes": 3618,
+      "sha256": "e5c87332f3f790b442d166c8ee3081712b194cd39996c661f8d4c58b52342ba3",
+      "archived_record_id": "research/discovery-20261001/TWINS_EXACT_MOMENTS_PROTOCOL.md",
+      "archived_sha256": "e5c87332f3f790b442d166c8ee3081712b194cd39996c661f8d4c58b52342ba3",
+      "byte_identical_to_archive": true
+    },
+    {
+      "path": "research/discovery-20261001/TWINS_EXACT_RESPONSE_PROTOCOL.md",
+      "bytes": 4674,
+      "sha256": "f8d003681b3f19aeda3eee21301cc92a77102a1ce3203d2a774acb74f22ef944",
+      "archived_record_id": "research/discovery-20261001/TWINS_EXACT_RESPONSE_PROTOCOL.md",
+      "archived_sha256": "f8d003681b3f19aeda3eee21301cc92a77102a1ce3203d2a774acb74f22ef944",
+      "byte_identical_to_archive": true
+    },
+    {
+      "path": "research/discovery-20261001/TWINS_PRIORITY_REVIEW.md",
+      "bytes": 9246,
+      "sha256": "30879b3c46ffc9d414815b1b29343a117c375c514b44b37a90726375cb354354",
+      "archived_record_id": "research/discovery-20261001/TWINS_PRIORITY_REVIEW.md",
+      "archived_sha256": "4247944a892907904633deacdbeea9a88b070bcb03d64e11e3383604655bdb43",
+      "byte_identical_to_archive": false,
+      "release_transformation": "Removed the private memo label and local-reading wording; sources, quotations and priority assessment unchanged."
     },
     {
       "path": "scripts/discovery/echo_halo.py",
@@ -276,6 +488,16 @@
       "byte_identical_to_archive": true
     },
     {
+      "path": "scripts/discovery/replay_twins_exact.py",
+      "bytes": 9286,
+      "sha256": "19c6dd5834897e04637ec15a4f24593a61fb63b3e13336612fb2ebbc8f01b465",
+      "scope": "Portable NumPy/SciPy saved-response analysis; fixed impulses, original F0 series and frozen alpha, no evolution.",
+      "adapted_from": [
+        "source-snapshots/exact-twins/twins_exact_response.py",
+        "source-snapshots/exact-twins/twins_exact_moments.py"
+      ]
+    },
+    {
       "path": "scripts/discovery/reproduce_controls.py",
       "bytes": 3451,
       "sha256": "51c132d81ebedccfa1f34b7eff2ac280f5093ce09bd00d1fcbc01483d6ac0ac7",
@@ -318,9 +540,51 @@
       "byte_identical_to_archive": true
     },
     {
+      "path": "scripts/discovery/twins_proof_challenge.py",
+      "bytes": 7544,
+      "sha256": "41d2fd67664e24f7f0e8530796e39ba19d9f2cea6f902941aed99ef3f36b6b6a",
+      "scope": "Portable standard-library unforced proof adapter, with optional mpmath alpha check.",
+      "adapted_from": [
+        "source-snapshots/exact-twins/TWINS_EXACT_MOMENTS_CHALLENGE.py"
+      ]
+    },
+    {
       "path": "source-snapshots/README.md",
-      "bytes": 1375,
-      "sha256": "b771ae1ef6bdb27df58a6b999b92b332628c5159aff9d6eef2001a04bef957b5"
+      "bytes": 2299,
+      "sha256": "7f979d78b2cfeec5442ce3ca7a756040990224a02888748c4bca34061c4f28a3",
+      "previous_release_sha256": "b771ae1ef6bdb27df58a6b999b92b332628c5159aff9d6eef2001a04bef957b5"
+    },
+    {
+      "path": "source-snapshots/exact-twins/TWINS_EXACT_MOMENTS_CHALLENGE.py",
+      "bytes": 6338,
+      "sha256": "0212440ef04c89f811ead89d65d2ae1a09f282b234d5d3912da7d553303cd85f",
+      "archived_record_id": "research/discovery-20261001/TWINS_EXACT_MOMENTS_CHALLENGE.py",
+      "archived_sha256": "0212440ef04c89f811ead89d65d2ae1a09f282b234d5d3912da7d553303cd85f",
+      "byte_identical_to_archive": true
+    },
+    {
+      "path": "source-snapshots/exact-twins/twins_exact_moments.py",
+      "bytes": 14711,
+      "sha256": "1d1a175ebd380004458f83c2bc27ef3323be33315d7a4248faa8722d8f7a2f08",
+      "archived_record_id": "scripts/discovery/twins_exact_moments.py",
+      "archived_sha256": "1d1a175ebd380004458f83c2bc27ef3323be33315d7a4248faa8722d8f7a2f08",
+      "byte_identical_to_archive": true
+    },
+    {
+      "path": "source-snapshots/exact-twins/twins_exact_response.py",
+      "bytes": 14609,
+      "sha256": "2adef1e79b868d3ac7a5222aa411ee6a5e646bb529cdbe4b070e2d23633283dd",
+      "archived_record_id": "scripts/discovery/twins_exact_response.py",
+      "archived_sha256": "2adef1e79b868d3ac7a5222aa411ee6a5e646bb529cdbe4b070e2d23633283dd",
+      "byte_identical_to_archive": true
+    },
+    {
+      "path": "source-snapshots/exact-twins/twins_velocity_view.py",
+      "bytes": 4384,
+      "sha256": "2fd906747ce646f68c2ce79d6b43d6bd8a597a94e081828a0b570554cfde1c74",
+      "archived_record_id": "scripts/discovery/twins_velocity_view.py",
+      "archived_sha256": "2fd906747ce646f68c2ce79d6b43d6bd8a597a94e081828a0b570554cfde1c74",
+      "byte_identical_to_archive": true
     },
     {
       "path": "source-snapshots/radial-baseline/echo_halo.py",
@@ -379,6 +643,39 @@
   },
   "reading_fallback": {
     "path": "REPORT.md",
-    "scope": "Completed collision/inertia reference experiments and recorded echo comparisons. Active twins/feedback outcomes excluded."
-  }
+    "scope": "Completed analytic twin and prescribed-field analysis, collision/inertia references, recorded echo comparisons and cored feedback outputs. Pending growth/cuspy outcomes excluded."
+  },
+  "exact_twin_analysis_reproduction": {
+    "receipt": "reproductions/twins-analysis-01/receipt.json",
+    "result": "reproductions/twins-analysis-01/result.json",
+    "all_published_comparisons_pass": true,
+    "compared_numeric_values": 808,
+    "maximum_absolute_difference": 0,
+    "new_independent_physical_evidence": false,
+    "scope": "Fixed-input software/arithmetic only. Original saved impulse and Fq operands, 96-term F0 series and frozen alpha; no sampling, orbit evolution, velocity quadrature, new forcing history or live dynamics."
+  },
+  "exact_twin_unforced_proof_reproduction": {
+    "result": "reproductions/twins-proof-01/result.json",
+    "optional_mpmath_used": true,
+    "optional_mpmath_version": "1.3.0",
+    "scope": "Repeated exact rational streaming and Bernstein identities and Decimal reference checks. Optional 80-digit alpha evaluation; no proof assistant, outside review, sampling, stability or bar evolution.",
+    "measured_cpu_seconds": 1.842636487
+  },
+  "feedback_release": {
+    "data": "data/feedback.json",
+    "summary": "research/discovery-20261001/FEEDBACK_PUBLIC_SUMMARY.md",
+    "scope": "Closed fixed cored-model prescribed-gas result: published outputs and summary only, with archived evidence hashes. Feedback dynamics, response matrices and bootstrap are not regenerated by this release."
+  },
+  "pending_experiments": [
+    {
+      "name": "new bar-growth twin ensemble",
+      "outcome_included": false,
+      "source_release_included": false
+    },
+    {
+      "name": "cuspy feedback with centrally populated stars",
+      "outcome_included": false,
+      "source_release_included": false
+    }
+  ]
 }

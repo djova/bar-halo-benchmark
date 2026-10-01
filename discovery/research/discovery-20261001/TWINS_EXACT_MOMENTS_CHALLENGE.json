@@ -1,0 +1,94 @@
+{
+  "scope": "Independent unforced algebra and source-record challenge; no particle sampling or integration",
+  "populations": [
+    {
+      "p": 4,
+      "both_streaming_coefficients_exactly_zero": true,
+      "independently_rebuilt_bound_numerator": 67,
+      "independently_rebuilt_bound_denominator": 390,
+      "equals_published_bound": true,
+      "minimum_denominator_coefficient": "1",
+      "maximizing_box_and_coefficient": [
+        0,
+        15,
+        0,
+        3
+      ]
+    },
+    {
+      "p": 6,
+      "both_streaming_coefficients_exactly_zero": true,
+      "independently_rebuilt_bound_numerator": 1132034480781204,
+      "independently_rebuilt_bound_denominator": 433439973399677645,
+      "equals_published_bound": true,
+      "minimum_denominator_coefficient": "1",
+      "maximizing_box_and_coefficient": [
+        4,
+        15,
+        5,
+        3
+      ]
+    },
+    {
+      "p": 8,
+      "both_streaming_coefficients_exactly_zero": true,
+      "independently_rebuilt_bound_numerator": 356211155200921020,
+      "independently_rebuilt_bound_denominator": 870472444109974950221,
+      "equals_published_bound": true,
+      "minimum_denominator_coefficient": "1",
+      "maximizing_box_and_coefficient": [
+        13,
+        15,
+        5,
+        3
+      ]
+    }
+  ],
+  "factorial_series_matches_recurrence_through_n96": true,
+  "checked_ratio_tail_bound_after_n6": true,
+  "decimal_potential_and_circular_domain_checks": [
+    {
+      "radius": "1e-8",
+      "density_relative_difference": "0",
+      "radius_relative_difference": "0E-53",
+      "circular_L2_relative_difference": "2.5200000E-62"
+    },
+    {
+      "radius": ".001",
+      "density_relative_difference": "-1.0E-69",
+      "radius_relative_difference": "0E-63",
+      "circular_L2_relative_difference": "1.54402E-64"
+    },
+    {
+      "radius": ".1",
+      "density_relative_difference": "-2.5E-69",
+      "radius_relative_difference": "0E-67",
+      "circular_L2_relative_difference": "3.8E-68"
+    },
+    {
+      "radius": "1",
+      "density_relative_difference": "-2.9E-69",
+      "radius_relative_difference": "-1E-69",
+      "circular_L2_relative_difference": "1E-69"
+    },
+    {
+      "radius": "30",
+      "density_relative_difference": "2.8E-68",
+      "radius_relative_difference": "0E-69",
+      "circular_L2_relative_difference": "0"
+    },
+    {
+      "radius": "1e8",
+      "density_relative_difference": "2.36718753E-61",
+      "radius_relative_difference": "1E-69",
+      "circular_L2_relative_difference": "-6E-70"
+    }
+  ],
+  "archived_source_hash_matches": true,
+  "archived_protocol_hash_matches": true,
+  "limitations": [
+    "Not a proof assistant or floating-point interval audit",
+    "No sampling implementation for exact Fplus/Fminus has been executed",
+    "No collective stability, bar response or observational outcome evaluated"
+  ]
+}

@@ -1,0 +1,423 @@
+{
+  "title": "A restricted selective-heating example",
+  "summary": "A prescribed frequency8 gas pulse heats a stationary central halo tracer while giving much less radial energy to coeval mildly warm stars in a fixed, initially cored spherical model.",
+  "status": "Early validation in the declared tracer model; a cuspy halo and self-consistent core remain separate tests.",
+  "units": "G=1, background halo mass=1, isochrone scale=.5; energy is specific energy unless explicitly stated.",
+  "model": {
+    "background": "Isochrone potential plus static mean gas",
+    "background_mass": 1.0,
+    "isochrone_scale": 0.5,
+    "gas_mass": 0.1,
+    "gas_profile_scales": [
+      0.2,
+      1.3
+    ],
+    "gas_common_cutoff": 8.0,
+    "gas_fraction_modulation": "a(t)=.003 sin^2(pi t/80) cos(8t), with fractions .5+a and .5-a",
+    "halo_tracer": "Stationary passive f(E) proportional to (-E)^3.5",
+    "central_tracer": "Normalized stationary g(E) proportional to f(E)[(Ec-E)/(Ec-Phi0)]^2 for E<Ec=Phi(2)",
+    "central_tracer_mass_fraction": 0.0575115684257,
+    "stars": "Stationary conditional exp(-Jr/Js), Js=(.1 vc)^2/kappa, prograde inclination Rayleigh scale .03",
+    "stellar_guiding_pdf": "Proportional to Rc^2[-Phi(Rc)]^5; cold surface density tends to zero at the center",
+    "stellar_sigma_R_over_vc": 0.1,
+    "live_self_gravity": false
+  },
+  "finite_basis_results": {
+    "frequencies": [
+      0.2,
+      0.35,
+      0.6,
+      0.8,
+      1.0,
+      1.7,
+      2.2,
+      2.9,
+      4.0,
+      5.0
+    ],
+    "scope": "One gas spatial basis and ten overlapping windowed time functions; full coherent response matrices.",
+    "cold_whole_halo_minimum": 0.22709825464518732,
+    "cold_whole_halo_interval95": [
+      0.20087557015866153,
+      0.26095235709145564
+    ],
+    "central_cold_minimum": 0.10048604399826803,
+    "central_warm_frozen_waveform_cost": 0.09000953915426266,
+    "central_warm_interval95": [
+      0.05309794436331243,
+      0.13555008406212182
+    ],
+    "lesson": "The whole-halo optimum deposits almost no energy in the stationary central tag; its cost is not a core-heating bound."
+  },
+  "frequency8": {
+    "circular_kappa_max": 5.754833086898382,
+    "mechanism": "Driving exceeds all circular radial frequencies, while eccentric halo and warm-star orbits couple through n>=2 radial harmonics.",
+    "central_forward_energy": 2.393013678982783e-06,
+    "central_family_standard_error": 2.3469035907891623e-07,
+    "central_coarse_energy": 2.392889588616962e-06,
+    "warm_stellar_direct_energy": 8.089321465588233e-09,
+    "warm_stellar_family_standard_error": 1.6974321230161507e-09,
+    "warm_stellar_radial_variance_change": 7.989804041465265e-09,
+    "direct_specific_cost": 0.0033803908170833455,
+    "frozen_stellar_sample_interval95": [
+      5.0954543099362395e-09,
+      1.1633101150285322e-08
+    ],
+    "frozen_central_sample_interval95": [
+      1.945035585488312e-06,
+      2.8672048148710346e-06
+    ],
+    "frozen_upper_stellar_to_lower_central": 0.005980919442851615,
+    "frozen_usefulness_threshold": 0.02,
+    "sample_criterion_passed": true,
+    "cold_continuum_energy": 1.9112607293643284e-16,
+    "halo_harmonic_n1_energy": 1.3829808901245932e-16,
+    "halo_harmonic_n_ge2_energy": 2.605631946169329e-06,
+    "warm_harmonic_n1_energy": 1.8793486294426195e-16,
+    "warm_harmonic_n_ge2_energy": 5.955107757362706e-09,
+    "warm_positive_estimator_energy": 5.943166018069685e-09,
+    "warm_local_quadratic_energy": 8.08635943982992e-09,
+    "estimator_lesson": "The positive passive expression equals the local action derivative after population integration, not family by family. The local quadratic prediction agrees with direct evolution on the fixed sample.",
+    "warm_effective_energy_families": 10.434808919084261
+  },
+  "spatial_interpretation": {
+    "frequency5_whole_star_direct_energy": 6.232099604141127e-07,
+    "frequency5_whole_star_family_standard_error": 1.0928468877848179e-07,
+    "frequency5_whole_star_to_central_tag_cost": 0.08944734005625436,
+    "guiding_cohorts": [
+      {
+        "guiding_radius_upper": 0.25,
+        "stellar_mass_fraction": 0.03447409619377635,
+        "physical_mass_fraction_quadrature": 0.034873982341010586,
+        "direct_specific_energy": 2.152639253411012e-07,
+        "family_standard_error": 4.8524020130472156e-08,
+        "specific_cost_to_central_tag": 0.08995515873214946,
+        "frequency5_direct_specific_energy": 1.61150034394132e-05,
+        "frequency5_specific_cost_to_central_tag": 2.312935100868872,
+        "local_weak_specific_energy": 2.1532046859918293e-07,
+        "passive_weak_specific_energy": 1.5540636603888002e-07
+      },
+      {
+        "guiding_radius_upper": 0.5,
+        "stellar_mass_fraction": 0.1468050919090476,
+        "physical_mass_fraction_quadrature": 0.15426348355773284,
+        "direct_specific_energy": 5.508798331470349e-08,
+        "family_standard_error": 1.1741201021685743e-08,
+        "specific_cost_to_central_tag": 0.02302033782695307,
+        "frequency5_direct_specific_energy": 4.233898362300271e-06,
+        "frequency5_specific_cost_to_central_tag": 0.6076779426385349,
+        "local_weak_specific_energy": 5.506782218663525e-08,
+        "passive_weak_specific_energy": 4.047091601859027e-08
+      },
+      {
+        "guiding_radius_upper": 1.0,
+        "stellar_mass_fraction": 0.4101549832188195,
+        "physical_mass_fraction_quadrature": 0.42669415780528974,
+        "direct_specific_energy": 1.9722597116874736e-08,
+        "family_standard_error": 4.161781755324381e-09,
+        "specific_cost_to_central_tag": 0.008241740233285407,
+        "frequency5_direct_specific_energy": 1.5194486671558753e-06,
+        "frequency5_specific_cost_to_central_tag": 0.2180816261967374,
+        "local_weak_specific_energy": 1.9715375337818754e-08,
+        "passive_weak_specific_energy": 1.4490049519838465e-08
+      },
+      {
+        "guiding_radius_upper": 2.0,
+        "stellar_mass_fraction": 0.7258811540270034,
+        "physical_mass_fraction_quadrature": 0.7268812978084607,
+        "direct_specific_energy": 1.1144140377229106e-08,
+        "family_standard_error": 2.3421686065267507e-09,
+        "specific_cost_to_central_tag": 0.0046569480463505885,
+        "frequency5_direct_specific_energy": 8.585564687912324e-07,
+        "frequency5_specific_cost_to_central_tag": 0.1232258745839635,
+        "local_weak_specific_energy": 1.114005976731485e-08,
+        "passive_weak_specific_energy": 8.187519382612428e-09
+      }
+    ],
+    "annuli": [
+      {
+        "radius_lower": 0.0,
+        "radius_upper": 0.25,
+        "unforced_mass_fraction": 0.03455774674842783,
+        "mass_fraction_paired_change": 3.701351975709295e-08,
+        "mass_fraction_time_range": [
+          -1.1659258723553667e-06,
+          1.1659258723553667e-06
+        ],
+        "sigma_R2_paired_change": 2.0689615053082985e-07,
+        "sigma_R2_time_range": [
+          -3.855498633461435e-09,
+          4.505455725634013e-07
+        ],
+        "sigma_z2_paired_change": -7.792109553700949e-10,
+        "sigma_z2_time_range": [
+          -2.2419616066117693e-08,
+          1.556390532016336e-08
+        ],
+        "mean_vR_paired_change": 1.9164721254291426e-07,
+        "mean_vR_time_range": [
+          -1.1160951021642103e-06,
+          2.9127680820034393e-06
+        ],
+        "rms_z_paired_change": 3.8153607740108004e-08,
+        "rms_z_time_range": [
+          -3.568299143854453e-07,
+          4.658917592981898e-07
+        ]
+      },
+      {
+        "radius_lower": 0.25,
+        "radius_upper": 0.5,
+        "unforced_mass_fraction": 0.11161799066731441,
+        "mass_fraction_paired_change": -4.012232959766884e-07,
+        "mass_fraction_time_range": [
+          -8.814331172946055e-06,
+          1.1659258723623056e-06
+        ],
+        "sigma_R2_paired_change": -1.0612291414084288e-08,
+        "sigma_R2_time_range": [
+          -3.6439931938494347e-07,
+          7.47895873044746e-08
+        ],
+        "sigma_z2_paired_change": 5.802649728535071e-10,
+        "sigma_z2_time_range": [
+          -8.907914992120104e-10,
+          6.055316643450211e-09
+        ],
+        "mean_vR_paired_change": 2.405160189132893e-07,
+        "mean_vR_time_range": [
+          -8.938851061883519e-07,
+          6.197376057044332e-06
+        ],
+        "rms_z_paired_change": 1.5788047411422055e-08,
+        "rms_z_time_range": [
+          -3.9381374165176064e-08,
+          4.1549283728674336e-07
+        ]
+      },
+      {
+        "radius_lower": 0.5,
+        "radius_upper": 1.0,
+        "unforced_mass_fraction": 0.2598789721424108,
+        "mass_fraction_paired_change": 3.642097762189346e-07,
+        "mass_fraction_time_range": [
+          0.0,
+          7.648405300597627e-06
+        ],
+        "sigma_R2_paired_change": 6.532873735114913e-09,
+        "sigma_R2_time_range": [
+          -3.3327563798979387e-12,
+          1.37201546730574e-07
+        ],
+        "sigma_z2_paired_change": -2.2068556659879323e-10,
+        "sigma_z2_time_range": [
+          -4.629353275720227e-09,
+          1.714739233851098e-11
+        ],
+        "mean_vR_paired_change": -1.2873828097625114e-07,
+        "mean_vR_time_range": [
+          -2.697862122864256e-06,
+          -2.590433466825382e-10
+        ],
+        "rms_z_paired_change": -1.5555632408339088e-08,
+        "rms_z_time_range": [
+          -3.2668842397248765e-07,
+          3.6588380936120046e-10
+        ]
+      },
+      {
+        "radius_lower": 1.0,
+        "radius_upper": 2.0,
+        "unforced_mass_fraction": 0.3130871067697055,
+        "mass_fraction_paired_change": 0.0,
+        "mass_fraction_time_range": [
+          0.0,
+          0.0
+        ],
+        "sigma_R2_paired_change": 3.7021890183138356e-16,
+        "sigma_R2_time_range": [
+          -3.014428984204898e-14,
+          3.880316207238721e-14
+        ],
+        "sigma_z2_paired_change": 6.591528435011593e-15,
+        "sigma_z2_time_range": [
+          -5.783244434558188e-13,
+          5.81546367051794e-13
+        ],
+        "mean_vR_paired_change": -1.968487924253543e-11,
+        "mean_vR_time_range": [
+          -2.0700048664710623e-11,
+          -1.8761210250281546e-11
+        ],
+        "rms_z_paired_change": -6.74229190996319e-14,
+        "rms_z_time_range": [
+          -2.449980496255222e-11,
+          2.374493657253396e-11
+        ]
+      },
+      {
+        "radius_lower": 2.0,
+        "radius_upper": 4.0,
+        "unforced_mass_fraction": 0.18471918588288233,
+        "mass_fraction_paired_change": 0.0,
+        "mass_fraction_time_range": [
+          0.0,
+          0.0
+        ],
+        "sigma_R2_paired_change": 5.023470065849504e-16,
+        "sigma_R2_time_range": [
+          -3.89532156530592e-15,
+          3.9256792261355145e-15
+        ],
+        "sigma_z2_paired_change": 5.019726986920685e-16,
+        "sigma_z2_time_range": [
+          -4.1399717855272744e-15,
+          5.810185232241194e-15
+        ],
+        "mean_vR_paired_change": -3.1886049007275182e-12,
+        "mean_vR_time_range": [
+          -3.2067947726915165e-12,
+          -3.1554843543072243e-12
+        ],
+        "rms_z_paired_change": -6.297475768370814e-14,
+        "rms_z_time_range": [
+          -4.800465580601099e-13,
+          3.159278394448961e-13
+        ]
+      },
+      {
+        "radius_lower": 4.0,
+        "radius_upper": 8.0,
+        "unforced_mass_fraction": 0.06708816919897684,
+        "mass_fraction_paired_change": 0.0,
+        "mass_fraction_time_range": [
+          0.0,
+          0.0
+        ],
+        "sigma_R2_paired_change": -1.2246528196297694e-15,
+        "sigma_R2_time_range": [
+          -2.162549653239587e-15,
+          5.41667405373758e-16
+        ],
+        "sigma_z2_paired_change": -2.1760195745158476e-17,
+        "sigma_z2_time_range": [
+          -7.874018277675976e-17,
+          4.705437428587089e-17
+        ],
+        "mean_vR_paired_change": -7.091105369581686e-14,
+        "mean_vR_time_range": [
+          -8.991237116819095e-14,
+          -2.3762874907541903e-14
+        ],
+        "rms_z_paired_change": 1.5749306620754007e-14,
+        "rms_z_time_range": [
+          -1.609823385706477e-14,
+          3.544387006115812e-14
+        ]
+      },
+      {
+        "radius_lower": 8.0,
+        "radius_upper": null,
+        "unforced_mass_fraction": 0.029050828590282355,
+        "mass_fraction_paired_change": 0.0,
+        "mass_fraction_time_range": [
+          0.0,
+          0.0
+        ],
+        "sigma_R2_paired_change": -1.3733227518149722e-18,
+        "sigma_R2_time_range": [
+          -4.87890977618477e-18,
+          1.8431436932253575e-18
+        ],
+        "sigma_z2_paired_change": 1.3972010139470936e-19,
+        "sigma_z2_time_range": [
+          -8.131516293641283e-20,
+          3.3203691532368573e-19
+        ],
+        "mean_vR_paired_change": -1.443221322343976e-16,
+        "mean_vR_time_range": [
+          -1.738247133037385e-16,
+          -1.1365826899437104e-16
+        ],
+        "rms_z_paired_change": 4.229421046191072e-17,
+        "rms_z_time_range": [
+          -1.1102230246251565e-16,
+          2.220446049250313e-16
+        ]
+      }
+    ],
+    "lesson": "Global whole-star/tag cost can dilute concentrated inner heating. Fixed guiding cohorts and Eulerian annuli have distinct normalizations; neither is an observational co-spatial bound."
+  },
+  "numerical_controls": {
+    "central_dt005_to0025_relative_change": 5.185795717910224e-05,
+    "central_timestep_gate_threshold": 0.05,
+    "central_amplitude_half_quadratic_rescaled_relative_change": 0.07155178871432377,
+    "stellar_amplitude_half_quadratic_rescaled_relative_change": -0.0009825889018569844,
+    "local_direct_mean_difference": 2.962025758307706e-12,
+    "local_direct_difference_family_standard_error": 1.7230877144638437e-11,
+    "local_derivative_step_refinement": -1.1888913984486602e-16,
+    "selected_halo_interior_relative_error_dt005": -0.004046153536323578,
+    "selected_halo_interior_relative_error_dt0025": -0.001023394408347639,
+    "central_inverse_support_counts_coarse": [
+      9,
+      10
+    ],
+    "central_inverse_support_energy_coarse": [
+      5.995607692214778e-19,
+      6.661787134683639e-19
+    ],
+    "inverse_support_treatment": "Exact forward remainder includes inverse ejection across Ec, even when all orbits remain bound.",
+    "uncertainty_unit": "Independent action families;32 deterministic radial phase nodes per family,4096 families. Empirical family bootstrap uses4096 resamples."
+  },
+  "gas_motion": {
+    "max_modulation": 0.002999972562190916,
+    "max_rate": 0.023999012623286388,
+    "conservative_peak_kinetic": 0.00011541913464921733,
+    "conservative_max_speed": 0.07551519817050271,
+    "integrated_kinetic_bound": 0.0017314851079438174,
+    "interpretation": "Finite continuity-flow kinetic bounds; integrated kinetic proxy has units energy times time and is not feedback work.",
+    "original_untruncated_family": "Logarithmically divergent continuum flow kinetic cost; the finite cutoff is a separately specified physical model."
+  },
+  "limitations": [
+    "The background and halo tracer are initially cored; this experiment cannot demonstrate cusp removal.",
+    "Halo and stellar populations are tracers in a prescribed field; neither an updating gravitational field nor a self-consistent final density is calculated.",
+    "The stationary central energy tag excludes weakly bound orbits that pass through the center and is not the instantaneous mass inside radius2 or a core-energy requirement.",
+    "The star population is mildly warm and stationary, but its matched guiding-radius law has a central surface-density hole and is not a typical exponential disk.",
+    "The ratio is per unit stellar and tagged halo mass. A total energy cost requires the stellar/halo mass ratio and the tag mass fraction; it is not an observational overheating bound.",
+    "The spherical force preserves angular momenta and protects vertical actions; this does not test disk vertical survival under realistic feedback.",
+    "Empirical sample intervals and selected numerical references do not certify unseen continuum tails.",
+    "The weak pulse deposits only about3 parts per million of the tag mean binding energy. Energetically effective repeated or nonlinear histories are untested.",
+    "Gas motion remains a kinematic positive-density construction, without pressure dynamics, a feedback energy source or a hydrodynamic implementation.",
+    "The gas second-derivative edge and finite time window contribute spectral tails; no infinite-frequency scaling is inferred.",
+    "A cuspy Hernquist halo has no finite circular-frequency maximum and must be tested separately with a centrally populated stellar disk."
+  ],
+  "primary_sources": [
+    {
+      "title": "Pontzen and Governato: feedback potential fluctuations",
+      "url": "https://arxiv.org/abs/1106.0499"
+    },
+    {
+      "title": "Ogiya and Mori: resonant gas-potential forcing",
+      "url": "https://arxiv.org/abs/1206.5412"
+    },
+    {
+      "title": "Mashchenko, Wadsley and Couchman: halo and stellar response",
+      "url": "https://arxiv.org/abs/0711.4803"
+    },
+    {
+      "title": "Teyssier et al.: stellar predictions accompanying cores",
+      "url": "https://academic.oup.com/mnras/article/429/4/3068/1012066"
+    },
+    {
+      "title": "El-Badry et al.: stellar migration and populations",
+      "url": "https://arxiv.org/abs/1512.01235"
+    }
+  ],
+  "release": {
+    "status": "published_output_and_summary_release",
+    "source_scope": "Recorded outputs of the completed prescribed-gas experiment in a fixed, initially cored spherical model, with its public scientific summary.",
+    "reproduction_scope": "Published scalar outputs, conditions and archived evidence hashes are supplied for inspection. This release does not regenerate the feedback orbit ensembles, response matrices, gas-flow construction or bootstrap.",
+    "summary": "../research/discovery-20261001/FEEDBACK_PUBLIC_SUMMARY.md",
+    "note": "The cuspy-halo follow-up remains in progress and has no outcome or source release here. Archived scientific operands and provenance hashes are unchanged."
+  }
+}

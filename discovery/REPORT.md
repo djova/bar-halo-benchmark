@@ -1,17 +1,123 @@
 # Early validation of hidden galactic dynamics
 
-This portable report contains the completed collision-law and modified-inertia
-reference experiments, followed by the recorded halo-echo comparisons. Halo twins
-and selective feedback heating remain active campaign branches; this checkpoint
-reports no final outcome for either. The campaign is exploratory, with no
-live-galaxy or observational validation established here.
+This portable checkpoint reports the closed exact-moment halo-twin construction
+and its prescribed-field response analysis, the completed collision-law and
+modified-inertia reference experiments, the recorded halo-echo comparisons,
+and the closed prescribed-gas heating example in a fixed cored background.
+Analytic zero-streaming populations replace the earlier finite-grid twin
+construction. The new bar-growth ensemble and cuspy feedback extension remain
+in progress; neither has an outcome or source release in this package.
+No live-galaxy or observational validation is established here.
 
-The [source bundle guide](README.md) distinguishes supplied operands, arithmetic
-verification, three regenerated known-limit controls and optional full-response
-calculations. The [control receipt](reproductions/public-controls-01/receipt.json)
-is a software reproduction of those reference controls, not another physical
-sample. The [manifest](manifest.json) records released file hashes, preserved
-archive hashes and explicit release-only transformations.
+The [source bundle guide](README.md) distinguishes supplied operands, three
+regenerated known-limit controls, the exact-twin saved-response analysis,
+published feedback outputs and optional full-response calculations. The [known-control receipt](reproductions/public-controls-01/receipt.json)
+and [twin analysis receipt](reproductions/twins-analysis-01/receipt.json) verify
+software/arithmetic at their stated scopes. The [manifest](manifest.json)
+records released hashes, archived hashes and explicit transformations.
+
+## Identical ordinary halo moments, different prescribed-bar response
+
+**Preliminary prescribed-field result, 1 October 2026.** Two analytic halo
+populations can have exactly the same density, local mean velocity and all even
+velocity moments, while their responses to an imposed rotating bar differ. For
+the fixed p = 8 construction at the reference frequency, the measured accumulated
+angular-momentum-transfer contrast is **8.49×10⁻⁵**, with a nominal pointwise
+95% interval **[5.54×10⁻⁵, 1.15×10⁻⁴]**. These are reference mass–action units;
+they are neither a galaxy slowdown nor a dark-matter constraint.
+
+The corresponding plus/minus transfer ratio is **1.446**, a ratio of ensemble
+point estimates. We have not established a confidence interval for that ratio
+or reached the original factor-of-two ambition. The shared reference transfer
+has substantial uncertainty, which is retained alongside the better determined
+paired contrast. This is a tracer calculation in prescribed fields, with no
+reacting halo or stellar disc.
+
+### What was deliberately held equal
+
+In the unsoftened spherical isochrone with G = M = 1 and b = 1/2, the frozen positive
+populations are
+
+\[
+F_\pm=F_0(e)\pm\alpha_p L_z[g_{0,p}(e)+L^2e^p],\qquad p\in\{4,6,8\},
+\]
+
+\[
+g_{0,p}(e)=-\frac{4p\,e^{p-1}}{(p+5/2)(p+7/2)}
+          +\frac{8b\,e^p}{p+7/2},\qquad e=-E.
+\]
+
+Odd velocity parity preserves density and every even moment. A separate
+Beta-integral cancellation preserves all three local mean velocities at every
+radius and inclination. An exact rational positivity construction fixes each
+α before reading the family's forced responses and gives F±≥F₀/2 throughout
+the bound orbital domain. Higher odd moments can differ: the public data
+contain the actual unforced azimuthal third moments at eight radii and four
+inclinations. Those profiles illustrate hidden velocity structure; they do not
+predict the torque by themselves.
+
+See the [derivation](research/discovery-20261001/TWINS_EXACT_MOMENTS_DERIVATION.md),
+[frozen unforced protocol](research/discovery-20261001/TWINS_EXACT_MOMENTS_PROTOCOL.md) and
+[independent internal algebra check](research/discovery-20261001/TWINS_EXACT_MOMENTS_CHALLENGE.md).
+Stationarity and self-consistency hold for this spherical unsoftened reference.
+Collective stability, a softened live equilibrium and formation-history
+reachability remain untested.
+
+### What the measured contrast supports
+
+The eight independently randomized action/phase libraries are the sampling
+units. All three populations and both stationary bar frequencies share those
+libraries, so the six comparisons are correlated. The full contrast and
+contrast/reference covariance matrices and all eight library vectors are
+available in [the scientific export](data/twins-exact.json).
+Student-t intervals with seven degrees of freedom have uncalibrated coverage;
+supplementary Bonferroni intervals apply only to these six comparisons.
+
+At the reference frequency, p = 4 has an unresolved sampling sign and fails one
+of the two doubled-phase checks. The p = 6 and p = 8 contrasts pass the selected
+phase and timestep screen, whose frozen allowance is 10% of the measured
+contrast. The largest p = 8 phase shift is 2.82×10⁻⁶, or 3.32% of its contrast.
+The half-step shift is 2.10×10⁻¹². These are selected numerical comparisons,
+not a complete discretization error bound.
+
+For p = 6, the supplementary six-comparison interval is nominally positive, but
+its lower margin (1.24×10⁻⁶) is smaller than the largest measured phase shift
+(2.92×10⁻⁶). The recorded screen decisions remain unchanged; they must not be read as
+a joint sampling-and-numerical sign guarantee. The p = 8 supplementary lower
+margin is 3.95×10⁻⁵, substantially larger than the selected shift, while still
+subject to the stated sampling and numerical limitations.
+
+The second stationary frequency has no doubled-phase comparison. Its timestep
+checks alone do not qualify phase accuracy. Neither frequency is a new-history
+prospective prediction: these are known recorded trajectories contracted with
+populations fixed from unforced inputs, without response fitting. The
+[response protocol](research/discovery-20261001/TWINS_EXACT_RESPONSE_PROTOCOL.md) records that distinction.
+
+Physical mass is preserved absolutely. Because the trajectories were sampled
+from the approximate AGAMA distribution Fq, the contraction uses
+m(F₀±αδF)/Fq, with no separate population normalization. The represented exact
+mass is recorded rather than silently rescaled. Angular-momentum and
+energy/external-work residuals are supplied as numerical bookkeeping checks;
+they do not establish a live-halo or observational result.
+
+### What this teaches us, and what would test it next
+
+Matching the ordinary local halo moments need not specify its response to a
+rotating gravitational perturbation. This construction removes the finite-grid
+streaming mismatch of the earlier search, but it does not establish different
+self-consistent bars. An independent forcing history and a stability
+test are separate next experiments. The derivation is internally checked, not
+externally reviewed; priority relative to existing halo-population and
+resonant-response work remains an open scholarly question.
+
+The scientific export contains actual scalar values, paired refinements,
+covariances, velocity-moment quadrature checks and hashed archive selectors.
+The [compact analysis replay](README.md#exact-moment-halo-twins)
+regenerates the six contractions, their intervals and covariance from released
+saved impulses and sampling-density operands. Full orbit evolution and the
+velocity-marginal quadrature are not regenerated by that replay. The older
+preliminary coarse readback is retained; this summary uses the terminal
+`exact-response-final-01` record and does not overwrite that history.
 
 ## Two completed reference experiments
 
@@ -171,3 +277,61 @@ The later spatial model combines positive Plummer sources with bounded angular d
 Quiet controls use time-integrated RMS over fixed early and late intervals. Eighth-step temporal sampling and an energy/action refinement correct a sparse-date artifact; at tau = 16 the remaining potential, radial-force and tangential-force RMS values are 3.48%, 4.07% and 3.49% of their early values. These controls belong to this spatial model. They do not change its small force or establish a visible disk response.
 
 [Chiba et al., *Galactic echoes*](https://arxiv.org/html/2506.16512v2) already supplies the underlying galactic echo theory. The present result verifies specified halo gravitational readouts. Halo self-gravity, realistic finite-duration encounters, direct stellar forcing, observational comparisons and useful structure regeneration remain untested.
+
+## A controlled selective-heating example, with a spatial qualification
+
+A prescribed gas fluctuation can give much less energy to mildly warm
+coeval stars than to a stationary central halo tracer in this fixed,
+initially cored spherical model. The contrast survives direct orbit
+evolution, amplitude and timestep controls. It does not demonstrate a
+dark-matter core or an acceptable old stellar disk.
+
+The pulse oscillates at frequency 8, above the maximum circular radial
+frequency 5.7548. Circular stars barely absorb it, while eccentric halo
+orbits and warm stars still couple through higher radial harmonics.
+This is a restricted frequency window outside the earlier ten-function
+response bound, whose maximum nominal frequency was 5.
+
+The resolved central forward energy is (2.393 ± 0.235)×10⁻⁶ per unit tagged
+halo mass. The whole stellar population gains (8.089 ± 1.697)×10⁻⁹ per unit
+stellar mass, giving point cost 0.00338. Errors are one family standard
+error; radial phase particles are quadrature nodes. A frozen empirical
+bootstrap upper-star/lower-central ratio 0.00598 passes the 0.02 sample
+usefulness criterion, without certifying unseen continuum tails.
+
+That whole-disk normalization substantially dilutes inner heating. Stars
+with guiding radius below 0.25 constitute about 3.5% of the population and
+gain (2.153 ± 0.485)×10⁻⁷ per unit cohort mass, giving cost 0.08996. The same
+cohort's earlier frequency-5 waveform cost is 2.31294: the frequency-8
+reduction is still about 26-fold in this inner group. Neither ratio is an
+observational co-spatial stellar-heating bound. The measured inner radial
+variance change is about 2.07×10⁻⁷; it is a separate moment diagnostic.
+
+Halving the timestep changes central energy 0.0052%. Halving the amplitude
+changes the quadratically rescaled stellar energy -0.098%, but the halo
+changes +7.16%, which is retained as finite-amplitude response. An
+independent local action derivative accurately predicts the direct warm
+response. A positive passive ensemble expression agrees only after
+population integration, explaining a preserved finite-sample discrepancy
+between the two weak estimators.
+
+The limitations are physically important. The halo tracer is cored and
+does not generate the imposed field; the stellar guiding distribution has
+a central density hole. Spherical forcing protects angular momenta and
+vertical actions. The pulse adds only a few parts per million of the tag's
+binding energy, and the tag excludes less-bound orbits that pass through
+the center. A finite positive-density gas construction supplies a finite
+continuity-flow kinetic budget, but no hydrodynamic feedback engine or
+core-energy budget. A cuspy halo with centrally populated stars is the
+next independent test.
+
+Feedback heating and resonant coupling are established prior work:
+[Pontzen and Governato](https://arxiv.org/abs/1106.0499),
+[Ogiya and Mori](https://arxiv.org/abs/1206.5412) and
+[Hashim et al.](https://arxiv.org/abs/2209.08631). The present contribution
+is a bounded quantitative example and its adversarial controls. The
+[scientific export](data/feedback.json) retains unrounded outputs,
+normalizations, control results and hashes identifying the archived findings.
+This release publishes outputs and this summary; it does not regenerate the
+feedback orbit ensembles, response matrices or bootstrap. The cuspy extension
+is still in progress and has no result here.

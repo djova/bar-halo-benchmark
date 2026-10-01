@@ -1,0 +1,118 @@
+{
+  "scope": "Independent unforced algebra and source-record challenge; no particle sampling or integration",
+  "populations": [
+    {
+      "p": 4,
+      "both_streaming_coefficients_exactly_zero": true,
+      "independently_rebuilt_bound_numerator": 67,
+      "independently_rebuilt_bound_denominator": 390,
+      "equals_published_bound": true,
+      "minimum_denominator_coefficient": "1",
+      "maximizing_box_and_coefficient": [
+        0,
+        15,
+        0,
+        3
+      ]
+    },
+    {
+      "p": 6,
+      "both_streaming_coefficients_exactly_zero": true,
+      "independently_rebuilt_bound_numerator": 1132034480781204,
+      "independently_rebuilt_bound_denominator": 433439973399677645,
+      "equals_published_bound": true,
+      "minimum_denominator_coefficient": "1",
+      "maximizing_box_and_coefficient": [
+        4,
+        15,
+        5,
+        3
+      ]
+    },
+    {
+      "p": 8,
+      "both_streaming_coefficients_exactly_zero": true,
+      "independently_rebuilt_bound_numerator": 356211155200921020,
+      "independently_rebuilt_bound_denominator": 870472444109974950221,
+      "equals_published_bound": true,
+      "minimum_denominator_coefficient": "1",
+      "maximizing_box_and_coefficient": [
+        13,
+        15,
+        5,
+        3
+      ]
+    }
+  ],
+  "factorial_series_matches_recurrence_through_n96": true,
+  "checked_ratio_tail_bound_after_n6": true,
+  "decimal_potential_and_circular_domain_checks": [
+    {
+      "radius": "1e-8",
+      "density_relative_difference": "0",
+      "radius_relative_difference": "0E-53",
+      "circular_L2_relative_difference": "2.5200000E-62"
+    },
+    {
+      "radius": ".001",
+      "density_relative_difference": "-1.0E-69",
+      "radius_relative_difference": "0E-63",
+      "circular_L2_relative_difference": "1.54402E-64"
+    },
+    {
+      "radius": ".1",
+      "density_relative_difference": "-2.5E-69",
+      "radius_relative_difference": "0E-67",
+      "circular_L2_relative_difference": "3.8E-68"
+    },
+    {
+      "radius": "1",
+      "density_relative_difference": "-2.9E-69",
+      "radius_relative_difference": "-1E-69",
+      "circular_L2_relative_difference": "1E-69"
+    },
+    {
+      "radius": "30",
+      "density_relative_difference": "2.8E-68",
+      "radius_relative_difference": "0E-69",
+      "circular_L2_relative_difference": "0"
+    },
+    {
+      "radius": "1e8",
+      "density_relative_difference": "2.36718753E-61",
+      "radius_relative_difference": "1E-69",
+      "circular_L2_relative_difference": "-6E-70"
+    }
+  ],
+  "archived_source_hash_matches": true,
+  "archived_protocol_hash_matches": true,
+  "cpu_seconds": 1.842636487,
+  "limitations": [
+    "Not a proof assistant or floating-point interval audit",
+    "No sampling implementation for exact Fplus/Fminus has been executed",
+    "No collective stability, bar response or observational outcome evaluated"
+  ],
+  "optional_mpmath": {
+    "used": true,
+    "version": "1.3.0",
+    "precision_digits": 80,
+    "alpha_checks": [
+      {
+        "p": 4,
+        "alpha_80_digits": "0.1501862498978841884408907528183861319557576250449725364356641392725705564161581",
+        "relative_difference_from_frozen_float": "0.00000000000000011237230829812735698211483574538379802185274184322861120779721589852898302023066"
+      },
+      {
+        "p": 6,
+        "alpha_80_digits": "9.8789246894161420749438362502706585259617070975064309602625693005195166732387628",
+        "relative_difference_from_frozen_float": "0.00000000000000012635834650862307078782086264701107495099792256928627929310148224068658452217808"
+      },
+      {
+        "p": 8,
+        "alpha_80_digits": "63.050405007173872198223124269894259987384857773105686967901560447344520261925374",
+        "relative_difference_from_frozen_float": "0.0000000000000001056171843324265166726692810116721854762321037735005754790370338833936886706097"
+      }
+    ]
+  },
+  "source_sha256": "41d2fd67664e24f7f0e8530796e39ba19d9f2cea6f902941aed99ef3f36b6b6a"
+}

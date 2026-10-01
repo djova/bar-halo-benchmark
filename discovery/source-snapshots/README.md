@@ -21,3 +21,19 @@ corresponding optional `scripts/discovery/` files with the selected complete
 snapshot family, preserving the released protocols and explicitly selected
 AGAMA library. No such optional halo rerun was executed in the public control
 receipt.
+
+## Exact-moment halo-twin source records
+
+The `exact-twins/` snapshots preserve the original unforced preflight,
+saved-response contraction, unforced velocity view and independent challenge
+source byte-for-byte.
+The preflight imports the pinned AGAMA binary at module import time, and the
+original response and velocity scripts import that preflight. These originals
+also expect the historical archive layout; they are inspection sources, not the portable
+commands. No AGAMA binary, initial-state library or trajectory movie is shipped.
+
+Use [replay_twins_exact.py](../scripts/discovery/replay_twins_exact.py) for the
+NumPy/SciPy contractions and [twins_proof_challenge.py](../scripts/discovery/twins_proof_challenge.py)
+for the independent rational proof adapter. The manifest records both original
+and adapted hashes. The new bar-growth protocol and ensemble remain pending
+and are not included as a source release here.

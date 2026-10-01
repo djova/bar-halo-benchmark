@@ -3,21 +3,28 @@
 This is a limited scientific source release for the exploratory October 2026
 campaign. It supplies three independently runnable known-limit controls, the
 terminal collision-law and modified-inertia solvers, optional halo-echo sources,
-and compact published operands. It does **not** claim to reproduce all five
-proposed directions or establish a new live-galaxy result.
+compact published operands, a compact exact-twin saved-response analysis, and
+the closed cored feedback experiment's outputs. The analytic twin construction
+removes the earlier finite-grid streaming mismatch. This release does **not**
+claim to reproduce every campaign experiment or establish a new live-galaxy result.
 
 The [interactive report](https://djova.ca/galaxy-bar/discovery.html) is separate
 from the [earlier population-response article](../publication/web/paper.md).
-Read the portable [Markdown report](REPORT.md), the [completed collision/inertia summary](research/discovery-20261001/PUBLIC_TERMINAL_BRANCHES.md)
-and [halo-echo model distinctions](research/discovery-20261001/PUBLIC_ECHO_SUMMARY.md).
-The [manifest](manifest.json) records released file hashes and preserved source
+Read the portable [Markdown report](REPORT.md), the [exact-twin result](research/discovery-20261001/PUBLIC_TWINS_EXACT_SUMMARY.md), the [completed collision/inertia summary](research/discovery-20261001/PUBLIC_TERMINAL_BRANCHES.md),
+the [halo-echo model distinctions](research/discovery-20261001/PUBLIC_ECHO_SUMMARY.md),
+and the [cored selective-heating result](research/discovery-20261001/FEEDBACK_PUBLIC_SUMMARY.md).
+The [interim scientific learning note](research/discovery-20261001/LEARNINGS.md)
+connects these outcomes to the remaining tests. The [manifest](manifest.json)
+records released file hashes and preserved source
 hashes. Pin this repository's release commit when citing the package.
 
 ## Inspect, verify, reproduce
 
-**Inspection:** read the two summaries and the compact
+**Inspection:** read the summaries and the compact
 [collision-law](data/scattering.json), [inertia](data/inertia.json), and
-[echo](data/echoes.json) exports. These preserve plotted values, conventions,
+[echo](data/echoes.json), [exact-twin response](data/twins-exact.json),
+[unforced velocity](data/twins-velocity.json), and [feedback](data/feedback.json)
+exports. These preserve plotted values, conventions,
 conditions, seeds where applicable, original archived record hashes, and exact
 JSON pointers or array selections. Reading launches no computation and needs
 no credentials. Archive record IDs are provenance names, not promises that a
@@ -104,6 +111,90 @@ one-command full-ensemble launcher or runtime promise is included. Do not run
 an analysis phase against an incomplete set, substitute a saved control flag for
 regenerated controls, or interpret the one-seed commands as a new significance
 test. The published final refinement sign requirement failed.
+
+## Exact-moment halo twins
+
+The [exact-twin summary](research/discovery-20261001/PUBLIC_TWINS_EXACT_SUMMARY.md)
+and [derivation](research/discovery-20261001/TWINS_EXACT_MOMENTS_DERIVATION.md)
+construct frozen positive populations with identical local density, mean velocity
+and all even-total-degree velocity moments. The p=8 reference-frequency contrast
+is 8.49e-5 in reference mass–action units and passes the selected phase/timestep
+screen. The p=4 phase screen fails; p=6 has a positive supplementary lower margin
+smaller than its largest measured phase shift. The other frequency has no phase
+refinement. These flags remain separate from a combined error guarantee. The
+plus/minus ratio 1.446 is a ratio of point means without a qualified ratio interval.
+No live response or prospective forcing-history forecast is established.
+
+The [response export](data/twins-exact.json) preserves six correlated comparisons,
+all eight library vectors and contrast/reference covariance. The
+[velocity export](data/twins-velocity.json) shows a recorded unforced marginal
+and third moments; its quadrature is not rerun by the following command.
+The [velocity source notes](operands/exact-twins/README.md#unforced-velocity-view)
+identify its fixed inputs, equations and output selections. The new bar-growth
+ensemble is pending under a later protocol and is not supplied here.
+
+After installing the dependencies above, replay the saved-response analysis:
+
+```sh
+nice -n 10 .venv-discovery/bin/python discovery/scripts/discovery/replay_twins_exact.py \
+  --out ./twins-analysis-rerun
+```
+
+The [eight compact NPZ libraries](operands/exact-twins/manifest.json) total
+301,638 bytes and supply binding energy, L, folded Lz, common absolute masses,
+sampling density Fq, both partner impulses for both histories, and four selected
+refinement pairs. They contain no initial states, phase arrays or movies. Original
+input hashes and exact array selections are retained. Fq was evaluated once with
+the archived AGAMA DF during extraction; public replay uses that stored operand
+and requires only NumPy and SciPy. It rebuilds the original 96-term positive F0
+series, uses frozen alpha without fitting, and applies Fplus/minus divided by Fq
+without per-population or per-library mass renormalization.
+
+The [checked analysis execution](reproductions/twins-analysis-01/receipt.json)
+reproduced 808 numerical values exactly: all six means and standard errors,
+pointwise and six-comparison Bonferroni intervals, plus/minus/reference
+uncertainties, full covariance and selected paired contractions. This is an
+arithmetic/software replay conditional on supplied response impulses, not
+regeneration of orbit evolution, a new physical sample or a test of another
+forcing history. Eight-library Student-t coverage remains uncalibrated.
+
+The separate unforced algebra challenge uses Python's standard-library
+Fraction and Decimal arithmetic:
+
+```sh
+nice -n 10 .venv-discovery/bin/python discovery/scripts/discovery/twins_proof_challenge.py \
+  --out ./twins-proof-rerun.json
+```
+
+It independently rebuilds all three exact rational positivity bounds and the
+streaming cancellation from [frozen operands](operands/exact-twins/frozen-populations.json).
+For the optional 80-digit alpha check, install
+[proof-optional-requirements.lock.txt](proof-optional-requirements.lock.txt) and
+add `--mpmath`; the [recorded proof execution](reproductions/twins-proof-01/result.json)
+used mpmath 1.3.0. The original AGAMA-importing preflight and its original
+contraction source are inspection snapshots; the portable adapters are the
+commands above. No collective-stability or formation-history claim follows.
+
+The [priority review](research/discovery-20261001/TWINS_PRIORITY_REVIEW.md)
+places the construction alongside earlier halo-population and resonant-response
+work; it does not establish novelty.
+
+## Cored selective heating: published outputs
+
+The [feedback summary](research/discovery-20261001/FEEDBACK_PUBLIC_SUMMARY.md)
+and [scientific export](data/feedback.json) report a prescribed frequency-8 gas
+pulse in a fixed, initially cored spherical potential. It gives much less energy
+per unit mass to the selected whole stellar population than to a stationary
+central halo tracer. Inner stars receive substantially more heating than that
+whole-population normalization suggests. The retained amplitude, timestep and
+independent-estimator checks qualify this bounded example; they establish
+neither a dark-matter core nor acceptable heating in an observed old disk.
+
+This package supplies the recorded feedback outputs and scientific summary,
+without a feedback simulation or bootstrap replay. Its evidence hashes identify
+archived records. The cuspy-halo extension with centrally populated stars is
+in progress, as is the new bar-growth twin ensemble. Neither pending experiment
+has an outcome or source release here.
 
 ## Optional halo-echo calculations
 
