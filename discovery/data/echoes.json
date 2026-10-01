@@ -4,8 +4,12 @@
   "branch": "echoes",
   "status": "terminal",
   "release": {
-    "status": "pending_clean_release",
-    "note": "Evidence record IDs name archived inputs, not live public URLs. Source and reproduction bundle await a clean release."
+    "status": "limited_source_and_known_control_release",
+    "source_scope": "Released optional halo-echo source families, exact historical source snapshots, protocols and compact recorded operands.",
+    "reproduction_scope": "The included receipt verifies three regenerated known-limit controls: harmonic inertia, the conservative elastic operator and the constant-shear echo. It does not regenerate the full collision-law response ensembles or the halo-echo predictions.",
+    "note": "Evidence record IDs and their original hashes identify archived inputs; historical run directories are not included as live downloads. Scientific operands and archived source/evidence hashes are unchanged.",
+    "bundle_readme": "../README.md",
+    "known_control_receipt": "../reproductions/public-controls-01/receipt.json"
   },
   "title": "Recoverable radial halo memory has a tiny gravitational readout",
   "finding": "A selected spherical halo cohort passes radial echo controls in a prescribed background. A separate positive spatial model has a verified leading two-frequency prediction. Both unamplified force signals are small.",

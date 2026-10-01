@@ -30,31 +30,45 @@
     },
     {
       "path": "README.md",
-      "bytes": 10151,
-      "sha256": "bf365c2a290526935eb4841607feb65e6e7e39aeb3bb370f305320c05b24e063",
+      "bytes": 10239,
+      "sha256": "488cfe8d75aff0a283444db7ab585470219b6e65d3e67ffb492ba887b74b5666",
       "archived_sha256": "12b58d9ca5e59cfebe4defe8e4e1b57bcef9836faceac4c79a02299b8b704af7",
-      "byte_identical_to_archive": false
+      "byte_identical_to_archive": false,
+      "release_transformation": "Adapted bundle guide, portable report link and per-condition interval wording. Scientific scope unchanged."
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 13542,
+      "sha256": "d818fa7d1bc1e6da7e1dd5aafe8f2146ab9b353ecd3d5e1f6a663345e2442b0c",
+      "derived_from": [
+        "research/discovery-20261001/PUBLIC_TERMINAL_BRANCHES.md",
+        "research/discovery-20261001/PUBLIC_ECHO_SUMMARY.md"
+      ],
+      "scope": "Portable checkpoint report; halo twins and feedback remain active and have no final outcome included."
     },
     {
       "path": "data/echoes.json",
-      "bytes": 331842,
-      "sha256": "ed06ce140e30c2a0b899f9999f99a196d907e9603aa874df5ef497388d06f5d0",
+      "bytes": 332486,
+      "sha256": "2726db82eb128dea17b1f62568d2d298893f09d3e1604421401679ada96c94b0",
       "archived_sha256": "ed06ce140e30c2a0b899f9999f99a196d907e9603aa874df5ef497388d06f5d0",
-      "byte_identical_to_archive": true
+      "byte_identical_to_archive": false,
+      "release_transformation": "Updated only release availability/scope and relative bundle/receipt links. Scientific operands and archived provenance hashes unchanged."
     },
     {
       "path": "data/inertia.json",
-      "bytes": 14788,
-      "sha256": "ec58ba82cf9954d11be2a33f2efcba3e94ab6dc983e2c87de38a7dbd5cc5cb30",
+      "bytes": 15371,
+      "sha256": "ae42292877345bbdaf59dd23dd6965c0e6e1224cad03fe480f054d04b754e3aa",
       "archived_sha256": "ec58ba82cf9954d11be2a33f2efcba3e94ab6dc983e2c87de38a7dbd5cc5cb30",
-      "byte_identical_to_archive": true
+      "byte_identical_to_archive": false,
+      "release_transformation": "Updated only release availability/scope and relative bundle/receipt links. Scientific operands and archived provenance hashes unchanged."
     },
     {
       "path": "data/scattering.json",
-      "bytes": 42063,
-      "sha256": "4018dacf6a033737c2436021291306f61ed06ef070129aef3a62d7ab76782f02",
+      "bytes": 42665,
+      "sha256": "ac7357e7eb71a5a2b057073ca4340e68838ecd49cafd46feffafdc906fd4bf44",
       "archived_sha256": "4018dacf6a033737c2436021291306f61ed06ef070129aef3a62d7ab76782f02",
-      "byte_identical_to_archive": true
+      "byte_identical_to_archive": false,
+      "release_transformation": "Updated only release availability/scope and relative bundle/receipt links. Scientific operands and archived provenance hashes unchanged."
     },
     {
       "path": "reproductions/public-controls-01/README.md",
@@ -156,17 +170,19 @@
     },
     {
       "path": "research/discovery-20261001/PUBLIC_ECHO_SUMMARY.md",
-      "bytes": 4138,
-      "sha256": "69bec9f101bb0c30661c0c0704bfed42f1e96c66c5e0281a4b959bb9358ac580",
+      "bytes": 4436,
+      "sha256": "aebea670764eb9d99061ba3bd88dbefa2a677808f3b466bdc728f135f7bcce7a",
       "archived_sha256": "f4a86e5ae1edc6771b148baefd0360e63b322f6e555ac173cef03ab9cff4fc5b",
-      "byte_identical_to_archive": false
+      "byte_identical_to_archive": false,
+      "release_transformation": "Adapted relative links and limited-release availability text. Scientific findings unchanged."
     },
     {
       "path": "research/discovery-20261001/PUBLIC_TERMINAL_BRANCHES.md",
-      "bytes": 8033,
-      "sha256": "0a3fb04d33b3e328f3fa2e789c2d5d92ed47daded2703c9e4808f2016cd97462",
+      "bytes": 8259,
+      "sha256": "d8a0bcc96dd296082bb3fb5d6e7ac8dd4972cbb18bf3d805cf3c133c373252f3",
       "archived_sha256": "38e9a99b24bec56161147910bfd3f65fb5ad62fe77071ee7dd71b96722a311a2",
-      "byte_identical_to_archive": false
+      "byte_identical_to_archive": false,
+      "release_transformation": "Adapted relative links and limited-release availability text. Scientific findings unchanged."
     },
     {
       "path": "research/discovery-20261001/SCATTER_MOMENT_PROTOCOL.md",
@@ -360,5 +376,9 @@
     "child_cpu_seconds": 59.426331,
     "all_gates_pass": true,
     "new_independent_physical_evidence": false
+  },
+  "reading_fallback": {
+    "path": "REPORT.md",
+    "scope": "Completed collision/inertia reference experiments and recorded echo comparisons. Active twins/feedback outcomes excluded."
   }
 }

@@ -2,7 +2,7 @@
 
 A selected spherical halo population passes radial echo controls in a prescribed gravitational background. Its stronger tested pulses produce a force about 22 parts per million of the reference halo force. A separate spatial model has a verified leading prediction involving two orbital frequencies, with an even smaller force. Neither calculation establishes regenerated stellar structure or a self-consistent galaxy response.
 
-The public data are in [echoes.json](../../data/echoes.json). This export contains recorded signed curves, unrounded operands, stable row keys, archived file hashes and exact JSON or array selections. Evidence IDs identify retained records; the source and reproduction bundle await a clean public release.
+The public data are in [echoes.json](../../data/echoes.json). This export contains recorded signed curves, unrounded operands, stable row keys, archived file hashes and exact JSON or array selections. The [limited source bundle](../../README.md) includes optional halo-echo sources and exact historical snapshots. Its [known-control reproduction receipt](../../reproductions/public-controls-01/receipt.json) covers the constant-shear echo and the harmonic/operator controls, not the halo predictions. Evidence IDs identify retained records; historical run directories are not included as live downloads.
 
 ## Original quadrupole pilot
 

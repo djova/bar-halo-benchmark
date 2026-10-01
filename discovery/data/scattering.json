@@ -4,8 +4,12 @@
   "branch": "scattering",
   "status": "terminal",
   "release": {
-    "status": "pending_clean_release",
-    "note": "Source and reproduction bundle await a clean public release. Evidence record IDs identify archived inputs; they are not live public URLs."
+    "status": "limited_source_and_known_control_release",
+    "source_scope": "Released elastic gas operator and response solver, frozen protocols and compact response operands.",
+    "reproduction_scope": "The included receipt verifies three regenerated known-limit controls: harmonic inertia, the conservative elastic operator and the constant-shear echo. It does not regenerate the full collision-law response ensembles or the halo-echo predictions.",
+    "note": "Evidence record IDs and their original hashes identify archived inputs; historical run directories are not included as live downloads. Scientific operands and archived source/evidence hashes are unchanged.",
+    "bundle_readme": "../README.md",
+    "known_control_receipt": "../reproductions/public-controls-01/receipt.json"
   },
   "title": "A collision-law contrast did not pass the selected numerical checks",
   "finding": "Conservative laws with matched conditional velocity drift and the full raw second tensor passed ordinary controls. Their small original-waveform impulse contrast lost its resolved sign in both selected refinements; the second waveform was unresolved.",

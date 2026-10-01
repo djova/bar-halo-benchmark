@@ -8,7 +8,7 @@ proposed directions or establish a new live-galaxy result.
 
 The [interactive report](https://djova.ca/galaxy-bar/discovery.html) is separate
 from the [earlier population-response article](../publication/web/paper.md).
-Read the [completed collision/inertia summary](research/discovery-20261001/PUBLIC_TERMINAL_BRANCHES.md)
+Read the portable [Markdown report](REPORT.md), the [completed collision/inertia summary](research/discovery-20261001/PUBLIC_TERMINAL_BRANCHES.md)
 and [halo-echo model distinctions](research/discovery-20261001/PUBLIC_ECHO_SUMMARY.md).
 The [manifest](manifest.json) records released file hashes and preserved source
 hashes. Pin this repository's release commit when citing the package.
@@ -24,7 +24,8 @@ no credentials. Archive record IDs are provenance names, not promises that a
 corresponding raw run directory is included here.
 
 **Verification:** recompute arithmetic from supplied operands: the collision-law
-seed contrasts and pointwise intervals, the 53/32 angular-decay ratio, the three
+seed contrasts and per-condition nominal 95% intervals (not simultaneous
+intervals), the 53/32 angular-decay ratio, the three
 harmonic frequencies, or the saved echo-force peaks. This checks published
 relationships conditional on supplied outputs; it does not evolve the underlying
 physical experiment.

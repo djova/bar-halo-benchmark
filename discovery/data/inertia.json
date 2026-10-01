@@ -4,8 +4,12 @@
   "branch": "inertia",
   "status": "terminal",
   "release": {
-    "status": "pending_clean_release",
-    "note": "Source and reproduction bundle await a clean public release. Evidence record IDs identify archived inputs; they are not live public URLs."
+    "status": "limited_source_and_known_control_release",
+    "source_scope": "Released exact harmonic solver, frozen protocol and compact benchmark operands.",
+    "reproduction_scope": "The included receipt verifies three regenerated known-limit controls: harmonic inertia, the conservative elastic operator and the constant-shear echo. It does not regenerate the full collision-law response ensembles or the halo-echo predictions.",
+    "note": "Evidence record IDs and their original hashes identify archived inputs; historical run directories are not included as live downloads. Scientific operands and archived source/evidence hashes are unchanged.",
+    "bundle_readme": "../README.md",
+    "known_control_receipt": "../reproductions/public-controls-01/receipt.json"
   },
   "title": "Circular calibration leaves harmonic frequencies undetermined",
   "finding": "All frozen harmonic benchmark checks pass. With identical circular calibration, changing the published frequency filter family changes the second-axis frequency by 65.21% in the selected reference case. Coincident frequencies expose the known sharp-spectrum grouping singularity.",
