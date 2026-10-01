@@ -1,0 +1,37 @@
+{
+  "scope": "Saved-array arithmetic export only",
+  "summary_sha256": "b9dec4c9d2413c59564141916bcca358decc8dd986b1521da4104bdf4c63c73a",
+  "replay_sha256": "026d2e8517c55305dcdb0fbe0da4d3e37acbc65db251368824238b8df1f1bfbb",
+  "retained_files": [
+    {
+      "path": "operands/initial.npz",
+      "public_path": "operands/feedback-cusp-v1/operands/initial.npz",
+      "sha256": "5ce59f5c247381dd4be7d68a90f98d329f8a575a3ddc90a93c7ac39c09c86882",
+      "bytes": 629099
+    },
+    {
+      "path": "operands/known-map.npz",
+      "public_path": "operands/feedback-cusp-v1/operands/known-map.npz",
+      "sha256": "137380c76a061fe6ab390ce1e88500b05b1c020b5b7ffd378fbf16f93a8379de",
+      "bytes": 4444116
+    },
+    {
+      "path": "operands/pulse-dt0.000625.npz",
+      "public_path": "operands/feedback-cusp-v1/operands/pulse-dt0.000625.npz",
+      "sha256": "778b85bc00d5bbafaa7c0d7428b840c1462fd18e24fe0c716d78738084765540",
+      "bytes": 3089051
+    },
+    {
+      "path": "operands/pulse-dt0.00125.npz",
+      "public_path": "operands/feedback-cusp-v1/operands/pulse-dt0.00125.npz",
+      "sha256": "e2eb7c442d35a46ab15aac15fda9658f2f9f16539125a894870a59bb4cbd0eb1",
+      "bytes": 3090747
+    },
+    {
+      "path": "operands/selected-reference.npz",
+      "public_path": "operands/feedback-cusp-v1/operands/selected-reference.npz",
+      "sha256": "f8b5e1336cfbc6648669d79a1242db07522b8400a64e76c315818f77011a2c79",
+      "bytes": 7460
+    }
+  ]
+}

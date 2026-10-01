@@ -1,0 +1,1140 @@
+{
+  "schema_version": 1,
+  "status": "complete_saved_arithmetic_operands",
+  "model": "G=M=1 isochrone b=0.5 with externally prescribed growing quadrupole",
+  "libraries": [
+    {
+      "library_id": 0,
+      "id": "coarse-0",
+      "seed": 39401,
+      "path": "library-0.npz",
+      "bytes": 1554638,
+      "sha256": "007b57634bbdb10a61b43ae11f3866a64756a4de78eb90878eeee1f3bdc99939",
+      "arrays": {
+        "times": {
+          "shape": [
+            25
+          ],
+          "dtype": "<f8",
+          "units": "isochrone reference time; not Gyr",
+          "axes": [
+            "recorded_time"
+          ],
+          "meaning": "25 actually recorded times from 0 through 300"
+        },
+        "actions": {
+          "shape": [
+            512,
+            3
+          ],
+          "dtype": "<f8",
+          "units": "reference specific action",
+          "axes": [
+            "action_family",
+            "action_coordinate"
+          ],
+          "meaning": "Columns Jr, Jz, folded positive Lz; not instantaneous geometric coordinates"
+        },
+        "mass": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "units": "reference mass",
+          "axes": [
+            "action_family"
+          ],
+          "meaning": "Common absolute sampling masses; no per-population or per-library renormalization"
+        },
+        "F0_over_Fq": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "units": "dimensionless",
+          "axes": [
+            "action_family"
+          ],
+          "meaning": "Frozen exact target / sampling DF ratio"
+        },
+        "signed_deltaF_over_Fq": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "units": "dimensionless",
+          "axes": [
+            "population",
+            "action_family"
+          ],
+          "meaning": "Frozen odd perturbation / sampling DF weights, ordered p4,p6,p8"
+        },
+        "family_impulses": {
+          "shape": [
+            25,
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "units": "reference specific angular momentum",
+          "axes": [
+            "recorded_time",
+            "action_family",
+            "velocity_sense"
+          ],
+          "meaning": "Cumulative bar-mediated Lz change, phase-averaged within each family/sense"
+        },
+        "family_external_work": {
+          "shape": [
+            25,
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "units": "reference specific energy",
+          "axes": [
+            "recorded_time",
+            "action_family",
+            "velocity_sense"
+          ],
+          "meaning": "Cumulative external work including rotation and amplitude growth"
+        },
+        "azimuth_double_0_family_impulses": {
+          "shape": [
+            25,
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "units": "reference specific angular momentum",
+          "axes": [
+            "recorded_time",
+            "action_family",
+            "velocity_sense"
+          ],
+          "meaning": "Cumulative bar-mediated Lz change, phase-averaged within each family/sense"
+        },
+        "azimuth_double_0_family_external_work": {
+          "shape": [
+            25,
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "units": "reference specific energy",
+          "axes": [
+            "recorded_time",
+            "action_family",
+            "velocity_sense"
+          ],
+          "meaning": "Cumulative external work including rotation and amplitude growth"
+        },
+        "radial_vertical_double_0_family_impulses": {
+          "shape": [
+            25,
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "units": "reference specific angular momentum",
+          "axes": [
+            "recorded_time",
+            "action_family",
+            "velocity_sense"
+          ],
+          "meaning": "Cumulative bar-mediated Lz change, phase-averaged within each family/sense"
+        },
+        "radial_vertical_double_0_family_external_work": {
+          "shape": [
+            25,
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "units": "reference specific energy",
+          "axes": [
+            "recorded_time",
+            "action_family",
+            "velocity_sense"
+          ],
+          "meaning": "Cumulative external work including rotation and amplitude growth"
+        },
+        "halfstep_0_family_impulses": {
+          "shape": [
+            25,
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "units": "reference specific angular momentum",
+          "axes": [
+            "recorded_time",
+            "action_family",
+            "velocity_sense"
+          ],
+          "meaning": "Cumulative bar-mediated Lz change, phase-averaged within each family/sense"
+        },
+        "halfstep_0_family_external_work": {
+          "shape": [
+            25,
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "units": "reference specific energy",
+          "axes": [
+            "recorded_time",
+            "action_family",
+            "velocity_sense"
+          ],
+          "meaning": "Cumulative external work including rotation and amplitude growth"
+        }
+      },
+      "original_arrays": [
+        {
+          "id": "coarse-0",
+          "full_original_array_sha256": "30c81ed66090596e8f607b02da1e2a8f1ec0ca12d0763004cd33eb9fce7e63da",
+          "selections": [
+            "times",
+            "actions",
+            "mass",
+            "F0_over_Fq",
+            "signed_deltaF_over_Fq",
+            "family_impulses",
+            "family_external_work"
+          ]
+        },
+        {
+          "id": "azimuth-double-0",
+          "full_original_array_sha256": "660a66453fb02f8ddf97c91157f4f7a668699c3e47f0072b32d4a5e994404773",
+          "selections": [
+            "family_impulses",
+            "family_external_work"
+          ]
+        },
+        {
+          "id": "radial-vertical-double-0",
+          "full_original_array_sha256": "e69b6c2218e0f4f2c9f62ef2ff7f767067c0a976ca8e8be3c4c2b766ecea68eb",
+          "selections": [
+            "family_impulses",
+            "family_external_work"
+          ]
+        },
+        {
+          "id": "halfstep-0",
+          "full_original_array_sha256": "5a0460749cda07b7feab7033e5ee09e66b7cdd9a3db56203df3e82345b17dc4a",
+          "selections": [
+            "family_impulses",
+            "family_external_work"
+          ]
+        }
+      ]
+    },
+    {
+      "library_id": 1,
+      "id": "coarse-1",
+      "seed": 39501,
+      "path": "library-1.npz",
+      "bytes": 409329,
+      "sha256": "b9466c9eb00ab262162e7e7f5484c3494bfb2930cd51bfe67fa2687ffde686b0",
+      "arrays": {
+        "times": {
+          "shape": [
+            25
+          ],
+          "dtype": "<f8",
+          "units": "isochrone reference time; not Gyr",
+          "axes": [
+            "recorded_time"
+          ],
+          "meaning": "25 actually recorded times from 0 through 300"
+        },
+        "actions": {
+          "shape": [
+            512,
+            3
+          ],
+          "dtype": "<f8",
+          "units": "reference specific action",
+          "axes": [
+            "action_family",
+            "action_coordinate"
+          ],
+          "meaning": "Columns Jr, Jz, folded positive Lz; not instantaneous geometric coordinates"
+        },
+        "mass": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "units": "reference mass",
+          "axes": [
+            "action_family"
+          ],
+          "meaning": "Common absolute sampling masses; no per-population or per-library renormalization"
+        },
+        "F0_over_Fq": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "units": "dimensionless",
+          "axes": [
+            "action_family"
+          ],
+          "meaning": "Frozen exact target / sampling DF ratio"
+        },
+        "signed_deltaF_over_Fq": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "units": "dimensionless",
+          "axes": [
+            "population",
+            "action_family"
+          ],
+          "meaning": "Frozen odd perturbation / sampling DF weights, ordered p4,p6,p8"
+        },
+        "family_impulses": {
+          "shape": [
+            25,
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "units": "reference specific angular momentum",
+          "axes": [
+            "recorded_time",
+            "action_family",
+            "velocity_sense"
+          ],
+          "meaning": "Cumulative bar-mediated Lz change, phase-averaged within each family/sense"
+        },
+        "family_external_work": {
+          "shape": [
+            25,
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "units": "reference specific energy",
+          "axes": [
+            "recorded_time",
+            "action_family",
+            "velocity_sense"
+          ],
+          "meaning": "Cumulative external work including rotation and amplitude growth"
+        }
+      },
+      "original_arrays": [
+        {
+          "id": "coarse-1",
+          "full_original_array_sha256": "65b28ca805a64349e0246160053023e5cb53cdbbf597576948b7f0e62e85b2ce",
+          "selections": [
+            "times",
+            "actions",
+            "mass",
+            "F0_over_Fq",
+            "signed_deltaF_over_Fq",
+            "family_impulses",
+            "family_external_work"
+          ]
+        }
+      ]
+    },
+    {
+      "library_id": 2,
+      "id": "coarse-2",
+      "seed": 39601,
+      "path": "library-2.npz",
+      "bytes": 409495,
+      "sha256": "4238c748783458e17eeca3b3a73719b312756d663f157c80b23fe717e5632e42",
+      "arrays": {
+        "times": {
+          "shape": [
+            25
+          ],
+          "dtype": "<f8",
+          "units": "isochrone reference time; not Gyr",
+          "axes": [
+            "recorded_time"
+          ],
+          "meaning": "25 actually recorded times from 0 through 300"
+        },
+        "actions": {
+          "shape": [
+            512,
+            3
+          ],
+          "dtype": "<f8",
+          "units": "reference specific action",
+          "axes": [
+            "action_family",
+            "action_coordinate"
+          ],
+          "meaning": "Columns Jr, Jz, folded positive Lz; not instantaneous geometric coordinates"
+        },
+        "mass": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "units": "reference mass",
+          "axes": [
+            "action_family"
+          ],
+          "meaning": "Common absolute sampling masses; no per-population or per-library renormalization"
+        },
+        "F0_over_Fq": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "units": "dimensionless",
+          "axes": [
+            "action_family"
+          ],
+          "meaning": "Frozen exact target / sampling DF ratio"
+        },
+        "signed_deltaF_over_Fq": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "units": "dimensionless",
+          "axes": [
+            "population",
+            "action_family"
+          ],
+          "meaning": "Frozen odd perturbation / sampling DF weights, ordered p4,p6,p8"
+        },
+        "family_impulses": {
+          "shape": [
+            25,
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "units": "reference specific angular momentum",
+          "axes": [
+            "recorded_time",
+            "action_family",
+            "velocity_sense"
+          ],
+          "meaning": "Cumulative bar-mediated Lz change, phase-averaged within each family/sense"
+        },
+        "family_external_work": {
+          "shape": [
+            25,
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "units": "reference specific energy",
+          "axes": [
+            "recorded_time",
+            "action_family",
+            "velocity_sense"
+          ],
+          "meaning": "Cumulative external work including rotation and amplitude growth"
+        }
+      },
+      "original_arrays": [
+        {
+          "id": "coarse-2",
+          "full_original_array_sha256": "f7365b1a4e3160abce67dcfa563c3cfa5068ada3e5ff5a3ce69b3663482e3ef7",
+          "selections": [
+            "times",
+            "actions",
+            "mass",
+            "F0_over_Fq",
+            "signed_deltaF_over_Fq",
+            "family_impulses",
+            "family_external_work"
+          ]
+        }
+      ]
+    },
+    {
+      "library_id": 3,
+      "id": "coarse-3",
+      "seed": 39701,
+      "path": "library-3.npz",
+      "bytes": 409065,
+      "sha256": "87af1fd62114532da5a01b91b7f32b7d7b64a790db042d6a31856e5daadef289",
+      "arrays": {
+        "times": {
+          "shape": [
+            25
+          ],
+          "dtype": "<f8",
+          "units": "isochrone reference time; not Gyr",
+          "axes": [
+            "recorded_time"
+          ],
+          "meaning": "25 actually recorded times from 0 through 300"
+        },
+        "actions": {
+          "shape": [
+            512,
+            3
+          ],
+          "dtype": "<f8",
+          "units": "reference specific action",
+          "axes": [
+            "action_family",
+            "action_coordinate"
+          ],
+          "meaning": "Columns Jr, Jz, folded positive Lz; not instantaneous geometric coordinates"
+        },
+        "mass": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "units": "reference mass",
+          "axes": [
+            "action_family"
+          ],
+          "meaning": "Common absolute sampling masses; no per-population or per-library renormalization"
+        },
+        "F0_over_Fq": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "units": "dimensionless",
+          "axes": [
+            "action_family"
+          ],
+          "meaning": "Frozen exact target / sampling DF ratio"
+        },
+        "signed_deltaF_over_Fq": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "units": "dimensionless",
+          "axes": [
+            "population",
+            "action_family"
+          ],
+          "meaning": "Frozen odd perturbation / sampling DF weights, ordered p4,p6,p8"
+        },
+        "family_impulses": {
+          "shape": [
+            25,
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "units": "reference specific angular momentum",
+          "axes": [
+            "recorded_time",
+            "action_family",
+            "velocity_sense"
+          ],
+          "meaning": "Cumulative bar-mediated Lz change, phase-averaged within each family/sense"
+        },
+        "family_external_work": {
+          "shape": [
+            25,
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "units": "reference specific energy",
+          "axes": [
+            "recorded_time",
+            "action_family",
+            "velocity_sense"
+          ],
+          "meaning": "Cumulative external work including rotation and amplitude growth"
+        }
+      },
+      "original_arrays": [
+        {
+          "id": "coarse-3",
+          "full_original_array_sha256": "a95a4a7feee8d0dc56a9382f3b6981785a8618654bf560fd02fae28bda57be4f",
+          "selections": [
+            "times",
+            "actions",
+            "mass",
+            "F0_over_Fq",
+            "signed_deltaF_over_Fq",
+            "family_impulses",
+            "family_external_work"
+          ]
+        }
+      ]
+    },
+    {
+      "library_id": 4,
+      "id": "coarse-4",
+      "seed": 39801,
+      "path": "library-4.npz",
+      "bytes": 409192,
+      "sha256": "48236b813038c07ffc60d87df9aa9cdaafcec06786d0e6a4fcaad8d7c23fd44d",
+      "arrays": {
+        "times": {
+          "shape": [
+            25
+          ],
+          "dtype": "<f8",
+          "units": "isochrone reference time; not Gyr",
+          "axes": [
+            "recorded_time"
+          ],
+          "meaning": "25 actually recorded times from 0 through 300"
+        },
+        "actions": {
+          "shape": [
+            512,
+            3
+          ],
+          "dtype": "<f8",
+          "units": "reference specific action",
+          "axes": [
+            "action_family",
+            "action_coordinate"
+          ],
+          "meaning": "Columns Jr, Jz, folded positive Lz; not instantaneous geometric coordinates"
+        },
+        "mass": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "units": "reference mass",
+          "axes": [
+            "action_family"
+          ],
+          "meaning": "Common absolute sampling masses; no per-population or per-library renormalization"
+        },
+        "F0_over_Fq": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "units": "dimensionless",
+          "axes": [
+            "action_family"
+          ],
+          "meaning": "Frozen exact target / sampling DF ratio"
+        },
+        "signed_deltaF_over_Fq": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "units": "dimensionless",
+          "axes": [
+            "population",
+            "action_family"
+          ],
+          "meaning": "Frozen odd perturbation / sampling DF weights, ordered p4,p6,p8"
+        },
+        "family_impulses": {
+          "shape": [
+            25,
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "units": "reference specific angular momentum",
+          "axes": [
+            "recorded_time",
+            "action_family",
+            "velocity_sense"
+          ],
+          "meaning": "Cumulative bar-mediated Lz change, phase-averaged within each family/sense"
+        },
+        "family_external_work": {
+          "shape": [
+            25,
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "units": "reference specific energy",
+          "axes": [
+            "recorded_time",
+            "action_family",
+            "velocity_sense"
+          ],
+          "meaning": "Cumulative external work including rotation and amplitude growth"
+        }
+      },
+      "original_arrays": [
+        {
+          "id": "coarse-4",
+          "full_original_array_sha256": "fd32cadc5af9c81aa8b04fef729c0fefa5c176209334909996ffa29385efc70f",
+          "selections": [
+            "times",
+            "actions",
+            "mass",
+            "F0_over_Fq",
+            "signed_deltaF_over_Fq",
+            "family_impulses",
+            "family_external_work"
+          ]
+        }
+      ]
+    },
+    {
+      "library_id": 5,
+      "id": "coarse-5",
+      "seed": 39901,
+      "path": "library-5.npz",
+      "bytes": 408711,
+      "sha256": "1acdafc31abdd68d704dc0409d3827e4336d9a511c36ec1c29dfb65ec756bb79",
+      "arrays": {
+        "times": {
+          "shape": [
+            25
+          ],
+          "dtype": "<f8",
+          "units": "isochrone reference time; not Gyr",
+          "axes": [
+            "recorded_time"
+          ],
+          "meaning": "25 actually recorded times from 0 through 300"
+        },
+        "actions": {
+          "shape": [
+            512,
+            3
+          ],
+          "dtype": "<f8",
+          "units": "reference specific action",
+          "axes": [
+            "action_family",
+            "action_coordinate"
+          ],
+          "meaning": "Columns Jr, Jz, folded positive Lz; not instantaneous geometric coordinates"
+        },
+        "mass": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "units": "reference mass",
+          "axes": [
+            "action_family"
+          ],
+          "meaning": "Common absolute sampling masses; no per-population or per-library renormalization"
+        },
+        "F0_over_Fq": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "units": "dimensionless",
+          "axes": [
+            "action_family"
+          ],
+          "meaning": "Frozen exact target / sampling DF ratio"
+        },
+        "signed_deltaF_over_Fq": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "units": "dimensionless",
+          "axes": [
+            "population",
+            "action_family"
+          ],
+          "meaning": "Frozen odd perturbation / sampling DF weights, ordered p4,p6,p8"
+        },
+        "family_impulses": {
+          "shape": [
+            25,
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "units": "reference specific angular momentum",
+          "axes": [
+            "recorded_time",
+            "action_family",
+            "velocity_sense"
+          ],
+          "meaning": "Cumulative bar-mediated Lz change, phase-averaged within each family/sense"
+        },
+        "family_external_work": {
+          "shape": [
+            25,
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "units": "reference specific energy",
+          "axes": [
+            "recorded_time",
+            "action_family",
+            "velocity_sense"
+          ],
+          "meaning": "Cumulative external work including rotation and amplitude growth"
+        }
+      },
+      "original_arrays": [
+        {
+          "id": "coarse-5",
+          "full_original_array_sha256": "c7233a997d2e9599b064b413bdfc1908bcf8e88b2b996a803fec15292bfdb1e9",
+          "selections": [
+            "times",
+            "actions",
+            "mass",
+            "F0_over_Fq",
+            "signed_deltaF_over_Fq",
+            "family_impulses",
+            "family_external_work"
+          ]
+        }
+      ]
+    },
+    {
+      "library_id": 6,
+      "id": "coarse-6",
+      "seed": 40001,
+      "path": "library-6.npz",
+      "bytes": 408942,
+      "sha256": "8152471822c5aad0f5d3dececa81f6f1b65baa51d867298ecf92d51b32e50bd0",
+      "arrays": {
+        "times": {
+          "shape": [
+            25
+          ],
+          "dtype": "<f8",
+          "units": "isochrone reference time; not Gyr",
+          "axes": [
+            "recorded_time"
+          ],
+          "meaning": "25 actually recorded times from 0 through 300"
+        },
+        "actions": {
+          "shape": [
+            512,
+            3
+          ],
+          "dtype": "<f8",
+          "units": "reference specific action",
+          "axes": [
+            "action_family",
+            "action_coordinate"
+          ],
+          "meaning": "Columns Jr, Jz, folded positive Lz; not instantaneous geometric coordinates"
+        },
+        "mass": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "units": "reference mass",
+          "axes": [
+            "action_family"
+          ],
+          "meaning": "Common absolute sampling masses; no per-population or per-library renormalization"
+        },
+        "F0_over_Fq": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "units": "dimensionless",
+          "axes": [
+            "action_family"
+          ],
+          "meaning": "Frozen exact target / sampling DF ratio"
+        },
+        "signed_deltaF_over_Fq": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "units": "dimensionless",
+          "axes": [
+            "population",
+            "action_family"
+          ],
+          "meaning": "Frozen odd perturbation / sampling DF weights, ordered p4,p6,p8"
+        },
+        "family_impulses": {
+          "shape": [
+            25,
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "units": "reference specific angular momentum",
+          "axes": [
+            "recorded_time",
+            "action_family",
+            "velocity_sense"
+          ],
+          "meaning": "Cumulative bar-mediated Lz change, phase-averaged within each family/sense"
+        },
+        "family_external_work": {
+          "shape": [
+            25,
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "units": "reference specific energy",
+          "axes": [
+            "recorded_time",
+            "action_family",
+            "velocity_sense"
+          ],
+          "meaning": "Cumulative external work including rotation and amplitude growth"
+        }
+      },
+      "original_arrays": [
+        {
+          "id": "coarse-6",
+          "full_original_array_sha256": "5129546165a77bac4f572457763e49eceaf7a27d107ce53dededcaa61b8bcae1",
+          "selections": [
+            "times",
+            "actions",
+            "mass",
+            "F0_over_Fq",
+            "signed_deltaF_over_Fq",
+            "family_impulses",
+            "family_external_work"
+          ]
+        }
+      ]
+    },
+    {
+      "library_id": 7,
+      "id": "coarse-7",
+      "seed": 40101,
+      "path": "library-7.npz",
+      "bytes": 409317,
+      "sha256": "346cbc8adaf39cebaf1f66627d393e694dc79364e8bf6f20651440961077f3f2",
+      "arrays": {
+        "times": {
+          "shape": [
+            25
+          ],
+          "dtype": "<f8",
+          "units": "isochrone reference time; not Gyr",
+          "axes": [
+            "recorded_time"
+          ],
+          "meaning": "25 actually recorded times from 0 through 300"
+        },
+        "actions": {
+          "shape": [
+            512,
+            3
+          ],
+          "dtype": "<f8",
+          "units": "reference specific action",
+          "axes": [
+            "action_family",
+            "action_coordinate"
+          ],
+          "meaning": "Columns Jr, Jz, folded positive Lz; not instantaneous geometric coordinates"
+        },
+        "mass": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "units": "reference mass",
+          "axes": [
+            "action_family"
+          ],
+          "meaning": "Common absolute sampling masses; no per-population or per-library renormalization"
+        },
+        "F0_over_Fq": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "units": "dimensionless",
+          "axes": [
+            "action_family"
+          ],
+          "meaning": "Frozen exact target / sampling DF ratio"
+        },
+        "signed_deltaF_over_Fq": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "units": "dimensionless",
+          "axes": [
+            "population",
+            "action_family"
+          ],
+          "meaning": "Frozen odd perturbation / sampling DF weights, ordered p4,p6,p8"
+        },
+        "family_impulses": {
+          "shape": [
+            25,
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "units": "reference specific angular momentum",
+          "axes": [
+            "recorded_time",
+            "action_family",
+            "velocity_sense"
+          ],
+          "meaning": "Cumulative bar-mediated Lz change, phase-averaged within each family/sense"
+        },
+        "family_external_work": {
+          "shape": [
+            25,
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "units": "reference specific energy",
+          "axes": [
+            "recorded_time",
+            "action_family",
+            "velocity_sense"
+          ],
+          "meaning": "Cumulative external work including rotation and amplitude growth"
+        }
+      },
+      "original_arrays": [
+        {
+          "id": "coarse-7",
+          "full_original_array_sha256": "31f94427eb11b019ac4f4c41bbd079148e5f406b907c9a5cfc0eb3f128984f36",
+          "selections": [
+            "times",
+            "actions",
+            "mass",
+            "F0_over_Fq",
+            "signed_deltaF_over_Fq",
+            "family_impulses",
+            "family_external_work"
+          ]
+        }
+      ]
+    }
+  ],
+  "velocity_sense_order": [
+    "prograde",
+    "complete_velocity_reversal"
+  ],
+  "action_coordinate_order": [
+    "Jr",
+    "Jz",
+    "folded_positive_Lz"
+  ],
+  "population_order": [
+    4,
+    6,
+    8
+  ],
+  "sampling_unit": "Eight complete independent action/phase libraries; senses, phase nodes, populations and times are correlated",
+  "missing_values": "None; every supplied array entry is finite. Unsupplied complete state arrays are omitted, not zero-filled.",
+  "pairing": "All populations share each trajectory; three library-0 refinements are paired to the same original action family.",
+  "original_completed_composite_result_sha256": "9135efaf234b616089113a99ed95e3b60ddd3dceccc8bea958cec603722ac6a3",
+  "original_launch_config_sha256": "347ae2cfa6c07cb890901c5dcfc8d9dc6435ee82330d93c64aab71f44a633753",
+  "original_input_snapshot_hashes": [
+    {
+      "path": "scripts/discovery/twins_growth.py",
+      "sha256": "6d0e5ff440b8a6cb04f88508d57be660beab296d9c925c8ae4520dd1fa9a6fd6"
+    },
+    {
+      "path": "scripts/discovery/twins_randomized.py",
+      "sha256": "8924d09e2d21f45f760f4b57f8833b0db44e31a4bb3ec994ab9ae39560e10fce"
+    },
+    {
+      "path": "scripts/discovery/twins.py",
+      "sha256": "1801a0cb7dee4c3776c81d9336e7384eecc50e6f22e24fd0dd6f8a32c1c46c7d"
+    },
+    {
+      "path": "scripts/discovery/twins_exact_response.py",
+      "sha256": "2adef1e79b868d3ac7a5222aa411ee6a5e646bb529cdbe4b070e2d23633283dd"
+    },
+    {
+      "path": "scripts/discovery/twins_exact_moments.py",
+      "sha256": "1d1a175ebd380004458f83c2bc27ef3323be33315d7a4248faa8722d8f7a2f08"
+    },
+    {
+      "path": "scripts/discovery/growth_reference.py",
+      "sha256": "d316e8a8a65549668c30b4ba2faf23f5fc7db3924c20c80c27aa1c3d4f2b60e5"
+    },
+    {
+      "path": "scripts/discovery/broad_reference.py",
+      "sha256": "8a686e710d62746acf88d526a4934625e01d7b88d569bc60dba9d84c1fffc29d"
+    },
+    {
+      "path": "scripts/discovery/growth_kernel.cpp",
+      "sha256": "6d68dba9fbce331d193d72edbff8d4eb35fef26ab4c235c609e32a278e7bee31"
+    },
+    {
+      "path": "benchmark/orbit_fourth.py",
+      "sha256": "c592aedac87f8a2e180cad454f8472a40f9df3706d20e458c9bc2f24dca74207"
+    },
+    {
+      "path": "benchmark/orbit_kernel.py",
+      "sha256": "db8e3de488065bf2e1b010aae78d0b9b6db8a97e2589e3fdba4c0369b75e24ff"
+    },
+    {
+      "path": "build/discovery/growth-fourth.so",
+      "sha256": "df31c7a6741815d93f6e6fb6118f8e4a576c38f1d0267cc0a19bab8cba92a267"
+    },
+    {
+      "path": "build/noise-sweep/Agama-stable-v2/agama.so",
+      "sha256": "f6c04e4941aff3538d3bb08f6446d731b788d85406af94092cf856fbd139d000"
+    },
+    {
+      "path": "build/noise-sweep/Agama-stable-v2/LICENSE",
+      "sha256": "5157d40f6950d1a7e5bd09c72a47bf0262150d517cf1abc01c143a0ed68f5888"
+    },
+    {
+      "path": "evidence/growth-protocol.md",
+      "sha256": "c5cb7e41314e0e99efe4704ab81209c2192a5ee650df05e2a00ea261c7617e12"
+    },
+    {
+      "path": "evidence/exact-moments-protocol.md",
+      "sha256": "e5c87332f3f790b442d166c8ee3081712b194cd39996c661f8d4c58b52342ba3"
+    },
+    {
+      "path": "evidence/exact-response-protocol.md",
+      "sha256": "f8d003681b3f19aeda3eee21301cc92a77102a1ce3203d2a774acb74f22ef944"
+    },
+    {
+      "path": "evidence/frozen-populations.json",
+      "sha256": "dc97087897f70d889aefe827499cf68a966a25c18f3ed5e9cb9cd44b82aade31"
+    },
+    {
+      "path": "evidence/preflight-result.json",
+      "sha256": "aa02c6558546160e77a5795043cd4216f27f18eeb19c3b4b52fbc32bae5ee90d"
+    },
+    {
+      "path": "evidence/preflight-START.json",
+      "sha256": "021e657abfe8c44765c4c0bace2e7eca9ae075a60c6464fe0e4396d2571156f2"
+    },
+    {
+      "path": "evidence/preflight-launch-config.json",
+      "sha256": "e1d8ea6c233eed3659277fb2d866ffb0d58cd6fc0b00f3f698a47fd2b3b31db2"
+    },
+    {
+      "path": "evidence/preflight-COMPLETE",
+      "sha256": "02813343eb1cf302235902ed55b6dee703148be2d3c9235d2ea1169d5ee0a72e"
+    }
+  ],
+  "access_scope": "Supplied compact outputs and saved-array arithmetic are reproducible. Complete initial states, full particle histories, AGAMA sampling and orbital evolution are not reproduced by this package.",
+  "dataset_version": "twins-growth-v1"
+}

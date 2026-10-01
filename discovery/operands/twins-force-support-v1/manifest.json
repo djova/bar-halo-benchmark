@@ -1,0 +1,4094 @@
+{
+  "dataset_version": "twins-force-support-v1",
+  "status": "complete_saved_arithmetic_operands",
+  "access": "Plain files; NumPy-only replay reads these without credentials or simulation libraries",
+  "interpretation": "Reading and arithmetic replay do not independently regenerate the archived forces, quadrature integrands, or trajectories",
+  "missing_value_semantics": "No missing numeric values; false gates are scientific records, not absent data",
+  "reuse": "New extraction and replay follow the public benchmark MIT license; original solver dependencies retain their own licenses",
+  "pairing": "Static force targets include coincident reversal partners. Live cases share fixed initial pair draws; coarse/fine share sample. Action-support replicates are eight whole libraries.",
+  "seeds": {
+    "force": [
+      50401,
+      50401,
+      50401
+    ],
+    "live": [
+      50411,
+      50412
+    ],
+    "support": "Eight original frozen libraries; see recorded growth/randomized protocols"
+  },
+  "source_artifacts": [
+    {
+      "path": "research/discovery-20261001/TWINS_FORCE_SUPPORT_PUBLIC_V1.md",
+      "sha256": "aca233e8720364eadc0fc5845b63e0bb9e3648468034d1d9638bd0beb43c7381"
+    },
+    {
+      "path": "results/discovery-20261001/twins/action-support-01/contributions.npz",
+      "sha256": "2aecc94746d1a14910bdb2cc5fd9b59fc682ec66dd0881cfe7d4937b87ba098c"
+    },
+    {
+      "path": "results/discovery-20261001/twins/action-support-01/result.json",
+      "sha256": "3f034cd380056ce54e2d724df8c0a674e767a4a6bfaf0e064bfe3f08954383aa"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-formula-01/result.json",
+      "sha256": "71d18a4ab9f76713901ad176c337b0b59fb9874f4b464474785ed2fe2f3ab852"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-p1-02/force-eps0.0125-r0.02.npz",
+      "sha256": "b177142345f0f9b51346c025433784d7e87df3d8b78108fb8c0536311c590a5d"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-p1-02/force-eps0.0125-r0.05.npz",
+      "sha256": "9c3e26f3bbbdd9eea3e4f788deaeddac53828d1c5a2cb4b5aa97cdcd673684bb"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-p1-02/force-eps0.0125-r0.07000610333377448.npz",
+      "sha256": "0e7270e7c44f5084ff33c3e63625710b960a8dca701a98e3e3298d0d2f8a75d8"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-p1-02/force-eps0.0125-r0.0946817950104056.npz",
+      "sha256": "b8047343d70aa344d0d56125bae3ca6605e540dc4db501b9f6bcb53f3a9ef8b0"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-p1-02/force-eps0.0125-r0.1.npz",
+      "sha256": "c67c25d85a16963feec209512745249f2033e336b80a358ee66a7bc138a3f413"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-p1-02/force-eps0.0125-r0.12664621052556302.npz",
+      "sha256": "ddea6e0046eb9f22ee948827957d7b6678d55aadb2181f0664e16d7414dc1c6a"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-p1-02/force-eps0.0125-r0.2.npz",
+      "sha256": "6d910f5732a7819c293cf2ad816cf3c6ffed9d12a2368b0d4a3e0731bcfa6cb9"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-p1-02/force-eps0.0125-r0.5.npz",
+      "sha256": "4cf897b3340433146161d924ae4c8e5c2cc7f1fa85e2d3310cf8d11f77ea8c76"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-p1-02/force-eps0.0125-r1.0.npz",
+      "sha256": "905587f1e925bfdafa9cc1c941e14d67f468eb3c406d47f43a5d41ce14e64707"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-p1-02/force-eps0.0125-r2.0.npz",
+      "sha256": "8c64641c88d4fd8b1a9388542742bdc6752522dd9e040c3e2c78034a5cf1a7eb"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-p1-02/force-eps0.0125-r20.0.npz",
+      "sha256": "70b11a564fc703dccb3126e61a69400cce6a557b0c02659fe1ae9fe15ca6978c"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-p1-02/force-eps0.0125-r256.0.npz",
+      "sha256": "21e4904c781f7738e0b42ef3162af810fde3b8bc974fa09050cb307717015a9f"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-p1-02/force-eps0.0125-r259.67038461365746.npz",
+      "sha256": "f5ac2563e44b578b0d36ec2210dbd0aeeed0f4c57371c28e00d7590200ac7205"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-p1-02/force-eps0.0125-r5.0.npz",
+      "sha256": "f92e80088c8432304b2ad9a5eb0e860790f7c64fd4d843309a26e4fa2fc1fbfd"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-p1-02/force-eps0.0125-r7.496547535437529.npz",
+      "sha256": "a412c7d0b35a420133263d6e24b130432f1d75e5ca9e7d5360cb436b6b051ead"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-p1-02/force-eps0.025-r0.02.npz",
+      "sha256": "39e65ae3a28434fb3f9cd52f9abdf0726b4896f56b8fdf37f1ed8a471b6f42c7"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-p1-02/force-eps0.025-r0.05.npz",
+      "sha256": "144e9f7ddbade3f420b9e9429da3c32cb3c6d7eab47f1978a08996b06016e6a6"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-p1-02/force-eps0.025-r0.07000610333377448.npz",
+      "sha256": "bb3533be763bf747a4319c11c6359ead019214907583f6cc39e0bb91fd8d4cee"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-p1-02/force-eps0.025-r0.0946817950104056.npz",
+      "sha256": "b8e3cdad7ebe2c66d0de2b5bc3adf6f5726b639af8dcc60c1c7ffa7e4b7880f2"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-p1-02/force-eps0.025-r0.1.npz",
+      "sha256": "d36787ee26cb126c21829b9c564e273fc1c353a58d639585323267255b2c4a22"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-p1-02/force-eps0.025-r0.12664621052556302.npz",
+      "sha256": "1e78dfe17c8e03a936067ee5ad520344fa7492348b9495ba0813a1533f509196"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-p1-02/force-eps0.025-r0.2.npz",
+      "sha256": "9bb14d5ca076798b33b6174613ed54b0817849f77d3bcf9db45ed22d01b6a284"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-p1-02/force-eps0.025-r0.5.npz",
+      "sha256": "49d1bce68c5bbc8f0a4242de221b737a1b9c6aed431d0575111f6f6a511cbff3"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-p1-02/force-eps0.025-r1.0.npz",
+      "sha256": "7c0900979ce4baa8cd149bd202531426b7c9f93a7e9a6920c33d8e098698b910"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-p1-02/force-eps0.025-r2.0.npz",
+      "sha256": "a67251a7de0f3f36c17f5ad17314209d58aa8b1c50af3205e62aa6299edf9320"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-p1-02/force-eps0.025-r20.0.npz",
+      "sha256": "bd04e63f7aef7fff023f8cd2af804bea16bdf54721265877785cb2fa891aed87"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-p1-02/force-eps0.025-r256.0.npz",
+      "sha256": "1a0e94aa4c40580fdb4329fee275fe2c07e3b959e686fcfe1b176a65220bc2c4"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-p1-02/force-eps0.025-r259.67038461365746.npz",
+      "sha256": "b9d9ad81d071d37ceab1a4746ec260c5c927b45b069ab94c5bc8e42616fa4c3e"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-p1-02/force-eps0.025-r5.0.npz",
+      "sha256": "f96aaa7265601308620d440ae7a92490f077b23ac5ab27027a58b93e09e4eae9"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-p1-02/force-eps0.025-r7.496547535437529.npz",
+      "sha256": "be126844d84b0ed90858f020d9dde185299f373605d281ae7e8650c67d7d0e15"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-p1-02/global-eps0.0125-nodes128.npz",
+      "sha256": "9986ae2b3eb7f160c023050a17acc1caf32d902ea8c6fe32658fa83bd987aa89"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-p1-02/global-eps0.0125-nodes256.npz",
+      "sha256": "0524b2ea6a5657f007465cf31daa612038779ae9269635c3aae3d9f0f4bff556"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-p1-02/global-eps0.025-nodes128.npz",
+      "sha256": "f514df464ca7412c9bd98f747eebe2fef20a9b939660c9ccc9987a27d43d3080"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-p1-02/global-eps0.025-nodes256.npz",
+      "sha256": "0e54f3675e34cc388e6e373b56627f31c9fa7118645346fb0a0277015b47c63b"
+    },
+    {
+      "path": "results/discovery-20261001/twins/continuum-p1-02/result.json",
+      "sha256": "03119c330dad4943b36053e75e98590392aaa8b1259d765b15a8501c160ea45c"
+    },
+    {
+      "path": "results/discovery-20261001/twins/early-energy-diagnosis-01/arrays.npz",
+      "sha256": "692ff71e5ae9677b69cf47e7a9e5401e9fddc7b28cb997defd300478618768b2"
+    },
+    {
+      "path": "results/discovery-20261001/twins/early-energy-diagnosis-01/result.json",
+      "sha256": "63c2c9f9fad68d7985cf41918cf0b59c282a4769d5705378dbef90f66e0d008e"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair16384-F0-eps0.0125-theta0.0625.npz",
+      "sha256": "80be8bde587cca7e8e9d2b70b8e0c8234fc0b1d1d5d5a9ffb8eeb057765ee9a4"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair16384-F0-eps0.0125-theta0.125.npz",
+      "sha256": "3e4042a4976cb205fb953ab5119148a3f11a2804172db8deaa50da1d6d26000b"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair16384-F0-eps0.025-theta0.0625.npz",
+      "sha256": "2dfe9e2d60f9d1d3f62adcc2624f449f83c891b987fe4694767c9cb6820715b8"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair16384-F0-eps0.025-theta0.125.npz",
+      "sha256": "bb5797ea5cbe1ce63367d6b51a9a669de817e7e23a7f4e066177beb1c1587010"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair16384-minus-eps0.0125-theta0.0625.npz",
+      "sha256": "d5469c18e793d964c2ae1843b7a5c2f74b57f5ab800f2fbab1f620f0ccf93abf"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair16384-minus-eps0.0125-theta0.125.npz",
+      "sha256": "f9e8d037922598aca3f1b525fdab2ea0d12b7757e46be6140468981981afd330"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair16384-minus-eps0.025-theta0.0625.npz",
+      "sha256": "85a31a4acdf255f5011b014dddd2f480ee458eecbe39ac963473e2785829014e"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair16384-minus-eps0.025-theta0.125.npz",
+      "sha256": "9034dd593dd65d00ea91330eba2abba4832dc3b65edd26917737253b329713d4"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair16384-plus-eps0.0125-theta0.0625.npz",
+      "sha256": "a6f26617402c2c26275683cf8d92bfcdb394171c2811f7698433e7ecc36a0a49"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair16384-plus-eps0.0125-theta0.125.npz",
+      "sha256": "2696797ac679d0e229d988b9ceec6640692c0ae2ecc7dbd84ca82f6082195243"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair16384-plus-eps0.025-theta0.0625.npz",
+      "sha256": "b54970258a4746bd5cc8dfbddd4ea2bbcf76ce084c8e42dd611886ad3ef51ca2"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair16384-plus-eps0.025-theta0.125.npz",
+      "sha256": "b186bf5e4c9ab52213d258207427ec6b642f462de84df6388c858a9a4695e765"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair32768-F0-eps0.0125-theta0.0625.npz",
+      "sha256": "e072d9d0fb6c16b356daa603b54966dcc08091ce7d96368c9ad1eb2370ffa6e8"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair32768-F0-eps0.0125-theta0.125.npz",
+      "sha256": "6a490f439ab4d0db8a0eb27372b131fbd742b17cbdfbb9611f32344725e1420a"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair32768-F0-eps0.025-theta0.0625.npz",
+      "sha256": "a9ace4acd8574827ac1b869afb9deb3bd51970aff063939427b2e39ca8576f55"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair32768-F0-eps0.025-theta0.125.npz",
+      "sha256": "fb359e570bd93e180c9d76bdd7b8b63c3de7c5df386106761beec0c9032f8af7"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair32768-minus-eps0.0125-theta0.0625.npz",
+      "sha256": "82ef26b176ee3ee80efd0ff7d71eb3c8049a8a207924f10bd66a4e2763dceda2"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair32768-minus-eps0.0125-theta0.125.npz",
+      "sha256": "6c399139faede0aa102f393d5033d341f7a85fb38f76f562818764bb459778ec"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair32768-minus-eps0.025-theta0.0625.npz",
+      "sha256": "4564140210e6df5b84481afd9dae28e2db7c200b92053cf9bf8d09d605235d0d"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair32768-minus-eps0.025-theta0.125.npz",
+      "sha256": "08d1080be848a45e9f944f197c61c56812292e87ad42b714955eb8f8319bf52f"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair32768-plus-eps0.0125-theta0.0625.npz",
+      "sha256": "f7a7f611404c43d71d8165c8d4b2c035821b2d1a5a58e55555b27305d537c8e6"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair32768-plus-eps0.0125-theta0.125.npz",
+      "sha256": "4fbc568fc2c0ce267c81329197f80c9143d45ce0bc4b85b5942b3b7692cf9c7f"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair32768-plus-eps0.025-theta0.0625.npz",
+      "sha256": "3db957242e2322117ce2665f6a4eb8153463f780d8b568ded324c87bd1cab86a"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair32768-plus-eps0.025-theta0.125.npz",
+      "sha256": "ae8addce0b701e8bc82c312be6089264ad6a0cc0930b83935980f4047662120a"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair4096-F0-eps0.0125-theta0.0625.npz",
+      "sha256": "ea1679fede8b1e17bb9df2177b2854d7024c90b42f033ff726f49f7dfffe5782"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair4096-F0-eps0.0125-theta0.125.npz",
+      "sha256": "25a0919d80a3c216bea0adfa391227b8bea9412c46113fec18925ad78fdc2a81"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair4096-F0-eps0.025-theta0.0625.npz",
+      "sha256": "190fa8bbdd5925d454309041bd4c6c4e420af8766ded739ace80edfe2f1e919f"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair4096-F0-eps0.025-theta0.125.npz",
+      "sha256": "23606d3c0d83c3a1f1e70b51ba58af78b3164470fdac72642b09226e7ed552bf"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair4096-minus-eps0.0125-theta0.0625.npz",
+      "sha256": "af5ca5d885856be685476f381a5feb42a8ff11ce9fb489e0a3d883ca5a6b4250"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair4096-minus-eps0.0125-theta0.125.npz",
+      "sha256": "8a43292320d9d7950014c84644ff385c2e944cb469e630470ee00c6e37fe8ff6"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair4096-minus-eps0.025-theta0.0625.npz",
+      "sha256": "50445a536800be0b1d86c9e3e48465afd463374a81f8e659e8163ab8093d8aed"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair4096-minus-eps0.025-theta0.125.npz",
+      "sha256": "12f298fc99e153097705dfa2e6fb9b2014fca6b67599fc26b56ae400305f4419"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair4096-plus-eps0.0125-theta0.0625.npz",
+      "sha256": "2e3e03046297278febcae3241bb00992666eb309f9654fab7304c4d221c59134"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair4096-plus-eps0.0125-theta0.125.npz",
+      "sha256": "d81679d0dbd2d6911346d48a1f4dcaee66cf435c4f70613be26ce1c268183ba6"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair4096-plus-eps0.025-theta0.0625.npz",
+      "sha256": "c0fcfdbf8c380b77321713ea729eaa3ae4b5f145be460139ca1092e555bea52f"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/Npair4096-plus-eps0.025-theta0.125.npz",
+      "sha256": "a53e7ccf0a7fae3d6ad94964820d764c09f4c25e27577040f23a1b8e93e70421"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/inputs/data/Npair16384-F0-eps0.0125-theta0.25.npz",
+      "sha256": "c924867b20de497d8e11221831fda7b09c3000dc5372e2a2e897bd781dd99ba7"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/inputs/data/Npair16384-F0-eps0.025-theta0.25.npz",
+      "sha256": "fef3040656c36e1a49c582f065f6ab1e683bc6e90a591a4c2c34b0a8266f1f0a"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/inputs/data/Npair16384-minus-eps0.0125-theta0.25.npz",
+      "sha256": "1d0daa69d8958bdb59cd1f8df4faf7c46fd5aafbfc6febbc8bed24ec38a0eac3"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/inputs/data/Npair16384-minus-eps0.025-theta0.25.npz",
+      "sha256": "969f669ae4dee3b3b0d11f4850a43bbc361d4ab768a02830176439f695e878a7"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/inputs/data/Npair16384-plus-eps0.0125-theta0.25.npz",
+      "sha256": "b8f28175a86aa7300f70f4939de338651e17bb448482ba397a5916ce3a73aacf"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/inputs/data/Npair16384-plus-eps0.025-theta0.25.npz",
+      "sha256": "4cbbdc640ce2c8975b56925bd918494783414e937bfac60dd88309ded97c5308"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/inputs/data/Npair32768-F0-eps0.0125-theta0.25.npz",
+      "sha256": "bad9e47e24d84825cf518b84f6fb76a36b6e14248d45c92f8e6f5033cd13333e"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/inputs/data/Npair32768-F0-eps0.025-theta0.25.npz",
+      "sha256": "85a7d8215e8696b86087ec3c69dbdbec6d9e5d96c1fc2b4d082ea741c69e4444"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/inputs/data/Npair32768-minus-eps0.0125-theta0.25.npz",
+      "sha256": "3d4aa695ff58923935c205edd880c1b57f1a6fc1c79e1d31d9480da509204106"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/inputs/data/Npair32768-minus-eps0.025-theta0.25.npz",
+      "sha256": "a6a25714aefe0710d4491710c7a104c5bb433fb191c182955188d59595f46575"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/inputs/data/Npair32768-plus-eps0.0125-theta0.25.npz",
+      "sha256": "5245f3b410b37e8edf8ec205d953d284db6e97d80a4a2fcc320e40c36dd74a80"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/inputs/data/Npair32768-plus-eps0.025-theta0.25.npz",
+      "sha256": "f6da968a0c5c42f6db28281d6401ed5f4f2f65e4687945bd3bfca77729c859be"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/inputs/data/Npair4096-F0-eps0.0125-theta0.25.npz",
+      "sha256": "e879dbb943aaf681da4516d30bad6bd73787a8ebaa9af56da15abc836f5b9a60"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/inputs/data/Npair4096-F0-eps0.025-theta0.25.npz",
+      "sha256": "af4c286e2f0482d727c5dfc0b5bc54295e6e0e9075415389ad62a376aeb17ad1"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/inputs/data/Npair4096-minus-eps0.0125-theta0.25.npz",
+      "sha256": "5eb9852b9581eae3734acfe24722e4491dc26ac98b3461940f20d5f24d82cf5d"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/inputs/data/Npair4096-minus-eps0.025-theta0.25.npz",
+      "sha256": "ce3465c583f7da493c07b43f4725e6bdeaf6572a2971380a9163cd02956ea521"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/inputs/data/Npair4096-plus-eps0.0125-theta0.25.npz",
+      "sha256": "3e1c646ea516e1c1e5b5a56bab70c5be2e2be22f127a3039c47756bc825f2d6f"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/inputs/data/Npair4096-plus-eps0.025-theta0.25.npz",
+      "sha256": "91593f67f0150ffff49b463e154edae6c30707e5e72aa9d88ef8127dbbe73ff5"
+    },
+    {
+      "path": "results/discovery-20261001/twins/force-opening-refinement-02/result.json",
+      "sha256": "4f38fb12703b7a6b20ab583fbbdd2173ea2fead068ab55a3b6714166b735479d"
+    },
+    {
+      "path": "results/discovery-20261001/twins/growth-01/coarse-0.npz",
+      "sha256": "30c81ed66090596e8f607b02da1e2a8f1ec0ca12d0763004cd33eb9fce7e63da"
+    },
+    {
+      "path": "results/discovery-20261001/twins/growth-01/coarse-1.npz",
+      "sha256": "65b28ca805a64349e0246160053023e5cb53cdbbf597576948b7f0e62e85b2ce"
+    },
+    {
+      "path": "results/discovery-20261001/twins/growth-01/coarse-2.npz",
+      "sha256": "f7365b1a4e3160abce67dcfa563c3cfa5068ada3e5ff5a3ce69b3663482e3ef7"
+    },
+    {
+      "path": "results/discovery-20261001/twins/growth-01/coarse-3.npz",
+      "sha256": "a95a4a7feee8d0dc56a9382f3b6981785a8618654bf560fd02fae28bda57be4f"
+    },
+    {
+      "path": "results/discovery-20261001/twins/growth-01/coarse-4.npz",
+      "sha256": "fd32cadc5af9c81aa8b04fef729c0fefa5c176209334909996ffa29385efc70f"
+    },
+    {
+      "path": "results/discovery-20261001/twins/growth-01/coarse-5.npz",
+      "sha256": "c7233a997d2e9599b064b413bdfc1908bcf8e88b2b996a803fec15292bfdb1e9"
+    },
+    {
+      "path": "results/discovery-20261001/twins/growth-01/coarse-6.npz",
+      "sha256": "5129546165a77bac4f572457763e49eceaf7a27d107ce53dededcaa61b8bcae1"
+    },
+    {
+      "path": "results/discovery-20261001/twins/growth-01/coarse-7.npz",
+      "sha256": "31f94427eb11b019ac4f4c41bbd079148e5f406b907c9a5cfc0eb3f128984f36"
+    },
+    {
+      "path": "results/discovery-20261001/twins/randomized-01/reference-0.npz",
+      "sha256": "87f29f00677a6d887eab465c2177dd6322718d005aeaa5e15475047a02b14723"
+    },
+    {
+      "path": "results/discovery-20261001/twins/randomized-01/reference-1.npz",
+      "sha256": "5f15c5a16d0d589a79833359ae707c59e319eda056db5ee8263245a2eaf2e55c"
+    },
+    {
+      "path": "results/discovery-20261001/twins/randomized-01/reference-2.npz",
+      "sha256": "b54743d0b9bc1d74c55ca06ba6e312f4fb8413facd440942ed0f729012bc1d8a"
+    },
+    {
+      "path": "results/discovery-20261001/twins/randomized-01/reference-3.npz",
+      "sha256": "4bd57fd9da33e004744beaedba72b19fb6be9c9ce67e1ce86ae17146520df6d2"
+    },
+    {
+      "path": "results/discovery-20261001/twins/randomized-01/reference-4.npz",
+      "sha256": "1ce162fd5e0a6e87ba777e86f1f8f82a04ad44400d7f187e236a043cbb31eaeb"
+    },
+    {
+      "path": "results/discovery-20261001/twins/randomized-01/reference-5.npz",
+      "sha256": "20f4359a0af4d69d29a944a221b793a002fd10409dcf699b5b887aace9943be0"
+    },
+    {
+      "path": "results/discovery-20261001/twins/randomized-01/reference-6.npz",
+      "sha256": "db420430197c5fcf86a3e4279284770e406b32c7dcc4998c5f87c1c57595092c"
+    },
+    {
+      "path": "results/discovery-20261001/twins/randomized-01/reference-7.npz",
+      "sha256": "2481e21cdeb5f96dca1a9b1d7ce6933b1d4de4f6167b36c8e15046b7c18d7287"
+    },
+    {
+      "path": "results/discovery-20261001/twins/unforced-completion-01/end-direct-run-50411-F0-dt0.005.npz",
+      "sha256": "f3660acfd97770f128a8995948c850a9f313c7316f29087a890f44d915282649"
+    },
+    {
+      "path": "results/discovery-20261001/twins/unforced-completion-01/end-direct-run-50411-F0-dt0.01.npz",
+      "sha256": "d5a50f37052425f8246e8a5e08a0b725750da4961cd5663c144f59fc4d0ef931"
+    },
+    {
+      "path": "results/discovery-20261001/twins/unforced-completion-01/end-direct-run-50411-minus-dt0.005.npz",
+      "sha256": "2d0dd8121b70ed684ca30f943c115c788918152d70e092005a0f4fdac0e92672"
+    },
+    {
+      "path": "results/discovery-20261001/twins/unforced-completion-01/end-direct-run-50411-minus-dt0.01.npz",
+      "sha256": "b5a2a9cda1b173c79c363ee232d4fba4d436a1615fe3ea7bf90d0aca98b0c8bb"
+    },
+    {
+      "path": "results/discovery-20261001/twins/unforced-completion-01/end-direct-run-50411-plus-dt0.005.npz",
+      "sha256": "bb6f6e973ead2822a2e199eb0608bb5a8f17e89f0feee164377561c3c5afaee7"
+    },
+    {
+      "path": "results/discovery-20261001/twins/unforced-completion-01/end-direct-run-50411-plus-dt0.01.npz",
+      "sha256": "af83023fe01be3680b697717413616d9a1c440fc072c74b627fa787f5d8b2b1e"
+    },
+    {
+      "path": "results/discovery-20261001/twins/unforced-completion-01/end-direct-run-50412-F0-dt0.01.npz",
+      "sha256": "8bebd0688de7dff5f6f0164a7afc7046959fc304861ae8e6a35a00c8d16d3c40"
+    },
+    {
+      "path": "results/discovery-20261001/twins/unforced-completion-01/end-direct-run-50412-minus-dt0.01.npz",
+      "sha256": "58e5fc183fc76c610bc1eddaa88d50cef36226729f992e00ab9fe26c9b86c02a"
+    },
+    {
+      "path": "results/discovery-20261001/twins/unforced-completion-01/end-direct-run-50412-plus-dt0.01.npz",
+      "sha256": "7da67f6d3decf4f354eecc1e97b6325eccaa40fae5361f334db63ec6e5ed0c2f"
+    },
+    {
+      "path": "results/discovery-20261001/twins/unforced-completion-01/result.json",
+      "sha256": "5576ca1541d5909e0aa2344c8270a5c09a74aa6511aa56f3c1225c81ea21dee2"
+    },
+    {
+      "path": "results/discovery-20261001/twins/unforced-completion-01/run-50411-F0-dt0.01.npz",
+      "sha256": "a496eb8e5ed34aa423ae8ca227065757fd2230189f28949ce2feca9b64185e51"
+    },
+    {
+      "path": "scripts/discovery/export_twins_force_support.py",
+      "sha256": "eb9d9fe8c5c35ec87d140108a016ab9b5fb6e6ef63b77ac86f7cce5ebb01c9d8"
+    },
+    {
+      "path": "scripts/discovery/replay_twins_force_support_v1.py",
+      "sha256": "c2226cf84ae985a4a492e3c826c3917be2edf44f8ba3d4ba64901e53ef0ee75f"
+    }
+  ],
+  "files": [
+    {
+      "path": "selected-force.npz",
+      "sha256": "3881aaea0f7065570e63c10dddabe88137704aa7f1ec387501fa83697eb2279e",
+      "bytes": 157198,
+      "arrays": {
+        "selected_particle_ids": {
+          "shape": [
+            36,
+            128
+          ],
+          "dtype": "<i8",
+          "meaning": "case, selected particle; original index or saved specific potential"
+        },
+        "native_acceleration": {
+          "shape": [
+            36,
+            128,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "case, selected particle, Cartesian component; saved field in G=M0=1,b=.5 units"
+        },
+        "native_potential": {
+          "shape": [
+            36,
+            128
+          ],
+          "dtype": "<f8",
+          "meaning": "case, selected particle; original index or saved specific potential"
+        },
+        "direct_acceleration": {
+          "shape": [
+            36,
+            128,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "case, selected particle, Cartesian component; saved field in G=M0=1,b=.5 units"
+        },
+        "direct_potential": {
+          "shape": [
+            36,
+            128
+          ],
+          "dtype": "<f8",
+          "meaning": "case, selected particle; original index or saved specific potential"
+        },
+        "rounded_input_direct_acceleration": {
+          "shape": [
+            36,
+            128,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "case, selected particle, Cartesian component; saved field in G=M0=1,b=.5 units"
+        },
+        "rounded_input_direct_potential": {
+          "shape": [
+            36,
+            128
+          ],
+          "dtype": "<f8",
+          "meaning": "case, selected particle; original index or saved specific potential"
+        },
+        "force_residual": {
+          "shape": [
+            36,
+            128,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "case, selected particle, Cartesian component; saved field in G=M0=1,b=.5 units"
+        },
+        "potential_residual": {
+          "shape": [
+            36,
+            128
+          ],
+          "dtype": "<f8",
+          "meaning": "case, selected particle; original index or saved specific potential"
+        },
+        "cpu_seconds": {
+          "shape": [
+            36,
+            4
+          ],
+          "dtype": "<f8",
+          "meaning": "case, call; saved CPU/wall seconds or cold-call flag"
+        },
+        "wall_seconds": {
+          "shape": [
+            36,
+            4
+          ],
+          "dtype": "<f8",
+          "meaning": "case, call; saved CPU/wall seconds or cold-call flag"
+        },
+        "cold": {
+          "shape": [
+            36,
+            4
+          ],
+          "dtype": "|b1",
+          "meaning": "case, call; saved CPU/wall seconds or cold-call flag"
+        }
+      }
+    },
+    {
+      "path": "continuum-quadrature.npz",
+      "sha256": "7022c174a21ec13726123e6b113d40ef3a88a77e6b768da6cd5a24fb8e927105",
+      "bytes": 4914901,
+      "arrays": {
+        "force-00-coarse_u": {
+          "shape": [
+            2048
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-00-coarse_du_weights": {
+          "shape": [
+            2048
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-00-coarse_integrand": {
+          "shape": [
+            2048
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-00-fine_u": {
+          "shape": [
+            4096
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-00-fine_du_weights": {
+          "shape": [
+            4096
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-00-fine_integrand": {
+          "shape": [
+            4096
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-01-coarse_u": {
+          "shape": [
+            1920
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-01-coarse_du_weights": {
+          "shape": [
+            1920
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-01-coarse_integrand": {
+          "shape": [
+            1920
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-01-fine_u": {
+          "shape": [
+            3840
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-01-fine_du_weights": {
+          "shape": [
+            3840
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-01-fine_integrand": {
+          "shape": [
+            3840
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-02-coarse_u": {
+          "shape": [
+            2176
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-02-coarse_du_weights": {
+          "shape": [
+            2176
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-02-coarse_integrand": {
+          "shape": [
+            2176
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-02-fine_u": {
+          "shape": [
+            4352
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-02-fine_du_weights": {
+          "shape": [
+            4352
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-02-fine_integrand": {
+          "shape": [
+            4352
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-03-coarse_u": {
+          "shape": [
+            2176
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-03-coarse_du_weights": {
+          "shape": [
+            2176
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-03-coarse_integrand": {
+          "shape": [
+            2176
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-03-fine_u": {
+          "shape": [
+            4352
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-03-fine_du_weights": {
+          "shape": [
+            4352
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-03-fine_integrand": {
+          "shape": [
+            4352
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-04-coarse_u": {
+          "shape": [
+            1920
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-04-coarse_du_weights": {
+          "shape": [
+            1920
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-04-coarse_integrand": {
+          "shape": [
+            1920
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-04-fine_u": {
+          "shape": [
+            3840
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-04-fine_du_weights": {
+          "shape": [
+            3840
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-04-fine_integrand": {
+          "shape": [
+            3840
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-05-coarse_u": {
+          "shape": [
+            2304
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-05-coarse_du_weights": {
+          "shape": [
+            2304
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-05-coarse_integrand": {
+          "shape": [
+            2304
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-05-fine_u": {
+          "shape": [
+            4608
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-05-fine_du_weights": {
+          "shape": [
+            4608
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-05-fine_integrand": {
+          "shape": [
+            4608
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-06-coarse_u": {
+          "shape": [
+            2176
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-06-coarse_du_weights": {
+          "shape": [
+            2176
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-06-coarse_integrand": {
+          "shape": [
+            2176
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-06-fine_u": {
+          "shape": [
+            4352
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-06-fine_du_weights": {
+          "shape": [
+            4352
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-06-fine_integrand": {
+          "shape": [
+            4352
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-07-coarse_u": {
+          "shape": [
+            2176
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-07-coarse_du_weights": {
+          "shape": [
+            2176
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-07-coarse_integrand": {
+          "shape": [
+            2176
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-07-fine_u": {
+          "shape": [
+            4352
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-07-fine_du_weights": {
+          "shape": [
+            4352
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-07-fine_integrand": {
+          "shape": [
+            4352
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-08-coarse_u": {
+          "shape": [
+            2432
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-08-coarse_du_weights": {
+          "shape": [
+            2432
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-08-coarse_integrand": {
+          "shape": [
+            2432
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-08-fine_u": {
+          "shape": [
+            4864
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-08-fine_du_weights": {
+          "shape": [
+            4864
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-08-fine_integrand": {
+          "shape": [
+            4864
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-09-coarse_u": {
+          "shape": [
+            2432
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-09-coarse_du_weights": {
+          "shape": [
+            2432
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-09-coarse_integrand": {
+          "shape": [
+            2432
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-09-fine_u": {
+          "shape": [
+            4864
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-09-fine_du_weights": {
+          "shape": [
+            4864
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-09-fine_integrand": {
+          "shape": [
+            4864
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-10-coarse_u": {
+          "shape": [
+            2304
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-10-coarse_du_weights": {
+          "shape": [
+            2304
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-10-coarse_integrand": {
+          "shape": [
+            2304
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-10-fine_u": {
+          "shape": [
+            4608
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-10-fine_du_weights": {
+          "shape": [
+            4608
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-10-fine_integrand": {
+          "shape": [
+            4608
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-11-coarse_u": {
+          "shape": [
+            2432
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-11-coarse_du_weights": {
+          "shape": [
+            2432
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-11-coarse_integrand": {
+          "shape": [
+            2432
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-11-fine_u": {
+          "shape": [
+            4864
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-11-fine_du_weights": {
+          "shape": [
+            4864
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-11-fine_integrand": {
+          "shape": [
+            4864
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-12-coarse_u": {
+          "shape": [
+            2432
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-12-coarse_du_weights": {
+          "shape": [
+            2432
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-12-coarse_integrand": {
+          "shape": [
+            2432
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-12-fine_u": {
+          "shape": [
+            4864
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-12-fine_du_weights": {
+          "shape": [
+            4864
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-12-fine_integrand": {
+          "shape": [
+            4864
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-13-coarse_u": {
+          "shape": [
+            2432
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-13-coarse_du_weights": {
+          "shape": [
+            2432
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-13-coarse_integrand": {
+          "shape": [
+            2432
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-13-fine_u": {
+          "shape": [
+            4864
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-13-fine_du_weights": {
+          "shape": [
+            4864
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-13-fine_integrand": {
+          "shape": [
+            4864
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-14-coarse_u": {
+          "shape": [
+            2432
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-14-coarse_du_weights": {
+          "shape": [
+            2432
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-14-coarse_integrand": {
+          "shape": [
+            2432
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-14-fine_u": {
+          "shape": [
+            4864
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-14-fine_du_weights": {
+          "shape": [
+            4864
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-14-fine_integrand": {
+          "shape": [
+            4864
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-15-coarse_u": {
+          "shape": [
+            2048
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-15-coarse_du_weights": {
+          "shape": [
+            2048
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-15-coarse_integrand": {
+          "shape": [
+            2048
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-15-fine_u": {
+          "shape": [
+            4096
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-15-fine_du_weights": {
+          "shape": [
+            4096
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-15-fine_integrand": {
+          "shape": [
+            4096
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-16-coarse_u": {
+          "shape": [
+            1920
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-16-coarse_du_weights": {
+          "shape": [
+            1920
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-16-coarse_integrand": {
+          "shape": [
+            1920
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-16-fine_u": {
+          "shape": [
+            3840
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-16-fine_du_weights": {
+          "shape": [
+            3840
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-16-fine_integrand": {
+          "shape": [
+            3840
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-17-coarse_u": {
+          "shape": [
+            2176
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-17-coarse_du_weights": {
+          "shape": [
+            2176
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-17-coarse_integrand": {
+          "shape": [
+            2176
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-17-fine_u": {
+          "shape": [
+            4352
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-17-fine_du_weights": {
+          "shape": [
+            4352
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-17-fine_integrand": {
+          "shape": [
+            4352
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-18-coarse_u": {
+          "shape": [
+            2176
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-18-coarse_du_weights": {
+          "shape": [
+            2176
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-18-coarse_integrand": {
+          "shape": [
+            2176
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-18-fine_u": {
+          "shape": [
+            4352
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-18-fine_du_weights": {
+          "shape": [
+            4352
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-18-fine_integrand": {
+          "shape": [
+            4352
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-19-coarse_u": {
+          "shape": [
+            2048
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-19-coarse_du_weights": {
+          "shape": [
+            2048
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-19-coarse_integrand": {
+          "shape": [
+            2048
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-19-fine_u": {
+          "shape": [
+            4096
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-19-fine_du_weights": {
+          "shape": [
+            4096
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-19-fine_integrand": {
+          "shape": [
+            4096
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-20-coarse_u": {
+          "shape": [
+            2176
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-20-coarse_du_weights": {
+          "shape": [
+            2176
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-20-coarse_integrand": {
+          "shape": [
+            2176
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-20-fine_u": {
+          "shape": [
+            4352
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-20-fine_du_weights": {
+          "shape": [
+            4352
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-20-fine_integrand": {
+          "shape": [
+            4352
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-21-coarse_u": {
+          "shape": [
+            2048
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-21-coarse_du_weights": {
+          "shape": [
+            2048
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-21-coarse_integrand": {
+          "shape": [
+            2048
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-21-fine_u": {
+          "shape": [
+            4096
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-21-fine_du_weights": {
+          "shape": [
+            4096
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-21-fine_integrand": {
+          "shape": [
+            4096
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-22-coarse_u": {
+          "shape": [
+            2176
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-22-coarse_du_weights": {
+          "shape": [
+            2176
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-22-coarse_integrand": {
+          "shape": [
+            2176
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-22-fine_u": {
+          "shape": [
+            4352
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-22-fine_du_weights": {
+          "shape": [
+            4352
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-22-fine_integrand": {
+          "shape": [
+            4352
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-23-coarse_u": {
+          "shape": [
+            2304
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-23-coarse_du_weights": {
+          "shape": [
+            2304
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-23-coarse_integrand": {
+          "shape": [
+            2304
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-23-fine_u": {
+          "shape": [
+            4608
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-23-fine_du_weights": {
+          "shape": [
+            4608
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-23-fine_integrand": {
+          "shape": [
+            4608
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-24-coarse_u": {
+          "shape": [
+            2304
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-24-coarse_du_weights": {
+          "shape": [
+            2304
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-24-coarse_integrand": {
+          "shape": [
+            2304
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-24-fine_u": {
+          "shape": [
+            4608
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-24-fine_du_weights": {
+          "shape": [
+            4608
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-24-fine_integrand": {
+          "shape": [
+            4608
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-25-coarse_u": {
+          "shape": [
+            2176
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-25-coarse_du_weights": {
+          "shape": [
+            2176
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-25-coarse_integrand": {
+          "shape": [
+            2176
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-25-fine_u": {
+          "shape": [
+            4352
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-25-fine_du_weights": {
+          "shape": [
+            4352
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-25-fine_integrand": {
+          "shape": [
+            4352
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-26-coarse_u": {
+          "shape": [
+            2304
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-26-coarse_du_weights": {
+          "shape": [
+            2304
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-26-coarse_integrand": {
+          "shape": [
+            2304
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-26-fine_u": {
+          "shape": [
+            4608
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-26-fine_du_weights": {
+          "shape": [
+            4608
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-26-fine_integrand": {
+          "shape": [
+            4608
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-27-coarse_u": {
+          "shape": [
+            2304
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-27-coarse_du_weights": {
+          "shape": [
+            2304
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-27-coarse_integrand": {
+          "shape": [
+            2304
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-27-fine_u": {
+          "shape": [
+            4608
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-27-fine_du_weights": {
+          "shape": [
+            4608
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-27-fine_integrand": {
+          "shape": [
+            4608
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-28-coarse_u": {
+          "shape": [
+            2304
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-28-coarse_du_weights": {
+          "shape": [
+            2304
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-28-coarse_integrand": {
+          "shape": [
+            2304
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-28-fine_u": {
+          "shape": [
+            4608
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-28-fine_du_weights": {
+          "shape": [
+            4608
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-28-fine_integrand": {
+          "shape": [
+            4608
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-29-coarse_u": {
+          "shape": [
+            2304
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-29-coarse_du_weights": {
+          "shape": [
+            2304
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-29-coarse_integrand": {
+          "shape": [
+            2304
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-29-fine_u": {
+          "shape": [
+            4608
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-29-fine_du_weights": {
+          "shape": [
+            4608
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "force-29-fine_integrand": {
+          "shape": [
+            4608
+          ],
+          "dtype": "<f8",
+          "meaning": "quadrature node; source radius u, du weight, or saved spherical force integrand"
+        },
+        "virial-0-r": {
+          "shape": [
+            1536
+          ],
+          "dtype": "<f8",
+          "meaning": "radial quadrature node; G=M0=1,b=.5 units; density is mass/length cubed"
+        },
+        "virial-0-du_weights": {
+          "shape": [
+            1536
+          ],
+          "dtype": "<f8",
+          "meaning": "radial quadrature node; G=M0=1,b=.5 units; density is mass/length cubed"
+        },
+        "virial-0-rho": {
+          "shape": [
+            1536
+          ],
+          "dtype": "<f8",
+          "meaning": "radial quadrature node; G=M0=1,b=.5 units; density is mass/length cubed"
+        },
+        "virial-0-force": {
+          "shape": [
+            1536
+          ],
+          "dtype": "<f8",
+          "meaning": "radial quadrature node; G=M0=1,b=.5 units; density is mass/length cubed"
+        },
+        "virial-0-unsoftened_force": {
+          "shape": [
+            1536
+          ],
+          "dtype": "<f8",
+          "meaning": "radial quadrature node; G=M0=1,b=.5 units; density is mass/length cubed"
+        },
+        "virial-1-r": {
+          "shape": [
+            3072
+          ],
+          "dtype": "<f8",
+          "meaning": "radial quadrature node; G=M0=1,b=.5 units; density is mass/length cubed"
+        },
+        "virial-1-du_weights": {
+          "shape": [
+            3072
+          ],
+          "dtype": "<f8",
+          "meaning": "radial quadrature node; G=M0=1,b=.5 units; density is mass/length cubed"
+        },
+        "virial-1-rho": {
+          "shape": [
+            3072
+          ],
+          "dtype": "<f8",
+          "meaning": "radial quadrature node; G=M0=1,b=.5 units; density is mass/length cubed"
+        },
+        "virial-1-force": {
+          "shape": [
+            3072
+          ],
+          "dtype": "<f8",
+          "meaning": "radial quadrature node; G=M0=1,b=.5 units; density is mass/length cubed"
+        },
+        "virial-1-unsoftened_force": {
+          "shape": [
+            3072
+          ],
+          "dtype": "<f8",
+          "meaning": "radial quadrature node; G=M0=1,b=.5 units; density is mass/length cubed"
+        },
+        "virial-2-r": {
+          "shape": [
+            1408
+          ],
+          "dtype": "<f8",
+          "meaning": "radial quadrature node; G=M0=1,b=.5 units; density is mass/length cubed"
+        },
+        "virial-2-du_weights": {
+          "shape": [
+            1408
+          ],
+          "dtype": "<f8",
+          "meaning": "radial quadrature node; G=M0=1,b=.5 units; density is mass/length cubed"
+        },
+        "virial-2-rho": {
+          "shape": [
+            1408
+          ],
+          "dtype": "<f8",
+          "meaning": "radial quadrature node; G=M0=1,b=.5 units; density is mass/length cubed"
+        },
+        "virial-2-force": {
+          "shape": [
+            1408
+          ],
+          "dtype": "<f8",
+          "meaning": "radial quadrature node; G=M0=1,b=.5 units; density is mass/length cubed"
+        },
+        "virial-2-unsoftened_force": {
+          "shape": [
+            1408
+          ],
+          "dtype": "<f8",
+          "meaning": "radial quadrature node; G=M0=1,b=.5 units; density is mass/length cubed"
+        },
+        "virial-3-r": {
+          "shape": [
+            2816
+          ],
+          "dtype": "<f8",
+          "meaning": "radial quadrature node; G=M0=1,b=.5 units; density is mass/length cubed"
+        },
+        "virial-3-du_weights": {
+          "shape": [
+            2816
+          ],
+          "dtype": "<f8",
+          "meaning": "radial quadrature node; G=M0=1,b=.5 units; density is mass/length cubed"
+        },
+        "virial-3-rho": {
+          "shape": [
+            2816
+          ],
+          "dtype": "<f8",
+          "meaning": "radial quadrature node; G=M0=1,b=.5 units; density is mass/length cubed"
+        },
+        "virial-3-force": {
+          "shape": [
+            2816
+          ],
+          "dtype": "<f8",
+          "meaning": "radial quadrature node; G=M0=1,b=.5 units; density is mass/length cubed"
+        },
+        "virial-3-unsoftened_force": {
+          "shape": [
+            2816
+          ],
+          "dtype": "<f8",
+          "meaning": "radial quadrature node; G=M0=1,b=.5 units; density is mass/length cubed"
+        }
+      }
+    },
+    {
+      "path": "paired-live-diagnostics.npz",
+      "sha256": "45c0904652a5544e05a33ca2feca32d7a0cdc95d3c1d37b74303eccc5a104c24",
+      "bytes": 193560,
+      "arrays": {
+        "case-0-times": {
+          "shape": [
+            31
+          ],
+          "dtype": "<f8",
+          "meaning": "record, model time or total energy"
+        },
+        "case-0-quantile_radii": {
+          "shape": [
+            31,
+            9
+          ],
+          "dtype": "<f8",
+          "meaning": "record, quantile fraction [.01,.05,.1,.25,.5,.75,.9,.95,.99]"
+        },
+        "case-0-shell_mass": {
+          "shape": [
+            31,
+            4
+          ],
+          "dtype": "<f8",
+          "meaning": "record, fixed shell; physical mass or coverage flag"
+        },
+        "case-0-second_diagonal": {
+          "shape": [
+            31,
+            4,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "record, fixed shell, tensor diagonal or mode order ell=1..4"
+        },
+        "case-0-shell_coverage": {
+          "shape": [
+            31,
+            4
+          ],
+          "dtype": "|b1",
+          "meaning": "record, fixed shell; physical mass or coverage flag"
+        },
+        "case-0-shell_initial_pair_count": {
+          "shape": [
+            4
+          ],
+          "dtype": "<i8",
+          "meaning": "fixed shell; initial pair count"
+        },
+        "case-0-mode_amplitudes": {
+          "shape": [
+            31,
+            4,
+            4
+          ],
+          "dtype": "<f8",
+          "meaning": "record, fixed shell, tensor diagonal or mode order ell=1..4"
+        },
+        "case-0-E": {
+          "shape": [
+            31
+          ],
+          "dtype": "<f8",
+          "meaning": "record, model time or total energy"
+        },
+        "case-0-P": {
+          "shape": [
+            31,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "record, Cartesian vector"
+        },
+        "case-0-L": {
+          "shape": [
+            31,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "record, Cartesian vector"
+        },
+        "case-0-endpoint_selected_particle_ids": {
+          "shape": [
+            128
+          ],
+          "dtype": "<i8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-0-endpoint_direct_acceleration": {
+          "shape": [
+            128,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-0-endpoint_direct_potential": {
+          "shape": [
+            128
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-0-endpoint_returned_selected_acceleration": {
+          "shape": [
+            128,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-0-endpoint_returned_selected_potential": {
+          "shape": [
+            128
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-1-times": {
+          "shape": [
+            31
+          ],
+          "dtype": "<f8",
+          "meaning": "record, model time or total energy"
+        },
+        "case-1-quantile_radii": {
+          "shape": [
+            31,
+            9
+          ],
+          "dtype": "<f8",
+          "meaning": "record, quantile fraction [.01,.05,.1,.25,.5,.75,.9,.95,.99]"
+        },
+        "case-1-shell_mass": {
+          "shape": [
+            31,
+            4
+          ],
+          "dtype": "<f8",
+          "meaning": "record, fixed shell; physical mass or coverage flag"
+        },
+        "case-1-second_diagonal": {
+          "shape": [
+            31,
+            4,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "record, fixed shell, tensor diagonal or mode order ell=1..4"
+        },
+        "case-1-shell_coverage": {
+          "shape": [
+            31,
+            4
+          ],
+          "dtype": "|b1",
+          "meaning": "record, fixed shell; physical mass or coverage flag"
+        },
+        "case-1-shell_initial_pair_count": {
+          "shape": [
+            4
+          ],
+          "dtype": "<i8",
+          "meaning": "fixed shell; initial pair count"
+        },
+        "case-1-mode_amplitudes": {
+          "shape": [
+            31,
+            4,
+            4
+          ],
+          "dtype": "<f8",
+          "meaning": "record, fixed shell, tensor diagonal or mode order ell=1..4"
+        },
+        "case-1-E": {
+          "shape": [
+            31
+          ],
+          "dtype": "<f8",
+          "meaning": "record, model time or total energy"
+        },
+        "case-1-P": {
+          "shape": [
+            31,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "record, Cartesian vector"
+        },
+        "case-1-L": {
+          "shape": [
+            31,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "record, Cartesian vector"
+        },
+        "case-1-endpoint_selected_particle_ids": {
+          "shape": [
+            128
+          ],
+          "dtype": "<i8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-1-endpoint_direct_acceleration": {
+          "shape": [
+            128,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-1-endpoint_direct_potential": {
+          "shape": [
+            128
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-1-endpoint_returned_selected_acceleration": {
+          "shape": [
+            128,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-1-endpoint_returned_selected_potential": {
+          "shape": [
+            128
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-2-times": {
+          "shape": [
+            31
+          ],
+          "dtype": "<f8",
+          "meaning": "record, model time or total energy"
+        },
+        "case-2-quantile_radii": {
+          "shape": [
+            31,
+            9
+          ],
+          "dtype": "<f8",
+          "meaning": "record, quantile fraction [.01,.05,.1,.25,.5,.75,.9,.95,.99]"
+        },
+        "case-2-shell_mass": {
+          "shape": [
+            31,
+            4
+          ],
+          "dtype": "<f8",
+          "meaning": "record, fixed shell; physical mass or coverage flag"
+        },
+        "case-2-second_diagonal": {
+          "shape": [
+            31,
+            4,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "record, fixed shell, tensor diagonal or mode order ell=1..4"
+        },
+        "case-2-shell_coverage": {
+          "shape": [
+            31,
+            4
+          ],
+          "dtype": "|b1",
+          "meaning": "record, fixed shell; physical mass or coverage flag"
+        },
+        "case-2-shell_initial_pair_count": {
+          "shape": [
+            4
+          ],
+          "dtype": "<i8",
+          "meaning": "fixed shell; initial pair count"
+        },
+        "case-2-mode_amplitudes": {
+          "shape": [
+            31,
+            4,
+            4
+          ],
+          "dtype": "<f8",
+          "meaning": "record, fixed shell, tensor diagonal or mode order ell=1..4"
+        },
+        "case-2-E": {
+          "shape": [
+            31
+          ],
+          "dtype": "<f8",
+          "meaning": "record, model time or total energy"
+        },
+        "case-2-P": {
+          "shape": [
+            31,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "record, Cartesian vector"
+        },
+        "case-2-L": {
+          "shape": [
+            31,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "record, Cartesian vector"
+        },
+        "case-2-endpoint_selected_particle_ids": {
+          "shape": [
+            128
+          ],
+          "dtype": "<i8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-2-endpoint_direct_acceleration": {
+          "shape": [
+            128,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-2-endpoint_direct_potential": {
+          "shape": [
+            128
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-2-endpoint_returned_selected_acceleration": {
+          "shape": [
+            128,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-2-endpoint_returned_selected_potential": {
+          "shape": [
+            128
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-3-times": {
+          "shape": [
+            31
+          ],
+          "dtype": "<f8",
+          "meaning": "record, model time or total energy"
+        },
+        "case-3-quantile_radii": {
+          "shape": [
+            31,
+            9
+          ],
+          "dtype": "<f8",
+          "meaning": "record, quantile fraction [.01,.05,.1,.25,.5,.75,.9,.95,.99]"
+        },
+        "case-3-shell_mass": {
+          "shape": [
+            31,
+            4
+          ],
+          "dtype": "<f8",
+          "meaning": "record, fixed shell; physical mass or coverage flag"
+        },
+        "case-3-second_diagonal": {
+          "shape": [
+            31,
+            4,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "record, fixed shell, tensor diagonal or mode order ell=1..4"
+        },
+        "case-3-shell_coverage": {
+          "shape": [
+            31,
+            4
+          ],
+          "dtype": "|b1",
+          "meaning": "record, fixed shell; physical mass or coverage flag"
+        },
+        "case-3-shell_initial_pair_count": {
+          "shape": [
+            4
+          ],
+          "dtype": "<i8",
+          "meaning": "fixed shell; initial pair count"
+        },
+        "case-3-mode_amplitudes": {
+          "shape": [
+            31,
+            4,
+            4
+          ],
+          "dtype": "<f8",
+          "meaning": "record, fixed shell, tensor diagonal or mode order ell=1..4"
+        },
+        "case-3-E": {
+          "shape": [
+            31
+          ],
+          "dtype": "<f8",
+          "meaning": "record, model time or total energy"
+        },
+        "case-3-P": {
+          "shape": [
+            31,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "record, Cartesian vector"
+        },
+        "case-3-L": {
+          "shape": [
+            31,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "record, Cartesian vector"
+        },
+        "case-3-endpoint_selected_particle_ids": {
+          "shape": [
+            128
+          ],
+          "dtype": "<i8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-3-endpoint_direct_acceleration": {
+          "shape": [
+            128,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-3-endpoint_direct_potential": {
+          "shape": [
+            128
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-3-endpoint_returned_selected_acceleration": {
+          "shape": [
+            128,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-3-endpoint_returned_selected_potential": {
+          "shape": [
+            128
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-4-times": {
+          "shape": [
+            31
+          ],
+          "dtype": "<f8",
+          "meaning": "record, model time or total energy"
+        },
+        "case-4-quantile_radii": {
+          "shape": [
+            31,
+            9
+          ],
+          "dtype": "<f8",
+          "meaning": "record, quantile fraction [.01,.05,.1,.25,.5,.75,.9,.95,.99]"
+        },
+        "case-4-shell_mass": {
+          "shape": [
+            31,
+            4
+          ],
+          "dtype": "<f8",
+          "meaning": "record, fixed shell; physical mass or coverage flag"
+        },
+        "case-4-second_diagonal": {
+          "shape": [
+            31,
+            4,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "record, fixed shell, tensor diagonal or mode order ell=1..4"
+        },
+        "case-4-shell_coverage": {
+          "shape": [
+            31,
+            4
+          ],
+          "dtype": "|b1",
+          "meaning": "record, fixed shell; physical mass or coverage flag"
+        },
+        "case-4-shell_initial_pair_count": {
+          "shape": [
+            4
+          ],
+          "dtype": "<i8",
+          "meaning": "fixed shell; initial pair count"
+        },
+        "case-4-mode_amplitudes": {
+          "shape": [
+            31,
+            4,
+            4
+          ],
+          "dtype": "<f8",
+          "meaning": "record, fixed shell, tensor diagonal or mode order ell=1..4"
+        },
+        "case-4-E": {
+          "shape": [
+            31
+          ],
+          "dtype": "<f8",
+          "meaning": "record, model time or total energy"
+        },
+        "case-4-P": {
+          "shape": [
+            31,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "record, Cartesian vector"
+        },
+        "case-4-L": {
+          "shape": [
+            31,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "record, Cartesian vector"
+        },
+        "case-4-endpoint_selected_particle_ids": {
+          "shape": [
+            128
+          ],
+          "dtype": "<i8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-4-endpoint_direct_acceleration": {
+          "shape": [
+            128,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-4-endpoint_direct_potential": {
+          "shape": [
+            128
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-4-endpoint_returned_selected_acceleration": {
+          "shape": [
+            128,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-4-endpoint_returned_selected_potential": {
+          "shape": [
+            128
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-5-times": {
+          "shape": [
+            31
+          ],
+          "dtype": "<f8",
+          "meaning": "record, model time or total energy"
+        },
+        "case-5-quantile_radii": {
+          "shape": [
+            31,
+            9
+          ],
+          "dtype": "<f8",
+          "meaning": "record, quantile fraction [.01,.05,.1,.25,.5,.75,.9,.95,.99]"
+        },
+        "case-5-shell_mass": {
+          "shape": [
+            31,
+            4
+          ],
+          "dtype": "<f8",
+          "meaning": "record, fixed shell; physical mass or coverage flag"
+        },
+        "case-5-second_diagonal": {
+          "shape": [
+            31,
+            4,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "record, fixed shell, tensor diagonal or mode order ell=1..4"
+        },
+        "case-5-shell_coverage": {
+          "shape": [
+            31,
+            4
+          ],
+          "dtype": "|b1",
+          "meaning": "record, fixed shell; physical mass or coverage flag"
+        },
+        "case-5-shell_initial_pair_count": {
+          "shape": [
+            4
+          ],
+          "dtype": "<i8",
+          "meaning": "fixed shell; initial pair count"
+        },
+        "case-5-mode_amplitudes": {
+          "shape": [
+            31,
+            4,
+            4
+          ],
+          "dtype": "<f8",
+          "meaning": "record, fixed shell, tensor diagonal or mode order ell=1..4"
+        },
+        "case-5-E": {
+          "shape": [
+            31
+          ],
+          "dtype": "<f8",
+          "meaning": "record, model time or total energy"
+        },
+        "case-5-P": {
+          "shape": [
+            31,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "record, Cartesian vector"
+        },
+        "case-5-L": {
+          "shape": [
+            31,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "record, Cartesian vector"
+        },
+        "case-5-endpoint_selected_particle_ids": {
+          "shape": [
+            128
+          ],
+          "dtype": "<i8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-5-endpoint_direct_acceleration": {
+          "shape": [
+            128,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-5-endpoint_direct_potential": {
+          "shape": [
+            128
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-5-endpoint_returned_selected_acceleration": {
+          "shape": [
+            128,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-5-endpoint_returned_selected_potential": {
+          "shape": [
+            128
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-6-times": {
+          "shape": [
+            31
+          ],
+          "dtype": "<f8",
+          "meaning": "record, model time or total energy"
+        },
+        "case-6-quantile_radii": {
+          "shape": [
+            31,
+            9
+          ],
+          "dtype": "<f8",
+          "meaning": "record, quantile fraction [.01,.05,.1,.25,.5,.75,.9,.95,.99]"
+        },
+        "case-6-shell_mass": {
+          "shape": [
+            31,
+            4
+          ],
+          "dtype": "<f8",
+          "meaning": "record, fixed shell; physical mass or coverage flag"
+        },
+        "case-6-second_diagonal": {
+          "shape": [
+            31,
+            4,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "record, fixed shell, tensor diagonal or mode order ell=1..4"
+        },
+        "case-6-shell_coverage": {
+          "shape": [
+            31,
+            4
+          ],
+          "dtype": "|b1",
+          "meaning": "record, fixed shell; physical mass or coverage flag"
+        },
+        "case-6-shell_initial_pair_count": {
+          "shape": [
+            4
+          ],
+          "dtype": "<i8",
+          "meaning": "fixed shell; initial pair count"
+        },
+        "case-6-mode_amplitudes": {
+          "shape": [
+            31,
+            4,
+            4
+          ],
+          "dtype": "<f8",
+          "meaning": "record, fixed shell, tensor diagonal or mode order ell=1..4"
+        },
+        "case-6-E": {
+          "shape": [
+            31
+          ],
+          "dtype": "<f8",
+          "meaning": "record, model time or total energy"
+        },
+        "case-6-P": {
+          "shape": [
+            31,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "record, Cartesian vector"
+        },
+        "case-6-L": {
+          "shape": [
+            31,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "record, Cartesian vector"
+        },
+        "case-6-endpoint_selected_particle_ids": {
+          "shape": [
+            128
+          ],
+          "dtype": "<i8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-6-endpoint_direct_acceleration": {
+          "shape": [
+            128,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-6-endpoint_direct_potential": {
+          "shape": [
+            128
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-6-endpoint_returned_selected_acceleration": {
+          "shape": [
+            128,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-6-endpoint_returned_selected_potential": {
+          "shape": [
+            128
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-7-times": {
+          "shape": [
+            31
+          ],
+          "dtype": "<f8",
+          "meaning": "record, model time or total energy"
+        },
+        "case-7-quantile_radii": {
+          "shape": [
+            31,
+            9
+          ],
+          "dtype": "<f8",
+          "meaning": "record, quantile fraction [.01,.05,.1,.25,.5,.75,.9,.95,.99]"
+        },
+        "case-7-shell_mass": {
+          "shape": [
+            31,
+            4
+          ],
+          "dtype": "<f8",
+          "meaning": "record, fixed shell; physical mass or coverage flag"
+        },
+        "case-7-second_diagonal": {
+          "shape": [
+            31,
+            4,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "record, fixed shell, tensor diagonal or mode order ell=1..4"
+        },
+        "case-7-shell_coverage": {
+          "shape": [
+            31,
+            4
+          ],
+          "dtype": "|b1",
+          "meaning": "record, fixed shell; physical mass or coverage flag"
+        },
+        "case-7-shell_initial_pair_count": {
+          "shape": [
+            4
+          ],
+          "dtype": "<i8",
+          "meaning": "fixed shell; initial pair count"
+        },
+        "case-7-mode_amplitudes": {
+          "shape": [
+            31,
+            4,
+            4
+          ],
+          "dtype": "<f8",
+          "meaning": "record, fixed shell, tensor diagonal or mode order ell=1..4"
+        },
+        "case-7-E": {
+          "shape": [
+            31
+          ],
+          "dtype": "<f8",
+          "meaning": "record, model time or total energy"
+        },
+        "case-7-P": {
+          "shape": [
+            31,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "record, Cartesian vector"
+        },
+        "case-7-L": {
+          "shape": [
+            31,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "record, Cartesian vector"
+        },
+        "case-7-endpoint_selected_particle_ids": {
+          "shape": [
+            128
+          ],
+          "dtype": "<i8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-7-endpoint_direct_acceleration": {
+          "shape": [
+            128,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-7-endpoint_direct_potential": {
+          "shape": [
+            128
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-7-endpoint_returned_selected_acceleration": {
+          "shape": [
+            128,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-7-endpoint_returned_selected_potential": {
+          "shape": [
+            128
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-8-times": {
+          "shape": [
+            31
+          ],
+          "dtype": "<f8",
+          "meaning": "record, model time or total energy"
+        },
+        "case-8-quantile_radii": {
+          "shape": [
+            31,
+            9
+          ],
+          "dtype": "<f8",
+          "meaning": "record, quantile fraction [.01,.05,.1,.25,.5,.75,.9,.95,.99]"
+        },
+        "case-8-shell_mass": {
+          "shape": [
+            31,
+            4
+          ],
+          "dtype": "<f8",
+          "meaning": "record, fixed shell; physical mass or coverage flag"
+        },
+        "case-8-second_diagonal": {
+          "shape": [
+            31,
+            4,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "record, fixed shell, tensor diagonal or mode order ell=1..4"
+        },
+        "case-8-shell_coverage": {
+          "shape": [
+            31,
+            4
+          ],
+          "dtype": "|b1",
+          "meaning": "record, fixed shell; physical mass or coverage flag"
+        },
+        "case-8-shell_initial_pair_count": {
+          "shape": [
+            4
+          ],
+          "dtype": "<i8",
+          "meaning": "fixed shell; initial pair count"
+        },
+        "case-8-mode_amplitudes": {
+          "shape": [
+            31,
+            4,
+            4
+          ],
+          "dtype": "<f8",
+          "meaning": "record, fixed shell, tensor diagonal or mode order ell=1..4"
+        },
+        "case-8-E": {
+          "shape": [
+            31
+          ],
+          "dtype": "<f8",
+          "meaning": "record, model time or total energy"
+        },
+        "case-8-P": {
+          "shape": [
+            31,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "record, Cartesian vector"
+        },
+        "case-8-L": {
+          "shape": [
+            31,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "record, Cartesian vector"
+        },
+        "case-8-endpoint_selected_particle_ids": {
+          "shape": [
+            128
+          ],
+          "dtype": "<i8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-8-endpoint_direct_acceleration": {
+          "shape": [
+            128,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-8-endpoint_direct_potential": {
+          "shape": [
+            128
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-8-endpoint_returned_selected_acceleration": {
+          "shape": [
+            128,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        },
+        "case-8-endpoint_returned_selected_potential": {
+          "shape": [
+            128
+          ],
+          "dtype": "<f8",
+          "meaning": "endpoint selected particle, Cartesian component or specific potential; no coordinates"
+        }
+      }
+    },
+    {
+      "path": "early-energy-operands.npz",
+      "sha256": "1eb96be7005ece8f54f1c0a9d0cc5ff83877f4d6e92cdaf41a3ac61ab03453c9",
+      "bytes": 553380,
+      "arrays": {
+        "times": {
+          "shape": [
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "epoch/timestep or selected pair index"
+        },
+        "particle_mass": {
+          "shape": [
+            8192
+          ],
+          "dtype": "<f8",
+          "meaning": "particle; original physical mass"
+        },
+        "specific_kinetic": {
+          "shape": [
+            3,
+            8192
+          ],
+          "dtype": "<f8",
+          "meaning": "direct epoch, particle; specific kinetic or self-excluded potential"
+        },
+        "direct_potential": {
+          "shape": [
+            3,
+            8192
+          ],
+          "dtype": "<f8",
+          "meaning": "direct epoch, particle; specific kinetic or self-excluded potential"
+        },
+        "native_U": {
+          "shape": [
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "epoch/timestep or selected pair index"
+        },
+        "native_E": {
+          "shape": [
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "epoch/timestep or selected pair index"
+        },
+        "dt": {
+          "shape": [
+            4
+          ],
+          "dtype": "<f8",
+          "meaning": "epoch/timestep or selected pair index"
+        },
+        "toy_initial_family_E": {
+          "shape": [
+            4096
+          ],
+          "dtype": "<f8",
+          "meaning": "pair family; original isolated-toy initial energy"
+        },
+        "toy_family_DE": {
+          "shape": [
+            4,
+            4096
+          ],
+          "dtype": "<f8",
+          "meaning": "timestep, pair family"
+        },
+        "toy_family_DL": {
+          "shape": [
+            4,
+            4096,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "timestep, pair family, Cartesian component"
+        },
+        "selected_pair_ids": {
+          "shape": [
+            8
+          ],
+          "dtype": "<i8",
+          "meaning": "epoch/timestep or selected pair index"
+        },
+        "selected_state_difference": {
+          "shape": [
+            4,
+            8,
+            2,
+            6
+          ],
+          "dtype": "<f8",
+          "meaning": "timestep, selected pair family, reversal partner, phase-space component; state errors only, not states"
+        },
+        "selected_DOP_DE": {
+          "shape": [
+            8
+          ],
+          "dtype": "<f8",
+          "meaning": "selected pair family or Cartesian component; saved-reference budget difference"
+        },
+        "selected_DOP_DL": {
+          "shape": [
+            8,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "selected pair family or Cartesian component; saved-reference budget difference"
+        }
+      }
+    },
+    {
+      "path": "action-support.npz",
+      "sha256": "466f7eb4ae0997bfba1ae88cffd9591efee6e55408d8e55ff0035045ebdfc697",
+      "bytes": 830431,
+      "arrays": {
+        "fully-present-0-actions": {
+          "shape": [
+            512,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "family, action [Jr,Jz,folded positive Lz]"
+        },
+        "fully-present-0-mass": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "fully-present-0-F0_over_Fq": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "fully-present-0-signed_deltaF_over_Fq": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "population [p4,p6,p8], family; absolute contrast contribution or saved odd weight"
+        },
+        "fully-present-0-contrast_contributions": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "population [p4,p6,p8], family; absolute contrast contribution or saved odd weight"
+        },
+        "fully-present-0-reference_contributions": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "fully-present-1-actions": {
+          "shape": [
+            512,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "family, action [Jr,Jz,folded positive Lz]"
+        },
+        "fully-present-1-mass": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "fully-present-1-F0_over_Fq": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "fully-present-1-signed_deltaF_over_Fq": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "population [p4,p6,p8], family; absolute contrast contribution or saved odd weight"
+        },
+        "fully-present-1-contrast_contributions": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "population [p4,p6,p8], family; absolute contrast contribution or saved odd weight"
+        },
+        "fully-present-1-reference_contributions": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "fully-present-2-actions": {
+          "shape": [
+            512,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "family, action [Jr,Jz,folded positive Lz]"
+        },
+        "fully-present-2-mass": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "fully-present-2-F0_over_Fq": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "fully-present-2-signed_deltaF_over_Fq": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "population [p4,p6,p8], family; absolute contrast contribution or saved odd weight"
+        },
+        "fully-present-2-contrast_contributions": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "population [p4,p6,p8], family; absolute contrast contribution or saved odd weight"
+        },
+        "fully-present-2-reference_contributions": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "fully-present-3-actions": {
+          "shape": [
+            512,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "family, action [Jr,Jz,folded positive Lz]"
+        },
+        "fully-present-3-mass": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "fully-present-3-F0_over_Fq": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "fully-present-3-signed_deltaF_over_Fq": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "population [p4,p6,p8], family; absolute contrast contribution or saved odd weight"
+        },
+        "fully-present-3-contrast_contributions": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "population [p4,p6,p8], family; absolute contrast contribution or saved odd weight"
+        },
+        "fully-present-3-reference_contributions": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "fully-present-4-actions": {
+          "shape": [
+            512,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "family, action [Jr,Jz,folded positive Lz]"
+        },
+        "fully-present-4-mass": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "fully-present-4-F0_over_Fq": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "fully-present-4-signed_deltaF_over_Fq": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "population [p4,p6,p8], family; absolute contrast contribution or saved odd weight"
+        },
+        "fully-present-4-contrast_contributions": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "population [p4,p6,p8], family; absolute contrast contribution or saved odd weight"
+        },
+        "fully-present-4-reference_contributions": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "fully-present-5-actions": {
+          "shape": [
+            512,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "family, action [Jr,Jz,folded positive Lz]"
+        },
+        "fully-present-5-mass": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "fully-present-5-F0_over_Fq": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "fully-present-5-signed_deltaF_over_Fq": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "population [p4,p6,p8], family; absolute contrast contribution or saved odd weight"
+        },
+        "fully-present-5-contrast_contributions": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "population [p4,p6,p8], family; absolute contrast contribution or saved odd weight"
+        },
+        "fully-present-5-reference_contributions": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "fully-present-6-actions": {
+          "shape": [
+            512,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "family, action [Jr,Jz,folded positive Lz]"
+        },
+        "fully-present-6-mass": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "fully-present-6-F0_over_Fq": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "fully-present-6-signed_deltaF_over_Fq": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "population [p4,p6,p8], family; absolute contrast contribution or saved odd weight"
+        },
+        "fully-present-6-contrast_contributions": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "population [p4,p6,p8], family; absolute contrast contribution or saved odd weight"
+        },
+        "fully-present-6-reference_contributions": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "fully-present-7-actions": {
+          "shape": [
+            512,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "family, action [Jr,Jz,folded positive Lz]"
+        },
+        "fully-present-7-mass": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "fully-present-7-F0_over_Fq": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "fully-present-7-signed_deltaF_over_Fq": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "population [p4,p6,p8], family; absolute contrast contribution or saved odd weight"
+        },
+        "fully-present-7-contrast_contributions": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "population [p4,p6,p8], family; absolute contrast contribution or saved odd weight"
+        },
+        "fully-present-7-reference_contributions": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "fully-present-whole-library-contrasts": {
+          "shape": [
+            8,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "whole library, population [p4,p6,p8]"
+        },
+        "fully-present-whole-library-reference": {
+          "shape": [
+            8
+          ],
+          "dtype": "<f8",
+          "meaning": "whole library"
+        },
+        "gradually-grown-0-actions": {
+          "shape": [
+            512,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "family, action [Jr,Jz,folded positive Lz]"
+        },
+        "gradually-grown-0-mass": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "gradually-grown-0-F0_over_Fq": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "gradually-grown-0-signed_deltaF_over_Fq": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "population [p4,p6,p8], family; absolute contrast contribution or saved odd weight"
+        },
+        "gradually-grown-0-contrast_contributions": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "population [p4,p6,p8], family; absolute contrast contribution or saved odd weight"
+        },
+        "gradually-grown-0-reference_contributions": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "gradually-grown-1-actions": {
+          "shape": [
+            512,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "family, action [Jr,Jz,folded positive Lz]"
+        },
+        "gradually-grown-1-mass": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "gradually-grown-1-F0_over_Fq": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "gradually-grown-1-signed_deltaF_over_Fq": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "population [p4,p6,p8], family; absolute contrast contribution or saved odd weight"
+        },
+        "gradually-grown-1-contrast_contributions": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "population [p4,p6,p8], family; absolute contrast contribution or saved odd weight"
+        },
+        "gradually-grown-1-reference_contributions": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "gradually-grown-2-actions": {
+          "shape": [
+            512,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "family, action [Jr,Jz,folded positive Lz]"
+        },
+        "gradually-grown-2-mass": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "gradually-grown-2-F0_over_Fq": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "gradually-grown-2-signed_deltaF_over_Fq": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "population [p4,p6,p8], family; absolute contrast contribution or saved odd weight"
+        },
+        "gradually-grown-2-contrast_contributions": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "population [p4,p6,p8], family; absolute contrast contribution or saved odd weight"
+        },
+        "gradually-grown-2-reference_contributions": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "gradually-grown-3-actions": {
+          "shape": [
+            512,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "family, action [Jr,Jz,folded positive Lz]"
+        },
+        "gradually-grown-3-mass": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "gradually-grown-3-F0_over_Fq": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "gradually-grown-3-signed_deltaF_over_Fq": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "population [p4,p6,p8], family; absolute contrast contribution or saved odd weight"
+        },
+        "gradually-grown-3-contrast_contributions": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "population [p4,p6,p8], family; absolute contrast contribution or saved odd weight"
+        },
+        "gradually-grown-3-reference_contributions": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "gradually-grown-4-actions": {
+          "shape": [
+            512,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "family, action [Jr,Jz,folded positive Lz]"
+        },
+        "gradually-grown-4-mass": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "gradually-grown-4-F0_over_Fq": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "gradually-grown-4-signed_deltaF_over_Fq": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "population [p4,p6,p8], family; absolute contrast contribution or saved odd weight"
+        },
+        "gradually-grown-4-contrast_contributions": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "population [p4,p6,p8], family; absolute contrast contribution or saved odd weight"
+        },
+        "gradually-grown-4-reference_contributions": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "gradually-grown-5-actions": {
+          "shape": [
+            512,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "family, action [Jr,Jz,folded positive Lz]"
+        },
+        "gradually-grown-5-mass": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "gradually-grown-5-F0_over_Fq": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "gradually-grown-5-signed_deltaF_over_Fq": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "population [p4,p6,p8], family; absolute contrast contribution or saved odd weight"
+        },
+        "gradually-grown-5-contrast_contributions": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "population [p4,p6,p8], family; absolute contrast contribution or saved odd weight"
+        },
+        "gradually-grown-5-reference_contributions": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "gradually-grown-6-actions": {
+          "shape": [
+            512,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "family, action [Jr,Jz,folded positive Lz]"
+        },
+        "gradually-grown-6-mass": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "gradually-grown-6-F0_over_Fq": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "gradually-grown-6-signed_deltaF_over_Fq": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "population [p4,p6,p8], family; absolute contrast contribution or saved odd weight"
+        },
+        "gradually-grown-6-contrast_contributions": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "population [p4,p6,p8], family; absolute contrast contribution or saved odd weight"
+        },
+        "gradually-grown-6-reference_contributions": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "gradually-grown-7-actions": {
+          "shape": [
+            512,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "family, action [Jr,Jz,folded positive Lz]"
+        },
+        "gradually-grown-7-mass": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "gradually-grown-7-F0_over_Fq": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "gradually-grown-7-signed_deltaF_over_Fq": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "population [p4,p6,p8], family; absolute contrast contribution or saved odd weight"
+        },
+        "gradually-grown-7-contrast_contributions": {
+          "shape": [
+            3,
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "population [p4,p6,p8], family; absolute contrast contribution or saved odd weight"
+        },
+        "gradually-grown-7-reference_contributions": {
+          "shape": [
+            512
+          ],
+          "dtype": "<f8",
+          "meaning": "family; physical proposal mass, DF ratio, or absolute reference transfer contribution"
+        },
+        "gradually-grown-whole-library-contrasts": {
+          "shape": [
+            8,
+            3
+          ],
+          "dtype": "<f8",
+          "meaning": "whole library, population [p4,p6,p8]"
+        },
+        "gradually-grown-whole-library-reference": {
+          "shape": [
+            8
+          ],
+          "dtype": "<f8",
+          "meaning": "whole library"
+        },
+        "fully-present-0-family_impulse": {
+          "shape": [
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "meaning": "family, reversal partner [prograde,retrograde]; accumulated bar Lz impulse"
+        },
+        "fully-present-1-family_impulse": {
+          "shape": [
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "meaning": "family, reversal partner [prograde,retrograde]; accumulated bar Lz impulse"
+        },
+        "fully-present-2-family_impulse": {
+          "shape": [
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "meaning": "family, reversal partner [prograde,retrograde]; accumulated bar Lz impulse"
+        },
+        "fully-present-3-family_impulse": {
+          "shape": [
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "meaning": "family, reversal partner [prograde,retrograde]; accumulated bar Lz impulse"
+        },
+        "fully-present-4-family_impulse": {
+          "shape": [
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "meaning": "family, reversal partner [prograde,retrograde]; accumulated bar Lz impulse"
+        },
+        "fully-present-5-family_impulse": {
+          "shape": [
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "meaning": "family, reversal partner [prograde,retrograde]; accumulated bar Lz impulse"
+        },
+        "fully-present-6-family_impulse": {
+          "shape": [
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "meaning": "family, reversal partner [prograde,retrograde]; accumulated bar Lz impulse"
+        },
+        "fully-present-7-family_impulse": {
+          "shape": [
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "meaning": "family, reversal partner [prograde,retrograde]; accumulated bar Lz impulse"
+        },
+        "gradually-grown-0-family_impulse": {
+          "shape": [
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "meaning": "family, reversal partner [prograde,retrograde]; accumulated bar Lz impulse"
+        },
+        "gradually-grown-1-family_impulse": {
+          "shape": [
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "meaning": "family, reversal partner [prograde,retrograde]; accumulated bar Lz impulse"
+        },
+        "gradually-grown-2-family_impulse": {
+          "shape": [
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "meaning": "family, reversal partner [prograde,retrograde]; accumulated bar Lz impulse"
+        },
+        "gradually-grown-3-family_impulse": {
+          "shape": [
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "meaning": "family, reversal partner [prograde,retrograde]; accumulated bar Lz impulse"
+        },
+        "gradually-grown-4-family_impulse": {
+          "shape": [
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "meaning": "family, reversal partner [prograde,retrograde]; accumulated bar Lz impulse"
+        },
+        "gradually-grown-5-family_impulse": {
+          "shape": [
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "meaning": "family, reversal partner [prograde,retrograde]; accumulated bar Lz impulse"
+        },
+        "gradually-grown-6-family_impulse": {
+          "shape": [
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "meaning": "family, reversal partner [prograde,retrograde]; accumulated bar Lz impulse"
+        },
+        "gradually-grown-7-family_impulse": {
+          "shape": [
+            512,
+            2
+          ],
+          "dtype": "<f8",
+          "meaning": "family, reversal partner [prograde,retrograde]; accumulated bar Lz impulse"
+        }
+      }
+    }
+  ],
+  "data": {
+    "path": "../../data/twins-force-support-v1.json",
+    "sha256": "beaa62de3dbc5d91cf80ad64293c975a916cc6516be7344cab43fbe9a68a799e"
+  },
+  "prepublication_status": "prepared_for_review"
+}

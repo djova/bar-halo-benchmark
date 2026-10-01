@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "campaign": "discovery-20261001",
-  "status": "limited_controls_exact_twin_analysis_and_published_output_release",
-  "scope": "Three regenerated known-limit controls; terminal collision/inertia and optional echo source families; exact-twin unforced construction and compact saved-response analysis; recorded cored feedback outputs. Not a complete physical reproduction of the campaign.",
+  "status": "known_controls_and_saved_arithmetic_release",
+  "scope": "Three regenerated known-limit controls; recorded five-branch outputs, exact-twin and gradual-growth response analysis, selected force/action-support diagnostics and finite cusp-pulse arithmetic. Not a complete reproduction of orbital evolution or live galaxies.",
   "tested_environment": {
     "python": "3.11.14",
     "numpy": "1.26.4",
@@ -31,25 +31,29 @@
     },
     {
       "path": "README.md",
-      "bytes": 15738,
-      "sha256": "84f988a7e4ee5a2a3c42064984aca08a48877eeea96ab51c3c65b8f07fbdac77",
+      "bytes": 17608,
+      "sha256": "dd786fbdb0bc926c1dbfa653795ac2878d6317896826f7876de4740d688909c1",
       "archived_sha256": "12b58d9ca5e59cfebe4defe8e4e1b57bcef9836faceac4c79a02299b8b704af7",
       "byte_identical_to_archive": false,
-      "release_transformation": "Adapted bundle guide, links and release scope for exact-twin analysis and closed cored feedback outputs. Prior source and receipt hashes preserved.",
-      "previous_release_sha256": "488cfe8d75aff0a283444db7ab585470219b6e65d3e67ffb492ba887b74b5666"
+      "release_transformation": "Updated additive checkpoint wording and evidence links; original source/receipt provenance retained.",
+      "previous_release_sha256": "84f988a7e4ee5a2a3c42064984aca08a48877eeea96ab51c3c65b8f07fbdac77"
     },
     {
       "path": "REPORT.md",
-      "bytes": 23136,
-      "sha256": "a74efbe3c70c10d33420febfc674376d2db5dbe993bf3060faf88354f2352055",
+      "bytes": 28343,
+      "sha256": "8a5611d10d4d2b7c67f986d5b689ea6147c6bd54ca86bf0e9993c3361c30ea02",
       "derived_from": [
         "research/discovery-20261001/PUBLIC_TWINS_EXACT_SUMMARY.md",
         "research/discovery-20261001/PUBLIC_TERMINAL_BRANCHES.md",
         "research/discovery-20261001/PUBLIC_ECHO_SUMMARY.md",
-        "research/discovery-20261001/FEEDBACK_PUBLIC_SUMMARY.md"
+        "research/discovery-20261001/FEEDBACK_PUBLIC_SUMMARY.md",
+        "data/twins-growth-v1.json",
+        "data/feedback-cusp.json",
+        "data/twins-force-support-v1.json"
       ],
-      "scope": "Closed analytic twin construction and prescribed-field response, collision/inertia references, recorded echo comparisons and cored feedback outputs; pending growth/cuspy outcomes excluded.",
-      "previous_release_sha256": "d818fa7d1bc1e6da7e1dd5aafe8f2146ab9b353ecd3d5e1f6a663345e2442b0c"
+      "scope": "Three regenerated known-limit controls; recorded five-branch outputs, exact-twin and gradual-growth response analysis, selected force/action-support diagnostics and finite cusp-pulse arithmetic. Not a complete reproduction of orbital evolution or live galaxies.",
+      "previous_release_sha256": "a74efbe3c70c10d33420febfc674376d2db5dbe993bf3060faf88354f2352055",
+      "release_transformation": "Updated additive checkpoint wording and evidence links; original source/receipt provenance retained."
     },
     {
       "path": "data/echoes.json",
@@ -58,6 +62,11 @@
       "archived_sha256": "ed06ce140e30c2a0b899f9999f99a196d907e9603aa874df5ef497388d06f5d0",
       "byte_identical_to_archive": false,
       "release_transformation": "Updated only release availability/scope and relative bundle/receipt links. Scientific operands and archived provenance hashes unchanged."
+    },
+    {
+      "path": "data/feedback-cusp.json",
+      "bytes": 57968,
+      "sha256": "b9dec4c9d2413c59564141916bcca358decc8dd986b1521da4104bdf4c63c73a"
     },
     {
       "path": "data/feedback.json",
@@ -92,6 +101,16 @@
       "archived_sha256": "c6d8ebe26b7828e79ea9640ceee08d3d7ba5f1c0f15285f3c7e8231e4412fc44",
       "byte_identical_to_archive": false,
       "release_transformation": "Added only release metadata identifying the supplied sources, operands and limited reproduction scope. Archived scientific fields and evidence hashes unchanged."
+    },
+    {
+      "path": "data/twins-force-support-v1.json",
+      "bytes": 516955,
+      "sha256": "beaa62de3dbc5d91cf80ad64293c975a916cc6516be7344cab43fbe9a68a799e"
+    },
+    {
+      "path": "data/twins-growth-v1.json",
+      "bytes": 842190,
+      "sha256": "f5ffcbd62b7349e20e93e9a0cbe3c936778590bf7c319c628ac01a5321e7c802"
     },
     {
       "path": "data/twins-velocity.json",
@@ -170,9 +189,154 @@
       "scope": "Subset hashes and definitions, original complete-input hashes and selected arrays, and stored pinned-AGAMA sampling density; no complete trajectories."
     },
     {
+      "path": "operands/feedback-cusp-v1/feedback-cusp.json",
+      "bytes": 57968,
+      "sha256": "b9dec4c9d2413c59564141916bcca358decc8dd986b1521da4104bdf4c63c73a"
+    },
+    {
+      "path": "operands/feedback-cusp-v1/operands/initial.npz",
+      "bytes": 629099,
+      "sha256": "5ce59f5c247381dd4be7d68a90f98d329f8a575a3ddc90a93c7ac39c09c86882"
+    },
+    {
+      "path": "operands/feedback-cusp-v1/operands/known-map.npz",
+      "bytes": 4444116,
+      "sha256": "137380c76a061fe6ab390ce1e88500b05b1c020b5b7ffd378fbf16f93a8379de"
+    },
+    {
+      "path": "operands/feedback-cusp-v1/operands/pulse-dt0.000625.npz",
+      "bytes": 3089051,
+      "sha256": "778b85bc00d5bbafaa7c0d7428b840c1462fd18e24fe0c716d78738084765540"
+    },
+    {
+      "path": "operands/feedback-cusp-v1/operands/pulse-dt0.00125.npz",
+      "bytes": 3090747,
+      "sha256": "e2eb7c442d35a46ab15aac15fda9658f2f9f16539125a894870a59bb4cbd0eb1"
+    },
+    {
+      "path": "operands/feedback-cusp-v1/operands/selected-reference.npz",
+      "bytes": 7460,
+      "sha256": "f8b5e1336cfbc6648669d79a1242db07522b8400a64e76c315818f77011a2c79"
+    },
+    {
+      "path": "operands/feedback-cusp-v1/receipt.json",
+      "bytes": 1454,
+      "sha256": "fba69017355f9ab7f810dc83fa73b8d59f45e09493afabcec8f9064780ab4e2d"
+    },
+    {
+      "path": "operands/feedback-cusp-v1/replay_feedback_cusp_v1.py",
+      "bytes": 14808,
+      "sha256": "026d2e8517c55305dcdb0fbe0da4d3e37acbc65db251368824238b8df1f1bfbb"
+    },
+    {
+      "path": "operands/twins-force-support-v1/README.md",
+      "bytes": 1905,
+      "sha256": "2eedccd43a584ff221e1e5e79dec286c5fa98ceb42a2a66012dad1c76e8875c5"
+    },
+    {
+      "path": "operands/twins-force-support-v1/action-support.npz",
+      "bytes": 830431,
+      "sha256": "466f7eb4ae0997bfba1ae88cffd9591efee6e55408d8e55ff0035045ebdfc697"
+    },
+    {
+      "path": "operands/twins-force-support-v1/continuum-quadrature.npz",
+      "bytes": 4914901,
+      "sha256": "7022c174a21ec13726123e6b113d40ef3a88a77e6b768da6cd5a24fb8e927105"
+    },
+    {
+      "path": "operands/twins-force-support-v1/early-energy-operands.npz",
+      "bytes": 553380,
+      "sha256": "1eb96be7005ece8f54f1c0a9d0cc5ff83877f4d6e92cdaf41a3ac61ab03453c9"
+    },
+    {
+      "path": "operands/twins-force-support-v1/manifest.json",
+      "bytes": 134782,
+      "sha256": "c06c3ed755641b91f80101bd9abda87263961e6af30543ee379a7c563b51723a"
+    },
+    {
+      "path": "operands/twins-force-support-v1/paired-live-diagnostics.npz",
+      "bytes": 193560,
+      "sha256": "45c0904652a5544e05a33ca2feca32d7a0cdc95d3c1d37b74303eccc5a104c24"
+    },
+    {
+      "path": "operands/twins-force-support-v1/selected-force.npz",
+      "bytes": 157198,
+      "sha256": "3881aaea0f7065570e63c10dddabe88137704aa7f1ec387501fa83697eb2279e"
+    },
+    {
+      "path": "operands/twins-growth-v1/README.md",
+      "bytes": 1688,
+      "sha256": "d8c60b5669539a462ccc570b1b3f796447edb2d166b88e2f6b71a4afd2156b49"
+    },
+    {
+      "path": "operands/twins-growth-v1/library-0.npz",
+      "bytes": 1554638,
+      "sha256": "007b57634bbdb10a61b43ae11f3866a64756a4de78eb90878eeee1f3bdc99939"
+    },
+    {
+      "path": "operands/twins-growth-v1/library-1.npz",
+      "bytes": 409329,
+      "sha256": "b9466c9eb00ab262162e7e7f5484c3494bfb2930cd51bfe67fa2687ffde686b0"
+    },
+    {
+      "path": "operands/twins-growth-v1/library-2.npz",
+      "bytes": 409495,
+      "sha256": "4238c748783458e17eeca3b3a73719b312756d663f157c80b23fe717e5632e42"
+    },
+    {
+      "path": "operands/twins-growth-v1/library-3.npz",
+      "bytes": 409065,
+      "sha256": "87af1fd62114532da5a01b91b7f32b7d7b64a790db042d6a31856e5daadef289"
+    },
+    {
+      "path": "operands/twins-growth-v1/library-4.npz",
+      "bytes": 409192,
+      "sha256": "48236b813038c07ffc60d87df9aa9cdaafcec06786d0e6a4fcaad8d7c23fd44d"
+    },
+    {
+      "path": "operands/twins-growth-v1/library-5.npz",
+      "bytes": 408711,
+      "sha256": "1acdafc31abdd68d704dc0409d3827e4336d9a511c36ec1c29dfb65ec756bb79"
+    },
+    {
+      "path": "operands/twins-growth-v1/library-6.npz",
+      "bytes": 408942,
+      "sha256": "8152471822c5aad0f5d3dececa81f6f1b65baa51d867298ecf92d51b32e50bd0"
+    },
+    {
+      "path": "operands/twins-growth-v1/library-7.npz",
+      "bytes": 409317,
+      "sha256": "346cbc8adaf39cebaf1f66627d393e694dc79364e8bf6f20651440961077f3f2"
+    },
+    {
+      "path": "operands/twins-growth-v1/manifest.json",
+      "bytes": 32433,
+      "sha256": "58090b33ca1b2499b8b6405c44b103834689a0b97257a8b666abb67243068613"
+    },
+    {
       "path": "proof-optional-requirements.lock.txt",
       "bytes": 14,
       "sha256": "a699f46ed76bd216f1081b6b2330e4fb45d7c8c5a5354b208694d6590a5a8645"
+    },
+    {
+      "path": "reproductions/force-support-v1-analysis-01/README.md",
+      "bytes": 1442,
+      "sha256": "e7444b587e774bd91da32e1dba9c5c6b63aa6e50c8f062512fcbe717db8b6c96"
+    },
+    {
+      "path": "reproductions/force-support-v1-analysis-01/result.json",
+      "bytes": 439045,
+      "sha256": "cd6e8c33dc0aeaa20a4a14c2df87bed03b1e271ff32f4cf4b6011de085aafb03"
+    },
+    {
+      "path": "reproductions/growth-v1-analysis-01/README.md",
+      "bytes": 601,
+      "sha256": "256ccca1c419aa4c2d07d2f5e846331592c3519c07dd868dff9303f7e1031b65"
+    },
+    {
+      "path": "reproductions/growth-v1-analysis-01/result.json",
+      "bytes": 671155,
+      "sha256": "122ec8c022533f7cf8b042af1ae5ecc7eecad725e37c2ca846d02732efdb4393"
     },
     {
       "path": "reproductions/public-controls-01/README.md",
@@ -261,6 +425,21 @@
       "sha256": "c96d7decedb3a43933eff58c7dd915db58207aeeaa6a06ef98ea4375a711760b",
       "archived_sha256": "7c3e0bc5fb4ae34deff47d850630f4c45306e40a9981bd531daf98158b572484",
       "byte_identical_to_archive": false
+    },
+    {
+      "path": "research/FEEDBACK_CUSP_FINITE_RESULT.md",
+      "bytes": 6076,
+      "sha256": "b958d7c014c20c1be2451aec4fe907d40459c1036ec3ffe937b26982ad268a10"
+    },
+    {
+      "path": "research/FEEDBACK_CUSP_PUBLIC_SUMMARY.md",
+      "bytes": 3906,
+      "sha256": "151ba6bb3a35164e0b7a50a0f3b4b76a6319bbff8da8256596b1310594b45f50"
+    },
+    {
+      "path": "research/FEEDBACK_CUSP_REPLAY.md",
+      "bytes": 3739,
+      "sha256": "635f23118648865d949892c6a01cfda9e965c183a3f7fbe3b1c9f702f8e52168"
     },
     {
       "path": "research/discovery-20261001/ECHO_MONOPOLE_PROTOCOL.md",
@@ -409,6 +588,26 @@
       "byte_identical_to_archive": true
     },
     {
+      "path": "research/discovery-20261001/TWINS_FORCE_SUPPORT_PUBLIC_V1.md",
+      "bytes": 10917,
+      "sha256": "aca233e8720364eadc0fc5845b63e0bb9e3648468034d1d9638bd0beb43c7381"
+    },
+    {
+      "path": "research/discovery-20261001/TWINS_GROWTH_PROTOCOL_V1.md",
+      "bytes": 5450,
+      "sha256": "c5cb7e41314e0e99efe4704ab81209c2192a5ee650df05e2a00ea261c7617e12"
+    },
+    {
+      "path": "research/discovery-20261001/TWINS_GROWTH_RECOVERY_PROTOCOL_V1.md",
+      "bytes": 6005,
+      "sha256": "c0ebcac8bed3f369192dea7c6170bdce9ac82b8cfb4f1e679daa1de202d3edd8"
+    },
+    {
+      "path": "research/discovery-20261001/TWINS_GROWTH_RECOVERY_READBACK_V1.md",
+      "bytes": 9145,
+      "sha256": "5c45ecf8f1bc43a45c47fd3412f965cf5148fb2420ec0ecb38fe2d4830b8d08f"
+    },
+    {
       "path": "research/discovery-20261001/TWINS_PRIORITY_REVIEW.md",
       "bytes": 9246,
       "sha256": "30879b3c46ffc9d414815b1b29343a117c375c514b44b37a90726375cb354354",
@@ -416,6 +615,11 @@
       "archived_sha256": "4247944a892907904633deacdbeea9a88b070bcb03d64e11e3383604655bdb43",
       "byte_identical_to_archive": false,
       "release_transformation": "Removed the private memo label and local-reading wording; sources, quotations and priority assessment unchanged."
+    },
+    {
+      "path": "research/discovery-20261001/TWINS_TWO_INTEGRAL_BOUNDARY.md",
+      "bytes": 3125,
+      "sha256": "5367c7320b428215e0fdda194c0893ee669170e39d381ea2075493f60e5f5071"
     },
     {
       "path": "scripts/discovery/echo_halo.py",
@@ -488,6 +692,11 @@
       "byte_identical_to_archive": true
     },
     {
+      "path": "scripts/discovery/replay_feedback_cusp_v1.py",
+      "bytes": 14808,
+      "sha256": "026d2e8517c55305dcdb0fbe0da4d3e37acbc65db251368824238b8df1f1bfbb"
+    },
+    {
       "path": "scripts/discovery/replay_twins_exact.py",
       "bytes": 9286,
       "sha256": "19c6dd5834897e04637ec15a4f24593a61fb63b3e13336612fb2ebbc8f01b465",
@@ -496,6 +705,16 @@
         "source-snapshots/exact-twins/twins_exact_response.py",
         "source-snapshots/exact-twins/twins_exact_moments.py"
       ]
+    },
+    {
+      "path": "scripts/discovery/replay_twins_force_support_v1.py",
+      "bytes": 29500,
+      "sha256": "c2226cf84ae985a4a492e3c826c3917be2edf44f8ba3d4ba64901e53ef0ee75f"
+    },
+    {
+      "path": "scripts/discovery/replay_twins_growth_v1.py",
+      "bytes": 9596,
+      "sha256": "30be70c33920f7f1d2805bbfe539c59f53fc126c624fabe3941b1bbebf443994"
     },
     {
       "path": "scripts/discovery/reproduce_controls.py",
@@ -668,14 +887,28 @@
   },
   "pending_experiments": [
     {
-      "name": "new bar-growth twin ensemble",
+      "name": "distinct-position live unforced halo completion",
       "outcome_included": false,
-      "source_release_included": false
+      "scope": "Prerequisite check, not a driven live-bar result"
     },
     {
-      "name": "cuspy feedback with centrally populated stars",
-      "outcome_included": false,
-      "source_release_included": false
+      "name": "finite-amplitude warm stellar heating",
+      "outcome_included": false
+    }
+  ],
+  "release": "discovery-2026-10-01.3",
+  "added_replay_packages": [
+    {
+      "id": "twins-growth-v1",
+      "scope": "Saved weighted impulse/work histories and selected refinement contractions"
+    },
+    {
+      "id": "twins-force-support-v1",
+      "scope": "Saved selected force vectors, quadrature contractions, energy and action-support diagnostics"
+    },
+    {
+      "id": "feedback-cusp-v1",
+      "scope": "Saved finite-pulse and known-map estimates, work accounting and paired differences"
     }
   ]
 }
