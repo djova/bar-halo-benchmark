@@ -79,11 +79,11 @@ SIDM operator is supplied.
 These two commands regenerate the original-waveform pair at one recorded seed:
 
 ```sh
-.venv-discovery/bin/python discovery/scripts/discovery/scatter_moment_screen.py \
+nice -n 10 .venv-discovery/bin/python discovery/scripts/discovery/scatter_moment_screen.py \
   --out ./collision-A-260521 --law A --role resonance --seed 260521 \
   --n 8192 --cells 32 --dt 0.01 --duration 40 --kappa 0.02 \
   --epsilon 0.25 --omega0 0.5 --sweep 0.025
-.venv-discovery/bin/python discovery/scripts/discovery/scatter_moment_screen.py \
+nice -n 10 .venv-discovery/bin/python discovery/scripts/discovery/scatter_moment_screen.py \
   --out ./collision-B-260521 --law B --role resonance --seed 260521 \
   --n 8192 --cells 32 --dt 0.01 --duration 40 --kappa 0.02 \
   --epsilon 0.25 --omega0 0.5 --sweep 0.025
@@ -130,7 +130,7 @@ Keep the export in the shell used for the following optional commands.
 For the recorded baseline radial cohort, the finite run can be invoked as:
 
 ```sh
-.venv-discovery/bin/python discovery/scripts/discovery/echo_monopole.py \
+nice -n 10 .venv-discovery/bin/python discovery/scripts/discovery/echo_monopole.py \
   --out ./radial-echo-rerun --ne 512 --nL 32 --nr 256 \
   --tau 16 --amplitude 0.002 --support-amplitude 0.004 \
   --taper-low 0.02 --taper-high 0.04 --cadence 1 --end-factor 2.5 \
