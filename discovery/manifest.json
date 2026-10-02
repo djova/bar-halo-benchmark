@@ -2,7 +2,7 @@
   "schema_version": 1,
   "campaign": "discovery-20261001",
   "status": "known_controls_and_saved_arithmetic_release",
-  "scope": "Three regenerated known-limit controls; recorded five-branch outputs, exact-twin and gradual-growth response analysis, selected force/action-support diagnostics and finite cusp-pulse arithmetic. Not a complete reproduction of orbital evolution or live galaxies.",
+  "scope": "Three regenerated known-limit controls; recorded five-branch outputs, exact-twin and gradual-growth response analysis, selected force/action-support diagnostics and finite cusp-pulse arithmetic. Not a complete reproduction of orbital evolution or live galaxies. Added saved phase/heating/exact-zero arithmetic; no complete live experiment regeneration.",
   "tested_environment": {
     "python": "3.11.14",
     "numpy": "1.26.4",
@@ -25,23 +25,28 @@
       "byte_identical_to_archive": false
     },
     {
+      "path": "CHECKS.md",
+      "sha256": "811283e229edaed5b5d2f118b5c7acdeffb9abd9cfd20fc614ff85d88a74a260",
+      "bytes": 12522
+    },
+    {
       "path": "LICENSING.md",
       "bytes": 1687,
       "sha256": "e595c3b7f9710e48b436aa77fc3f82dc4024d86ce14ef413adcbf54aea9f4c1d"
     },
     {
       "path": "README.md",
-      "bytes": 17608,
-      "sha256": "dd786fbdb0bc926c1dbfa653795ac2878d6317896826f7876de4740d688909c1",
+      "bytes": 18657,
+      "sha256": "8eab35931af119dba26eff14928a23b153d6ec61753ba1cf08e2d35b6be1b8fb",
       "archived_sha256": "12b58d9ca5e59cfebe4defe8e4e1b57bcef9836faceac4c79a02299b8b704af7",
       "byte_identical_to_archive": false,
       "release_transformation": "Updated additive checkpoint wording and evidence links; original source/receipt provenance retained.",
-      "previous_release_sha256": "84f988a7e4ee5a2a3c42064984aca08a48877eeea96ab51c3c65b8f07fbdac77"
+      "previous_release_sha256": "dd786fbdb0bc926c1dbfa653795ac2878d6317896826f7876de4740d688909c1"
     },
     {
       "path": "REPORT.md",
-      "bytes": 28343,
-      "sha256": "8a5611d10d4d2b7c67f986d5b689ea6147c6bd54ca86bf0e9993c3361c30ea02",
+      "bytes": 28402,
+      "sha256": "b5bfd54aed63e8fc73da720b25591e005422f498b4858bec84b8b2e8bc8b58d8",
       "derived_from": [
         "research/discovery-20261001/PUBLIC_TWINS_EXACT_SUMMARY.md",
         "research/discovery-20261001/PUBLIC_TERMINAL_BRANCHES.md",
@@ -52,8 +57,13 @@
         "data/twins-force-support-v1.json"
       ],
       "scope": "Three regenerated known-limit controls; recorded five-branch outputs, exact-twin and gradual-growth response analysis, selected force/action-support diagnostics and finite cusp-pulse arithmetic. Not a complete reproduction of orbital evolution or live galaxies.",
-      "previous_release_sha256": "a74efbe3c70c10d33420febfc674376d2db5dbe993bf3060faf88354f2352055",
+      "previous_release_sha256": "8a5611d10d4d2b7c67f986d5b689ea6147c6bd54ca86bf0e9993c3361c30ea02",
       "release_transformation": "Updated additive checkpoint wording and evidence links; original source/receipt provenance retained."
+    },
+    {
+      "path": "data/checks-v1.json",
+      "sha256": "e53d367fe454bbdbd2aafa995a84d2d92219059f50b9755fc2d4242abf407a82",
+      "bytes": 132928
     },
     {
       "path": "data/echoes.json",
@@ -120,6 +130,81 @@
       "archived_sha256": "a2db92ff4d8545da2b4a17c23d6423db90dcbb196f7ae0109a27cad51051eadf",
       "byte_identical_to_archive": false,
       "release_transformation": "Added only release metadata identifying the supplied sources, operands and limited reproduction scope. Archived scientific fields and evidence hashes unchanged."
+    },
+    {
+      "path": "figures/phase-control-v1.png",
+      "sha256": "d6abcd5e791fd4457cb071b931b176958e9be8f201b62f0619a6dc74fb757863",
+      "bytes": 147415
+    },
+    {
+      "path": "figures/phase-control-v1.svg",
+      "sha256": "f201607e06b811b6c755f527a1bfbf61e945aeefae87f0a5ec02f4432dbda355",
+      "bytes": 79734
+    },
+    {
+      "path": "methods/control-checks/ECHO_FINITE_DIAGNOSTIC_COMPLETION02_PROTOCOL.md",
+      "sha256": "9d8ea38c2419ae1ee9435c8da5d13b5dde434366798e45cca83b87b0d234fe08",
+      "bytes": 13992
+    },
+    {
+      "path": "methods/control-checks/ECHO_FINITE_ENERGY_PAIR_PROTOCOL.md",
+      "sha256": "3d9c0e4965c45a9834e236ef5427d9b7b5accbb2447d83a5826465f94caae383",
+      "bytes": 9810
+    },
+    {
+      "path": "methods/control-checks/FEEDBACK_CUSP_WARM_PILOT_PROTOCOL.md",
+      "sha256": "9e07eff2ff03afa18b1d9970ad4e964883c81a72206283072da7ffce48f8fd42",
+      "bytes": 8758
+    },
+    {
+      "path": "methods/control-checks/FEEDBACK_CUSP_WARM_POPULATION_EQUIVALENCE.md",
+      "sha256": "82a069a12b6fd414f83d0fdfb5b944a816a89b37fa09e922ad8210b9cd325554",
+      "bytes": 5439
+    },
+    {
+      "path": "methods/control-checks/FEEDBACK_CUSP_WARM_REFERENCE_PROTOCOL.md",
+      "sha256": "1e2e11055f8d100b6ff13edd11a0b98db108e597bc3ff2b6a9df64f71d78f4e0",
+      "bytes": 3684
+    },
+    {
+      "path": "methods/control-checks/FEEDBACK_CUSP_WARM_VARIANCE_PROOF.md",
+      "sha256": "28c953252b6c005dec046ca1ce3c21e457ba3c86c3976c7cd97d866dd1886b7d",
+      "bytes": 6712
+    },
+    {
+      "path": "methods/control-checks/TWINS_ANALYTIC_PHASE_CONTROL_PROTOCOL.md",
+      "sha256": "bc91e50975b3196dcb963b3f8b2433096503ab62fd08021b1233e824a7c7cb93",
+      "bytes": 11862
+    },
+    {
+      "path": "methods/control-checks/TWINS_SINGLE_POSITION_COMPLETION_PROTOCOL.md",
+      "sha256": "45a79908d4fcdb188374c70fbff3fe6b1d70beb4d7c12235ae4eccb083192e3c",
+      "bytes": 5078
+    },
+    {
+      "path": "operands/checks-v1/README.md",
+      "sha256": "047e0bac78079f9e7d3f262d11ad7c65573dd987a5d1e00e978ab804f6f5c043",
+      "bytes": 2945
+    },
+    {
+      "path": "operands/checks-v1/manifest.json",
+      "sha256": "7212d81cda9b7adeb9d6a5121b75d60441dfd902ccce3f424196cf5e2b540b7c",
+      "bytes": 614
+    },
+    {
+      "path": "operands/checks-v1/phase-profiles.json",
+      "sha256": "891b95a1c00cabb370c1126b5eed35e6567edfb4d962a6d6b531affcf48769a5",
+      "bytes": 535415
+    },
+    {
+      "path": "operands/checks-v1/warm-fine-response.npz",
+      "sha256": "bf0dab55c4a86279fdfd388ada052770439ad5b7a5102ee628d954de21b8274d",
+      "bytes": 59074
+    },
+    {
+      "path": "operands/checks-v1/warm-initial.npz",
+      "sha256": "a5916a62cd621b243cbb8849d0d5b17d98f3a0100819d1b9a2ee62d6f71aef67",
+      "bytes": 87819
     },
     {
       "path": "operands/exact-twins/README.md",
@@ -317,6 +402,11 @@
       "path": "proof-optional-requirements.lock.txt",
       "bytes": 14,
       "sha256": "a699f46ed76bd216f1081b6b2330e4fb45d7c8c5a5354b208694d6590a5a8645"
+    },
+    {
+      "path": "reproductions/checks-v1-01/result.json",
+      "sha256": "a340c7834d3439ed098edbdf39412f617cdb410e803d9e317c2768c2b3fb21c5",
+      "bytes": 587
     },
     {
       "path": "reproductions/force-support-v1-analysis-01/README.md",
@@ -593,6 +683,11 @@
       "sha256": "aca233e8720364eadc0fc5845b63e0bb9e3648468034d1d9638bd0beb43c7381"
     },
     {
+      "path": "research/discovery-20261001/TWINS_FORMATION_RESTRICTION.md",
+      "sha256": "b4db78e0dddaef80d53838099ca003fa5265e620988329285d64e0cf43a1f8f8",
+      "bytes": 3542
+    },
+    {
       "path": "research/discovery-20261001/TWINS_GROWTH_PROTOCOL_V1.md",
       "bytes": 5450,
       "sha256": "c5cb7e41314e0e99efe4704ab81209c2192a5ee650df05e2a00ea261c7617e12"
@@ -692,6 +787,11 @@
       "byte_identical_to_archive": true
     },
     {
+      "path": "scripts/discovery/replay_checks_v1.py",
+      "sha256": "49c650e3b9cef936d835f37c15960b73fb07e52e26003e51ba047d2065b2906a",
+      "bytes": 5478
+    },
+    {
       "path": "scripts/discovery/replay_feedback_cusp_v1.py",
       "bytes": 14808,
       "sha256": "026d2e8517c55305dcdb0fbe0da4d3e37acbc65db251368824238b8df1f1bfbb"
@@ -772,6 +872,71 @@
       "bytes": 2299,
       "sha256": "7f979d78b2cfeec5442ce3ca7a756040990224a02888748c4bca34061c4f28a3",
       "previous_release_sha256": "b771ae1ef6bdb27df58a6b999b92b332628c5159aff9d6eef2001a04bef957b5"
+    },
+    {
+      "path": "source-snapshots/control-checks/README.md",
+      "sha256": "fab75e212ae66aa8dfdf9870ec8d5f3b1bce24157c48e9bb51dd30c095ed7ad0",
+      "bytes": 1856
+    },
+    {
+      "path": "source-snapshots/control-checks/echo_finite_diagnostic_completion.py",
+      "sha256": "a9daf7840e4e1b9daee72921caee3d91d2a45a1b4617b131a67c465926ce9ee8",
+      "bytes": 26802
+    },
+    {
+      "path": "source-snapshots/control-checks/echo_finite_energy_pair.py",
+      "sha256": "4663c487d3928d1e4ca333c39dbafbe6f8b603411731372eff344fba0aec6b9a",
+      "bytes": 25509
+    },
+    {
+      "path": "source-snapshots/control-checks/echo_finite_preflight.py",
+      "sha256": "d222c0ba4321678ce96a328714b8ef95c969f77fed6f3d6db862b97afeffd6b3",
+      "bytes": 29540
+    },
+    {
+      "path": "source-snapshots/control-checks/export_control_checks_v1.py",
+      "bytes": 7716,
+      "sha256": "0ae9df24210b54dea641ac2519b4cf19a614c05670ced924dd884d6d319c9a68"
+    },
+    {
+      "path": "source-snapshots/control-checks/feedback_cusp_radial.py",
+      "sha256": "dd1503f509d02850637a12153c77893944cc6df710f912c0c7df67105d221040",
+      "bytes": 19342
+    },
+    {
+      "path": "source-snapshots/control-checks/feedback_cusp_warm_pilot.py",
+      "sha256": "af0743d73fbd11d78d177bbab9bcdaeadf8dbf5fe94af1963f91a63e7575ec32",
+      "bytes": 21399
+    },
+    {
+      "path": "source-snapshots/control-checks/feedback_cusp_warm_radial.py",
+      "sha256": "10526f3332a2f00d90f4092adbb1bbf1556ecf5e414b1c2d27c8da5a570b88dd",
+      "bytes": 9429
+    },
+    {
+      "path": "source-snapshots/control-checks/feedback_cusp_warm_readback.py",
+      "sha256": "6260defb6de61bf1420ab523079823be1794242d9b9296b00bf3aed56e0bdb5e",
+      "bytes": 9382
+    },
+    {
+      "path": "source-snapshots/control-checks/feedback_cusp_warm_reference.py",
+      "sha256": "07f90bfb6890b8dcfac58fbb1fa4016d113e53a9bc0f39a932ca28f31634cd5b",
+      "bytes": 9284
+    },
+    {
+      "path": "source-snapshots/control-checks/provenance.json",
+      "sha256": "239924681b3f6c231339ff10838dab6518d2bc7696415e1aab768f8580850775",
+      "bytes": 7981
+    },
+    {
+      "path": "source-snapshots/control-checks/twins_phase_control.py",
+      "sha256": "e4e28ca8e058ca1c1839d33ee4101c017b3e83ea2fb61b05c6e6ff7c6f1dab20",
+      "bytes": 40013
+    },
+    {
+      "path": "source-snapshots/control-checks/twins_single_position_completion.py",
+      "sha256": "6bdbc827f17c98f785558debec26047a69238f4fd9b2fc2f57a36ab21fe4e5f6",
+      "bytes": 46762
     },
     {
       "path": "source-snapshots/exact-twins/TWINS_EXACT_MOMENTS_CHALLENGE.py",
@@ -862,7 +1027,8 @@
   },
   "reading_fallback": {
     "path": "REPORT.md",
-    "scope": "Completed analytic twin and prescribed-field analysis, collision/inertia references, recorded echo comparisons and cored feedback outputs. Pending growth/cuspy outcomes excluded."
+    "control_checks": "CHECKS.md",
+    "scope": "Current response findings and retained control failures; no live-bar or observational claim."
   },
   "exact_twin_analysis_reproduction": {
     "receipt": "reproductions/twins-analysis-01/receipt.json",
@@ -887,16 +1053,19 @@
   },
   "pending_experiments": [
     {
-      "name": "distinct-position live unforced halo completion",
-      "outcome_included": false,
-      "scope": "Prerequisite check, not a driven live-bar result"
+      "name": "live driven halo/bar response",
+      "outcome_included": false
     },
     {
-      "name": "finite-amplitude warm stellar heating",
+      "name": "qualified finite-amplitude warm stellar heating",
+      "outcome_included": false
+    },
+    {
+      "name": "late finite spatial halo echo",
       "outcome_included": false
     }
   ],
-  "release": "discovery-2026-10-01.3",
+  "release": "discovery-2026-10-01.4",
   "added_replay_packages": [
     {
       "id": "twins-growth-v1",
@@ -910,5 +1079,12 @@
       "id": "feedback-cusp-v1",
       "scope": "Saved finite-pulse and known-map estimates, work accounting and paired differences"
     }
-  ]
+  ],
+  "control_checks": {
+    "data": "data/checks-v1.json",
+    "methods": "CHECKS.md",
+    "reader": "scripts/discovery/replay_checks_v1.py",
+    "scope": "Saved arithmetic only; completed controls do not qualify physical extensions.",
+    "recorded_replay": "reproductions/checks-v1-01/result.json"
+  }
 }

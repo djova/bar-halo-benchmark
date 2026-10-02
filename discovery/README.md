@@ -131,8 +131,8 @@ all eight library vectors and contrast/reference covariance. The
 [velocity export](data/twins-velocity.json) shows a recorded unforced marginal
 and third moments; its quadrature is not rerun by the following command.
 The [velocity source notes](operands/exact-twins/README.md#unforced-velocity-view)
-identify its fixed inputs, equations and output selections. The new bar-growth
-ensemble is pending under a later protocol and is not supplied here.
+identify its fixed inputs, equations and output selections. The gradual bar-growth
+ensemble is supplied in the .3 addition described below.
 
 After installing the dependencies above, replay the saved-response analysis:
 
@@ -307,3 +307,24 @@ This recomputes saved diagnostics; it does not regenerate the forces or establis
 live stability. The [two-integral boundary](research/discovery-20261001/TWINS_TWO_INTEGRAL_BOUNDARY.md)
 explains why the analytic three-integral construction does not contradict
 uniqueness results for more restricted distribution functions.
+
+
+## Added in discovery-2026-10-01.4
+
+[Checks behind the results](CHECKS.md) separates numerical qualification from
+finite-sample shell variation, unresolved warm-star heating and spatial-echo
+quadrature error. The [control operands](operands/checks-v1/README.md) include
+all six paired phase profiles and two small warm-response arrays. A NumPy-only
+reader reconstructs the published arithmetic without orbit evolution:
+
+```sh
+python discovery/scripts/discovery/replay_checks_v1.py --out checks-arithmetic
+```
+
+The nine original spatial exact-zero failures remain visible alongside a
+separately frozen energy-only pair that clears the instantaneous gate. No late
+finite spatial echo or stellar readout follows. The live quiet matrix passes its
+new numerical checks but retains shell-moment flags; fixed-field phases explain
+a substantial part of those excursions without proving softened equilibrium.
+The finite warm-star measurement remains sampling-unresolved even after the
+tighter selected reference passes. The original .1–.3 tags remain immutable.

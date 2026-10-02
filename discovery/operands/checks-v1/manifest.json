@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "scope": "Compact saved operands; no particle initial-condition array or force history included.",
+  "artifacts": [
+    {
+      "path": "phase-profiles.json",
+      "bytes": 535415,
+      "sha256": "891b95a1c00cabb370c1126b5eed35e6567edfb4d962a6d6b531affcf48769a5"
+    },
+    {
+      "path": "warm-fine-response.npz",
+      "bytes": 59074,
+      "sha256": "bf0dab55c4a86279fdfd388ada052770439ad5b7a5102ee628d954de21b8274d"
+    },
+    {
+      "path": "warm-initial.npz",
+      "bytes": 87819,
+      "sha256": "a5916a62cd621b243cbb8849d0d5b17d98f3a0100819d1b9a2ee62d6f71aef67"
+    }
+  ]
+}

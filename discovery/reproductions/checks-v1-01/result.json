@@ -1,0 +1,13 @@
+{
+  "status": "COMPLETE",
+  "saved_arithmetic_passed": true,
+  "comparisons": 817,
+  "original_physical_qualifications_unchanged": true,
+  "scope": "Saved profile/response arithmetic only; no scientific evolution, confidence calibration or physical validity test.",
+  "cpu_seconds": 0.05087135,
+  "inputs_sha256": {
+    "checks-v1.json": "e53d367fe454bbdbd2aafa995a84d2d92219059f50b9755fc2d4242abf407a82",
+    "manifest.json": "7212d81cda9b7adeb9d6a5121b75d60441dfd902ccce3f424196cf5e2b540b7c"
+  },
+  "reader_sha256": "49c650e3b9cef936d835f37c15960b73fb07e52e26003e51ba047d2065b2906a"
+}

@@ -1,24 +1,25 @@
 # Early validation of hidden galactic dynamics
 
-Release **discovery-2026-10-01.3** adds completed gradual-bar-growth
-responses and finite-pulse heating of a cuspy halo to the earlier exploratory
-checkpoint. Matching density and ordinary velocity moments permits a resolved
-prescribed-bar transfer contrast. A separate pulse calculation resolves small
-central halo energy gains, while its finite coeval stellar cost remains untested.
-The live-halo entrance tests are progressing; no live bar, self-consistent
-cusp-to-core transformation or observational validation is established here.
+Release **discovery-2026-10-01.4** retains the prescribed-field bar-transfer and
+finite cuspy-halo heating results and adds the [checks behind them](CHECKS.md).
+The unique-position quiet live matrix passes its frozen numerical screens,
+but its shell-moment flags are not an equilibrium verdict: the same finite
+samples also move substantially in their stationary analytic construction field.
+The finite warm-star heating pilot remains sampling-unresolved. A separately
+frozen spatial energy refinement clears an instantaneous exact-zero gate after
+nine retained failures; no late finite spatial echo or stellar readout is
+qualified. No live bar, self-consistent core or observational validation is
+established by this checkpoint.
 
-The other three screens remain informative limits: a weak gravitational echo,
-a collision-law contrast with an unqualified numerical sign, and harmonic
-modified-inertia freedom without an observational test. Their old numerical
-records remain unchanged. The canonical local population-response paper is a
-separate study and is not rewritten by this campaign.
+The other screens remain informative limits: a weak radial gravitational echo,
+a collision-law contrast with an unqualified numerical sign and harmonic
+modified-inertia freedom without an observational test. Earlier numerical
+records and the canonical population-response paper are unchanged.
 
 The [source guide](README.md) separates reading, saved-arithmetic replay and
 regeneration of three inexpensive known-limit controls. [The manifest](manifest.json)
-records this release's files and explicit scope. A successful replay verifies
-reported arithmetic conditional on the supplied arrays; it is not an additional
-physical sample or a proof of the model's validity.
+records file hashes and explicit scope. Saved replay verifies arithmetic
+conditional on supplied operands, not an additional physical sample.
 
 ## Identical ordinary halo moments, different prescribed-bar response
 

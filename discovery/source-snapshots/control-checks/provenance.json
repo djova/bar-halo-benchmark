@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "artifacts": [
+    {
+      "path": "source-snapshots/control-checks/twins_phase_control.py",
+      "archived_record_id": "scripts/discovery/twins_phase_control.py",
+      "archived_sha256": "e4e28ca8e058ca1c1839d33ee4101c017b3e83ea2fb61b05c6e6ff7c6f1dab20",
+      "byte_identical_to_archive": true
+    },
+    {
+      "path": "source-snapshots/control-checks/twins_single_position_completion.py",
+      "archived_record_id": "scripts/discovery/twins_single_position_completion.py",
+      "archived_sha256": "6bdbc827f17c98f785558debec26047a69238f4fd9b2fc2f57a36ab21fe4e5f6",
+      "byte_identical_to_archive": true
+    },
+    {
+      "path": "source-snapshots/control-checks/feedback_cusp_warm_pilot.py",
+      "archived_record_id": "scripts/discovery/feedback_cusp_warm_pilot.py",
+      "archived_sha256": "af0743d73fbd11d78d177bbab9bcdaeadf8dbf5fe94af1963f91a63e7575ec32",
+      "byte_identical_to_archive": true
+    },
+    {
+      "path": "source-snapshots/control-checks/feedback_cusp_warm_radial.py",
+      "archived_record_id": "scripts/discovery/feedback_cusp_warm_radial.py",
+      "archived_sha256": "10526f3332a2f00d90f4092adbb1bbf1556ecf5e414b1c2d27c8da5a570b88dd",
+      "byte_identical_to_archive": true
+    },
+    {
+      "path": "source-snapshots/control-checks/feedback_cusp_warm_reference.py",
+      "archived_record_id": "scripts/discovery/feedback_cusp_warm_reference.py",
+      "archived_sha256": "07f90bfb6890b8dcfac58fbb1fa4016d113e53a9bc0f39a932ca28f31634cd5b",
+      "byte_identical_to_archive": true
+    },
+    {
+      "path": "source-snapshots/control-checks/feedback_cusp_warm_readback.py",
+      "archived_record_id": "scripts/discovery/feedback_cusp_warm_readback.py",
+      "archived_sha256": "6260defb6de61bf1420ab523079823be1794242d9b9296b00bf3aed56e0bdb5e",
+      "byte_identical_to_archive": true
+    },
+    {
+      "path": "source-snapshots/control-checks/feedback_cusp_radial.py",
+      "archived_record_id": "scripts/discovery/feedback_cusp_radial.py",
+      "archived_sha256": "dd1503f509d02850637a12153c77893944cc6df710f912c0c7df67105d221040",
+      "byte_identical_to_archive": true
+    },
+    {
+      "path": "source-snapshots/control-checks/echo_finite_diagnostic_completion.py",
+      "archived_record_id": "scripts/discovery/echo_finite_diagnostic_completion.py",
+      "archived_sha256": "a9daf7840e4e1b9daee72921caee3d91d2a45a1b4617b131a67c465926ce9ee8",
+      "byte_identical_to_archive": true
+    },
+    {
+      "path": "source-snapshots/control-checks/echo_finite_preflight.py",
+      "archived_record_id": "scripts/discovery/echo_finite_preflight.py",
+      "archived_sha256": "d222c0ba4321678ce96a328714b8ef95c969f77fed6f3d6db862b97afeffd6b3",
+      "byte_identical_to_archive": true
+    },
+    {
+      "path": "methods/control-checks/TWINS_ANALYTIC_PHASE_CONTROL_PROTOCOL.md",
+      "archived_record_id": "research/discovery-20261001/TWINS_ANALYTIC_PHASE_CONTROL_PROTOCOL.md",
+      "archived_sha256": "a32704237ff3b5d9b1db1e9ee968cdf69fc5faeff786463d161f363bad224807",
+      "byte_identical_to_archive": false,
+      "release_transformation": "Historical relative links become explicit archive identifiers; scientific conditions and acceptance criteria are unchanged."
+    },
+    {
+      "path": "methods/control-checks/TWINS_SINGLE_POSITION_COMPLETION_PROTOCOL.md",
+      "archived_record_id": "research/discovery-20261001/TWINS_SINGLE_POSITION_COMPLETION_PROTOCOL.md",
+      "archived_sha256": "45a79908d4fcdb188374c70fbff3fe6b1d70beb4d7c12235ae4eccb083192e3c",
+      "byte_identical_to_archive": true,
+      "release_transformation": "Historical relative links become explicit archive identifiers; scientific conditions and acceptance criteria are unchanged."
+    },
+    {
+      "path": "methods/control-checks/FEEDBACK_CUSP_WARM_PILOT_PROTOCOL.md",
+      "archived_record_id": "research/discovery-20261001/FEEDBACK_CUSP_WARM_PILOT_PROTOCOL.md",
+      "archived_sha256": "9e07eff2ff03afa18b1d9970ad4e964883c81a72206283072da7ffce48f8fd42",
+      "byte_identical_to_archive": true,
+      "release_transformation": "Historical relative links become explicit archive identifiers; scientific conditions and acceptance criteria are unchanged."
+    },
+    {
+      "path": "methods/control-checks/FEEDBACK_CUSP_WARM_REFERENCE_PROTOCOL.md",
+      "archived_record_id": "research/discovery-20261001/FEEDBACK_CUSP_WARM_REFERENCE_PROTOCOL.md",
+      "archived_sha256": "1e2e11055f8d100b6ff13edd11a0b98db108e597bc3ff2b6a9df64f71d78f4e0",
+      "byte_identical_to_archive": true,
+      "release_transformation": "Historical relative links become explicit archive identifiers; scientific conditions and acceptance criteria are unchanged."
+    },
+    {
+      "path": "methods/control-checks/FEEDBACK_CUSP_WARM_POPULATION_EQUIVALENCE.md",
+      "archived_record_id": "research/discovery-20261001/FEEDBACK_CUSP_WARM_POPULATION_EQUIVALENCE.md",
+      "archived_sha256": "82a069a12b6fd414f83d0fdfb5b944a816a89b37fa09e922ad8210b9cd325554",
+      "byte_identical_to_archive": true,
+      "release_transformation": "Historical relative links become explicit archive identifiers; scientific conditions and acceptance criteria are unchanged."
+    },
+    {
+      "path": "methods/control-checks/FEEDBACK_CUSP_WARM_VARIANCE_PROOF.md",
+      "archived_record_id": "research/discovery-20261001/FEEDBACK_CUSP_WARM_VARIANCE_PROOF.md",
+      "archived_sha256": "28c953252b6c005dec046ca1ce3c21e457ba3c86c3976c7cd97d866dd1886b7d",
+      "byte_identical_to_archive": true,
+      "release_transformation": "Historical relative links become explicit archive identifiers; scientific conditions and acceptance criteria are unchanged."
+    },
+    {
+      "path": "methods/control-checks/ECHO_FINITE_DIAGNOSTIC_COMPLETION02_PROTOCOL.md",
+      "archived_record_id": "research/discovery-20261001/ECHO_FINITE_DIAGNOSTIC_COMPLETION02_PROTOCOL.md",
+      "archived_sha256": "a78d487af2e083071b029ddea9906a058feb4b21c2f57a826eb676d95080db8b",
+      "byte_identical_to_archive": false,
+      "release_transformation": "Historical relative links become explicit archive identifiers; scientific conditions and acceptance criteria are unchanged."
+    },
+    {
+      "path": "figures/phase-control-v1.svg",
+      "archived_record_id": "results/discovery-20261001/twins/analytic-phase-control-figures-02/same-sample-phase-control.svg",
+      "archived_sha256": "f201607e06b811b6c755f527a1bfbf61e945aeefae87f0a5ec02f4432dbda355",
+      "byte_identical_to_archive": true
+    },
+    {
+      "path": "figures/phase-control-v1.png",
+      "archived_record_id": "results/discovery-20261001/twins/analytic-phase-control-figures-02/same-sample-phase-control.png",
+      "archived_sha256": "d6abcd5e791fd4457cb071b931b176958e9be8f201b62f0619a6dc74fb757863",
+      "byte_identical_to_archive": true
+    },
+    {
+      "path": "source-snapshots/control-checks/echo_finite_energy_pair.py",
+      "archived_record_id": "scripts/discovery/echo_finite_energy_pair.py",
+      "archived_sha256": "4663c487d3928d1e4ca333c39dbafbe6f8b603411731372eff344fba0aec6b9a",
+      "byte_identical_to_archive": true,
+      "release_transformation": null
+    },
+    {
+      "path": "methods/control-checks/ECHO_FINITE_ENERGY_PAIR_PROTOCOL.md",
+      "archived_record_id": "research/discovery-20261001/ECHO_FINITE_ENERGY_PAIR_PROTOCOL.md",
+      "archived_sha256": "16a4dc19f75641b7f26975cad47e57672b65123221c89f4a7a5d021939093a7f",
+      "byte_identical_to_archive": false,
+      "release_transformation": "Documentation links become archive identifiers; scientific content unchanged."
+    },
+    {
+      "path": "source-snapshots/control-checks/export_control_checks_v1.py",
+      "archived_record_id": "scripts/discovery/export_control_checks_v1.py",
+      "archived_sha256": "0ae9df24210b54dea641ac2519b4cf19a614c05670ced924dd884d6d319c9a68",
+      "byte_identical_to_archive": true,
+      "scope": "Saved-record extraction only, not a scientific evolution source."
+    }
+  ]
+}
