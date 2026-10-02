@@ -1,6 +1,6 @@
 # Early validation of hidden galactic dynamics
 
-Release **discovery-2026-10-01.4** retains the prescribed-field bar-transfer and
+Release **discovery-2026-10-01.5** retains the prescribed-field bar-transfer and
 finite cuspy-halo heating results and adds the [checks behind them](CHECKS.md).
 The unique-position quiet live matrix passes its frozen numerical screens,
 but its shell-moment flags are not an equilibrium verdict: the same finite
@@ -10,6 +10,9 @@ frozen spatial energy refinement clears an instantaneous exact-zero gate after
 nine retained failures; no late finite spatial echo or stellar readout is
 qualified. No live bar, self-consistent core or observational validation is
 established by this checkpoint.
+
+This editorial patch corrects older pending/untested descriptions to match the
+completed control records. The .4 tag and all numerical evidence are unchanged.
 
 The other screens remain informative limits: a weak radial gravitational echo,
 a collision-law contrast with an unqualified numerical sign and harmonic
@@ -163,9 +166,15 @@ particles shared positions, creating close-pair binding absent from the intended
 smooth population. This is a concrete sampling problem, not evidence that the
 analytic populations are collectively unstable.
 
-A separately frozen, distinct-position sampler preserves matched positions,
-masses and even moments while sampling opposite velocity signs probabilistically.
-Its unforced completion is still in progress. No driven live bar is qualified.
+A separately frozen, distinct-position sampler preserves matched initial
+positions, masses and raw even-total-degree velocity products while sampling
+opposite velocity signs probabilistically. Finite-sample mean velocities and
+therefore centered moments need not match. All nine unforced runs are complete
+and pass their declared numerical screens, including selected timestep checks.
+Their shell-moment adjustment flags remain; the same-sample analytic phase
+control explains a substantial contribution without establishing equilibrium
+under the softened force. See [the paired controls](CHECKS.md#stationary-orbital-phases-move-finite-sample-shell-moments).
+No driven live bar is qualified.
 The [force/support evidence](research/discovery-20261001/TWINS_FORCE_SUPPORT_PUBLIC_V1.md)
 and [compact record](data/twins-force-support-v1.json) preserve the failed gates,
 selected force refinements and energy diagnosis. Their arithmetic reader checks
@@ -191,12 +200,15 @@ These are small deposits—about 15.0 and 4.45 parts per million of the tag bind
 energy. They do not establish a core. The finite-minus-weak differences are only
 1.75 and 1.99 empirical standard errors, with rare contributions and uncalibrated
 coverage; no robust nonlinear correction is qualified. The earlier 512-state
-pilot failed its sampling-precision target and remains distinct.
+halo pilot failed its sampling-precision target and remains distinct.
 
-Finite-amplitude coeval stellar heating is still untested. The weak cusp
+The separate 512-state finite warm-star pilot is complete but fails its
+sampling-precision gate. Tighter selected references repair a different
+integrator comparison without qualifying the heating estimate. The weak cusp
 calculation suggests that inner stellar costs are much larger than whole-disk
-averages. Dividing the newly measured halo gains into those weak stellar values
-would combine different approximations and is not a measured selectivity ratio.
+averages. No finite stellar/halo selectivity ratio is qualified: dividing the
+halo gains into weak stellar values would combine different approximations.
+See [the stellar precision controls](CHECKS.md#warm-stellar-heating-remains-statistically-unresolved).
 Read the [physical summary](research/FEEDBACK_CUSP_PUBLIC_SUMMARY.md),
 [finite result](research/FEEDBACK_CUSP_FINITE_RESULT.md),
 [compact operands](data/feedback-cusp.json) and
@@ -400,13 +412,17 @@ between the two weak estimators.
 
 The limitations are physically important. The halo tracer is cored and
 does not generate the imposed field; the stellar guiding distribution has
-a central density hole. Spherical forcing protects angular momenta and
-vertical actions. The pulse adds only a few parts per million of the tag's
+a central density hole. Spherical forcing conserves the full angular-momentum
+vector and hence the spherical angular action \(L-|L_z|\). It does not
+guarantee unchanged vertical velocity dispersion or thickness. The pulse adds
+only a few parts per million of the tag's
 binding energy, and the tag excludes less-bound orbits that pass through
 the center. A finite positive-density gas construction supplies a finite
 continuity-flow kinetic budget, but no hydrodynamic feedback engine or
-core-energy budget. A cuspy halo with centrally populated stars is the
-next independent test.
+core-energy budget. The separate cuspy-halo calculation above now resolves a
+small finite heating signal; its centrally populated warm-star pilot remains
+sampling-unqualified. Those results do not establish the cored model's cost
+ratio in a cusp.
 
 Feedback heating and resonant coupling are established prior work:
 [Pontzen and Governato](https://arxiv.org/abs/1106.0499),
@@ -416,5 +432,6 @@ is a bounded quantitative example and its adversarial controls. The
 [scientific export](data/feedback.json) retains unrounded outputs,
 normalizations, control results and hashes identifying the archived findings.
 This release publishes outputs and this summary; it does not regenerate the
-feedback orbit ensembles, response matrices or bootstrap. The cuspy extension
-is still in progress and has no result here.
+feedback orbit ensembles, response matrices or bootstrap. The completed finite
+cuspy-halo result is reported above, with the unresolved coeval stellar cost
+kept separate.

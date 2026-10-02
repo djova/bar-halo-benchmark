@@ -36,17 +36,17 @@
     },
     {
       "path": "README.md",
-      "bytes": 18657,
-      "sha256": "8eab35931af119dba26eff14928a23b153d6ec61753ba1cf08e2d35b6be1b8fb",
+      "bytes": 19012,
+      "sha256": "1f7ad461cae103811e1909b3b90aa8aba21087d38ddaf5ef7678e565271b58b2",
       "archived_sha256": "12b58d9ca5e59cfebe4defe8e4e1b57bcef9836faceac4c79a02299b8b704af7",
       "byte_identical_to_archive": false,
-      "release_transformation": "Updated additive checkpoint wording and evidence links; original source/receipt provenance retained.",
-      "previous_release_sha256": "dd786fbdb0bc926c1dbfa653795ac2878d6317896826f7876de4740d688909c1"
+      "release_transformation": "Editorial status/scope correction; numerical evidence unchanged.",
+      "previous_release_sha256": "8eab35931af119dba26eff14928a23b153d6ec61753ba1cf08e2d35b6be1b8fb"
     },
     {
       "path": "REPORT.md",
-      "bytes": 28402,
-      "sha256": "b5bfd54aed63e8fc73da720b25591e005422f498b4858bec84b8b2e8bc8b58d8",
+      "bytes": 29592,
+      "sha256": "ca0e4bd2474109033ff427702a171851e6cdde7f484cb84f7431a4d2a14b0477",
       "derived_from": [
         "research/discovery-20261001/PUBLIC_TWINS_EXACT_SUMMARY.md",
         "research/discovery-20261001/PUBLIC_TERMINAL_BRANCHES.md",
@@ -57,8 +57,8 @@
         "data/twins-force-support-v1.json"
       ],
       "scope": "Three regenerated known-limit controls; recorded five-branch outputs, exact-twin and gradual-growth response analysis, selected force/action-support diagnostics and finite cusp-pulse arithmetic. Not a complete reproduction of orbital evolution or live galaxies.",
-      "previous_release_sha256": "8a5611d10d4d2b7c67f986d5b689ea6147c6bd54ca86bf0e9993c3361c30ea02",
-      "release_transformation": "Updated additive checkpoint wording and evidence links; original source/receipt provenance retained."
+      "previous_release_sha256": "b5bfd54aed63e8fc73da720b25591e005422f498b4858bec84b8b2e8bc8b58d8",
+      "release_transformation": "Editorial status/scope correction; numerical evidence unchanged."
     },
     {
       "path": "data/checks-v1.json",
@@ -1065,7 +1065,7 @@
       "outcome_included": false
     }
   ],
-  "release": "discovery-2026-10-01.4",
+  "release": "discovery-2026-10-01.5",
   "added_replay_packages": [
     {
       "id": "twins-growth-v1",
@@ -1086,5 +1086,9 @@
     "reader": "scripts/discovery/replay_checks_v1.py",
     "scope": "Saved arithmetic only; completed controls do not qualify physical extensions.",
     "recorded_replay": "reproductions/checks-v1-01/result.json"
+  },
+  "editorial_patch": {
+    "previous_release": "discovery-2026-10-01.4",
+    "scope": "Correct stale completed-experiment statuses, finite-sample raw-moment wording and spherical angular-action interpretation; numerical operands, source snapshots and replay receipts unchanged."
   }
 }

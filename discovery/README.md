@@ -328,3 +328,10 @@ new numerical checks but retains shell-moment flags; fixed-field phases explain
 a substantial part of those excursions without proving softened equilibrium.
 The finite warm-star measurement remains sampling-unresolved even after the
 tighter selected reference passes. The original .1–.3 tags remain immutable.
+
+## Editorial patch discovery-2026-10-01.5
+
+The report now replaces stale pending/untested descriptions with the completed
+quiet-halo and warm-star control outcomes, distinguishes the two 512-state
+pilots and states the spherical angular-action restriction precisely. The .4
+tag, all numerical operands, source snapshots and replay results are unchanged.
