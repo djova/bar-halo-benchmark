@@ -1,0 +1,78 @@
+{
+  "populations": [
+    {
+      "p": 4,
+      "polynomial_ratio_upper_numerator": 67,
+      "polynomial_ratio_upper_denominator": 390,
+      "polynomial_ratio_upper_float": 0.1717948717948718,
+      "maximum_deltaF_over_F0_bound": 3.3291995794552687,
+      "alpha": 0.1501862498978842,
+      "alpha_exact_expression": "4 / (5 pi^3 B_p), where B_p is the recorded exact rational bound",
+      "multiplier_bound": 0.5,
+      "positivity_minimum_Fplus_over_F0": 0.5,
+      "positivity_minimum_Fminus_over_F0": 0.5,
+      "denominator_series_terms": 13,
+      "dyadic_subdivision_depth": 4,
+      "boxes": 256,
+      "arithmetic": "Exact Fraction coefficients and de Casteljau subdivisions; the reported alpha is a floating evaluation of the exact expression",
+      "numerical_maximum_diagnostic": {
+        "maximum": 3.3291995794552687,
+        "binding_energy": 0.0,
+        "L_over_Lmax": 1.0,
+        "endpoint_is_escape_limit": true,
+        "scope": "Numerical diagnostic; not the positivity certificate"
+      },
+      "maximum_diagnostic_normalized_multiplier": 0.5
+    },
+    {
+      "p": 6,
+      "polynomial_ratio_upper_numerator": 1132034480781204,
+      "polynomial_ratio_upper_denominator": 433439973399677645,
+      "polynomial_ratio_upper_float": 0.0026117445327022205,
+      "maximum_deltaF_over_F0_bound": 0.050612795999515875,
+      "alpha": 9.878924689416143,
+      "alpha_exact_expression": "4 / (5 pi^3 B_p), where B_p is the recorded exact rational bound",
+      "multiplier_bound": 0.5,
+      "positivity_minimum_Fplus_over_F0": 0.5,
+      "positivity_minimum_Fminus_over_F0": 0.5,
+      "denominator_series_terms": 13,
+      "dyadic_subdivision_depth": 4,
+      "boxes": 256,
+      "arithmetic": "Exact Fraction coefficients and de Casteljau subdivisions; the reported alpha is a floating evaluation of the exact expression",
+      "numerical_maximum_diagnostic": {
+        "maximum": 0.050544418306447736,
+        "binding_energy": 0.27566330661887906,
+        "L_over_Lmax": 1.0,
+        "endpoint_is_escape_limit": false,
+        "scope": "Numerical diagnostic; not the positivity certificate"
+      },
+      "maximum_diagnostic_normalized_multiplier": 0.4993245019197438
+    },
+    {
+      "p": 8,
+      "polynomial_ratio_upper_numerator": 356211155200921020,
+      "polynomial_ratio_upper_denominator": 870472444109974950221,
+      "polynomial_ratio_upper_float": 0.00040921588915446185,
+      "maximum_deltaF_over_F0_bound": 0.007930163175686341,
+      "alpha": 63.05040500717388,
+      "alpha_exact_expression": "4 / (5 pi^3 B_p), where B_p is the recorded exact rational bound",
+      "multiplier_bound": 0.5,
+      "positivity_minimum_Fplus_over_F0": 0.5,
+      "positivity_minimum_Fminus_over_F0": 0.5,
+      "denominator_series_terms": 13,
+      "dyadic_subdivision_depth": 4,
+      "boxes": 256,
+      "arithmetic": "Exact Fraction coefficients and de Casteljau subdivisions; the reported alpha is a floating evaluation of the exact expression",
+      "numerical_maximum_diagnostic": {
+        "maximum": 0.007902183891172403,
+        "binding_energy": 0.835536271262685,
+        "L_over_Lmax": 1.0,
+        "endpoint_is_escape_limit": false,
+        "scope": "Numerical diagnostic; not the positivity certificate"
+      },
+      "maximum_diagnostic_normalized_multiplier": 0.49823589477958524
+    }
+  ],
+  "source_archive_id": "twins/exact-moments-preflight-02/frozen-populations.json",
+  "source_sha256": "dc97087897f70d889aefe827499cf68a966a25c18f3ed5e9cb9cd44b82aade31"
+}

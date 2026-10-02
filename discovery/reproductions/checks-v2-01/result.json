@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "compared_values": 33630,
+  "cpu_seconds": 0.2631801800000001,
+  "scope": "Saved-array and recorded-value arithmetic only; no evolution, physical qualification or rigorous error bound.",
+  "data_sha256": "0473977e40c97c9493ac14bdea55521c30129d0dfbc94724c4e112febf3c98e0",
+  "reader_sha256": "1e3fd8bf154057c16791f344a595658deaf741fb40cb3c345d7ef8a4cfcbb641",
+  "new_independent_physical_evidence": false
+}

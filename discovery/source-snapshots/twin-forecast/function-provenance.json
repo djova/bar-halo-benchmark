@@ -1,0 +1,53 @@
+{
+  "operator_sha256": "85945be71cedc6606e48cb598f244f3f867772133aa02fbcace8175d7948871b",
+  "functions": [
+    {
+      "name": "grid",
+      "source": "twins_prediction_forecast.py",
+      "source_sha256": "30c40579f7faadd78b05a922b19d2bfc09db3727232126cbd2a8af71e3c680fc",
+      "function_ast_sha256": "8dd1a7f1ad76c7417c64c1d594f67c7d36eedbef5b25d6ead3fd114d31e4d2d2"
+    },
+    {
+      "name": "stable_path",
+      "source": "twins_prediction_forecast.py",
+      "source_sha256": "30c40579f7faadd78b05a922b19d2bfc09db3727232126cbd2a8af71e3c680fc",
+      "function_ast_sha256": "377fc71cc82cc67fdb604e09f94cd9d36dc83c2e340ef64c7310cfe17073922b"
+    },
+    {
+      "name": "coefficient_grid",
+      "source": "twins_prediction_forecast.py",
+      "source_sha256": "30c40579f7faadd78b05a922b19d2bfc09db3727232126cbd2a8af71e3c680fc",
+      "function_ast_sha256": "fb602ac6a8a1948a827080ec6b6fed9588d349ca164fe3da9615fe47ac2c36b4"
+    },
+    {
+      "name": "f0",
+      "source": "twins_prediction_forecast.py",
+      "source_sha256": "30c40579f7faadd78b05a922b19d2bfc09db3727232126cbd2a8af71e3c680fc",
+      "function_ast_sha256": "f92958d63aff5055e7045f76503109e7a27f12ded65a92ff2349274e5cf2220f"
+    },
+    {
+      "name": "contract",
+      "source": "twins_prediction_forecast.py",
+      "source_sha256": "30c40579f7faadd78b05a922b19d2bfc09db3727232126cbd2a8af71e3c680fc",
+      "function_ast_sha256": "0693c1477b7fcbb852a4df0bca2a85f0f4495679569605bd68a5a8aa7b6b321b"
+    },
+    {
+      "name": "frequencies",
+      "source": "twins_prediction.py",
+      "source_sha256": "ec643ef38e0978253a5bb8fb9bb0100c52ed15aaa23bf568a3f758ccf1c67b61",
+      "function_ast_sha256": "e6403ef28c6ef92b3fd5bef7d84cc2452faba879839af91d916119fd01e94aa3"
+    },
+    {
+      "name": "h_and_derivative",
+      "source": "twins_prediction.py",
+      "source_sha256": "ec643ef38e0978253a5bb8fb9bb0100c52ed15aaa23bf568a3f758ccf1c67b61",
+      "function_ast_sha256": "163ecc9223d77dedc52599fcb514721cd9eb66e50e60d1f260cdbc04f7cd5ffb"
+    },
+    {
+      "name": "window",
+      "source": "twins_prediction.py",
+      "source_sha256": "ec643ef38e0978253a5bb8fb9bb0100c52ed15aaa23bf568a3f758ccf1c67b61",
+      "function_ast_sha256": "befa50844ca12fa9fafc63aabc678da0d2e4fd30bdfde6ac850d2fc86d6dc448"
+    }
+  ]
+}

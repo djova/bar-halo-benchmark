@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "cases": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g"
+  ],
+  "cpu_seconds": 123.84966992199999,
+  "numpy_version": "1.26.4",
+  "operator_sha256": "85945be71cedc6606e48cb598f244f3f867772133aa02fbcace8175d7948871b",
+  "scope": "Unforced coefficients and second-order contraction only. No independent forced dynamics or physical validation.",
+  "comparison": {
+    "relative_tolerance": 2e-11,
+    "absolute_tolerance": 0,
+    "metrics": [
+      "forecast",
+      "absolute_mode_contribution",
+      "absolute_over_net",
+      "signed_inplane_contributions",
+      "tail_proxy_full_norm for a/b/d/e/f/g",
+      "tail_proxy_residual_norm for a/b/d/e/f/g"
+    ],
+    "exact_arrays_compared": false
+  },
+  "not_independent_physical_sample": true
+}

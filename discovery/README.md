@@ -19,6 +19,24 @@ connects these outcomes to the remaining tests. The [manifest](manifest.json)
 records released file hashes and preserved source
 hashes. Pin this repository's release commit when citing the package.
 
+## Additional recorded checks (.6)
+
+Read [CHECKS_V2.md](CHECKS_V2.md) for the larger warm-star sample, unresolved
+spatial field, and separately sealed weak-bar forecast. The [saved operand
+schema](operands/checks-v2/README.md) and [reader](scripts/discovery/replay_checks_v2.py)
+recompute the recorded relationships without evolving an orbit:
+
+```sh
+nice -n 10 .venv-discovery/bin/python discovery/scripts/discovery/replay_checks_v2.py
+```
+
+The [portable unforced operator](source-snapshots/twin-forecast/README.md) has a
+separate explicit execution route. Its seven-grid regeneration costs 123.850
+CPU seconds on the recorded platform, not a portable runtime guarantee. It does
+not establish the weak forecast's applicability to independent forced orbits.
+The physical stellar qualification and spatial echo remain unresolved. Prior
+release tags and their failures are preserved.
+
 ## Inspect, verify, reproduce
 
 **Inspection:** read the summaries and the compact
@@ -124,7 +142,7 @@ screen. The p=4 phase screen fails; p=6 has a positive supplementary lower margi
 smaller than its largest measured phase shift. The other frequency has no phase
 refinement. These flags remain separate from a combined error guarantee. The
 plus/minus ratio 1.446 is a ratio of point means without a qualified ratio interval.
-No live response or prospective forcing-history forecast is established.
+No live response or independently validated forcing-history forecast is established; the new weak-history prediction is sealed separately in CHECKS_V2.md.
 
 The [response export](data/twins-exact.json) preserves six correlated comparisons,
 all eight library vectors and contrast/reference covariance. The

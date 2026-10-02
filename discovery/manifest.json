@@ -2,7 +2,7 @@
   "schema_version": 1,
   "campaign": "discovery-20261001",
   "status": "known_controls_and_saved_arithmetic_release",
-  "scope": "Three regenerated known-limit controls; recorded five-branch outputs, exact-twin and gradual-growth response analysis, selected force/action-support diagnostics and finite cusp-pulse arithmetic. Not a complete reproduction of orbital evolution or live galaxies. Added saved phase/heating/exact-zero arithmetic; no complete live experiment regeneration.",
+  "scope": "Three regenerated known-limit controls; recorded five-branch outputs, exact-twin and gradual-growth response analysis, selected force/action-support diagnostics and finite cusp-pulse arithmetic. Not a complete reproduction of orbital evolution or live galaxies. Added saved phase/heating/exact-zero arithmetic; no complete live experiment regeneration. Added all4096 saved stellar arithmetic, six spatial zero/late/cross rows and a NumPy unforced forecast regeneration; not driven or live dynamics.",
   "tested_environment": {
     "python": "3.11.14",
     "numpy": "1.26.4",
@@ -30,14 +30,19 @@
       "bytes": 12522
     },
     {
+      "path": "CHECKS_V2.md",
+      "bytes": 10449,
+      "sha256": "6c9f9134c00ef48689bb78f81a703818ca04a5d254a30cb8240386ea4fe46285"
+    },
+    {
       "path": "LICENSING.md",
       "bytes": 1687,
       "sha256": "e595c3b7f9710e48b436aa77fc3f82dc4024d86ce14ef413adcbf54aea9f4c1d"
     },
     {
       "path": "README.md",
-      "bytes": 19012,
-      "sha256": "1f7ad461cae103811e1909b3b90aa8aba21087d38ddaf5ef7678e565271b58b2",
+      "bytes": 19976,
+      "sha256": "0be0c8ee19f11551a869395c9685e8200c916c907213caf703a2c77774f8b08e",
       "archived_sha256": "12b58d9ca5e59cfebe4defe8e4e1b57bcef9836faceac4c79a02299b8b704af7",
       "byte_identical_to_archive": false,
       "release_transformation": "Editorial status/scope correction; numerical evidence unchanged.",
@@ -45,8 +50,8 @@
     },
     {
       "path": "REPORT.md",
-      "bytes": 29592,
-      "sha256": "ca0e4bd2474109033ff427702a171851e6cdde7f484cb84f7431a4d2a14b0477",
+      "bytes": 30099,
+      "sha256": "87e9aca77fcabd2d5497fec3c9078afc5d1683892c2375d195a2fc4afdad190f",
       "derived_from": [
         "research/discovery-20261001/PUBLIC_TWINS_EXACT_SUMMARY.md",
         "research/discovery-20261001/PUBLIC_TERMINAL_BRANCHES.md",
@@ -64,6 +69,11 @@
       "path": "data/checks-v1.json",
       "sha256": "e53d367fe454bbdbd2aafa995a84d2d92219059f50b9755fc2d4242abf407a82",
       "bytes": 132928
+    },
+    {
+      "path": "data/checks-v2.json",
+      "bytes": 139863,
+      "sha256": "0473977e40c97c9493ac14bdea55521c30129d0dfbc94724c4e112febf3c98e0"
     },
     {
       "path": "data/echoes.json",
@@ -132,6 +142,11 @@
       "release_transformation": "Added only release metadata identifying the supplied sources, operands and limited reproduction scope. Archived scientific fields and evidence hashes unchanged."
     },
     {
+      "path": "figures/echo-cross-v2.png",
+      "bytes": 88200,
+      "sha256": "477ebf87d4abc5bc8b3435f4e21234fa8780dcc74310696dbb688433ab421e7a"
+    },
+    {
       "path": "figures/phase-control-v1.png",
       "sha256": "d6abcd5e791fd4457cb071b931b176958e9be8f201b62f0619a6dc74fb757863",
       "bytes": 147415
@@ -140,6 +155,16 @@
       "path": "figures/phase-control-v1.svg",
       "sha256": "f201607e06b811b6c755f527a1bfbf61e945aeefae87f0a5ec02f4432dbda355",
       "bytes": 79734
+    },
+    {
+      "path": "figures/twins-forecast-v2.png",
+      "bytes": 70280,
+      "sha256": "f4b8ef9b8945a46226916fd25de4c0e6ccc670b54d0cb7c391474ab6261716e2"
+    },
+    {
+      "path": "figures/warm-cohort-v2.png",
+      "bytes": 59172,
+      "sha256": "cd40b2cf7e3f6ae79f2b184bdd0d31b4931649e071145fef2e895d59446595b4"
     },
     {
       "path": "methods/control-checks/ECHO_FINITE_DIAGNOSTIC_COMPLETION02_PROTOCOL.md",
@@ -182,6 +207,11 @@
       "bytes": 5078
     },
     {
+      "path": "methods/control-checks/TWIN_FORECAST_PROTOCOL.md",
+      "bytes": 4572,
+      "sha256": "5ae15864be1b48e6f98737ed9db97548d02c4cf6d5742a6659399294806d7f6a"
+    },
+    {
       "path": "operands/checks-v1/README.md",
       "sha256": "047e0bac78079f9e7d3f262d11ad7c65573dd987a5d1e00e978ab804f6f5c043",
       "bytes": 2945
@@ -205,6 +235,26 @@
       "path": "operands/checks-v1/warm-initial.npz",
       "sha256": "a5916a62cd621b243cbb8849d0d5b17d98f3a0100819d1b9a2ee62d6f71aef67",
       "bytes": 87819
+    },
+    {
+      "path": "operands/checks-v2/README.md",
+      "bytes": 3112,
+      "sha256": "69443cd6fba1fbad0eb9a536cd253ad30ac8b102ec62a686047482d2d86ea8d7"
+    },
+    {
+      "path": "operands/checks-v2/operand-manifest.json",
+      "bytes": 619,
+      "sha256": "6beb38da4c0c852d38b778ae3fcf5a1ff5e0abd09aa1b9df734990309caa2003"
+    },
+    {
+      "path": "operands/checks-v2/warm-coarse-comparison.npz",
+      "bytes": 403124,
+      "sha256": "ec381091e67204922c5a1c79f9d7708e99966c4bc44e7a1a464f1591a63d4754"
+    },
+    {
+      "path": "operands/checks-v2/warm-fine-dilution.npz",
+      "bytes": 162420,
+      "sha256": "e354e54de9a1ca997cfeb377d63a7ef234c59db051ff328edfb3bf57d1c471d8"
     },
     {
       "path": "operands/exact-twins/README.md",
@@ -314,6 +364,11 @@
       "sha256": "026d2e8517c55305dcdb0fbe0da4d3e37acbc65db251368824238b8df1f1bfbb"
     },
     {
+      "path": "operands/twin-forecast/populations.json",
+      "bytes": 3512,
+      "sha256": "dc8a1bc440201f9530d6d0e7cd533479eb4cb0980718f6d74bcb91a5f4a6a82c"
+    },
+    {
       "path": "operands/twins-force-support-v1/README.md",
       "bytes": 1905,
       "sha256": "2eedccd43a584ff221e1e5e79dec286c5fa98ceb42a2a66012dad1c76e8875c5"
@@ -409,6 +464,11 @@
       "bytes": 587
     },
     {
+      "path": "reproductions/checks-v2-01/result.json",
+      "bytes": 430,
+      "sha256": "fc88f5f8fcf151972533c3af71c08a634c616be0da84ee5fe19f12b26bef8dc1"
+    },
+    {
       "path": "reproductions/force-support-v1-analysis-01/README.md",
       "bytes": 1442,
       "sha256": "e7444b587e774bd91da32e1dba9c5c6b63aa6e50c8f062512fcbe717db8b6c96"
@@ -483,6 +543,16 @@
       "sha256": "b5a8cca4f090fc61c1463969918ea8108642b2e5827093d7c15116051457d9ef",
       "archived_sha256": "b5a8cca4f090fc61c1463969918ea8108642b2e5827093d7c15116051457d9ef",
       "byte_identical_to_archive": true
+    },
+    {
+      "path": "reproductions/twin-forecast-unforced-01/all.json",
+      "bytes": 785,
+      "sha256": "a4f384db61a82b55645fc3951762396fa804c4e03fa349ab74b1bb869cca92eb"
+    },
+    {
+      "path": "reproductions/twin-forecast-unforced-01/smoke-a.json",
+      "bytes": 724,
+      "sha256": "ae692eb4169a9d95d8641f19aae05df74d5cc4ce00846c5063264d7f5be9c448"
     },
     {
       "path": "reproductions/twins-analysis-01/README.md",
@@ -787,9 +857,19 @@
       "byte_identical_to_archive": true
     },
     {
+      "path": "scripts/discovery/plot_checks_v2.py",
+      "bytes": 4471,
+      "sha256": "fbef22383aeef6c7a33f3fadd6346a75a920e05b0ece1f23b02447c60706ff9e"
+    },
+    {
       "path": "scripts/discovery/replay_checks_v1.py",
       "sha256": "49c650e3b9cef936d835f37c15960b73fb07e52e26003e51ba047d2065b2906a",
       "bytes": 5478
+    },
+    {
+      "path": "scripts/discovery/replay_checks_v2.py",
+      "bytes": 10082,
+      "sha256": "1e3fd8bf154057c16791f344a595658deaf741fb40cb3c345d7ef8a4cfcbb641"
     },
     {
       "path": "scripts/discovery/replay_feedback_cusp_v1.py",
@@ -822,6 +902,11 @@
       "sha256": "51c132d81ebedccfa1f34b7eff2ac280f5093ce09bd00d1fcbc01483d6ac0ac7",
       "archived_sha256": "51c132d81ebedccfa1f34b7eff2ac280f5093ce09bd00d1fcbc01483d6ac0ac7",
       "byte_identical_to_archive": true
+    },
+    {
+      "path": "scripts/discovery/reproduce_twin_forecast.py",
+      "bytes": 3687,
+      "sha256": "d77410c33208e7899e703a38682e04ec1782d716e6dd1dd89adb11d2eb3eb7f5"
     },
     {
       "path": "scripts/discovery/scatter_analyze.py",
@@ -1017,6 +1102,21 @@
       "archived_record_id": "results/discovery-20261001/echoes/two-frequency-direct-ne512-L24-01/echo_two_frequency.py",
       "archived_sha256": "07efab8ef1e98b5c9fbfde750ed47c466f0f55ec8ba01630e33d42d1510b617f",
       "byte_identical_to_archive": true
+    },
+    {
+      "path": "source-snapshots/twin-forecast/README.md",
+      "bytes": 2384,
+      "sha256": "6c53cff7b262bd7af39ac1f63eebe7bad5a9c514c8477e3ed2580261dc589bda"
+    },
+    {
+      "path": "source-snapshots/twin-forecast/function-provenance.json",
+      "bytes": 2288,
+      "sha256": "bb244a94eb1490ff75d4ec1a58d395bbd313a21c404ef7f6c7ccf96684cbe252"
+    },
+    {
+      "path": "source-snapshots/twin-forecast/operator.py",
+      "bytes": 10178,
+      "sha256": "85945be71cedc6606e48cb598f244f3f867772133aa02fbcace8175d7948871b"
     }
   ],
   "known_control_reproduction": {
@@ -1028,7 +1128,8 @@
   "reading_fallback": {
     "path": "REPORT.md",
     "control_checks": "CHECKS.md",
-    "scope": "Current response findings and retained control failures; no live-bar or observational claim."
+    "scope": "Current response findings and retained control failures; no live-bar or observational claim.",
+    "additional_control_checks": "CHECKS_V2.md"
   },
   "exact_twin_analysis_reproduction": {
     "receipt": "reproductions/twins-analysis-01/receipt.json",
@@ -1065,7 +1166,7 @@
       "outcome_included": false
     }
   ],
-  "release": "discovery-2026-10-01.5",
+  "release": "discovery-2026-10-01.6",
   "added_replay_packages": [
     {
       "id": "twins-growth-v1",
@@ -1087,8 +1188,17 @@
     "scope": "Saved arithmetic only; completed controls do not qualify physical extensions.",
     "recorded_replay": "reproductions/checks-v1-01/result.json"
   },
-  "editorial_patch": {
-    "previous_release": "discovery-2026-10-01.4",
-    "scope": "Correct stale completed-experiment statuses, finite-sample raw-moment wording and spherical angular-action interpretation; numerical operands, source snapshots and replay receipts unchanged."
+  "additional_control_checks": {
+    "data": "data/checks-v2.json",
+    "methods": "CHECKS_V2.md",
+    "reader": "scripts/discovery/replay_checks_v2.py",
+    "operands": "operands/checks-v2/README.md",
+    "scope": "Saved arithmetic only; physical stellar and spatial qualifications remain false.",
+    "recorded_replay": "reproductions/checks-v2-01/result.json"
+  },
+  "unforced_forecast_reproduction": {
+    "source": "source-snapshots/twin-forecast/README.md",
+    "receipt": "reproductions/twin-forecast-unforced-01/all.json",
+    "scope": "Unforced coefficients and second-order contraction; no independent forced evolution or exact-array comparison."
   }
 }

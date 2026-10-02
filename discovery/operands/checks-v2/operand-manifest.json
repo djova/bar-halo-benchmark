@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "release": "discovery-2026-10-01.6",
+  "scope": "Saved operands, not complete evolution inputs",
+  "artifacts": [
+    {
+      "path": "checks-v2.json",
+      "bytes": 139863,
+      "sha256": "0473977e40c97c9493ac14bdea55521c30129d0dfbc94724c4e112febf3c98e0"
+    },
+    {
+      "path": "warm-coarse-comparison.npz",
+      "bytes": 403124,
+      "sha256": "ec381091e67204922c5a1c79f9d7708e99966c4bc44e7a1a464f1591a63d4754"
+    },
+    {
+      "path": "warm-fine-dilution.npz",
+      "bytes": 162420,
+      "sha256": "e354e54de9a1ca997cfeb377d63a7ef234c59db051ff328edfb3bf57d1c471d8"
+    }
+  ]
+}

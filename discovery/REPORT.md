@@ -1,28 +1,35 @@
 # Early validation of hidden galactic dynamics
 
-Release **discovery-2026-10-01.5** retains the prescribed-field bar-transfer and
-finite cuspy-halo heating results and adds the [checks behind them](CHECKS.md).
-The unique-position quiet live matrix passes its frozen numerical screens,
-but its shell-moment flags are not an equilibrium verdict: the same finite
-samples also move substantially in their stationary analytic construction field.
-The finite warm-star heating pilot remains sampling-unresolved. A separately
-frozen spatial energy refinement clears an instantaneous exact-zero gate after
-nine retained failures; no late finite spatial echo or stellar readout is
-qualified. No live bar, self-consistent core or observational validation is
-established by this checkpoint.
+Release **discovery-2026-10-01.6** retains the prescribed-field bar-transfer,
+finite halo-heating and radial-memory results. The [new recorded controls](CHECKS_V2.md)
+show what the larger stellar sample, late spatial quadratures and sealed weak-bar
+forecast do—and do not—establish. The [previous control collection](CHECKS.md)
+retains the phase comparison and historical failed pilots.
 
-This editorial patch corrects older pending/untested descriptions to match the
-completed control records. The .4 tag and all numerical evidence are unchanged.
+The inner guiding cohort contains 2.65% of stellar target mass yet carries nearly
+all sampled finite-pulse heating. The all-state stellar numerical qualification
+still fails; an incomplete extension cannot repair it. In the spatial echo model,
+the fine time28 field lies near the leading approximation, while all original
+coarse-to-fine gates fail. Cross grids locate sensitivity to angular-momentum
+quadrature; they do not establish an observable echo.
 
-The other screens remain informative limits: a weak radial gravitational echo,
-a collision-law contrast with an unqualified numerical sign and harmonic
-modified-inertia freedom without an observational test. Earlier numerical
-records and the canonical population-response paper are unchanged.
+A new, separately sealed epsilon=10^-4, T=40 twin forecast has provisional
+numerical proxies for p=6 and p=8; p=4 remains tail-unqualified. The independently
+driven outcomes remain pending. It does not explain the earlier stronger,
+longer forcing history. All seven **unforced** forecast grids regenerate with
+the public NumPy operator; no exact-array or forced-evolution reproduction is
+claimed. No observation, live bar or self-consistent core is validated.
 
-The [source guide](README.md) separates reading, saved-arithmetic replay and
-regeneration of three inexpensive known-limit controls. [The manifest](manifest.json)
-records file hashes and explicit scope. Saved replay verifies arithmetic
-conditional on supplied operands, not an additional physical sample.
+The three principal questions remain: how do hidden orbital populations alter a
+prescribed response; which stars bear a proposed halo-heating cost; and is
+recoverable halo memory strong enough to yield a measurable spatial field?
+The other screens retain a collision-law contrast with an unqualified numerical
+sign and harmonic modified-inertia freedom without an observational test.
+
+The [source guide](README.md) separates reading, saved arithmetic and explicit
+execution. [The manifest](manifest.json) records hashes and scope. Reproduction
+checks software/operands; it is not another independent physical sample. This
+campaign remains preliminary and has not been externally reviewed.
 
 ## Identical ordinary halo moments, different prescribed-bar response
 
