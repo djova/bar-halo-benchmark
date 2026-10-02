@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "campaign": "discovery-20261001",
-  "status": "known_controls_and_saved_arithmetic_release",
-  "scope": "Three regenerated known-limit controls; recorded five-branch outputs, exact-twin and gradual-growth response analysis, selected force/action-support diagnostics and finite cusp-pulse arithmetic. Not a complete reproduction of orbital evolution or live galaxies. Added saved phase/heating/exact-zero arithmetic; no complete live experiment regeneration. Added all4096 saved stellar arithmetic, six spatial zero/late/cross rows and a NumPy unforced forecast regeneration; not driven or live dynamics.",
+  "status": "terminal_science_with_bounded_results_and_unresolved_extensions",
+  "scope": "Three regenerated known-limit controls; recorded five-branch outputs, exact-twin and gradual-growth response analysis, selected force/action-support diagnostics and finite cusp-pulse arithmetic. Not a complete reproduction of orbital evolution or live galaxies. Added saved phase/heating/exact-zero arithmetic; no complete live experiment regeneration. Added all4096 saved stellar arithmetic, six spatial zero/late/cross rows and a NumPy unforced forecast regeneration; not driven or live dynamics. New fixed weak-bar and same-sample stellar energy summaries/readers: saved arithmetic only, no complete forced trajectory reproduction.",
   "tested_environment": {
     "python": "3.11.14",
     "numpy": "1.26.4",
@@ -41,8 +41,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 19976,
-      "sha256": "0be0c8ee19f11551a869395c9685e8200c916c907213caf703a2c77774f8b08e",
+      "bytes": 21122,
+      "sha256": "bcb8cbc5bdff100b28b89e9ee1e12e986b621902c3e1f99da55969f7679308b7",
       "archived_sha256": "12b58d9ca5e59cfebe4defe8e4e1b57bcef9836faceac4c79a02299b8b704af7",
       "byte_identical_to_archive": false,
       "release_transformation": "Editorial status/scope correction; numerical evidence unchanged.",
@@ -50,8 +50,8 @@
     },
     {
       "path": "REPORT.md",
-      "bytes": 30099,
-      "sha256": "87e9aca77fcabd2d5497fec3c9078afc5d1683892c2375d195a2fc4afdad190f",
+      "bytes": 2858,
+      "sha256": "cafd655c4ff2dc3ed1e4f9fe694e16c5b8dca23feb1001adc66bc3708455389d",
       "derived_from": [
         "research/discovery-20261001/PUBLIC_TWINS_EXACT_SUMMARY.md",
         "research/discovery-20261001/PUBLIC_TERMINAL_BRANCHES.md",
@@ -63,7 +63,28 @@
       ],
       "scope": "Three regenerated known-limit controls; recorded five-branch outputs, exact-twin and gradual-growth response analysis, selected force/action-support diagnostics and finite cusp-pulse arithmetic. Not a complete reproduction of orbital evolution or live galaxies.",
       "previous_release_sha256": "b5bfd54aed63e8fc73da720b25591e005422f498b4858bec84b8b2e8bc8b58d8",
-      "release_transformation": "Editorial status/scope correction; numerical evidence unchanged."
+      "release_transformation": "Editorial status/scope correction; numerical evidence unchanged.",
+      "byte_identical_to_archive": false
+    },
+    {
+      "path": "RESOURCE_SUMMARY.md",
+      "bytes": 3300,
+      "sha256": "3f7d442f295d5df66aee53c64ec910d859667d292055d367986adb66fbe75b01"
+    },
+    {
+      "path": "SYNTHESIS.md",
+      "bytes": 13386,
+      "sha256": "6d0a9e02220d2d5a60146a87317190d2a29a3611b5790fc97f4b4c662ca147cc"
+    },
+    {
+      "path": "TWINS_WEAK.md",
+      "bytes": 10753,
+      "sha256": "0ab9ae6b5d2c36852fc45cf58ad57c5bb856e2271b55dfd3100480900029f271"
+    },
+    {
+      "path": "WARM_COST.md",
+      "bytes": 8012,
+      "sha256": "c23f14beed787b989858ab4bde0b6c3729243c63283f8bc7c5f7bfb066dd7be1"
     },
     {
       "path": "data/checks-v1.json",
@@ -133,6 +154,11 @@
       "sha256": "f5ffcbd62b7349e20e93e9a0cbe3c936778590bf7c319c628ac01a5321e7c802"
     },
     {
+      "path": "data/twins-prediction-v1.json",
+      "bytes": 124975,
+      "sha256": "61d61a04adf180861ae1a758e55b63d749ae4c3e9d895b324f37beaf895e833e"
+    },
+    {
       "path": "data/twins-velocity.json",
       "bytes": 98641,
       "sha256": "4dfd5260554f1ec76d3909caab80cc187f4f4a8db4f164f6ad6ec8b76d21b14d",
@@ -140,6 +166,11 @@
       "archived_sha256": "a2db92ff4d8545da2b4a17c23d6423db90dcbb196f7ae0109a27cad51051eadf",
       "byte_identical_to_archive": false,
       "release_transformation": "Added only release metadata identifying the supplied sources, operands and limited reproduction scope. Archived scientific fields and evidence hashes unchanged."
+    },
+    {
+      "path": "data/warm-cost-v1.json",
+      "bytes": 80053,
+      "sha256": "1ab14e21360f7c2f7a85ea3e207f5f0dc1b3ca88032a0ca00b2c87f55a92f2c5"
     },
     {
       "path": "figures/echo-cross-v2.png",
@@ -157,6 +188,21 @@
       "bytes": 79734
     },
     {
+      "path": "figures/twins-direct-endpoints-v1.png",
+      "bytes": 112282,
+      "sha256": "8911e84aa8d8ced28b18ab5556570d9284ad274a7b5640cd18d38fe30897d1e0"
+    },
+    {
+      "path": "figures/twins-direct-history-v1.png",
+      "bytes": 171362,
+      "sha256": "b1986af3e9c14a601e3c86c69604ecda809bf584957da26de2dcd6861d09e677"
+    },
+    {
+      "path": "figures/twins-direct-scaling-v1.png",
+      "bytes": 80246,
+      "sha256": "0ddb36aadcda3690da7ba75c7043d19007dc4a379097bf499c958aa1737e10fc"
+    },
+    {
       "path": "figures/twins-forecast-v2.png",
       "bytes": 70280,
       "sha256": "f4b8ef9b8945a46226916fd25de4c0e6ccc670b54d0cb7c391474ab6261716e2"
@@ -165,6 +211,11 @@
       "path": "figures/warm-cohort-v2.png",
       "bytes": 59172,
       "sha256": "cd40b2cf7e3f6ae79f2b184bdd0d31b4931649e071145fef2e895d59446595b4"
+    },
+    {
+      "path": "figures/warm-cost-v1.png",
+      "bytes": 134922,
+      "sha256": "03f2fbe04c0e576a86f5c88164ece0fabacb808c1674c90bd50ad4e64659d48a"
     },
     {
       "path": "methods/control-checks/ECHO_FINITE_DIAGNOSTIC_COMPLETION02_PROTOCOL.md",
@@ -649,8 +700,8 @@
     },
     {
       "path": "research/discovery-20261001/LEARNINGS.md",
-      "bytes": 5486,
-      "sha256": "cb8c7cbdaead4becc4453b55c0106f6976ebf934617f7983ba0c355421be8d07",
+      "bytes": 13612,
+      "sha256": "c01d14bc5790bbb573a7d3b31e3aea179fe50515ad2b8969b091d08a1f729afb",
       "archived_record_id": "research/discovery-20261001/LEARNINGS.md",
       "archived_sha256": "3c88f3b9e642c17995bb2d2558a7d39261a04edc218aea49a135bc795297c0de",
       "byte_identical_to_archive": false,
@@ -862,6 +913,16 @@
       "sha256": "fbef22383aeef6c7a33f3fadd6346a75a920e05b0ece1f23b02447c60706ff9e"
     },
     {
+      "path": "scripts/discovery/plot_twins_prediction.py",
+      "bytes": 5973,
+      "sha256": "459c4cd4aeadfd061799989406e8ee4d3ee7b9d2624bfee72c54d6c98ffb4145"
+    },
+    {
+      "path": "scripts/discovery/plot_warm_cost.py",
+      "bytes": 2743,
+      "sha256": "447d19e96dcee8ad760e4f530a476d0fbba21d0b0fd78a71bda7cd1c412cdd02"
+    },
+    {
       "path": "scripts/discovery/replay_checks_v1.py",
       "sha256": "49c650e3b9cef936d835f37c15960b73fb07e52e26003e51ba047d2065b2906a",
       "bytes": 5478
@@ -895,6 +956,16 @@
       "path": "scripts/discovery/replay_twins_growth_v1.py",
       "bytes": 9596,
       "sha256": "30be70c33920f7f1d2805bbfe539c59f53fc126c624fabe3941b1bbebf443994"
+    },
+    {
+      "path": "scripts/discovery/replay_twins_prediction.py",
+      "bytes": 7531,
+      "sha256": "0afcb8a0e70c7ac1c6a607c58d81d5d77cbc817c6c2e866b050a9aade351b4ca"
+    },
+    {
+      "path": "scripts/discovery/replay_warm_cost.py",
+      "bytes": 7310,
+      "sha256": "eccb227f4705f102ba1b6618886b7e7ca1533ef8bf65897d3be52f45c72705ec"
     },
     {
       "path": "scripts/discovery/reproduce_controls.py",
@@ -1129,7 +1200,12 @@
     "path": "REPORT.md",
     "control_checks": "CHECKS.md",
     "scope": "Current response findings and retained control failures; no live-bar or observational claim.",
-    "additional_control_checks": "CHECKS_V2.md"
+    "additional_control_checks": "CHECKS_V2.md",
+    "synthesis": "SYNTHESIS.md",
+    "learning": "research/discovery-20261001/LEARNINGS.md",
+    "resources": "RESOURCE_SUMMARY.md",
+    "current_twin": "TWINS_WEAK.md",
+    "current_warm_energy": "WARM_COST.md"
   },
   "exact_twin_analysis_reproduction": {
     "receipt": "reproductions/twins-analysis-01/receipt.json",
@@ -1158,15 +1234,20 @@
       "outcome_included": false
     },
     {
-      "name": "qualified finite-amplitude warm stellar heating",
+      "name": "random stellar velocity-dispersion or co-spatial halo/star cost bound",
       "outcome_included": false
     },
     {
-      "name": "late finite spatial halo echo",
+      "name": "late numerically qualified finite spatial halo echo",
       "outcome_included": false
+    },
+    {
+      "name": "five-percent weak-twin magnitude prediction",
+      "outcome_included": true,
+      "status": "all_six_unresolved"
     }
   ],
-  "release": "discovery-2026-10-01.6",
+  "release": "discovery-2026-10-01.7",
   "added_replay_packages": [
     {
       "id": "twins-growth-v1",
@@ -1193,12 +1274,30 @@
     "methods": "CHECKS_V2.md",
     "reader": "scripts/discovery/replay_checks_v2.py",
     "operands": "operands/checks-v2/README.md",
-    "scope": "Saved arithmetic only; physical stellar and spatial qualifications remain false.",
+    "scope": "Historical .6 saved arithmetic: original stellar and spatial qualifications remain false; new .7 stellar stage is separately indexed.",
     "recorded_replay": "reproductions/checks-v2-01/result.json"
   },
   "unforced_forecast_reproduction": {
     "source": "source-snapshots/twin-forecast/README.md",
     "receipt": "reproductions/twin-forecast-unforced-01/all.json",
     "scope": "Unforced coefficients and second-order contraction; no independent forced evolution or exact-array comparison."
+  },
+  "weak_twin_direct": {
+    "data": "data/twins-prediction-v1.json",
+    "methods": "TWINS_WEAK.md",
+    "reader": "scripts/discovery/replay_twins_prediction.py",
+    "signs": 6,
+    "paired_amplitude_supported": 3,
+    "magnitudes_unresolved": 6,
+    "scope": "Full-halo fixed-mass prescribed weak bar, no self-consistent response or fitted forced coefficient"
+  },
+  "warm_scalar_energy": {
+    "data": "data/warm-cost-v1.json",
+    "methods": "WARM_COST.md",
+    "reader": "scripts/discovery/replay_warm_cost.py",
+    "numerical_gate": true,
+    "scope": "Original4096sample numerical repair; specific-energy deposit, no random-motion or halo/star ratio qualification",
+    "retained_original_gate": false,
+    "retained_extended_stage": "COST_PARTIAL"
   }
 }

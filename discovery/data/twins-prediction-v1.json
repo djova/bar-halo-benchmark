@@ -1,0 +1,4059 @@
+{
+  "schema_version": 1,
+  "scientific_state": "Fixed experiment complete; public packaging candidate, not a deployment claim",
+  "study_id": "exact-twins-finite-time-weak-bar-01",
+  "model": {
+    "family": "Prescribed-field Cartesian orbits and independent finite-time action-angle perturbation theory",
+    "background": "Analytic isochrone, G=M=1, b=0.5",
+    "self_consistent_live_response": false,
+    "physical_SIDM_operator": false,
+    "noise_operator": "None",
+    "bar": "Externally prescribed physical rotating quadrupole",
+    "observable": "Difference Fplus minus Fminus in total accumulated bar-mediated angular-momentum transfer",
+    "units": "Dimensionless code angular momentum; fixed target population mass1, no realized-mass renormalization. No physical length/time calibration is supplied.",
+    "clock": "Dimensionless analytic-model time, not Gyr",
+    "reference": "Same bar history and numerical treatment for exact positive Fplus/Fminus populations; half-amplitude is a separate paired weak-law control"
+  },
+  "forcing": {
+    "epsilon_full": 0.0001,
+    "epsilon_half": 5e-05,
+    "growth_time": 10.0,
+    "endpoint": 40.0,
+    "pattern_speed": 0.42789218021407277,
+    "sweep": 0.0,
+    "bar_scale": 0.5,
+    "ramp": "S(u)=0 foru<=0; 10u^3-15u^4+6u^5 for0<u<1;1 foru>=1, u=t/10",
+    "potential": "Phi_bar=-epsilon*S(t/10)*rb^3*((x^2-y^2)cos(2Omega_bar*t)+2xy*sin(2Omega_bar*t))/(rb^2+x^2+y^2+z^2)^(5/2)"
+  },
+  "populations": {
+    "definition": "Fplus/minus=F0(e) plus/minus alpha*Lz*h_p(e,L), e=-H0",
+    "h_p": "-4p*e^(p-1)/((p+2.5)(p+3.5))+(4/(p+3.5)+L^2)*e^p",
+    "reference_DF": "Positive isotropic isochrone distribution function F0",
+    "certified_alpha": [
+      {
+        "p": 4,
+        "alpha": 0.1501862498978842
+      },
+      {
+        "p": 6,
+        "alpha": 9.878924689416143
+      },
+      {
+        "p": 8,
+        "alpha": 63.05040500717388
+      }
+    ],
+    "initial_continuum_constraints": "Same density, all even velocity moments and zero mean streaming; these do not imply identical resonant directional derivatives",
+    "continuum_spin_difference": 0.0,
+    "realized_sampling_diagnostics": [
+      {
+        "library_id": 0,
+        "realized_initial_spin_difference_p4_p6_p8": [
+          -0.005922195044499183,
+          -0.0012822359153663084,
+          -0.000274302005494874
+        ],
+        "represented_exact_mass": 1.0000000035511079
+      },
+      {
+        "library_id": 1,
+        "realized_initial_spin_difference_p4_p6_p8": [
+          0.0036879410592637694,
+          0.0002385700307664521,
+          6.673765077169557e-05
+        ],
+        "represented_exact_mass": 1.0000000033551193
+      },
+      {
+        "library_id": 2,
+        "realized_initial_spin_difference_p4_p6_p8": [
+          -0.004370377705493297,
+          -0.0007660345468414731,
+          -0.00021814977754819732
+        ],
+        "represented_exact_mass": 1.0000000099314788
+      },
+      {
+        "library_id": 3,
+        "realized_initial_spin_difference_p4_p6_p8": [
+          0.001008500365825555,
+          -0.001983957631072738,
+          -0.001564736454033007
+        ],
+        "represented_exact_mass": 1.0000000068439787
+      },
+      {
+        "library_id": 4,
+        "realized_initial_spin_difference_p4_p6_p8": [
+          -0.0025503433862726684,
+          -0.0006754961180916167,
+          2.7616451164290797e-05
+        ],
+        "represented_exact_mass": 1.0000000117756713
+      },
+      {
+        "library_id": 5,
+        "realized_initial_spin_difference_p4_p6_p8": [
+          -0.004144084942461532,
+          0.0006054474321058638,
+          -0.00021020159736977943
+        ],
+        "represented_exact_mass": 1.0000000049424331
+      },
+      {
+        "library_id": 6,
+        "realized_initial_spin_difference_p4_p6_p8": [
+          -0.000986374175543192,
+          0.00023412384596300663,
+          4.645437068203083e-05
+        ],
+        "represented_exact_mass": 1.0000000054975826
+      },
+      {
+        "library_id": 7,
+        "realized_initial_spin_difference_p4_p6_p8": [
+          -0.0034418917534608257,
+          -0.0005507710577757332,
+          -0.00013475954994587522
+        ],
+        "represented_exact_mass": 1.0000000076711328
+      }
+    ]
+  },
+  "forecast": {
+    "method": "Second-order finite-time CBE response from unforced frequencies, physical orbital Fourier coefficients and analytic twin DF derivative; no forced outcome fitting",
+    "full_complex_series_equation": "C2=-(2pi)^3/2 * sum_n n_phi integral (n dot d(Fplus-Fminus)/dJ)*|Phi_n(J)|^2*|integral_0^T epsilon(t)exp(i*(n dot Omega-n_phi*Omega_bar)*t)dt|^2 d^3J",
+    "Fourier_convention": "Phi_n are full real-field complex coefficients per unit amplitude. Positive m=2 coefficient has the real-field factor1/2; including conjugates in the full series requires its prefactor1/2.",
+    "action_convention": "Delaunay(Jr,L,Lz); node frequency0, corotation slow action Js=Lz/2. Physical observable is Lz, not Js.",
+    "sealed_forecast_SHA256": "267290fefa5b19b9b1f3d400ded67a0dca31028429db8ba9d1f46587639cf46a",
+    "full_amplitude_qualifications": [
+      {
+        "p": 4,
+        "forecast": 1.167071868652089e-11,
+        "quadrature_change": 6.349257436198044e-25,
+        "action_grid_change": 1.6968826778544346e-14,
+        "tail_proxy": 2.152093342710911e-11,
+        "combined_numerical_proxy": 2.1537902253888288e-11,
+        "target": 5.835359343260445e-13,
+        "numerical_5percent_proxy_qualified": false,
+        "sign_numerically_qualified": false
+      },
+      {
+        "p": 6,
+        "forecast": 1.5870550371833715e-10,
+        "quadrature_change": 5.7127161054443474e-24,
+        "action_grid_change": 8.67845401046871e-15,
+        "tail_proxy": 3.0483448431478463e-13,
+        "combined_numerical_proxy": 3.1351293833096606e-13,
+        "target": 7.935275185916858e-12,
+        "numerical_5percent_proxy_qualified": true,
+        "sign_numerically_qualified": true
+      },
+      {
+        "p": 8,
+        "forecast": 2.539762295930688e-10,
+        "quadrature_change": 7.444625512977249e-24,
+        "action_grid_change": 6.038583117078345e-14,
+        "tail_proxy": 6.294306260927296e-16,
+        "combined_numerical_proxy": 6.10152618043208e-14,
+        "target": 1.269881147965344e-11,
+        "numerical_5percent_proxy_qualified": true,
+        "sign_numerically_qualified": true
+      }
+    ],
+    "radial_tail_status": "p4 remains numerically unqualified; p6/p8 are provisional numerical-proxy qualifications, not nonlinear-error bounds",
+    "no_asymptotic_delta_function": true,
+    "qualification_scope": "Frozen pre-evolution unforced numerical-proxy assessment; current driven magnitude and amplitude-law decisions are separately recorded below.",
+    "positive_m2_field_coefficient": "-rb^3/2*(x+i*y)^2/(rb^2+r^2)^(5/2), before orbital Fourier expansion",
+    "inclination_measure": "mu=Lz/L, dLz=L*dmu; positive m=2 has k=-2,0,2. Full radial integer sums are retained or given explicit numerical tail proxies."
+  },
+  "sampling": {
+    "libraries": 8,
+    "actions_per_library": 16384,
+    "azimuth_sectors_per_sense": 8,
+    "seeds": [
+      481001,
+      481102,
+      481203,
+      481304,
+      481405,
+      481506,
+      481607,
+      481708
+    ],
+    "independent_unit": "Whole independently seeded action library and independent scrambled radial/in-plane phase rule",
+    "paired_controls": "Pi/2 azimuth partners; physical velocity-reversed senses; full/half amplitudes; first2 libraries for timestep and phase refinements",
+    "proposal_measure": "On positive-Lz hemisphere, p_fold=2*q_full/Mq; raw familymass=Mq/N, r=F0/q_full, h=alpha*|Lz|*h_p/q_full",
+    "sampled_contraction": "C=sum_i rawmass_i*h_i*(Bpro_i-Bretro_i); no further factor2,1/2 or(2pi)^3. Physical half-mass cancels folded proposal factor2.",
+    "no_state_exclusions": true,
+    "no_post_outcome_sample_extension": true,
+    "trajectory_case_count": 26,
+    "base_integration_cost_equivalents": 34,
+    "cases_are_not_independent_physical_regimes": true
+  },
+  "endpoint_data": {
+    "six_order": [
+      "full_p4",
+      "full_p6",
+      "full_p8",
+      "half_p4",
+      "half_p6",
+      "half_p8"
+    ],
+    "joint_order": [
+      "full_p4",
+      "full_p6",
+      "full_p8",
+      "half_p4",
+      "half_p6",
+      "half_p8",
+      "full_minus4half_p4",
+      "full_minus4half_p6",
+      "full_minus4half_p8"
+    ],
+    "raw_libraries": [
+      {
+        "library_id": 0,
+        "six_endpoint_responses": [
+          1.8670984359411506e-11,
+          2.0886506192043415e-10,
+          3.047039576942349e-10,
+          4.667748083823968e-12,
+          5.221629165459616e-11,
+          7.617602988737799e-11
+        ],
+        "nine_joint_endpoint_values": [
+          1.8670984359411506e-11,
+          2.0886506192043415e-10,
+          3.047039576942349e-10,
+          4.667748083823968e-12,
+          5.221629165459616e-11,
+          7.617602988737799e-11,
+          -7.97588436488388e-18,
+          -1.0469795050398339e-16,
+          -1.6185527702590908e-16
+        ],
+        "population_transfer_context": {
+          "full": [
+            {
+              "p": 4,
+              "plus": 1.4346504787711397e-09,
+              "minus": 1.415979494411728e-09,
+              "reference": 1.425314986591434e-09,
+              "contrast": 1.8670984359411506e-11
+            },
+            {
+              "p": 6,
+              "plus": 1.5297475175516508e-09,
+              "minus": 1.320882455631217e-09,
+              "reference": 1.425314986591434e-09,
+              "contrast": 2.0886506192043415e-10
+            },
+            {
+              "p": 8,
+              "plus": 1.5776669654385513e-09,
+              "minus": 1.2729630077443166e-09,
+              "reference": 1.425314986591434e-09,
+              "contrast": 3.047039576942349e-10
+            }
+          ],
+          "half": [
+            {
+              "p": 4,
+              "plus": 3.586626360107392e-10,
+              "minus": 3.539948879269153e-10,
+              "reference": 3.563287619688273e-10,
+              "contrast": 4.667748083823968e-12
+            },
+            {
+              "p": 6,
+              "plus": 3.8243690779612534e-10,
+              "minus": 3.3022061614152917e-10,
+              "reference": 3.563287619688273e-10,
+              "contrast": 5.221629165459616e-11
+            },
+            {
+              "p": 8,
+              "plus": 3.9441677691251625e-10,
+              "minus": 3.1824074702513825e-10,
+              "reference": 3.563287619688273e-10,
+              "contrast": 7.617602988737799e-11
+            }
+          ]
+        }
+      },
+      {
+        "library_id": 1,
+        "six_endpoint_responses": [
+          7.99576397261099e-12,
+          1.3406271806807193e-10,
+          2.362264467855061e-10,
+          1.998937869817049e-12,
+          3.351566255695682e-11,
+          5.905660606329463e-11
+        ],
+        "nine_joint_endpoint_values": [
+          7.99576397261099e-12,
+          1.3406271806807193e-10,
+          2.362264467855061e-10,
+          1.998937869817049e-12,
+          3.351566255695682e-11,
+          5.905660606329463e-11,
+          1.249334279463809e-17,
+          6.784024465714832e-17,
+          2.2532327611038452e-17
+        ],
+        "population_transfer_context": {
+          "full": [
+            {
+              "p": 4,
+              "plus": 1.3306568043932109e-09,
+              "minus": 1.3226610404206004e-09,
+              "reference": 1.3266589224069057e-09,
+              "contrast": 7.99576397261099e-12
+            },
+            {
+              "p": 6,
+              "plus": 1.3936902814409418e-09,
+              "minus": 1.2596275633728697e-09,
+              "reference": 1.3266589224069057e-09,
+              "contrast": 1.3406271806807193e-10
+            },
+            {
+              "p": 8,
+              "plus": 1.4447721457996588e-09,
+              "minus": 1.2085456990141527e-09,
+              "reference": 1.3266589224069057e-09,
+              "contrast": 2.362264467855061e-10
+            }
+          ],
+          "half": [
+            {
+              "p": 4,
+              "plus": 3.326641951030291e-10,
+              "minus": 3.3066525723321205e-10,
+              "reference": 3.3166472616812055e-10,
+              "contrast": 1.998937869817049e-12
+            },
+            {
+              "p": 6,
+              "plus": 3.48422557446599e-10,
+              "minus": 3.149068948896422e-10,
+              "reference": 3.3166472616812055e-10,
+              "contrast": 3.351566255695682e-11
+            },
+            {
+              "p": 8,
+              "plus": 3.6119302919976787e-10,
+              "minus": 3.0213642313647323e-10,
+              "reference": 3.3166472616812055e-10,
+              "contrast": 5.905660606329463e-11
+            }
+          ]
+        }
+      },
+      {
+        "library_id": 2,
+        "six_endpoint_responses": [
+          1.535947897064613e-11,
+          1.8466167640131882e-10,
+          2.8119219350097915e-10,
+          3.839867388104223e-12,
+          4.616540889241291e-11,
+          7.029803270738187e-11
+        ],
+        "nine_joint_endpoint_values": [
+          1.535947897064613e-11,
+          1.8466167640131882e-10,
+          2.8119219350097915e-10,
+          3.839867388104223e-12,
+          4.616540889241291e-11,
+          7.029803270738187e-11,
+          9.4182292405135e-18,
+          4.083166718573794e-17,
+          6.267145165834224e-17
+        ],
+        "population_transfer_context": {
+          "full": [
+            {
+              "p": 4,
+              "plus": 1.3709703335321628e-09,
+              "minus": 1.3556108545615167e-09,
+              "reference": 1.3632905940468398e-09,
+              "contrast": 1.535947897064613e-11
+            },
+            {
+              "p": 6,
+              "plus": 1.4556214322474993e-09,
+              "minus": 1.2709597558461805e-09,
+              "reference": 1.3632905940468398e-09,
+              "contrast": 1.8466167640131882e-10
+            },
+            {
+              "p": 8,
+              "plus": 1.5038866907973293e-09,
+              "minus": 1.2226944972963505e-09,
+              "reference": 1.3632905940468398e-09,
+              "contrast": 2.8119219350097915e-10
+            }
+          ],
+          "half": [
+            {
+              "p": 4,
+              "plus": 3.427424333285056e-10,
+              "minus": 3.3890256594040136e-10,
+              "reference": 3.4082249963445347e-10,
+              "contrast": 3.839867388104223e-12
+            },
+            {
+              "p": 6,
+              "plus": 3.639052040806599e-10,
+              "minus": 3.17739795188247e-10,
+              "reference": 3.4082249963445347e-10,
+              "contrast": 4.616540889241291e-11
+            },
+            {
+              "p": 8,
+              "plus": 3.759715159881444e-10,
+              "minus": 3.0567348328076254e-10,
+              "reference": 3.4082249963445347e-10,
+              "contrast": 7.029803270738187e-11
+            }
+          ]
+        }
+      },
+      {
+        "library_id": 3,
+        "six_endpoint_responses": [
+          1.7657108782679987e-11,
+          2.1694740178097276e-10,
+          3.1184803122051846e-10,
+          4.41428101365607e-12,
+          5.423689207682492e-11,
+          7.796205708256954e-11
+        ],
+        "nine_joint_endpoint_values": [
+          1.7657108782679987e-11,
+          2.1694740178097276e-10,
+          3.1184803122051846e-10,
+          4.41428101365607e-12,
+          5.423689207682492e-11,
+          7.796205708256954e-11,
+          -1.5271944294582824e-17,
+          -1.6652632691241088e-16,
+          -1.9710975971086493e-16
+        ],
+        "population_transfer_context": {
+          "full": [
+            {
+              "p": 4,
+              "plus": 1.2792227079496163e-09,
+              "minus": 1.2615655991669365e-09,
+              "reference": 1.2703941535582763e-09,
+              "contrast": 1.7657108782679987e-11
+            },
+            {
+              "p": 6,
+              "plus": 1.3788678544487628e-09,
+              "minus": 1.1619204526677898e-09,
+              "reference": 1.2703941535582763e-09,
+              "contrast": 2.1694740178097276e-10
+            },
+            {
+              "p": 8,
+              "plus": 1.4263181691685356e-09,
+              "minus": 1.1144701379480172e-09,
+              "reference": 1.2703941535582763e-09,
+              "contrast": 3.1184803122051846e-10
+            }
+          ],
+          "half": [
+            {
+              "p": 4,
+              "plus": 3.1980574903266035e-10,
+              "minus": 3.1539146801900425e-10,
+              "reference": 3.1759860852583235e-10,
+              "contrast": 4.41428101365607e-12
+            },
+            {
+              "p": 6,
+              "plus": 3.447170545642448e-10,
+              "minus": 2.9048016248741984e-10,
+              "reference": 3.1759860852583235e-10,
+              "contrast": 5.423689207682492e-11
+            },
+            {
+              "p": 8,
+              "plus": 3.5657963706711706e-10,
+              "minus": 2.786175799845476e-10,
+              "reference": 3.1759860852583235e-10,
+              "contrast": 7.796205708256954e-11
+            }
+          ]
+        }
+      },
+      {
+        "library_id": 4,
+        "six_endpoint_responses": [
+          1.034793597436877e-11,
+          1.588572791779007e-10,
+          2.6208302701449904e-10,
+          2.58698244399375e-12,
+          3.971433026462361e-11,
+          6.552077834400395e-11
+        ],
+        "nine_joint_endpoint_values": [
+          1.034793597436877e-11,
+          1.588572791779007e-10,
+          2.6208302701449904e-10,
+          2.58698244399375e-12,
+          3.971433026462361e-11,
+          6.552077834400395e-11,
+          6.19839376907907e-18,
+          -4.1880593749862633e-17,
+          -8.636151676434639e-17
+        ],
+        "population_transfer_context": {
+          "full": [
+            {
+              "p": 4,
+              "plus": 1.2968536123927927e-09,
+              "minus": 1.2865056764184239e-09,
+              "reference": 1.2916796444056085e-09,
+              "contrast": 1.034793597436877e-11
+            },
+            {
+              "p": 6,
+              "plus": 1.3711082839945586e-09,
+              "minus": 1.212251004816658e-09,
+              "reference": 1.2916796444056085e-09,
+              "contrast": 1.588572791779007e-10
+            },
+            {
+              "p": 8,
+              "plus": 1.422721157912858e-09,
+              "minus": 1.1606381308983589e-09,
+              "reference": 1.2916796444056085e-09,
+              "contrast": 2.6208302701449904e-10
+            }
+          ],
+          "half": [
+            {
+              "p": 4,
+              "plus": 3.2421343444004475e-10,
+              "minus": 3.21626451996051e-10,
+              "reference": 3.2291994321804784e-10,
+              "contrast": 2.58698244399375e-12
+            },
+            {
+              "p": 6,
+              "plus": 3.427771083503597e-10,
+              "minus": 3.0306277808573605e-10,
+              "reference": 3.2291994321804784e-10,
+              "contrast": 3.971433026462361e-11
+            },
+            {
+              "p": 8,
+              "plus": 3.5568033239004985e-10,
+              "minus": 2.9015955404604583e-10,
+              "reference": 3.2291994321804784e-10,
+              "contrast": 6.552077834400395e-11
+            }
+          ]
+        }
+      },
+      {
+        "library_id": 5,
+        "six_endpoint_responses": [
+          1.0892909037193698e-11,
+          1.4047692180922644e-10,
+          2.263658990170134e-10,
+          2.7232291874443194e-12,
+          3.511923147289138e-11,
+          5.6591462390380716e-11
+        ],
+        "nine_joint_endpoint_values": [
+          1.0892909037193698e-11,
+          1.4047692180922644e-10,
+          2.263658990170134e-10,
+          2.7232291874443194e-12,
+          3.511923147289138e-11,
+          5.6591462390380716e-11,
+          -7.712583579986285e-18,
+          -4.082339085596844e-18,
+          4.9455490541643575e-17
+        ],
+        "population_transfer_context": {
+          "full": [
+            {
+              "p": 4,
+              "plus": 1.1449701182376284e-09,
+              "minus": 1.1340772092004345e-09,
+              "reference": 1.1395236637190313e-09,
+              "contrast": 1.0892909037193698e-11
+            },
+            {
+              "p": 6,
+              "plus": 1.2097621246236446e-09,
+              "minus": 1.0692852028144184e-09,
+              "reference": 1.1395236637190313e-09,
+              "contrast": 1.4047692180922644e-10
+            },
+            {
+              "p": 8,
+              "plus": 1.252706613227538e-09,
+              "minus": 1.0263407142105245e-09,
+              "reference": 1.1395236637190313e-09,
+              "contrast": 2.263658990170134e-10
+            }
+          ],
+          "half": [
+            {
+              "p": 4,
+              "plus": 2.8624246993171213e-10,
+              "minus": 2.8351924074426785e-10,
+              "reference": 2.8488085533799e-10,
+              "contrast": 2.7232291874443194e-12
+            },
+            {
+              "p": 6,
+              "plus": 3.0244047107443567e-10,
+              "minus": 2.673212396015443e-10,
+              "reference": 2.8488085533799e-10,
+              "contrast": 3.511923147289138e-11
+            },
+            {
+              "p": 8,
+              "plus": 3.1317658653318034e-10,
+              "minus": 2.5658512414279965e-10,
+              "reference": 2.8488085533799e-10,
+              "contrast": 5.6591462390380716e-11
+            }
+          ]
+        }
+      },
+      {
+        "library_id": 6,
+        "six_endpoint_responses": [
+          1.2900234603303902e-11,
+          1.6474449354776641e-10,
+          2.5139902886876356e-10,
+          3.2250641601668425e-12,
+          4.1186160299172715e-11,
+          6.284978556060263e-11
+        ],
+        "nine_joint_endpoint_values": [
+          1.2900234603303902e-11,
+          1.6474449354776641e-10,
+          2.5139902886876356e-10,
+          3.2250641601668425e-12,
+          4.1186160299172715e-11,
+          6.284978556060263e-11,
+          -2.2037363468547584e-17,
+          -1.4764892444509092e-16,
+          -1.133736469506383e-16
+        ],
+        "population_transfer_context": {
+          "full": [
+            {
+              "p": 4,
+              "plus": 1.3571422070129944e-09,
+              "minus": 1.3442419724096904e-09,
+              "reference": 1.3506920897113427e-09,
+              "contrast": 1.2900234603303902e-11
+            },
+            {
+              "p": 6,
+              "plus": 1.4330643364852257e-09,
+              "minus": 1.2683198429374593e-09,
+              "reference": 1.3506920897113427e-09,
+              "contrast": 1.6474449354776641e-10
+            },
+            {
+              "p": 8,
+              "plus": 1.4763916041457242e-09,
+              "minus": 1.2249925752769605e-09,
+              "reference": 1.3506920897113427e-09,
+              "contrast": 2.5139902886876356e-10
+            }
+          ],
+          "half": [
+            {
+              "p": 4,
+              "plus": 3.392855589989775e-10,
+              "minus": 3.360604948388107e-10,
+              "reference": 3.3767302691889407e-10,
+              "contrast": 3.2250641601668425e-12
+            },
+            {
+              "p": 6,
+              "plus": 3.582661070684805e-10,
+              "minus": 3.1707994676930776e-10,
+              "reference": 3.3767302691889407e-10,
+              "contrast": 4.1186160299172715e-11
+            },
+            {
+              "p": 8,
+              "plus": 3.690979196991954e-10,
+              "minus": 3.0624813413859274e-10,
+              "reference": 3.3767302691889407e-10,
+              "contrast": 6.284978556060263e-11
+            }
+          ]
+        }
+      },
+      {
+        "library_id": 7,
+        "six_endpoint_responses": [
+          1.0946144072048269e-11,
+          1.5920429294994306e-10,
+          2.621755257155006e-10,
+          2.7365358918377594e-12,
+          3.980105949411464e-11,
+          6.554386389649775e-11
+        ],
+        "nine_joint_endpoint_values": [
+          1.0946144072048269e-11,
+          1.5920429294994306e-10,
+          2.621755257155006e-10,
+          2.7365358918377594e-12,
+          3.980105949411464e-11,
+          6.554386389649775e-11,
+          5.046972310231331e-19,
+          5.4973484505182607e-17,
+          7.012950960219037e-17
+        ],
+        "population_transfer_context": {
+          "full": [
+            {
+              "p": 4,
+              "plus": 1.356327591578041e-09,
+              "minus": 1.3453814475059924e-09,
+              "reference": 1.350854519542017e-09,
+              "contrast": 1.0946144072048269e-11
+            },
+            {
+              "p": 6,
+              "plus": 1.4304566660169883e-09,
+              "minus": 1.2712523730670452e-09,
+              "reference": 1.350854519542017e-09,
+              "contrast": 1.5920429294994306e-10
+            },
+            {
+              "p": 8,
+              "plus": 1.4819422823997672e-09,
+              "minus": 1.2197667566842664e-09,
+              "reference": 1.350854519542017e-09,
+              "contrast": 2.621755257155006e-10
+            }
+          ],
+          "half": [
+            {
+              "p": 4,
+              "plus": 3.390818621253017e-10,
+              "minus": 3.3634532623346396e-10,
+              "reference": 3.377135941793828e-10,
+              "contrast": 2.7365358918377594e-12
+            },
+            {
+              "p": 6,
+              "plus": 3.576141239264401e-10,
+              "minus": 3.1781306443232545e-10,
+              "reference": 3.377135941793828e-10,
+              "contrast": 3.980105949411464e-11
+            },
+            {
+              "p": 8,
+              "plus": 3.704855261276317e-10,
+              "minus": 3.0494166223113393e-10,
+              "reference": 3.377135941793828e-10,
+              "contrast": 6.554386389649775e-11
+            }
+          ]
+        }
+      }
+    ],
+    "sample_covariance_nine_by_nine": [
+      [
+        1.4297939711794767e-23,
+        1.095968330194678e-22,
+        1.0289866770169758e-22,
+        3.5744904039699064e-24,
+        2.739926403749553e-23,
+        2.5724730301595838e-23,
+        -2.190408485905978e-29,
+        -2.2313051429409865e-28,
+        -2.5350468578542747e-28
+      ],
+      [
+        1.095968330194678e-22,
+        9.076144033304695e-22,
+        8.961967097867368e-22,
+        2.739924557686324e-23,
+        2.2690405305821226e-22,
+        2.2404973988542273e-22,
+        -1.492879851347769e-28,
+        -1.808902379510977e-27,
+        -2.24975495417998e-27
+      ],
+      [
+        1.0289866770169758e-22,
+        8.961967097867368e-22,
+        9.31905271148309e-22,
+        2.5724688788648442e-23,
+        2.240495529561431e-22,
+        2.329768499772679e-22,
+        -8.745289621881015e-29,
+        -1.5020378355125643e-27,
+        -2.128760762664553e-27
+      ],
+      [
+        3.5744904039699064e-24,
+        2.739924557686324e-23,
+        2.5724688788648442e-23,
+        8.936239700071655e-25,
+        6.849825339933183e-24,
+        6.4311880412559685e-24,
+        -5.476058754793014e-30,
+        -5.578286949452302e-29,
+        -6.337637542427905e-29
+      ],
+      [
+        2.739926403749553e-23,
+        2.2690405305821226e-22,
+        2.240495529561431e-22,
+        6.849825339933183e-24,
+        5.672612632148943e-23,
+        5.601252884929667e-23,
+        -3.732223720469259e-29,
+        -4.522277454369636e-28,
+        -5.624410436464709e-28
+      ],
+      [
+        2.5724730301595838e-23,
+        2.2404973988542273e-22,
+        2.329768499772679e-22,
+        6.4311880412559685e-24,
+        5.601252884929667e-23,
+        5.824434554259236e-23,
+        -2.186342803262472e-29,
+        -3.75511763979617e-28,
+        -5.321931015244252e-28
+      ],
+      [
+        -2.190408485905978e-29,
+        -1.492879851347769e-28,
+        -8.745289621881015e-29,
+        -5.476058754793014e-30,
+        -3.732223720469259e-29,
+        -2.186342803262472e-29,
+        1.501601122761809e-34,
+        9.636839934009943e-34,
+        8.159116887559374e-34
+      ],
+      [
+        -2.2313051429409865e-28,
+        -1.808902379510977e-27,
+        -1.5020378355125643e-27,
+        -5.578286949452302e-29,
+        -4.522277454369636e-28,
+        -3.75511763979617e-28,
+        9.636839934009943e-34,
+        8.602236877182033e-33,
+        9.220405903264528e-33
+      ],
+      [
+        -2.5350468578542747e-28,
+        -2.24975495417998e-27,
+        -2.128760762664553e-27,
+        -6.337637542427905e-29,
+        -5.624410436464709e-28,
+        -5.321931015244252e-28,
+        8.159116887559374e-34,
+        9.220405903264528e-33,
+        1.1643433147819761e-32
+      ]
+    ],
+    "covariance_of_mean_nine_by_nine": [
+      [
+        1.787242463974346e-24,
+        1.3699604127433476e-23,
+        1.2862333462712198e-23,
+        4.468113004962383e-25,
+        3.424908004686941e-24,
+        3.2155912876994798e-24,
+        -2.7380106073824724e-30,
+        -2.789131428676233e-29,
+        -3.1688085723178434e-29
+      ],
+      [
+        1.3699604127433476e-23,
+        1.1345180041630869e-22,
+        1.120245887233421e-22,
+        3.424905697107905e-24,
+        2.836300663227653e-23,
+        2.800621748567784e-23,
+        -1.8660998141847113e-29,
+        -2.2611279743887213e-28,
+        -2.812193692724975e-28
+      ],
+      [
+        1.2862333462712198e-23,
+        1.120245887233421e-22,
+        1.1648815889353861e-22,
+        3.2155860985810552e-24,
+        2.8006194119517885e-23,
+        2.9122106247158485e-23,
+        -1.0931612027351268e-29,
+        -1.8775472943907054e-28,
+        -2.6609509533306914e-28
+      ],
+      [
+        4.468113004962383e-25,
+        3.424905697107905e-24,
+        3.2155860985810552e-24,
+        1.1170299625089569e-25,
+        8.562281674916479e-25,
+        8.038985051569961e-25,
+        -6.8450734434912675e-31,
+        -6.972858686815377e-30,
+        -7.922046928034881e-30
+      ],
+      [
+        3.424908004686941e-24,
+        2.836300663227653e-23,
+        2.8006194119517885e-23,
+        8.562281674916479e-25,
+        7.090765790186179e-24,
+        7.001566106162084e-24,
+        -4.665279650586574e-30,
+        -5.652846817962044e-29,
+        -7.030513045580886e-29
+      ],
+      [
+        3.2155912876994798e-24,
+        2.800621748567784e-23,
+        2.9122106247158485e-23,
+        8.038985051569961e-25,
+        7.001566106162084e-24,
+        7.280543192824045e-24,
+        -2.73292850407809e-30,
+        -4.693897049745212e-29,
+        -6.652413769055315e-29
+      ],
+      [
+        -2.7380106073824724e-30,
+        -1.8660998141847113e-29,
+        -1.0931612027351268e-29,
+        -6.8450734434912675e-31,
+        -4.665279650586574e-30,
+        -2.73292850407809e-30,
+        1.8770014034522612e-35,
+        1.204604991751243e-34,
+        1.0198896109449217e-34
+      ],
+      [
+        -2.789131428676233e-29,
+        -2.2611279743887213e-28,
+        -1.8775472943907054e-28,
+        -6.972858686815377e-30,
+        -5.652846817962044e-29,
+        -4.693897049745212e-29,
+        1.204604991751243e-34,
+        1.075279609647754e-33,
+        1.152550737908066e-33
+      ],
+      [
+        -3.1688085723178434e-29,
+        -2.812193692724975e-28,
+        -2.6609509533306914e-28,
+        -7.922046928034881e-30,
+        -7.030513045580886e-29,
+        -6.652413769055315e-29,
+        1.0198896109449217e-34,
+        1.152550737908066e-33,
+        1.4554291434774702e-33
+      ]
+    ],
+    "comparisons": [
+      {
+        "p": 4,
+        "amplitude": 0.0001,
+        "mean": 1.3096319971532906e-11,
+        "forecast": 1.167071868652089e-11,
+        "standard_error": 1.3368778792299414e-12,
+        "actual_signal_lower": 7.82006176358093e-12,
+        "actual_signal_upper": 1.8372578179484883e-11,
+        "pointwise95_interval": [
+          9.935106116887857e-12,
+          1.6257533826177955e-11
+        ],
+        "nominal_family95_interval": [
+          7.820085614334914e-12,
+          1.83725543287309e-11
+        ],
+        "numerical_step_proxy": 7.09274224385586e-18,
+        "numerical_phase_proxy": 1.6758011740193496e-17,
+        "forecast_numerically_qualified": false,
+        "direct_sign_qualified": true,
+        "discrepancy": 1.4256012850120163e-12,
+        "sampling_envelope": 5.2762343571979925e-12,
+        "numerical_proxy": 2.3850753984049356e-17,
+        "forecast_proxy": 2.1537902253888288e-11,
+        "target_lower": 3.910030881790465e-13,
+        "target_upper": 9.18628908974244e-13,
+        "combined_allowance": 2.6814160461840265e-11,
+        "assessment": "unresolved"
+      },
+      {
+        "p": 6,
+        "amplitude": 0.0001,
+        "mean": 1.7097748070695429e-10,
+        "forecast": 1.5870550371833715e-10,
+        "standard_error": 1.0651375517570897e-11,
+        "actual_signal_lower": 1.2893960846448702e-10,
+        "actual_signal_upper": 2.1301535294942155e-10,
+        "pointwise95_interval": [
+          1.457909798452845e-10,
+          1.9616398156862408e-10
+        ],
+        "nominal_family95_interval": [
+          1.2893986879763274e-10,
+          2.1301509261627583e-10
+        ],
+        "numerical_step_proxy": 9.986682229889486e-17,
+        "numerical_phase_proxy": 1.6046632342118315e-16,
+        "forecast_numerically_qualified": true,
+        "direct_sign_qualified": true,
+        "discrepancy": 1.2271976988617139e-11,
+        "sampling_envelope": 4.203761190932155e-11,
+        "numerical_proxy": 2.60333145720078e-16,
+        "forecast_proxy": 3.1351293833096606e-13,
+        "target_lower": 6.446980423224351e-12,
+        "target_upper": 1.0650767647471078e-11,
+        "combined_allowance": 4.2351385180798236e-11,
+        "assessment": "unresolved"
+      },
+      {
+        "p": 8,
+        "amplitude": 0.0001,
+        "mean": 2.669992637271269e-10,
+        "forecast": 2.539762295930688e-10,
+        "standard_error": 1.0792968029858081e-11,
+        "actual_signal_lower": 2.2440250245198268e-10,
+        "actual_signal_upper": 3.0959602500227115e-10,
+        "pointwise95_interval": [
+          2.414779497770589e-10,
+          2.9252057767719494e-10
+        ],
+        "nominal_family95_interval": [
+          2.244028309339697e-10,
+          3.0959569652028414e-10
+        ],
+        "numerical_step_proxy": 1.474624786588045e-16,
+        "numerical_phase_proxy": 1.810195083514385e-16,
+        "forecast_numerically_qualified": true,
+        "direct_sign_qualified": true,
+        "discrepancy": 1.3023034134058116e-11,
+        "sampling_envelope": 4.259643279315721e-11,
+        "numerical_proxy": 3.28481987010243e-16,
+        "forecast_proxy": 6.10152618043208e-14,
+        "target_lower": 1.1220125122599136e-11,
+        "target_upper": 1.5479801250113557e-11,
+        "combined_allowance": 4.265777653694854e-11,
+        "assessment": "unresolved"
+      },
+      {
+        "p": 4,
+        "amplitude": 5e-05,
+        "mean": 3.2740807548554974e-12,
+        "forecast": 2.9176796716302224e-12,
+        "standard_error": 3.3421998182468934e-13,
+        "actual_signal_lower": 1.9550173244541415e-12,
+        "actual_signal_upper": 4.593144185256853e-12,
+        "pointwise95_interval": [
+          2.4837760804659375e-12,
+          4.064385429245058e-12
+        ],
+        "nominal_family95_interval": [
+          1.9550201447859607e-12,
+          4.593141364925034e-12
+        ],
+        "numerical_step_proxy": 1.7729642303733832e-18,
+        "numerical_phase_proxy": 1.047367588779558e-18,
+        "forecast_numerically_qualified": false,
+        "direct_sign_qualified": true,
+        "discrepancy": 3.56401083225275e-13,
+        "sampling_envelope": 1.3190606100695366e-12,
+        "numerical_proxy": 2.820331819152941e-18,
+        "forecast_proxy": 5.384475563472072e-12,
+        "target_lower": 9.775086622270708e-14,
+        "target_upper": 2.2965720926284267e-13,
+        "combined_allowance": 6.703538993873428e-12,
+        "assessment": "unresolved"
+      },
+      {
+        "p": 6,
+        "amplitude": 5e-05,
+        "mean": 4.2744379588949146e-11,
+        "forecast": 3.9676375929584287e-11,
+        "standard_error": 2.662849186526751e-12,
+        "actual_signal_lower": 3.223492066761554e-11,
+        "actual_signal_upper": 5.325383851028275e-11,
+        "pointwise95_interval": [
+          3.644774182415388e-11,
+          4.9041017353744414e-11
+        ],
+        "nominal_family95_interval": [
+          3.223495566603852e-11,
+          5.325380351185977e-11
+        ],
+        "numerical_step_proxy": 2.4969626595035885e-17,
+        "numerical_phase_proxy": 1.002879638594352e-17,
+        "forecast_numerically_qualified": true,
+        "direct_sign_qualified": true,
+        "discrepancy": 3.068003659364859e-12,
+        "sampling_envelope": 1.0509423922910626e-11,
+        "numerical_proxy": 3.4998422980979405e-17,
+        "forecast_proxy": 7.837823458274151e-14,
+        "target_lower": 1.611746033380777e-12,
+        "target_upper": 2.6626919255141377e-12,
+        "combined_allowance": 1.0587837155916349e-11,
+        "assessment": "unresolved"
+      },
+      {
+        "p": 8,
+        "amplitude": 5e-05,
+        "mean": 6.674982699151364e-11,
+        "forecast": 6.34940573982672e-11,
+        "standard_error": 2.6982481710962107e-12,
+        "actual_signal_lower": 5.610064628657321e-11,
+        "actual_signal_upper": 7.739900769645408e-11,
+        "pointwise95_interval": [
+          6.036948392932367e-11,
+          7.313017005370362e-11
+        ],
+        "nominal_family95_interval": [
+          5.610069446731859e-11,
+          7.73989595157087e-11
+        ],
+        "numerical_step_proxy": 3.686655249178754e-17,
+        "numerical_phase_proxy": 1.1314192884564381e-17,
+        "forecast_numerically_qualified": true,
+        "direct_sign_qualified": true,
+        "discrepancy": 3.255769593246443e-12,
+        "sampling_envelope": 1.0649132524195052e-11,
+        "numerical_proxy": 4.818074537635192e-17,
+        "forecast_proxy": 1.52538154510802e-14,
+        "target_lower": 2.8050323143286608e-12,
+        "target_upper": 3.869950384822704e-12,
+        "combined_allowance": 1.0664434520391509e-11,
+        "assessment": "unresolved"
+      }
+    ],
+    "paired_amplitude_scaling": [
+      {
+        "p": 4,
+        "mean_full_minus4half": -3.0478890840933473e-18,
+        "standard_error": 4.332437424190061e-18,
+        "actual_full_signal_lower": 7.82006176358093e-12,
+        "actual_full_signal_upper": 1.8372578179484883e-11,
+        "discrepancy": -3.0478890840933473e-18,
+        "sampling_envelope": 1.709876088389541e-17,
+        "numerical_proxy": 3.513208126066112e-17,
+        "forecast_proxy": 0.0,
+        "target_lower": 3.910030881790465e-13,
+        "target_upper": 9.18628908974244e-13,
+        "combined_allowance": 5.223084214455653e-17,
+        "assessment": "supported"
+      },
+      {
+        "p": 6,
+        "mean_full_minus4half": -3.7648842293609475e-17,
+        "standard_error": 3.2791456351430233e-17,
+        "actual_full_signal_lower": 1.2893960846448702e-10,
+        "actual_full_signal_upper": 2.1301535294942155e-10,
+        "discrepancy": -3.7648842293609475e-17,
+        "sampling_envelope": 1.2941751173535283e-16,
+        "numerical_proxy": 4.0032683764399563e-16,
+        "forecast_proxy": 0.0,
+        "target_lower": 6.446980423224351e-12,
+        "target_upper": 1.0650767647471078e-11,
+        "combined_allowance": 5.297443493793485e-16,
+        "assessment": "supported"
+      },
+      {
+        "p": 8,
+        "mean_full_minus4half": -4.423892762981801e-17,
+        "standard_error": 3.815008707037862e-17,
+        "actual_full_signal_lower": 2.2440250245198268e-10,
+        "actual_full_signal_upper": 3.0959602500227115e-10,
+        "discrepancy": -4.423892762981801e-17,
+        "sampling_envelope": 1.5056633313939752e-16,
+        "numerical_proxy": 5.212049685156507e-16,
+        "forecast_proxy": 0.0,
+        "target_lower": 1.1220125122599136e-11,
+        "target_upper": 1.5479801250113557e-11,
+        "combined_allowance": 6.717713016550482e-16,
+        "assessment": "supported"
+      }
+    ],
+    "refinement_operands": [
+      {
+        "library_id": 0,
+        "amplitude": 0.0001,
+        "p": 4,
+        "base_contrast": 1.8670984359411506e-11,
+        "half_timestep_contrast": 1.867098732746427e-11,
+        "sixteen_phase_contrast": 1.8670992738417376e-11
+      },
+      {
+        "library_id": 0,
+        "amplitude": 0.0001,
+        "p": 6,
+        "base_contrast": 2.0886506192043415e-10,
+        "half_timestep_contrast": 2.088651118538453e-10,
+        "sixteen_phase_contrast": 2.0886514215359586e-10
+      },
+      {
+        "library_id": 0,
+        "amplitude": 0.0001,
+        "p": 8,
+        "base_contrast": 3.047039576942349e-10,
+        "half_timestep_contrast": 3.0470403142547425e-10,
+        "sixteen_phase_contrast": 3.047040482039891e-10
+      },
+      {
+        "library_id": 0,
+        "amplitude": 5e-05,
+        "p": 4,
+        "base_contrast": 4.667748083823968e-12,
+        "half_timestep_contrast": 4.667748826288668e-12,
+        "sixteen_phase_contrast": 4.667748607507762e-12
+      },
+      {
+        "library_id": 0,
+        "amplitude": 5e-05,
+        "p": 6,
+        "base_contrast": 5.221629165459616e-11,
+        "half_timestep_contrast": 5.221630413940946e-11,
+        "sixteen_phase_contrast": 5.2216296668994356e-11
+      },
+      {
+        "library_id": 0,
+        "amplitude": 5e-05,
+        "p": 8,
+        "base_contrast": 7.617602988737799e-11,
+        "half_timestep_contrast": 7.617604832065423e-11,
+        "sixteen_phase_contrast": 7.617603554447443e-11
+      },
+      {
+        "library_id": 1,
+        "amplitude": 0.0001,
+        "p": 4,
+        "base_contrast": 7.99576397261099e-12,
+        "half_timestep_contrast": 7.995767518982113e-12,
+        "sixteen_phase_contrast": 7.995756084389872e-12
+      },
+      {
+        "library_id": 1,
+        "amplitude": 0.0001,
+        "p": 6,
+        "base_contrast": 1.3406271806807193e-10,
+        "half_timestep_contrast": 1.3406276153964434e-10,
+        "sixteen_phase_contrast": 1.3406265962690335e-10
+      },
+      {
+        "library_id": 1,
+        "amplitude": 0.0001,
+        "p": 8,
+        "base_contrast": 2.362264467855061e-10,
+        "half_timestep_contrast": 2.362265044455754e-10,
+        "sixteen_phase_contrast": 2.3622638872951703e-10
+      },
+      {
+        "library_id": 1,
+        "amplitude": 5e-05,
+        "p": 4,
+        "base_contrast": 1.998937869817049e-12,
+        "half_timestep_contrast": 1.998938756299164e-12,
+        "sixteen_phase_contrast": 1.9989373768333243e-12
+      },
+      {
+        "library_id": 1,
+        "amplitude": 5e-05,
+        "p": 6,
+        "base_contrast": 3.351566255695682e-11,
+        "half_timestep_contrast": 3.3515673423984374e-11,
+        "sixteen_phase_contrast": 3.351565890483611e-11
+      },
+      {
+        "library_id": 1,
+        "amplitude": 5e-05,
+        "p": 8,
+        "base_contrast": 5.905660606329463e-11,
+        "half_timestep_contrast": 5.905662047799559e-11,
+        "sixteen_phase_contrast": 5.905660243522306e-11
+      }
+    ],
+    "population_transfer_context_scope": "Raw Fplus/Fminus/reference total-transfer operands explain contrast versus total transfer. No extra statistical qualification or multiplicity claim is added for these context quantities."
+  },
+  "uncertainty": {
+    "degrees_of_freedom": 7,
+    "family_size": 9,
+    "nominal_family_critical": 3.946683866320812,
+    "nominal_pointwise_critical": 2.364624251592784,
+    "family_rule": "Student-t7 quantile(1-.05/18), Bonferroni for9 two-sided comparisons. Comparisons need not be independent; RQMC/heavy-tail coverage is nominal and uncalibrated.",
+    "numerical_proxy": "For each population/amplitude:2*max(first2 libraries|half-step-base|)+2*max(first2 libraries|16phase-8phase|); empirical proxy, not a rigorous bound.",
+    "paired_amplitude_proxy": "N_full+4*N_half; paired-library covariance, no independence assumption and no duplicate forecast proxy",
+    "magnitude_decision": "Support if |mean-forecast|+sampling+numerical+forecast_proxy <=.05*max(|mean|-sampling-numerical,0); contradiction uses corresponding conservative upper actual-signal target; else unresolved",
+    "sign_decision": "Qualified if |mean|>sampling+numerical; still conditional on nominal coverage/proxies",
+    "intermediate_time_status": "Frozen9-comparison family applies to endpointT40 only. History bands, if shown, must be labelled pointwise/descriptive; no simultaneous-in-time claim."
+  },
+  "recorded_history": {
+    "times": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "six_order": [
+      "full_p4",
+      "full_p6",
+      "full_p8",
+      "half_p4",
+      "half_p6",
+      "half_p8"
+    ],
+    "raw_library_curves": [
+      {
+        "library_id": 0,
+        "recorded_time_six_contrasts": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -3.820072542795237e-19,
+            -4.79112643490677e-18,
+            -7.279244574431973e-18,
+            -9.55018148619542e-20,
+            -1.1977816147282826e-18,
+            -1.819811148813701e-18
+          ],
+          [
+            -3.1517996259763947e-16,
+            -3.615490918708443e-15,
+            -5.562537491010456e-15,
+            -7.879499062620385e-17,
+            -9.038727296053798e-16,
+            -1.3906343726589658e-15
+          ],
+          [
+            -7.788105025780383e-15,
+            -9.176482351197333e-14,
+            -1.4373262945674724e-13,
+            -1.9470262564957267e-15,
+            -2.294120587919952e-14,
+            -3.593315736576114e-14
+          ],
+          [
+            -5.5100427195739613e-14,
+            -6.465395564383127e-13,
+            -1.0294908599153738e-12,
+            -1.3775106802106373e-14,
+            -1.616348891702676e-13,
+            -2.573727151163221e-13
+          ],
+          [
+            -2.0109286962851957e-13,
+            -2.4692974381900566e-12,
+            -4.113004337287655e-12,
+            -5.027321745861793e-14,
+            -6.173243606532515e-13,
+            -1.0282510869958015e-12
+          ],
+          [
+            -4.671156095955238e-13,
+            -5.995935162811043e-12,
+            -1.050289612925468e-11,
+            -1.167789027583944e-13,
+            -1.498983799238357e-12,
+            -2.625724054349844e-12
+          ],
+          [
+            -7.580876350113154e-13,
+            -1.025668448850248e-11,
+            -1.8814567950576402e-11,
+            -1.8952191008573242e-13,
+            -2.5641711571514694e-12,
+            -4.703642081973496e-12
+          ],
+          [
+            -8.749837654187475e-13,
+            -1.3037976990941902e-11,
+            -2.5681869738177548e-11,
+            -2.187459451604092e-13,
+            -3.2594943564123433e-12,
+            -6.420467730237915e-12
+          ],
+          [
+            -6.392855778131541e-13,
+            -1.2383277990775694e-11,
+            -2.7707208444137257e-11,
+            -1.5982140311257722e-13,
+            -3.0958197453992157e-12,
+            -6.926802773321761e-12
+          ],
+          [
+            -2.1721659660881778e-14,
+            -7.0572740600243944e-12,
+            -2.1681927424745813e-11,
+            -5.430422527984072e-15,
+            -1.7643188299841296e-12,
+            -5.420482761044181e-12
+          ],
+          [
+            8.253212983183873e-13,
+            1.9779605775587795e-12,
+            -9.002297874941885e-12,
+            2.0633032730368627e-13,
+            4.944899402729369e-13,
+            -2.2505752380362545e-12
+          ],
+          [
+            1.6383957059838012e-12,
+            9.546996551995627e-12,
+            2.8630900387419253e-12,
+            4.0959894538750574e-13,
+            2.386749134399076e-12,
+            7.157721324446417e-13
+          ],
+          [
+            2.3247067185610644e-12,
+            1.7996830933715195e-11,
+            1.8019755684609834e-11,
+            5.811767192216963e-13,
+            4.499208075388556e-12,
+            4.50493925751222e-12
+          ],
+          [
+            2.9339532599740266e-12,
+            2.528658960692918e-11,
+            3.072720994253142e-11,
+            7.334883760324291e-13,
+            6.321648024897539e-12,
+            7.681803387621998e-12
+          ],
+          [
+            3.2107329001783807e-12,
+            2.8662734147132418e-11,
+            3.6384173087223494e-11,
+            8.02683300967551e-13,
+            7.1656842776117956e-12,
+            9.096044191599183e-12
+          ],
+          [
+            3.259767297942516e-12,
+            2.9952778366886026e-11,
+            4.0230744300296285e-11,
+            8.149418741196669e-13,
+            7.488194860998513e-12,
+            1.0057686142614979e-11
+          ],
+          [
+            3.846812423770832e-12,
+            3.752110260610404e-11,
+            5.059420601421752e-11,
+            9.617031560296624e-13,
+            9.380275806437478e-12,
+            1.2648551064303153e-11
+          ],
+          [
+            4.531609399491434e-12,
+            4.363200607680135e-11,
+            5.760231034402222e-11,
+            1.1329024210797971e-12,
+            1.0908001571433013e-11,
+            1.4400576538505354e-11
+          ],
+          [
+            4.787910998088603e-12,
+            4.882881733190257e-11,
+            6.731693634299014e-11,
+            1.1969778075199886e-12,
+            1.2207204416157449e-11,
+            1.6829233286124603e-11
+          ],
+          [
+            5.180433214180412e-12,
+            5.491905188225457e-11,
+            7.797841352009645e-11,
+            1.2951083807074697e-12,
+            1.3729763390583376e-11,
+            1.9494603432505817e-11
+          ],
+          [
+            6.096261739199482e-12,
+            6.456317272572037e-11,
+            8.855782602423208e-11,
+            1.5240655590587492e-12,
+            1.6140794421685142e-11,
+            2.213945779772356e-11
+          ],
+          [
+            6.131730960246595e-12,
+            6.80109361896583e-11,
+            9.712854594367328e-11,
+            1.532932972956284e-12,
+            1.70027363919912e-11,
+            2.4282139293863686e-11
+          ],
+          [
+            5.898621314025116e-12,
+            6.573051234951881e-11,
+            9.834965586458152e-11,
+            1.4746554653425166e-12,
+            1.643262833554578e-11,
+            2.4587413456537206e-11
+          ],
+          [
+            6.555051898520584e-12,
+            7.814374610560085e-11,
+            1.182443965734525e-10,
+            1.6387629476715727e-12,
+            1.9535936135936708e-11,
+            2.956109855535234e-11
+          ],
+          [
+            7.203114190405113e-12,
+            8.729660986109407e-11,
+            1.3057963278108494e-10,
+            1.800778613083486e-12,
+            2.1824153142760674e-11,
+            3.264490822270903e-11
+          ],
+          [
+            6.824280492147163e-12,
+            8.82297015680046e-11,
+            1.3594487757549394e-10,
+            1.7060698680025043e-12,
+            2.2057422778961596e-11,
+            3.398621511009047e-11
+          ],
+          [
+            7.888279558319322e-12,
+            9.713928454699439e-11,
+            1.467613200516573e-10,
+            1.9720702406398458e-12,
+            2.4284820751229715e-11,
+            3.6690328307370015e-11
+          ],
+          [
+            9.173896002023154e-12,
+            1.1044025643000646e-10,
+            1.6337567294327408e-10,
+            2.2934745140022485e-12,
+            2.7610065833298118e-11,
+            4.08439186609984e-11
+          ],
+          [
+            9.784331943918045e-12,
+            1.18661356306111e-10,
+            1.7558779769193974e-10,
+            2.4460833915504134e-12,
+            2.966534109618869e-11,
+            4.38969508886067e-11
+          ],
+          [
+            1.040688284277513e-11,
+            1.271187276342951e-10,
+            1.8791526649635017e-10,
+            2.6017212971083437e-12,
+            3.177968733663841e-11,
+            4.697882050980872e-11
+          ],
+          [
+            1.0229798170525e-11,
+            1.3057291916964738e-10,
+            2.0020399637237567e-10,
+            2.5574495945937058e-12,
+            3.264323220196839e-11,
+            5.0051002269339114e-11
+          ],
+          [
+            1.0564054416911795e-11,
+            1.3629576863452722e-10,
+            2.0756467353132324e-10,
+            2.641013366519913e-12,
+            3.407393818355593e-11,
+            5.1891161896973466e-11
+          ],
+          [
+            1.224159466513898e-11,
+            1.5103671038415537e-10,
+            2.2551927054122698e-10,
+            3.0603994043974067e-12,
+            3.775918160577467e-11,
+            5.637981981230962e-11
+          ],
+          [
+            1.4536703476603139e-11,
+            1.6654004021799337e-10,
+            2.4170708059448013e-10,
+            3.634176360216113e-12,
+            4.163502997856505e-11,
+            6.04267991836514e-11
+          ],
+          [
+            1.517919665358343e-11,
+            1.6951852746368742e-10,
+            2.462402607733079e-10,
+            3.794800523699224e-12,
+            4.237964097374602e-11,
+            6.156007233794058e-11
+          ],
+          [
+            1.4277609790471726e-11,
+            1.7337155320964244e-10,
+            2.5820878566477533e-10,
+            3.569402152976683e-12,
+            4.334291182260677e-11,
+            6.455224051438036e-11
+          ],
+          [
+            1.5696977771862626e-11,
+            1.8158719909349603e-10,
+            2.6154821376738736e-10,
+            3.924246114008128e-12,
+            4.53968062616043e-11,
+            6.538705685725452e-11
+          ],
+          [
+            1.6618644529490723e-11,
+            1.9739820686488647e-10,
+            2.832744218486948e-10,
+            4.1546614543591344e-12,
+            4.934954706562729e-11,
+            7.081859535812529e-11
+          ],
+          [
+            1.761585897765261e-11,
+            1.9529375999439534e-10,
+            2.7888060568624256e-10,
+            4.4039655338315e-12,
+            4.8823444808694965e-11,
+            6.972015526861091e-11
+          ],
+          [
+            1.8670984359411506e-11,
+            2.0886506192043415e-10,
+            3.047039576942349e-10,
+            4.667748083823968e-12,
+            5.221629165459616e-11,
+            7.617602988737799e-11
+          ]
+        ]
+      },
+      {
+        "library_id": 1,
+        "recorded_time_six_contrasts": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -4.1665562283802564e-19,
+            -5.3911121474915386e-18,
+            -9.127119458270739e-18,
+            -1.0416390409059849e-19,
+            -1.3477780212767196e-18,
+            -2.2817798473048062e-18
+          ],
+          [
+            -3.2245249273254963e-16,
+            -3.7880338801473965e-15,
+            -6.110159675198329e-15,
+            -8.061312318268477e-17,
+            -9.470084698375134e-16,
+            -1.5275399183115558e-15
+          ],
+          [
+            -7.725033523125724e-15,
+            -9.42378577046007e-14,
+            -1.5417111621205067e-13,
+            -1.9312583810513517e-15,
+            -2.355946442862888e-14,
+            -3.85427790564804e-14
+          ],
+          [
+            -5.6545998045966847e-14,
+            -7.060924662758516e-13,
+            -1.2026919876588808e-12,
+            -1.4136499514811685e-14,
+            -1.7652311663490235e-13,
+            -3.006729970685859e-13
+          ],
+          [
+            -2.114622156835879e-13,
+            -2.657327069602557e-12,
+            -4.598873979342791e-12,
+            -5.2865553966023457e-14,
+            -6.643317683855094e-13,
+            -1.149718497279316e-12
+          ],
+          [
+            -4.956621796682262e-13,
+            -6.377650786197836e-12,
+            -1.134143904768418e-11,
+            -1.23915545273756e-13,
+            -1.5944127047732936e-12,
+            -2.8353597830488563e-12
+          ],
+          [
+            -7.934913807093161e-13,
+            -1.124601669139381e-11,
+            -2.1477288715812396e-11,
+            -1.983728466722037e-13,
+            -2.811504211215925e-12,
+            -5.369322282753403e-12
+          ],
+          [
+            -8.67938346878495e-13,
+            -1.3803494690324922e-11,
+            -2.8744932359147087e-11,
+            -2.1698459025566888e-13,
+            -3.4508737796221427e-12,
+            -7.18623339220632e-12
+          ],
+          [
+            -6.351192284151013e-13,
+            -1.2889493715221133e-11,
+            -3.037876722978361e-11,
+            -1.5877981277710417e-13,
+            -3.2223736408028177e-12,
+            -7.594692440318949e-12
+          ],
+          [
+            -2.1057026158818185e-14,
+            -7.821579534477779e-12,
+            -2.4897931640607228e-11,
+            -5.264261489074157e-15,
+            -1.955395173877287e-12,
+            -6.224483823514287e-12
+          ],
+          [
+            7.869764883005516e-13,
+            2.7114557146909734e-14,
+            -1.3438767852658113e-11,
+            1.9674412428232122e-13,
+            6.7784034876069045e-15,
+            -3.3596928268761573e-12
+          ],
+          [
+            1.6794911245665975e-12,
+            1.0061552809770523e-11,
+            1.7740131158526773e-12,
+            4.198728007418765e-13,
+            2.5153882058775464e-12,
+            4.4350286392225014e-13
+          ],
+          [
+            2.192649617144792e-12,
+            1.6463639815106675e-11,
+            1.4530595032762729e-11,
+            5.481624444024388e-13,
+            4.115910292557504e-12,
+            3.632649084729383e-12
+          ],
+          [
+            2.6097254428490364e-12,
+            2.247273293469729e-11,
+            2.60006609925342e-11,
+            6.524314183527638e-13,
+            5.618183879003326e-12,
+            6.50016620597973e-12
+          ],
+          [
+            2.8549534139153763e-12,
+            2.600769228901937e-11,
+            3.350761580936233e-11,
+            7.137384202991579e-13,
+            6.501923714619145e-12,
+            8.376904786242241e-12
+          ],
+          [
+            3.075210781653301e-12,
+            2.8761653415882873e-11,
+            3.751087184681263e-11,
+            7.688027590988549e-13,
+            7.190413829043395e-12,
+            9.377718252659018e-12
+          ],
+          [
+            3.43208612873947e-12,
+            3.1943590305066155e-11,
+            4.1018823767374113e-11,
+            8.580215855978488e-13,
+            7.985897793761087e-12,
+            1.025470545807525e-11
+          ],
+          [
+            3.8499757218493624e-12,
+            3.547531861472195e-11,
+            4.6227746970607006e-11,
+            9.624939689189207e-13,
+            8.868829381554554e-12,
+            1.1556935298718053e-11
+          ],
+          [
+            4.499442189343658e-12,
+            4.5585915691809916e-11,
+            6.176370289626227e-11,
+            1.1248606168633382e-12,
+            1.139647897206637e-11,
+            1.5440924816639285e-11
+          ],
+          [
+            4.8443383643354364e-12,
+            5.2458620770373186e-11,
+            7.220109229253035e-11,
+            1.2110846107255893e-12,
+            1.3114655183289135e-11,
+            1.8050272703908982e-11
+          ],
+          [
+            5.103906236040198e-12,
+            5.4846798106376864e-11,
+            7.629925233480434e-11,
+            1.275976728954877e-12,
+            1.3711700792407307e-11,
+            1.907481410424699e-11
+          ],
+          [
+            4.852455915198668e-12,
+            5.662881187791757e-11,
+            8.455991051259062e-11,
+            1.213114032807256e-12,
+            1.4157203550956716e-11,
+            2.1139978587349524e-11
+          ],
+          [
+            6.089403899591186e-12,
+            6.66977181793989e-11,
+            9.485860270170415e-11,
+            1.5223511973698265e-12,
+            1.667443116461304e-11,
+            2.3714652160248946e-11
+          ],
+          [
+            5.871699781002784e-12,
+            7.015559082355957e-11,
+            1.0510023636099869e-10,
+            1.4679251796097839e-12,
+            1.7538898797311058e-11,
+            2.627505866302807e-11
+          ],
+          [
+            5.192999278454765e-12,
+            7.194129727630352e-11,
+            1.1465242212613296e-10,
+            1.298249621497469e-12,
+            1.7985322886878578e-11,
+            2.8663104031586253e-11
+          ],
+          [
+            6.766735612100666e-12,
+            8.448006096477812e-11,
+            1.2770959510351754e-10,
+            1.6916843416881758e-12,
+            2.112001734895323e-11,
+            3.192739932767286e-11
+          ],
+          [
+            6.366570674276715e-12,
+            8.38318123283778e-11,
+            1.3323341498151009e-10,
+            1.5916430204354409e-12,
+            2.0957957340606786e-11,
+            3.3308359755508225e-11
+          ],
+          [
+            6.71553376128935e-12,
+            8.42120370845196e-11,
+            1.3397503042391215e-10,
+            1.67888365035728e-12,
+            2.105301148879095e-11,
+            3.3493760070946097e-11
+          ],
+          [
+            6.046104862304822e-12,
+            7.760496673400393e-11,
+            1.2946997413944364e-10,
+            1.5115258505528014e-12,
+            1.940123826643814e-11,
+            3.236749186204168e-11
+          ],
+          [
+            6.467000753064141e-12,
+            8.666882868179662e-11,
+            1.418742011219068e-10,
+            1.6167503392260088e-12,
+            2.16672123225266e-11,
+            3.546855809206996e-11
+          ],
+          [
+            5.852729240972814e-12,
+            8.530492538527516e-11,
+            1.4584364748259622e-10,
+            1.463182310891656e-12,
+            2.1326230136749645e-11,
+            3.6460912130865885e-11
+          ],
+          [
+            6.1866202235573646e-12,
+            9.882179102054039e-11,
+            1.6757884083457386e-10,
+            1.5466552524138438e-12,
+            2.470545847332821e-11,
+            4.189472723047627e-11
+          ],
+          [
+            7.076926692900428e-12,
+            1.0945326951978958e-10,
+            1.8178545825487461e-10,
+            1.7692324632073688e-12,
+            2.736332360162158e-11,
+            4.5446369720184975e-11
+          ],
+          [
+            7.063099530080945e-12,
+            1.1323450765804203e-10,
+            1.9302926375517144e-10,
+            1.7657763925082986e-12,
+            2.830864847778888e-11,
+            4.825734673595978e-11
+          ],
+          [
+            7.812943683006535e-12,
+            1.154917969091502e-10,
+            1.9694714092712839e-10,
+            1.9532371536311575e-12,
+            2.8872956544940177e-11,
+            4.9236793956685056e-11
+          ],
+          [
+            7.364489000573909e-12,
+            1.2182705804548113e-10,
+            2.0875530352434932e-10,
+            1.841122183806896e-12,
+            3.045676954935681e-11,
+            5.2188826895687934e-11
+          ],
+          [
+            7.447955753364913e-12,
+            1.1608230036279693e-10,
+            2.0383467828062281e-10,
+            1.8619886806677182e-12,
+            2.9020569489344017e-11,
+            5.0958671661490345e-11
+          ],
+          [
+            8.558673503885199e-12,
+            1.2136893601007126e-10,
+            2.058152302409518e-10,
+            2.139668407987531e-12,
+            3.034223213179793e-11,
+            5.145380580627455e-11
+          ],
+          [
+            8.573435904473589e-12,
+            1.309064901074946e-10,
+            2.2120652092317687e-10,
+            2.143361820944622e-12,
+            3.2726662675838115e-11,
+            5.530167329116791e-11
+          ],
+          [
+            7.99576397261099e-12,
+            1.3406271806807193e-10,
+            2.362264467855061e-10,
+            1.998937869817049e-12,
+            3.351566255695682e-11,
+            5.905660606329463e-11
+          ]
+        ]
+      },
+      {
+        "library_id": 2,
+        "recorded_time_six_contrasts": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -5.630760713210184e-19,
+            -5.830305021972873e-18,
+            -8.348078549761021e-18,
+            -1.4076901816087864e-19,
+            -1.4575762600040019e-18,
+            -2.087019640120162e-18
+          ],
+          [
+            -3.151052956728697e-16,
+            -3.767215774949326e-15,
+            -6.2017295033462675e-15,
+            -7.877632397021544e-17,
+            -9.418039440499473e-16,
+            -1.5504323761142428e-15
+          ],
+          [
+            -7.901007222227062e-15,
+            -9.556913205396677e-14,
+            -1.5453934720187323e-13,
+            -1.9752518055825584e-15,
+            -2.3892283014596586e-14,
+            -3.863483680277696e-14
+          ],
+          [
+            -5.5579676922592825e-14,
+            -6.923003426930493e-13,
+            -1.1491134182676952e-12,
+            -1.38949192330785e-14,
+            -1.7307508573034982e-13,
+            -2.8727835470747484e-13
+          ],
+          [
+            -2.0275273894717632e-13,
+            -2.5792333633389526e-12,
+            -4.5001318740530406e-12,
+            -5.068818478221696e-14,
+            -6.448083418974062e-13,
+            -1.1250329712369765e-12
+          ],
+          [
+            -4.695116109353721e-13,
+            -6.068135297816364e-12,
+            -1.0841161783512563e-11,
+            -1.1737790306008483e-13,
+            -1.517033832412473e-12,
+            -2.710290466741073e-12
+          ],
+          [
+            -7.551543506018925e-13,
+            -1.0365668186231276e-11,
+            -1.954099719253437e-11,
+            -1.887885891271614e-13,
+            -2.591417085461192e-12,
+            -4.88524940331976e-12
+          ],
+          [
+            -9.251777895432222e-13,
+            -1.4519984830788397e-11,
+            -2.9390546236054935e-11,
+            -2.312944517643225e-13,
+            -3.629996331581928e-12,
+            -7.347636899168944e-12
+          ],
+          [
+            -6.642544448188077e-13,
+            -1.3332736525940018e-11,
+            -3.0201457299669226e-11,
+            -1.660636176016908e-13,
+            -3.33318435412505e-12,
+            -7.550364955375228e-12
+          ],
+          [
+            -6.841328792807787e-14,
+            -8.493839643369077e-12,
+            -2.5412755727956534e-11,
+            -1.7103327608978788e-14,
+            -2.1234602084511767e-12,
+            -6.3531898401589254e-12
+          ],
+          [
+            7.460749060334005e-13,
+            -7.711349927491671e-13,
+            -1.4567296336943364e-11,
+            1.8651873038020888e-13,
+            -1.9278398324203824e-13,
+            -3.64182498596812e-12
+          ],
+          [
+            1.541184359040642e-12,
+            9.389316036846989e-12,
+            3.060021784243665e-12,
+            3.8529611402901394e-13,
+            2.347329074102543e-12,
+            7.650051539694095e-13
+          ],
+          [
+            1.886694868887769e-12,
+            1.54342776840298e-11,
+            1.4649158084814196e-11,
+            4.716737596538074e-13,
+            3.8585697910224974e-12,
+            3.66228988297132e-12
+          ],
+          [
+            2.113322335495863e-12,
+            1.9063665668101947e-11,
+            2.2451803345677e-11,
+            5.283306433740739e-13,
+            4.765917060374078e-12,
+            5.612951735113584e-12
+          ],
+          [
+            2.17293787071748e-12,
+            2.214873278542001e-11,
+            2.997135169372495e-11,
+            5.432345317260527e-13,
+            5.537183871150996e-12,
+            7.492838833566623e-12
+          ],
+          [
+            2.1886371115349838e-12,
+            2.2777190497851778e-11,
+            3.13597205790692e-11,
+            5.471593408139817e-13,
+            5.694298006803181e-12,
+            7.839930255715659e-12
+          ],
+          [
+            2.4041298865954482e-12,
+            2.730015891652528e-11,
+            3.811537574303812e-11,
+            6.010325101699917e-13,
+            6.825039774672762e-12,
+            9.528843277336076e-12
+          ],
+          [
+            2.7043013836731027e-12,
+            3.2057006243421884e-11,
+            4.547772432815974e-11,
+            6.760753950861468e-13,
+            8.014251408431292e-12,
+            1.1369429694910331e-11
+          ],
+          [
+            3.262292953103832e-12,
+            3.798862860770344e-11,
+            5.5519980276727064e-11,
+            8.155732411860219e-13,
+            9.497156526071773e-12,
+            1.3879993325528339e-11
+          ],
+          [
+            4.5167054653192596e-12,
+            5.199638704201196e-11,
+            7.374105376146318e-11,
+            1.1291764619877587e-12,
+            1.2999097370116796e-11,
+            1.8435263570865073e-11
+          ],
+          [
+            4.708219071648e-12,
+            5.859042466097813e-11,
+            8.719811518044523e-11,
+            1.1770548418129776e-12,
+            1.4647606692620412e-11,
+            2.1799529314569027e-11
+          ],
+          [
+            5.335207183084418e-12,
+            6.448114176202891e-11,
+            9.638579055911805e-11,
+            1.3338019508313645e-12,
+            1.6120286705228417e-11,
+            2.40964490108469e-11
+          ],
+          [
+            5.443837518082911e-12,
+            6.94672429132901e-11,
+            1.0910936806822811e-10,
+            1.3609593968427992e-12,
+            1.7366811125230642e-11,
+            2.7277342765956218e-11
+          ],
+          [
+            7.1598342044179e-12,
+            8.537063176498945e-11,
+            1.264039931978298e-10,
+            1.7899588527582355e-12,
+            2.1342660589911852e-11,
+            3.160100082143755e-11
+          ],
+          [
+            8.389153759713558e-12,
+            9.657210228039725e-11,
+            1.4228173362236406e-10,
+            2.0972886151171117e-12,
+            2.4143027863953288e-11,
+            3.5570435715698404e-11
+          ],
+          [
+            9.296530259018009e-12,
+            1.0589419989407654e-10,
+            1.5513526446983802e-10,
+            2.3241326701878473e-12,
+            2.647355115303559e-11,
+            3.878381706377184e-11
+          ],
+          [
+            1.0446253683836518e-11,
+            1.1730008620511384e-10,
+            1.6964076953646294e-10,
+            2.611563754385907e-12,
+            2.932502324826902e-11,
+            4.241019281725041e-11
+          ],
+          [
+            1.1082753568065147e-11,
+            1.2170036730697886e-10,
+            1.7413192776487282e-10,
+            2.7706888253618486e-12,
+            3.042509410238471e-11,
+            4.353298363849698e-11
+          ],
+          [
+            1.1163550069228948e-11,
+            1.238276668032529e-10,
+            1.8094662626026781e-10,
+            2.7908877340987383e-12,
+            3.095692206195089e-11,
+            4.523666512948749e-11
+          ],
+          [
+            1.051679256086018e-11,
+            1.1619082487542626e-10,
+            1.7423471006198183e-10,
+            2.6291983815815405e-12,
+            2.9047703156968538e-11,
+            4.3558671871851666e-11
+          ],
+          [
+            1.0205280888481574e-11,
+            1.1689692087139663e-10,
+            1.757582590865745e-10,
+            2.5513200509633897e-12,
+            2.922422810257735e-11,
+            4.3939560121017794e-11
+          ],
+          [
+            1.0876000928078372e-11,
+            1.353098201624013e-10,
+            2.040074992523939e-10,
+            2.7190004321076818e-12,
+            3.382746533070676e-11,
+            5.100188587370439e-11
+          ],
+          [
+            1.258394194488711e-11,
+            1.4645196236204202e-10,
+            2.199722515410344e-10,
+            3.1459857632872304e-12,
+            3.661298824356957e-11,
+            5.499306013599838e-11
+          ],
+          [
+            1.3460134668004305e-11,
+            1.6205174712488272e-10,
+            2.4072482408332595e-10,
+            3.3650336093015074e-12,
+            4.0512939463018776e-11,
+            6.018120771645111e-11
+          ],
+          [
+            1.451190033022332e-11,
+            1.6605281211195632e-10,
+            2.4406098555903795e-10,
+            3.6279753553133553e-12,
+            4.1513200996490195e-11,
+            6.101524471201922e-11
+          ],
+          [
+            1.3512361710911225e-11,
+            1.617093763244976e-10,
+            2.4210908513309725e-10,
+            3.3780896126246732e-12,
+            4.04273504687905e-11,
+            6.052728852017409e-11
+          ],
+          [
+            1.4760990053374742e-11,
+            1.671269449735423e-10,
+            2.4973764233532804e-10,
+            3.690248003020869e-12,
+            4.1781753872374124e-11,
+            6.24344412901888e-11
+          ],
+          [
+            1.409546304672852e-11,
+            1.70964825164171e-10,
+            2.591652810982738e-10,
+            3.523865043487581e-12,
+            4.274120262932439e-11,
+            6.479131776231368e-11
+          ],
+          [
+            1.5801350565070028e-11,
+            1.7930127838304813e-10,
+            2.6317159547236356e-10,
+            3.950340077661609e-12,
+            4.482535144527068e-11,
+            6.579293658038027e-11
+          ],
+          [
+            1.535947897064613e-11,
+            1.8466167640131882e-10,
+            2.8119219350097915e-10,
+            3.839867388104223e-12,
+            4.616540889241291e-11,
+            7.029803270738187e-11
+          ]
+        ]
+      },
+      {
+        "library_id": 3,
+        "recorded_time_six_contrasts": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -5.144605089510964e-19,
+            -5.270739799886678e-18,
+            -7.586991893212478e-18,
+            -1.2861512598819455e-19,
+            -1.3176849504834286e-18,
+            -1.89674798314278e-18
+          ],
+          [
+            -3.211257389240954e-16,
+            -3.742459649444437e-15,
+            -5.953550719562802e-15,
+            -8.028143475790848e-17,
+            -9.356149124246724e-16,
+            -1.488387679824672e-15
+          ],
+          [
+            -7.867389929510753e-15,
+            -9.478999272528207e-14,
+            -1.5681232859879559e-13,
+            -1.966847482422589e-15,
+            -2.3697498182849257e-14,
+            -3.920308215274096e-14
+          ],
+          [
+            -5.4993302378014465e-14,
+            -6.768292522547062e-13,
+            -1.1286794357806549e-12,
+            -1.3748325597551133e-14,
+            -1.6920731312778175e-13,
+            -2.8216985909513625e-13
+          ],
+          [
+            -2.028812909232507e-13,
+            -2.612461947612001e-12,
+            -4.500113483019276e-12,
+            -5.0720322780854935e-14,
+            -6.531154879911176e-13,
+            -1.1250283734390512e-12
+          ],
+          [
+            -4.565202773537695e-13,
+            -6.104086544173095e-12,
+            -1.1191013963386567e-11,
+            -1.1413006971800153e-13,
+            -1.5260216451048386e-12,
+            -2.7977535146125646e-12
+          ],
+          [
+            -7.345911859549911e-13,
+            -1.037185135148729e-11,
+            -2.0331898183194937e-11,
+            -1.8364779811477523e-13,
+            -2.5929628794246056e-12,
+            -5.082974656548951e-12
+          ],
+          [
+            -8.486523080750228e-13,
+            -1.3604399190176377e-11,
+            -2.8779592990723887e-11,
+            -2.121630811493987e-13,
+            -3.401099914540084e-12,
+            -7.194898566849017e-12
+          ],
+          [
+            -5.681682267986217e-13,
+            -1.2907454345171002e-11,
+            -3.1271547460865314e-11,
+            -1.4204206432617705e-13,
+            -3.2268638342802512e-12,
+            -7.817887565247358e-12
+          ],
+          [
+            8.554811726025483e-14,
+            -6.621620071975625e-12,
+            -2.257164358874444e-11,
+            2.1387021523830955e-14,
+            -1.6554053451789768e-12,
+            -5.642911865858069e-12
+          ],
+          [
+            9.412655454088168e-13,
+            1.2267081327138563e-12,
+            -1.2045086383059343e-11,
+            2.353163871581715e-13,
+            3.0667677024813205e-13,
+            -3.0112725120250786e-12
+          ],
+          [
+            1.788742123045995e-12,
+            1.0667676358169368e-11,
+            2.5436563728254084e-12,
+            4.47185549635811e-13,
+            2.666919075160007e-12,
+            6.359136382383729e-13
+          ],
+          [
+            2.3954112449636496e-12,
+            1.7802317053860734e-11,
+            1.544989581406805e-11,
+            5.988528523049772e-13,
+            4.450579602590174e-12,
+            3.8624742549384284e-12
+          ],
+          [
+            2.614518113379876e-12,
+            2.2530797474194847e-11,
+            2.679058468926139e-11,
+            6.536295892888226e-13,
+            5.632700002577148e-12,
+            6.697647078478652e-12
+          ],
+          [
+            2.8348863459263493e-12,
+            2.6831516246262527e-11,
+            3.550968818085806e-11,
+            7.087216579762513e-13,
+            6.7078797616503875e-12,
+            8.877422973310481e-12
+          ],
+          [
+            2.972152040552016e-12,
+            2.928778419373325e-11,
+            3.9839651395676883e-11,
+            7.430380762001818e-13,
+            7.321946537731982e-12,
+            9.959913186648984e-12
+          ],
+          [
+            2.9768679897879138e-12,
+            2.929053974806693e-11,
+            3.937287442225944e-11,
+            7.442170273766379e-13,
+            7.322634859710358e-12,
+            9.843217776111759e-12
+          ],
+          [
+            3.4443935014387074e-12,
+            3.611827033498827e-11,
+            4.85941240977569e-11,
+            8.610983994126406e-13,
+            9.029567404247452e-12,
+            1.2148529794445879e-11
+          ],
+          [
+            4.2402420493473065e-12,
+            4.4717983300061015e-11,
+            6.064265345782476e-11,
+            1.060060568505475e-12,
+            1.1179495695629449e-11,
+            1.516066215122107e-11
+          ],
+          [
+            5.123458007123702e-12,
+            5.497044959527194e-11,
+            7.487778513654729e-11,
+            1.2808645676908423e-12,
+            1.3742612803483715e-11,
+            1.8719446176724286e-11
+          ],
+          [
+            5.472702915687747e-12,
+            6.059264097725345e-11,
+            8.537263847699609e-11,
+            1.3681758266219555e-12,
+            1.514816129087694e-11,
+            2.1343160827950478e-11
+          ],
+          [
+            6.2540753144552006e-12,
+            6.928146653945115e-11,
+            1.002158380802753e-10,
+            1.5635190786995096e-12,
+            1.7320368527715417e-11,
+            2.505396135428154e-11
+          ],
+          [
+            6.554348144286248e-12,
+            7.491140426318961e-11,
+            1.1203063679392377e-10,
+            1.6385871716387798e-12,
+            1.872785242608534e-11,
+            2.8007660734340328e-11
+          ],
+          [
+            7.784997286948593e-12,
+            8.765510523637544e-11,
+            1.2792319622456092e-10,
+            1.946249534522807e-12,
+            2.191377771185205e-11,
+            3.198079988601705e-11
+          ],
+          [
+            7.762520259427058e-12,
+            8.982678871713223e-11,
+            1.3261216172540198e-10,
+            1.940630362187026e-12,
+            2.2456699078112704e-11,
+            3.315304050695697e-11
+          ],
+          [
+            8.548022831163923e-12,
+            9.838798816904109e-11,
+            1.4428917552364536e-10,
+            2.13700579914926e-12,
+            2.4596997550616215e-11,
+            3.607229372687499e-11
+          ],
+          [
+            1.0778101468330907e-11,
+            1.132827333980175e-10,
+            1.605593543745025e-10,
+            2.6945261556709387e-12,
+            2.8320687148073373e-11,
+            4.0139839391565434e-11
+          ],
+          [
+            1.1906149332845448e-11,
+            1.2945587469363946e-10,
+            1.8051815676748793e-10,
+            2.976537523969323e-12,
+            3.236397100027798e-11,
+            4.512954197289354e-11
+          ],
+          [
+            1.260372817847276e-11,
+            1.3581089248249806e-10,
+            1.891268592653799e-10,
+            3.150932229471793e-12,
+            3.395272635092323e-11,
+            4.728171814118307e-11
+          ],
+          [
+            1.3087959267335749e-11,
+            1.3604877224045642e-10,
+            1.8865978159981766e-10,
+            3.271990393735756e-12,
+            3.401220077714953e-11,
+            4.716495393827276e-11
+          ],
+          [
+            1.338870749832924e-11,
+            1.4230438474903098e-10,
+            1.9925763651630577e-10,
+            3.3471775708341703e-12,
+            3.5576102694964794e-11,
+            4.9814415670162665e-11
+          ],
+          [
+            1.3158036945277809e-11,
+            1.557829005802536e-10,
+            2.2228657461150546e-10,
+            3.289508901713015e-12,
+            3.8945727262857546e-11,
+            5.5571647075585686e-11
+          ],
+          [
+            1.4082540154123068e-11,
+            1.672653718327659e-10,
+            2.414129309415391e-10,
+            3.5206341826586222e-12,
+            4.181634149241658e-11,
+            6.035323538272854e-11
+          ],
+          [
+            1.497920564354253e-11,
+            1.7130800638670342e-10,
+            2.484227851705408e-10,
+            3.744802511654054e-12,
+            4.28270020873356e-11,
+            6.210569278539972e-11
+          ],
+          [
+            1.6724827503166056e-11,
+            1.8176210615694621e-10,
+            2.595545154834754e-10,
+            4.181208836926255e-12,
+            4.544053197659763e-11,
+            6.488863086045278e-11
+          ],
+          [
+            1.7112863196546868e-11,
+            1.9160056536873437e-10,
+            2.734407120348845e-10,
+            4.2782189688942484e-12,
+            4.7900163185639e-11,
+            6.836019159704742e-11
+          ],
+          [
+            1.6394416162091936e-11,
+            1.9376245943947172e-10,
+            2.790073267284574e-10,
+            4.09860296303828e-12,
+            4.8440614627809646e-11,
+            6.97518423492201e-11
+          ],
+          [
+            1.7381558584742845e-11,
+            1.995729202324285e-10,
+            2.8376832572554506e-10,
+            4.3453910114782555e-12,
+            4.989325228943966e-11,
+            7.094211530815137e-11
+          ],
+          [
+            1.8473005686210946e-11,
+            2.1245488312869915e-10,
+            2.974430494938667e-10,
+            4.618252525921512e-12,
+            5.311371166531472e-11,
+            7.436073585970585e-11
+          ],
+          [
+            1.7657108782679987e-11,
+            2.1694740178097276e-10,
+            3.1184803122051846e-10,
+            4.41428101365607e-12,
+            5.423689207682492e-11,
+            7.796205708256954e-11
+          ]
+        ]
+      },
+      {
+        "library_id": 4,
+        "recorded_time_six_contrasts": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -5.07438521275511e-19,
+            -5.4062469893958975e-18,
+            -8.049685812486808e-18,
+            -1.2685963045192734e-19,
+            -1.3515617452830022e-18,
+            -2.01242144465957e-18
+          ],
+          [
+            -3.088583653890596e-16,
+            -3.69213143125324e-15,
+            -5.7894209434294686e-15,
+            -7.721459132213355e-17,
+            -9.2303285765623e-16,
+            -1.4473552356951712e-15
+          ],
+          [
+            -7.921315770870078e-15,
+            -9.4917410938549e-14,
+            -1.5258299561059067e-13,
+            -1.9803289427273728e-15,
+            -2.3729352734572975e-14,
+            -3.8145748902859e-14
+          ],
+          [
+            -5.6234382411229066e-14,
+            -6.807660239848353e-13,
+            -1.1020950633866392e-12,
+            -1.4058595606077319e-14,
+            -1.7019150605739042e-13,
+            -2.7552376598936193e-13
+          ],
+          [
+            -1.9989462763799316e-13,
+            -2.5321285448672336e-12,
+            -4.308398691149823e-12,
+            -4.997365696004118e-14,
+            -6.330321372918408e-13,
+            -1.0770996754339087e-12
+          ],
+          [
+            -4.749144220886638e-13,
+            -6.1709187209545595e-12,
+            -1.0859625877912606e-11,
+            -1.187286059147472e-13,
+            -1.5427296894085307e-12,
+            -2.714906493001269e-12
+          ],
+          [
+            -7.592039490743608e-13,
+            -1.0153462597640322e-11,
+            -1.8380507322048474e-11,
+            -1.8980098869792143e-13,
+            -2.5383656866696857e-12,
+            -4.595126931503995e-12
+          ],
+          [
+            -8.890994539384233e-13,
+            -1.3497193707611822e-11,
+            -2.674648446977722e-11,
+            -2.2227486756263136e-13,
+            -3.3742985426129603e-12,
+            -6.686621435678401e-12
+          ],
+          [
+            -5.96201986378364e-13,
+            -1.2870913190589558e-11,
+            -2.9688646729885674e-11,
+            -1.4905050322989514e-13,
+            -3.217728525489479e-12,
+            -7.42216233884974e-12
+          ],
+          [
+            -2.4494967460077384e-14,
+            -7.774925139656181e-12,
+            -2.398865729519608e-11,
+            -6.123747520328151e-15,
+            -1.9437315663180693e-12,
+            -5.997165196362108e-12
+          ],
+          [
+            7.203715081626149e-13,
+            -4.2519245052072466e-13,
+            -1.3151651972777135e-11,
+            1.8009288043024712e-13,
+            -1.0629832580523377e-13,
+            -3.2879138088768306e-12
+          ],
+          [
+            1.6217469004855628e-12,
+            1.0420965090851795e-11,
+            3.585594671356125e-12,
+            4.054367452096935e-13,
+            2.6052413044049107e-12,
+            8.963983237586605e-13
+          ],
+          [
+            2.154594034710382e-12,
+            1.7739402447498775e-11,
+            1.7436754896601526e-11,
+            5.386485502687049e-13,
+            4.434850969754634e-12,
+            4.35918907765159e-12
+          ],
+          [
+            2.237304299708877e-12,
+            2.085111163763045e-11,
+            2.6856883175708e-11,
+            5.593261299477114e-13,
+            5.2127784774644815e-12,
+            6.714221612529745e-12
+          ],
+          [
+            2.539192393421061e-12,
+            2.6018078324340717e-11,
+            3.60338081320514e-11,
+            6.347981686104853e-13,
+            6.504520237636589e-12,
+            9.008452835975917e-12
+          ],
+          [
+            2.597943133150927e-12,
+            2.7972091603407946e-11,
+            3.969399872559666e-11,
+            6.494858458979575e-13,
+            6.993023349317357e-12,
+            9.923499910362425e-12
+          ],
+          [
+            2.790184225896567e-12,
+            3.079955476375035e-11,
+            4.362982119299122e-11,
+            6.975461074450695e-13,
+            7.699888791222921e-12,
+            1.0907454582032577e-11
+          ],
+          [
+            2.9637414889490525e-12,
+            3.497529168383504e-11,
+            5.106010209615157e-11,
+            7.409353770236577e-13,
+            8.74382245445499e-12,
+            1.2765023933377318e-11
+          ],
+          [
+            3.454612223713572e-12,
+            4.1414068925295114e-11,
+            6.08925008168229e-11,
+            8.636530984655432e-13,
+            1.0353517027148854e-11,
+            1.5223123939025975e-11
+          ],
+          [
+            4.079053275737141e-12,
+            4.8308926983186546e-11,
+            7.030072425897236e-11,
+            1.0197634172814392e-12,
+            1.2077232663614894e-11,
+            1.757518171187015e-11
+          ],
+          [
+            4.75312278702415e-12,
+            5.653297890268132e-11,
+            8.301238082688975e-11,
+            1.1882808038869313e-12,
+            1.4133245830767229e-11,
+            2.0753096354837292e-11
+          ],
+          [
+            5.302820573564376e-12,
+            6.249675166624956e-11,
+            9.351434242334753e-11,
+            1.3257052959806334e-12,
+            1.5624189001401866e-11,
+            2.3378586751400327e-11
+          ],
+          [
+            6.193154632674923e-12,
+            7.286818171645979e-11,
+            1.0959185065399063e-10,
+            1.5482888149586936e-12,
+            1.8217046871237464e-11,
+            2.739796406027364e-11
+          ],
+          [
+            6.543845765395236e-12,
+            7.198299837142736e-11,
+            1.0965452772304995e-10,
+            1.6359614798843382e-12,
+            1.799574832971018e-11,
+            2.7413629377925703e-11
+          ],
+          [
+            7.464080462550321e-12,
+            8.922495422704663e-11,
+            1.3662530955749768e-10,
+            1.8660203422202124e-12,
+            2.2306239573041705e-11,
+            3.415632758086676e-11
+          ],
+          [
+            7.440484731721305e-12,
+            9.33784403018782e-11,
+            1.4404351557036874e-10,
+            1.8601211034271314e-12,
+            2.334461001944306e-11,
+            3.601087763051456e-11
+          ],
+          [
+            7.188245218057139e-12,
+            9.40481427945475e-11,
+            1.467106296030301e-10,
+            1.7970619640439346e-12,
+            2.351203759942261e-11,
+            3.6677656375765845e-11
+          ],
+          [
+            6.932864748170737e-12,
+            1.0076996801158941e-10,
+            1.6044069866057208e-10,
+            1.7332167057522708e-12,
+            2.5192498496831236e-11,
+            4.0110183049921914e-11
+          ],
+          [
+            6.9985396264461e-12,
+            9.90808780149109e-11,
+            1.5909817811872378e-10,
+            1.7496346094169318e-12,
+            2.4770221914763378e-11,
+            3.977454962270621e-11
+          ],
+          [
+            7.432736362963444e-12,
+            1.019250839587278e-10,
+            1.621942795934449e-10,
+            1.858184957983353e-12,
+            2.5481275753608055e-11,
+            4.054857279401167e-11
+          ],
+          [
+            8.066824720522477e-12,
+            1.1204055547615723e-10,
+            1.7258406281618164e-10,
+            2.0167065660019433e-12,
+            2.801014408496497e-11,
+            4.3146020767047895e-11
+          ],
+          [
+            7.621196895424014e-12,
+            1.162267761883777e-10,
+            1.8714036462732803e-10,
+            1.905299449146975e-12,
+            2.9056697994789765e-11,
+            4.6785095517456435e-11
+          ],
+          [
+            7.575312790171364e-12,
+            1.2103687490803824e-10,
+            1.96797494650264e-10,
+            1.8938295210681718e-12,
+            3.02592322750053e-11,
+            4.919939126043943e-11
+          ],
+          [
+            7.20555773550634e-12,
+            1.2437608901633627e-10,
+            2.0955818970562503e-10,
+            1.8013888127775978e-12,
+            3.1094022156482915e-11,
+            5.2389552860844084e-11
+          ],
+          [
+            7.611641711252507e-12,
+            1.291511287700366e-10,
+            2.1457301176976055e-10,
+            1.902910869914311e-12,
+            3.228777929024261e-11,
+            5.364324243510032e-11
+          ],
+          [
+            6.149353298542232e-12,
+            1.2750840559662763e-10,
+            2.2685195258706736e-10,
+            1.5373372656448632e-12,
+            3.1877083999724246e-11,
+            5.671297264685386e-11
+          ],
+          [
+            7.37009759048177e-12,
+            1.3981302777836913e-10,
+            2.4115880162143877e-10,
+            1.8425276409520926e-12,
+            3.4953292109237446e-11,
+            6.028974451608319e-11
+          ],
+          [
+            7.589290658540665e-12,
+            1.3517091609563438e-10,
+            2.3548286591484107e-10,
+            1.8973235456620018e-12,
+            3.379276255759381e-11,
+            5.887076880438933e-11
+          ],
+          [
+            1.084597310133925e-11,
+            1.5507644239269895e-10,
+            2.5581099147997086e-10,
+            2.7114989226666977e-12,
+            3.876912872292759e-11,
+            6.395274784685464e-11
+          ],
+          [
+            1.034793597436877e-11,
+            1.588572791779007e-10,
+            2.6208302701449904e-10,
+            2.58698244399375e-12,
+            3.971433026462361e-11,
+            6.552077834400395e-11
+          ]
+        ]
+      },
+      {
+        "library_id": 5,
+        "recorded_time_six_contrasts": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -4.377166700284544e-19,
+            -5.1498902669042765e-18,
+            -8.154067050759581e-18,
+            -1.0942916622510757e-19,
+            -1.287472565623134e-18,
+            -2.0385167685187558e-18
+          ],
+          [
+            -3.037078870497241e-16,
+            -3.7072827913097206e-15,
+            -6.121059293554639e-15,
+            -7.592697179458584e-17,
+            -9.268206982165403e-16,
+            -1.5302648238775165e-15
+          ],
+          [
+            -7.756378308133175e-15,
+            -9.231201413676363e-14,
+            -1.4836576758471954e-13,
+            -1.9390945770322967e-15,
+            -2.307800353565577e-14,
+            -3.7091441899068714e-14
+          ],
+          [
+            -5.863584167620416e-14,
+            -7.071515962430192e-13,
+            -1.171117984235595e-12,
+            -1.4658960422145565e-14,
+            -1.7678789912290665e-13,
+            -2.927794962070132e-13
+          ],
+          [
+            -2.1106100297337377e-13,
+            -2.604033045601279e-12,
+            -4.457014558267576e-12,
+            -5.276525079232574e-14,
+            -6.510082624789682e-13,
+            -1.1142536422884776e-12
+          ],
+          [
+            -4.516114044142065e-13,
+            -5.906463604867843e-12,
+            -1.0693782502337365e-11,
+            -1.129028514544545e-13,
+            -1.4766159096742295e-12,
+            -2.6734456479189683e-12
+          ],
+          [
+            -7.169517978009865e-13,
+            -1.0222059704757975e-11,
+            -1.9562065564106577e-11,
+            -1.792379508388454e-13,
+            -2.5555149633266377e-12,
+            -4.8905164933119e-12
+          ],
+          [
+            -8.255924950619821e-13,
+            -1.3652333838057804e-11,
+            -2.797223406844698e-11,
+            -2.063981281528952e-13,
+            -3.413083579852201e-12,
+            -6.993058845480248e-12
+          ],
+          [
+            -5.166912863364803e-13,
+            -1.2731551537130911e-11,
+            -3.0742682347692077e-11,
+            -1.2917282950294872e-13,
+            -3.182888137118294e-12,
+            -7.685671294266858e-12
+          ],
+          [
+            1.5124592360532717e-13,
+            -6.723089991129429e-12,
+            -2.3662700898131148e-11,
+            3.781147595586214e-14,
+            -1.6807727918656067e-12,
+            -5.915676147727626e-12
+          ],
+          [
+            9.234011472068721e-13,
+            1.5475405786380032e-12,
+            -1.083836627411765e-11,
+            2.308502908651487e-13,
+            3.868849311186073e-13,
+            -2.7095924199789625e-12
+          ],
+          [
+            1.6363752746736801e-12,
+            9.219113509943763e-12,
+            2.100800779201053e-12,
+            4.0909383744499933e-13,
+            2.3047783736555444e-12,
+            5.251997823479095e-13
+          ],
+          [
+            2.211463428828658e-12,
+            1.7282291159786972e-11,
+            1.7116864082885294e-11,
+            5.528658975274656e-13,
+            4.320573127575826e-12,
+            4.279216355482353e-12
+          ],
+          [
+            2.7353857782360446e-12,
+            2.3765916284569053e-11,
+            2.7988338391574305e-11,
+            6.838465075382245e-13,
+            5.941479700917247e-12,
+            6.997085483284676e-12
+          ],
+          [
+            2.767736966890493e-12,
+            2.5584620675576464e-11,
+            3.303940797434914e-11,
+            6.919343046316602e-13,
+            6.3961557695220974e-12,
+            8.259852788853815e-12
+          ],
+          [
+            2.7561895381546786e-12,
+            2.8972363753967446e-11,
+            4.014283056423898e-11,
+            6.890474503300988e-13,
+            7.2430914726967164e-12,
+            1.0035707987739066e-11
+          ],
+          [
+            3.08843298933341e-12,
+            3.366536422543406e-11,
+            4.494997070995824e-11,
+            7.721083027080214e-13,
+            8.416341214262382e-12,
+            1.1237492012755288e-11
+          ],
+          [
+            3.6140827644355197e-12,
+            3.8062153370375914e-11,
+            5.021303750827712e-11,
+            9.035207451616313e-13,
+            9.515538128393043e-12,
+            1.2553257828077468e-11
+          ],
+          [
+            4.186964006028052e-12,
+            4.768851543406622e-11,
+            6.472294674990411e-11,
+            1.0467410725908529e-12,
+            1.1922129175218253e-11,
+            1.6180736016140033e-11
+          ],
+          [
+            4.398089100273849e-12,
+            5.196270519377274e-11,
+            7.239955482067554e-11,
+            1.099522325304644e-12,
+            1.2990676378366711e-11,
+            1.8099888204825265e-11
+          ],
+          [
+            4.49173883821986e-12,
+            5.807440089330761e-11,
+            8.420085038813423e-11,
+            1.1229347735811513e-12,
+            1.4518601102376355e-11,
+            2.1050213612986647e-11
+          ],
+          [
+            4.3276598464918326e-12,
+            5.8191939223747654e-11,
+            8.895795959632144e-11,
+            1.0819150232156446e-12,
+            1.4547985643238362e-11,
+            2.223949125461178e-11
+          ],
+          [
+            4.554151758752954e-12,
+            6.455239678977057e-11,
+            9.844107298448105e-11,
+            1.1385379926887587e-12,
+            1.6138099928162495e-11,
+            2.4610268910445733e-11
+          ],
+          [
+            4.882633925233387e-12,
+            6.852748113684631e-11,
+            1.057262755717734e-10,
+            1.2206585819917374e-12,
+            1.7131871199729035e-11,
+            2.6431569134431255e-11
+          ],
+          [
+            5.833360907151769e-12,
+            8.107327232962384e-11,
+            1.2578931131962542e-10,
+            1.4583404445951561e-12,
+            2.0268319777161224e-11,
+            3.144732827734725e-11
+          ],
+          [
+            5.962126876042925e-12,
+            8.666821591259005e-11,
+            1.362510347095033e-10,
+            1.4905316211386551e-12,
+            2.1667052916682762e-11,
+            3.406275728351288e-11
+          ],
+          [
+            6.177025328854904e-12,
+            9.252087787493537e-11,
+            1.446862159400448e-10,
+            1.5442562487427743e-12,
+            2.3130218707393275e-11,
+            3.6171552326913766e-11
+          ],
+          [
+            6.9484555088905924e-12,
+            9.801270004602114e-11,
+            1.499559844013416e-10,
+            1.7371144587481258e-12,
+            2.450318097749322e-11,
+            3.748900367726628e-11
+          ],
+          [
+            8.133689112304252e-12,
+            1.0347117521741545e-10,
+            1.542549170627606e-10,
+            2.0334235191789584e-12,
+            2.586780095717137e-11,
+            3.8563733163259594e-11
+          ],
+          [
+            7.394905581791822e-12,
+            1.0194473006655882e-10,
+            1.6079495358997575e-10,
+            1.8487268080256845e-12,
+            2.5486186645812542e-11,
+            4.01987428476387e-11
+          ],
+          [
+            8.52926591238049e-12,
+            1.1593838985716721e-10,
+            1.811129137365201e-10,
+            2.1323173591449413e-12,
+            2.8984601949576298e-11,
+            4.527823509336731e-11
+          ],
+          [
+            8.669975498443186e-12,
+            1.1883746083530873e-10,
+            1.8587183445538217e-10,
+            2.1674944945107037e-12,
+            2.9709374350464077e-11,
+            4.6467969399053905e-11
+          ],
+          [
+            8.556831803097996e-12,
+            1.219620732273476e-10,
+            1.9312825033669652e-10,
+            2.1392093451940517e-12,
+            3.049053328831418e-11,
+            4.828207961744074e-11
+          ],
+          [
+            6.404560015917073e-12,
+            1.143139535040688e-10,
+            1.9509896900293023e-10,
+            1.6011376253183083e-12,
+            2.8578475479569497e-11,
+            4.8774729243556145e-11
+          ],
+          [
+            8.443630398221514e-12,
+            1.1980342235149245e-10,
+            2.0065850395168415e-10,
+            2.1109072022620707e-12,
+            2.995084799464291e-11,
+            5.0164623905632384e-11
+          ],
+          [
+            8.140337143216322e-12,
+            1.2413761985665913e-10,
+            2.0403381487100408e-10,
+            2.0350854363244574e-12,
+            3.103442187905647e-11,
+            5.100847314201795e-11
+          ],
+          [
+            7.673508856363537e-12,
+            1.1408996443370456e-10,
+            1.9825303652322416e-10,
+            1.9183777689982865e-12,
+            2.8522476110966793e-11,
+            4.95632365199814e-11
+          ],
+          [
+            7.82118964097658e-12,
+            1.1749689171669656e-10,
+            1.9998280171633443e-10,
+            1.955297323520129e-12,
+            2.937422625593566e-11,
+            4.999569853434205e-11
+          ],
+          [
+            8.225353791363328e-12,
+            1.1466440520914845e-10,
+            1.9397469103077422e-10,
+            2.0563408524940996e-12,
+            2.8666106842686466e-11,
+            4.849366376156063e-11
+          ],
+          [
+            1.0892909037193698e-11,
+            1.4047692180922644e-10,
+            2.263658990170134e-10,
+            2.7232291874443194e-12,
+            3.511923147289138e-11,
+            5.6591462390380716e-11
+          ]
+        ]
+      },
+      {
+        "library_id": 6,
+        "recorded_time_six_contrasts": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -4.286905179377808e-19,
+            -5.127912367070281e-18,
+            -8.294093464738923e-18,
+            -1.0717263083526335e-19,
+            -1.2819780987392518e-18,
+            -2.0735233726952386e-18
+          ],
+          [
+            -3.281349650200051e-16,
+            -3.970961111421282e-15,
+            -6.46653141215087e-15,
+            -8.203374122937289e-17,
+            -9.927402775773235e-16,
+            -1.6166328527350503e-15
+          ],
+          [
+            -8.132525536022676e-15,
+            -1.0111881625493396e-13,
+            -1.6877078742812636e-13,
+            -2.0331313842242848e-15,
+            -2.527970406508829e-14,
+            -4.21926968592417e-14
+          ],
+          [
+            -5.660081663992188e-14,
+            -7.113364357100199e-13,
+            -1.1968499445545239e-12,
+            -1.4150204163124965e-14,
+            -1.778341089810051e-13,
+            -2.992124862646254e-13
+          ],
+          [
+            -2.054880767996145e-13,
+            -2.642193554224478e-12,
+            -4.571493860490049e-12,
+            -5.13720192470658e-14,
+            -6.60548389551063e-13,
+            -1.142873467553485e-12
+          ],
+          [
+            -4.749278788813752e-13,
+            -6.397153098373315e-12,
+            -1.1679825929159348e-11,
+            -1.1873197006697298e-13,
+            -1.5992882826324437e-12,
+            -2.919956502621438e-12
+          ],
+          [
+            -7.586060893128905e-13,
+            -1.0827664894322125e-11,
+            -2.0900228872313438e-11,
+            -1.8965152386373187e-13,
+            -2.7069162618881483e-12,
+            -5.225057318352226e-12
+          ],
+          [
+            -9.005427968636404e-13,
+            -1.4606392984886593e-11,
+            -3.058449774647249e-11,
+            -2.251357032594244e-13,
+            -3.651598362600992e-12,
+            -7.64612475761816e-12
+          ],
+          [
+            -7.014954569574847e-13,
+            -1.43938782379174e-11,
+            -3.3358298529746324e-11,
+            -1.7537387059956681e-13,
+            -3.598469778968963e-12,
+            -8.339575259080298e-12
+          ],
+          [
+            -1.0667326262800913e-13,
+            -8.913014680759089e-12,
+            -2.641964115326549e-11,
+            -2.6668321162006585e-14,
+            -2.228253951721539e-12,
+            -6.6049111487092435e-12
+          ],
+          [
+            6.06226856372698e-13,
+            -2.0018343223280764e-12,
+            -1.6833770830540317e-11,
+            1.515567158230129e-13,
+            -5.004588252794052e-13,
+            -4.208443599386051e-12
+          ],
+          [
+            1.3699439658035952e-12,
+            6.918034787884583e-12,
+            -2.0735040121524572e-12,
+            3.4248600948280314e-13,
+            1.7295086722977934e-12,
+            -5.183764764237883e-13
+          ],
+          [
+            1.9036318501358562e-12,
+            1.5011697495025044e-11,
+            1.3894762332872286e-11,
+            4.759080034273039e-13,
+            3.752924721493295e-12,
+            3.4736908922858526e-12
+          ],
+          [
+            2.2004039661339176e-12,
+            1.924032559448971e-11,
+            2.2199633697928556e-11,
+            5.501010503475652e-13,
+            4.810082003737568e-12,
+            5.549909292811284e-12
+          ],
+          [
+            2.341886597399137e-12,
+            2.4173773668186546e-11,
+            3.089999489100141e-11,
+            5.854717158249871e-13,
+            6.043444120960913e-12,
+            7.724999651469691e-12
+          ],
+          [
+            2.403054017828461e-12,
+            2.5279621264886526e-11,
+            3.3262061803391296e-11,
+            6.007635651037139e-13,
+            6.319905783525777e-12,
+            8.315515728693032e-12
+          ],
+          [
+            2.7793290352363915e-12,
+            2.906332299245344e-11,
+            3.8514445206866095e-11,
+            6.94832316093487e-13,
+            7.265830899275786e-12,
+            9.628610709578476e-12
+          ],
+          [
+            3.2331699282457e-12,
+            3.507116825391318e-11,
+            4.716645093491025e-11,
+            8.082925336992132e-13,
+            8.767791952787593e-12,
+            1.1791611543326422e-11
+          ],
+          [
+            3.690372707434414e-12,
+            4.360119931317602e-11,
+            6.001765269231776e-11,
+            9.225931861240568e-13,
+            1.0900299682868294e-11,
+            1.50044121278976e-11
+          ],
+          [
+            3.894277522411638e-12,
+            4.5293020101564575e-11,
+            6.519870638109359e-11,
+            9.7356943090564e-13,
+            1.1323255238233785e-11,
+            1.629967629684253e-11
+          ],
+          [
+            5.135779777963721e-12,
+            5.731428076319748e-11,
+            7.855904102156437e-11,
+            1.283945081208713e-12,
+            1.4328571013214717e-11,
+            1.96397606642254e-11
+          ],
+          [
+            5.202338850037086e-12,
+            6.440453631754268e-11,
+            9.276037740720882e-11,
+            1.300584748915918e-12,
+            1.6101134902245747e-11,
+            2.319009535554368e-11
+          ],
+          [
+            5.152568324552488e-12,
+            6.712565534546836e-11,
+            1.0160850709226346e-10,
+            1.2881422312964012e-12,
+            1.6781415130470996e-11,
+            2.5402127873938506e-11
+          ],
+          [
+            5.562749555242154e-12,
+            7.305316315132695e-11,
+            1.0966674108332673e-10,
+            1.3906874287222574e-12,
+            1.826329210761679e-11,
+            2.7416686654714308e-11
+          ],
+          [
+            6.082447279275256e-12,
+            7.832129951643979e-11,
+            1.2121053212800076e-10,
+            1.5206120040361505e-12,
+            1.958032613499331e-11,
+            3.030263384942076e-11
+          ],
+          [
+            6.02234072160456e-12,
+            7.968733814261623e-11,
+            1.2229291728617543e-10,
+            1.5055849595860115e-12,
+            1.992183300413748e-11,
+            3.057322820418549e-11
+          ],
+          [
+            6.374360621050381e-12,
+            8.998115053732072e-11,
+            1.3713933642208192e-10,
+            1.5935901936645732e-12,
+            2.2495288931174225e-11,
+            3.428483464571784e-11
+          ],
+          [
+            6.869105093604121e-12,
+            9.759860740736338e-11,
+            1.521916127653271e-10,
+            1.717276690677303e-12,
+            2.4399658380843435e-11,
+            3.804791202598814e-11
+          ],
+          [
+            7.053250586105991e-12,
+            9.368854530835636e-11,
+            1.4293148474383244e-10,
+            1.7633130666467837e-12,
+            2.3422141271631705e-11,
+            3.5732876991318276e-11
+          ],
+          [
+            7.745119013968887e-12,
+            1.0503756226116757e-10,
+            1.6078134710395419e-10,
+            1.9362800734264447e-12,
+            2.6259391472773004e-11,
+            4.01953366456018e-11
+          ],
+          [
+            8.573775376158135e-12,
+            1.1433635034013105e-10,
+            1.7458643792475245e-10,
+            2.1434441708448912e-12,
+            2.8584093277183345e-11,
+            4.3646615664845225e-11
+          ],
+          [
+            6.950285712743379e-12,
+            1.0625065867098746e-10,
+            1.7473195587965853e-10,
+            1.7375700781088685e-12,
+            2.656265461390973e-11,
+            4.368298098067377e-11
+          ],
+          [
+            9.32526442904954e-12,
+            1.2434070905568804e-10,
+            1.9296498114539335e-10,
+            2.331316013317184e-12,
+            3.108517821455031e-11,
+            4.8241244224738026e-11
+          ],
+          [
+            9.510712294853155e-12,
+            1.2764452498706313e-10,
+            2.008481549149918e-10,
+            2.3776781030680373e-12,
+            3.1911134859668614e-11,
+            5.0212043134853637e-11
+          ],
+          [
+            1.0061007723054364e-11,
+            1.3362650034427322e-10,
+            2.0881111955352833e-10,
+            2.5152511250162763e-12,
+            3.340661441146656e-11,
+            5.2202765835934695e-11
+          ],
+          [
+            1.016786610523599e-11,
+            1.395242969955377e-10,
+            2.2002124846919877e-10,
+            2.541965917752097e-12,
+            3.488106959726679e-11,
+            5.5005315800072174e-11
+          ],
+          [
+            1.1215850428833757e-11,
+            1.4575559212732624e-10,
+            2.2475861057220686e-10,
+            2.8039645517842842e-12,
+            3.6438908887921127e-11,
+            5.618966110003348e-11
+          ],
+          [
+            1.0753059404716314e-11,
+            1.484342685205615e-10,
+            2.34207909588979e-10,
+            2.688266437287003e-12,
+            3.7108581909958854e-11,
+            5.855198950174349e-11
+          ],
+          [
+            1.1463451865287588e-11,
+            1.5571110115334595e-10,
+            2.4386818819296797e-10,
+            2.8658613828094785e-12,
+            3.892776618986164e-11,
+            6.096703968583676e-11
+          ],
+          [
+            1.2900234603303902e-11,
+            1.6474449354776641e-10,
+            2.5139902886876356e-10,
+            3.2250641601668425e-12,
+            4.1186160299172715e-11,
+            6.284978556060263e-11
+          ]
+        ]
+      },
+      {
+        "library_id": 7,
+        "recorded_time_six_contrasts": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -4.36809643243137e-19,
+            -4.7949754901342705e-18,
+            -7.179416017732156e-18,
+            -1.0920241093102877e-19,
+            -1.1987438780472526e-18,
+            -1.794854015139431e-18
+          ],
+          [
+            -3.18151820903222e-16,
+            -3.765368082459375e-15,
+            -5.883772520992582e-15,
+            -7.953795522948738e-17,
+            -9.413420206283645e-16,
+            -1.4709431303104663e-15
+          ],
+          [
+            -8.023820193649974e-15,
+            -9.592358272122376e-14,
+            -1.5239062507187349e-13,
+            -2.005955048579147e-15,
+            -2.398089568146567e-14,
+            -3.8097656270227915e-14
+          ],
+          [
+            -5.846689663687777e-14,
+            -6.919812521001503e-13,
+            -1.09881371506655e-12,
+            -1.4616724162156817e-14,
+            -1.7299531308553085e-13,
+            -2.747034289118817e-13
+          ],
+          [
+            -2.0988273620346214e-13,
+            -2.5791772877564865e-12,
+            -4.367344699401935e-12,
+            -5.247068410177586e-14,
+            -6.447943230862823e-13,
+            -1.0918361777629031e-12
+          ],
+          [
+            -4.840123943503341e-13,
+            -6.2190537665450125e-12,
+            -1.1018943357943105e-11,
+            -1.2100309892577172e-13,
+            -1.5547634496943914e-12,
+            -2.7547358606609587e-12
+          ],
+          [
+            -7.831979986195134e-13,
+            -1.0480116561035623e-11,
+            -1.960083641300918e-11,
+            -1.9579950096704782e-13,
+            -2.6200291758313056e-12,
+            -4.900209202003766e-12
+          ],
+          [
+            -9.192848986998527e-13,
+            -1.3898255825350704e-11,
+            -2.798104877555365e-11,
+            -2.2982122851548017e-13,
+            -3.4745640711676314e-12,
+            -6.995262519974429e-12
+          ],
+          [
+            -6.508152842747741e-13,
+            -1.2408995752058842e-11,
+            -2.8465021853971404e-11,
+            -1.6270382569204073e-13,
+            -3.102249134129208e-12,
+            -7.1162560678726515e-12
+          ],
+          [
+            -5.0875344487305185e-14,
+            -7.651811754222112e-12,
+            -2.3325641178589492e-11,
+            -1.2718840512653736e-14,
+            -1.912953220450297e-12,
+            -5.8314111955699385e-12
+          ],
+          [
+            7.628142586123188e-13,
+            -2.8318820132473116e-13,
+            -1.3711406988915797e-11,
+            1.9070356880160122e-13,
+            -7.079728460186176e-14,
+            -3.427852655671151e-12
+          ],
+          [
+            1.5242431345912813e-12,
+            8.736944233454784e-12,
+            2.506145916866014e-12,
+            3.8106080581722243e-13,
+            2.184236088875942e-12,
+            6.265361139405885e-13
+          ],
+          [
+            2.1611633956659007e-12,
+            1.6556631962705515e-11,
+            1.6091963057073344e-11,
+            5.402908955473956e-13,
+            4.1391583977553745e-12,
+            4.022991173415253e-12
+          ],
+          [
+            2.3218086747602855e-12,
+            2.005106295987237e-11,
+            2.5550055058902146e-11,
+            5.804522304966747e-13,
+            5.012766378420732e-12,
+            6.387514663005527e-12
+          ],
+          [
+            2.3428282630228652e-12,
+            2.2979695296640822e-11,
+            3.2496216595333025e-11,
+            5.857071315868215e-13,
+            5.744924461554193e-12,
+            8.124054994554657e-12
+          ],
+          [
+            2.3790639960196594e-12,
+            2.490226486724338e-11,
+            3.632933633673801e-11,
+            5.947660627309271e-13,
+            6.225566734052931e-12,
+            9.08233440431417e-12
+          ],
+          [
+            2.7803993038220706e-12,
+            3.066670553517644e-11,
+            4.317510087636769e-11,
+            6.950998808531124e-13,
+            7.666676573037198e-12,
+            1.0793774694146355e-11
+          ],
+          [
+            2.726216586991553e-12,
+            3.0509567494007935e-11,
+            4.4882437686484876e-11,
+            6.815541737944098e-13,
+            7.627391627629373e-12,
+            1.1220608181342007e-11
+          ],
+          [
+            3.1831651288123075e-12,
+            3.7876058132095576e-11,
+            5.559140357003339e-11,
+            7.957913440375083e-13,
+            9.469014759536135e-12,
+            1.3897850103281319e-11
+          ],
+          [
+            3.740586713832771e-12,
+            4.3103755027192504e-11,
+            6.310313785329543e-11,
+            9.351467455807222e-13,
+            1.0775938809590612e-11,
+            1.5775783763324542e-11
+          ],
+          [
+            4.362207906553043e-12,
+            5.245196689732557e-11,
+            7.940622917531889e-11,
+            1.0905519839773663e-12,
+            1.3112992254067605e-11,
+            1.9851558046744308e-11
+          ],
+          [
+            5.046140332189058e-12,
+            5.820017192182793e-11,
+            8.971362949766381e-11,
+            1.2615352160327595e-12,
+            1.4550043767384301e-11,
+            2.24284081810412e-11
+          ],
+          [
+            5.880121812617098e-12,
+            6.90270554268826e-11,
+            1.0489380170896313e-10,
+            1.470030603617924e-12,
+            1.7256765394577402e-11,
+            2.622345201863109e-11
+          ],
+          [
+            6.085019217919679e-12,
+            7.526197818646153e-11,
+            1.1808010278028985e-10,
+            1.521254937404312e-12,
+            1.881549606543254e-11,
+            2.952002771661949e-11
+          ],
+          [
+            6.4912286854855725e-12,
+            8.470309745955461e-11,
+            1.328135260448897e-10,
+            1.6228072364106383e-12,
+            2.1175775825001934e-11,
+            3.3203382201330513e-11
+          ],
+          [
+            6.6281254661028e-12,
+            8.693339454980861e-11,
+            1.4216315703704134e-10,
+            1.6570314988753875e-12,
+            2.173334979230426e-11,
+            3.554079047509697e-11
+          ],
+          [
+            6.549805255425687e-12,
+            8.603996664000666e-11,
+            1.4290176428117932e-10,
+            1.637451280992615e-12,
+            2.1509988087318224e-11,
+            3.572543577456175e-11
+          ],
+          [
+            7.47909427154387e-12,
+            1.0010303070706115e-10,
+            1.5859322652109422e-10,
+            1.8697737814109593e-12,
+            2.5025762032426788e-11,
+            3.964831183104407e-11
+          ],
+          [
+            6.771723856057877e-12,
+            9.737019826513038e-11,
+            1.603125685007058e-10,
+            1.6929315579928167e-12,
+            2.434255595989802e-11,
+            4.0078150351589724e-11
+          ],
+          [
+            7.227268892478372e-12,
+            1.0125971002077157e-10,
+            1.6786967130100284e-10,
+            1.8068174428551268e-12,
+            2.5314929283296176e-11,
+            4.1967421087412966e-11
+          ],
+          [
+            8.372361585568465e-12,
+            1.162741995019318e-10,
+            1.8558225612396625e-10,
+            2.093090356508235e-12,
+            2.906855259262078e-11,
+            4.639556692717527e-11
+          ],
+          [
+            9.726777870362727e-12,
+            1.268704193679719e-10,
+            2.002316079077268e-10,
+            2.431694585553162e-12,
+            3.171760905096221e-11,
+            5.0057905850759214e-11
+          ],
+          [
+            1.0527544637029932e-11,
+            1.3815310127293908e-10,
+            2.151281456243642e-10,
+            2.6318870316666758e-12,
+            3.453828648256555e-11,
+            5.378205041154618e-11
+          ],
+          [
+            1.0985495709234793e-11,
+            1.4163748707073523e-10,
+            2.2674760461529523e-10,
+            2.7463757256943804e-12,
+            3.540938300716705e-11,
+            5.668691332901957e-11
+          ],
+          [
+            1.042022486552899e-11,
+            1.4733582375263533e-10,
+            2.416847214005956e-10,
+            2.605057748721443e-12,
+            3.6833975905346225e-11,
+            6.042120839712473e-11
+          ],
+          [
+            1.071512345045081e-11,
+            1.4612827325084973e-10,
+            2.383693482272361e-10,
+            2.678782195383379e-12,
+            3.653207887144089e-11,
+            5.959235133365883e-11
+          ],
+          [
+            8.332528033931389e-12,
+            1.3518757367739037e-10,
+            2.327693659679693e-10,
+            2.0831305496474984e-12,
+            3.379689084299815e-11,
+            5.819234716897561e-11
+          ],
+          [
+            1.0771733001552997e-11,
+            1.4512448998975612e-10,
+            2.361075956832897e-10,
+            2.6929374438269144e-12,
+            3.6281150177659494e-11,
+            5.902693016377733e-11
+          ],
+          [
+            9.852925602549336e-12,
+            1.5545090615608338e-10,
+            2.5809022698710533e-10,
+            2.4632337190222112e-12,
+            3.886274126616282e-11,
+            6.452256950617816e-11
+          ],
+          [
+            1.0946144072048269e-11,
+            1.5920429294994306e-10,
+            2.621755257155006e-10,
+            2.7365358918377594e-12,
+            3.980105949411464e-11,
+            6.554386389649775e-11
+          ]
+        ]
+      }
+    ],
+    "observable": "Recorded accumulated transfer contrasts, not instantaneous torque",
+    "uncomputed_times": "No numerical result is provided between recorded times. A display interpolation must be labelled as interpolation."
+  },
+  "claims": {
+    "direct_signs_qualified": 6,
+    "paired_second_order_amplitude_checks_supported": 3,
+    "five_percent_magnitude_forecasts_supported": 0,
+    "five_percent_magnitude_forecasts_contradicted": 0,
+    "five_percent_magnitude_forecasts_unresolved": 6,
+    "p4_forecast_radial_tail_unqualified": true,
+    "forecast_consistent_with_sampling_intervals_is_not_magnitude_validation": true
+  },
+  "exclusions": [
+    "No live halo or bar response",
+    "No observed-galaxy matching or bar-formation prediction",
+    "No SIDM or dark-matter constraint",
+    "No universal confidence coverage or rigorous numerical-error bound",
+    "No claim that26cases are26independentphysicalregimes",
+    "No post-outcome resampling",
+    "Numerical formulations and saved-arithmetic review are internal verification, not external peer review"
+  ],
+  "scientific_provenance": {
+    "terminal_result_SHA256": "644fac98a28a381c847b649ef5616508ea743e21059f03db86d755588573464a",
+    "frozen_forecast_SHA256": "267290fefa5b19b9b1f3d400ded67a0dca31028429db8ba9d1f46587639cf46a",
+    "independent_scalar_reconstruction": "245 saved-JSON arithmetic comparisons pass; no orbit rerun, full-array re-contraction, proof of proxy coverage or external review",
+    "full_array_evidence": "Real full states, impulses and41trace times are retained and hashed in the experiment archive. This small extraction does not assert public availability of those arrays."
+  },
+  "reuse": "Original derived-data extraction and accompanying text follow existing project MIT reuse conditions; third-party numerical software retains its own licence."
+}

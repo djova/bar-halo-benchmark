@@ -1,0 +1,2332 @@
+{
+  "schema": "feedback-cusp-warm-native-v1",
+  "status": "numerical_gates_passed",
+  "measured_quantity": "Forward mean orbital specific-energy transfer under a prescribed cyclic spherical potential",
+  "units": {
+    "G": 1,
+    "halo_mass": 1,
+    "halo_scale_radius": 1,
+    "specific_energy": "G M_h / a_h",
+    "time": "sqrt(a_h^3 / (G M_h))"
+  },
+  "model": {
+    "halo": "Fixed Hernquist potential",
+    "gas_mass": 0.1,
+    "gas_scales": [
+      0.2,
+      1.3
+    ],
+    "gas_cutoff": 8,
+    "gas_mass_fractions": "0.5 + a(t), 0.5 - a(t)",
+    "pulse": "a(t)=0.003 sin^2(pi t/80) cos(omega t), 0<=t<=80; otherwise0",
+    "frequencies": [
+      5,
+      8
+    ],
+    "live_self_gravity": false
+  },
+  "stellar_target": {
+    "guide_density": "p(Rc)=Rc exp(-Rc), Rc>0",
+    "canonical_radial_density": "exp(-Jr/Js)/(2 pi Js)",
+    "Js": "(0.1 vc(Rc))^2 / kappa(Rc)",
+    "angular_momentum": "L=Rc vc(Rc)",
+    "original_inclination_Rayleigh_scale": 0.03,
+    "orientation": "Marginalized exactly for spherical energy observables",
+    "total_mass": 1,
+    "inner_guide_cutoff": 0.25,
+    "inner_physical_mass": 0.026499021160743902,
+    "cohort_normalization": "Divide absolute Rc<.25 response by independently known mass1-(1+.25)exp(-.25); no sampled renormalization"
+  },
+  "sample": {
+    "n": 4096,
+    "seed": 201065,
+    "law": "Original fixed IID full-support importance proposal; unchanged in refinement",
+    "replication": "Same physical draw with refined arithmetic; not independent replication",
+    "weights": "Every original proposal weight/state retained, including zero-underflow physical DF values"
+  },
+  "figure": {
+    "rows": [
+      {
+        "frequency": 5.0,
+        "whole": {
+          "actual_forward": {
+            "mean": 9.745775405811527e-07,
+            "standard_error": 7.455951208822477e-08
+          },
+          "paired": {
+            "mean": 9.74577540485159e-07,
+            "standard_error": 7.455951208837617e-08
+          },
+          "ordinary_signed": {
+            "mean": 1.02270369760375e-06,
+            "standard_error": 3.1984533042091216e-07
+          }
+        },
+        "inner_guiding_Rc_lt_0_25": {
+          "physical_mass": 0.026499021160743902,
+          "actual_forward": {
+            "mean": 3.514420411273065e-05,
+            "standard_error": 2.656545286709707e-06
+          },
+          "paired": {
+            "mean": 3.5144204110472096e-05,
+            "standard_error": 2.6565452867135063e-06
+          },
+          "ordinary_signed": {
+            "mean": 3.545060965066517e-05,
+            "standard_error": 4.155836584710399e-06
+          }
+        },
+        "inner_contribution": {
+          "inner_absolute_per_whole_mass": {
+            "mean": 9.31287008400903e-07,
+            "standard_error": 7.039584976709568e-08
+          },
+          "whole": {
+            "mean": 9.74577540485159e-07,
+            "standard_error": 7.455951208837617e-08
+          },
+          "exterior_absolute_per_whole_mass": {
+            "mean": 4.3290532084256144e-08,
+            "standard_error": 2.4964684829105608e-08
+          },
+          "inner_fraction": 0.9555802075402791,
+          "fraction_delta_method_standard_error": 0.02470525563848363,
+          "covariance_columns": [
+            "inner_absolute_per_whole_mass",
+            "whole"
+          ],
+          "covariance_of_means": [
+            [
+              4.955575664431521e-15,
+              4.9457305093358185e-15
+            ],
+            [
+              4.9457305093358185e-15,
+              5.559120842856707e-15
+            ]
+          ],
+          "scope": "Same-sample contribution ratio and delta-method SE, not a mass fraction or confidence guarantee."
+        }
+      },
+      {
+        "frequency": 8.0,
+        "whole": {
+          "actual_forward": {
+            "mean": 1.0741099623321539e-07,
+            "standard_error": 1.2965440707564724e-08
+          },
+          "paired": {
+            "mean": 1.0741099613722171e-07,
+            "standard_error": 1.2965440707667702e-08
+          },
+          "ordinary_signed": {
+            "mean": 1.3922696200570937e-07,
+            "standard_error": 4.584327913411712e-08
+          }
+        },
+        "inner_guiding_Rc_lt_0_25": {
+          "physical_mass": 0.026499021160743902,
+          "actual_forward": {
+            "mean": 4.048668271936221e-06,
+            "standard_error": 4.892820474450552e-07
+          },
+          "paired": {
+            "mean": 4.048668269677665e-06,
+            "standard_error": 4.892820474464494e-07
+          },
+          "ordinary_signed": {
+            "mean": 4.55184300386214e-06,
+            "standard_error": 1.4968149150440212e-06
+          }
+        },
+        "inner_contribution": {
+          "inner_absolute_per_whole_mass": {
+            "mean": 1.0728574615102084e-07,
+            "standard_error": 1.2965495328855563e-08
+          },
+          "whole": {
+            "mean": 1.0741099613722171e-07,
+            "standard_error": 1.2965440707667702e-08
+          },
+          "exterior_absolute_per_whole_mass": {
+            "mean": 1.2524998620087227e-10,
+            "standard_error": 7.173926193738375e-11
+          },
+          "inner_fraction": 0.9988339184003018,
+          "fraction_delta_method_standard_error": 0.0006822894945019176,
+          "covariance_columns": [
+            "inner_absolute_per_whole_mass",
+            "whole"
+          ],
+          "covariance_of_means": [
+            [
+              1.6810406912257557e-16,
+              1.6810078767245948e-16
+            ],
+            [
+              1.6810078767245948e-16,
+              1.6810265274404684e-16
+            ]
+          ],
+          "scope": "Same-sample contribution ratio and delta-method SE, not a mass fraction or confidence guarantee."
+        }
+      }
+    ]
+  },
+  "dilution": [
+    {
+      "frequency": 5.0,
+      "paired": {
+        "inner_absolute_per_whole_mass": {
+          "mean": 9.31287008400903e-07,
+          "standard_error": 7.039584976709568e-08
+        },
+        "whole": {
+          "mean": 9.74577540485159e-07,
+          "standard_error": 7.455951208837617e-08
+        },
+        "exterior_absolute_per_whole_mass": {
+          "mean": 4.3290532084256144e-08,
+          "standard_error": 2.4964684829105608e-08
+        },
+        "inner_fraction": 0.9555802075402791,
+        "fraction_delta_method_standard_error": 0.02470525563848363,
+        "covariance_columns": [
+          "inner_absolute_per_whole_mass",
+          "whole"
+        ],
+        "covariance_of_means": [
+          [
+            4.955575664431521e-15,
+            4.9457305093358185e-15
+          ],
+          [
+            4.9457305093358185e-15,
+            5.559120842856707e-15
+          ]
+        ],
+        "scope": "Same-sample contribution ratio and delta-method SE, not a mass fraction or confidence guarantee."
+      },
+      "actual_forward": {
+        "inner_absolute_per_whole_mass": {
+          "mean": 9.312870084607524e-07,
+          "standard_error": 7.0395849766995e-08
+        },
+        "whole": {
+          "mean": 9.745775405811527e-07,
+          "standard_error": 7.455951208822477e-08
+        },
+        "exterior_absolute_per_whole_mass": {
+          "mean": 4.329053212040029e-08,
+          "standard_error": 2.4964684829291992e-08
+        },
+        "inner_fraction": 0.9555802075075672,
+        "fraction_delta_method_standard_error": 0.02470525563573584,
+        "covariance_columns": [
+          "inner_absolute_per_whole_mass",
+          "whole"
+        ],
+        "covariance_of_means": [
+          [
+            4.9555756644173354e-15,
+            4.945730509312797e-15
+          ],
+          [
+            4.945730509312797e-15,
+            5.5591208428341415e-15
+          ]
+        ],
+        "scope": "Same-sample contribution ratio and delta-method SE, not a mass fraction or confidence guarantee."
+      }
+    },
+    {
+      "frequency": 8.0,
+      "paired": {
+        "inner_absolute_per_whole_mass": {
+          "mean": 1.0728574615102084e-07,
+          "standard_error": 1.2965495328855563e-08
+        },
+        "whole": {
+          "mean": 1.0741099613722171e-07,
+          "standard_error": 1.2965440707667702e-08
+        },
+        "exterior_absolute_per_whole_mass": {
+          "mean": 1.2524998620087227e-10,
+          "standard_error": 7.173926193738375e-11
+        },
+        "inner_fraction": 0.9988339184003018,
+        "fraction_delta_method_standard_error": 0.0006822894945019176,
+        "covariance_columns": [
+          "inner_absolute_per_whole_mass",
+          "whole"
+        ],
+        "covariance_of_means": [
+          [
+            1.6810406912257557e-16,
+            1.6810078767245948e-16
+          ],
+          [
+            1.6810078767245948e-16,
+            1.6810265274404684e-16
+          ]
+        ],
+        "scope": "Same-sample contribution ratio and delta-method SE, not a mass fraction or confidence guarantee."
+      },
+      "actual_forward": {
+        "inner_absolute_per_whole_mass": {
+          "mean": 1.0728574621087039e-07,
+          "standard_error": 1.2965495328818622e-08
+        },
+        "whole": {
+          "mean": 1.0741099623321539e-07,
+          "standard_error": 1.2965440707564724e-08
+        },
+        "exterior_absolute_per_whole_mass": {
+          "mean": 1.2525002234501518e-10,
+          "standard_error": 7.173926322807946e-11
+        },
+        "inner_fraction": 0.9988339180648409,
+        "fraction_delta_method_standard_error": 0.0006822895140421681,
+        "covariance_columns": [
+          "inner_absolute_per_whole_mass",
+          "whole"
+        ],
+        "covariance_of_means": [
+          [
+            1.6810406912161733e-16,
+            1.6810078767055295e-16
+          ],
+          [
+            1.6810078767055295e-16,
+            1.6810265274137645e-16
+          ]
+        ],
+        "scope": "Same-sample contribution ratio and delta-method SE, not a mass fraction or confidence guarantee."
+      }
+    }
+  ],
+  "signed_positive_agreement": [
+    {
+      "frequency": 5.0,
+      "whole": {
+        "ordinary_signed": {
+          "mean": 1.02270369760375e-06,
+          "standard_error": 3.1984533042091216e-07
+        },
+        "positive_forward": {
+          "mean": 9.745775405811527e-07,
+          "standard_error": 7.455951208822477e-08
+        },
+        "signed_minus_positive": {
+          "mean": 4.8126157022597255e-08,
+          "standard_error": 3.101643318665604e-07
+        },
+        "covariance_columns": [
+          "ordinary_signed",
+          "positive_forward"
+        ],
+        "covariance_of_means": [
+          [
+            1.0230103539206248e-13,
+            5.829121736333405e-15
+          ],
+          [
+            5.829121736333405e-15,
+            5.559120842834136e-15
+          ]
+        ]
+      },
+      "inner_guiding": {
+        "ordinary_signed": {
+          "mean": 3.545060965066517e-05,
+          "standard_error": 4.155836584710399e-06
+        },
+        "positive_forward": {
+          "mean": 3.514420411273065e-05,
+          "standard_error": 2.656545286709707e-06
+        },
+        "signed_minus_positive": {
+          "mean": 3.064055379345152e-07,
+          "standard_error": 3.6968512127272805e-06
+        },
+        "covariance_columns": [
+          "ordinary_signed",
+          "positive_forward"
+        ],
+        "covariance_of_means": [
+          [
+            1.727097771881739e-11,
+            5.330750845056892e-12
+          ],
+          [
+            5.330750845056892e-12,
+            7.057232860339559e-12
+          ]
+        ]
+      }
+    },
+    {
+      "frequency": 8.0,
+      "whole": {
+        "ordinary_signed": {
+          "mean": 1.3922696200570937e-07,
+          "standard_error": 4.584327913411712e-08
+        },
+        "positive_forward": {
+          "mean": 1.0741099623321539e-07,
+          "standard_error": 1.2965440707564724e-08
+        },
+        "signed_minus_positive": {
+          "mean": 3.1815965772493966e-08,
+          "standard_error": 4.127380515754399e-08
+        },
+        "covariance_columns": [
+          "ordinary_signed",
+          "positive_forward"
+        ],
+        "covariance_of_means": [
+          [
+            2.1016062417685786e-15,
+            2.8309095116352507e-16
+          ],
+          [
+            2.8309095116352507e-16,
+            1.6810265274137645e-16
+          ]
+        ]
+      },
+      "inner_guiding": {
+        "ordinary_signed": {
+          "mean": 4.55184300386214e-06,
+          "standard_error": 1.4968149150440212e-06
+        },
+        "positive_forward": {
+          "mean": 4.048668271936221e-06,
+          "standard_error": 4.892820474450552e-07
+        },
+        "signed_minus_positive": {
+          "mean": 5.031747319259185e-07,
+          "standard_error": 1.2940082169424537e-06
+        },
+        "covariance_columns": [
+          "ordinary_signed",
+          "positive_forward"
+        ],
+        "covariance_of_means": [
+          [
+            2.2404548898982404e-12,
+            4.0269727316783865e-13
+          ],
+          [
+            4.0269727316783865e-13,
+            2.393969219520253e-13
+          ]
+        ]
+      }
+    }
+  ],
+  "numerical": {
+    "scientific_gate": true,
+    "reader_arithmetic_gate": true,
+    "failed_final_gates": [],
+    "coarse_fine": [
+      {
+        "name": "coarse",
+        "dt": 0.000625,
+        "capture_counts": [
+          0,
+          0,
+          0
+        ],
+        "inverse_scaled_error_maximum": 3.15470446815084e-13,
+        "inverse_gate": true,
+        "direct_minus_rationalized_maximum": 4.240179171319247e-16,
+        "rows": [
+          {
+            "Rc_upper": null,
+            "physical_mass": 1.0,
+            "frequency": 5.0,
+            "actual_forward": {
+              "mean": 9.74576968549446e-07,
+              "standard_error": 7.455947412931976e-08
+            },
+            "zero": {
+              "mean": 1.5359040968244266e-15,
+              "standard_error": 3.848504871046095e-16
+            },
+            "paired": {
+              "mean": 9.745769670135419e-07,
+              "standard_error": 7.455947413174205e-08
+            },
+            "ordinary_signed": {
+              "mean": 1.0226884564935979e-06,
+              "standard_error": 3.1984572171776967e-07
+            },
+            "absolute_energy_work": {
+              "mean": 1.657017799130308e-09,
+              "standard_error": 1.3697200172498155e-10
+            },
+            "direct_absolute_energy_work": {
+              "mean": 1.6570177986643892e-09,
+              "standard_error": 1.369720017176376e-10
+            },
+            "curvature_difference": {
+              "mean": -2.1223970180173168e-19,
+              "standard_error": 1.161154239684816e-19
+            },
+            "precision_gate": true,
+            "work_gate": true,
+            "direct_work_gate": true,
+            "curvature_gate": true
+          },
+          {
+            "Rc_upper": null,
+            "physical_mass": 1.0,
+            "frequency": 8.0,
+            "actual_forward": {
+              "mean": 1.0741121721629405e-07,
+              "standard_error": 1.2965385181097041e-08
+            },
+            "zero": {
+              "mean": 1.5359040968244266e-15,
+              "standard_error": 3.848504871046095e-16
+            },
+            "paired": {
+              "mean": 1.0741121568038994e-07,
+              "standard_error": 1.2965385182744709e-08
+            },
+            "ordinary_signed": {
+              "mean": 1.39213288057959e-07,
+              "standard_error": 4.58461383181061e-08
+            },
+            "absolute_energy_work": {
+              "mean": 1.6558738303897833e-09,
+              "standard_error": 1.3701638854006523e-10
+            },
+            "direct_absolute_energy_work": {
+              "mean": 1.6558738299253282e-09,
+              "standard_error": 1.3701638853278785e-10
+            },
+            "curvature_difference": {
+              "mean": -2.6186743555661565e-20,
+              "standard_error": 1.5937897402005313e-20
+            },
+            "precision_gate": true,
+            "work_gate": true,
+            "direct_work_gate": true,
+            "curvature_gate": true
+          },
+          {
+            "Rc_upper": 0.25,
+            "physical_mass": 0.026499021160743902,
+            "frequency": 5.0,
+            "actual_forward": {
+              "mean": 3.5144185199368476e-05,
+              "standard_error": 2.6565470441069564e-06
+            },
+            "zero": {
+              "mean": 3.613709593732912e-14,
+              "standard_error": 1.4078276169708875e-14
+            },
+            "paired": {
+              "mean": 3.514418516323138e-05,
+              "standard_error": 2.6565470441677526e-06
+            },
+            "ordinary_signed": {
+              "mean": 3.5448308530069836e-05,
+              "standard_error": 4.155822368897653e-06
+            },
+            "absolute_energy_work": {
+              "mean": 1.3574641283967985e-08,
+              "standard_error": 3.4490727452833558e-09
+            },
+            "direct_absolute_energy_work": {
+              "mean": 1.3574641284151645e-08,
+              "standard_error": 3.449072745479465e-09
+            },
+            "curvature_difference": {
+              "mean": -6.7184535235372564e-18,
+              "standard_error": 4.302706746335445e-18
+            },
+            "precision_gate": true,
+            "work_gate": true,
+            "direct_work_gate": true,
+            "curvature_gate": true
+          },
+          {
+            "Rc_upper": 0.25,
+            "physical_mass": 0.026499021160743902,
+            "frequency": 8.0,
+            "actual_forward": {
+              "mean": 4.048673750337877e-06,
+              "standard_error": 4.892799491885241e-07
+            },
+            "zero": {
+              "mean": 3.613709593732912e-14,
+              "standard_error": 1.4078276169708875e-14
+            },
+            "paired": {
+              "mean": 4.048673714200781e-06,
+              "standard_error": 4.892799492108346e-07
+            },
+            "ordinary_signed": {
+              "mean": 4.5496293118613755e-06,
+              "standard_error": 1.4968095272989069e-06
+            },
+            "absolute_energy_work": {
+              "mean": 1.351495134727104e-08,
+              "standard_error": 3.4509585249939254e-09
+            },
+            "direct_absolute_energy_work": {
+              "mean": 1.3514951347456943e-08,
+              "standard_error": 3.4509585251905164e-09
+            },
+            "curvature_difference": {
+              "mean": -9.866125349327266e-19,
+              "standard_error": 6.014503945537337e-19
+            },
+            "precision_gate": true,
+            "work_gate": true,
+            "direct_work_gate": true,
+            "curvature_gate": true
+          },
+          {
+            "Rc_upper": 0.5,
+            "physical_mass": 0.09020401043104986,
+            "frequency": 5.0,
+            "actual_forward": {
+              "mean": 1.080292728979436e-05,
+              "standard_error": 8.265685702391443e-07
+            },
+            "zero": {
+              "mean": 1.5309614575600343e-14,
+              "standard_error": 4.260570146320134e-15
+            },
+            "paired": {
+              "mean": 1.0802927274484745e-05,
+              "standard_error": 8.265685702605182e-07
+            },
+            "ordinary_signed": {
+              "mean": 1.1133286489803531e-05,
+              "standard_error": 3.542885829356139e-06
+            },
+            "absolute_energy_work": {
+              "mean": 1.0116938447049156e-08,
+              "standard_error": 1.4094001145265188e-09
+            },
+            "direct_absolute_energy_work": {
+              "mean": 1.0116938446888424e-08,
+              "standard_error": 1.4094001145748338e-09
+            },
+            "curvature_difference": {
+              "mean": -2.3525821457076043e-18,
+              "standard_error": 1.287253572516358e-18
+            },
+            "precision_gate": true,
+            "work_gate": true,
+            "direct_work_gate": true,
+            "curvature_gate": true
+          },
+          {
+            "Rc_upper": 0.5,
+            "physical_mass": 0.09020401043104986,
+            "frequency": 8.0,
+            "actual_forward": {
+              "mean": 1.1907576189885642e-06,
+              "standard_error": 1.4373402391281907e-07
+            },
+            "zero": {
+              "mean": 1.5309614575600343e-14,
+              "standard_error": 4.260570146320134e-15
+            },
+            "paired": {
+              "mean": 1.1907576036789496e-06,
+              "standard_error": 1.437340239276107e-07
+            },
+            "ordinary_signed": {
+              "mean": 1.5460665586309692e-06,
+              "standard_error": 5.082353372404184e-07
+            },
+            "absolute_energy_work": {
+              "mean": 1.0104420567877805e-08,
+              "standard_error": 1.4099126012504253e-09
+            },
+            "direct_absolute_energy_work": {
+              "mean": 1.0104420567726222e-08,
+              "standard_error": 1.4099126012994486e-09
+            },
+            "curvature_difference": {
+              "mean": -2.9030539076801624e-19,
+              "standard_error": 1.7668723750824445e-19
+            },
+            "precision_gate": true,
+            "work_gate": true,
+            "direct_work_gate": true,
+            "curvature_gate": true
+          },
+          {
+            "Rc_upper": 1.0,
+            "physical_mass": 0.2642411176571153,
+            "frequency": 5.0,
+            "actual_forward": {
+              "mean": 3.6882108270722753e-06,
+              "standard_error": 2.821645429223652e-07
+            },
+            "zero": {
+              "mean": 5.757973348535857e-15,
+              "standard_error": 1.4564767916184863e-15
+            },
+            "paired": {
+              "mean": 3.6882108213143016e-06,
+              "standard_error": 2.821645429313581e-07
+            },
+            "ordinary_signed": {
+              "mean": 3.870554102242052e-06,
+              "standard_error": 1.210431058926393e-06
+            },
+            "absolute_energy_work": {
+              "mean": 5.303332350065703e-09,
+              "standard_error": 5.169292353231336e-10
+            },
+            "direct_absolute_energy_work": {
+              "mean": 5.3033323495211464e-09,
+              "standard_error": 5.169292353016099e-10
+            },
+            "curvature_difference": {
+              "mean": -8.032046342001672e-19,
+              "standard_error": 4.394298094224372e-19
+            },
+            "precision_gate": true,
+            "work_gate": true,
+            "direct_work_gate": true,
+            "curvature_gate": true
+          },
+          {
+            "Rc_upper": 1.0,
+            "physical_mass": 0.2642411176571153,
+            "frequency": 8.0,
+            "actual_forward": {
+              "mean": 4.064894144959961e-07,
+              "standard_error": 4.906649387530101e-08
+            },
+            "zero": {
+              "mean": 5.757973348535857e-15,
+              "standard_error": 1.4564767916184863e-15
+            },
+            "paired": {
+              "mean": 4.064894087380228e-07,
+              "standard_error": 4.906649388142613e-08
+            },
+            "ordinary_signed": {
+              "mean": 5.267986167017945e-07,
+              "standard_error": 1.7350118119014337e-07
+            },
+            "absolute_energy_work": {
+              "mean": 5.299018503989483e-09,
+              "standard_error": 5.1709568764127e-10
+            },
+            "direct_absolute_energy_work": {
+              "mean": 5.299018503449401e-09,
+              "standard_error": 5.170956876199879e-10
+            },
+            "curvature_difference": {
+              "mean": -9.91016984396693e-20,
+              "standard_error": 6.031573565581853e-20
+            },
+            "precision_gate": true,
+            "work_gate": true,
+            "direct_work_gate": true,
+            "curvature_gate": true
+          },
+          {
+            "Rc_upper": 2.0,
+            "physical_mass": 0.593994150290162,
+            "frequency": 5.0,
+            "actual_forward": {
+              "mean": 1.6407181250398307e-06,
+              "standard_error": 1.2552223636024085e-07
+            },
+            "zero": {
+              "mean": 2.5845431756098776e-15,
+              "standard_error": 6.479039598224551e-16
+            },
+            "paired": {
+              "mean": 1.6407181224552875e-06,
+              "standard_error": 1.2552223636431505e-07
+            },
+            "ordinary_signed": {
+              "mean": 1.721714559463852e-06,
+              "standard_error": 5.384661138814916e-07
+            },
+            "absolute_energy_work": {
+              "mean": 2.7127045030378333e-09,
+              "standard_error": 2.30746297062403e-10
+            },
+            "direct_absolute_energy_work": {
+              "mean": 2.7127045027413685e-09,
+              "standard_error": 2.3074629704966988e-10
+            },
+            "curvature_difference": {
+              "mean": -3.5730941407078473e-19,
+              "standard_error": 1.9548243684177706e-19
+            },
+            "precision_gate": true,
+            "work_gate": true,
+            "direct_work_gate": true,
+            "curvature_gate": true
+          },
+          {
+            "Rc_upper": 2.0,
+            "physical_mass": 0.593994150290162,
+            "frequency": 8.0,
+            "actual_forward": {
+              "mean": 1.8082874581024277e-07,
+              "standard_error": 2.1827462736400627e-08
+            },
+            "zero": {
+              "mean": 2.5845431756098776e-15,
+              "standard_error": 6.479039598224551e-16
+            },
+            "paired": {
+              "mean": 1.8082874322569956e-07,
+              "standard_error": 2.1827462739172115e-08
+            },
+            "ordinary_signed": {
+              "mean": 2.343678660710912e-07,
+              "standard_error": 7.718281126519829e-08
+            },
+            "absolute_energy_work": {
+              "mean": 2.7107781564676e-09,
+              "standard_error": 2.3082080893051117e-10
+            },
+            "direct_absolute_energy_work": {
+              "mean": 2.710778156173236e-09,
+              "standard_error": 2.3082080891789238e-10
+            },
+            "curvature_difference": {
+              "mean": -4.4085861019057406e-20,
+              "standard_error": 2.683174134664406e-20
+            },
+            "precision_gate": true,
+            "work_gate": true,
+            "direct_work_gate": true,
+            "curvature_gate": true
+          }
+        ],
+        "covariance": [
+          {
+            "Rc_upper": null,
+            "columns": [
+              "actual5",
+              "actual8",
+              "zero",
+              "paired5",
+              "paired8"
+            ],
+            "covariance_of_means": [
+              [
+                5.559115182440704e-15,
+                -2.556256150111898e-17,
+                -1.8060499766093263e-25,
+                5.559115182621324e-15,
+                -2.556256132051396e-17
+              ],
+              [
+                -2.556256150111898e-17,
+                1.6810121289421082e-16,
+                -2.1362539700770853e-26,
+                -2.5562561479756414e-17,
+                1.681012129155734e-16
+              ],
+              [
+                -1.8060499766093263e-25,
+                -2.1362539700770853e-26,
+                1.481098974246549e-31,
+                -1.8060514577082884e-25,
+                -2.1362687810668406e-26
+              ],
+              [
+                5.559115182621324e-15,
+                -2.5562561479756414e-17,
+                -1.8060514577082884e-25,
+                5.5591151828019105e-15,
+                -2.556256129915126e-17
+              ],
+              [
+                -2.556256132051396e-17,
+                1.681012129155734e-16,
+                -2.1362687810668406e-26,
+                -2.556256129915126e-17,
+                1.6810121293693594e-16
+              ]
+            ]
+          },
+          {
+            "Rc_upper": 0.25,
+            "columns": [
+              "actual5",
+              "actual8",
+              "zero",
+              "paired5",
+              "paired8"
+            ],
+            "covariance_of_means": [
+              [
+                7.0572421975534295e-12,
+                -3.474659475088373e-14,
+                -1.615071424008144e-22,
+                7.057242197714926e-12,
+                -3.474659458937674e-14
+              ],
+              [
+                -3.474659475088373e-14,
+                2.3939486867792425e-13,
+                -1.0915985217914477e-23,
+                -3.47465947399678e-14,
+                2.393948686888407e-13
+              ],
+              [
+                -1.615071424008144e-22,
+                -1.0915985217914477e-23,
+                1.9819785991059509e-28,
+                -1.615073405986758e-22,
+                -1.091618341577422e-23
+              ],
+              [
+                7.057242197714926e-12,
+                -3.47465947399678e-14,
+                -1.615073405986758e-22,
+                7.0572421978764185e-12,
+                -3.474659457846053e-14
+              ],
+              [
+                -3.474659458937674e-14,
+                2.393948686888407e-13,
+                -1.091618341577422e-23,
+                -3.474659457846053e-14,
+                2.393948686997575e-13
+              ]
+            ]
+          },
+          {
+            "Rc_upper": 0.5,
+            "columns": [
+              "actual5",
+              "actual8",
+              "zero",
+              "paired5",
+              "paired8"
+            ],
+            "covariance_of_means": [
+              [
+                6.832156013071844e-13,
+                -3.1412565664081324e-15,
+                -1.7666927238197683e-23,
+                6.83215601324852e-13,
+                -3.141256548741204e-15
+              ],
+              [
+                -3.1412565664081324e-15,
+                2.0659469630170823e-14,
+                -2.126046388937083e-24,
+                -3.1412565642821006e-15,
+                2.065946963229688e-14
+              ],
+              [
+                -1.7666927238197683e-23,
+                -2.126046388937083e-24,
+                1.815245797171435e-29,
+                -1.7666945390655634e-23,
+                -2.1260645413950528e-24
+              ],
+              [
+                6.83215601324852e-13,
+                -3.1412565642821006e-15,
+                -1.7666945390655634e-23,
+                6.83215601342515e-13,
+                -3.1412565466151425e-15
+              ],
+              [
+                -3.141256548741204e-15,
+                2.065946963229688e-14,
+                -2.1260645413950528e-24,
+                -3.1412565466151425e-15,
+                2.065946963442293e-14
+              ]
+            ]
+          },
+          {
+            "Rc_upper": 1.0,
+            "columns": [
+              "actual5",
+              "actual8",
+              "zero",
+              "paired5",
+              "paired8"
+            ],
+            "covariance_of_means": [
+              [
+                7.961682928258748e-14,
+                -3.661032355908573e-16,
+                -2.5374791484023487e-24,
+                7.961682928512479e-14,
+                -3.661032330533784e-16
+              ],
+              [
+                -3.661032355908573e-16,
+                2.407520821214947e-15,
+                -3.0053759349301814e-25,
+                -3.6610323529032145e-16,
+                2.4075208215154878e-15
+              ],
+              [
+                -2.5374791484023487e-24,
+                -3.0053759349301814e-25,
+                2.1213246445232965e-30,
+                -2.537481269726981e-24,
+                -3.0053971481766005e-25
+              ],
+              [
+                7.961682928512479e-14,
+                -3.6610323529032145e-16,
+                -2.537481269726981e-24,
+                7.961682928766221e-14,
+                -3.661032327528404e-16
+              ],
+              [
+                -3.661032330533784e-16,
+                2.4075208215154878e-15,
+                -3.0053971481766005e-25,
+                -3.661032327528404e-16,
+                2.4075208218160217e-15
+              ]
+            ]
+          },
+          {
+            "Rc_upper": 2.0,
+            "columns": [
+              "actual5",
+              "actual8",
+              "zero",
+              "paired5",
+              "paired8"
+            ],
+            "covariance_of_means": [
+              [
+                1.57558318208762e-14,
+                -7.24502743155315e-17,
+                -5.114042268138462e-25,
+                1.5755831821387568e-14,
+                -7.245027380412696e-17
+              ],
+              [
+                -7.24502743155315e-17,
+                4.764381295089574e-16,
+                -6.04943494305931e-26,
+                -7.245027425503685e-17,
+                4.764381295694524e-16
+              ],
+              [
+                -5.114042268138462e-25,
+                -6.04943494305931e-26,
+                4.197795411536167e-31,
+                -5.114046465933806e-25,
+                -6.049476921013465e-26
+              ],
+              [
+                1.5755831821387568e-14,
+                -7.245027425503685e-17,
+                -5.114046465933806e-25,
+                1.5755831821898943e-14,
+                -7.245027374363225e-17
+              ],
+              [
+                -7.245027380412696e-17,
+                4.764381295694524e-16,
+                -6.049476921013465e-26,
+                -7.245027374363225e-17,
+                4.764381296299472e-16
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "name": "fine",
+        "dt": 0.0003125,
+        "capture_counts": [
+          0,
+          0,
+          0
+        ],
+        "inverse_scaled_error_maximum": 6.681338931945777e-13,
+        "inverse_gate": true,
+        "direct_minus_rationalized_maximum": 4.240314696590808e-16,
+        "rows": [
+          {
+            "Rc_upper": null,
+            "physical_mass": 1.0,
+            "frequency": 5.0,
+            "actual_forward": {
+              "mean": 9.745775405811527e-07,
+              "standard_error": 7.455951208822477e-08
+            },
+            "zero": {
+              "mean": 9.59936859686372e-17,
+              "standard_error": 2.4052932506486957e-17
+            },
+            "paired": {
+              "mean": 9.74577540485159e-07,
+              "standard_error": 7.455951208837617e-08
+            },
+            "ordinary_signed": {
+              "mean": 1.02270369760375e-06,
+              "standard_error": 3.1984533042091216e-07
+            },
+            "absolute_energy_work": {
+              "mean": 4.1425448530458094e-10,
+              "standard_error": 3.4243019629376383e-11
+            },
+            "direct_absolute_energy_work": {
+              "mean": 4.142544848458056e-10,
+              "standard_error": 3.424301962193807e-11
+            },
+            "curvature_difference": {
+              "mean": 1.2381533769266706e-19,
+              "standard_error": 1.2137747428098377e-19
+            },
+            "precision_gate": true,
+            "work_gate": true,
+            "direct_work_gate": true,
+            "curvature_gate": true
+          },
+          {
+            "Rc_upper": null,
+            "physical_mass": 1.0,
+            "frequency": 8.0,
+            "actual_forward": {
+              "mean": 1.0741099623321539e-07,
+              "standard_error": 1.2965440707564724e-08
+            },
+            "zero": {
+              "mean": 9.59936859686372e-17,
+              "standard_error": 2.4052932506486957e-17
+            },
+            "paired": {
+              "mean": 1.0741099613722171e-07,
+              "standard_error": 1.2965440707667702e-08
+            },
+            "ordinary_signed": {
+              "mean": 1.3922696200570937e-07,
+              "standard_error": 4.584327913411712e-08
+            },
+            "absolute_energy_work": {
+              "mean": 4.1396848642637463e-10,
+              "standard_error": 3.4254116273185563e-11
+            },
+            "direct_absolute_energy_work": {
+              "mean": 4.1396848596695143e-10,
+              "standard_error": 3.4254116265917715e-11
+            },
+            "curvature_difference": {
+              "mean": -4.344823325366477e-21,
+              "standard_error": 2.061912975273971e-20
+            },
+            "precision_gate": true,
+            "work_gate": true,
+            "direct_work_gate": true,
+            "curvature_gate": true
+          },
+          {
+            "Rc_upper": 0.25,
+            "physical_mass": 0.026499021160743902,
+            "frequency": 5.0,
+            "actual_forward": {
+              "mean": 3.514420411273065e-05,
+              "standard_error": 2.656545286709707e-06
+            },
+            "zero": {
+              "mean": 2.2585567482796426e-15,
+              "standard_error": 8.798835329270784e-16
+            },
+            "paired": {
+              "mean": 3.5144204110472096e-05,
+              "standard_error": 2.6565452867135063e-06
+            },
+            "ordinary_signed": {
+              "mean": 3.545060965066517e-05,
+              "standard_error": 4.155836584710399e-06
+            },
+            "absolute_energy_work": {
+              "mean": 3.3936638760174777e-09,
+              "standard_error": 8.622691985663269e-10
+            },
+            "direct_absolute_energy_work": {
+              "mean": 3.3936638761867573e-09,
+              "standard_error": 8.622691987604387e-10
+            },
+            "curvature_difference": {
+              "mean": 4.084745752061819e-18,
+              "standard_error": 4.387829071081148e-18
+            },
+            "precision_gate": true,
+            "work_gate": true,
+            "direct_work_gate": true,
+            "curvature_gate": true
+          },
+          {
+            "Rc_upper": 0.25,
+            "physical_mass": 0.026499021160743902,
+            "frequency": 8.0,
+            "actual_forward": {
+              "mean": 4.048668271936221e-06,
+              "standard_error": 4.892820474450552e-07
+            },
+            "zero": {
+              "mean": 2.2585567482796426e-15,
+              "standard_error": 8.798835329270784e-16
+            },
+            "paired": {
+              "mean": 4.048668269677665e-06,
+              "standard_error": 4.892820474464494e-07
+            },
+            "ordinary_signed": {
+              "mean": 4.55184300386214e-06,
+              "standard_error": 1.4968149150440212e-06
+            },
+            "absolute_energy_work": {
+              "mean": 3.3787411360110534e-09,
+              "standard_error": 8.627406397834827e-10
+            },
+            "direct_absolute_energy_work": {
+              "mean": 3.3787411361934136e-09,
+              "standard_error": 8.627406399819111e-10
+            },
+            "curvature_difference": {
+              "mean": -1.6878487112735643e-19,
+              "standard_error": 7.781037539252024e-19
+            },
+            "precision_gate": true,
+            "work_gate": true,
+            "direct_work_gate": true,
+            "curvature_gate": true
+          },
+          {
+            "Rc_upper": 0.5,
+            "physical_mass": 0.09020401043104986,
+            "frequency": 5.0,
+            "actual_forward": {
+              "mean": 1.080293363085692e-05,
+              "standard_error": 8.265689910560918e-07
+            },
+            "zero": {
+              "mean": 9.568473961240935e-16,
+              "standard_error": 2.662831594645292e-16
+            },
+            "paired": {
+              "mean": 1.0802933629900073e-05,
+              "standard_error": 8.265689910574278e-07
+            },
+            "ordinary_signed": {
+              "mean": 1.1133556262775032e-05,
+              "standard_error": 3.5428815151981544e-06
+            },
+            "absolute_energy_work": {
+              "mean": 2.529235152895767e-09,
+              "standard_error": 3.523502609268714e-10
+            },
+            "direct_absolute_energy_work": {
+              "mean": 2.5292351527338538e-09,
+              "standard_error": 3.523502609736685e-10
+            },
+            "curvature_difference": {
+              "mean": 1.3727115897043814e-18,
+              "standard_error": 1.3455883760399843e-18
+            },
+            "precision_gate": true,
+            "work_gate": true,
+            "direct_work_gate": true,
+            "curvature_gate": true
+          },
+          {
+            "Rc_upper": 0.5,
+            "physical_mass": 0.09020401043104986,
+            "frequency": 8.0,
+            "actual_forward": {
+              "mean": 1.1907551747717155e-06,
+              "standard_error": 1.4373463946689327e-07
+            },
+            "zero": {
+              "mean": 9.568473961240935e-16,
+              "standard_error": 2.662831594645292e-16
+            },
+            "paired": {
+              "mean": 1.1907551738148682e-06,
+              "standard_error": 1.4373463946781775e-07
+            },
+            "ordinary_signed": {
+              "mean": 1.5463190333546256e-06,
+              "standard_error": 5.082037133300107e-07
+            },
+            "absolute_energy_work": {
+              "mean": 2.526105608542557e-09,
+              "standard_error": 3.524783817708311e-10
+            },
+            "direct_absolute_energy_work": {
+              "mean": 2.5261056083977377e-09,
+              "standard_error": 3.5247838181973813e-10
+            },
+            "curvature_difference": {
+              "mean": -4.816709122644855e-20,
+              "standard_error": 2.2858329304912883e-19
+            },
+            "precision_gate": true,
+            "work_gate": true,
+            "direct_work_gate": true,
+            "curvature_gate": true
+          },
+          {
+            "Rc_upper": 1.0,
+            "physical_mass": 0.2642411176571153,
+            "frequency": 5.0,
+            "actual_forward": {
+              "mean": 3.6882129919597242e-06,
+              "standard_error": 2.8216468657464646e-07
+            },
+            "zero": {
+              "mean": 3.5987212282296033e-16,
+              "standard_error": 9.102895579843248e-17
+            },
+            "paired": {
+              "mean": 3.688212991599852e-06,
+              "standard_error": 2.821646865752085e-07
+            },
+            "ordinary_signed": {
+              "mean": 3.870645998139568e-06,
+              "standard_error": 1.2104295519669102e-06
+            },
+            "absolute_energy_work": {
+              "mean": 1.3258332221573377e-09,
+              "standard_error": 1.2923238169088069e-10
+            },
+            "direct_absolute_energy_work": {
+              "mean": 1.3258332216210617e-09,
+              "standard_error": 1.2923238166892413e-10
+            },
+            "curvature_difference": {
+              "mean": 4.685695405708532e-19,
+              "standard_error": 4.593436303813057e-19
+            },
+            "precision_gate": true,
+            "work_gate": true,
+            "direct_work_gate": true,
+            "curvature_gate": true
+          },
+          {
+            "Rc_upper": 1.0,
+            "physical_mass": 0.2642411176571153,
+            "frequency": 8.0,
+            "actual_forward": {
+              "mean": 4.0648857825201105e-07,
+              "standard_error": 4.906670401080833e-08
+            },
+            "zero": {
+              "mean": 3.5987212282296033e-16,
+              "standard_error": 9.102895579843248e-17
+            },
+            "paired": {
+              "mean": 4.06488577892139e-07,
+              "standard_error": 4.906670401119115e-08
+            },
+            "ordinary_signed": {
+              "mean": 5.268845812746869e-07,
+              "standard_error": 1.7349033818539427e-07
+            },
+            "absolute_energy_work": {
+              "mean": 1.324754735207624e-09,
+              "standard_error": 1.2927399453082605e-10
+            },
+            "direct_absolute_energy_work": {
+              "mean": 1.3247547346733423e-09,
+              "standard_error": 1.2927399450954975e-10
+            },
+            "curvature_difference": {
+              "mean": -1.644264664055039e-20,
+              "standard_error": 7.803149614094317e-20
+            },
+            "precision_gate": true,
+            "work_gate": true,
+            "direct_work_gate": true,
+            "curvature_gate": true
+          },
+          {
+            "Rc_upper": 2.0,
+            "physical_mass": 0.593994150290162,
+            "frequency": 5.0,
+            "actual_forward": {
+              "mean": 1.6407190880667958e-06,
+              "standard_error": 1.25522300264747e-07
+            },
+            "zero": {
+              "mean": 1.6153340960524006e-16,
+              "standard_error": 4.049362216988814e-17
+            },
+            "paired": {
+              "mean": 1.6407190879052628e-06,
+              "standard_error": 1.2552230026500165e-07
+            },
+            "ordinary_signed": {
+              "mean": 1.721740401942675e-06,
+              "standard_error": 5.38465454990102e-07
+            },
+            "absolute_energy_work": {
+              "mean": 6.781761849457798e-10,
+              "standard_error": 5.768660657041146e-11
+            },
+            "direct_absolute_energy_work": {
+              "mean": 6.781761846596445e-10,
+              "standard_error": 5.7686606557523574e-11
+            },
+            "curvature_difference": {
+              "mean": 2.0844538221830337e-19,
+              "standard_error": 2.0434119464255954e-19
+            },
+            "precision_gate": true,
+            "work_gate": true,
+            "direct_work_gate": true,
+            "curvature_gate": true
+          },
+          {
+            "Rc_upper": 2.0,
+            "physical_mass": 0.593994150290162,
+            "frequency": 8.0,
+            "actual_forward": {
+              "mean": 1.8082837378230223e-07,
+              "standard_error": 2.1827556216220793e-08
+            },
+            "zero": {
+              "mean": 1.6153340960524006e-16,
+              "standard_error": 4.049362216988814e-17
+            },
+            "paired": {
+              "mean": 1.8082837362076883e-07,
+              "standard_error": 2.182755621639401e-08
+            },
+            "ordinary_signed": {
+              "mean": 2.3439107020331203e-07,
+              "standard_error": 7.717799769140631e-08
+            },
+            "absolute_energy_work": {
+              "mean": 6.776945870348185e-10,
+              "standard_error": 5.7705234435703004e-11
+            },
+            "direct_absolute_energy_work": {
+              "mean": 6.776945867478698e-10,
+              "standard_error": 5.770523442310224e-11
+            },
+            "curvature_difference": {
+              "mean": -7.314589416834853e-21,
+              "standard_error": 3.471268150143803e-20
+            },
+            "precision_gate": true,
+            "work_gate": true,
+            "direct_work_gate": true,
+            "curvature_gate": true
+          }
+        ],
+        "covariance": [
+          {
+            "Rc_upper": null,
+            "columns": [
+              "actual5",
+              "actual8",
+              "zero",
+              "paired5",
+              "paired8"
+            ],
+            "covariance_of_means": [
+              [
+                5.5591208428341415e-15,
+                -2.5562528701770665e-17,
+                -1.128757855347221e-26,
+                5.559120842845423e-15,
+                -2.556252869048298e-17
+              ],
+              [
+                -2.5562528701770665e-17,
+                1.6810265274137645e-16,
+                -1.335160652599559e-27,
+                -2.5562528700435448e-17,
+                1.6810265274271184e-16
+              ],
+              [
+                -1.128757855347221e-26,
+                -1.335160652599559e-27,
+                5.785435621616166e-34,
+                -1.1287579132015808e-26,
+                -1.335161231143116e-27
+              ],
+              [
+                5.559120842845423e-15,
+                -2.5562528700435448e-17,
+                -1.1287579132015808e-26,
+                5.559120842856707e-15,
+                -2.556252868914787e-17
+              ],
+              [
+                -2.556252869048298e-17,
+                1.6810265274271184e-16,
+                -1.335161231143116e-27,
+                -2.556252868914787e-17,
+                1.6810265274404684e-16
+              ]
+            ]
+          },
+          {
+            "Rc_upper": 0.25,
+            "columns": [
+              "actual5",
+              "actual8",
+              "zero",
+              "paired5",
+              "paired8"
+            ],
+            "covariance_of_means": [
+              [
+                7.057232860339581e-12,
+                -3.47465663965951e-14,
+                -1.0093709964706128e-23,
+                7.057232860349654e-12,
+                -3.4746566386501495e-14
+              ],
+              [
+                -3.47465663965951e-14,
+                2.393969219520248e-13,
+                -6.821092583869468e-25,
+                -3.4746566395913174e-14,
+                2.393969219527071e-13
+              ],
+              [
+                -1.0093709964706128e-23,
+                -6.821092583869468e-25,
+                7.741950315162457e-31,
+                -1.0093710738901203e-23,
+                -6.821100325819718e-25
+              ],
+              [
+                7.057232860349654e-12,
+                -3.4746566395913174e-14,
+                -1.0093710738901203e-23,
+                7.057232860359725e-12,
+                -3.474656638581951e-14
+              ],
+              [
+                -3.4746566386501495e-14,
+                2.393969219527071e-13,
+                -6.821100325819718e-25,
+                -3.474656638581951e-14,
+                2.3939692195339e-13
+              ]
+            ]
+          },
+          {
+            "Rc_upper": 0.5,
+            "columns": [
+              "actual5",
+              "actual8",
+              "zero",
+              "paired5",
+              "paired8"
+            ],
+            "covariance_of_means": [
+              [
+                6.832162969754825e-13,
+                -3.1412525507504973e-15,
+                -1.1041540756239214e-24,
+                6.832162969765885e-13,
+                -3.1412525496463586e-15
+              ],
+              [
+                -3.1412525507504973e-15,
+                2.0659646582677786e-14,
+                -1.328782045259743e-25,
+                -3.141252550617633e-15,
+                2.0659646582810633e-14
+              ],
+              [
+                -1.1041540756239214e-24,
+                -1.328782045259743e-25,
+                7.090672101441159e-32,
+                -1.104154146530655e-24,
+                -1.3287827543269353e-25
+              ],
+              [
+                6.832162969765885e-13,
+                -3.141252550617633e-15,
+                -1.104154146530655e-24,
+                6.832162969776946e-13,
+                -3.1412525495134557e-15
+              ],
+              [
+                -3.1412525496463586e-15,
+                2.0659646582810633e-14,
+                -1.3287827543269353e-25,
+                -3.1412525495134557e-15,
+                2.0659646582943538e-14
+              ]
+            ]
+          },
+          {
+            "Rc_upper": 1.0,
+            "columns": [
+              "actual5",
+              "actual8",
+              "zero",
+              "paired5",
+              "paired8"
+            ],
+            "covariance_of_means": [
+              [
+                7.961691034976859e-14,
+                -3.6610276589558646e-16,
+                -1.585890964049572e-25,
+                7.96169103499272e-14,
+                -3.661027657369971e-16
+              ],
+              [
+                -3.6610276589558646e-16,
+                2.4075414424842723e-15,
+                -1.8783627795169726e-26,
+                -3.661027658768018e-16,
+                2.4075414425030594e-15
+              ],
+              [
+                -1.585890964049572e-25,
+                -1.8783627795169726e-26,
+                8.286270793753029e-33,
+                -1.5858910469122736e-25,
+                -1.87836360814407e-26
+              ],
+              [
+                7.96169103499272e-14,
+                -3.661027658768018e-16,
+                -1.5858910469122736e-25,
+                7.961691035008519e-14,
+                -3.6610276571821276e-16
+              ],
+              [
+                -3.661027657369971e-16,
+                2.4075414425030594e-15,
+                -1.87836360814407e-26,
+                -3.6610276571821276e-16,
+                2.4075414425218438e-15
+              ]
+            ]
+          },
+          {
+            "Rc_upper": 2.0,
+            "columns": [
+              "actual5",
+              "actual8",
+              "zero",
+              "paired5",
+              "paired8"
+            ],
+            "covariance_of_means": [
+              [
+                1.5755847863753284e-14,
+                -7.245018135500598e-17,
+                -3.196210151177433e-26,
+                1.5755847863785292e-14,
+                -7.245018132304358e-17
+              ],
+              [
+                -7.245018135500598e-17,
+                4.7644221037227865e-16,
+                -3.7809022913486354e-27,
+                -7.24501813512251e-17,
+                4.764422103760601e-16
+              ],
+              [
+                -3.196210151177433e-26,
+                -3.7809022913486354e-27,
+                1.6397334364376548e-33,
+                -3.196210315150789e-26,
+                -3.780903931082062e-27
+              ],
+              [
+                1.5755847863785292e-14,
+                -7.24501813512251e-17,
+                -3.196210315150789e-26,
+                1.5755847863817267e-14,
+                -7.245018131926269e-17
+              ],
+              [
+                -7.245018132304358e-17,
+                4.764422103760601e-16,
+                -3.780903931082062e-27,
+                -7.245018131926269e-17,
+                4.764422103798405e-16
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "paired_timestep_action": [
+      {
+        "Rc_upper": null,
+        "frequency": 5.0,
+        "fine_minus_coarse": {
+          "mean": 5.734716171370771e-13,
+          "standard_error": 1.0774691318746827e-12
+        },
+        "action256_minus128": {
+          "mean": 1.4162750554865396e-18,
+          "standard_error": 2.740485421517132e-19
+        },
+        "timestep_gate": true,
+        "action_gate": true
+      },
+      {
+        "Rc_upper": null,
+        "frequency": 8.0,
+        "fine_minus_coarse": {
+          "mean": -2.195431682360141e-13,
+          "standard_error": 3.3334672073319754e-13
+        },
+        "action256_minus128": {
+          "mean": 7.065370362636263e-20,
+          "standard_error": 3.595563817828234e-20
+        },
+        "timestep_gate": true,
+        "action_gate": true
+      },
+      {
+        "Rc_upper": 0.25,
+        "frequency": 5.0,
+        "fine_minus_coarse": {
+          "mean": 1.8947240715665628e-11,
+          "standard_error": 3.627404715342864e-11
+        },
+        "action256_minus128": {
+          "mean": 5.0391749118848325e-17,
+          "standard_error": 1.0066447691344517e-17
+        },
+        "timestep_gate": true,
+        "action_gate": true
+      },
+      {
+        "Rc_upper": 0.25,
+        "frequency": 8.0,
+        "fine_minus_coarse": {
+          "mean": -5.4445231158294424e-12,
+          "standard_error": 1.2385989844997884e-11
+        },
+        "action256_minus128": {
+          "mean": 2.66733227977842e-18,
+          "standard_error": 1.3568634237832341e-18
+        },
+        "timestep_gate": true,
+        "action_gate": true
+      },
+      {
+        "Rc_upper": 0.5,
+        "frequency": 5.0,
+        "fine_minus_coarse": {
+          "mean": 6.355415327946211e-12,
+          "standard_error": 1.1944154877586178e-11
+        },
+        "action256_minus128": {
+          "mean": 1.570023438768631e-17,
+          "standard_error": 3.038097760825125e-18
+        },
+        "timestep_gate": true,
+        "action_gate": true
+      },
+      {
+        "Rc_upper": 0.5,
+        "frequency": 8.0,
+        "fine_minus_coarse": {
+          "mean": -2.4298640814461024e-12,
+          "standard_error": 3.695474744765907e-12
+        },
+        "action256_minus128": {
+          "mean": 7.832639651367818e-19,
+          "standard_error": 3.986035441172019e-19
+        },
+        "timestep_gate": true,
+        "action_gate": true
+      },
+      {
+        "Rc_upper": 1.0,
+        "frequency": 5.0,
+        "fine_minus_coarse": {
+          "mean": 2.1702855500494966e-12,
+          "standard_error": 4.077598294909011e-12
+        },
+        "action256_minus128": {
+          "mean": 5.359782983986429e-18,
+          "standard_error": 1.037115436815496e-18
+        },
+        "timestep_gate": true,
+        "action_gate": true
+      },
+      {
+        "Rc_upper": 1.0,
+        "frequency": 8.0,
+        "fine_minus_coarse": {
+          "mean": -8.308458838153867e-13,
+          "standard_error": 1.2615247907369958e-12
+        },
+        "action256_minus128": {
+          "mean": 2.673834573944121e-19,
+          "standard_error": 1.3607132189374026e-19
+        },
+        "timestep_gate": true,
+        "action_gate": true
+      },
+      {
+        "Rc_upper": 2.0,
+        "frequency": 5.0,
+        "fine_minus_coarse": {
+          "mean": 9.654499750585308e-13,
+          "standard_error": 1.8139389610919383e-12
+        },
+        "action256_minus128": {
+          "mean": 2.3843249210362323e-18,
+          "standard_error": 4.613657256015777e-19
+        },
+        "timestep_gate": true,
+        "action_gate": true
+      },
+      {
+        "Rc_upper": 2.0,
+        "frequency": 8.0,
+        "fine_minus_coarse": {
+          "mean": -3.696049307606492e-13,
+          "standard_error": 5.611952921936901e-13
+        },
+        "action256_minus128": {
+          "mean": 1.1894680038825711e-19,
+          "standard_error": 6.053197352317066e-20
+        },
+        "timestep_gate": true,
+        "action_gate": true
+      }
+    ],
+    "exact_coarse_native_numpy80_comparison": {
+      "comparison": {
+        "radius": {
+          "exact_numeric_and_zero_sign": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "pr": {
+          "exact_numeric_and_zero_sign": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "delta_initial": {
+          "exact_numeric_and_zero_sign": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "delta_final": {
+          "exact_numeric_and_zero_sign": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "deltaE": {
+          "exact_numeric_and_zero_sign": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "work": {
+          "exact_numeric_and_zero_sign": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "energy_minus_work": {
+          "exact_numeric_and_zero_sign": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "gate": true,
+      "reference_sha256": "ee5d9d6f9235ace787719c6ba20be324d6f9fda0da230c75e9371c597bcd2a00",
+      "scope": "All states/seven fields; storage padding excluded."
+    },
+    "paired_original_arithmetic_changes": [
+      {
+        "name": "coarse",
+        "rows": [
+          {
+            "Rc_upper": null,
+            "frequency": 5.0,
+            "new_minus_old_paired": {
+              "mean": -2.234946614356059e-19,
+              "standard_error": 1.9545795286604804e-19
+            },
+            "absolute_change": {
+              "mean": 1.5126805020169075e-18,
+              "standard_error": 1.9405470761300522e-19
+            },
+            "relative_mean_change": -2.2932479321820503e-13,
+            "numerical_change_gate": true,
+            "scope": "Same physical sample, paired numerical arithmetic difference; no independent replication."
+          },
+          {
+            "Rc_upper": null,
+            "frequency": 8.0,
+            "new_minus_old_paired": {
+              "mean": 8.20956474964009e-21,
+              "standard_error": 2.6513827192922668e-20
+            },
+            "absolute_change": {
+              "mean": 2.0901702371470696e-19,
+              "standard_error": 2.631218048971477e-20
+            },
+            "relative_mean_change": 7.643116873444818e-14,
+            "numerical_change_gate": true,
+            "scope": "Same physical sample, paired numerical arithmetic difference; no independent replication."
+          },
+          {
+            "Rc_upper": 0.25,
+            "frequency": 5.0,
+            "new_minus_old_paired": {
+              "mean": -3.412992184298556e-18,
+              "standard_error": 3.769896626973793e-18
+            },
+            "absolute_change": {
+              "mean": 4.3108663175212605e-17,
+              "standard_error": 3.709602937527331e-18
+            },
+            "relative_mean_change": -9.711399392094324e-14,
+            "numerical_change_gate": true,
+            "scope": "Same physical sample, paired numerical arithmetic difference; no independent replication."
+          },
+          {
+            "Rc_upper": 0.25,
+            "frequency": 8.0,
+            "new_minus_old_paired": {
+              "mean": 5.920088002272791e-19,
+              "standard_error": 8.695243863351415e-19
+            },
+            "absolute_change": {
+              "mean": 6.984826434297701e-18,
+              "standard_error": 8.626959207153322e-19
+            },
+            "relative_mean_change": 1.462228971800814e-13,
+            "numerical_change_gate": true,
+            "scope": "Same physical sample, paired numerical arithmetic difference; no independent replication."
+          },
+          {
+            "Rc_upper": 0.5,
+            "frequency": 5.0,
+            "new_minus_old_paired": {
+              "mean": -2.3872257991222026e-18,
+              "standard_error": 2.1645213104043768e-18
+            },
+            "absolute_change": {
+              "mean": 1.649954501005026e-17,
+              "standard_error": 2.1494334865445946e-18
+            },
+            "relative_mean_change": -2.2097953068336872e-13,
+            "numerical_change_gate": true,
+            "scope": "Same physical sample, paired numerical arithmetic difference; no independent replication."
+          },
+          {
+            "Rc_upper": 0.5,
+            "frequency": 8.0,
+            "new_minus_old_paired": {
+              "mean": 9.613625764961086e-20,
+              "standard_error": 2.9391475565560826e-19
+            },
+            "absolute_change": {
+              "mean": 2.3087360983580158e-18,
+              "standard_error": 2.9169588471875537e-19
+            },
+            "relative_mean_change": 8.073537162608872e-14,
+            "numerical_change_gate": true,
+            "scope": "Same physical sample, paired numerical arithmetic difference; no independent replication."
+          },
+          {
+            "Rc_upper": 1.0,
+            "frequency": 5.0,
+            "new_minus_old_paired": {
+              "mean": -8.455613169852654e-19,
+              "standard_error": 7.3969544511007395e-19
+            },
+            "absolute_change": {
+              "mean": 5.723566721516722e-18,
+              "standard_error": 7.343869142194017e-19
+            },
+            "relative_mean_change": -2.2926057049091025e-13,
+            "numerical_change_gate": true,
+            "scope": "Same physical sample, paired numerical arithmetic difference; no independent replication."
+          },
+          {
+            "Rc_upper": 1.0,
+            "frequency": 8.0,
+            "new_minus_old_paired": {
+              "mean": 3.103732909880162e-20,
+              "standard_error": 1.0033952129430769e-19
+            },
+            "absolute_change": {
+              "mean": 7.907879008275519e-19,
+              "standard_error": 9.957683089310612e-20
+            },
+            "relative_mean_change": 7.635458250968793e-14,
+            "numerical_change_gate": true,
+            "scope": "Same physical sample, paired numerical arithmetic difference; no independent replication."
+          },
+          {
+            "Rc_upper": 2.0,
+            "frequency": 5.0,
+            "new_minus_old_paired": {
+              "mean": -3.7625673887816027e-19,
+              "standard_error": 3.290570334200499e-19
+            },
+            "absolute_change": {
+              "mean": 2.546608319625878e-18,
+              "standard_error": 3.266946764701184e-19
+            },
+            "relative_mean_change": -2.293244243045861e-13,
+            "numerical_change_gate": true,
+            "scope": "Same physical sample, paired numerical arithmetic difference; no independent replication."
+          },
+          {
+            "Rc_upper": 2.0,
+            "frequency": 8.0,
+            "new_minus_old_paired": {
+              "mean": 1.3820432095222306e-20,
+              "standard_error": 4.4636512312988266e-20
+            },
+            "absolute_change": {
+              "mean": 3.5186925262275294e-19,
+              "standard_error": 4.429706492800683e-20
+            },
+            "relative_mean_change": 7.642829258605461e-14,
+            "numerical_change_gate": true,
+            "scope": "Same physical sample, paired numerical arithmetic difference; no independent replication."
+          }
+        ]
+      },
+      {
+        "name": "fine",
+        "rows": [
+          {
+            "Rc_upper": null,
+            "frequency": 5.0,
+            "new_minus_old_paired": {
+              "mean": 8.540856701560261e-20,
+              "standard_error": 2.0977436200805326e-19
+            },
+            "absolute_change": {
+              "mean": 1.757696995213823e-18,
+              "standard_error": 2.07972613488161e-19
+            },
+            "relative_mean_change": 8.763650245119025e-14,
+            "numerical_change_gate": true,
+            "scope": "Same physical sample, paired numerical arithmetic difference; no independent replication."
+          },
+          {
+            "Rc_upper": null,
+            "frequency": 8.0,
+            "new_minus_old_paired": {
+              "mean": -5.285808175599005e-20,
+              "standard_error": 3.7943742238591846e-20
+            },
+            "absolute_change": {
+              "mean": 2.6468112274650827e-19,
+              "standard_error": 3.7726676887263973e-20
+            },
+            "relative_mean_change": -4.92110525522562e-13,
+            "numerical_change_gate": true,
+            "scope": "Same physical sample, paired numerical arithmetic difference; no independent replication."
+          },
+          {
+            "Rc_upper": 0.25,
+            "frequency": 5.0,
+            "new_minus_old_paired": {
+              "mean": 1.303231071324066e-18,
+              "standard_error": 4.214134194681232e-18
+            },
+            "absolute_change": {
+              "mean": 4.988742788208166e-17,
+              "standard_error": 4.1414474609685e-18
+            },
+            "relative_mean_change": 3.708238966594596e-14,
+            "numerical_change_gate": true,
+            "scope": "Same physical sample, paired numerical arithmetic difference; no independent replication."
+          },
+          {
+            "Rc_upper": 0.25,
+            "frequency": 8.0,
+            "new_minus_old_paired": {
+              "mean": -2.6871253995070913e-18,
+              "standard_error": 1.361345212922361e-18
+            },
+            "absolute_change": {
+              "mean": 9.140653243148328e-18,
+              "standard_error": 1.3544817328483752e-18
+            },
+            "relative_mean_change": -6.637059942974846e-13,
+            "numerical_change_gate": true,
+            "scope": "Same physical sample, paired numerical arithmetic difference; no independent replication."
+          },
+          {
+            "Rc_upper": 0.5,
+            "frequency": 5.0,
+            "new_minus_old_paired": {
+              "mean": 1.2141692518213946e-18,
+              "standard_error": 2.3176064806029505e-18
+            },
+            "absolute_change": {
+              "mean": 1.9055115053865315e-17,
+              "standard_error": 2.298475869900366e-18
+            },
+            "relative_mean_change": 1.1239254941461911e-13,
+            "numerical_change_gate": true,
+            "scope": "Same physical sample, paired numerical arithmetic difference; no independent replication."
+          },
+          {
+            "Rc_upper": 0.5,
+            "frequency": 8.0,
+            "new_minus_old_paired": {
+              "mean": -5.794691422901942e-19,
+              "standard_error": 4.206138733297197e-19
+            },
+            "absolute_change": {
+              "mean": 2.9225177695103127e-18,
+              "standard_error": 4.182251641350146e-19
+            },
+            "relative_mean_change": -4.866400373753797e-13,
+            "numerical_change_gate": true,
+            "scope": "Same physical sample, paired numerical arithmetic difference; no independent replication."
+          },
+          {
+            "Rc_upper": 1.0,
+            "frequency": 5.0,
+            "new_minus_old_paired": {
+              "mean": 3.229246103064007e-19,
+              "standard_error": 7.938747918701424e-19
+            },
+            "absolute_change": {
+              "mean": 6.6510871737701494e-18,
+              "standard_error": 7.870577957577453e-19
+            },
+            "relative_mean_change": 8.755584643345781e-14,
+            "numerical_change_gate": true,
+            "scope": "Same physical sample, paired numerical arithmetic difference; no independent replication."
+          },
+          {
+            "Rc_upper": 1.0,
+            "frequency": 8.0,
+            "new_minus_old_paired": {
+              "mean": -2.0003546098979057e-19,
+              "standard_error": 1.4359514787301821e-19
+            },
+            "absolute_change": {
+              "mean": 1.001590882351023e-18,
+              "standard_error": 1.4277380753001057e-19
+            },
+            "relative_mean_change": -4.921059824782325e-13,
+            "numerical_change_gate": true,
+            "scope": "Same physical sample, paired numerical arithmetic difference; no independent replication."
+          },
+          {
+            "Rc_upper": 2.0,
+            "frequency": 5.0,
+            "new_minus_old_paired": {
+              "mean": 1.4378688503265565e-19,
+              "standard_error": 3.531589695034567e-19
+            },
+            "absolute_change": {
+              "mean": 2.9591085698517546e-18,
+              "standard_error": 3.501257062198053e-19
+            },
+            "relative_mean_change": 8.763650407470489e-14,
+            "numerical_change_gate": true,
+            "scope": "Same physical sample, paired numerical arithmetic difference; no independent replication."
+          },
+          {
+            "Rc_upper": 2.0,
+            "frequency": 8.0,
+            "new_minus_old_paired": {
+              "mean": -8.898752442006058e-20,
+              "standard_error": 6.387898302195797e-20
+            },
+            "absolute_change": {
+              "mean": 4.455896855335376e-19,
+              "standard_error": 6.351355949977875e-20
+            },
+            "relative_mean_change": -4.92110406338577e-13,
+            "numerical_change_gate": true,
+            "scope": "Same physical sample, paired numerical arithmetic difference; no independent replication."
+          }
+        ]
+      }
+    ],
+    "selected_reference": {
+      "rows": [
+        {
+          "frequency": 5.0,
+          "selected_original_weight_partial_mean": 3.5027690375941474e-13,
+          "selected_individual_error_stat": {
+            "mean": -3.159979736368869e-16,
+            "standard_error": 3.162927234406252e-16
+          },
+          "full_paired_signal": 9.74577540485159e-07,
+          "necessary_gate": true
+        },
+        {
+          "frequency": 8.0,
+          "selected_original_weight_partial_mean": 3.4849804513230383e-13,
+          "selected_individual_error_stat": {
+            "mean": -1.023468823541708e-16,
+            "standard_error": 9.767133067100926e-17
+          },
+          "full_paired_signal": 1.0741099613722171e-07,
+          "necessary_gate": true
+        }
+      ],
+      "scope": "Reused immutable independent selected trajectories; no omitted-state physical error bound or DOP estimator.",
+      "ids": [
+        3046,
+        1967,
+        1656,
+        512,
+        549,
+        3291,
+        2409,
+        2316
+      ],
+      "radial_sha256": "d88ee0c0286af8cee3a2e29697e12fbee04d1592879e73d8f28a31da4d733eb8",
+      "Cartesian_sha256": "04079a274bd322adafa3bf8480610cc8a50c807ba92e6aa28b2251fb7a6c7a24",
+      "radial_cartesian_scaled_r_error": 3.0808866137032277e-09,
+      "radial_cartesian_scaled_pr_error": 1.9798712633021496e-09,
+      "Cartesian_all_L_scaled_error": 2.1395395728938026e-13,
+      "radial_energy_work_maximum": 3.7166224055814093e-11,
+      "Cartesian_energy_work_maximum": 4.028423296901738e-11,
+      "reference_tolerances": {
+        "rtol": 2e-12,
+        "position_momentum_atol": 1e-14,
+        "work_atol": 1e-16,
+        "max_step": 0.04
+      }
+    },
+    "precision": {
+      "binary64_nmant": 52,
+      "longdouble_nmant": 63,
+      "longdouble_eps": 1.0842021724855044e-19,
+      "gate": true,
+      "sealed_native_environment": [
+        16,
+        64,
+        0,
+        768
+      ],
+      "sealed_native_status": 0
+    },
+    "tail_attribution": [
+      {
+        "Rc_upper": null,
+        "frequency": 5.0,
+        "effective_sample_size": 164.0516420385312,
+        "negative_count": 459,
+        "negative_absolute_share": 1.6917539181712904e-12,
+        "top_five_absolute_share": 0.07809614737143002,
+        "top32_absolute_share": 0.30734634020251755
+      },
+      {
+        "Rc_upper": null,
+        "frequency": 8.0,
+        "effective_sample_size": 67.51660458981794,
+        "negative_count": 730,
+        "negative_absolute_share": 6.418978113099215e-11,
+        "top_five_absolute_share": 0.1693277994206616,
+        "top32_absolute_share": 0.47626593239285137
+      },
+      {
+        "Rc_upper": 0.25,
+        "frequency": 5.0,
+        "effective_sample_size": 167.88180071823749,
+        "negative_count": 94,
+        "negative_absolute_share": 1.0169957915755803e-12,
+        "top_five_absolute_share": 0.07004262015398363,
+        "top32_absolute_share": 0.3027758939768097
+      },
+      {
+        "Rc_upper": 0.25,
+        "frequency": 8.0,
+        "effective_sample_size": 67.3612664594743,
+        "negative_count": 95,
+        "negative_absolute_share": 1.568800828402969e-11,
+        "top_five_absolute_share": 0.16952547997997158,
+        "top32_absolute_share": 0.47682194573630615
+      }
+    ],
+    "reference_scope": "Selected independent adaptive trajectories are necessary sampled checks, not an omitted-path error bound"
+  },
+  "support": {
+    "primitive": "F_L(E)=-integral_E^0 g_L(e) de; F_L=0 for E>=0",
+    "estimator": "[p_Rc/q_Rc] [g_L(E) DeltaE - (F_L(E_f)-F_L(E)) - F_L(E) 1(E_inverse>=0)]/q_radial",
+    "capture": "Inverse-support term retained for every map; counts in numerical.coarse_fine",
+    "ordinary_signed": "[p_Rc/q_Rc] g_L(E) DeltaE/q_radial",
+    "exact_identity_scope": "Canonical exact-flow expectation identity; action/curvature numerical approximation and physical-flow accuracy tested separately"
+  },
+  "historical_outcomes": {
+    "original_binary64_scientific_gate": false,
+    "original_binary64_inverse_failures": [
+      1.255295428284278e-09,
+      2.127105202457651e-09
+    ],
+    "first_all_state_numpy_extended": "COST_PARTIAL after complete coarse map; immutable",
+    "reader01": "FAILED exact covariance comparison; immutable",
+    "reader02": "Separate covariance-operation-order repair passed; no tolerances changed"
+  },
+  "limitations": [
+    "Orbital energy transfer does not measure radial or vertical random velocity dispersion or stellar survival.",
+    "Guiding-radius cohort is not an instantaneous spatial cohort and is not co-spatial with the halo binding tag.",
+    "No finite halo/star ratio, universal feedback bound, self-consistent core or observational exclusion is inferred.",
+    "Monte Carlo standard errors and delta-method ratios are sample estimates, without finite-sample tail coverage certification.",
+    "The spherical prescribed field includes no live disk, hydrodynamics, star formation or bar response."
+  ],
+  "provenance": {
+    "result_sha256": "556a6909711482afa46131538e95320bfdafa304c882d15f7a4a61604c49ba43",
+    "reader02_sha256": "bdad3446f2834e37c67a8bfaf2b13119e2c5ecc58d76788ad79489fc20d20d97",
+    "array_sha256": {
+      "coarse-response.npz": "495ef63358e3e76761c792638669ec60d3a932f46672937e850d77c12c0ac071",
+      "coarse-frozen-binary64-schedule.npz": "86496f72fd0f7c094b3ae58d4d546db4de2904701b63a0d3b297aedafe8e6ddc",
+      "coarse-direct-energy.npz": "a8b1117f756d2eaa588ea083ed9c4856326435dbe58fc188bda9e8fe0c744954",
+      "fine-direct-energy.npz": "ac6cef245b857b9385ae63045da7dfd7d7971edeffe63fa102f137731bdb85d0",
+      "fine-maps.npz": "798070fc81b0380305dbf43865d1d0f3b000fd89ffa961a593db0fc3499ecfa9",
+      "fine-inverse-replay.npz": "a941749f7bfb5063858d83efb956151771d89d687da21fe893a2d6ba994bcb5c",
+      "coarse-replay-errors.npz": "cf6c199d67fac17e10c4816833455d2ba8a09626f18e1b6d703d7faf3ed0ff7b",
+      "fine-response.npz": "11943fbf7d9f516f455d482579ecf4ebe275f0dab954ac98b1333bd918ab932c",
+      "coarse-inverse-replay.npz": "d3304263e8be68df7bb0e751ccc78eb95d840e4016cfbd434d3a94b4364c853d",
+      "fine-action256-response.npz": "c86b34f07bc298bc94a2244e442ffdd2bacbe92ba2f2be151e78331099754be4",
+      "fine-frozen-binary64-schedule.npz": "eabe0b7dc80aff032e63f3263b78a1e609d65befc3959ea2513243cbce317792",
+      "initial.npz": "65980e51538f9f4ba87be4220d260c08270748a9912e0196bfc8c376a4a774f1",
+      "fine-replay-errors.npz": "3304a076865744f2c543133d67c27d670ea1769baf10ff402e42e5bb00ad7e9f",
+      "coarse-maps.npz": "396e8c29ef88e3914477967c9fc188795565b6f8a0d21f50ccfa806ac02cb6e0"
+    },
+    "source_sha256": {
+      "feedback_cusp_warm_candidate.py": "95c1a2312cf30240c460b2975dbe451e710e1b168d76c8d9c3f10aa07cabac0d",
+      "FEEDBACK_CUSP_WARM_CANDIDATE_PROTOCOL.md": "d3d01a30bcd1dd5a829bf622078013f2b3189ed2c5d3618eee8d054e4bd24893"
+    },
+    "operator_sha256": {
+      "feedback_cusp_warm_native_refinement.py": "0757ded675ecb2745a95014dd94e0fce82080398cb409e30bf07da8b170589c8",
+      "feedback_cusp_warm_radial.py": "10526f3332a2f00d90f4092adbb1bbf1556ecf5e414b1c2d27c8da5a570b88dd",
+      "feedback_cusp_radial.py": "dd1503f509d02850637a12153c77893944cc6df710f912c0c7df67105d221040",
+      "FEEDBACK_CUSP_WARM_NATIVE_REFINEMENT_PROTOCOL.md": "6bfa5397e313860fe385b4d2737bd177b705a9fdcb19ff85cd2b3ae8ac6aecc1",
+      "FEEDBACK_EXTENDED_ALLOCATION.md": "8fdfc4a1715cbc3f2d89932dc756fb27891676cfeb81f3e282336719cbef9cad",
+      "feedback_job.py": "b645675f1cca5a00be56bbe46600186e55c2b8386687583b51805f21ff4669cd",
+      "feedback_cusp_warm_native.c": "2b9b59d72865dca694b6f97f072a009a539018577ed07d15bf0106d5350499af",
+      "kernel.so": "03a3e92c90cf48cc2d0bc9f74dcf3797bf7c0431a3ca0c660541b45ee9be6dfe",
+      "FEEDBACK_CUSP_WARM_POPULATION_EQUIVALENCE.md": "82a069a12b6fd414f83d0fdfb5b944a816a89b37fa09e922ad8210b9cd325554",
+      "FEEDBACK_CUSP_WARM_VARIANCE_PROOF.md": "28c953252b6c005dec046ca1ce3c21e457ba3c86c3976c7cd97d866dd1886b7d"
+    },
+    "selectors": {
+      "figure": "fine rows with Rc_upper=null or0.25",
+      "contribution": "Y=positive_64[frequency]-positive_64[zero]; inner mask=Rc<0.25; no mass renormalization",
+      "signed_agreement": "ordinary_signed_64[frequency]-positive_64[frequency], same original states and weights"
+    }
+  }
+}

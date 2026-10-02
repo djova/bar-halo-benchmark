@@ -14,12 +14,32 @@ from the [earlier population-response article](../publication/web/paper.md).
 Read the portable [Markdown report](REPORT.md), the [exact-twin result](research/discovery-20261001/PUBLIC_TWINS_EXACT_SUMMARY.md), the [completed collision/inertia summary](research/discovery-20261001/PUBLIC_TERMINAL_BRANCHES.md),
 the [halo-echo model distinctions](research/discovery-20261001/PUBLIC_ECHO_SUMMARY.md),
 and the [cored selective-heating result](research/discovery-20261001/FEEDBACK_PUBLIC_SUMMARY.md).
-The [interim scientific learning note](research/discovery-20261001/LEARNINGS.md)
+The [current scientific learning note](research/discovery-20261001/LEARNINGS.md)
 connects these outcomes to the remaining tests. The [manifest](manifest.json)
 records released file hashes and preserved source
 hashes. Pin this repository's release commit when citing the package.
 
-## Additional recorded checks (.6)
+## Terminal checkpoint .7
+
+Read the [science synthesis](SYNTHESIS.md), [new weak-bar evolution](TWINS_WEAK.md),
+[qualified scalar stellar-energy sample](WARM_COST.md) and
+[compute accounting](RESOURCE_SUMMARY.md). The new compact JSON files and NumPy
+readers support saved-summary arithmetic, not full forced-orbit reproduction:
+
+```sh
+.venv-discovery/bin/python discovery/scripts/discovery/replay_twins_prediction.py
+.venv-discovery/bin/python discovery/scripts/discovery/replay_warm_cost.py
+```
+
+All six weak magnitude forecasts remain unresolved; six direct contrasts are
+positive and three paired amplitude-law checks supported under the nominal
+criteria. The final stellar numerical stage passes on the original 4096 draw;
+its energy deposit is not measured random stellar motion. Original failures and
+COST_PARTIAL are retained. The [static figures](figures/) are pinned package
+assets, without a dependency on the canonical website. Current reading starts
+from this .7 package; historical protocol/outcome pins below keep their scopes.
+
+## Retained recorded checks (.6)
 
 Read [CHECKS_V2.md](CHECKS_V2.md) for the larger warm-star sample, unresolved
 spatial field, and separately sealed weak-bar forecast. The [saved operand
@@ -34,8 +54,9 @@ The [portable unforced operator](source-snapshots/twin-forecast/README.md) has a
 separate explicit execution route. Its seven-grid regeneration costs 123.850
 CPU seconds on the recorded platform, not a portable runtime guarantee. It does
 not establish the weak forecast's applicability to independent forced orbits.
-The physical stellar qualification and spatial echo remain unresolved. Prior
-release tags and their failures are preserved.
+The .6 all-state stellar qualification and spatial-echo gate are retained
+as historical failures. The separate .7 stellar repair qualifies its scalar
+energy sample; the spatial echo remains unresolved. Prior tags are preserved.
 
 ## Inspect, verify, reproduce
 
