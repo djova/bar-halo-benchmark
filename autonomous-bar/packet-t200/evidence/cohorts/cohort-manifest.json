@@ -1,0 +1,33 @@
+{
+  "schema": "Packet-T200-cohort-public-files-v1",
+  "files": [
+    {
+      "path": "cohort-contrasts.csv",
+      "bytes": 32053,
+      "sha256": "ac79b0f607ca832d0528091a4cb2633392ec68d00d0a7d6aa5f5c3efdf74dffa"
+    },
+    {
+      "path": "cohort-population-operands.csv",
+      "bytes": 67578,
+      "sha256": "e9f4d0237da8298806217e831bfc4de21e024c6987879b8fd94fb91b8967f89a"
+    },
+    {
+      "path": "cohort-results.json",
+      "bytes": 221871,
+      "sha256": "7da223293677d98853fd1ad0ad7e42331a6c068212f1e2eba0b8c8b633671545"
+    },
+    {
+      "path": "cohort-transfer.png",
+      "bytes": 154279,
+      "sha256": "17dddc273384ed945c571b07fb87939c740780c13dbf78b2bb320607a24f9455"
+    }
+  ],
+  "worker_sha256": "72e8f8520c909aa9a77cee7b6b1050015e5703b41d1bb497cbb74fec992e3d28",
+  "prereg_sha256": "b64884a17005eac4218d9020ba7920d6acba5eef6070ae7a97f83ad29f0308b2",
+  "parent_reader_source_sha256": {
+    "bar-mass-010-owned-chain-packet-eight-baseline-readback-01": "c69a4ce148fde2504d1cbe28193b121fb58baaa59b9252a183a54ba6d0827f50",
+    "bar-mass-010-responsive-growth-recovery-chain-packet-four-readback-01": "c6ee6dd4d265bcd1f7e5d154fcb5e11b1daac52f2891ecde7d10825671346825"
+  },
+  "no_phase_or_particle_arrays": true,
+  "no_new_physical_trajectories": true
+}

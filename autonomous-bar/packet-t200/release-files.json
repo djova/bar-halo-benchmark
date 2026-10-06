@@ -14,13 +14,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 4145,
-      "sha256": "67ba13a77eb103e6e3cdd7377529588e8005d8596cbfe04e1688c19792620d64"
+      "bytes": 5019,
+      "sha256": "414cafe3e2c6268449fc32f63274a003947c433575b559c0af9cc501c7dea896"
     },
     {
       "path": "REPORT.md",
-      "bytes": 12039,
-      "sha256": "aba5983d9129785ec7726bf45912fc17c78a47744f954b41ed9471ea929417cd"
+      "bytes": 14224,
+      "sha256": "5618ba5aa4be1d89bdca5abbbf67fbeb0320c14969ddd10a880469cb337faad1"
     },
     {
       "path": "SHORT_TIME_RESPONSE.md",
@@ -41,6 +41,31 @@
       "path": "evidence/baseline-recorded-operands.csv",
       "bytes": 1274471,
       "sha256": "e2c65610b19503778ddd1e29ccbec2be739a0517f11ec6effc9adca300f94e50"
+    },
+    {
+      "path": "evidence/cohorts/cohort-contrasts.csv",
+      "bytes": 32053,
+      "sha256": "ac79b0f607ca832d0528091a4cb2633392ec68d00d0a7d6aa5f5c3efdf74dffa"
+    },
+    {
+      "path": "evidence/cohorts/cohort-manifest.json",
+      "bytes": 1275,
+      "sha256": "ce9156022c9a1992c45f7334f8687305242868f64edfcb71b1f7569762ff5806"
+    },
+    {
+      "path": "evidence/cohorts/cohort-population-operands.csv",
+      "bytes": 67578,
+      "sha256": "e9f4d0237da8298806217e831bfc4de21e024c6987879b8fd94fb91b8967f89a"
+    },
+    {
+      "path": "evidence/cohorts/cohort-results.json",
+      "bytes": 221871,
+      "sha256": "7da223293677d98853fd1ad0ad7e42331a6c068212f1e2eba0b8c8b633671545"
+    },
+    {
+      "path": "evidence/cohorts/cohort-transfer.png",
+      "bytes": 154279,
+      "sha256": "17dddc273384ed945c571b07fb87939c740780c13dbf78b2bb320607a24f9455"
     },
     {
       "path": "evidence/growth-recorded-operands.csv",

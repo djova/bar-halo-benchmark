@@ -57,3 +57,37 @@ The secondary recorded-node mean over \(180\le t\le200\) has a paired shift of \
 ![Figure 4: actual recorded comparison](evidence/growth-step-sensitivity.png)
 
 [Interactive version](https://djova.ca/galaxy-bar/autonomous-bar.html) requires the public website. All static figure copies and scalar operands are included beside this mirrored text.
+
+## Initial-cohort attribution: all support retained
+
+A separately predeclared diagnostic partitions the initial particles by six
+construction-binding-energy bands and the sign of their initial axial angular
+momentum. All 60 baseline/refined full-particle transfer records retain each
+population's own physical mass and release prefix. The 18 cell contributions
+sum to the saved signed endpoint contrast; their full cross-cell covariance
+recovers its whole-library sampling uncertainty. This identity verifies
+accounting, rather than providing independent dynamical evidence.
+
+The responsive cohort means contain positive and negative contributions. Their
+signed sum is −0.0004926756603; the sum of their absolute means is
+0.0018174845674. The growth-shift figure shows sensitivity distributed across
+initial populations, with its largest negative mean in the positive-Lz,
+0.5 ≤ b < 0.75 cell. All cells are shown, including empty bins. These initial
+labels do not establish resonant capture or a converged physical mechanism.
+
+![Figure 5: complete fixed initial-cohort endpoint attribution](evidence/cohorts/cohort-transfer.png)
+
+**Figure 5.** Fixed endpoint T = 200, independent of the interactive clock.
+Panels show the responsive baseline, paired responsive-minus-fixed comparison,
+and same-four growth-step shift. All preselected bins retain their own masses.
+Intervals are nominal pointwise t7/t3 summaries, without simultaneous coverage
+or numerical bounds. The [complete cell results](evidence/cohorts/cohort-results.json)
+include library vectors and covariance; the [population operands](evidence/cohorts/cohort-population-operands.csv)
+include counts, masses and bar impulses. The [cohort manifest](evidence/cohorts/cohort-manifest.json)
+pins current product/source bytes. Parent readers lacked historical
+per-particle output hashes; the new meter validates current IDs, masses,
+ancestry and aggregate closure, not an independent reconstruction of kicks.
+
+This diagnostic leaves both necessary qualification failures unchanged. The
+remaining matched controls and live stellar extension remain unfinished. It
+does not establish a physical null or a continuum upper bound.

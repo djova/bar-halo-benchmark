@@ -75,3 +75,18 @@ license. Original text, original figures and original scalar data are offered
 under CC BY 4.0, with attribution to Galaxy Bar and the identified evidence
 release. No third-party observational catalogue is included here. These terms
 do not relicense AGAMA, GSL or any separately supplied native dependency.
+
+## Supporting initial-cohort diagnostic
+
+`evidence/cohorts/` contains the complete fixed-endpoint attribution across 18
+predeclared energy/sign bins, all 60 transfer products, population cell masses
+and counts, paired library vectors and covariance. Figure 5 and its assumptions
+are described in `REPORT.md`. These are initial labels, not measured capture
+or present orbital occupancy. All bins and original support remain.
+
+The new genuine meter authenticates current derived-product bytes and checks
+IDs, masses, ancestry and aggregate closure. Parent readers did not publish
+historical hashes of every per-particle output. The `inspect.py` command above
+checks its documented 36 scalar-history comparisons; it does not claim an
+independent numerical check of this cohort diagnostic. No new physical sample
+or convergence qualification is supplied by that decomposition.
