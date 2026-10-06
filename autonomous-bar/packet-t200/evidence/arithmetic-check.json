@@ -1,0 +1,932 @@
+{
+  "status": "saved-record arithmetic agrees",
+  "reconstructed_contrasts": [
+    {
+      "scope": "baseline",
+      "observable": "endpoint",
+      "field": "fixed_halo",
+      "populations": [
+        "plus",
+        "minus"
+      ],
+      "estimator": "baseline_eight",
+      "individual_signed_C": [
+        0.00027558777806480084,
+        -0.00048006559359081713,
+        0.00031240275388044747,
+        -3.552664021788665e-05,
+        0.00026954523621347537,
+        0.0004929227706768069,
+        -7.806081082306626e-06,
+        -0.00032752549690673316
+      ],
+      "mean": 6.244184087972338e-05,
+      "nominal_interval": [
+        -0.00021966124621595107,
+        0.0003445449279753978
+      ]
+    },
+    {
+      "scope": "baseline",
+      "observable": "endpoint",
+      "field": "fixed_halo",
+      "populations": [
+        "plus",
+        "F0"
+      ],
+      "estimator": "baseline_eight",
+      "individual_signed_C": [
+        0.00013564434671620162,
+        -0.00029521083662620295,
+        0.000152591684714376,
+        -1.786301505424248e-05,
+        0.00011629382460986992,
+        0.00021109605453062397,
+        0.00012779246039040792,
+        -0.00025050511287316723
+      ],
+      "mean": 2.2479925800983347e-05,
+      "nominal_interval": [
+        -0.00013934662887885604,
+        0.00018430648048082274
+      ]
+    },
+    {
+      "scope": "baseline",
+      "observable": "endpoint",
+      "field": "fixed_halo",
+      "populations": [
+        "minus",
+        "F0"
+      ],
+      "estimator": "baseline_eight",
+      "individual_signed_C": [
+        -0.0001399434313485992,
+        0.00018485475696461418,
+        -0.00015981106916607146,
+        1.766362516364417e-05,
+        -0.00015325141160360545,
+        -0.00028182671614618293,
+        0.00013559854147271455,
+        7.702038403356593e-05
+      ],
+      "mean": -3.996191507874003e-05,
+      "nominal_interval": [
+        -0.00017916192216291396,
+        9.92380920054339e-05
+      ]
+    },
+    {
+      "scope": "baseline",
+      "observable": "endpoint",
+      "field": "responsive",
+      "populations": [
+        "plus",
+        "minus"
+      ],
+      "estimator": "baseline_eight",
+      "individual_signed_C": [
+        -0.0006919769541795517,
+        0.0013724892092904506,
+        -0.0034134537410793753,
+        0.0019789737213949943,
+        -0.0005736658159066765,
+        0.0034242868509573032,
+        -0.0016711822066627358,
+        -0.004366876346316495
+      ],
+      "mean": -0.0004926756603127608,
+      "nominal_interval": [
+        -0.002724934710415793,
+        0.0017395833897902715
+      ]
+    },
+    {
+      "scope": "baseline",
+      "observable": "endpoint",
+      "field": "responsive",
+      "populations": [
+        "plus",
+        "F0"
+      ],
+      "estimator": "baseline_eight",
+      "individual_signed_C": [
+        0.0013354068892218462,
+        -0.0005661799191536421,
+        -0.0016277987646928782,
+        -0.0009160708547981677,
+        0.0014806678810658225,
+        -0.0038042673298085417,
+        -0.0025668683245035906,
+        -0.0048992828956556655
+      ],
+      "mean": -0.0014455491647906021,
+      "nominal_interval": [
+        -0.003344952216168791,
+        0.00045385388658758714
+      ]
+    },
+    {
+      "scope": "baseline",
+      "observable": "endpoint",
+      "field": "responsive",
+      "populations": [
+        "minus",
+        "F0"
+      ],
+      "estimator": "baseline_eight",
+      "individual_signed_C": [
+        0.002027383843401398,
+        -0.0019386691284440927,
+        0.001785654976386497,
+        -0.002895044576193162,
+        0.002054333696972499,
+        -0.007228554180765845,
+        -0.0008956861178408548,
+        -0.0005324065493391705
+      ],
+      "mean": -0.0009528735044778414,
+      "nominal_interval": [
+        -0.003591553585786615,
+        0.0016858065768309322
+      ]
+    },
+    {
+      "scope": "baseline",
+      "observable": "endpoint",
+      "field": "responsive_minus_fixed",
+      "populations": [
+        "plus",
+        "minus"
+      ],
+      "estimator": "baseline_eight",
+      "individual_signed_C": [
+        -0.0009675647322443526,
+        0.0018525548028812677,
+        -0.0037258564949598227,
+        0.002014500361612881,
+        -0.0008432110521201519,
+        0.0029313640802804963,
+        -0.0016633761255804291,
+        -0.004039350849409762
+      ],
+      "mean": -0.0005551175011924842,
+      "nominal_interval": [
+        -0.0027495772436248052,
+        0.001639342241239837
+      ]
+    },
+    {
+      "scope": "baseline",
+      "observable": "endpoint",
+      "field": "responsive_minus_fixed",
+      "populations": [
+        "plus",
+        "F0"
+      ],
+      "estimator": "baseline_eight",
+      "individual_signed_C": [
+        0.0011997625425056446,
+        -0.0002709690825274391,
+        -0.0017803904494072542,
+        -0.0008982078397439253,
+        0.0013643740564559526,
+        -0.004015363384339166,
+        -0.0026946607848939985,
+        -0.004648777782782498
+      ],
+      "mean": -0.0014680290905915855,
+      "nominal_interval": [
+        -0.003340245044499584,
+        0.0004041868633164131
+      ]
+    },
+    {
+      "scope": "baseline",
+      "observable": "endpoint",
+      "field": "responsive_minus_fixed",
+      "populations": [
+        "minus",
+        "F0"
+      ],
+      "estimator": "baseline_eight",
+      "individual_signed_C": [
+        0.002167327274749997,
+        -0.002123523885408707,
+        0.0019454660455525685,
+        -0.002912708201356806,
+        0.0022075851085761045,
+        -0.006946727464619662,
+        -0.0010312846593135694,
+        -0.0006094269333727365
+      ],
+      "mean": -0.0009129115893991013,
+      "nominal_interval": [
+        -0.003544784809316071,
+        0.0017189616305178681
+      ]
+    },
+    {
+      "scope": "baseline",
+      "observable": "late_window",
+      "field": "fixed_halo",
+      "populations": [
+        "plus",
+        "minus"
+      ],
+      "estimator": "baseline_eight",
+      "individual_signed_C": [
+        0.0005907693381370649,
+        -0.0006334283310633904,
+        0.0003048483948512315,
+        1.1753416787274595e-05,
+        0.0001763849178405552,
+        0.00025740779831973093,
+        0.00019989861417690769,
+        -0.00030654793557771676
+      ],
+      "mean": 7.513577668395721e-05,
+      "nominal_interval": [
+        -0.0002454694060966331,
+        0.00039574095946454753
+      ]
+    },
+    {
+      "scope": "baseline",
+      "observable": "late_window",
+      "field": "fixed_halo",
+      "populations": [
+        "plus",
+        "F0"
+      ],
+      "estimator": "baseline_eight",
+      "individual_signed_C": [
+        0.0003715502787802194,
+        -0.0003596300420660725,
+        0.000162720769192215,
+        3.6702328894966385e-06,
+        8.709117231930907e-05,
+        0.00011609793050237904,
+        0.00021760862419661908,
+        -0.0001241093966733997
+      ],
+      "mean": 5.937494614259575e-05,
+      "nominal_interval": [
+        -0.00012742932204483758,
+        0.0002461792143300291
+      ]
+    },
+    {
+      "scope": "baseline",
+      "observable": "late_window",
+      "field": "fixed_halo",
+      "populations": [
+        "minus",
+        "F0"
+      ],
+      "estimator": "baseline_eight",
+      "individual_signed_C": [
+        -0.0002192190593568455,
+        0.00027379828899731784,
+        -0.0001421276256590165,
+        -8.083183897777957e-06,
+        -8.929374552124614e-05,
+        -0.00014130986781735189,
+        1.7710010019711397e-05,
+        0.00018243853890431705
+      ],
+      "mean": -1.576083054136146e-05,
+      "nominal_interval": [
+        -0.00015807401123127382,
+        0.0001265523501485509
+      ]
+    },
+    {
+      "scope": "baseline",
+      "observable": "late_window",
+      "field": "responsive",
+      "populations": [
+        "plus",
+        "minus"
+      ],
+      "estimator": "baseline_eight",
+      "individual_signed_C": [
+        -0.0012461135066851314,
+        0.0007043364636906135,
+        -0.00609564400633289,
+        -0.0014042466475907567,
+        -0.001689646703539549,
+        0.0026619250452978305,
+        -0.0013183777536116548,
+        -0.00482586592288925
+      ],
+      "mean": -0.0016517041289575984,
+      "nominal_interval": [
+        -0.003980599942357144,
+        0.0006771916844419473
+      ]
+    },
+    {
+      "scope": "baseline",
+      "observable": "late_window",
+      "field": "responsive",
+      "populations": [
+        "plus",
+        "F0"
+      ],
+      "estimator": "baseline_eight",
+      "individual_signed_C": [
+        0.0023161191091722877,
+        0.00032774467143881214,
+        -0.0025669511986284865,
+        3.637665683231539e-06,
+        -7.946389125446096e-05,
+        -0.002987946349301218,
+        -0.0010170108099281094,
+        -0.0040604271359790944
+      ],
+      "mean": -0.0010080372423496298,
+      "nominal_interval": [
+        -0.0027499061785645797,
+        0.0007338316938653201
+      ]
+    },
+    {
+      "scope": "baseline",
+      "observable": "late_window",
+      "field": "responsive",
+      "populations": [
+        "minus",
+        "F0"
+      ],
+      "estimator": "baseline_eight",
+      "individual_signed_C": [
+        0.003562232615857419,
+        -0.0003765917922518014,
+        0.0035286928077044033,
+        0.0014078843132739882,
+        0.001610182812285088,
+        -0.005649871394599049,
+        0.00030136694368354533,
+        0.0007654387869101553
+      ],
+      "mean": 0.0006436668866079687,
+      "nominal_interval": [
+        -0.0017863704130874044,
+        0.0030737041863033417
+      ]
+    },
+    {
+      "scope": "baseline",
+      "observable": "late_window",
+      "field": "responsive_minus_fixed",
+      "populations": [
+        "plus",
+        "minus"
+      ],
+      "estimator": "baseline_eight",
+      "individual_signed_C": [
+        -0.0018368828448221963,
+        0.001337764794754004,
+        -0.006400492401184121,
+        -0.0014160000643780313,
+        -0.0018660316213801043,
+        0.0024045172469780995,
+        -0.0015182763677885625,
+        -0.004519317987311533
+      ],
+      "mean": -0.0017268399056415557,
+      "nominal_interval": [
+        -0.004097209954947053,
+        0.0006435301436639417
+      ]
+    },
+    {
+      "scope": "baseline",
+      "observable": "late_window",
+      "field": "responsive_minus_fixed",
+      "populations": [
+        "plus",
+        "F0"
+      ],
+      "estimator": "baseline_eight",
+      "individual_signed_C": [
+        0.0019445688303920683,
+        0.0006873747135048847,
+        -0.0027296719678207015,
+        -3.256720626509946e-08,
+        -0.00016655506357377003,
+        -0.003104044279803597,
+        -0.0012346194341247285,
+        -0.003936317739305695
+      ],
+      "mean": -0.0010674121884922255,
+      "nominal_interval": [
+        -0.0027770028372835764,
+        0.0006421784602991254
+      ]
+    },
+    {
+      "scope": "baseline",
+      "observable": "late_window",
+      "field": "responsive_minus_fixed",
+      "populations": [
+        "minus",
+        "F0"
+      ],
+      "estimator": "baseline_eight",
+      "individual_signed_C": [
+        0.0037814516752142646,
+        -0.0006503900812491192,
+        0.00367082043336342,
+        0.0014159674971717662,
+        0.0016994765578063342,
+        -0.005508561526781697,
+        0.00028365693366383393,
+        0.0005830002480058383
+      ],
+      "mean": 0.0006594277171493301,
+      "nominal_interval": [
+        -0.0017958549070038869,
+        0.003114710341302547
+      ]
+    },
+    {
+      "scope": "growth",
+      "observable": "endpoint",
+      "field": "responsive",
+      "populations": [
+        "plus",
+        "minus"
+      ],
+      "estimator": "baseline_same_four",
+      "individual_signed_C": [
+        -0.0006919769541795517,
+        0.0013724892092904506,
+        -0.0034134537410793753,
+        0.0019789737213949943
+      ],
+      "mean": -0.00018849194114337053,
+      "nominal_interval": [
+        -0.004063204214969807,
+        0.0036862203326830656
+      ]
+    },
+    {
+      "scope": "growth",
+      "observable": "endpoint",
+      "field": "responsive",
+      "populations": [
+        "plus",
+        "F0"
+      ],
+      "estimator": "baseline_same_four",
+      "individual_signed_C": [
+        0.0013354068892218462,
+        -0.0005661799191536421,
+        -0.0016277987646928782,
+        -0.0009160708547981677
+      ],
+      "mean": -0.00044366066235571044,
+      "nominal_interval": [
+        -0.0024575580879799466,
+        0.0015702367632685257
+      ]
+    },
+    {
+      "scope": "growth",
+      "observable": "endpoint",
+      "field": "responsive",
+      "populations": [
+        "minus",
+        "F0"
+      ],
+      "estimator": "baseline_same_four",
+      "individual_signed_C": [
+        0.002027383843401398,
+        -0.0019386691284440927,
+        0.001785654976386497,
+        -0.002895044576193162
+      ],
+      "mean": -0.0002551687212123399,
+      "nominal_interval": [
+        -0.004278386507376951,
+        0.003768049064952271
+      ]
+    },
+    {
+      "scope": "growth",
+      "observable": "endpoint",
+      "field": "responsive",
+      "populations": [
+        "plus",
+        "minus"
+      ],
+      "estimator": "refined_same_four",
+      "individual_signed_C": [
+        -0.002076242444817078,
+        -0.002218364332543743,
+        -0.00816691259580693,
+        0.00012269002032927467
+      ],
+      "mean": -0.003084707338209619,
+      "nominal_interval": [
+        -0.008739243667929376,
+        0.0025698289915101376
+      ]
+    },
+    {
+      "scope": "growth",
+      "observable": "endpoint",
+      "field": "responsive",
+      "populations": [
+        "plus",
+        "F0"
+      ],
+      "estimator": "refined_same_four",
+      "individual_signed_C": [
+        0.0025138236174718775,
+        -0.0053939126872929455,
+        -0.0015123599230020268,
+        0.003680371956498285
+      ],
+      "mean": -0.00017801925908120242,
+      "nominal_interval": [
+        -0.006746463674811966,
+        0.006390425156649561
+      ]
+    },
+    {
+      "scope": "growth",
+      "observable": "endpoint",
+      "field": "responsive",
+      "populations": [
+        "minus",
+        "F0"
+      ],
+      "estimator": "refined_same_four",
+      "individual_signed_C": [
+        0.0045900660622889555,
+        -0.0031755483547492025,
+        0.006654552672804903,
+        0.0035576819361690104
+      ],
+      "mean": 0.0029066880791284166,
+      "nominal_interval": [
+        -0.003862879884085316,
+        0.009676256042342148
+      ]
+    },
+    {
+      "scope": "growth",
+      "observable": "endpoint",
+      "field": "responsive",
+      "populations": [
+        "plus",
+        "minus"
+      ],
+      "estimator": "refined_minus_baseline_same_four",
+      "individual_signed_C": [
+        -0.0013842654906375262,
+        -0.0035908535418341936,
+        -0.004753458854727555,
+        -0.0018562837010657196
+      ],
+      "mean": -0.0028962153970662485,
+      "nominal_interval": [
+        -0.005378272895955147,
+        -0.0004141578981773507
+      ]
+    },
+    {
+      "scope": "growth",
+      "observable": "endpoint",
+      "field": "responsive",
+      "populations": [
+        "plus",
+        "F0"
+      ],
+      "estimator": "refined_minus_baseline_same_four",
+      "individual_signed_C": [
+        0.0011784167282500313,
+        -0.004827732768139303,
+        0.00011543884169085139,
+        0.004596442811296453
+      ],
+      "mean": 0.000265641403274508,
+      "nominal_interval": [
+        -0.005934960084756806,
+        0.006466242891305822
+      ]
+    },
+    {
+      "scope": "growth",
+      "observable": "endpoint",
+      "field": "responsive",
+      "populations": [
+        "minus",
+        "F0"
+      ],
+      "estimator": "refined_minus_baseline_same_four",
+      "individual_signed_C": [
+        0.0025626822188875575,
+        -0.0012368792263051098,
+        0.004868897696418406,
+        0.006452726512362172
+      ],
+      "mean": 0.0031618568003407566,
+      "nominal_interval": [
+        -0.0021516294896480413,
+        0.008475343090329554
+      ]
+    },
+    {
+      "scope": "growth",
+      "observable": "late_window",
+      "field": "responsive",
+      "populations": [
+        "plus",
+        "minus"
+      ],
+      "estimator": "baseline_same_four",
+      "individual_signed_C": [
+        -0.0012461135066851314,
+        0.0007043364636906135,
+        -0.00609564400633289,
+        -0.0014042466475907567
+      ],
+      "mean": -0.002010416924229541,
+      "nominal_interval": [
+        -0.006604853309758014,
+        0.002584019461298932
+      ]
+    },
+    {
+      "scope": "growth",
+      "observable": "late_window",
+      "field": "responsive",
+      "populations": [
+        "plus",
+        "F0"
+      ],
+      "estimator": "baseline_same_four",
+      "individual_signed_C": [
+        0.0023161191091722877,
+        0.00032774467143881214,
+        -0.0025669511986284865,
+        3.637665683231539e-06
+      ],
+      "mean": 2.013756191646121e-05,
+      "nominal_interval": [
+        -0.0031701827044892552,
+        0.0032104578283221777
+      ]
+    },
+    {
+      "scope": "growth",
+      "observable": "late_window",
+      "field": "responsive",
+      "populations": [
+        "minus",
+        "F0"
+      ],
+      "estimator": "baseline_same_four",
+      "individual_signed_C": [
+        0.003562232615857419,
+        -0.0003765917922518014,
+        0.0035286928077044033,
+        0.0014078843132739882
+      ],
+      "mean": 0.0020305544861460023,
+      "nominal_interval": [
+        -0.0009847367891746496,
+        0.005045845761466654
+      ]
+    },
+    {
+      "scope": "growth",
+      "observable": "late_window",
+      "field": "responsive",
+      "populations": [
+        "plus",
+        "minus"
+      ],
+      "estimator": "refined_same_four",
+      "individual_signed_C": [
+        -0.0009049535454053181,
+        -0.001585399373216001,
+        -0.00677464854915466,
+        0.0030347830139565435
+      ],
+      "mean": -0.001557554613454859,
+      "nominal_interval": [
+        -0.007970947074797992,
+        0.0048558378478882735
+      ]
+    },
+    {
+      "scope": "growth",
+      "observable": "late_window",
+      "field": "responsive",
+      "populations": [
+        "plus",
+        "F0"
+      ],
+      "estimator": "refined_same_four",
+      "individual_signed_C": [
+        0.003428569069450438,
+        -0.00347228640255548,
+        -0.0019311090767535344,
+        0.003915568401832714
+      ],
+      "mean": 0.0004851854979935344,
+      "nominal_interval": [
+        -0.0054637406067218515,
+        0.00643411160270892
+      ]
+    },
+    {
+      "scope": "growth",
+      "observable": "late_window",
+      "field": "responsive",
+      "populations": [
+        "minus",
+        "F0"
+      ],
+      "estimator": "refined_same_four",
+      "individual_signed_C": [
+        0.004333522614855756,
+        -0.001886887029339479,
+        0.004843539472401126,
+        0.0008807853878761707
+      ],
+      "mean": 0.0020427401114483934,
+      "nominal_interval": [
+        -0.002979434243828744,
+        0.007064914466725531
+      ]
+    },
+    {
+      "scope": "growth",
+      "observable": "late_window",
+      "field": "responsive",
+      "populations": [
+        "plus",
+        "minus"
+      ],
+      "estimator": "refined_minus_baseline_same_four",
+      "individual_signed_C": [
+        0.0003411599612798133,
+        -0.0022897358369066145,
+        -0.0006790045428217706,
+        0.0044390296615473
+      ],
+      "mean": 0.0004528623107746821,
+      "nominal_interval": [
+        -0.004113419060740444,
+        0.005019143682289808
+      ]
+    },
+    {
+      "scope": "growth",
+      "observable": "late_window",
+      "field": "responsive",
+      "populations": [
+        "plus",
+        "F0"
+      ],
+      "estimator": "refined_minus_baseline_same_four",
+      "individual_signed_C": [
+        0.0011124499602781501,
+        -0.003800031073994292,
+        0.0006358421218749521,
+        0.003911930736149483
+      ],
+      "mean": 0.0004650479360770732,
+      "nominal_interval": [
+        -0.004610280477392339,
+        0.005540376349546485
+      ]
+    },
+    {
+      "scope": "growth",
+      "observable": "late_window",
+      "field": "responsive",
+      "populations": [
+        "minus",
+        "F0"
+      ],
+      "estimator": "refined_minus_baseline_same_four",
+      "individual_signed_C": [
+        0.0007712899989983368,
+        -0.0015102952370876777,
+        0.0013148466646967227,
+        -0.0005270989253978176
+      ],
+      "mean": 1.218562530239109e-05,
+      "nominal_interval": [
+        -0.0020176773717659868,
+        0.002042048622370769
+      ]
+    }
+  ],
+  "growth_impulse_decomposition": [
+    {
+      "seed": 7510101,
+      "population": "F0",
+      "release_impulse_shift": -1.6067385389295814e-09,
+      "postrelease_impulse_shift": -7.888837523432933e-05,
+      "total_impulse_shift": -7.888998197286626e-05
+    },
+    {
+      "seed": 7510101,
+      "population": "plus",
+      "release_impulse_shift": -1.3539658761838828e-09,
+      "postrelease_impulse_shift": -0.00014895745311893334,
+      "total_impulse_shift": -0.00014895880708479703
+    },
+    {
+      "seed": 7510101,
+      "population": "minus",
+      "release_impulse_shift": -1.8964497182924825e-09,
+      "postrelease_impulse_shift": -0.00023126637164422813,
+      "total_impulse_shift": -0.00023126826809396562
+    },
+    {
+      "seed": 7510102,
+      "population": "F0",
+      "release_impulse_shift": 2.517498423492044e-09,
+      "postrelease_impulse_shift": -0.00017858563224053053,
+      "total_impulse_shift": -0.00017858311474209946
+    },
+    {
+      "seed": 7510102,
+      "population": "plus",
+      "release_impulse_shift": 2.4765907313210184e-09,
+      "postrelease_impulse_shift": 0.000108473075619523,
+      "total_impulse_shift": 0.00010847555221023611
+    },
+    {
+      "seed": 7510102,
+      "population": "minus",
+      "release_impulse_shift": 2.599539931444762e-09,
+      "postrelease_impulse_shift": -0.00010504035342451539,
+      "total_impulse_shift": -0.00010503775388458723
+    },
+    {
+      "seed": 7510103,
+      "population": "F0",
+      "release_impulse_shift": 1.0952019467580921e-09,
+      "postrelease_impulse_shift": 0.000156761739809516,
+      "total_impulse_shift": 0.00015676283501145903
+    },
+    {
+      "seed": 7510103,
+      "population": "plus",
+      "release_impulse_shift": 1.2396199247820196e-09,
+      "postrelease_impulse_shift": 0.00014989770521482509,
+      "total_impulse_shift": 0.00014989894483473072
+    },
+    {
+      "seed": 7510103,
+      "population": "minus",
+      "release_impulse_shift": 9.816340668585845e-10,
+      "postrelease_impulse_shift": -0.00013274464933069096,
+      "total_impulse_shift": -0.00013274366769661398
+    },
+    {
+      "seed": 7510104,
+      "population": "F0",
+      "release_impulse_shift": 1.1138092139133943e-09,
+      "postrelease_impulse_shift": 0.00012025048319378893,
+      "total_impulse_shift": 0.00012025159700297292
+    },
+    {
+      "seed": 7510104,
+      "population": "plus",
+      "release_impulse_shift": 1.2968971811722595e-09,
+      "postrelease_impulse_shift": -0.00015305564155108963,
+      "total_impulse_shift": -0.00015305434465389648
+    },
+    {
+      "seed": 7510104,
+      "population": "minus",
+      "release_impulse_shift": 1.048484757104921e-09,
+      "postrelease_impulse_shift": -0.00026343093078870115,
+      "total_impulse_shift": -0.0002634298823039581
+    }
+  ],
+  "necessary_policy_checks": {
+    "baseline_interval_contains_zero": true,
+    "single_growth_arm_proxy": 0.005378272895955147,
+    "magnitude_share_ceiling": 9.853513206255216e-05,
+    "single_growth_arm_exceeds_ceiling": true
+  },
+  "does_not_verify": [
+    "forces or trajectories",
+    "full numerical convergence",
+    "true-error bounds or calibrated confidence coverage",
+    "physical stability",
+    "observations"
+  ]
+}

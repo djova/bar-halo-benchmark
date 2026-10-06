@@ -1,0 +1,86 @@
+{
+  "release": "autonomous-2026-10-06.1",
+  "scope": "read recorded evidence and recompute saved arithmetic; no current packet trajectory runner",
+  "files": [
+    {
+      "path": "OBSERVATIONAL_CONTRACT.md",
+      "bytes": 17723,
+      "sha256": "673475f9e92dbf36692c48c3481e413d39c27e15ea612e4ca279c348a9061e45"
+    },
+    {
+      "path": "POLICY.json",
+      "bytes": 11133,
+      "sha256": "7caa93da582b3dd157ef3348b7fdc7d7d96597c3c642b8c7a81c29c796b52bca"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4145,
+      "sha256": "67ba13a77eb103e6e3cdd7377529588e8005d8596cbfe04e1688c19792620d64"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 12039,
+      "sha256": "aba5983d9129785ec7726bf45912fc17c78a47744f954b41ed9471ea929417cd"
+    },
+    {
+      "path": "SHORT_TIME_RESPONSE.md",
+      "bytes": 18496,
+      "sha256": "38ee212f7d38d2a815f96daf59cfa3ab1619aa2ff806c58fb59c7398f19aedac"
+    },
+    {
+      "path": "evidence/arithmetic-check.json",
+      "bytes": 23807,
+      "sha256": "e7284a24d62b00f64c9ed1ecd968bfc775cec8a43e706ecff19f08e3f4ed955a"
+    },
+    {
+      "path": "evidence/autonomous-pattern-histories.png",
+      "bytes": 225523,
+      "sha256": "9b6af5416a78606ea88dec495376f02be37c0bd161f3da7a36f4fd4970d261c7"
+    },
+    {
+      "path": "evidence/baseline-recorded-operands.csv",
+      "bytes": 1274471,
+      "sha256": "e2c65610b19503778ddd1e29ccbec2be739a0517f11ec6effc9adca300f94e50"
+    },
+    {
+      "path": "evidence/growth-recorded-operands.csv",
+      "bytes": 635633,
+      "sha256": "f7b6060391986a905ac3b6e393065cfbba1e3b3306c9cd5f208e6b119bbe765f"
+    },
+    {
+      "path": "evidence/growth-step-sensitivity.png",
+      "bytes": 198714,
+      "sha256": "a22a72ba5e36d883e5aa861d1822f88b3f41a194d512fd9b56e8f464740fbd4a"
+    },
+    {
+      "path": "evidence/manifest.json",
+      "bytes": 1676,
+      "sha256": "0d26586503737426cc83e00f3f2ff14344c0094333bb3a4f6997818fd170b16d"
+    },
+    {
+      "path": "evidence/postrelease-bar-transfer.png",
+      "bytes": 107079,
+      "sha256": "4789539b346fd12c6c631ff35b5bac0e15a389df48a0f5d023d36566cca43cab"
+    },
+    {
+      "path": "evidence/readout-schema.json",
+      "bytes": 1862,
+      "sha256": "3783ae9bc12d00a621ee866ab938133ff352adddfd9e63184b32efc2349d3a91"
+    },
+    {
+      "path": "evidence/results.json",
+      "bytes": 29110,
+      "sha256": "c11ee682f62249bc913d65cae022e015092178a64dc9ecd86e9b660db8dc3134"
+    },
+    {
+      "path": "evidence/signed-paired-contrast.png",
+      "bytes": 206635,
+      "sha256": "fba133dbf7e22172ea49961f4fe64c5b8e65696fbfc6abf3327f252a7d808107"
+    },
+    {
+      "path": "inspect.py",
+      "bytes": 10072,
+      "sha256": "24bcd159beab289fe9b1256ae5c6a111413168b521690da227362ba8c4f4c271"
+    }
+  ]
+}

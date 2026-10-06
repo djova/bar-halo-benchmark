@@ -1,0 +1,37 @@
+{
+  "model_units": "G=Mtotal=a=1; times are dimensionless model time, not Gyr",
+  "axes": {
+    "variant": "baseline or growth-step refinement",
+    "seed": "whole randomized library; treatments and nodes are paired",
+    "field": "fixed_halo or responsive self-gravitating represented halo",
+    "population": "F0, plus, minus"
+  },
+  "missing_value": "Empty CSV cells mean not applicable before the actual t20 release; never zero",
+  "columns": {
+    "nominal_time": "recorded node label, model time",
+    "actual_time": "actual recorded integration time, model time",
+    "omega": "rotor angular speed, inverse model time",
+    "theta": "unwrapped physical rotor angle, radians",
+    "rotor_L": "axial rotor angular momentum, M a^2/model time",
+    "total_bar_impulse": "accumulated halo angular impulse from bar since t0, M a^2/model time",
+    "shape_work": "external shape-growth work since t0, energy",
+    "pattern_work": "external pattern-speed-clamp work since t0, energy",
+    "postrelease_bar_impulse": "bar-mediated halo angular impulse since this population own release, M a^2/model time",
+    "autonomous_energy_residual": "energy(t)-energy(release), energy",
+    "actual_rotor_K_exchange": "Krotor(t)-Krotor(release), energy",
+    "postrelease_rotor_bar_residual": "postrelease halo bar impulse plus rotor L change, angular momentum"
+  },
+  "uncertainty": "Nominal pointwise t7 for eight libraries; paired t3 for four refinements. Not calibrated simultaneous coverage or numerical bounds.",
+  "verification": "inspect.py recomputes saved scalar arithmetic, retaining full library pairing; no orbits rerun",
+  "sampling_seeds": [
+    7510101,
+    7510102,
+    7510103,
+    7510104,
+    7510105,
+    7510106,
+    7510107,
+    7510108
+  ],
+  "noise_operator": "none; collisionless deterministic particle evolution for each random initial library"
+}

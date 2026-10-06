@@ -1,0 +1,163 @@
+{
+  "schema": "Mb010-prospective-physical-response-policy-v2",
+  "created_UTC": "2026-10-05T03:39:20.176306+00:00",
+  "status": "frozen_before_any_Mb010_forcing",
+  "launch_authorization": false,
+  "scientific_cost_qualification": false,
+  "scope": "Inference policy for the specified physical rotor and responsive halo. Pilot admission, complete stage funding and source/storage review are separate.",
+  "complete55_target": {
+    "main_libraries": 8,
+    "main_fields": [
+      "fixed_halo",
+      "responsive"
+    ],
+    "main_records": 16,
+    "baseline_reader": 1,
+    "twin_seeds": [
+      7510101,
+      7510102,
+      7510103,
+      7510104
+    ],
+    "twin_arms": [
+      "free-dt",
+      "number",
+      "basis",
+      "angular"
+    ],
+    "twin_records": 32,
+    "twin_reader": 1,
+    "responsive_growth_records": 4,
+    "responsive_growth_reader": 1,
+    "complete_tasks": 55,
+    "primary": "signed responsive twin C_live at T200",
+    "secondary": "signed trapezoid C_live over T180-200 at the same recorded two-unit nodes",
+    "companion_after_complete_original50": true,
+    "companion_frozen_before_any_forcing": true,
+    "companion_confirmation_funding_not_added_to_full35h_again": true,
+    "general_convergence_fixed_refinement_and_live_minus_fixed_unqualified": true
+  },
+  "physical_condition": {
+    "model_id": "responsive-spherical-halo-and-physical-rigid-bar-Mb010-p8",
+    "G": 1.0,
+    "total_reference_mass": 1.0,
+    "halo_mass": 0.9,
+    "bar_mass": 0.1,
+    "bar_inertia": 0.1,
+    "bar_radius": 1.0,
+    "initial_omega": 0.5946035575013605,
+    "p": 8,
+    "hidden_structure_strength": 0.5,
+    "bar_density_contrast": 0.8,
+    "growth_duration": 20.0,
+    "end": 200.0,
+    "growth_dt": 0.005,
+    "free_dt": 0.04,
+    "nmax": 10,
+    "lmax": 6,
+    "mmax": 6,
+    "full_phase_support": true
+  },
+  "estimands": {
+    "primary": "C_live(T=200) = (Omega_plus-Omega_minus)/Omega_initial; ensemble mean of the SIGNED paired library contrast",
+    "secondary": "Trapezoid of C_live on the recorded two-unit nodes T180\u2013200, divided by20; secondary only",
+    "display": "D_Omega = abs(mean signed C_live); fold intervals through zero, never average absolute draw contrasts",
+    "fixed_comparator": "C_fixed and responsive-minus-fixed are descriptive; this numerical campaign does not qualify their refinements",
+    "sampling_unit": "A complete independent randomized initial library; all populations, fields, times and numerical arms remain paired",
+    "baseline_independent_units": 8,
+    "refinement_independent_units": 4,
+    "refinement_seeds": [
+      7510101,
+      7510102,
+      7510103,
+      7510104
+    ],
+    "no_seed_or_endpoint_selection_by_forced_outcome": true
+  },
+  "sampling": {
+    "reference": "Nominal pointwise Student-t7 interval for the eight-library mean. It is not generally calibrated simultaneous or frequentist coverage.",
+    "half_width": "t(.975,7) * sample_SD(signed_library_C)/sqrt(8)",
+    "primary_coordinate_only": true,
+    "secondary_does_not_rescue_failed_primary": true,
+    "raw_vectors_and_pairing_retained": true,
+    "comparisons_share_data_and_are_not_independent_confirmations": true,
+    "no_optional_sample_extension": true
+  },
+  "refinement_proxy": {
+    "arms": [
+      "growth-dt",
+      "free-dt",
+      "number",
+      "basis",
+      "angular"
+    ],
+    "matched_shift": "For each arm, refined C_live minus the SAME first-four baseline C_live, before averaging. Do not subtract the eight-library baseline mean.",
+    "coordinate": "Apply independently to declared endpoint and recorded late-window estimands.",
+    "arm_allowance": "U_arm = max(abs(lower),abs(upper)) of the nominal pointwise t3 interval for the four paired refined-minus-baseline shifts.",
+    "aggregate": "E_refinement = sum of the five nonnegative U_arm values. Do not cancel numerical arms or infer independence.",
+    "coverage": "Descriptive refinement proxy, not a rigorous true-error bound or calibrated joint coverage. No five-percent guarantee is claimed.",
+    "all_five_required_before_primary_numerical_qualification": true,
+    "missing_or_partial_arm": "UNQUALIFIED; do not assign zero allowance or infer convergence",
+    "fixed_refined_and_refined_F0": "Not covered; retained historical scopes cannot be promoted to general convergence."
+  },
+  "conservation": {
+    "scope": "Actual recorded postrelease nodes T20\u2013200; account growth work and clamp/axis torque separately; no total binding-energy denominator.",
+    "energy": "For each baseline twin and each available refined twin, max_abs(autonomous_energy_residual) / max_abs(actual_rotor_K_exchange) must be <=0.01.",
+    "angular": "For each baseline twin and each available refined twin, max_norm(autonomous_vector_L_minus_support_residual) / max_abs(postrelease_bar_impulse) must be <=0.01.",
+    "bar_rotor": "max_abs(postrelease_bar_rotor_exchange_residual) / max_abs(postrelease_bar_impulse) must be <=0.01.",
+    "zero_exchange": "Ratio undefined; this budget qualification is not established. Preserve absolute residual and denominator, never insert a favorable floor.",
+    "primary_proxy": "B_L = largest over the required responsive baseline/refined libraries of [max_abs(corrected postrelease total-L z residual_plus)+max_abs(corrected postrelease total-L z residual_minus)]/(I_bar*Omega_initial). Use each recorded z component, not the vector-norm maximum or algebraic bar-rotor residual.",
+    "total_proxy": "E_num = E_refinement + B_L. This sum is operational and conservative, not a proof that all errors are bounded.",
+    "identities_are_not_integration_accuracy": true,
+    "required_membership": "Responsive baseline plus/minus, all eight independent libraries; responsive refined plus/minus, all first-four libraries in all five arms. Fixed-field and F0 conservation readouts remain reported descriptively and are not silently included in or dropped from this C_live qualification. Unforced paths have no bar-release/exchange qualification.",
+    "support": "T20\u2013200 after each actual release. Baseline and growth-reader histories have101nodes with pre-release missing values; retain nodes10\u2013100 inclusive. f39 four-arm V/J/E/K/R arrays already contain91postrelease nodes; retain all91, not another slice10\u2013100."
+  },
+  "decisions": {
+    "numerical_share_test": "E_num <= min(0.02,0.20*abs(mean C_live)) for a magnitude-qualified nonzero comparison.",
+    "rationale": "The absolute ceiling allocates at most two percentage points of the initial pattern speed, one fifth of the predeclared ambitious ten-percent target. The relative condition stops that ceiling from qualifying errors comparable to a smaller measured contrast.",
+    "expanded_interval": "[baseline nominal t7 lower - E_num, baseline nominal t7 upper + E_num]. This is explicitly a proxy-expanded interval.",
+    "sign_supported": "All required genuine runs/readers and budget checks complete, magnitude test passes, and the expanded primary interval excludes zero.",
+    "ten_percent_prioritization": "Require sign_supported, including the magnitude-share and complete-control/budget conditions, THEN require lower endpoint>=0.10 in the zero-aware absolute image of the expanded primary interval. This is a prioritization target, not a definition of discovery.",
+    "unresolved": "If the expanded interval includes zero, any required control/budget is incomplete or fails, OR the magnitude-share test fails, preserve the estimate and mark the ordering/qualification unresolved or unqualified as applicable. An interval excluding zero alone does not override these requirements. Do not report a physical null.",
+    "negative_or_bound": "An informative upper bound requires the same complete controls and explicit proxy limitation. Absence of significance alone is not a bound.",
+    "no_physical_claim_from_pilot": true
+  },
+  "preparation": {
+    "existing_calibration": "bar-mass-010-unforced-packet-eight-calibration-01; all eight parents authenticated.",
+    "observed_band_failure_preserved": true,
+    "finite_bands_do_not_certify_stability": true,
+    "common_drift_and_individual_mode_departures_require_numerical_challenges": true,
+    "passive_impulse": "Diagnostic only, neither subtractable driven bias nor a rigorous forecast/error bound.",
+    "continuum_vs_particles": "Exact initial density/local-current/even-DF identities belong to the continuum family; finite packet realization and self-gravitating evolution require measurements.",
+    "instability": "If coherent growth survives number/basis/time/angle controls, investigate collective instability rather than labeling a quiet-halo pass.",
+    "physical_adoption": false
+  },
+  "boundaries": [
+    "Not a live stellar disk or a complete galaxy.",
+    "No total-halo or observationally measured pattern-speed distribution is predicted here.",
+    "No SIDM/CDM comparison or dark-matter microphysics.",
+    "No prescribed-field cos(beta) identity applied to autonomous population-dependent fields.",
+    "No exact formation route from the specified smooth F0; quadratic phase-space restriction remains.",
+    "No novelty claim merely that a DF or global spin affects bar response.",
+    "No general convergence, asymptotic evolution, calibrated confidence coverage or exact continuum error guarantee."
+  ],
+  "funding": {
+    "rule": "The original exact50 stage and separate five-job growth companion are funded from one aggregate240h account. Named confirmation jobs consume the same35h allocation, never an extra35h.",
+    "complete_stage_caps_not_frozen": true,
+    "cost_pilot": "One preselected seed7510101 responsive and fixed fullT200 driver, with allF0/twin populations and usual recordings, can measure whole cost before any main admission. It grants no physical qualification and no automatic matrix expansion.",
+    "no_budget_overrun_or_speculative_full55_admission": true
+  },
+  "source_bindings": {
+    "scripts/autonomous_bar/evolve_bar_mass_driven_dense.py": "94918b4e1352b45169b0c36a21d7cf0640bccf4252121fe31daa521a9d00a049",
+    "scripts/autonomous_bar/analyze_bar_mass_driven_dense.py": "a9a15d0fa61258c7df38922502e6e89949c41d3e004d4cd2765795dae567da69",
+    "scripts/autonomous_bar/analyze_bar_mass_twin_confirmation.py": "f39c1749ba7d86bbe59a106781c3e0cef6bb01f3a81fe5c1145b684ffb494a3d",
+    "scripts/autonomous_bar/analyze_bar_mass_responsive_growth.py": "cb103717fc9ea50a883efb2670463e8533c6d062160722f571608799b6221b2d"
+  },
+  "supersedes_before_any_forcing": {
+    "path": "research/autonomous-bar-20261002/BAR_MASS_RESPONSE_POLICY_20261005.json",
+    "sha256": "b80eaf2ba1162fe8f3cac17c093c658e690f80e77e89298243e79f14efbabe87",
+    "previous_version_retained_unchanged": true,
+    "reason": "Independent source review requested explicit decision inheritance and conservation membership; no physical/numerical outcome was used."
+  },
+  "implementation_requirement": "Neither original reader automatically applies this combined five-arm policy. A separately authenticated assessment must combine its exact outputs under this pinned policy; reader completion alone is not a policy PASS."
+}

@@ -1,0 +1,52 @@
+{
+  "schema": "Packet-T200-evidence-files-v1",
+  "files": [
+    {
+      "path": "arithmetic-check.json",
+      "bytes": 23807,
+      "sha256": "e7284a24d62b00f64c9ed1ecd968bfc775cec8a43e706ecff19f08e3f4ed955a"
+    },
+    {
+      "path": "baseline-recorded-operands.csv",
+      "bytes": 1274471,
+      "sha256": "e2c65610b19503778ddd1e29ccbec2be739a0517f11ec6effc9adca300f94e50"
+    },
+    {
+      "path": "growth-recorded-operands.csv",
+      "bytes": 635633,
+      "sha256": "f7b6060391986a905ac3b6e393065cfbba1e3b3306c9cd5f208e6b119bbe765f"
+    },
+    {
+      "path": "growth-step-sensitivity.png",
+      "bytes": 198714,
+      "sha256": "a22a72ba5e36d883e5aa861d1822f88b3f41a194d512fd9b56e8f464740fbd4a"
+    },
+    {
+      "path": "readout-schema.json",
+      "bytes": 1862,
+      "sha256": "3783ae9bc12d00a621ee866ab938133ff352adddfd9e63184b32efc2349d3a91"
+    },
+    {
+      "path": "results.json",
+      "bytes": 29110,
+      "sha256": "c11ee682f62249bc913d65cae022e015092178a64dc9ecd86e9b660db8dc3134"
+    }
+  ],
+  "source_versions": {
+    "exporter": "73e8b267de1d16223522170e8ffabed08b06dd416cd120b6a68d75578d07db84",
+    "arithmetic_checker": "24bcd159beab289fe9b1256ae5c6a111413168b521690da227362ba8c4f4c271"
+  },
+  "actual_input_versions": {
+    "raw-eight-driven-libraries.npz": {
+      "bytes": 4168088,
+      "sha256": "26a9a31344577eab356223096a46862ee4b27603d555cc81fac128de31842f93"
+    },
+    "raw-four-paired-control-libraries.npz": {
+      "bytes": 617757,
+      "sha256": "7777914f312cdb5d28310ced9b985663b13fe38b26319f371f9f7905860940ba"
+    }
+  },
+  "new_physical_samples": false,
+  "trajectory_reproduction": false,
+  "phase_archives_public": false
+}

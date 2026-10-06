@@ -1,0 +1,936 @@
+{
+  "schema": "Packet-T200-public-evidence-v1",
+  "baseline_contrasts": [
+    {
+      "observable": "endpoint",
+      "field_role": "fixed_halo",
+      "populations": [
+        "plus",
+        "minus"
+      ],
+      "signed_mean_C": 6.244184087972338e-05,
+      "nominal_pointwise_t7_interval": [
+        -0.000219661246215951,
+        0.00034454492797539776
+      ],
+      "absolute_of_signed_ensemble_mean": 6.244184087972338e-05,
+      "zero_aware_folded_interval": [
+        0.0,
+        0.00034454492797539776
+      ],
+      "mean_absolute_draws_not_used": true,
+      "independent_whole_libraries": 8,
+      "nominal_sign_interval_excludes_zero": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / initial Omega0; late quantity is the declared recorded-node mean",
+      "calibrated_coverage": false
+    },
+    {
+      "observable": "endpoint",
+      "field_role": "fixed_halo",
+      "populations": [
+        "plus",
+        "F0"
+      ],
+      "signed_mean_C": 2.2479925800983347e-05,
+      "nominal_pointwise_t7_interval": [
+        -0.000139346628878856,
+        0.00018430648048082268
+      ],
+      "absolute_of_signed_ensemble_mean": 2.2479925800983347e-05,
+      "zero_aware_folded_interval": [
+        0.0,
+        0.00018430648048082268
+      ],
+      "mean_absolute_draws_not_used": true,
+      "independent_whole_libraries": 8,
+      "nominal_sign_interval_excludes_zero": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / initial Omega0; late quantity is the declared recorded-node mean",
+      "calibrated_coverage": false
+    },
+    {
+      "observable": "endpoint",
+      "field_role": "fixed_halo",
+      "populations": [
+        "minus",
+        "F0"
+      ],
+      "signed_mean_C": -3.996191507874003e-05,
+      "nominal_pointwise_t7_interval": [
+        -0.0001791619221629139,
+        9.923809200543384e-05
+      ],
+      "absolute_of_signed_ensemble_mean": 3.996191507874003e-05,
+      "zero_aware_folded_interval": [
+        0.0,
+        0.0001791619221629139
+      ],
+      "mean_absolute_draws_not_used": true,
+      "independent_whole_libraries": 8,
+      "nominal_sign_interval_excludes_zero": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / initial Omega0; late quantity is the declared recorded-node mean",
+      "calibrated_coverage": false
+    },
+    {
+      "observable": "endpoint",
+      "field_role": "responsive",
+      "populations": [
+        "plus",
+        "minus"
+      ],
+      "signed_mean_C": -0.0004926756603127608,
+      "nominal_pointwise_t7_interval": [
+        -0.0027249347104157918,
+        0.0017395833897902702
+      ],
+      "absolute_of_signed_ensemble_mean": 0.0004926756603127608,
+      "zero_aware_folded_interval": [
+        0.0,
+        0.0027249347104157918
+      ],
+      "mean_absolute_draws_not_used": true,
+      "independent_whole_libraries": 8,
+      "nominal_sign_interval_excludes_zero": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / initial Omega0; late quantity is the declared recorded-node mean",
+      "calibrated_coverage": false
+    },
+    {
+      "observable": "endpoint",
+      "field_role": "responsive",
+      "populations": [
+        "plus",
+        "F0"
+      ],
+      "signed_mean_C": -0.0014455491647906021,
+      "nominal_pointwise_t7_interval": [
+        -0.003344952216168791,
+        0.0004538538865875867
+      ],
+      "absolute_of_signed_ensemble_mean": 0.0014455491647906021,
+      "zero_aware_folded_interval": [
+        0.0,
+        0.003344952216168791
+      ],
+      "mean_absolute_draws_not_used": true,
+      "independent_whole_libraries": 8,
+      "nominal_sign_interval_excludes_zero": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / initial Omega0; late quantity is the declared recorded-node mean",
+      "calibrated_coverage": false
+    },
+    {
+      "observable": "endpoint",
+      "field_role": "responsive",
+      "populations": [
+        "minus",
+        "F0"
+      ],
+      "signed_mean_C": -0.0009528735044778414,
+      "nominal_pointwise_t7_interval": [
+        -0.0035915535857866145,
+        0.0016858065768309317
+      ],
+      "absolute_of_signed_ensemble_mean": 0.0009528735044778414,
+      "zero_aware_folded_interval": [
+        0.0,
+        0.0035915535857866145
+      ],
+      "mean_absolute_draws_not_used": true,
+      "independent_whole_libraries": 8,
+      "nominal_sign_interval_excludes_zero": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / initial Omega0; late quantity is the declared recorded-node mean",
+      "calibrated_coverage": false
+    },
+    {
+      "observable": "endpoint",
+      "field_role": "responsive_minus_fixed",
+      "populations": [
+        "plus",
+        "minus"
+      ],
+      "signed_mean_C": -0.0005551175011924842,
+      "nominal_pointwise_t7_interval": [
+        -0.002749577243624805,
+        0.0016393422412398365
+      ],
+      "absolute_of_signed_ensemble_mean": 0.0005551175011924842,
+      "zero_aware_folded_interval": [
+        0.0,
+        0.002749577243624805
+      ],
+      "mean_absolute_draws_not_used": true,
+      "independent_whole_libraries": 8,
+      "nominal_sign_interval_excludes_zero": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / initial Omega0; late quantity is the declared recorded-node mean",
+      "calibrated_coverage": false
+    },
+    {
+      "observable": "endpoint",
+      "field_role": "responsive_minus_fixed",
+      "populations": [
+        "plus",
+        "F0"
+      ],
+      "signed_mean_C": -0.0014680290905915855,
+      "nominal_pointwise_t7_interval": [
+        -0.003340245044499584,
+        0.0004041868633164129
+      ],
+      "absolute_of_signed_ensemble_mean": 0.0014680290905915855,
+      "zero_aware_folded_interval": [
+        0.0,
+        0.003340245044499584
+      ],
+      "mean_absolute_draws_not_used": true,
+      "independent_whole_libraries": 8,
+      "nominal_sign_interval_excludes_zero": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / initial Omega0; late quantity is the declared recorded-node mean",
+      "calibrated_coverage": false
+    },
+    {
+      "observable": "endpoint",
+      "field_role": "responsive_minus_fixed",
+      "populations": [
+        "minus",
+        "F0"
+      ],
+      "signed_mean_C": -0.0009129115893991013,
+      "nominal_pointwise_t7_interval": [
+        -0.003544784809316071,
+        0.0017189616305178681
+      ],
+      "absolute_of_signed_ensemble_mean": 0.0009129115893991013,
+      "zero_aware_folded_interval": [
+        0.0,
+        0.003544784809316071
+      ],
+      "mean_absolute_draws_not_used": true,
+      "independent_whole_libraries": 8,
+      "nominal_sign_interval_excludes_zero": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / initial Omega0; late quantity is the declared recorded-node mean",
+      "calibrated_coverage": false
+    },
+    {
+      "observable": "late_window",
+      "field_role": "fixed_halo",
+      "populations": [
+        "plus",
+        "minus"
+      ],
+      "signed_mean_C": 7.513577668391558e-05,
+      "nominal_pointwise_t7_interval": [
+        -0.0002454694060966675,
+        0.00039574095946449863
+      ],
+      "absolute_of_signed_ensemble_mean": 7.513577668391558e-05,
+      "zero_aware_folded_interval": [
+        0.0,
+        0.00039574095946449863
+      ],
+      "mean_absolute_draws_not_used": true,
+      "independent_whole_libraries": 8,
+      "nominal_sign_interval_excludes_zero": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / initial Omega0; late quantity is the declared recorded-node mean",
+      "calibrated_coverage": false
+    },
+    {
+      "observable": "late_window",
+      "field_role": "fixed_halo",
+      "populations": [
+        "plus",
+        "F0"
+      ],
+      "signed_mean_C": 5.937494614248473e-05,
+      "nominal_pointwise_t7_interval": [
+        -0.00012742932204492502,
+        0.00024617921432989445
+      ],
+      "absolute_of_signed_ensemble_mean": 5.937494614248473e-05,
+      "zero_aware_folded_interval": [
+        0.0,
+        0.00024617921432989445
+      ],
+      "mean_absolute_draws_not_used": true,
+      "independent_whole_libraries": 8,
+      "nominal_sign_interval_excludes_zero": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / initial Omega0; late quantity is the declared recorded-node mean",
+      "calibrated_coverage": false
+    },
+    {
+      "observable": "late_window",
+      "field_role": "fixed_halo",
+      "populations": [
+        "minus",
+        "F0"
+      ],
+      "signed_mean_C": -1.5760830541430848e-05,
+      "nominal_pointwise_t7_interval": [
+        -0.00015807401123134988,
+        0.00012655235014848818
+      ],
+      "absolute_of_signed_ensemble_mean": 1.5760830541430848e-05,
+      "zero_aware_folded_interval": [
+        0.0,
+        0.00015807401123134988
+      ],
+      "mean_absolute_draws_not_used": true,
+      "independent_whole_libraries": 8,
+      "nominal_sign_interval_excludes_zero": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / initial Omega0; late quantity is the declared recorded-node mean",
+      "calibrated_coverage": false
+    },
+    {
+      "observable": "late_window",
+      "field_role": "responsive",
+      "populations": [
+        "plus",
+        "minus"
+      ],
+      "signed_mean_C": -0.00165170412895764,
+      "nominal_pointwise_t7_interval": [
+        -0.003980599942357162,
+        0.0006771916844418818
+      ],
+      "absolute_of_signed_ensemble_mean": 0.00165170412895764,
+      "zero_aware_folded_interval": [
+        0.0,
+        0.003980599942357162
+      ],
+      "mean_absolute_draws_not_used": true,
+      "independent_whole_libraries": 8,
+      "nominal_sign_interval_excludes_zero": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / initial Omega0; late quantity is the declared recorded-node mean",
+      "calibrated_coverage": false
+    },
+    {
+      "observable": "late_window",
+      "field_role": "responsive",
+      "populations": [
+        "plus",
+        "F0"
+      ],
+      "signed_mean_C": -0.0010080372423496714,
+      "nominal_pointwise_t7_interval": [
+        -0.002749906178564657,
+        0.0007338316938653138
+      ],
+      "absolute_of_signed_ensemble_mean": 0.0010080372423496714,
+      "zero_aware_folded_interval": [
+        0.0,
+        0.002749906178564657
+      ],
+      "mean_absolute_draws_not_used": true,
+      "independent_whole_libraries": 8,
+      "nominal_sign_interval_excludes_zero": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / initial Omega0; late quantity is the declared recorded-node mean",
+      "calibrated_coverage": false
+    },
+    {
+      "observable": "late_window",
+      "field_role": "responsive",
+      "populations": [
+        "minus",
+        "F0"
+      ],
+      "signed_mean_C": 0.0006436668866079687,
+      "nominal_pointwise_t7_interval": [
+        -0.0017863704130874096,
+        0.003073704186303347
+      ],
+      "absolute_of_signed_ensemble_mean": 0.0006436668866079687,
+      "zero_aware_folded_interval": [
+        0.0,
+        0.003073704186303347
+      ],
+      "mean_absolute_draws_not_used": true,
+      "independent_whole_libraries": 8,
+      "nominal_sign_interval_excludes_zero": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / initial Omega0; late quantity is the declared recorded-node mean",
+      "calibrated_coverage": false
+    },
+    {
+      "observable": "late_window",
+      "field_role": "responsive_minus_fixed",
+      "populations": [
+        "plus",
+        "minus"
+      ],
+      "signed_mean_C": -0.0017268399056415557,
+      "nominal_pointwise_t7_interval": [
+        -0.004097209954946982,
+        0.0006435301436638705
+      ],
+      "absolute_of_signed_ensemble_mean": 0.0017268399056415557,
+      "zero_aware_folded_interval": [
+        0.0,
+        0.004097209954946982
+      ],
+      "mean_absolute_draws_not_used": true,
+      "independent_whole_libraries": 8,
+      "nominal_sign_interval_excludes_zero": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / initial Omega0; late quantity is the declared recorded-node mean",
+      "calibrated_coverage": false
+    },
+    {
+      "observable": "late_window",
+      "field_role": "responsive_minus_fixed",
+      "populations": [
+        "plus",
+        "F0"
+      ],
+      "signed_mean_C": -0.0010674121884921561,
+      "nominal_pointwise_t7_interval": [
+        -0.0027770028372835574,
+        0.0006421784602992453
+      ],
+      "absolute_of_signed_ensemble_mean": 0.0010674121884921561,
+      "zero_aware_folded_interval": [
+        0.0,
+        0.0027770028372835574
+      ],
+      "mean_absolute_draws_not_used": true,
+      "independent_whole_libraries": 8,
+      "nominal_sign_interval_excludes_zero": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / initial Omega0; late quantity is the declared recorded-node mean",
+      "calibrated_coverage": false
+    },
+    {
+      "observable": "late_window",
+      "field_role": "responsive_minus_fixed",
+      "populations": [
+        "minus",
+        "F0"
+      ],
+      "signed_mean_C": 0.0006594277171493995,
+      "nominal_pointwise_t7_interval": [
+        -0.0017958549070038526,
+        0.0031147103413026516
+      ],
+      "absolute_of_signed_ensemble_mean": 0.0006594277171493995,
+      "zero_aware_folded_interval": [
+        0.0,
+        0.0031147103413026516
+      ],
+      "mean_absolute_draws_not_used": true,
+      "independent_whole_libraries": 8,
+      "nominal_sign_interval_excludes_zero": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / initial Omega0; late quantity is the declared recorded-node mean",
+      "calibrated_coverage": false
+    }
+  ],
+  "growth_contrasts": [
+    {
+      "observable": "endpoint",
+      "estimator": "baseline_same_four",
+      "field_role": "responsive",
+      "populations": [
+        "plus",
+        "minus"
+      ],
+      "signed_mean_C": -0.00018849194114337053,
+      "nominal_pointwise_t3_interval": [
+        -0.004063204214969131,
+        0.00368622033268239
+      ],
+      "absolute_of_signed_mean": 0.00018849194114337053,
+      "zero_aware_folded_interval": [
+        0.0,
+        0.004063204214969131
+      ],
+      "whole_paired_libraries": 4,
+      "mean_absolute_draws_not_used": true,
+      "calibrated_coverage": false,
+      "physical_sign_qualification": false,
+      "numerical_accuracy_bound": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / fixed initial Omega0"
+    },
+    {
+      "observable": "endpoint",
+      "estimator": "baseline_same_four",
+      "field_role": "responsive",
+      "populations": [
+        "plus",
+        "F0"
+      ],
+      "signed_mean_C": -0.00044366066235571044,
+      "nominal_pointwise_t3_interval": [
+        -0.0024575580879795953,
+        0.0015702367632681744
+      ],
+      "absolute_of_signed_mean": 0.00044366066235571044,
+      "zero_aware_folded_interval": [
+        0.0,
+        0.0024575580879795953
+      ],
+      "whole_paired_libraries": 4,
+      "mean_absolute_draws_not_used": true,
+      "calibrated_coverage": false,
+      "physical_sign_qualification": false,
+      "numerical_accuracy_bound": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / fixed initial Omega0"
+    },
+    {
+      "observable": "endpoint",
+      "estimator": "baseline_same_four",
+      "field_role": "responsive",
+      "populations": [
+        "minus",
+        "F0"
+      ],
+      "signed_mean_C": -0.0002551687212123399,
+      "nominal_pointwise_t3_interval": [
+        -0.004278386507376248,
+        0.0037680490649515683
+      ],
+      "absolute_of_signed_mean": 0.0002551687212123399,
+      "zero_aware_folded_interval": [
+        0.0,
+        0.004278386507376248
+      ],
+      "whole_paired_libraries": 4,
+      "mean_absolute_draws_not_used": true,
+      "calibrated_coverage": false,
+      "physical_sign_qualification": false,
+      "numerical_accuracy_bound": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / fixed initial Omega0"
+    },
+    {
+      "observable": "endpoint",
+      "estimator": "refined_same_four",
+      "field_role": "responsive",
+      "populations": [
+        "plus",
+        "minus"
+      ],
+      "signed_mean_C": -0.003084707338209619,
+      "nominal_pointwise_t3_interval": [
+        -0.00873924366792839,
+        0.0025698289915091514
+      ],
+      "absolute_of_signed_mean": 0.003084707338209619,
+      "zero_aware_folded_interval": [
+        0.0,
+        0.00873924366792839
+      ],
+      "whole_paired_libraries": 4,
+      "mean_absolute_draws_not_used": true,
+      "calibrated_coverage": false,
+      "physical_sign_qualification": false,
+      "numerical_accuracy_bound": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / fixed initial Omega0"
+    },
+    {
+      "observable": "endpoint",
+      "estimator": "refined_same_four",
+      "field_role": "responsive",
+      "populations": [
+        "plus",
+        "F0"
+      ],
+      "signed_mean_C": -0.00017801925908120242,
+      "nominal_pointwise_t3_interval": [
+        -0.006746463674810819,
+        0.006390425156648414
+      ],
+      "absolute_of_signed_mean": 0.00017801925908120242,
+      "zero_aware_folded_interval": [
+        0.0,
+        0.006746463674810819
+      ],
+      "whole_paired_libraries": 4,
+      "mean_absolute_draws_not_used": true,
+      "calibrated_coverage": false,
+      "physical_sign_qualification": false,
+      "numerical_accuracy_bound": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / fixed initial Omega0"
+    },
+    {
+      "observable": "endpoint",
+      "estimator": "refined_same_four",
+      "field_role": "responsive",
+      "populations": [
+        "minus",
+        "F0"
+      ],
+      "signed_mean_C": 0.0029066880791284166,
+      "nominal_pointwise_t3_interval": [
+        -0.0038628798840841336,
+        0.009676256042340967
+      ],
+      "absolute_of_signed_mean": 0.0029066880791284166,
+      "zero_aware_folded_interval": [
+        0.0,
+        0.009676256042340967
+      ],
+      "whole_paired_libraries": 4,
+      "mean_absolute_draws_not_used": true,
+      "calibrated_coverage": false,
+      "physical_sign_qualification": false,
+      "numerical_accuracy_bound": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / fixed initial Omega0"
+    },
+    {
+      "observable": "endpoint",
+      "estimator": "refined_minus_baseline_same_four",
+      "field_role": "responsive",
+      "populations": [
+        "plus",
+        "minus"
+      ],
+      "signed_mean_C": -0.0028962153970662485,
+      "nominal_pointwise_t3_interval": [
+        -0.005378272895954713,
+        -0.0004141578981777835
+      ],
+      "absolute_of_signed_mean": 0.0028962153970662485,
+      "zero_aware_folded_interval": [
+        0.0004141578981777835,
+        0.005378272895954713
+      ],
+      "whole_paired_libraries": 4,
+      "mean_absolute_draws_not_used": true,
+      "calibrated_coverage": false,
+      "physical_sign_qualification": false,
+      "numerical_accuracy_bound": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / fixed initial Omega0"
+    },
+    {
+      "observable": "endpoint",
+      "estimator": "refined_minus_baseline_same_four",
+      "field_role": "responsive",
+      "populations": [
+        "plus",
+        "F0"
+      ],
+      "signed_mean_C": 0.000265641403274508,
+      "nominal_pointwise_t3_interval": [
+        -0.005934960084755725,
+        0.0064662428913047415
+      ],
+      "absolute_of_signed_mean": 0.000265641403274508,
+      "zero_aware_folded_interval": [
+        0.0,
+        0.0064662428913047415
+      ],
+      "whole_paired_libraries": 4,
+      "mean_absolute_draws_not_used": true,
+      "calibrated_coverage": false,
+      "physical_sign_qualification": false,
+      "numerical_accuracy_bound": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / fixed initial Omega0"
+    },
+    {
+      "observable": "endpoint",
+      "estimator": "refined_minus_baseline_same_four",
+      "field_role": "responsive",
+      "populations": [
+        "minus",
+        "F0"
+      ],
+      "signed_mean_C": 0.0031618568003407566,
+      "nominal_pointwise_t3_interval": [
+        -0.002151629489647115,
+        0.008475343090328628
+      ],
+      "absolute_of_signed_mean": 0.0031618568003407566,
+      "zero_aware_folded_interval": [
+        0.0,
+        0.008475343090328628
+      ],
+      "whole_paired_libraries": 4,
+      "mean_absolute_draws_not_used": true,
+      "calibrated_coverage": false,
+      "physical_sign_qualification": false,
+      "numerical_accuracy_bound": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / fixed initial Omega0"
+    },
+    {
+      "observable": "late_window",
+      "estimator": "baseline_same_four",
+      "field_role": "responsive",
+      "populations": [
+        "plus",
+        "minus"
+      ],
+      "signed_mean_C": -0.002010416924229541,
+      "nominal_pointwise_t3_interval": [
+        -0.006604853309757074,
+        0.002584019461297992
+      ],
+      "absolute_of_signed_mean": 0.002010416924229541,
+      "zero_aware_folded_interval": [
+        0.0,
+        0.006604853309757074
+      ],
+      "whole_paired_libraries": 4,
+      "mean_absolute_draws_not_used": true,
+      "calibrated_coverage": false,
+      "physical_sign_qualification": false,
+      "numerical_accuracy_bound": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / fixed initial Omega0"
+    },
+    {
+      "observable": "late_window",
+      "estimator": "baseline_same_four",
+      "field_role": "responsive",
+      "populations": [
+        "plus",
+        "F0"
+      ],
+      "signed_mean_C": 2.013756191646121e-05,
+      "nominal_pointwise_t3_interval": [
+        -0.0031701827044885384,
+        0.003210457828321461
+      ],
+      "absolute_of_signed_mean": 2.013756191646121e-05,
+      "zero_aware_folded_interval": [
+        0.0,
+        0.003210457828321461
+      ],
+      "whole_paired_libraries": 4,
+      "mean_absolute_draws_not_used": true,
+      "calibrated_coverage": false,
+      "physical_sign_qualification": false,
+      "numerical_accuracy_bound": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / fixed initial Omega0"
+    },
+    {
+      "observable": "late_window",
+      "estimator": "baseline_same_four",
+      "field_role": "responsive",
+      "populations": [
+        "minus",
+        "F0"
+      ],
+      "signed_mean_C": 0.0020305544861460023,
+      "nominal_pointwise_t3_interval": [
+        -0.00098473678917419,
+        0.005045845761466194
+      ],
+      "absolute_of_signed_mean": 0.0020305544861460023,
+      "zero_aware_folded_interval": [
+        0.0,
+        0.005045845761466194
+      ],
+      "whole_paired_libraries": 4,
+      "mean_absolute_draws_not_used": true,
+      "calibrated_coverage": false,
+      "physical_sign_qualification": false,
+      "numerical_accuracy_bound": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / fixed initial Omega0"
+    },
+    {
+      "observable": "late_window",
+      "estimator": "refined_same_four",
+      "field_role": "responsive",
+      "populations": [
+        "plus",
+        "minus"
+      ],
+      "signed_mean_C": -0.0015575546134548313,
+      "nominal_pointwise_t3_interval": [
+        -0.007970947074796971,
+        0.004855837847887309
+      ],
+      "absolute_of_signed_mean": 0.0015575546134548313,
+      "zero_aware_folded_interval": [
+        0.0,
+        0.007970947074796971
+      ],
+      "whole_paired_libraries": 4,
+      "mean_absolute_draws_not_used": true,
+      "calibrated_coverage": false,
+      "physical_sign_qualification": false,
+      "numerical_accuracy_bound": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / fixed initial Omega0"
+    },
+    {
+      "observable": "late_window",
+      "estimator": "refined_same_four",
+      "field_role": "responsive",
+      "populations": [
+        "plus",
+        "F0"
+      ],
+      "signed_mean_C": 0.00048518549799356214,
+      "nominal_pointwise_t3_interval": [
+        -0.00546374060672094,
+        0.006434111602708064
+      ],
+      "absolute_of_signed_mean": 0.00048518549799356214,
+      "zero_aware_folded_interval": [
+        0.0,
+        0.006434111602708064
+      ],
+      "whole_paired_libraries": 4,
+      "mean_absolute_draws_not_used": true,
+      "calibrated_coverage": false,
+      "physical_sign_qualification": false,
+      "numerical_accuracy_bound": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / fixed initial Omega0"
+    },
+    {
+      "observable": "late_window",
+      "estimator": "refined_same_four",
+      "field_role": "responsive",
+      "populations": [
+        "minus",
+        "F0"
+      ],
+      "signed_mean_C": 0.0020427401114483934,
+      "nominal_pointwise_t3_interval": [
+        -0.0029794342438277943,
+        0.007064914466724581
+      ],
+      "absolute_of_signed_mean": 0.0020427401114483934,
+      "zero_aware_folded_interval": [
+        0.0,
+        0.007064914466724581
+      ],
+      "whole_paired_libraries": 4,
+      "mean_absolute_draws_not_used": true,
+      "calibrated_coverage": false,
+      "physical_sign_qualification": false,
+      "numerical_accuracy_bound": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / fixed initial Omega0"
+    },
+    {
+      "observable": "late_window",
+      "estimator": "refined_minus_baseline_same_four",
+      "field_role": "responsive",
+      "populations": [
+        "plus",
+        "minus"
+      ],
+      "signed_mean_C": 0.00045286231077470984,
+      "nominal_pointwise_t3_interval": [
+        -0.004113419060739752,
+        0.0050191436822891716
+      ],
+      "absolute_of_signed_mean": 0.00045286231077470984,
+      "zero_aware_folded_interval": [
+        0.0,
+        0.0050191436822891716
+      ],
+      "whole_paired_libraries": 4,
+      "mean_absolute_draws_not_used": true,
+      "calibrated_coverage": false,
+      "physical_sign_qualification": false,
+      "numerical_accuracy_bound": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / fixed initial Omega0"
+    },
+    {
+      "observable": "late_window",
+      "estimator": "refined_minus_baseline_same_four",
+      "field_role": "responsive",
+      "populations": [
+        "plus",
+        "F0"
+      ],
+      "signed_mean_C": 0.00046504793607710093,
+      "nominal_pointwise_t3_interval": [
+        -0.004610280477391579,
+        0.005540376349545781
+      ],
+      "absolute_of_signed_mean": 0.00046504793607710093,
+      "zero_aware_folded_interval": [
+        0.0,
+        0.005540376349545781
+      ],
+      "whole_paired_libraries": 4,
+      "mean_absolute_draws_not_used": true,
+      "calibrated_coverage": false,
+      "physical_sign_qualification": false,
+      "numerical_accuracy_bound": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / fixed initial Omega0"
+    },
+    {
+      "observable": "late_window",
+      "estimator": "refined_minus_baseline_same_four",
+      "field_role": "responsive",
+      "populations": [
+        "minus",
+        "F0"
+      ],
+      "signed_mean_C": 1.218562530239109e-05,
+      "nominal_pointwise_t3_interval": [
+        -0.0020176773717654624,
+        0.0020420486223702446
+      ],
+      "absolute_of_signed_mean": 1.218562530239109e-05,
+      "zero_aware_folded_interval": [
+        0.0,
+        0.0020420486223702446
+      ],
+      "whole_paired_libraries": 4,
+      "mean_absolute_draws_not_used": true,
+      "calibrated_coverage": false,
+      "physical_sign_qualification": false,
+      "numerical_accuracy_bound": false,
+      "physical_qualification": "UNQUALIFIED",
+      "units": "dimensionless / fixed initial Omega0"
+    }
+  ],
+  "physical_qualification": false,
+  "complete_numerical_convergence": false,
+  "model": {
+    "G": 1.0,
+    "total_mass": 1.0,
+    "scale": 1.0,
+    "halo_mass": 0.9,
+    "bar_mass": 0.1,
+    "bar_inertia": 0.1,
+    "initial_omega": 0.5946035575013605,
+    "p": 8,
+    "strength": 0.5,
+    "contrast": 0.8,
+    "growth_duration": 20.0,
+    "baseline_growth_dt": 0.005,
+    "refined_growth_dt": 0.0025,
+    "free_dt": 0.04,
+    "end": 200.0,
+    "late_window": [
+      180.0,
+      200.0
+    ],
+    "nmax": 10,
+    "lmax": 6,
+    "mmax": 6,
+    "live_stellar_disc": false,
+    "collisionless": true
+  },
+  "evidence_scope": "Saved aggregate arithmetic and paired recorded scalar histories; not a physical rerun or a force-accuracy qualification"
+}

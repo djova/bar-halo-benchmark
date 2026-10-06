@@ -1,3 +1,5 @@
+> **Autonomous rigid-bar follow-up, 6 October 2026:** [report](autonomous-bar/packet-t200/REPORT.md), [recorded scalar histories and arithmetic reader](autonomous-bar/packet-t200/README.md). The eight-library twin ordering is unresolved and its endpoint is sensitive to preparation-step refinement. This separate collisionless rotor/halo experiment does not extend the validated scope of the local-noise result below. Current packet trajectories are not publicly reproducible from this package.
+
 > **Editorial revision, 24 September 2026:** the [article](publication/web/paper.md)
 > and [MNRAS PDF](manuscript/galaxy-bar-mnras.pdf) now organize the argument around
 > population approximation, signed cancellation and an operational accuracy decision.
