@@ -1,0 +1,1352 @@
+{
+  "schema": "active-halo-public-cached-default-reproduction-v1",
+  "status": "complete default; shared-equation software equivalence",
+  "runner_sha256": "eaa9dbf3f9f0c20b03c903ce24aeb173a935c0fdad6a102cb78e01d425cc94c1",
+  "readme_sha256": "f712bb4e7a4d73dcbb0f3d5072e09cfb13fc3e7e6243b6746e24c775d12444e4",
+  "capsule_manifest_sha256": "61c963c8d0c6b929701c5f5b18491741713b15fb69380583b0ab4a247fef2a00",
+  "selected_lambda_values": [
+    0.5,
+    0.75
+  ],
+  "selected_layouts": [
+    "gl32_coarse",
+    "gl32_fine",
+    "gl64_fine"
+  ],
+  "signed_cells": 24,
+  "fresh_own_solves": 12,
+  "fresh_full_orbital_budgets": 24,
+  "full_five_strength_mode_executed": false,
+  "independent_physical_confirmation": false,
+  "scientific_qualification": false,
+  "original_expanded_precision_failures_preserved": true,
+  "measured_whole_CPU_seconds": 2357.4617479999997,
+  "host_cost_is_not_platform_guarantee": true,
+  "software_tolerances": {
+    "atol": 5e-12,
+    "rtol": 5e-10
+  },
+  "software_inventory": {
+    "array_comparisons": 189,
+    "endpoint_vector_comparisons": 24,
+    "total": 213
+  },
+  "software_checks": [
+    {
+      "label": "gl32_coarse time",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 6.000500000000001e-08,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse spatial_metric",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 1.9076318087751996e-07,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse m_values",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 1.0050000000000001e-09,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse F0_m-2_kernel",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 1.4571629217178124e-10,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse F0_m2_kernel",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 1.4571629217178124e-10,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse A_m-2_kernel",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 1.465240425577804e-10,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse A_m2_kernel",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 1.4652404255778037e-10,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda2_m-2_self0_wake",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.75276086190467e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda2_m-2_self0_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.00012240969986e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda2_m-2_self0_shape_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000124114517433e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda2_m-2_self0_torque",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000380637392702e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda2_m-2_self0_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.0014844609630855e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda2_m-2_self0_shape_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000546238509016e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda2_m-2_self0_impulse",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.012076259756631e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda2_m-2_self1_wake",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.9924329939426766e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda2_m-2_self1_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.00017217577738e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda2_m-2_self1_shape_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000165110212237e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda2_m-2_self1_torque",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000576483299352e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda2_m-2_self1_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.0022227533403856e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda2_m-2_self1_shape_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.0006839588708435e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda2_m-2_self1_impulse",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.017717985511807e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda2_m2_self0_wake",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.75276086190467e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda2_m2_self0_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.00012240969986e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda2_m2_self0_shape_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000124114517433e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda2_m2_self0_torque",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000380637392702e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda2_m2_self0_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.0014844609630855e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda2_m2_self0_shape_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000546238509016e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda2_m2_self0_impulse",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.012076259756631e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda2_m2_self1_wake",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.9924329939426766e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda2_m2_self1_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.00017217577738e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda2_m2_self1_shape_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000165110212237e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda2_m2_self1_torque",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000576483299352e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda2_m2_self1_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.0022227533403856e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda2_m2_self1_shape_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.0006839588708435e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda2_m2_self1_impulse",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.017717985511807e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda3_m-2_self0_wake",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.763996632036704e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda3_m-2_self0_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000128722785435e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda3_m-2_self0_shape_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.00013897405722e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda3_m-2_self0_torque",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000306171005769e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda3_m-2_self0_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.0004565727312454e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda3_m-2_self0_shape_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000550075400445e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda3_m-2_self0_impulse",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.004211865012861e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda3_m-2_self1_wake",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 6.044205313484327e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda3_m-2_self1_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000192690238563e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda3_m-2_self1_shape_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.0001896358851776e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda3_m-2_self1_torque",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000423155017458e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda3_m-2_self1_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.0005519364414855e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda3_m-2_self1_shape_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000690619558536e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda3_m-2_self1_impulse",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.0061031566667656e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda3_m2_self0_wake",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.763996632036704e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda3_m2_self0_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000128722785435e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda3_m2_self0_shape_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.00013897405722e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda3_m2_self0_torque",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000306171005769e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda3_m2_self0_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.0004565727312454e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda3_m2_self0_shape_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000550075400445e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda3_m2_self0_impulse",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.004211865012861e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda3_m2_self1_wake",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 6.044205313484327e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda3_m2_self1_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000192690238563e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda3_m2_self1_shape_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.0001896358851776e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda3_m2_self1_torque",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000423155017458e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda3_m2_self1_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.0005519364414855e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda3_m2_self1_shape_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000690619558536e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_coarse lambda3_m2_self1_impulse",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.0061031566667656e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine time",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 6.000500000000001e-08,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine spatial_metric",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 1.9076318087751996e-07,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine m_values",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 1.0050000000000001e-09,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine F0_m-2_kernel",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 1.4571629217178124e-10,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine F0_m2_kernel",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 1.4571629217178124e-10,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine A_m-2_kernel",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 1.465240425577804e-10,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine A_m2_kernel",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 1.4652404255778037e-10,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda2_m-2_self0_wake",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.753021931436123e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda2_m-2_self0_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000122455035983e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda2_m-2_self0_shape_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000124158303525e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda2_m-2_self0_torque",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000380637392815e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda2_m-2_self0_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.0014844631311945e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda2_m-2_self0_shape_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.0005464584610755e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda2_m-2_self0_impulse",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.012076275436137e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda2_m-2_self1_wake",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.992902070243145e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda2_m-2_self1_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000172258544077e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda2_m-2_self1_shape_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.0001651933847835e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda2_m-2_self1_torque",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.0005765404555245e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda2_m-2_self1_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.002223075039457e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda2_m-2_self1_shape_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000684320962154e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda2_m-2_self1_impulse",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.017720355788042e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda2_m2_self0_wake",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.753021931436123e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda2_m2_self0_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000122455035983e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda2_m2_self0_shape_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000124158303525e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda2_m2_self0_torque",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000380637392815e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda2_m2_self0_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.0014844631311945e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda2_m2_self0_shape_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.0005464584610755e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda2_m2_self0_impulse",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.012076275436137e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda2_m2_self1_wake",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.992902070243145e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda2_m2_self1_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000172258544077e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda2_m2_self1_shape_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.0001651933847835e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda2_m2_self1_torque",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.0005765404555245e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda2_m2_self1_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.002223075039457e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda2_m2_self1_shape_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000684320962154e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda2_m2_self1_impulse",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.017720355788042e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda3_m-2_self0_wake",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.76425959531177e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda3_m-2_self0_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000128766570554e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda3_m-2_self0_shape_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000139017747791e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda3_m-2_self0_torque",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000306171005885e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda3_m-2_self0_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000456795605456e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda3_m-2_self0_shape_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000550295352954e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda3_m-2_self0_impulse",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.004211871834321e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda3_m-2_self1_wake",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 6.044710434240626e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda3_m-2_self1_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000192781733941e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda3_m-2_self1_shape_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000189721676786e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda3_m-2_self1_torque",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000423166943826e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda3_m-2_self1_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000552170477645e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda3_m-2_self1_shape_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.0006909844557766e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda3_m-2_self1_impulse",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.006103926736991e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda3_m2_self0_wake",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.76425959531177e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda3_m2_self0_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000128766570554e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda3_m2_self0_shape_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000139017747791e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda3_m2_self0_torque",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000306171005885e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda3_m2_self0_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000456795605456e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda3_m2_self0_shape_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000550295352954e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda3_m2_self0_impulse",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.004211871834321e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda3_m2_self1_wake",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 6.044710434240626e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda3_m2_self1_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000192781733941e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda3_m2_self1_shape_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000189721676786e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda3_m2_self1_torque",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000423166943826e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda3_m2_self1_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000552170477645e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda3_m2_self1_shape_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.0006909844557766e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl32_fine lambda3_m2_self1_impulse",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.006103926736991e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine time",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 6.000500000000001e-08,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine spatial_metric",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 1.9076318087751996e-07,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine m_values",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 1.0050000000000001e-09,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine F0_m-2_kernel",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 1.4571501222325282e-10,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine F0_m2_kernel",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 1.4571501222325282e-10,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine A_m-2_kernel",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 1.4652274999106893e-10,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine A_m2_kernel",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 1.4652274999106888e-10,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda2_m-2_self0_wake",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.753025314062673e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda2_m-2_self0_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000116053410774e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda2_m-2_self0_shape_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000117466533832e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda2_m-2_self0_torque",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000380904891408e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda2_m-2_self0_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.001319241829615e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda2_m-2_self0_shape_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000546458372073e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda2_m-2_self0_impulse",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.011029344082538e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda2_m-2_self1_wake",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.9929064600816144e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda2_m-2_self1_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.0001613930737105e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda2_m-2_self1_shape_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000154897275206e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda2_m-2_self1_torque",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000576845226078e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda2_m-2_self1_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.001939136582325e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda2_m-2_self1_shape_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000684320898381e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda2_m-2_self1_impulse",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.015889680977696e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda2_m2_self0_wake",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.753025314062674e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda2_m2_self0_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000116053410774e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda2_m2_self0_shape_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000117466533832e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda2_m2_self0_torque",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000380904891408e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda2_m2_self0_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.001319241829615e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda2_m2_self0_shape_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000546458372073e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda2_m2_self0_impulse",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.011029344082538e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda2_m2_self1_wake",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.9929064600816144e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda2_m2_self1_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.0001613930737105e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda2_m2_self1_shape_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000154897275206e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda2_m2_self1_torque",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000576845226078e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda2_m2_self1_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.001939136582325e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda2_m2_self1_shape_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000684320898381e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda2_m2_self1_impulse",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.015889680977696e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda3_m-2_self0_wake",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.764265353799316e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda3_m-2_self0_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000122471541614e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda3_m-2_self0_shape_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000132327220557e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda3_m-2_self0_torque",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000306480306297e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda3_m-2_self0_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000492854548686e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda3_m-2_self0_shape_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.0005502952669225e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda3_m-2_self0_impulse",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.004219283528348e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda3_m-2_self1_wake",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 6.012686851385974e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda3_m-2_self1_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000181990567259e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda3_m-2_self1_shape_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000179209242062e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda3_m-2_self1_torque",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000423454111377e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda3_m-2_self1_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000642038748427e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda3_m-2_self1_shape_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000690984395093e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda3_m-2_self1_impulse",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.0061205711748765e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda3_m2_self0_wake",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.764265353799316e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda3_m2_self0_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000122471541614e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda3_m2_self0_shape_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000132327220557e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda3_m2_self0_torque",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000306480306297e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda3_m2_self0_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000492854548686e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda3_m2_self0_shape_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.0005502952669225e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda3_m2_self0_impulse",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.004219283528348e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda3_m2_self1_wake",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 6.012686851385974e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda3_m2_self1_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000181990567259e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda3_m2_self1_shape_power",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000179209242062e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda3_m2_self1_torque",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000423454111377e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda3_m2_self1_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000642038748427e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda3_m2_self1_shape_work",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000690984395093e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "gl64_fine lambda3_m2_self1_impulse",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.0061205711748765e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "('gl32_coarse', 0.5, -2, 0) raw endpoints/budgets",
+      "maximum_absolute_difference": 2.710505431213761e-20,
+      "maximum_allowance": 5.011890815135916e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "('gl32_coarse', 0.5, -2, 1) raw endpoints/budgets",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.0175575687406044e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "('gl32_coarse', 0.5, 2, 0) raw endpoints/budgets",
+      "maximum_absolute_difference": 3.049318610115481e-20,
+      "maximum_allowance": 5.011890815135916e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "('gl32_coarse', 0.5, 2, 1) raw endpoints/budgets",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.0175575687406044e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "('gl32_coarse', 0.75, -2, 0) raw endpoints/budgets",
+      "maximum_absolute_difference": 4.235164736271502e-21,
+      "maximum_allowance": 5.000986066903618e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "('gl32_coarse', 0.75, -2, 1) raw endpoints/budgets",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.002429011082426e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "('gl32_coarse', 0.75, 2, 0) raw endpoints/budgets",
+      "maximum_absolute_difference": 1.2705494208814505e-20,
+      "maximum_allowance": 5.000986066903618e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "('gl32_coarse', 0.75, 2, 1) raw endpoints/budgets",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.002429011082426e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "('gl32_fine', 0.5, -2, 0) raw endpoints/budgets",
+      "maximum_absolute_difference": 2.0328790734103208e-20,
+      "maximum_allowance": 5.011890815136134e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "('gl32_fine', 0.5, -2, 1) raw endpoints/budgets",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.017559906387169e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "('gl32_fine', 0.5, 2, 0) raw endpoints/budgets",
+      "maximum_absolute_difference": 6.776263578034403e-21,
+      "maximum_allowance": 5.011890815136134e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "('gl32_fine', 0.5, 2, 1) raw endpoints/budgets",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.017559906387169e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "('gl32_fine', 0.75, -2, 0) raw endpoints/budgets",
+      "maximum_absolute_difference": 7.623296525288703e-21,
+      "maximum_allowance": 5.0009860669037826e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "('gl32_fine', 0.75, -2, 1) raw endpoints/budgets",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.002430389059977e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "('gl32_fine', 0.75, 2, 0) raw endpoints/budgets",
+      "maximum_absolute_difference": 3.3881317890172014e-21,
+      "maximum_allowance": 5.0009860669037826e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "('gl32_fine', 0.75, 2, 1) raw endpoints/budgets",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.002430389059977e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "('gl64_fine', 0.5, -2, 0) raw endpoints/budgets",
+      "maximum_absolute_difference": 6.098637220230962e-20,
+      "maximum_allowance": 5.010858398707959e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "('gl64_fine', 0.5, -2, 1) raw endpoints/budgets",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.015735260556639e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "('gl64_fine', 0.5, 2, 0) raw endpoints/budgets",
+      "maximum_absolute_difference": 5.421010862427522e-20,
+      "maximum_allowance": 5.010858398707959e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "('gl64_fine', 0.5, 2, 1) raw endpoints/budgets",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.015735260556639e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "('gl64_fine', 0.75, -2, 0) raw endpoints/budgets",
+      "maximum_absolute_difference": 3.0559360550159054e-20,
+      "maximum_allowance": 5.0001119072856765e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "('gl64_fine', 0.75, -2, 1) raw endpoints/budgets",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000657053154447e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "('gl64_fine', 0.75, 2, 0) raw endpoints/budgets",
+      "maximum_absolute_difference": 4.304647907725956e-20,
+      "maximum_allowance": 5.0001119072856765e-12,
+      "software_agreement": true
+    },
+    {
+      "label": "('gl64_fine', 0.75, 2, 1) raw endpoints/budgets",
+      "maximum_absolute_difference": 0.0,
+      "maximum_allowance": 5.000657053154447e-12,
+      "software_agreement": true
+    }
+  ],
+  "public_cache_assets": [
+    {
+      "path": "gl32_coarse-history.npz",
+      "bytes": 8627386,
+      "sha256": "f8118bb5c5c9f7d16a1d629e53630a39c71cd784d4c445c96982b2c82715aa8b"
+    },
+    {
+      "path": "gl32_fine-history.npz",
+      "bytes": 17248186,
+      "sha256": "cd6dd68617bfca145302b3e4098f8f12785fd728236cf8b05f34f9c7db374b43"
+    },
+    {
+      "path": "gl64_fine-history.npz",
+      "bytes": 17248186,
+      "sha256": "e00e1faac93efb4a8e5151b4c51cd062613c47ac526f79cd3d77743d3b1f46fd"
+    },
+    {
+      "path": "gl32-orbit-library.npz",
+      "bytes": 25398206,
+      "sha256": "84018d4fbb1aa2350d58ac27118a8cf907761c5ed2e8a90bdc1bb5da2b9d90a1"
+    },
+    {
+      "path": "gl64-orbit-library.npz",
+      "bytes": 101583806,
+      "sha256": "4bd986e25e646f5ec18f631eda0052baa646f049c6889c471e4a89e3d8a8c290"
+    },
+    {
+      "path": "inputs.json",
+      "bytes": 3378,
+      "sha256": "b2b66e239db2e53ad3330ea38d919709fa9c8f573d0ae9605b8ad16ca97dfbf4"
+    },
+    {
+      "path": "cache-projection.json",
+      "bytes": 13474,
+      "sha256": "3f13d41f497e41878a37a67cbc4ed5f3a9fc2db5dcc19cadb015f181ed267228"
+    }
+  ],
+  "asset_upload_performed_by_package": false
+}

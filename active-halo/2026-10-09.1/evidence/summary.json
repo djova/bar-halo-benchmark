@@ -1,0 +1,6257 @@
+{
+  "status": "working draft; not externally reviewed",
+  "units": "Wake per epsilon; work/impulse/power per epsilon squared; fixed .8 shape included once",
+  "endpoints": [
+    {
+      "population": "F0",
+      "self_gravity": 1,
+      "conjugate_wake_error": 8.741117365843378e-19,
+      "W2": 1.9496384262696875e-05,
+      "J2": 0.00017088941899192118,
+      "shape_W2": -1.0103460163336727e-06,
+      "rotational_W2": 2.0506730279030542e-05,
+      "orbit_Q2": 1.9650423144011092e-05,
+      "canonical_J2": 0.00017088941899192131,
+      "self_U2": -1.5404172632268094e-07,
+      "raw_energy_budget_residual": -2.845008462756121e-12,
+      "raw_impulse_budget_residual": 1.4907779871675686e-19
+    },
+    {
+      "population": "A",
+      "self_gravity": 1,
+      "conjugate_wake_error": 1.839952100020049e-18,
+      "W2": -6.024304857698164e-06,
+      "J2": -6.201246042854836e-05,
+      "shape_W2": 1.4171903937276614e-06,
+      "rotational_W2": -7.441495251425802e-06,
+      "orbit_Q2": -5.913646897949054e-06,
+      "canonical_J2": -6.201246042787001e-05,
+      "self_U2": -1.1066008808242188e-07,
+      "raw_energy_budget_residual": -2.1283333117959194e-12,
+      "raw_impulse_budget_residual": 6.783378654791339e-16
+    }
+  ],
+  "waveform": [
+    {
+      "population": "F0",
+      "raw_relative_point_difference": 0.0032828806993297566,
+      "expanded_empirical_relative_difference": 0.29426154287956313,
+      "original_five_percent_target": 0.05,
+      "sampled_point_screen_passed": true,
+      "sampled_empirical_waveform_screen_passed": false,
+      "whole_waveform_qualified": false
+    },
+    {
+      "population": "A",
+      "raw_relative_point_difference": 0.00296782355896669,
+      "expanded_empirical_relative_difference": 0.33596762263002566,
+      "original_five_percent_target": 0.05,
+      "sampled_point_screen_passed": true,
+      "sampled_empirical_waveform_screen_passed": false,
+      "whole_waveform_qualified": false
+    }
+  ],
+  "scalar_screens": [
+    {
+      "population": "F0",
+      "channel": "W2",
+      "new_value": 1.9496384262696875e-05,
+      "expanded_anchor_disagreement": 1.386080502378323e-06,
+      "unchanged_threshold": 1e-06,
+      "incomplete_empirical_scalar_screen_passed": false,
+      "new_cumulative_empirical_sign_range": [
+        1.8255913300690548e-05,
+        2.0736855224703202e-05
+      ],
+      "new_cumulative_sign_range_excludes_zero": true,
+      "continuum_qualified": false
+    },
+    {
+      "population": "F0",
+      "channel": "J2",
+      "new_value": 0.00017088941899192118,
+      "expanded_anchor_disagreement": 8.668195973162224e-06,
+      "unchanged_threshold": 1e-05,
+      "incomplete_empirical_scalar_screen_passed": true,
+      "new_cumulative_empirical_sign_range": [
+        0.00016303776274689585,
+        0.0001787410752369465
+      ],
+      "new_cumulative_sign_range_excludes_zero": true,
+      "continuum_qualified": false
+    },
+    {
+      "population": "A",
+      "channel": "W2",
+      "new_value": -6.024304857698164e-06,
+      "expanded_anchor_disagreement": 1.23563729562127e-06,
+      "unchanged_threshold": 6.024105009302132e-07,
+      "incomplete_empirical_scalar_screen_passed": false,
+      "new_cumulative_empirical_sign_range": [
+        -7.155030409463616e-06,
+        -4.893579305932712e-06
+      ],
+      "new_cumulative_sign_range_excludes_zero": true,
+      "continuum_qualified": false
+    },
+    {
+      "population": "A",
+      "channel": "J2",
+      "new_value": -6.201246042854836e-05,
+      "expanded_anchor_disagreement": 7.765887787320788e-06,
+      "unchanged_threshold": 6.20119479247819e-06,
+      "incomplete_empirical_scalar_screen_passed": false,
+      "new_cumulative_empirical_sign_range": [
+        -6.898943375296089e-05,
+        -5.503548710413583e-05
+      ],
+      "new_cumulative_sign_range_excludes_zero": true,
+      "continuum_qualified": false
+    }
+  ],
+  "bare_points": [
+    {
+      "omega": 0.24,
+      "population": "F0",
+      "radial_window": 32,
+      "P": 1.2284257030867563e-07,
+      "retained_empirical_proxy": 2.369110913979764e-11,
+      "N16_operand": 1.2281888399486916e-07,
+      "tail_inclusive_interval": [
+        1.2281887919953584e-07,
+        1.3330532113683925e-07
+      ]
+    },
+    {
+      "omega": 0.24,
+      "population": "A",
+      "radial_window": 32,
+      "P": -6.286762378454995e-08,
+      "retained_empirical_proxy": 2.3622544073575114e-11,
+      "N16_operand": -6.289124153329019e-08,
+      "tail_inclusive_interval": [
+        -6.634480657328263e-08,
+        -4.895138127679344e-08
+      ]
+    },
+    {
+      "omega": 0.22,
+      "population": "F0",
+      "radial_window": 16,
+      "P": 2.1751829828430994e-07,
+      "retained_empirical_proxy": 7.587081074209208e-11,
+      "tail_inclusive_interval": null
+    },
+    {
+      "omega": 0.22,
+      "population": "A",
+      "radial_window": 16,
+      "P": -1.5867781236772137e-07,
+      "retained_empirical_proxy": 7.551187153276795e-11,
+      "tail_inclusive_interval": null
+    },
+    {
+      "omega": 0.23,
+      "population": "F0",
+      "radial_window": 16,
+      "P": 1.7127118556599515e-07,
+      "retained_empirical_proxy": 8.992128860265142e-11,
+      "tail_inclusive_interval": null
+    },
+    {
+      "omega": 0.23,
+      "population": "A",
+      "radial_window": 16,
+      "P": -1.2111411798109884e-07,
+      "retained_empirical_proxy": 8.947784482123985e-11,
+      "tail_inclusive_interval": null
+    },
+    {
+      "omega": 0.25,
+      "population": "F0",
+      "radial_window": 16,
+      "P": 7.85283646482931e-08,
+      "retained_empirical_proxy": 1.23525790939496e-10,
+      "tail_inclusive_interval": null
+    },
+    {
+      "omega": 0.25,
+      "population": "A",
+      "radial_window": 16,
+      "P": 2.5249281509784328e-09,
+      "retained_empirical_proxy": 1.2289950475934943e-10,
+      "tail_inclusive_interval": null
+    }
+  ],
+  "undefined_points": [
+    {
+      "omega": 0.26,
+      "defined": false,
+      "reason": "Original numerical refusal retained; not a zero power"
+    }
+  ],
+  "fixed_lambda": [
+    {
+      "lambda_value": 0.0,
+      "defined": true,
+      "empirical_relative_cap": 0.2,
+      "cap_applies_to": "Bemp only; no total20-percent magnitude claim",
+      "P16": 1.2281888399486916e-07,
+      "P32": 1.2284257030867563e-07,
+      "Bemp32": 2.369110913979764e-11,
+      "Lnum": 1.2281887919953584e-07,
+      "Unum": 1.3330532113683925e-07,
+      "empirical_refinement_screen_passed": true,
+      "negative_sign_screen_passed": false,
+      "positive_sign_screen_passed": true,
+      "numerically_supported_negative_sign": false,
+      "numerically_supported_positive_sign": true,
+      "empirical_ratio": 0.00019285748483011415,
+      "adverse_upper_ratio": 0.085172027920558,
+      "adverse_lower_ratio": 0.00019285748483011415,
+      "mode_decomposition": {
+        "overlap_modes": [
+          {
+            "n": -1,
+            "k": 2,
+            "P16": {
+              "real": 8.183164659108813e-08,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 8.183164659108803e-08,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -9.26442286059391e-23,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 0,
+            "k": 2,
+            "P16": {
+              "real": 4.107706537357657e-09,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 4.107706537357656e-09,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -8.271806125530277e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 1,
+            "k": 0,
+            "P16": {
+              "real": 2.068886152469025e-08,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.0688861524690244e-08,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -6.617444900424222e-24,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 1,
+            "k": 2,
+            "P16": {
+              "real": 6.933995687916748e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 6.933995687916755e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 7.237830359838992e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 2,
+            "k": -2,
+            "P16": {
+              "real": 1.0219167703360639e-08,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.021916770336065e-08,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.1580528575742387e-23,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 2,
+            "k": 0,
+            "P16": {
+              "real": 2.4021940174341346e-09,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.4021940174341317e-09,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -2.895132143935597e-24,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 2,
+            "k": 2,
+            "P16": {
+              "real": 2.3092837112920783e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.3092837112920804e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 2.0679515313825692e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 3,
+            "k": -2,
+            "P16": {
+              "real": 8.328872660035093e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 8.328872660035081e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.137373342260413e-24,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 3,
+            "k": 0,
+            "P16": {
+              "real": 6.524265131412264e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 6.524265131412261e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -3.101927297073854e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 3,
+            "k": 2,
+            "P16": {
+              "real": 1.0262836849570743e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.0262836849570774e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 3.101927297073854e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 4,
+            "k": -2,
+            "P16": {
+              "real": 1.874642530523636e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.8746425305236346e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.2924697071141057e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 4,
+            "k": 0,
+            "P16": {
+              "real": 2.561644226248578e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.561644226248582e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 3.618915179919496e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 4,
+            "k": 2,
+            "P16": {
+              "real": 5.377004982747298e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 5.3770049827473235e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 2.5849394142282115e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 5,
+            "k": -2,
+            "P16": {
+              "real": 6.640378158962242e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 6.640378158962267e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 2.455692443516801e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 5,
+            "k": 0,
+            "P16": {
+              "real": 1.23560847039911e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.2356084703991122e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 2.3264454728053903e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 5,
+            "k": 2,
+            "P16": {
+              "real": 3.1375106849517886e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 3.137510684951806e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.7448341046040428e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 6,
+            "k": -2,
+            "P16": {
+              "real": 3.003896121209669e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 3.0038961212096995e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 3.0373038117181485e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 6,
+            "k": 0,
+            "P16": {
+              "real": 6.796986202562745e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 6.796986202562759e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.4217166778255163e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 6,
+            "k": 2,
+            "P16": {
+              "real": 1.976048158005894e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.976048158005904e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.001664023013432e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 7,
+            "k": -2,
+            "P16": {
+              "real": 1.5816815573332224e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.581681557333241e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.8740810753154533e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 7,
+            "k": 0,
+            "P16": {
+              "real": 4.096073539376183e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 4.096073539376194e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.0985992510469899e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 7,
+            "k": 2,
+            "P16": {
+              "real": 1.3177249081320895e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.3177249081320968e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 7.270142102516845e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 8,
+            "k": -2,
+            "P16": {
+              "real": 9.233833033036763e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 9.233833033036923e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.5994312625537059e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 8,
+            "k": 0,
+            "P16": {
+              "real": 2.6395517458229044e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.639551745822906e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.6155871338926322e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 8,
+            "k": 2,
+            "P16": {
+              "real": 9.186437734464381e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 9.186437734464399e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.7771458472818954e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 9,
+            "k": -2,
+            "P16": {
+              "real": 5.808651568561053e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 5.8086515685611696e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.1632227364026952e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 9,
+            "k": 0,
+            "P16": {
+              "real": 1.790567498363727e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.7905674983637282e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.2924697071141057e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 9,
+            "k": 2,
+            "P16": {
+              "real": 6.6361630360985545e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 6.6361630360985755e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 2.1002632740604218e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 10,
+            "k": -2,
+            "P16": {
+              "real": 3.8664295099798644e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 3.86642950997991e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 4.52364397489937e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 10,
+            "k": 0,
+            "P16": {
+              "real": 1.2649659667735355e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.2649659667735339e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.6155871338926322e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 10,
+            "k": 2,
+            "P16": {
+              "real": 4.935613467203234e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 4.935613467203222e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.1309109937248425e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 11,
+            "k": -2,
+            "P16": {
+              "real": 2.690047884842246e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.690047884842271e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 2.50416005753358e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 11,
+            "k": 0,
+            "P16": {
+              "real": 9.235346827923523e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 9.235346827923512e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.1309109937248425e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 11,
+            "k": 2,
+            "P16": {
+              "real": 3.76118971740328e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 3.7611897174032664e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.3732490638087374e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 12,
+            "k": -2,
+            "P16": {
+              "real": 1.9393722868449183e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.9393722868449082e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.0097419586828951e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 12,
+            "k": 0,
+            "P16": {
+              "real": 6.9285233821883154e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 6.928523382188297e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.857925203976527e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 12,
+            "k": 2,
+            "P16": {
+              "real": 2.92588897328088e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.925888973280885e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 4.8467614016778965e-27,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 13,
+            "k": -2,
+            "P16": {
+              "real": 1.4396471587010945e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.4396471587010826e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.1914955112458162e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 13,
+            "k": 0,
+            "P16": {
+              "real": 5.31813654261491e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 5.318136542614911e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 8.077935669463161e-28,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 13,
+            "k": 2,
+            "P16": {
+              "real": 2.316710360697686e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.3167103606976675e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.857925203976527e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 14,
+            "k": -2,
+            "P16": {
+              "real": 1.095126534051636e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.0951265340516412e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 5.2506581851510546e-27,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 14,
+            "k": 0,
+            "P16": {
+              "real": 4.162406365318462e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 4.1624063653184525e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -9.693522803355793e-27,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 14,
+            "k": 2,
+            "P16": {
+              "real": 1.862739422954887e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.862739422954871e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.6155871338926322e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 15,
+            "k": -2,
+            "P16": {
+              "real": 8.505070711592462e-13,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 8.505070711592249e-13,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -2.1305555328209087e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 15,
+            "k": 0,
+            "P16": {
+              "real": 3.313085308511388e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 3.3130853085113764e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.1713006720721583e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 15,
+            "k": 2,
+            "P16": {
+              "real": 1.5180057580734206e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.5180057580734109e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -9.693522803355793e-27,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 16,
+            "k": -2,
+            "P16": {
+              "real": 6.724011976675264e-13,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 6.724011976675009e-13,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -2.5546471554677246e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 16,
+            "k": 0,
+            "P16": {
+              "real": 2.6759944611246668e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.6759944611246607e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -6.058451752097371e-27,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 16,
+            "k": 2,
+            "P16": {
+              "real": 1.2518578148303364e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.251857814830334e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -2.4233807008389483e-27,
+              "imag": 0.0
+            }
+          }
+        ],
+        "added_modes": [
+          {
+            "n": 17,
+            "k": -2,
+            "P32": {
+              "real": 5.398806194002291e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 17,
+            "k": 0,
+            "P32": {
+              "real": 2.1894431451272662e-12,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 17,
+            "k": 2,
+            "P32": {
+              "real": 1.043347384689136e-12,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 18,
+            "k": -2,
+            "P32": {
+              "real": 4.3939590559542173e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 18,
+            "k": 0,
+            "P32": {
+              "real": 1.8119272973893798e-12,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 18,
+            "k": 2,
+            "P32": {
+              "real": 8.778420016119559e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 19,
+            "k": -2,
+            "P32": {
+              "real": 3.619247486927883e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 19,
+            "k": 0,
+            "P32": {
+              "real": 1.5148592499544e-12,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 19,
+            "k": 2,
+            "P32": {
+              "real": 7.4492024488427e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 20,
+            "k": -2,
+            "P32": {
+              "real": 3.013092567125068e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 20,
+            "k": 0,
+            "P32": {
+              "real": 1.2781327066178256e-12,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 20,
+            "k": 2,
+            "P32": {
+              "real": 6.370294436174583e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 21,
+            "k": -2,
+            "P32": {
+              "real": 2.5325375183569836e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 21,
+            "k": 0,
+            "P32": {
+              "real": 1.0873403154991055e-12,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 21,
+            "k": 2,
+            "P32": {
+              "real": 5.486093502707056e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 22,
+            "k": -2,
+            "P32": {
+              "real": 2.1470270902283581e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 22,
+            "k": 0,
+            "P32": {
+              "real": 9.319838503082957e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 22,
+            "k": 2,
+            "P32": {
+              "real": 4.755078555714062e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 23,
+            "k": -2,
+            "P32": {
+              "real": 1.8344444062929018e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 23,
+            "k": 0,
+            "P32": {
+              "real": 8.042967800556766e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 23,
+            "k": 2,
+            "P32": {
+              "real": 4.145839304606914e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 24,
+            "k": -2,
+            "P32": {
+              "real": 1.5785263711175115e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 24,
+            "k": 0,
+            "P32": {
+              "real": 6.984538609257822e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 24,
+            "k": 2,
+            "P32": {
+              "real": 3.634330878472449e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 25,
+            "k": -2,
+            "P32": {
+              "real": 1.3671422800216045e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 25,
+            "k": 0,
+            "P32": {
+              "real": 6.100307050977848e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 25,
+            "k": 2,
+            "P32": {
+              "real": 3.2019453264441226e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 26,
+            "k": -2,
+            "P32": {
+              "real": 1.1911252915030055e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 26,
+            "k": 0,
+            "P32": {
+              "real": 5.356280344816568e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 26,
+            "k": 2,
+            "P32": {
+              "real": 2.8341371508021935e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 27,
+            "k": -2,
+            "P32": {
+              "real": 1.043465331149693e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 27,
+            "k": 0,
+            "P32": {
+              "real": 4.726064049920201e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 27,
+            "k": 2,
+            "P32": {
+              "real": 2.5194305438509867e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 28,
+            "k": -2,
+            "P32": {
+              "real": 9.187427356287529e-14,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 28,
+            "k": 0,
+            "P32": {
+              "real": 4.188962702242873e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 28,
+            "k": 2,
+            "P32": {
+              "real": 2.2486934312851234e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 29,
+            "k": -2,
+            "P32": {
+              "real": 8.127250125349563e-14,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 29,
+            "k": 0,
+            "P32": {
+              "real": 3.7286021324056405e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 29,
+            "k": 2,
+            "P32": {
+              "real": 2.0146005200997322e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 30,
+            "k": -2,
+            "P32": {
+              "real": 7.220758702933923e-14,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 30,
+            "k": 0,
+            "P32": {
+              "real": 3.3319181249485077e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 30,
+            "k": 2,
+            "P32": {
+              "real": 1.8112319069709496e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 31,
+            "k": -2,
+            "P32": {
+              "real": 6.441426489063654e-14,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 31,
+            "k": 0,
+            "P32": {
+              "real": 2.988405700554221e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 31,
+            "k": 2,
+            "P32": {
+              "real": 1.6337700423568661e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 32,
+            "k": -2,
+            "P32": {
+              "real": 5.767992378982605e-14,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 32,
+            "k": 0,
+            "P32": {
+              "real": 2.689556063312621e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 32,
+            "k": 2,
+            "P32": {
+              "real": 1.478268828000292e-13,
+              "imag": 0.0
+            }
+          }
+        ],
+        "P32_overlap": 1.228188839948691e-07,
+        "P32_added": 2.3686313806523598e-11,
+        "signed_overlap_change": -8.933934317516998e-23,
+        "total_signed_change": 2.368631380646334e-11,
+        "power_reconstruction_roundoff": 0.0,
+        "change_reconstruction_roundoff": -2.908056841006738e-23,
+        "changes_are_error_bounds": false
+      },
+      "raw_power_imaginary_N16": -0.0,
+      "raw_power_imaginary_N32": -0.0,
+      "signed_window_change": 2.368631380646334e-11,
+      "supplied_GK32_power_proxy": 4.795333334301459e-15,
+      "omitted_power_lower": -0.0,
+      "omitted_power_upper": 1.0439059719023831e-08
+    },
+    {
+      "lambda_value": 0.25,
+      "defined": true,
+      "empirical_relative_cap": 0.2,
+      "cap_applies_to": "Bemp only; no total20-percent magnitude claim",
+      "P16": 7.639135261282932e-08,
+      "P32": 7.641502178536922e-08,
+      "Bemp32": 2.3673967873235392e-11,
+      "Lnum": 7.55279577563312e-08,
+      "Unum": 8.774114553343107e-08,
+      "empirical_refinement_screen_passed": true,
+      "negative_sign_screen_passed": false,
+      "positive_sign_screen_passed": true,
+      "numerically_supported_negative_sign": false,
+      "numerically_supported_positive_sign": true,
+      "empirical_ratio": 0.0003098077749651067,
+      "adverse_upper_ratio": 0.14821855027240724,
+      "adverse_lower_ratio": 0.011608503253843888,
+      "mode_decomposition": {
+        "overlap_modes": [
+          {
+            "n": -1,
+            "k": 2,
+            "P16": {
+              "real": 3.62069165417634e-08,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 3.6206916541763346e-08,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -5.293955920339377e-23,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 0,
+            "k": 2,
+            "P16": {
+              "real": 4.037396488023447e-09,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 4.037396488023446e-09,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -8.271806125530277e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 1,
+            "k": 0,
+            "P16": {
+              "real": 2.02284768911461e-08,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.0228476891146093e-08,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -6.617444900424222e-24,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 1,
+            "k": 2,
+            "P16": {
+              "real": 6.840525761112503e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 6.840525761112509e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 6.203854594147708e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 2,
+            "k": -2,
+            "P16": {
+              "real": 1.0063820519998032e-08,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.0063820519998043e-08,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.1580528575742387e-23,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 2,
+            "k": 0,
+            "P16": {
+              "real": 2.362345462333551e-09,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.3623454623335483e-09,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -2.481541837659083e-24,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 2,
+            "k": 2,
+            "P16": {
+              "real": 2.2935464301320797e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.2935464301320815e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.809457589959748e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 3,
+            "k": -2,
+            "P16": {
+              "real": 7.896288802171608e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 7.896288802171598e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.0339757656912846e-24,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 3,
+            "k": 0,
+            "P16": {
+              "real": 6.455416340487541e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 6.455416340487538e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -2.0679515313825692e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 3,
+            "k": 2,
+            "P16": {
+              "real": 1.0251743226211661e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.0251743226211692e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 3.101927297073854e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 4,
+            "k": -2,
+            "P16": {
+              "real": 1.782325928145778e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.782325928145777e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.0339757656912846e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 4,
+            "k": 0,
+            "P16": {
+              "real": 2.543896002269182e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.5438960022691856e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 3.618915179919496e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 4,
+            "k": 2,
+            "P16": {
+              "real": 5.392054733413222e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 5.392054733413248e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 2.5849394142282115e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 5,
+            "k": -2,
+            "P16": {
+              "real": 6.372524722742301e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 6.372524722742325e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 2.455692443516801e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 5,
+            "k": 0,
+            "P16": {
+              "real": 1.2298234533632437e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.2298234533632463e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 2.5849394142282115e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 5,
+            "k": 2,
+            "P16": {
+              "real": 3.1535512353788646e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 3.153551235378882e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.7448341046040428e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 6,
+            "k": -2,
+            "P16": {
+              "real": 2.906764827321156e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.9067648273211865e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 3.0373038117181485e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 6,
+            "k": 0,
+            "P16": {
+              "real": 6.775121024107823e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 6.775121024107838e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.4217166778255163e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 6,
+            "k": 2,
+            "P16": {
+              "real": 1.9884962601537634e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.9884962601537737e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.0339757656912846e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 7,
+            "k": -2,
+            "P16": {
+              "real": 1.540661523758414e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.5406615237584324e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.8417693326376007e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 7,
+            "k": 0,
+            "P16": {
+              "real": 4.0869844545438615e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 4.086984454543873e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.1632227364026952e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 7,
+            "k": 2,
+            "P16": {
+              "real": 1.3265769592042588e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.326576959204266e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 7.270142102516845e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 8,
+            "k": -2,
+            "P16": {
+              "real": 9.041034585570314e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 9.041034585570472e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.5832753912147795e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 8,
+            "k": 0,
+            "P16": {
+              "real": 2.635553025159491e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.6355530251594924e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.2924697071141057e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 8,
+            "k": 2,
+            "P16": {
+              "real": 9.24728099903113e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 9.24728099903115e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.9387045606711586e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 9,
+            "k": -2,
+            "P16": {
+              "real": 5.71077521681055e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 5.7107752168106644e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.1470668650637688e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 9,
+            "k": 0,
+            "P16": {
+              "real": 1.7887697795487334e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.7887697795487347e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.2924697071141057e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 9,
+            "k": 2,
+            "P16": {
+              "real": 6.677255607227578e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 6.677255607227599e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 2.1002632740604218e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 10,
+            "k": -2,
+            "P16": {
+              "real": 3.81387758839538e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 3.813877588395425e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 4.52364397489937e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 10,
+            "k": 0,
+            "P16": {
+              "real": 1.2641757795424755e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.2641757795424741e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.454028420503369e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 10,
+            "k": 2,
+            "P16": {
+              "real": 4.962980555254784e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 4.962980555254772e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.2116903504194741e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 11,
+            "k": -2,
+            "P16": {
+              "real": 2.6606762821920783e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.660676282192103e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 2.463770379186264e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 11,
+            "k": 0,
+            "P16": {
+              "real": 9.232227179976196e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 9.232227179976183e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.2924697071141057e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 11,
+            "k": 2,
+            "P16": {
+              "real": 3.779102434499771e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 3.7791024344997575e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.3732490638087374e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 12,
+            "k": -2,
+            "P16": {
+              "real": 1.9225082043610055e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.922508204360995e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.0501316370302109e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 12,
+            "k": 0,
+            "P16": {
+              "real": 6.927709049142393e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 6.927709049142373e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.9387045606711586e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 12,
+            "k": 2,
+            "P16": {
+              "real": 2.9373023453738944e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.937302345373899e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 4.4428646182047385e-27,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 13,
+            "k": -2,
+            "P16": {
+              "real": 1.4298221035470794e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.4298221035470677e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.1713006720721583e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 13,
+            "k": 0,
+            "P16": {
+              "real": 5.31842199547579e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 5.3184219954757916e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.6155871338926322e-27,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 13,
+            "k": 2,
+            "P16": {
+              "real": 2.3236549452459795e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.323654945245961e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.857925203976527e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 14,
+            "k": -2,
+            "P16": {
+              "real": 1.0893958528000575e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.0893958528000625e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 5.0487097934144756e-27,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 14,
+            "k": 0,
+            "P16": {
+              "real": 4.163189267561608e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 4.163189267561598e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.0501316370302109e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 14,
+            "k": 2,
+            "P16": {
+              "real": 1.8666114393873982e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.866611439387382e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.6155871338926322e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 15,
+            "k": -2,
+            "P16": {
+              "real": 8.472191383571451e-13,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 8.472191383571239e-13,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -2.1204581132340797e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 15,
+            "k": 0,
+            "P16": {
+              "real": 3.3140608663040286e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 3.3140608663040177e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.0905213153775267e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 15,
+            "k": 2,
+            "P16": {
+              "real": 1.5197689521283594e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.5197689521283497e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -9.693522803355793e-27,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 16,
+            "k": -2,
+            "P16": {
+              "real": 6.705979105162678e-13,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 6.705979105162423e-13,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -2.5546471554677246e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 16,
+            "k": 0,
+            "P16": {
+              "real": 2.677009053481279e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.6770090534812724e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -6.462348535570529e-27,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 16,
+            "k": 2,
+            "P16": {
+              "real": 1.252180713131575e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.2521807131315724e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -2.6253290925755273e-27,
+              "imag": 0.0
+            }
+          }
+        ],
+        "added_modes": [
+          {
+            "n": 17,
+            "k": -2,
+            "P32": {
+              "real": 5.389905098232036e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 17,
+            "k": 0,
+            "P32": {
+              "real": 2.1904215555510224e-12,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 17,
+            "k": 2,
+            "P32": {
+              "real": 1.0426960117773163e-12,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 18,
+            "k": -2,
+            "P32": {
+              "real": 4.3907024820406397e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 18,
+            "k": 0,
+            "P32": {
+              "real": 1.8128354278721358e-12,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 18,
+            "k": 2,
+            "P32": {
+              "real": 8.765425861670164e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 19,
+            "k": -2,
+            "P32": {
+              "real": 3.619467893633204e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 19,
+            "k": 0,
+            "P32": {
+              "real": 1.5156845605434869e-12,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 19,
+            "k": 2,
+            "P32": {
+              "real": 7.432018406628566e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 20,
+            "k": -2,
+            "P32": {
+              "real": 3.015423283294618e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 20,
+            "k": 0,
+            "P32": {
+              "real": 1.2788737774285378e-12,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 20,
+            "k": 2,
+            "P32": {
+              "real": 6.350530960373349e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 21,
+            "k": -2,
+            "P32": {
+              "real": 2.5361079198774984e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 21,
+            "k": 0,
+            "P32": {
+              "real": 1.0880012200788076e-12,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 21,
+            "k": 2,
+            "P32": {
+              "real": 5.464882072186154e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 22,
+            "k": -2,
+            "P32": {
+              "real": 2.1512791643817779e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 22,
+            "k": 0,
+            "P32": {
+              "real": 9.325711167578867e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 22,
+            "k": 2,
+            "P32": {
+              "real": 4.733211416323238e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 23,
+            "k": -2,
+            "P32": {
+              "real": 1.8390200195987148e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 23,
+            "k": 0,
+            "P32": {
+              "real": 8.048177645063748e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 23,
+            "k": 2,
+            "P32": {
+              "real": 4.123867306001387e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 24,
+            "k": -2,
+            "P32": {
+              "real": 1.5831967019992406e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 24,
+            "k": 0,
+            "P32": {
+              "real": 6.98915899129827e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 24,
+            "k": 2,
+            "P32": {
+              "real": 3.6126324635584104e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 25,
+            "k": -2,
+            "P32": {
+              "real": 1.3717629301421644e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 25,
+            "k": 0,
+            "P32": {
+              "real": 6.1044069411273e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 25,
+            "k": 2,
+            "P32": {
+              "real": 3.1807755024851844e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 26,
+            "k": -2,
+            "P32": {
+              "real": 1.1956073308462323e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 26,
+            "k": 0,
+            "P32": {
+              "real": 5.359922509982313e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 26,
+            "k": 2,
+            "P32": {
+              "real": 2.8136624601841514e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 27,
+            "k": -2,
+            "P32": {
+              "real": 1.0477563963972369e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 27,
+            "k": 0,
+            "P32": {
+              "real": 4.729304518219474e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 27,
+            "k": 2,
+            "P32": {
+              "real": 2.499754170126831e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 28,
+            "k": -2,
+            "P32": {
+              "real": 9.228145665926931e-14,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 28,
+            "k": 0,
+            "P32": {
+              "real": 4.1918508986140536e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 28,
+            "k": 2,
+            "P32": {
+              "real": 2.2298733055551399e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 29,
+            "k": -2,
+            "P32": {
+              "real": 8.165651662855195e-14,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 29,
+            "k": 0,
+            "P32": {
+              "real": 3.731181341572921e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 29,
+            "k": 2,
+            "P32": {
+              "real": 1.996662428147272e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 30,
+            "k": -2,
+            "P32": {
+              "real": 7.256821780406922e-14,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 30,
+            "k": 0,
+            "P32": {
+              "real": 3.3342260905830655e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 30,
+            "k": 2,
+            "P32": {
+              "real": 1.7941790043775632e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 31,
+            "k": -2,
+            "P32": {
+              "real": 6.475194920594482e-14,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 31,
+            "k": 0,
+            "P32": {
+              "real": 2.9904752565050597e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 31,
+            "k": 2,
+            "P32": {
+              "real": 1.6175897745995214e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 32,
+            "k": -2,
+            "P32": {
+              "real": 5.799550414127977e-14,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 32,
+            "k": 0,
+            "P32": {
+              "real": 2.6914157425453437e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 32,
+            "k": 2,
+            "P32": {
+              "real": 1.4629379666455203e-13,
+              "imag": 0.0
+            }
+          }
+        ],
+        "P32_overlap": 7.639135261282931e-08,
+        "P32_added": 2.3669172539930045e-11,
+        "signed_overlap_change": -4.9092745263399546e-23,
+        "total_signed_change": 2.366917253990109e-11,
+        "power_reconstruction_roundoff": 1.3234889800848443e-23,
+        "change_reconstruction_roundoff": -2.0136678036837767e-23,
+        "changes_are_error_bounds": false
+      },
+      "raw_power_imaginary_N16": -0.0,
+      "raw_power_imaginary_N32": -0.0,
+      "signed_window_change": 2.366917253990109e-11,
+      "supplied_GK32_power_proxy": 4.795333334301459e-15,
+      "omitted_power_lower": -8.633900611647747e-10,
+      "omitted_power_upper": 1.1302449780188606e-08
+    },
+    {
+      "lambda_value": 0.5,
+      "defined": true,
+      "empirical_relative_cap": 0.2,
+      "cap_applies_to": "Bemp only; no total20-percent magnitude claim",
+      "P16": 2.996382123078949e-08,
+      "P32": 2.998747326206284e-08,
+      "Bemp32": 2.3656826606686378e-11,
+      "Lnum": 2.8237036313126605e-08,
+      "Unum": 4.217696993002291e-08,
+      "empirical_refinement_screen_passed": true,
+      "negative_sign_screen_passed": false,
+      "positive_sign_screen_passed": true,
+      "numerically_supported_negative_sign": false,
+      "numerically_supported_positive_sign": true,
+      "empirical_ratio": 0.0007888902942888034,
+      "adverse_upper_ratio": 0.4064862871718173,
+      "adverse_lower_ratio": 0.05837227210305558,
+      "mode_decomposition": {
+        "overlap_modes": [
+          {
+            "n": -1,
+            "k": 2,
+            "P16": {
+              "real": -9.417813507561328e-09,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": -9.417813507561341e-09,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.3234889800848443e-23,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 0,
+            "k": 2,
+            "P16": {
+              "real": 3.967086438689237e-09,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 3.967086438689236e-09,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -8.271806125530277e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 1,
+            "k": 0,
+            "P16": {
+              "real": 1.9768092257601948e-08,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.976809225760194e-08,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -6.617444900424222e-24,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 1,
+            "k": 2,
+            "P16": {
+              "real": 6.747055834308257e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 6.747055834308263e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 6.203854594147708e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 2,
+            "k": -2,
+            "P16": {
+              "real": 9.908473336635424e-09,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 9.908473336635436e-09,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.1580528575742387e-23,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 2,
+            "k": 0,
+            "P16": {
+              "real": 2.322496907232967e-09,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.3224969072329645e-09,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -2.481541837659083e-24,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 2,
+            "k": 2,
+            "P16": {
+              "real": 2.2778091489720808e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.2778091489720826e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.809457589959748e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 3,
+            "k": -2,
+            "P16": {
+              "real": 7.463704944308123e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 7.463704944308113e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -9.305781891221561e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 3,
+            "k": 0,
+            "P16": {
+              "real": 6.386567549562817e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 6.386567549562815e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -2.0679515313825692e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 3,
+            "k": 2,
+            "P16": {
+              "real": 1.0240649602852577e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.0240649602852608e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 3.101927297073854e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 4,
+            "k": -2,
+            "P16": {
+              "real": 1.6900093257679204e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.690009325767919e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.2924697071141057e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 4,
+            "k": 0,
+            "P16": {
+              "real": 2.5261477782897857e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.5261477782897893e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 3.618915179919496e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 4,
+            "k": 2,
+            "P16": {
+              "real": 5.407104484079146e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 5.407104484079172e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 2.649562899583917e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 5,
+            "k": -2,
+            "P16": {
+              "real": 6.10467128652236e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 6.104671286522383e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 2.1971985020939798e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 5,
+            "k": 0,
+            "P16": {
+              "real": 1.2240384363273779e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.2240384363273802e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 2.3264454728053903e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 5,
+            "k": 2,
+            "P16": {
+              "real": 3.16959178580594e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 3.169591785805958e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.809457589959748e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 6,
+            "k": -2,
+            "P16": {
+              "real": 2.809633533432643e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.8096335334326735e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 3.0373038117181485e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 6,
+            "k": 0,
+            "P16": {
+              "real": 6.753255845652902e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 6.753255845652916e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.4217166778255163e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 6,
+            "k": 2,
+            "P16": {
+              "real": 2.0009443623016332e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.0009443623016436e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.0339757656912846e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 7,
+            "k": -2,
+            "P16": {
+              "real": 1.4996414901836058e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.4996414901836236e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.7771458472818954e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 7,
+            "k": 0,
+            "P16": {
+              "real": 4.077895369711541e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 4.077895369711552e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.0985992510469899e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 7,
+            "k": 2,
+            "P16": {
+              "real": 1.3354290102764279e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.3354290102764353e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 7.431700815906108e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 8,
+            "k": -2,
+            "P16": {
+              "real": 8.848236138103865e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 8.84823613810402e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.550963648536927e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 8,
+            "k": 0,
+            "P16": {
+              "real": 2.6315543044960777e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.631554304496079e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.2924697071141057e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 8,
+            "k": 2,
+            "P16": {
+              "real": 9.30812426359788e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 9.308124263597899e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.9387045606711586e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 9,
+            "k": -2,
+            "P16": {
+              "real": 5.6128988650600454e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 5.612898865060159e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.1389889293943057e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 9,
+            "k": 0,
+            "P16": {
+              "real": 1.78697206073374e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.7869720607337408e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 6.462348535570529e-27,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 9,
+            "k": 2,
+            "P16": {
+              "real": 6.718348178356601e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 6.718348178356622e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 2.1002632740604218e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 10,
+            "k": -2,
+            "P16": {
+              "real": 3.761325666810896e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 3.76132566681094e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 4.362085261510107e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 10,
+            "k": 0,
+            "P16": {
+              "real": 1.2633855923114156e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.2633855923114143e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.2924697071141057e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 10,
+            "k": 2,
+            "P16": {
+              "real": 4.990347643306334e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 4.990347643306323e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.1309109937248425e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 11,
+            "k": -2,
+            "P16": {
+              "real": 2.6313046795419108e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.631304679541935e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 2.4233807008389483e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 11,
+            "k": 0,
+            "P16": {
+              "real": 9.229107532028868e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 9.229107532028855e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.2924697071141057e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 11,
+            "k": 2,
+            "P16": {
+              "real": 3.7970151515962614e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 3.7970151515962485e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.2924697071141057e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 12,
+            "k": -2,
+            "P16": {
+              "real": 1.9056441218770926e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.905644121877082e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.0501316370302109e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 12,
+            "k": 0,
+            "P16": {
+              "real": 6.926894716096469e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 6.92689471609645e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.9387045606711586e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 12,
+            "k": 2,
+            "P16": {
+              "real": 2.9487157174669085e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.9487157174669134e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 4.8467614016778965e-27,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 13,
+            "k": -2,
+            "P16": {
+              "real": 1.4199970483930643e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.4199970483930525e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.1713006720721583e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 13,
+            "k": 0,
+            "P16": {
+              "real": 5.31870744833667e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 5.318707448336672e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.6155871338926322e-27,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 13,
+            "k": 2,
+            "P16": {
+              "real": 2.3305995297942733e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.3305995297942547e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.857925203976527e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 14,
+            "k": -2,
+            "P16": {
+              "real": 1.083665171548479e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.0836651715484839e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 4.8467614016778965e-27,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 14,
+            "k": 0,
+            "P16": {
+              "real": 4.1639721698047546e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 4.163972169804744e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.0501316370302109e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 14,
+            "k": 2,
+            "P16": {
+              "real": 1.8704834558199094e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.870483455819893e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.655976812239948e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 15,
+            "k": -2,
+            "P16": {
+              "real": 8.43931205555044e-13,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 8.43931205555023e-13,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -2.1002632740604218e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 15,
+            "k": 0,
+            "P16": {
+              "real": 3.315036424096669e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 3.3150364240966585e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.0501316370302109e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 15,
+            "k": 2,
+            "P16": {
+              "real": 1.5215321461832983e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.5215321461832888e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -9.491574411619214e-27,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 16,
+            "k": -2,
+            "P16": {
+              "real": 6.687946233650091e-13,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 6.687946233649837e-13,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -2.5445497358808957e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 16,
+            "k": 0,
+            "P16": {
+              "real": 2.6780236458378905e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.6780236458378845e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -6.058451752097371e-27,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 16,
+            "k": 2,
+            "P16": {
+              "real": 1.2525036114328134e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.2525036114328108e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -2.6253290925755273e-27,
+              "imag": 0.0
+            }
+          }
+        ],
+        "added_modes": [
+          {
+            "n": 17,
+            "k": -2,
+            "P32": {
+              "real": 5.381004002461781e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 17,
+            "k": 0,
+            "P32": {
+              "real": 2.1913999659747783e-12,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 17,
+            "k": 2,
+            "P32": {
+              "real": 1.0420446388654968e-12,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 18,
+            "k": -2,
+            "P32": {
+              "real": 4.387445908127062e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 18,
+            "k": 0,
+            "P32": {
+              "real": 1.8137435583548919e-12,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 18,
+            "k": 2,
+            "P32": {
+              "real": 8.75243170722077e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 19,
+            "k": -2,
+            "P32": {
+              "real": 3.6196883003385255e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 19,
+            "k": 0,
+            "P32": {
+              "real": 1.5165098711325737e-12,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 19,
+            "k": 2,
+            "P32": {
+              "real": 7.414834364414432e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 20,
+            "k": -2,
+            "P32": {
+              "real": 3.017753999464169e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 20,
+            "k": 0,
+            "P32": {
+              "real": 1.27961484823925e-12,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 20,
+            "k": 2,
+            "P32": {
+              "real": 6.330767484572116e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 21,
+            "k": -2,
+            "P32": {
+              "real": 2.539678321398013e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 21,
+            "k": 0,
+            "P32": {
+              "real": 1.0886621246585097e-12,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 21,
+            "k": 2,
+            "P32": {
+              "real": 5.443670641665251e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 22,
+            "k": -2,
+            "P32": {
+              "real": 2.1555312385351978e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 22,
+            "k": 0,
+            "P32": {
+              "real": 9.331583832074778e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 22,
+            "k": 2,
+            "P32": {
+              "real": 4.711344276932415e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 23,
+            "k": -2,
+            "P32": {
+              "real": 1.843595632904528e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 23,
+            "k": 0,
+            "P32": {
+              "real": 8.053387489570728e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 23,
+            "k": 2,
+            "P32": {
+              "real": 4.1018953073958597e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 24,
+            "k": -2,
+            "P32": {
+              "real": 1.5878670328809694e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 24,
+            "k": 0,
+            "P32": {
+              "real": 6.993779373338718e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 24,
+            "k": 2,
+            "P32": {
+              "real": 3.590934048644371e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 25,
+            "k": -2,
+            "P32": {
+              "real": 1.3763835802627246e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 25,
+            "k": 0,
+            "P32": {
+              "real": 6.10850683127675e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 25,
+            "k": 2,
+            "P32": {
+              "real": 3.159605678526247e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 26,
+            "k": -2,
+            "P32": {
+              "real": 1.200089370189459e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 26,
+            "k": 0,
+            "P32": {
+              "real": 5.363564675148058e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 26,
+            "k": 2,
+            "P32": {
+              "real": 2.793187769566109e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 27,
+            "k": -2,
+            "P32": {
+              "real": 1.0520474616447808e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 27,
+            "k": 0,
+            "P32": {
+              "real": 4.732544986518746e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 27,
+            "k": 2,
+            "P32": {
+              "real": 2.4800777964026755e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 28,
+            "k": -2,
+            "P32": {
+              "real": 9.268863975566335e-14,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 28,
+            "k": 0,
+            "P32": {
+              "real": 4.194739094985234e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 28,
+            "k": 2,
+            "P32": {
+              "real": 2.2110531798251566e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 29,
+            "k": -2,
+            "P32": {
+              "real": 8.204053200360828e-14,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 29,
+            "k": 0,
+            "P32": {
+              "real": 3.7337605507402025e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 29,
+            "k": 2,
+            "P32": {
+              "real": 1.9787243361948116e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 30,
+            "k": -2,
+            "P32": {
+              "real": 7.292884857879922e-14,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 30,
+            "k": 0,
+            "P32": {
+              "real": 3.336534056217623e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 30,
+            "k": 2,
+            "P32": {
+              "real": 1.777126101784177e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 31,
+            "k": -2,
+            "P32": {
+              "real": 6.508963352125312e-14,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 31,
+            "k": 0,
+            "P32": {
+              "real": 2.9925448124558977e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 31,
+            "k": 2,
+            "P32": {
+              "real": 1.6014095068421767e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 32,
+            "k": -2,
+            "P32": {
+              "real": 5.83110844927335e-14,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 32,
+            "k": 0,
+            "P32": {
+              "real": 2.693275421778067e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 32,
+            "k": 2,
+            "P32": {
+              "real": 1.4476071052907484e-13,
+              "imag": 0.0
+            }
+          }
+        ],
+        "P32_overlap": 2.996382123078949e-08,
+        "P32_added": 2.3652031273336492e-11,
+        "signed_overlap_change": -9.368789789443374e-24,
+        "total_signed_change": 2.3652031273352076e-11,
+        "power_reconstruction_roundoff": -1.3234889800848443e-23,
+        "change_reconstruction_roundoff": -2.495112769583781e-23,
+        "changes_are_error_bounds": false
+      },
+      "raw_power_imaginary_N16": -0.0,
+      "raw_power_imaginary_N32": -0.0,
+      "signed_window_change": 2.3652031273352076e-11,
+      "supplied_GK32_power_proxy": 4.795333334301459e-15,
+      "omitted_power_lower": -1.7267801223295495e-09,
+      "omitted_power_upper": 1.216583984135338e-08
+    },
+    {
+      "lambda_value": 0.75,
+      "defined": true,
+      "empirical_relative_cap": 0.2,
+      "cap_applies_to": "Bemp only; no total20-percent magnitude claim",
+      "P16": -1.6463710151250347e-08,
+      "P32": -1.6440075261243554e-08,
+      "Bemp32": 2.3639685340127437e-11,
+      "Lnum": -1.9053885130078005e-08,
+      "Unum": -3.387205673385272e-09,
+      "empirical_refinement_screen_passed": true,
+      "negative_sign_screen_passed": true,
+      "positive_sign_screen_passed": false,
+      "numerically_supported_negative_sign": true,
+      "numerically_supported_positive_sign": false,
+      "empirical_ratio": 0.0014379304817330437,
+      "adverse_upper_ratio": 0.7939665348509447,
+      "adverse_lower_ratio": 0.158990140087518,
+      "mode_decomposition": {
+        "overlap_modes": [
+          {
+            "n": -1,
+            "k": 2,
+            "P16": {
+              "real": -5.5042543556886055e-08,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": -5.5042543556886015e-08,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 3.970466940254533e-23,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 0,
+            "k": 2,
+            "P16": {
+              "real": 3.896776389355026e-09,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 3.896776389355026e-09,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 0.0,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 1,
+            "k": 0,
+            "P16": {
+              "real": 1.9307707624057796e-08,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.9307707624057786e-08,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -9.926167350636332e-24,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 1,
+            "k": 2,
+            "P16": {
+              "real": 6.653585907504011e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 6.653585907504018e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 7.237830359838992e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 2,
+            "k": -2,
+            "P16": {
+              "real": 9.753126153272817e-09,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 9.753126153272829e-09,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.1580528575742387e-23,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 2,
+            "k": 0,
+            "P16": {
+              "real": 2.2826483521323828e-09,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.2826483521323807e-09,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -2.0679515313825692e-24,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 2,
+            "k": 2,
+            "P16": {
+              "real": 2.262071867812082e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.2620718678120837e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.809457589959748e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 3,
+            "k": -2,
+            "P16": {
+              "real": 7.031121086444637e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 7.031121086444629e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -8.271806125530277e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 3,
+            "k": 0,
+            "P16": {
+              "real": 6.317718758638095e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 6.317718758638093e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -2.0679515313825692e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 3,
+            "k": 2,
+            "P16": {
+              "real": 1.0229555979493494e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.0229555979493525e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 3.101927297073854e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 4,
+            "k": -2,
+            "P16": {
+              "real": 1.5976927233900627e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.5976927233900612e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.550963648536927e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 4,
+            "k": 0,
+            "P16": {
+              "real": 2.5083995543103895e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.508399554310393e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 3.618915179919496e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 4,
+            "k": 2,
+            "P16": {
+              "real": 5.4221542347450695e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 5.422154234745096e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 2.649562899583917e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 5,
+            "k": -2,
+            "P16": {
+              "real": 5.836817850302419e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 5.836817850302441e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 2.1971985020939798e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 5,
+            "k": 0,
+            "P16": {
+              "real": 1.218253419291512e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.218253419291514e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 2.0679515313825692e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 5,
+            "k": 2,
+            "P16": {
+              "real": 3.185632336233016e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 3.185632336233035e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.8740810753154533e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 6,
+            "k": -2,
+            "P16": {
+              "real": 2.7125022395441298e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.71250223954416e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 3.0373038117181485e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 6,
+            "k": 0,
+            "P16": {
+              "real": 6.731390667197981e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 6.731390667197995e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.4217166778255163e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 6,
+            "k": 2,
+            "P16": {
+              "real": 2.013392464449503e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.0133924644495134e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.0339757656912846e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 7,
+            "k": -2,
+            "P16": {
+              "real": 1.4586214566087974e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.4586214566088148e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.7448341046040428e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 7,
+            "k": 0,
+            "P16": {
+              "real": 4.06880628487922e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 4.0688062848792305e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.0339757656912846e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 7,
+            "k": 2,
+            "P16": {
+              "real": 1.3442810613485971e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.3442810613486044e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 7.270142102516845e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 8,
+            "k": -2,
+            "P16": {
+              "real": 8.655437690637414e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 8.65543769063757e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.550963648536927e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 8,
+            "k": 0,
+            "P16": {
+              "real": 2.6275555838326643e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.6275555838326656e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.2924697071141057e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 8,
+            "k": 2,
+            "P16": {
+              "real": 9.368967528164628e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 9.368967528164648e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.9387045606711586e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 9,
+            "k": -2,
+            "P16": {
+              "real": 5.515022513309541e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 5.515022513309654e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.1309109937248425e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 9,
+            "k": 0,
+            "P16": {
+              "real": 1.7851743419187466e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.7851743419187472e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 6.462348535570529e-27,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 9,
+            "k": 2,
+            "P16": {
+              "real": 6.759440749485624e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 6.759440749485645e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 2.1002632740604218e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 10,
+            "k": -2,
+            "P16": {
+              "real": 3.708773745226412e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 3.708773745226455e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 4.362085261510107e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 10,
+            "k": 0,
+            "P16": {
+              "real": 1.2625954050803557e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.2625954050803544e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.2924697071141057e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 10,
+            "k": 2,
+            "P16": {
+              "real": 5.017714731357884e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 5.0177147313578725e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.1309109937248425e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 11,
+            "k": -2,
+            "P16": {
+              "real": 2.6019330768917432e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.6019330768917675e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 2.4233807008389483e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 11,
+            "k": 0,
+            "P16": {
+              "real": 9.22598788408154e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 9.225987884081527e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.2924697071141057e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 11,
+            "k": 2,
+            "P16": {
+              "real": 3.8149278686927524e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 3.814927868692739e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.3732490638087374e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 12,
+            "k": -2,
+            "P16": {
+              "real": 1.8887800393931793e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.8887800393931692e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.0097419586828951e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 12,
+            "k": 0,
+            "P16": {
+              "real": 6.926080383050546e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 6.926080383050527e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.9387045606711586e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 12,
+            "k": 2,
+            "P16": {
+              "real": 2.960129089559923e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.960129089559928e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 4.8467614016778965e-27,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 13,
+            "k": -2,
+            "P16": {
+              "real": 1.4101719932390491e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.4101719932390376e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.1511058328985004e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 13,
+            "k": 0,
+            "P16": {
+              "real": 5.31899290119755e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 5.318992901197552e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.6155871338926322e-27,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 13,
+            "k": 2,
+            "P16": {
+              "real": 2.337544114342567e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.3375441143425486e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.857925203976527e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 14,
+            "k": -2,
+            "P16": {
+              "real": 1.0779344902969006e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.0779344902969055e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 4.8467614016778965e-27,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 14,
+            "k": 0,
+            "P16": {
+              "real": 4.1647550720479e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 4.16475507204789e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -9.693522803355793e-27,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 14,
+            "k": 2,
+            "P16": {
+              "real": 1.8743554722524206e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.8743554722524036e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.6963664905872638e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 15,
+            "k": -2,
+            "P16": {
+              "real": 8.406432727529429e-13,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 8.406432727529221e-13,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -2.080068434886764e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 15,
+            "k": 0,
+            "P16": {
+              "real": 3.31601198188931e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 3.3160119818893e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.0097419586828951e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 15,
+            "k": 2,
+            "P16": {
+              "real": 1.5232953402382371e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.5232953402382277e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -9.491574411619214e-27,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 16,
+            "k": -2,
+            "P16": {
+              "real": 6.669913362137504e-13,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 6.66991336213725e-13,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -2.5445497358808957e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 16,
+            "k": 0,
+            "P16": {
+              "real": 2.679038238194502e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.6790382381944965e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -5.6545549686242126e-27,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 16,
+            "k": 2,
+            "P16": {
+              "real": 1.2528265097340518e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.2528265097340494e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -2.4233807008389483e-27,
+              "imag": 0.0
+            }
+          }
+        ],
+        "added_modes": [
+          {
+            "n": 17,
+            "k": -2,
+            "P32": {
+              "real": 5.372102906691527e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 17,
+            "k": 0,
+            "P32": {
+              "real": 2.1923783763985345e-12,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 17,
+            "k": 2,
+            "P32": {
+              "real": 1.0413932659536771e-12,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 18,
+            "k": -2,
+            "P32": {
+              "real": 4.3841893342134845e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 18,
+            "k": 0,
+            "P32": {
+              "real": 1.8146516888376479e-12,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 18,
+            "k": 2,
+            "P32": {
+              "real": 8.739437552771374e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 19,
+            "k": -2,
+            "P32": {
+              "real": 3.619908707043847e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 19,
+            "k": 0,
+            "P32": {
+              "real": 1.5173351817216605e-12,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 19,
+            "k": 2,
+            "P32": {
+              "real": 7.3976503222003e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 20,
+            "k": -2,
+            "P32": {
+              "real": 3.02008471563372e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 20,
+            "k": 0,
+            "P32": {
+              "real": 1.280355919049962e-12,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 20,
+            "k": 2,
+            "P32": {
+              "real": 6.311004008770884e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 21,
+            "k": -2,
+            "P32": {
+              "real": 2.5432487229185284e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 21,
+            "k": 0,
+            "P32": {
+              "real": 1.0893230292382117e-12,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 21,
+            "k": 2,
+            "P32": {
+              "real": 5.422459211144348e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 22,
+            "k": -2,
+            "P32": {
+              "real": 2.1597833126886178e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 22,
+            "k": 0,
+            "P32": {
+              "real": 9.337456496570689e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 22,
+            "k": 2,
+            "P32": {
+              "real": 4.689477137541592e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 23,
+            "k": -2,
+            "P32": {
+              "real": 1.8481712462103412e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 23,
+            "k": 0,
+            "P32": {
+              "real": 8.05859733407771e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 23,
+            "k": 2,
+            "P32": {
+              "real": 4.0799233087903327e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 24,
+            "k": -2,
+            "P32": {
+              "real": 1.5925373637626983e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 24,
+            "k": 0,
+            "P32": {
+              "real": 6.998399755379166e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 24,
+            "k": 2,
+            "P32": {
+              "real": 3.5692356337303324e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 25,
+            "k": -2,
+            "P32": {
+              "real": 1.3810042303832849e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 25,
+            "k": 0,
+            "P32": {
+              "real": 6.1126067214262e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 25,
+            "k": 2,
+            "P32": {
+              "real": 3.1384358545673086e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 26,
+            "k": -2,
+            "P32": {
+              "real": 1.2045714095326856e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 26,
+            "k": 0,
+            "P32": {
+              "real": 5.367206840313804e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 26,
+            "k": 2,
+            "P32": {
+              "real": 2.772713078948067e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 27,
+            "k": -2,
+            "P32": {
+              "real": 1.0563385268923247e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 27,
+            "k": 0,
+            "P32": {
+              "real": 4.735785454818018e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 27,
+            "k": 2,
+            "P32": {
+              "real": 2.46040142267852e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 28,
+            "k": -2,
+            "P32": {
+              "real": 9.309582285205737e-14,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 28,
+            "k": 0,
+            "P32": {
+              "real": 4.1976272913564147e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 28,
+            "k": 2,
+            "P32": {
+              "real": 2.1922330540951734e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 29,
+            "k": -2,
+            "P32": {
+              "real": 8.24245473786646e-14,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 29,
+            "k": 0,
+            "P32": {
+              "real": 3.736339759907484e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 29,
+            "k": 2,
+            "P32": {
+              "real": 1.9607862442423516e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 30,
+            "k": -2,
+            "P32": {
+              "real": 7.328947935352921e-14,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 30,
+            "k": 0,
+            "P32": {
+              "real": 3.33884202185218e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 30,
+            "k": 2,
+            "P32": {
+              "real": 1.7600731991907905e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 31,
+            "k": -2,
+            "P32": {
+              "real": 6.542731783656142e-14,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 31,
+            "k": 0,
+            "P32": {
+              "real": 2.9946143684067363e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 31,
+            "k": 2,
+            "P32": {
+              "real": 1.5852292390848322e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 32,
+            "k": -2,
+            "P32": {
+              "real": 5.862666484418724e-14,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 32,
+            "k": 0,
+            "P32": {
+              "real": 2.69513510101079e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 32,
+            "k": 2,
+            "P32": {
+              "real": 1.4322762439359765e-13,
+              "imag": 0.0
+            }
+          }
+        ],
+        "P32_overlap": -1.646371015125032e-08,
+        "P32_added": 2.3634890006742936e-11,
+        "signed_overlap_change": 4.165367333119505e-23,
+        "total_signed_change": 2.3634890006793136e-11,
+        "power_reconstruction_roundoff": -2.3161057151484775e-23,
+        "change_reconstruction_roundoff": -8.546455938292024e-24,
+        "changes_are_error_bounds": false
+      },
+      "raw_power_imaginary_N16": -0.0,
+      "raw_power_imaginary_N32": -0.0,
+      "signed_window_change": 2.3634890006793136e-11,
+      "supplied_GK32_power_proxy": 4.795333334301459e-15,
+      "omitted_power_lower": -2.5901701834943243e-09,
+      "omitted_power_upper": 1.3029229902518155e-08
+    },
+    {
+      "lambda_value": 1.0,
+      "defined": true,
+      "empirical_relative_cap": 0.2,
+      "cap_applies_to": "Bemp only; no total20-percent magnitude claim",
+      "P16": -6.289124153329019e-08,
+      "P32": -6.286762378454995e-08,
+      "Bemp32": 2.3622544073575114e-11,
+      "Lnum": -6.634480657328263e-08,
+      "Unum": -4.895138127679344e-08,
+      "empirical_refinement_screen_passed": true,
+      "negative_sign_screen_passed": true,
+      "positive_sign_screen_passed": false,
+      "numerically_supported_negative_sign": true,
+      "numerically_supported_positive_sign": false,
+      "empirical_ratio": 0.00037575054776255883,
+      "adverse_upper_ratio": 0.221357857511015,
+      "adverse_lower_ratio": 0.0553095946595521,
+      "mode_decomposition": {
+        "overlap_modes": [
+          {
+            "n": -1,
+            "k": 2,
+            "P16": {
+              "real": -1.0066727360621078e-07,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": -1.0066727360621072e-07,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 6.617444900424221e-23,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 0,
+            "k": 2,
+            "P16": {
+              "real": 3.826466340020816e-09,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 3.826466340020816e-09,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 0.0,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 1,
+            "k": 0,
+            "P16": {
+              "real": 1.8847322990513645e-08,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.8847322990513635e-08,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -9.926167350636332e-24,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 1,
+            "k": 2,
+            "P16": {
+              "real": 6.560115980699766e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 6.560115980699772e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 6.203854594147708e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 2,
+            "k": -2,
+            "P16": {
+              "real": 9.59777896991021e-09,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 9.597778969910222e-09,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.1580528575742387e-23,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 2,
+            "k": 0,
+            "P16": {
+              "real": 2.242799797031799e-09,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.2427997970317973e-09,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.6543612251060553e-24,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 2,
+            "k": 2,
+            "P16": {
+              "real": 2.2463345866520833e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.2463345866520849e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.550963648536927e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 3,
+            "k": -2,
+            "P16": {
+              "real": 6.598537228581153e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 6.598537228581145e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -7.237830359838992e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 3,
+            "k": 0,
+            "P16": {
+              "real": 6.248869967713371e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 6.24886996771337e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.0339757656912846e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 3,
+            "k": 2,
+            "P16": {
+              "real": 1.0218462356134411e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.0218462356134442e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 3.101927297073854e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 4,
+            "k": -2,
+            "P16": {
+              "real": 1.5053761210122048e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.5053761210122036e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.2924697071141057e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 4,
+            "k": 0,
+            "P16": {
+              "real": 2.490651330330993e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.490651330330997e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 3.618915179919496e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 4,
+            "k": 2,
+            "P16": {
+              "real": 5.437203985410994e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 5.4372039854110204e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 2.649562899583917e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 5,
+            "k": -2,
+            "P16": {
+              "real": 5.5689644140824784e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 5.568964414082499e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 2.0679515313825692e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 5,
+            "k": 0,
+            "P16": {
+              "real": 1.2124684022556459e-10,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.2124684022556482e-10,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 2.3264454728053903e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 5,
+            "k": 2,
+            "P16": {
+              "real": 3.201672886660092e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 3.201672886660111e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.8740810753154533e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 6,
+            "k": -2,
+            "P16": {
+              "real": 2.6153709456556168e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.615370945655647e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 3.0373038117181485e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 6,
+            "k": 0,
+            "P16": {
+              "real": 6.70952548874306e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 6.709525488743074e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.4217166778255163e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 6,
+            "k": 2,
+            "P16": {
+              "real": 2.0258405665973725e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.0258405665973832e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.0662875083691372e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 7,
+            "k": -2,
+            "P16": {
+              "real": 1.4176014230339889e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.417601423034006e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.71252236192619e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 7,
+            "k": 0,
+            "P16": {
+              "real": 4.059717200046899e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 4.05971720004691e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.0985992510469899e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 7,
+            "k": 2,
+            "P16": {
+              "real": 1.3531331124207664e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.3531331124207736e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 7.270142102516845e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 8,
+            "k": -2,
+            "P16": {
+              "real": 8.462639243170966e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 8.462639243171119e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.5348077771980006e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 8,
+            "k": 0,
+            "P16": {
+              "real": 2.623556863169251e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.623556863169252e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 9.693522803355793e-27,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 8,
+            "k": 2,
+            "P16": {
+              "real": 9.429810792731377e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 9.429810792731398e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 2.1002632740604218e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 9,
+            "k": -2,
+            "P16": {
+              "real": 5.417146161559038e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 5.417146161559149e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 1.1147551223859162e-25,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 9,
+            "k": 0,
+            "P16": {
+              "real": 1.783376623103753e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.7833766231037536e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 6.462348535570529e-27,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 9,
+            "k": 2,
+            "P16": {
+              "real": 6.800533320614648e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 6.800533320614669e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 2.1002632740604218e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 10,
+            "k": -2,
+            "P16": {
+              "real": 3.656221823641927e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 3.656221823641971e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 4.362085261510107e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 10,
+            "k": 0,
+            "P16": {
+              "real": 1.2618052178492958e-11,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.2618052178492946e-11,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.1309109937248425e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 10,
+            "k": 2,
+            "P16": {
+              "real": 5.045081819409434e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 5.045081819409422e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.2116903504194741e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 11,
+            "k": -2,
+            "P16": {
+              "real": 2.5725614742415757e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.5725614742415995e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 2.3829910224916325e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 11,
+            "k": 0,
+            "P16": {
+              "real": 9.222868236134213e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 9.222868236134199e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.454028420503369e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 11,
+            "k": 2,
+            "P16": {
+              "real": 3.8328405857892435e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 3.83284058578923e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.3732490638087374e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 12,
+            "k": -2,
+            "P16": {
+              "real": 1.8719159569092664e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.871915956909256e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.0501316370302109e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 12,
+            "k": 0,
+            "P16": {
+              "real": 6.9252660500046236e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 6.925266050004603e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -2.0194839173657902e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 12,
+            "k": 2,
+            "P16": {
+              "real": 2.9715424616529375e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.971542461652942e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 4.4428646182047385e-27,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 13,
+            "k": -2,
+            "P16": {
+              "real": 1.400346938085034e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.4003469380850227e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.1309109937248425e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 13,
+            "k": 0,
+            "P16": {
+              "real": 5.31927835405843e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 5.319278354058433e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 2.4233807008389483e-27,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 13,
+            "k": 2,
+            "P16": {
+              "real": 2.3444886988908606e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.344488698890842e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.857925203976527e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 14,
+            "k": -2,
+            "P16": {
+              "real": 1.0722038090453222e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.0722038090453268e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": 4.6448130099413175e-27,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 14,
+            "k": 0,
+            "P16": {
+              "real": 4.165537974291046e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 4.165537974291036e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.0501316370302109e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 14,
+            "k": 2,
+            "P16": {
+              "real": 1.8782274886849317e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.8782274886849147e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -1.6963664905872638e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 15,
+            "k": -2,
+            "P16": {
+              "real": 8.373553399508418e-13,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 8.373553399508211e-13,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -2.069971015299935e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 15,
+            "k": 0,
+            "P16": {
+              "real": 3.3169875396819504e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 3.316987539681941e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -9.289626019882635e-27,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 15,
+            "k": 2,
+            "P16": {
+              "real": 1.525058534293176e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.5250585342931665e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -9.491574411619214e-27,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 16,
+            "k": -2,
+            "P16": {
+              "real": 6.651880490624919e-13,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 6.651880490624664e-13,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -2.5445497358808957e-26,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 16,
+            "k": 0,
+            "P16": {
+              "real": 2.6800528305511143e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 2.6800528305511082e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -6.058451752097371e-27,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 16,
+            "k": 2,
+            "P16": {
+              "real": 1.2531494080352905e-12,
+              "imag": 0.0
+            },
+            "P32": {
+              "real": 1.2531494080352878e-12,
+              "imag": 0.0
+            },
+            "signed_overlap_change": {
+              "real": -2.6253290925755273e-27,
+              "imag": 0.0
+            }
+          }
+        ],
+        "added_modes": [
+          {
+            "n": 17,
+            "k": -2,
+            "P32": {
+              "real": 5.363201810921272e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 17,
+            "k": 0,
+            "P32": {
+              "real": 2.1933567868222907e-12,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 17,
+            "k": 2,
+            "P32": {
+              "real": 1.0407418930418574e-12,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 18,
+            "k": -2,
+            "P32": {
+              "real": 4.380932760299907e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 18,
+            "k": 0,
+            "P32": {
+              "real": 1.815559819320404e-12,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 18,
+            "k": 2,
+            "P32": {
+              "real": 8.72644339832198e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 19,
+            "k": -2,
+            "P32": {
+              "real": 3.620129113749168e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 19,
+            "k": 0,
+            "P32": {
+              "real": 1.5181604923107473e-12,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 19,
+            "k": 2,
+            "P32": {
+              "real": 7.380466279986166e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 20,
+            "k": -2,
+            "P32": {
+              "real": 3.0224154318032703e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 20,
+            "k": 0,
+            "P32": {
+              "real": 1.2810969898606743e-12,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 20,
+            "k": 2,
+            "P32": {
+              "real": 6.29124053296965e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 21,
+            "k": -2,
+            "P32": {
+              "real": 2.546819124439043e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 21,
+            "k": 0,
+            "P32": {
+              "real": 1.0899839338179138e-12,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 21,
+            "k": 2,
+            "P32": {
+              "real": 5.401247780623446e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 22,
+            "k": -2,
+            "P32": {
+              "real": 2.1640353868420375e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 22,
+            "k": 0,
+            "P32": {
+              "real": 9.3433291610666e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 22,
+            "k": 2,
+            "P32": {
+              "real": 4.667609998150769e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 23,
+            "k": -2,
+            "P32": {
+              "real": 1.8527468595161542e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 23,
+            "k": 0,
+            "P32": {
+              "real": 8.063807178584692e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 23,
+            "k": 2,
+            "P32": {
+              "real": 4.0579513101848057e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 24,
+            "k": -2,
+            "P32": {
+              "real": 1.5972076946444274e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 24,
+            "k": 0,
+            "P32": {
+              "real": 7.003020137419613e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 24,
+            "k": 2,
+            "P32": {
+              "real": 3.5475372188162937e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 25,
+            "k": -2,
+            "P32": {
+              "real": 1.3856248805038448e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 25,
+            "k": 0,
+            "P32": {
+              "real": 6.116706611575652e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 25,
+            "k": 2,
+            "P32": {
+              "real": 3.1172660306083704e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 26,
+            "k": -2,
+            "P32": {
+              "real": 1.2090534488759124e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 26,
+            "k": 0,
+            "P32": {
+              "real": 5.370849005479549e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 26,
+            "k": 2,
+            "P32": {
+              "real": 2.7522383883300247e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 27,
+            "k": -2,
+            "P32": {
+              "real": 1.0606295921398686e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 27,
+            "k": 0,
+            "P32": {
+              "real": 4.739025923117291e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 27,
+            "k": 2,
+            "P32": {
+              "real": 2.4407250489543644e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 28,
+            "k": -2,
+            "P32": {
+              "real": 9.350300594845139e-14,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 28,
+            "k": 0,
+            "P32": {
+              "real": 4.200515487727595e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 28,
+            "k": 2,
+            "P32": {
+              "real": 2.17341292836519e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 29,
+            "k": -2,
+            "P32": {
+              "real": 8.280856275372092e-14,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 29,
+            "k": 0,
+            "P32": {
+              "real": 3.7389189690747645e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 29,
+            "k": 2,
+            "P32": {
+              "real": 1.9428481522898913e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 30,
+            "k": -2,
+            "P32": {
+              "real": 7.36501101282592e-14,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 30,
+            "k": 0,
+            "P32": {
+              "real": 3.341149987486738e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 30,
+            "k": 2,
+            "P32": {
+              "real": 1.743020296597404e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 31,
+            "k": -2,
+            "P32": {
+              "real": 6.576500215186971e-14,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 31,
+            "k": 0,
+            "P32": {
+              "real": 2.996683924357575e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 31,
+            "k": 2,
+            "P32": {
+              "real": 1.5690489713274874e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 32,
+            "k": -2,
+            "P32": {
+              "real": 5.894224519564096e-14,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 32,
+            "k": 0,
+            "P32": {
+              "real": 2.696994780243513e-13,
+              "imag": 0.0
+            }
+          },
+          {
+            "n": 32,
+            "k": 2,
+            "P32": {
+              "real": 1.4169453825812047e-13,
+              "imag": 0.0
+            }
+          }
+        ],
+        "P32_overlap": -6.289124153329015e-08,
+        "P32_added": 2.3617748740149383e-11,
+        "signed_overlap_change": 6.865245674504591e-23,
+        "total_signed_change": 2.3617748740240813e-11,
+        "power_reconstruction_roundoff": -5.293955920339377e-23,
+        "change_reconstruction_roundoff": -2.2776547413618328e-23,
+        "changes_are_error_bounds": false
+      },
+      "raw_power_imaginary_N16": -0.0,
+      "raw_power_imaginary_N32": -0.0,
+      "signed_window_change": 2.3617748740240813e-11,
+      "supplied_GK32_power_proxy": 4.795333334301459e-15,
+      "omitted_power_lower": -3.453560244659099e-09,
+      "omitted_power_upper": 1.389261996368293e-08
+    }
+  ],
+  "scope": {
+    "continuum": false,
+    "stability": false,
+    "free_growth": false,
+    "continuous_band": false,
+    "plotted_mechanism_is_new_scientific_confirmation": false
+  },
+  "port": {
+    "delivery_equivalence_passed": true,
+    "independent_scientific_confirmation": false,
+    "E128_equivalence": false,
+    "atol": 5e-12,
+    "rtol": 5e-10,
+    "counts": {
+      "saved_arrays": 62,
+      "declared_sources": 12,
+      "scalars": 117
+    }
+  },
+  "formal_spectrum_status": {
+    "status": "Not included in this finite-cycle report; no failure or availability inference"
+  },
+  "strength_map_status": {
+    "status": "Completed finite-cycle same-equation strength refinement; conditional empirical inference",
+    "counts": {
+      "signed_cells": 60,
+      "fresh_own_cells": 18,
+      "scalar_rows": 20,
+      "waveform_rows": 10,
+      "forecasts": 4
+    }
+  }
+}

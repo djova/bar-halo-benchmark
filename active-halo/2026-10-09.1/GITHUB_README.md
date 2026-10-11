@@ -1,0 +1,13 @@
+# Finite-cycle hidden-halo response: research supplement
+
+Working draft; not externally reviewed.
+
+GitHub renders the [static article, equations and four figures](active-halo.md) and [complete scientific values/downloads](evidence.md). [Final outcome and scope](FINAL_OUTCOME.md) records the scientific conclusion and limitations. GitHub file-view/raw HTML does not execute the controls: download the same release's `active-halo-release.zip`, extract it, and serve its directory locally with `python3 -m http.server 8000` to read `active-halo.html` with the interactive evidence controls. The canonical live-site update is deferred.
+
+The independent E128 complete-cycle calculation and GL64-centered five-strength comparison are distinct. Empirical refinement ranges preserve opposite computed work signs within the N64/seven-function representation. They do not bound the known GL64 density-kick defect or omitted continuum terms: opposite continuum halo-work signs remain unqualified. Expanded magnitude/waveform criteria still fail, four time-only forecast ranges miss GL64, and the .75 expanded own-work sign is unresolved. The five strengths each use their own freshly solved field, not interpolated collective wakes. No stationary active band, global stability or free growth is established.
+
+For scale, the bare supported circular source has plateau energy coefficient $E_{\mathrm{plateau}}/\epsilon^2=(.1/49)(.24)^2(.8)^2=7.523265306122451\times10^{-5}$. The recorded E128 cycle gives total work relative to that energy of +25.915% for F0 and −8.008% for A. Its full T=120 spans 4.583662361 carrier phase periods including both ramps. This is prescribed-cycle work relative to the bare supported source plateau energy, not free growth, a ramp maximum, a coupled-mode energy or stellar-bar mechanics; the failed expanded magnitude screens remain. The fixed .8 shape is included once. [Source and energy proof](f0-source-energy.md).
+
+[Central GL64 calculation capsule](calculation-source/README.md) and [sealed cached-strength runner](cached-strength/README.md) are separate executable routes. The completed cached default made 12 fresh own solves and 24 signed cells/full budgets across three layouts, with 213 original software checks. Its [sanitized reproduction addendum](REPRODUCTION_ADDENDUM.md) binds the seven exact release cache assets. Optional `--full` has not been executed. Same-equation software agreement is not independent physical confirmation.
+
+The original [MIT notice](LICENSE) and [KaTeX notice](math/LICENSE) remain intact. Cache assets contain this model's generated numeric inputs, without private execution logs or observational catalogue data.

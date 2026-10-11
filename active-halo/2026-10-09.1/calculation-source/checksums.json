@@ -1,0 +1,61 @@
+{
+  "schema": "portable-independent-cycle-checksums-v1",
+  "files": [
+    {
+      "path": "OUTPUTS.md",
+      "sha256": "61ab349139ee07c3f496d72c5469946a457c79442637edf648ac3d713c517e89",
+      "bytes": 4238
+    },
+    {
+      "path": "README.md",
+      "sha256": "f181bdaeeacae78f2d397a9903d623dc889ad20912c1e2a8311c62f818dc514d",
+      "bytes": 7414
+    },
+    {
+      "path": "configs/gl64-provisional.json",
+      "sha256": "262194a68caaf4c6d78220d3fee0ec65863d6c3de30804fe2209ce22c2ea35c8",
+      "bytes": 580
+    },
+    {
+      "path": "configs/gl8-preview.json",
+      "sha256": "db73bdd9e5c4225d411720825aa5d1507aa90e80a0d924dd7d31049e4a4e6d75",
+      "bytes": 556
+    },
+    {
+      "path": "inputs/population.json",
+      "sha256": "0a4644414c8eedb1faf51b5df2a8ae85c2b3835c799cec38e651d72443c405d2",
+      "bytes": 874
+    },
+    {
+      "path": "portable_io.py",
+      "sha256": "f296c46e9be669718d41797b2789876d39d2bacb7fcc697476499c25052bdb53",
+      "bytes": 7657
+    },
+    {
+      "path": "run_cycle.py",
+      "sha256": "52255866f5fb783932da302e171c2523daa1a551c37250db9b6225a85028d858",
+      "bytes": 15411
+    },
+    {
+      "path": "scientific/__init__.py",
+      "sha256": "1b4f85e88298f4683faaaa476aa9374664a433a228a09c92eb968b489f384f27",
+      "bytes": 74
+    },
+    {
+      "path": "scientific/causal_response.py",
+      "sha256": "1df0ee3707926eb756bfe5c8a827461f0ad1a8a44f1bfe7ba44d00bf83808996",
+      "bytes": 4814
+    },
+    {
+      "path": "scientific/independent_orbits.py",
+      "sha256": "bfa312a372fb046133a15ce7f08f636dbd8510c9377d18ec948d5a8de88e130b",
+      "bytes": 30384
+    },
+    {
+      "path": "scientific/volterra.py",
+      "sha256": "0b05fce93f8fdf615f5b298addce01bb6950a24d97c5435f7f0cf86de2e54fb1",
+      "bytes": 2007
+    }
+  ],
+  "manifest_self_hash": "Provided externally; this manifest cannot hash itself"
+}

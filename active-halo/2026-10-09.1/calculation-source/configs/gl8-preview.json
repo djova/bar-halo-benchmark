@@ -1,0 +1,23 @@
+{
+  "schema": "portable-independent-cycle-configuration-v1",
+  "status": "Accounted cost-pilot configuration; portable execution and equivalence pending",
+  "config": {
+    "ne": 8,
+    "neta": 8,
+    "nmax": 2,
+    "radial_modes": 16,
+    "orbit_tolerance": 3e-8,
+    "initial_solver_rtol": 1e-8,
+    "minimum_solver_rtol": 5e-14,
+    "maximum_refinements": 5,
+    "phase_step": 0.25,
+    "phase_panels": 16,
+    "phase_probe_order": 129,
+    "duration": 120.0,
+    "rise": 12.0,
+    "fall": 12.0,
+    "dt": 0.1,
+    "shape": 0.8,
+    "omega": 0.12
+  }
+}

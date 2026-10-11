@@ -1,0 +1,28 @@
+{
+  "schema": "portable-frozen-active-halo-population-v1",
+  "physical": {
+    "G": 1.0,
+    "total_mass": 1.0,
+    "radius": 1.0,
+    "halo_mass": 0.9,
+    "bar_mass": 0.1
+  },
+  "reference_Q": "14/33",
+  "coefficients": {
+    "5": 3.795853269534006,
+    "6": -135.59804126193885,
+    "7": 678.294264313138,
+    "8": -800.1997907110583,
+    "10": 259.1199993421909,
+    "12": -136.73855372860442
+  },
+  "binding_convention": "e=-H0",
+  "potential": "Phi0=-(1+r^2)^(-1/2)",
+  "DF_definition": "F_lambda=C[e^(7/2)(1-14 e^2/33)+lambda Lz h(e,L^2)]",
+  "DF_C": "24 sqrt(2)/(7 pi^3)",
+  "h_definition": "sum_p c_p[-16 p e^(p-1)/((2p+5)(2p+7))+4 e^(p+1)/(p+1)+L^2 e^p]",
+  "populations": ["F0", "A"],
+  "population_strengths": [0.0, 1.0],
+  "definition_provenance_sha256": "8547ead0addcbf753a0b853f15e32bc54b8be313ce37e429da99ae67bdcc89d8",
+  "new_population_selection": false
+}

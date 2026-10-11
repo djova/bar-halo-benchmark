@@ -1,0 +1,157 @@
+{
+  "schema": "bare-plummer-positivity-certificate-v1",
+  "powers": [
+    5,
+    6,
+    7,
+    8,
+    10,
+    12
+  ],
+  "reference": {
+    "q": {
+      "numerator": 14,
+      "denominator": 33
+    },
+    "bar_mass": "1/10",
+    "G": 1,
+    "total_mass": 1,
+    "radius": 1
+  },
+  "region": {
+    "degree_u": 31,
+    "degree_t": 3,
+    "depth_u": 4,
+    "depth_t": 4,
+    "alpha": {
+      "numerator": 35,
+      "denominator": 99
+    },
+    "minimum_denominator": {
+      "numerator": 19,
+      "denominator": 33
+    }
+  },
+  "certificates": {
+    "A_full_plus": {
+      "feasible": true,
+      "coefficients": {
+        "5": {
+          "numerator": 4273750842556607,
+          "denominator": 1125899906842624
+        },
+        "6": {
+          "numerator": -4770931938276851,
+          "denominator": 35184372088832
+        },
+        "7": {
+          "numerator": 2983169722664251,
+          "denominator": 4398046511104
+        },
+        "8": {
+          "numerator": -3519315897722921,
+          "denominator": 4398046511104
+        },
+        "10": {
+          "numerator": 2279243618128387,
+          "denominator": 8796093022208
+        },
+        "12": {
+          "numerator": -1202765038318991,
+          "denominator": 8796093022208
+        }
+      },
+      "maximum_constraint_ratio": {
+        "numerator": 580078576055487947087817836095448133988572589589163564441751,
+        "denominator": 580078576056015775957447676503050835474728196371301741363200
+      },
+      "minimum_normalized_slack": {
+        "numerator": 527828869629840407602701486155606782138176921449,
+        "denominator": 580078576056015775957447676503050835474728196371301741363200
+      }
+    },
+    "A_nine_tenths_plus": {
+      "feasible": true,
+      "coefficients": {
+        "5": {
+          "numerator": 7692751516601893,
+          "denominator": 2251799813685248
+        },
+        "6": {
+          "numerator": -2146919372224583,
+          "denominator": 17592186044416
+        },
+        "7": {
+          "numerator": 1342426375198913,
+          "denominator": 2199023255552
+        },
+        "8": {
+          "numerator": -3167384307950629,
+          "denominator": 4398046511104
+        },
+        "10": {
+          "numerator": 8205277025262193,
+          "denominator": 35184372088832
+        },
+        "12": {
+          "numerator": -8659908275896735,
+          "denominator": 70368744177664
+        }
+      },
+      "maximum_constraint_ratio": {
+        "numerator": 321274288276885676195474049116900111134437224216597634065411,
+        "denominator": 356971431419086631358429339386492821830601966997724148531200
+      },
+      "minimum_normalized_slack": {
+        "numerator": 35697143142200955162955290269592710696164742781126514465789,
+        "denominator": 356971431419086631358429339386492821830601966997724148531200
+      }
+    }
+  },
+  "source_sha256": {
+    "run.py": "abc1d554e8a642e4b2d0007f664a9b372c8d62c331966d37da517d3f66fdd9b1",
+    "README.md": "357a3ced6676c1c5af935dd969afd60a25bd02826cd370c8ec6db9fb4e12c2cc",
+    "requirements.txt": "7cfc262076b951f44468033354d1545562e74fed172bad23129fb28a885999d9",
+    "verify_certificate.py": "6e6cb7bd0e6a440c7cbb6f89b33cc0b51781d1fecb4d43aad0745840938c6681",
+    "MATCHING_AND_POSITIVITY.md": "f6c3555783fb5e45a6d7284c2600b36331c4047e1ec43274589ed63479f9db33"
+  },
+  "derived_populations": {
+    "F0": {
+      "zero": true
+    },
+    "A_full_minus": {
+      "base": "A_full_plus",
+      "scale": {
+        "numerator": -1,
+        "denominator": 1
+      }
+    },
+    "A_half_plus": {
+      "base": "A_full_plus",
+      "scale": {
+        "numerator": 1,
+        "denominator": 2
+      }
+    }
+  },
+  "closed_primal_origins": {
+    "A_full_plus": {
+      "result_sha256": "39540bd87e0056d92df7ba47e6f93c33cbedf1439526c502cb2f8567b2131674",
+      "start_sha256": "3cdf844da56f1452b303a48b0e241333b0c67909912262d383830ca257bce069",
+      "terminal_sha256": "3a82a3b2fcfd83e597cb6808084d0cd9f53d05c2ab11b9ee9baf43da372b1008",
+      "selected_case": "energy2-frequency-01"
+    },
+    "A_nine_tenths_plus": {
+      "result_sha256": "6e5a161ba0777895687a8c633de748bae3180f4b063e9daddc683aadbfdc4c4a",
+      "start_sha256": "11efd9aaabec3ecc0cc4fe7cf79919deb34e80a4355b36756b6ea7d384c63d3d",
+      "terminal_sha256": "c3077b4e94378f2f25abcde002c021e3e6155a85347f445255f94f496179807a"
+    }
+  },
+  "method_ancestor_sha256": {
+    "optimize_family.py": "f532acccd520f0455257203d0d4c8f9c6563293de88c14b1e8af6c4dde6f96de",
+    "positivity.py": "882f1fe3c214697ddfc4aba0401715da46bf51ad5cd47a97b1a92f5353e541e2",
+    "CONVEX_POSITIVITY.md": "0b22b1402ac4128c8b47da32327cd5d6e40c8577beafcdd6ad77d6c46bd02a88"
+  },
+  "original_constraint_digest": "27c32924b325164765a3fb6e654445ed0402c5005ce872adc0ba49abb2a712bc",
+  "scope": "Full-support sufficient DF positivity and exact represented constants only; no LP optimality, response, stability or numerical DF-arithmetic claim"
+}
