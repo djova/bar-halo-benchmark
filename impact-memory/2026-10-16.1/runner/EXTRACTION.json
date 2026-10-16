@@ -1,0 +1,70 @@
+{
+  "schema": "portable-scientific-extraction-v1",
+  "modules": {
+    "sign_science.py": {
+      "original_source": "assembly_sign_control_feasibility.py",
+      "original_sha256": "cb830e55694e09dfaa472c80f807263712b325a5e318d950ccbad814a9b520bd",
+      "selected_definition_sha256": {
+        "RADII": "af20e73f429a217bb8f0338eed011ac4d6eeb3404bbd038fae13f1e462ab9da7",
+        "SEEDS": "12d91970692a004d3c1f6b3770e50fb5f9244cb6f7ac778e797e56db30b7c23d",
+        "COMPONENTS": "ede25553857d926885bdd69f088d3040f84ee2f178bce10a706cf82819177486",
+        "POLYNOMIALS": "2c7c79e553ebea0ecbb9afe4aa420d3b4f9076a643ccb2ec44f9b89ed77bf08c",
+        "THIRDS": "ca24d3dfc8cc246594385d0c1b2c20f8e6fdf37cfd84a3cbe7c813adea531962",
+        "SOLVER": "52a5e4686a51daa5b86ba5995370c18cd1fd99a0c9fa0cf6a99c93e27d896b10",
+        "read_state": "2ea85041f871a028d12f84aafcd112470680c5b52b99c7e56ffcf42dbade1c9a",
+        "polynomials": "48324fbc02cc4740c747c166dbc0476a878a3f9e5207452de86fc7e03dce54ac",
+        "feature_sets": "69265182dc00d6a9fc43373fad1110651ca2ff23ad50176d27cd5e7c6a24a82c",
+        "dual": "c93c63181077b2f960eeeb134227fe00f1b6ada169575cbadd87286f0bd64d84",
+        "solve": "93afba51df033f03222c30a71be69e94076656c8d4b7ada4a92daa3e62879058",
+        "fixtures": "b2829d0ef60b165fc196eb28fd6ee0e665a2287a6c761860a6bf370ce1602cc9",
+        "normalized": "fd344602ce3373220b9ff309473e8b55b9c614f665166ed5b6651c2d3a489b10",
+        "moments": "bd775d6facfbe87ff8fe25e3c77ba1d8f2216718c32c65c172d1643af43a17ac"
+      },
+      "portable_sha256": "bb40ac1fb788b60ef696dff5ee492355f134f822147733b2c92b674d7f6a1fde"
+    },
+    "balanced_science.py": {
+      "original_source": "assembly_balanced_sign_control.py",
+      "original_sha256": "bccd4bfa65483890c17783386c54defd3bd30160142ab49ebb0dc648d3365a00",
+      "selected_definition_sha256": {
+        "REBASE_EVERY": "a0c5a798f2587440cf4681717d7c55f0d15d43e2649b2614457dbb4decb85305",
+        "ROW_CONSERVATION_TOL": "117c674099e0958d4b3bbcb02191cc43f1c694a0efd492b8cd67e6821e930b5b",
+        "QR_TOL": "7fae59f78d9ca556f5ec78f7471e2d5c13c97d98c94c5351e0440f0fc673e282",
+        "RANK_DIAGONAL_TOL": "ad40f0968c7f5956f25b31720028693be4663d3266602f745159013f33b78cd4",
+        "STF_NAMES": "817c55ace915cb202f45d874b127f5aef25d22bae5a312cb74daf305c574bf5d",
+        "observers": "6264427c2d7b5b9bdcc285df9997f97451d1921b9d3036eedc2999b963abfd99",
+        "observer_rows": "52f45fbbc756582b37289143ce6bd9b377f866c6ba737417de3a2e6ac3487ebb",
+        "flight_coordinates": "02bd472b221e1c2f624fc99c107d693daba656860d9e30ef441867148570f2a3",
+        "FlightFailure": "b34950d440902077569d3d780a2c8a0da2acc957a8b13e6a8fe4766643328576",
+        "limits": "f94b24a3830f26dd370698a2bce4aa289e4c127c3f43f6937a98d4d30307e3f5",
+        "endpoint": "f31c64bdec64a4e978fb3f2a1b961eb37ec99a9c7e7e0405bcde5f6f0add378b",
+        "flight": "1e0f8ec04cfa8dc4b407fb9bf6517c716bdae23e3819568969a3588583bdd3e2",
+        "fixtures": "33b618b12a0e907b18ae94db46747fb8a009b43bc78913bdc26ebb75195ab380",
+        "preserve": "0e499cb803aad5d623a218b1588cb9b6e9489fe7a5762e0444025d890420d769",
+        "measure": "b3665f5b4c1da6de5a66894bc517750ca2ed270b5df5c280bf236c7c93cb8707",
+        "prepare": "8384dac7d5cf8a3107eccd30a95117ff130679458088fcc3e4390c91c55db644"
+      },
+      "portable_sha256": "4a20b676ed59397f11706bf8e9c28e0817bfaa1614aaf6bba01e548c57e29bb8"
+    },
+    "profile_science.py": {
+      "original_source": "body_tangent_pilot.py",
+      "original_sha256": "43ca91fb25f94b91207ce254a01a9a0dc9651f3877c84379ef727534c0090b0e",
+      "selected_definition_sha256": {
+        "tensor_basis": "79a3939918d323ab856568142fd033da9c4d3334ca842e8ef20818c1d29c3a91",
+        "gegenbauer": "8361face8b58d446a8bf248d3796ab4936d1fb1b7e68629f6194ae8905892561",
+        "profiles": "2e99ea75acbe72276885e2a04f663d4ddee4fb5c6e5d04ea66719849bfe9adde"
+      },
+      "portable_sha256": "99b7afbe587cfc7399268757fe68a6d84703c6f0b67c09a4e020726f9b3f66ba"
+    }
+  },
+  "runner_sha256": "0fe7fd5a3b7c2d20ccd37b499de479bc1708b69b16fa8bf92da14a4ccc02245d",
+  "public_scientific_source_sha256": {
+    "sign_constructor": "cb830e55694e09dfaa472c80f807263712b325a5e318d950ccbad814a9b520bd",
+    "balanced_constructor": "bccd4bfa65483890c17783386c54defd3bd30160142ab49ebb0dc648d3365a00",
+    "spatial_profiles": "43ca91fb25f94b91207ce254a01a9a0dc9651f3877c84379ef727534c0090b0e",
+    "nominal_history": "af75ab82dc2e68059f83215d857d3a00c37efc9eff3757471a3524d1724d7a78",
+    "halfstep_history": "d46e7db70e54389a89374d47c29fccfb13bf288731a3de935069d08653274415"
+  },
+  "builder_sha256": "a8fdd59e82bfc70d18c5cc251b33cda40002bad60a31ab5ca6d52b4cf10681ce",
+  "same_code_port": true,
+  "independent_physics_validation": false
+}

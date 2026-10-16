@@ -1,0 +1,120 @@
+{
+  "release": "impact-memory-2026-10-16.1",
+  "date_UTC": "2026-10-16",
+  "status": "assessed stop of tested routes; ultimate galaxy-formation objective unachieved",
+  "canonical_report": "README.md",
+  "reproduction": "REPRODUCTION.md",
+  "data_dictionary": "DATA_DICTIONARY.md",
+  "public_reproduction_scope": "Full archived-state sign construction only; no trajectory, collective-response or stellar simulation",
+  "port_arrays_compared": 1088,
+  "port_arrays_exact": 1088,
+  "license": "Repository MIT license for project-authored code, text and generated data; linked literature is not redistributed",
+  "external_review_status": "Not externally reviewed; internal independent criticism is not external peer review",
+  "files": [
+    {
+      "file": "DATA_DICTIONARY.md",
+      "sha256": "8e9295e74f04b92aed5e957fec8544a6f7683454e019e51ede6454a5202e34c9",
+      "bytes": 6147
+    },
+    {
+      "file": "README.md",
+      "sha256": "c937eb0be326e8cba1bceac2a520e23abde109e5a5ba0a3e7c77db3ff21f0862",
+      "bytes": 12533
+    },
+    {
+      "file": "REPRODUCTION.md",
+      "sha256": "43cf9afc83ff6405c9ae7dbf3d08e19774ecc574a39f2cdf7567322c429f58fa",
+      "bytes": 4448
+    },
+    {
+      "file": "evidence/assembly-T40-two-pair-summary.json",
+      "sha256": "390343e3f9127f61c0581977ab597eb37bb0ff413083e9ff5a626ca654e075ac",
+      "bytes": 71340
+    },
+    {
+      "file": "evidence/assembly-balanced-control-summary.json",
+      "sha256": "862662b537c0318334cc3e238d07d407d5528c933d97a6e1dd48f650aed8e23d",
+      "bytes": 147471
+    },
+    {
+      "file": "evidence/simultaneous-family-summary.json",
+      "sha256": "7880e620095b6f963340a121d8d5f8751fc5addaefa697f1801dcacdb04efb43",
+      "bytes": 61787
+    },
+    {
+      "file": "figures/assembly-forcing-deep8.png",
+      "sha256": "1da17e931427b8e531a9b33a9ad95c3e9033f4e8bc57a1ae26d43b66983a5750",
+      "bytes": 240241
+    },
+    {
+      "file": "figures/assembly-smooth81.png",
+      "sha256": "3684af1236206717aaee96511f6a58cd9211e593db21a4c4ec6556a6c80e3da9",
+      "bytes": 569199
+    },
+    {
+      "file": "figures/simultaneous-family.png",
+      "sha256": "b9d3a000c1e06afbeb907a1781f4d37b09ce38a76dd88d859cd1092fec9fe8d0",
+      "bytes": 393249
+    },
+    {
+      "file": "runner/EQUIVALENCE.json",
+      "sha256": "22d9f5067389fcb977dd9674ed278493270083b974f3ad4fb71e5e690c1982bf",
+      "bytes": 242931
+    },
+    {
+      "file": "runner/EXTRACTION.json",
+      "sha256": "4b7c5fa3965d4cdc10a419c872726bbf908d7cb0eb3361819be203db86ff97c8",
+      "bytes": 4741
+    },
+    {
+      "file": "runner/README.md",
+      "sha256": "e4a237bb457a0732405021efafd9dbecc47f3fef1aa3f9416161a2d07e17ed9c",
+      "bytes": 2790
+    },
+    {
+      "file": "runner/balanced_science.py",
+      "sha256": "4a20b676ed59397f11706bf8e9c28e0817bfaa1614aaf6bba01e548c57e29bb8",
+      "bytes": 17172
+    },
+    {
+      "file": "runner/inputs/halfstep__lagged.npz",
+      "sha256": "6359a2d18233a4d18946dddacc7405172d332a92025cbb7c64a7c87f366acfed",
+      "bytes": 885732
+    },
+    {
+      "file": "runner/inputs/halfstep__synchronous.npz",
+      "sha256": "92d7fa12fbeee2ce36da27596a14632e81f3508a0fd742ba10e2a84a561b3880",
+      "bytes": 885732
+    },
+    {
+      "file": "runner/inputs/inputs.json",
+      "sha256": "4ce262fc7f28b7a9042f4794add32c05c27d24ff2eba724b098da769857d036e",
+      "bytes": 4396
+    },
+    {
+      "file": "runner/inputs/nominal__lagged.npz",
+      "sha256": "a43ebe0598b7ea7033ea54fa44c74ce4b1c0a2965cd68d8272a297d03ba131d0",
+      "bytes": 885732
+    },
+    {
+      "file": "runner/inputs/nominal__synchronous.npz",
+      "sha256": "d9d6dc892f8eae5cf7c6e84e350042129c0273b04d51835a57c9f4e8976b8a60",
+      "bytes": 885732
+    },
+    {
+      "file": "runner/profile_science.py",
+      "sha256": "99b7afbe587cfc7399268757fe68a6d84703c6f0b67c09a4e020726f9b3f66ba",
+      "bytes": 1537
+    },
+    {
+      "file": "runner/run.py",
+      "sha256": "0fe7fd5a3b7c2d20ccd37b499de479bc1708b69b16fa8bf92da14a4ccc02245d",
+      "bytes": 11629
+    },
+    {
+      "file": "runner/sign_science.py",
+      "sha256": "bb40ac1fb788b60ef696dff5ee492355f134f822147733b2c92b674d7f6a1fde",
+      "bytes": 11534
+    }
+  ]
+}

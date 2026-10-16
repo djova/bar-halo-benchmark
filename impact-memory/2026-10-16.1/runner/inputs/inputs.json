@@ -1,0 +1,188 @@
+{
+  "schema": "assembly-control-public-inputs-v1",
+  "physical_parameters": {
+    "units": "G=M_host=b_host=1",
+    "host": {
+      "mass": 1.0,
+      "Plummer_scale": 1.0,
+      "count": 8192,
+      "seed": 76101401
+    },
+    "satellites": {
+      "mass_each": 0.025,
+      "Plummer_scale_each": 0.1,
+      "count_each": 2048,
+      "seeds": [
+        76101411,
+        76101412
+      ],
+      "host_monopole_apocentre": 3.0,
+      "host_monopole_pericentre": 0.5
+    },
+    "force": {
+      "kernel": "P1",
+      "epsilon": 0.0025,
+      "tree_theta": 0.0625
+    },
+    "history": {
+      "endpoint": 40.0,
+      "both_satellites_present_at_t0": true,
+      "lagged_second_satellite_initial_phase_advance": 4.0,
+      "velocity_frame": "original initial whole-system barycentric inertial frame",
+      "initial_sampling": "unpaired; common original host and satellite clouds"
+    }
+  },
+  "scientific_source_sha256": {
+    "sign_constructor": "cb830e55694e09dfaa472c80f807263712b325a5e318d950ccbad814a9b520bd",
+    "balanced_constructor": "bccd4bfa65483890c17783386c54defd3bd30160142ab49ebb0dc648d3365a00",
+    "spatial_profiles": "43ca91fb25f94b91207ce254a01a9a0dc9651f3877c84379ef727534c0090b0e",
+    "nominal_history": "af75ab82dc2e68059f83215d857d3a00c37efc9eff3757471a3524d1724d7a78",
+    "halfstep_history": "d46e7db70e54389a89374d47c29fccfb13bf288731a3de935069d08653274415"
+  },
+  "states": [
+    {
+      "label": "nominal__synchronous",
+      "arm": "synchronous",
+      "dt": 0.00125,
+      "time": 40.0,
+      "file": "nominal__synchronous.npz",
+      "sha256": "d9d6dc892f8eae5cf7c6e84e350042129c0273b04d51835a57c9f4e8976b8a60",
+      "bytes": 885732,
+      "arrays": {
+        "xv": {
+          "shape": [
+            12288,
+            6
+          ],
+          "dtype": "float64"
+        },
+        "mass": {
+          "shape": [
+            12288
+          ],
+          "dtype": "float64"
+        },
+        "cohort": {
+          "shape": [
+            12288
+          ],
+          "dtype": "int64"
+        },
+        "particle_id": {
+          "shape": [
+            12288
+          ],
+          "dtype": "int64"
+        }
+      }
+    },
+    {
+      "label": "nominal__lagged",
+      "arm": "lagged",
+      "dt": 0.00125,
+      "time": 40.0,
+      "file": "nominal__lagged.npz",
+      "sha256": "a43ebe0598b7ea7033ea54fa44c74ce4b1c0a2965cd68d8272a297d03ba131d0",
+      "bytes": 885732,
+      "arrays": {
+        "xv": {
+          "shape": [
+            12288,
+            6
+          ],
+          "dtype": "float64"
+        },
+        "mass": {
+          "shape": [
+            12288
+          ],
+          "dtype": "float64"
+        },
+        "cohort": {
+          "shape": [
+            12288
+          ],
+          "dtype": "int64"
+        },
+        "particle_id": {
+          "shape": [
+            12288
+          ],
+          "dtype": "int64"
+        }
+      }
+    },
+    {
+      "label": "halfstep__synchronous",
+      "arm": "synchronous",
+      "dt": 0.000625,
+      "time": 40.0,
+      "file": "halfstep__synchronous.npz",
+      "sha256": "92d7fa12fbeee2ce36da27596a14632e81f3508a0fd742ba10e2a84a561b3880",
+      "bytes": 885732,
+      "arrays": {
+        "xv": {
+          "shape": [
+            12288,
+            6
+          ],
+          "dtype": "float64"
+        },
+        "mass": {
+          "shape": [
+            12288
+          ],
+          "dtype": "float64"
+        },
+        "cohort": {
+          "shape": [
+            12288
+          ],
+          "dtype": "int64"
+        },
+        "particle_id": {
+          "shape": [
+            12288
+          ],
+          "dtype": "int64"
+        }
+      }
+    },
+    {
+      "label": "halfstep__lagged",
+      "arm": "lagged",
+      "dt": 0.000625,
+      "time": 40.0,
+      "file": "halfstep__lagged.npz",
+      "sha256": "6359a2d18233a4d18946dddacc7405172d332a92025cbb7c64a7c87f366acfed",
+      "bytes": 885732,
+      "arrays": {
+        "xv": {
+          "shape": [
+            12288,
+            6
+          ],
+          "dtype": "float64"
+        },
+        "mass": {
+          "shape": [
+            12288
+          ],
+          "dtype": "float64"
+        },
+        "cohort": {
+          "shape": [
+            12288
+          ],
+          "dtype": "int64"
+        },
+        "particle_id": {
+          "shape": [
+            12288
+          ],
+          "dtype": "int64"
+        }
+      }
+    }
+  ]
+}

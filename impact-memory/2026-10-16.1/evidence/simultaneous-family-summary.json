@@ -1,0 +1,1448 @@
+{
+  "schema": "simultaneous-matched-family-description-v1",
+  "complete": true,
+  "case_summaries": {
+    "E8-phase8": {
+      "F0": {
+        "scalars": {
+          "work_direct": {
+            "initial": 0.0,
+            "endpoint": 2.941653076375267e-05,
+            "maximum_absolute": 5.140912339850175e-05,
+            "signed_value_at_maximum_absolute": 5.140912339850175e-05,
+            "time_at_maximum_absolute": 113.625
+          },
+          "stationary_work_diagonal": {
+            "initial": 0.0,
+            "endpoint": 1.7176209254183703e-05,
+            "maximum_absolute": 3.107180590306349e-05,
+            "signed_value_at_maximum_absolute": 3.107180590306349e-05,
+            "time_at_maximum_absolute": 113.025
+          },
+          "simultaneous_minus_stationary_work": {
+            "initial": 0.0,
+            "endpoint": 1.2240321509568966e-05,
+            "maximum_absolute": 2.0981737661097825e-05,
+            "signed_value_at_maximum_absolute": 2.0981737661097825e-05,
+            "time_at_maximum_absolute": 113.67500000000001
+          },
+          "raw_energy_minus_work": {
+            "initial": 0.0,
+            "endpoint": 0.01060609086805134,
+            "maximum_absolute": 0.011717013590231487,
+            "signed_value_at_maximum_absolute": 0.011717013590231487,
+            "time_at_maximum_absolute": 119.825
+          },
+          "raw_energy_minus_work_gradient_field": {
+            "initial": 0.0,
+            "endpoint": 0.010606090868051341,
+            "maximum_absolute": 0.011717013590231489,
+            "signed_value_at_maximum_absolute": 0.011717013590231489,
+            "time_at_maximum_absolute": 119.825
+          },
+          "canonical_energy": {
+            "initial": 0.0,
+            "endpoint": 0.010635507398815093,
+            "maximum_absolute": 0.01174643074751073,
+            "signed_value_at_maximum_absolute": 0.01174643074751073,
+            "time_at_maximum_absolute": 119.825
+          },
+          "orbital_energy": {
+            "initial": 0.0,
+            "endpoint": 0.014156154927836201,
+            "maximum_absolute": 0.014156154927836201,
+            "signed_value_at_maximum_absolute": 0.014156154927836201,
+            "time_at_maximum_absolute": 120.0
+          },
+          "self_energy_diagonal": {
+            "initial": 0.0,
+            "endpoint": -0.003520647529021108,
+            "maximum_absolute": 0.010523381390819805,
+            "signed_value_at_maximum_absolute": -0.010523381390819805,
+            "time_at_maximum_absolute": 118.95
+          },
+          "self_energy_gradient_integral": {
+            "initial": 0.0,
+            "endpoint": -0.0035206475290211073,
+            "maximum_absolute": 0.010523381390819804,
+            "signed_value_at_maximum_absolute": -0.010523381390819804,
+            "time_at_maximum_absolute": 118.95
+          },
+          "interaction": {
+            "initial": 0.0,
+            "endpoint": 0.0,
+            "maximum_absolute": 9.226098624877559e-05,
+            "signed_value_at_maximum_absolute": 9.226098624877559e-05,
+            "time_at_maximum_absolute": 105.125
+          },
+          "direct_minus_dual_power": {
+            "initial": 0.0,
+            "endpoint": 0.0,
+            "maximum_absolute": 2.879912020664621e-20,
+            "signed_value_at_maximum_absolute": -2.879912020664621e-20,
+            "time_at_maximum_absolute": 111.525
+          },
+          "direct_minus_dual_interaction": {
+            "initial": 0.0,
+            "endpoint": 0.0,
+            "maximum_absolute": 9.486769009248164e-20,
+            "signed_value_at_maximum_absolute": 9.486769009248164e-20,
+            "time_at_maximum_absolute": 105.325
+          },
+          "field_energy_diagonal_minus_gradient": {
+            "initial": 0.0,
+            "endpoint": -8.673617379884035e-19,
+            "maximum_absolute": 3.469446951953614e-18,
+            "signed_value_at_maximum_absolute": -3.469446951953614e-18,
+            "time_at_maximum_absolute": 114.775
+          },
+          "stationary_work_diagonal_minus_gradient": {
+            "initial": 0.0,
+            "endpoint": 0.0,
+            "maximum_absolute": 3.3881317890172014e-21,
+            "signed_value_at_maximum_absolute": -3.3881317890172014e-21,
+            "time_at_maximum_absolute": 102.30000000000001
+          }
+        },
+        "negative_Poisson_norms": {
+          "projection": {
+            "initial": 0.0,
+            "endpoint": 0.08391242493243904,
+            "maximum_absolute": 0.1450750246653076,
+            "signed_value_at_maximum_absolute": 0.1450750246653076,
+            "time_at_maximum_absolute": 118.95
+          },
+          "projection_current": {
+            "initial": 0.0,
+            "endpoint": 0.34874760188167525,
+            "maximum_absolute": 1.3328875797093114,
+            "signed_value_at_maximum_absolute": 1.3328875797093114,
+            "time_at_maximum_absolute": 114.9
+          },
+          "stationary_response": {
+            "initial": 0.0,
+            "endpoint": 0.006522358870670532,
+            "maximum_absolute": 0.008289933820548675,
+            "signed_value_at_maximum_absolute": 0.008289933820548675,
+            "time_at_maximum_absolute": 116.17500000000001
+          },
+          "simultaneous_minus_stationary_projection": {
+            "initial": 0.0,
+            "endpoint": 0.08473200707925578,
+            "maximum_absolute": 0.1446557930065521,
+            "signed_value_at_maximum_absolute": 0.1446557930065521,
+            "time_at_maximum_absolute": 118.92500000000001
+          },
+          "stage_projection_minus_measurement": {
+            "initial": 0.0,
+            "endpoint": 0.0,
+            "maximum_absolute": 0.0,
+            "signed_value_at_maximum_absolute": 0.0,
+            "time_at_maximum_absolute": 0.0
+          }
+        }
+      },
+      "A": {
+        "scalars": {
+          "work_direct": {
+            "initial": 0.0,
+            "endpoint": 3.665404067132786e-07,
+            "maximum_absolute": 2.1620765936770236e-05,
+            "signed_value_at_maximum_absolute": 2.1620765936770236e-05,
+            "time_at_maximum_absolute": 113.47500000000001
+          },
+          "stationary_work_diagonal": {
+            "initial": 0.0,
+            "endpoint": -9.19668711829633e-06,
+            "maximum_absolute": 1.1744789359214792e-05,
+            "signed_value_at_maximum_absolute": -1.1744789359214792e-05,
+            "time_at_maximum_absolute": 109.325
+          },
+          "simultaneous_minus_stationary_work": {
+            "initial": 0.0,
+            "endpoint": 9.563227525009609e-06,
+            "maximum_absolute": 1.3593601146352066e-05,
+            "signed_value_at_maximum_absolute": 1.3593601146352066e-05,
+            "time_at_maximum_absolute": 113.525
+          },
+          "raw_energy_minus_work": {
+            "initial": 0.0,
+            "endpoint": 0.017352166669721433,
+            "maximum_absolute": 0.01983166359981533,
+            "signed_value_at_maximum_absolute": 0.01983166359981533,
+            "time_at_maximum_absolute": 119.825
+          },
+          "raw_energy_minus_work_gradient_field": {
+            "initial": 0.0,
+            "endpoint": 0.017352166669721433,
+            "maximum_absolute": 0.01983166359981533,
+            "signed_value_at_maximum_absolute": 0.01983166359981533,
+            "time_at_maximum_absolute": 119.825
+          },
+          "canonical_energy": {
+            "initial": 0.0,
+            "endpoint": 0.017352533210128147,
+            "maximum_absolute": 0.01983203121685024,
+            "signed_value_at_maximum_absolute": 0.01983203121685024,
+            "time_at_maximum_absolute": 119.825
+          },
+          "orbital_energy": {
+            "initial": 0.0,
+            "endpoint": 0.021319160928856513,
+            "maximum_absolute": 0.021319160928856513,
+            "signed_value_at_maximum_absolute": 0.021319160928856513,
+            "time_at_maximum_absolute": 120.0
+          },
+          "self_energy_diagonal": {
+            "initial": 0.0,
+            "endpoint": -0.003966627718728366,
+            "maximum_absolute": 0.015510370376665103,
+            "signed_value_at_maximum_absolute": -0.015510370376665103,
+            "time_at_maximum_absolute": 117.95
+          },
+          "self_energy_gradient_integral": {
+            "initial": 0.0,
+            "endpoint": -0.003966627718728366,
+            "maximum_absolute": 0.015510370376665103,
+            "signed_value_at_maximum_absolute": -0.015510370376665103,
+            "time_at_maximum_absolute": 117.95
+          },
+          "interaction": {
+            "initial": 0.0,
+            "endpoint": 0.0,
+            "maximum_absolute": 9.360734880349512e-05,
+            "signed_value_at_maximum_absolute": 9.360734880349512e-05,
+            "time_at_maximum_absolute": 105.075
+          },
+          "direct_minus_dual_power": {
+            "initial": 0.0,
+            "endpoint": 0.0,
+            "maximum_absolute": 3.049318610115481e-20,
+            "signed_value_at_maximum_absolute": 3.049318610115481e-20,
+            "time_at_maximum_absolute": 112.97500000000001
+          },
+          "direct_minus_dual_interaction": {
+            "initial": 0.0,
+            "endpoint": 0.0,
+            "maximum_absolute": 1.0842021724855044e-19,
+            "signed_value_at_maximum_absolute": -1.0842021724855044e-19,
+            "time_at_maximum_absolute": 105.72500000000001
+          },
+          "field_energy_diagonal_minus_gradient": {
+            "initial": 0.0,
+            "endpoint": 0.0,
+            "maximum_absolute": 5.204170427930421e-18,
+            "signed_value_at_maximum_absolute": -5.204170427930421e-18,
+            "time_at_maximum_absolute": 114.80000000000001
+          },
+          "stationary_work_diagonal_minus_gradient": {
+            "initial": 0.0,
+            "endpoint": 0.0,
+            "maximum_absolute": 2.541098841762901e-21,
+            "signed_value_at_maximum_absolute": -2.541098841762901e-21,
+            "time_at_maximum_absolute": 90.025
+          }
+        },
+        "negative_Poisson_norms": {
+          "projection": {
+            "initial": 0.0,
+            "endpoint": 0.0890688241611886,
+            "maximum_absolute": 0.1761270585495886,
+            "signed_value_at_maximum_absolute": 0.1761270585495886,
+            "time_at_maximum_absolute": 117.95
+          },
+          "projection_current": {
+            "initial": 0.0,
+            "endpoint": 0.2614860058875127,
+            "maximum_absolute": 1.6345958009786625,
+            "signed_value_at_maximum_absolute": 1.6345958009786625,
+            "time_at_maximum_absolute": 118.05000000000001
+          },
+          "stationary_response": {
+            "initial": 0.0,
+            "endpoint": 0.012660694197492538,
+            "maximum_absolute": 0.013322893570919567,
+            "signed_value_at_maximum_absolute": 0.013322893570919567,
+            "time_at_maximum_absolute": 115.95
+          },
+          "simultaneous_minus_stationary_projection": {
+            "initial": 0.0,
+            "endpoint": 0.08840283629311695,
+            "maximum_absolute": 0.17916010909370828,
+            "signed_value_at_maximum_absolute": 0.17916010909370828,
+            "time_at_maximum_absolute": 117.95
+          },
+          "stage_projection_minus_measurement": {
+            "initial": 0.0,
+            "endpoint": 0.0,
+            "maximum_absolute": 0.0,
+            "signed_value_at_maximum_absolute": 0.0,
+            "time_at_maximum_absolute": 0.0
+          }
+        }
+      }
+    },
+    "E8-phase32": {
+      "F0": {
+        "scalars": {
+          "work_direct": {
+            "initial": 0.0,
+            "endpoint": 1.7783834331777056e-05,
+            "maximum_absolute": 3.158778677642528e-05,
+            "signed_value_at_maximum_absolute": 3.158778677642528e-05,
+            "time_at_maximum_absolute": 113.125
+          },
+          "stationary_work_diagonal": {
+            "initial": 0.0,
+            "endpoint": 1.6699734042312055e-05,
+            "maximum_absolute": 3.0720071397128915e-05,
+            "signed_value_at_maximum_absolute": 3.0720071397128915e-05,
+            "time_at_maximum_absolute": 113.0
+          },
+          "simultaneous_minus_stationary_work": {
+            "initial": 0.0,
+            "endpoint": 1.0841002894650008e-06,
+            "maximum_absolute": 1.237873810169904e-06,
+            "signed_value_at_maximum_absolute": 1.237873810169904e-06,
+            "time_at_maximum_absolute": 115.05000000000001
+          },
+          "raw_energy_minus_work": {
+            "initial": 0.0,
+            "endpoint": 0.00010679843069601766,
+            "maximum_absolute": 0.00010763539329542129,
+            "signed_value_at_maximum_absolute": 0.00010763539329542129,
+            "time_at_maximum_absolute": 118.75
+          },
+          "raw_energy_minus_work_gradient_field": {
+            "initial": 0.0,
+            "endpoint": 0.00010679843069601766,
+            "maximum_absolute": 0.00010763539329542129,
+            "signed_value_at_maximum_absolute": 0.00010763539329542129,
+            "time_at_maximum_absolute": 118.75
+          },
+          "canonical_energy": {
+            "initial": 0.0,
+            "endpoint": 0.00012458226502779472,
+            "maximum_absolute": 0.0001255579388938504,
+            "signed_value_at_maximum_absolute": 0.0001255579388938504,
+            "time_at_maximum_absolute": 118.75
+          },
+          "orbital_energy": {
+            "initial": 0.0,
+            "endpoint": 0.00015803682700068,
+            "maximum_absolute": 0.00015803682700068,
+            "signed_value_at_maximum_absolute": 0.00015803682700068,
+            "time_at_maximum_absolute": 120.0
+          },
+          "self_energy_diagonal": {
+            "initial": 0.0,
+            "endpoint": -3.3454561972885296e-05,
+            "maximum_absolute": 6.49404427908349e-05,
+            "signed_value_at_maximum_absolute": -6.49404427908349e-05,
+            "time_at_maximum_absolute": 117.5
+          },
+          "self_energy_gradient_integral": {
+            "initial": 0.0,
+            "endpoint": -3.345456197288529e-05,
+            "maximum_absolute": 6.494044279083487e-05,
+            "signed_value_at_maximum_absolute": -6.494044279083487e-05,
+            "time_at_maximum_absolute": 117.5
+          },
+          "interaction": {
+            "initial": 0.0,
+            "endpoint": 0.0,
+            "maximum_absolute": 1.7544778290347446e-05,
+            "signed_value_at_maximum_absolute": 1.7544778290347446e-05,
+            "time_at_maximum_absolute": 109.2
+          },
+          "direct_minus_dual_power": {
+            "initial": 0.0,
+            "endpoint": 0.0,
+            "maximum_absolute": 1.9481757786848908e-20,
+            "signed_value_at_maximum_absolute": -1.9481757786848908e-20,
+            "time_at_maximum_absolute": 111.15
+          },
+          "direct_minus_dual_interaction": {
+            "initial": 0.0,
+            "endpoint": 0.0,
+            "maximum_absolute": 3.8963515573697816e-20,
+            "signed_value_at_maximum_absolute": 3.8963515573697816e-20,
+            "time_at_maximum_absolute": 110.275
+          },
+          "field_energy_diagonal_minus_gradient": {
+            "initial": 0.0,
+            "endpoint": -6.776263578034403e-21,
+            "maximum_absolute": 4.0657581468206416e-20,
+            "signed_value_at_maximum_absolute": -4.0657581468206416e-20,
+            "time_at_maximum_absolute": 117.45
+          },
+          "stationary_work_diagonal_minus_gradient": {
+            "initial": 0.0,
+            "endpoint": 0.0,
+            "maximum_absolute": 0.0,
+            "signed_value_at_maximum_absolute": 0.0,
+            "time_at_maximum_absolute": 0.0
+          }
+        },
+        "negative_Poisson_norms": {
+          "projection": {
+            "initial": 0.0,
+            "endpoint": 0.008179799749735355,
+            "maximum_absolute": 0.011396529541122148,
+            "signed_value_at_maximum_absolute": 0.011396529541122148,
+            "time_at_maximum_absolute": 117.5
+          },
+          "projection_current": {
+            "initial": 0.0,
+            "endpoint": 0.06176456597589973,
+            "maximum_absolute": 0.07668753653141662,
+            "signed_value_at_maximum_absolute": 0.07668753653141662,
+            "time_at_maximum_absolute": 117.35000000000001
+          },
+          "stationary_response": {
+            "initial": 0.0,
+            "endpoint": 0.006465516889578769,
+            "maximum_absolute": 0.008318534593776267,
+            "signed_value_at_maximum_absolute": 0.008318534593776267,
+            "time_at_maximum_absolute": 116.15
+          },
+          "simultaneous_minus_stationary_projection": {
+            "initial": 0.0,
+            "endpoint": 0.004902236909738444,
+            "maximum_absolute": 0.00839700317792898,
+            "signed_value_at_maximum_absolute": 0.00839700317792898,
+            "time_at_maximum_absolute": 117.7
+          },
+          "stage_projection_minus_measurement": {
+            "initial": 0.0,
+            "endpoint": 0.0,
+            "maximum_absolute": 0.0,
+            "signed_value_at_maximum_absolute": 0.0,
+            "time_at_maximum_absolute": 0.0
+          }
+        }
+      },
+      "A": {
+        "scalars": {
+          "work_direct": {
+            "initial": 0.0,
+            "endpoint": -8.960808586059971e-06,
+            "maximum_absolute": 1.1785538836850247e-05,
+            "signed_value_at_maximum_absolute": -1.1785538836850247e-05,
+            "time_at_maximum_absolute": 109.375
+          },
+          "stationary_work_diagonal": {
+            "initial": 0.0,
+            "endpoint": -9.687393819518302e-06,
+            "maximum_absolute": 1.2045931565368183e-05,
+            "signed_value_at_maximum_absolute": -1.2045931565368183e-05,
+            "time_at_maximum_absolute": 109.325
+          },
+          "simultaneous_minus_stationary_work": {
+            "initial": 0.0,
+            "endpoint": 7.265852334583313e-07,
+            "maximum_absolute": 9.316680926020705e-07,
+            "signed_value_at_maximum_absolute": 9.316680926020705e-07,
+            "time_at_maximum_absolute": 114.875
+          },
+          "raw_energy_minus_work": {
+            "initial": 0.0,
+            "endpoint": 0.00038286677740508875,
+            "maximum_absolute": 0.00038286677740508875,
+            "signed_value_at_maximum_absolute": 0.00038286677740508875,
+            "time_at_maximum_absolute": 120.0
+          },
+          "raw_energy_minus_work_gradient_field": {
+            "initial": 0.0,
+            "endpoint": 0.00038286677740508875,
+            "maximum_absolute": 0.00038286677740508875,
+            "signed_value_at_maximum_absolute": 0.00038286677740508875,
+            "time_at_maximum_absolute": 120.0
+          },
+          "canonical_energy": {
+            "initial": 0.0,
+            "endpoint": 0.0003739059688190288,
+            "maximum_absolute": 0.0003739059688190288,
+            "signed_value_at_maximum_absolute": 0.0003739059688190288,
+            "time_at_maximum_absolute": 120.0
+          },
+          "orbital_energy": {
+            "initial": 0.0,
+            "endpoint": 0.0004901335470274119,
+            "maximum_absolute": 0.0004901335470274119,
+            "signed_value_at_maximum_absolute": 0.0004901335470274119,
+            "time_at_maximum_absolute": 120.0
+          },
+          "self_energy_diagonal": {
+            "initial": 0.0,
+            "endpoint": -0.0001162275782083831,
+            "maximum_absolute": 0.0001426806049968442,
+            "signed_value_at_maximum_absolute": -0.0001426806049968442,
+            "time_at_maximum_absolute": 116.025
+          },
+          "self_energy_gradient_integral": {
+            "initial": 0.0,
+            "endpoint": -0.00011622757820838311,
+            "maximum_absolute": 0.0001426806049968442,
+            "signed_value_at_maximum_absolute": -0.0001426806049968442,
+            "time_at_maximum_absolute": 116.025
+          },
+          "interaction": {
+            "initial": 0.0,
+            "endpoint": 0.0,
+            "maximum_absolute": 2.2958941578941118e-05,
+            "signed_value_at_maximum_absolute": 2.2958941578941118e-05,
+            "time_at_maximum_absolute": 109.30000000000001
+          },
+          "direct_minus_dual_power": {
+            "initial": 0.0,
+            "endpoint": 0.0,
+            "maximum_absolute": 1.3552527156068805e-20,
+            "signed_value_at_maximum_absolute": -1.3552527156068805e-20,
+            "time_at_maximum_absolute": 110.85000000000001
+          },
+          "direct_minus_dual_interaction": {
+            "initial": 0.0,
+            "endpoint": 0.0,
+            "maximum_absolute": 5.759824041329242e-20,
+            "signed_value_at_maximum_absolute": -5.759824041329242e-20,
+            "time_at_maximum_absolute": 109.80000000000001
+          },
+          "field_energy_diagonal_minus_gradient": {
+            "initial": 0.0,
+            "endpoint": 1.3552527156068805e-20,
+            "maximum_absolute": 8.131516293641283e-20,
+            "signed_value_at_maximum_absolute": -8.131516293641283e-20,
+            "time_at_maximum_absolute": 117.5
+          },
+          "stationary_work_diagonal_minus_gradient": {
+            "initial": 0.0,
+            "endpoint": -3.3881317890172014e-21,
+            "maximum_absolute": 3.3881317890172014e-21,
+            "signed_value_at_maximum_absolute": -3.3881317890172014e-21,
+            "time_at_maximum_absolute": 110.375
+          }
+        },
+        "negative_Poisson_norms": {
+          "projection": {
+            "initial": 0.0,
+            "endpoint": 0.015246480132042484,
+            "maximum_absolute": 0.016892637745292722,
+            "signed_value_at_maximum_absolute": 0.016892637745292722,
+            "time_at_maximum_absolute": 116.025
+          },
+          "projection_current": {
+            "initial": 0.0,
+            "endpoint": 0.07692893443740402,
+            "maximum_absolute": 0.10429391028759079,
+            "signed_value_at_maximum_absolute": 0.10429391028759079,
+            "time_at_maximum_absolute": 118.72500000000001
+          },
+          "stationary_response": {
+            "initial": 0.0,
+            "endpoint": 0.01271167478175532,
+            "maximum_absolute": 0.013377290127582955,
+            "signed_value_at_maximum_absolute": 0.013377290127582955,
+            "time_at_maximum_absolute": 115.95
+          },
+          "simultaneous_minus_stationary_projection": {
+            "initial": 0.0,
+            "endpoint": 0.008904634710274396,
+            "maximum_absolute": 0.010831901540068597,
+            "signed_value_at_maximum_absolute": 0.010831901540068597,
+            "time_at_maximum_absolute": 117.7
+          },
+          "stage_projection_minus_measurement": {
+            "initial": 0.0,
+            "endpoint": 0.0,
+            "maximum_absolute": 0.0,
+            "signed_value_at_maximum_absolute": 0.0,
+            "time_at_maximum_absolute": 0.0
+          }
+        }
+      }
+    },
+    "E8-phase32-halfdt": {
+      "F0": {
+        "scalars": {
+          "work_direct": {
+            "initial": 0.0,
+            "endpoint": 1.7783834570992066e-05,
+            "maximum_absolute": 3.1588028004725644e-05,
+            "signed_value_at_maximum_absolute": 3.1588028004725644e-05,
+            "time_at_maximum_absolute": 113.11250000000001
+          },
+          "stationary_work_diagonal": {
+            "initial": 0.0,
+            "endpoint": 1.6700103334658714e-05,
+            "maximum_absolute": 3.072202482368635e-05,
+            "signed_value_at_maximum_absolute": 3.072202482368635e-05,
+            "time_at_maximum_absolute": 113.0
+          },
+          "simultaneous_minus_stationary_work": {
+            "initial": 0.0,
+            "endpoint": 1.083731236333352e-06,
+            "maximum_absolute": 1.2371880910388058e-06,
+            "signed_value_at_maximum_absolute": 1.2371880910388058e-06,
+            "time_at_maximum_absolute": 115.0625
+          },
+          "raw_energy_minus_work": {
+            "initial": 0.0,
+            "endpoint": 0.000106798288614157,
+            "maximum_absolute": 0.00010763528943019923,
+            "signed_value_at_maximum_absolute": 0.00010763528943019923,
+            "time_at_maximum_absolute": 118.75
+          },
+          "raw_energy_minus_work_gradient_field": {
+            "initial": 0.0,
+            "endpoint": 0.00010679828861415703,
+            "maximum_absolute": 0.00010763528943019923,
+            "signed_value_at_maximum_absolute": 0.00010763528943019923,
+            "time_at_maximum_absolute": 118.75
+          },
+          "canonical_energy": {
+            "initial": 0.0,
+            "endpoint": 0.00012458212318514907,
+            "maximum_absolute": 0.0001255578133782435,
+            "signed_value_at_maximum_absolute": 0.0001255578133782435,
+            "time_at_maximum_absolute": 118.75
+          },
+          "orbital_energy": {
+            "initial": 0.0,
+            "endpoint": 0.00015803668652830682,
+            "maximum_absolute": 0.00015803668652830682,
+            "signed_value_at_maximum_absolute": 0.00015803668652830682,
+            "time_at_maximum_absolute": 120.0
+          },
+          "self_energy_diagonal": {
+            "initial": 0.0,
+            "endpoint": -3.3454563343157735e-05,
+            "maximum_absolute": 6.529758337631363e-05,
+            "signed_value_at_maximum_absolute": -6.529758337631363e-05,
+            "time_at_maximum_absolute": 117.48750000000001
+          },
+          "self_energy_gradient_integral": {
+            "initial": 0.0,
+            "endpoint": -3.345456334315773e-05,
+            "maximum_absolute": 6.52975833763136e-05,
+            "signed_value_at_maximum_absolute": -6.52975833763136e-05,
+            "time_at_maximum_absolute": 117.48750000000001
+          },
+          "interaction": {
+            "initial": 0.0,
+            "endpoint": 0.0,
+            "maximum_absolute": 1.7546294191653343e-05,
+            "signed_value_at_maximum_absolute": 1.7546294191653343e-05,
+            "time_at_maximum_absolute": 109.2125
+          },
+          "direct_minus_dual_power": {
+            "initial": 0.0,
+            "endpoint": 0.0,
+            "maximum_absolute": 1.6093625997831706e-20,
+            "signed_value_at_maximum_absolute": -1.6093625997831706e-20,
+            "time_at_maximum_absolute": 111.2625
+          },
+          "direct_minus_dual_interaction": {
+            "initial": 0.0,
+            "endpoint": 0.0,
+            "maximum_absolute": 4.743384504624082e-20,
+            "signed_value_at_maximum_absolute": 4.743384504624082e-20,
+            "time_at_maximum_absolute": 110.0875
+          },
+          "field_energy_diagonal_minus_gradient": {
+            "initial": 0.0,
+            "endpoint": -6.776263578034403e-21,
+            "maximum_absolute": 3.3881317890172014e-20,
+            "signed_value_at_maximum_absolute": -3.3881317890172014e-20,
+            "time_at_maximum_absolute": 117.42500000000001
+          },
+          "stationary_work_diagonal_minus_gradient": {
+            "initial": 0.0,
+            "endpoint": 0.0,
+            "maximum_absolute": 0.0,
+            "signed_value_at_maximum_absolute": 0.0,
+            "time_at_maximum_absolute": 0.0
+          }
+        },
+        "negative_Poisson_norms": {
+          "projection": {
+            "initial": 0.0,
+            "endpoint": 0.008179799917254423,
+            "maximum_absolute": 0.011427824235287626,
+            "signed_value_at_maximum_absolute": 0.011427824235287626,
+            "time_at_maximum_absolute": 117.48750000000001
+          },
+          "projection_current": {
+            "initial": 0.0,
+            "endpoint": 0.06176449589252968,
+            "maximum_absolute": 0.07735720365597955,
+            "signed_value_at_maximum_absolute": 0.07735720365597955,
+            "time_at_maximum_absolute": 117.36250000000001
+          },
+          "stationary_response": {
+            "initial": 0.0,
+            "endpoint": 0.006466631907614641,
+            "maximum_absolute": 0.008319690863037453,
+            "signed_value_at_maximum_absolute": 0.008319690863037453,
+            "time_at_maximum_absolute": 116.15
+          },
+          "simultaneous_minus_stationary_projection": {
+            "initial": 0.0,
+            "endpoint": 0.004902359062453285,
+            "maximum_absolute": 0.00842952783783438,
+            "signed_value_at_maximum_absolute": 0.00842952783783438,
+            "time_at_maximum_absolute": 117.6875
+          },
+          "stage_projection_minus_measurement": {
+            "initial": 0.0,
+            "endpoint": 0.0,
+            "maximum_absolute": 0.0,
+            "signed_value_at_maximum_absolute": 0.0,
+            "time_at_maximum_absolute": 0.0
+          }
+        }
+      },
+      "A": {
+        "scalars": {
+          "work_direct": {
+            "initial": 0.0,
+            "endpoint": -8.960807797969478e-06,
+            "maximum_absolute": 1.178579564365295e-05,
+            "signed_value_at_maximum_absolute": -1.178579564365295e-05,
+            "time_at_maximum_absolute": 109.375
+          },
+          "stationary_work_diagonal": {
+            "initial": 0.0,
+            "endpoint": -9.687541491497192e-06,
+            "maximum_absolute": 1.2047498164268253e-05,
+            "signed_value_at_maximum_absolute": -1.2047498164268253e-05,
+            "time_at_maximum_absolute": 109.325
+          },
+          "simultaneous_minus_stationary_work": {
+            "initial": 0.0,
+            "endpoint": 7.267336935277137e-07,
+            "maximum_absolute": 9.314381013689818e-07,
+            "signed_value_at_maximum_absolute": 9.314381013689818e-07,
+            "time_at_maximum_absolute": 114.86250000000001
+          },
+          "raw_energy_minus_work": {
+            "initial": 0.0,
+            "endpoint": 0.0003828664756529758,
+            "maximum_absolute": 0.0003828664756529758,
+            "signed_value_at_maximum_absolute": 0.0003828664756529758,
+            "time_at_maximum_absolute": 120.0
+          },
+          "raw_energy_minus_work_gradient_field": {
+            "initial": 0.0,
+            "endpoint": 0.0003828664756529758,
+            "maximum_absolute": 0.0003828664756529758,
+            "signed_value_at_maximum_absolute": 0.0003828664756529758,
+            "time_at_maximum_absolute": 120.0
+          },
+          "canonical_energy": {
+            "initial": 0.0,
+            "endpoint": 0.00037390566785500633,
+            "maximum_absolute": 0.00037390566785500633,
+            "signed_value_at_maximum_absolute": 0.00037390566785500633,
+            "time_at_maximum_absolute": 120.0
+          },
+          "orbital_energy": {
+            "initial": 0.0,
+            "endpoint": 0.0004901331332639473,
+            "maximum_absolute": 0.0004901331332639473,
+            "signed_value_at_maximum_absolute": 0.0004901331332639473,
+            "time_at_maximum_absolute": 120.0
+          },
+          "self_energy_diagonal": {
+            "initial": 0.0,
+            "endpoint": -0.00011622746540894098,
+            "maximum_absolute": 0.00014268052611155898,
+            "signed_value_at_maximum_absolute": -0.00014268052611155898,
+            "time_at_maximum_absolute": 116.025
+          },
+          "self_energy_gradient_integral": {
+            "initial": 0.0,
+            "endpoint": -0.00011622746540894096,
+            "maximum_absolute": 0.00014268052611155898,
+            "signed_value_at_maximum_absolute": -0.00014268052611155898,
+            "time_at_maximum_absolute": 116.025
+          },
+          "interaction": {
+            "initial": 0.0,
+            "endpoint": 0.0,
+            "maximum_absolute": 2.296217025796102e-05,
+            "signed_value_at_maximum_absolute": 2.296217025796102e-05,
+            "time_at_maximum_absolute": 109.28750000000001
+          },
+          "direct_minus_dual_power": {
+            "initial": 0.0,
+            "endpoint": 0.0,
+            "maximum_absolute": 2.0328790734103208e-20,
+            "signed_value_at_maximum_absolute": 2.0328790734103208e-20,
+            "time_at_maximum_absolute": 110.5625
+          },
+          "direct_minus_dual_interaction": {
+            "initial": 0.0,
+            "endpoint": 0.0,
+            "maximum_absolute": 6.437450399132683e-20,
+            "signed_value_at_maximum_absolute": -6.437450399132683e-20,
+            "time_at_maximum_absolute": 110.125
+          },
+          "field_energy_diagonal_minus_gradient": {
+            "initial": 0.0,
+            "endpoint": -2.710505431213761e-20,
+            "maximum_absolute": 8.131516293641283e-20,
+            "signed_value_at_maximum_absolute": -8.131516293641283e-20,
+            "time_at_maximum_absolute": 117.48750000000001
+          },
+          "stationary_work_diagonal_minus_gradient": {
+            "initial": 0.0,
+            "endpoint": 1.6940658945086007e-21,
+            "maximum_absolute": 2.541098841762901e-21,
+            "signed_value_at_maximum_absolute": -2.541098841762901e-21,
+            "time_at_maximum_absolute": 102.625
+          }
+        },
+        "negative_Poisson_norms": {
+          "projection": {
+            "initial": 0.0,
+            "endpoint": 0.01524647273364833,
+            "maximum_absolute": 0.016892633075489386,
+            "signed_value_at_maximum_absolute": 0.016892633075489386,
+            "time_at_maximum_absolute": 116.025
+          },
+          "projection_current": {
+            "initial": 0.0,
+            "endpoint": 0.07692888386513769,
+            "maximum_absolute": 0.10429384317925122,
+            "signed_value_at_maximum_absolute": 0.10429384317925122,
+            "time_at_maximum_absolute": 118.72500000000001
+          },
+          "stationary_response": {
+            "initial": 0.0,
+            "endpoint": 0.012715396754003428,
+            "maximum_absolute": 0.013380473271319172,
+            "signed_value_at_maximum_absolute": 0.013380473271319172,
+            "time_at_maximum_absolute": 115.95
+          },
+          "simultaneous_minus_stationary_projection": {
+            "initial": 0.0,
+            "endpoint": 0.008904970002703988,
+            "maximum_absolute": 0.010869355655923185,
+            "signed_value_at_maximum_absolute": 0.010869355655923185,
+            "time_at_maximum_absolute": 117.6875
+          },
+          "stage_projection_minus_measurement": {
+            "initial": 0.0,
+            "endpoint": 0.0,
+            "maximum_absolute": 0.0,
+            "signed_value_at_maximum_absolute": 0.0,
+            "time_at_maximum_absolute": 0.0
+          }
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "phase32_minus_phase8": {
+      "left": "E8-phase8",
+      "right": "E8-phase32",
+      "subtraction": "right minus left",
+      "right_clock_stride": 1,
+      "common_clock_count": 4801,
+      "populations": {
+        "F0": {
+          "scalars": {
+            "work_direct": {
+              "initial": 0.0,
+              "endpoint": -1.1632696431975612e-05,
+              "maximum_absolute": 2.052993790037346e-05,
+              "signed_value_at_maximum_absolute": -2.052993790037346e-05,
+              "time_at_maximum_absolute": 113.67500000000001
+            },
+            "stationary_work_diagonal": {
+              "initial": 0.0,
+              "endpoint": -4.764752118716473e-07,
+              "maximum_absolute": 4.900671870099402e-07,
+              "signed_value_at_maximum_absolute": -4.900671870099402e-07,
+              "time_at_maximum_absolute": 116.9
+            },
+            "simultaneous_minus_stationary_work": {
+              "initial": 0.0,
+              "endpoint": -1.1156221220103965e-05,
+              "maximum_absolute": 2.0141320746292623e-05,
+              "signed_value_at_maximum_absolute": -2.0141320746292623e-05,
+              "time_at_maximum_absolute": 113.67500000000001
+            },
+            "raw_energy_minus_work": {
+              "initial": 0.0,
+              "endpoint": -0.010499292437355322,
+              "maximum_absolute": 0.011625444488644925,
+              "signed_value_at_maximum_absolute": -0.011625444488644925,
+              "time_at_maximum_absolute": 119.825
+            },
+            "raw_energy_minus_work_gradient_field": {
+              "initial": 0.0,
+              "endpoint": -0.010499292437355324,
+              "maximum_absolute": 0.011625444488644927,
+              "signed_value_at_maximum_absolute": -0.011625444488644927,
+              "time_at_maximum_absolute": 119.825
+            },
+            "canonical_energy": {
+              "initial": 0.0,
+              "endpoint": -0.010510925133787298,
+              "maximum_absolute": 0.011637077115500058,
+              "signed_value_at_maximum_absolute": -0.011637077115500058,
+              "time_at_maximum_absolute": 119.825
+            },
+            "orbital_energy": {
+              "initial": 0.0,
+              "endpoint": -0.01399811810083552,
+              "maximum_absolute": 0.01399811810083552,
+              "signed_value_at_maximum_absolute": -0.01399811810083552,
+              "time_at_maximum_absolute": 120.0
+            },
+            "self_energy_diagonal": {
+              "initial": 0.0,
+              "endpoint": 0.003487192967048223,
+              "maximum_absolute": 0.010499539272661604,
+              "signed_value_at_maximum_absolute": 0.010499539272661604,
+              "time_at_maximum_absolute": 118.92500000000001
+            },
+            "self_energy_gradient_integral": {
+              "initial": 0.0,
+              "endpoint": 0.003487192967048222,
+              "maximum_absolute": 0.010499539272661602,
+              "signed_value_at_maximum_absolute": 0.010499539272661602,
+              "time_at_maximum_absolute": 118.92500000000001
+            },
+            "interaction": {
+              "initial": 0.0,
+              "endpoint": 0.0,
+              "maximum_absolute": 9.84698094436852e-05,
+              "signed_value_at_maximum_absolute": -9.84698094436852e-05,
+              "time_at_maximum_absolute": 105.10000000000001
+            },
+            "direct_minus_dual_power": {
+              "initial": 0.0,
+              "endpoint": 0.0,
+              "maximum_absolute": 3.3881317890172014e-20,
+              "signed_value_at_maximum_absolute": -3.3881317890172014e-20,
+              "time_at_maximum_absolute": 110.75
+            },
+            "direct_minus_dual_interaction": {
+              "initial": 0.0,
+              "endpoint": 0.0,
+              "maximum_absolute": 8.300922883092143e-20,
+              "signed_value_at_maximum_absolute": -8.300922883092143e-20,
+              "time_at_maximum_absolute": 105.325
+            },
+            "field_energy_diagonal_minus_gradient": {
+              "initial": 0.0,
+              "endpoint": 8.605854744103691e-19,
+              "maximum_absolute": 3.4762232155316486e-18,
+              "signed_value_at_maximum_absolute": -3.4762232155316486e-18,
+              "time_at_maximum_absolute": 118.825
+            },
+            "stationary_work_diagonal_minus_gradient": {
+              "initial": 0.0,
+              "endpoint": 0.0,
+              "maximum_absolute": 3.3881317890172014e-21,
+              "signed_value_at_maximum_absolute": 3.3881317890172014e-21,
+              "time_at_maximum_absolute": 102.30000000000001
+            }
+          },
+          "negative_Poisson_norms": {
+            "projection": {
+              "initial": 0.0,
+              "endpoint": 0.08396924984830736,
+              "maximum_absolute": 0.14204310577312215,
+              "signed_value_at_maximum_absolute": 0.14204310577312215,
+              "time_at_maximum_absolute": 118.92500000000001
+            },
+            "projection_current": {
+              "initial": 0.0,
+              "endpoint": 0.33845073204430015,
+              "maximum_absolute": 1.327653299325126,
+              "signed_value_at_maximum_absolute": 1.327653299325126,
+              "time_at_maximum_absolute": 114.9
+            },
+            "stationary_response": {
+              "initial": 0.0,
+              "endpoint": 0.00014465615680469285,
+              "maximum_absolute": 0.00014465615680469285,
+              "signed_value_at_maximum_absolute": 0.00014465615680469285,
+              "time_at_maximum_absolute": 120.0
+            },
+            "simultaneous_minus_stationary_projection": {
+              "initial": 0.0,
+              "endpoint": 0.08393921515972085,
+              "maximum_absolute": 0.14206507512245026,
+              "signed_value_at_maximum_absolute": 0.14206507512245026,
+              "time_at_maximum_absolute": 118.92500000000001
+            },
+            "stage_projection_minus_measurement": {
+              "initial": 0.0,
+              "endpoint": 0.0,
+              "maximum_absolute": 0.0,
+              "signed_value_at_maximum_absolute": 0.0,
+              "time_at_maximum_absolute": 0.0
+            }
+          }
+        },
+        "A": {
+          "scalars": {
+            "work_direct": {
+              "initial": 0.0,
+              "endpoint": -9.327348992773249e-06,
+              "maximum_absolute": 1.3199971209706575e-05,
+              "signed_value_at_maximum_absolute": -1.3199971209706575e-05,
+              "time_at_maximum_absolute": 113.525
+            },
+            "stationary_work_diagonal": {
+              "initial": 0.0,
+              "endpoint": -4.907067012219716e-07,
+              "maximum_absolute": 5.271985405283902e-07,
+              "signed_value_at_maximum_absolute": -5.271985405283902e-07,
+              "time_at_maximum_absolute": 116.7
+            },
+            "simultaneous_minus_stationary_work": {
+              "initial": 0.0,
+              "endpoint": -8.836642291551277e-06,
+              "maximum_absolute": 1.2848902038995724e-05,
+              "signed_value_at_maximum_absolute": -1.2848902038995724e-05,
+              "time_at_maximum_absolute": 113.525
+            },
+            "raw_energy_minus_work": {
+              "initial": 0.0,
+              "endpoint": -0.016969299892316346,
+              "maximum_absolute": 0.019456732583321024,
+              "signed_value_at_maximum_absolute": -0.019456732583321024,
+              "time_at_maximum_absolute": 119.825
+            },
+            "raw_energy_minus_work_gradient_field": {
+              "initial": 0.0,
+              "endpoint": -0.016969299892316346,
+              "maximum_absolute": 0.019456732583321024,
+              "signed_value_at_maximum_absolute": -0.019456732583321024,
+              "time_at_maximum_absolute": 119.825
+            },
+            "canonical_energy": {
+              "initial": 0.0,
+              "endpoint": -0.016978627241309118,
+              "maximum_absolute": 0.019466060210644974,
+              "signed_value_at_maximum_absolute": -0.019466060210644974,
+              "time_at_maximum_absolute": 119.825
+            },
+            "orbital_energy": {
+              "initial": 0.0,
+              "endpoint": -0.0208290273818291,
+              "maximum_absolute": 0.0208290273818291,
+              "signed_value_at_maximum_absolute": -0.0208290273818291,
+              "time_at_maximum_absolute": 120.0
+            },
+            "self_energy_diagonal": {
+              "initial": 0.0,
+              "endpoint": 0.003850400140519983,
+              "maximum_absolute": 0.015425534905291938,
+              "signed_value_at_maximum_absolute": 0.015425534905291938,
+              "time_at_maximum_absolute": 117.95
+            },
+            "self_energy_gradient_integral": {
+              "initial": 0.0,
+              "endpoint": 0.003850400140519983,
+              "maximum_absolute": 0.015425534905291938,
+              "signed_value_at_maximum_absolute": 0.015425534905291938,
+              "time_at_maximum_absolute": 117.95
+            },
+            "interaction": {
+              "initial": 0.0,
+              "endpoint": 0.0,
+              "maximum_absolute": 9.639076006254035e-05,
+              "signed_value_at_maximum_absolute": -9.639076006254035e-05,
+              "time_at_maximum_absolute": 105.075
+            },
+            "direct_minus_dual_power": {
+              "initial": 0.0,
+              "endpoint": 0.0,
+              "maximum_absolute": 2.7740329022578336e-20,
+              "signed_value_at_maximum_absolute": -2.7740329022578336e-20,
+              "time_at_maximum_absolute": 112.97500000000001
+            },
+            "direct_minus_dual_interaction": {
+              "initial": 0.0,
+              "endpoint": 0.0,
+              "maximum_absolute": 1.0164395367051604e-19,
+              "signed_value_at_maximum_absolute": 1.0164395367051604e-19,
+              "time_at_maximum_absolute": 94.325
+            },
+            "field_energy_diagonal_minus_gradient": {
+              "initial": 0.0,
+              "endpoint": 1.3552527156068805e-20,
+              "maximum_absolute": 5.204170427930421e-18,
+              "signed_value_at_maximum_absolute": 5.204170427930421e-18,
+              "time_at_maximum_absolute": 114.80000000000001
+            },
+            "stationary_work_diagonal_minus_gradient": {
+              "initial": 0.0,
+              "endpoint": -3.3881317890172014e-21,
+              "maximum_absolute": 3.3881317890172014e-21,
+              "signed_value_at_maximum_absolute": -3.3881317890172014e-21,
+              "time_at_maximum_absolute": 110.375
+            }
+          },
+          "negative_Poisson_norms": {
+            "projection": {
+              "initial": 0.0,
+              "endpoint": 0.09193674875288237,
+              "maximum_absolute": 0.17439318142910853,
+              "signed_value_at_maximum_absolute": 0.17439318142910853,
+              "time_at_maximum_absolute": 117.95
+            },
+            "projection_current": {
+              "initial": 0.0,
+              "endpoint": 0.22131874548425695,
+              "maximum_absolute": 1.5799338637623983,
+              "signed_value_at_maximum_absolute": 1.5799338637623983,
+              "time_at_maximum_absolute": 118.05000000000001
+            },
+            "stationary_response": {
+              "initial": 0.0,
+              "endpoint": 0.0001897158519003223,
+              "maximum_absolute": 0.0001897158519003223,
+              "signed_value_at_maximum_absolute": 0.0001897158519003223,
+              "time_at_maximum_absolute": 120.0
+            },
+            "simultaneous_minus_stationary_projection": {
+              "initial": 0.0,
+              "endpoint": 0.09188799421734904,
+              "maximum_absolute": 0.17434602957029166,
+              "signed_value_at_maximum_absolute": 0.17434602957029166,
+              "time_at_maximum_absolute": 117.95
+            },
+            "stage_projection_minus_measurement": {
+              "initial": 0.0,
+              "endpoint": 0.0,
+              "maximum_absolute": 0.0,
+              "signed_value_at_maximum_absolute": 0.0,
+              "time_at_maximum_absolute": 0.0
+            }
+          }
+        }
+      }
+    },
+    "halfdt_minus_dt_phase32": {
+      "left": "E8-phase32",
+      "right": "E8-phase32-halfdt",
+      "subtraction": "right minus left",
+      "right_clock_stride": 2,
+      "common_clock_count": 4801,
+      "populations": {
+        "F0": {
+          "scalars": {
+            "work_direct": {
+              "initial": 0.0,
+              "endpoint": 2.392150096985988e-13,
+              "maximum_absolute": 2.2647090560030166e-10,
+              "signed_value_at_maximum_absolute": 2.2647090560030166e-10,
+              "time_at_maximum_absolute": 113.22500000000001
+            },
+            "stationary_work_diagonal": {
+              "initial": 0.0,
+              "endpoint": 3.6929234665841987e-10,
+              "maximum_absolute": 1.954303495244156e-09,
+              "signed_value_at_maximum_absolute": 1.954303495244156e-09,
+              "time_at_maximum_absolute": 112.95
+            },
+            "simultaneous_minus_stationary_work": {
+              "initial": 0.0,
+              "endpoint": -3.6905313164872127e-10,
+              "maximum_absolute": 1.878707672863368e-09,
+              "signed_value_at_maximum_absolute": -1.878707672863368e-09,
+              "time_at_maximum_absolute": 112.775
+            },
+            "raw_energy_minus_work": {
+              "initial": 0.0,
+              "endpoint": -1.420818606539566e-10,
+              "maximum_absolute": 3.2163355526550023e-10,
+              "signed_value_at_maximum_absolute": -3.2163355526550023e-10,
+              "time_at_maximum_absolute": 112.22500000000001
+            },
+            "raw_energy_minus_work_gradient_field": {
+              "initial": 0.0,
+              "endpoint": -1.4208186062685153e-10,
+              "maximum_absolute": 3.2163355527905276e-10,
+              "signed_value_at_maximum_absolute": -3.2163355527905276e-10,
+              "time_at_maximum_absolute": 112.22500000000001
+            },
+            "canonical_energy": {
+              "initial": 0.0,
+              "endpoint": -1.4184264564764612e-10,
+              "maximum_absolute": 2.0272484815245673e-10,
+              "signed_value_at_maximum_absolute": -2.0272484815245673e-10,
+              "time_at_maximum_absolute": 117.775
+            },
+            "orbital_energy": {
+              "initial": 0.0,
+              "endpoint": -1.404723731811882e-10,
+              "maximum_absolute": 1.417592485996981e-10,
+              "signed_value_at_maximum_absolute": -1.417592485996981e-10,
+              "time_at_maximum_absolute": 119.95
+            },
+            "self_energy_diagonal": {
+              "initial": 0.0,
+              "endpoint": -1.3702724393528654e-12,
+              "maximum_absolute": 1.5496259216953284e-10,
+              "signed_value_at_maximum_absolute": 1.5496259216953284e-10,
+              "time_at_maximum_absolute": 119.80000000000001
+            },
+            "self_energy_gradient_integral": {
+              "initial": 0.0,
+              "endpoint": -1.3702724393528654e-12,
+              "maximum_absolute": 1.549625921763091e-10,
+              "signed_value_at_maximum_absolute": 1.549625921763091e-10,
+              "time_at_maximum_absolute": 119.80000000000001
+            },
+            "interaction": {
+              "initial": 0.0,
+              "endpoint": 0.0,
+              "maximum_absolute": 1.0201414200010491e-11,
+              "signed_value_at_maximum_absolute": -1.0201414200010491e-11,
+              "time_at_maximum_absolute": 110.25
+            },
+            "direct_minus_dual_power": {
+              "initial": 0.0,
+              "endpoint": 0.0,
+              "maximum_absolute": 2.964615315390051e-20,
+              "signed_value_at_maximum_absolute": 2.964615315390051e-20,
+              "time_at_maximum_absolute": 111.15
+            },
+            "direct_minus_dual_interaction": {
+              "initial": 0.0,
+              "endpoint": 0.0,
+              "maximum_absolute": 5.421010862427522e-20,
+              "signed_value_at_maximum_absolute": -5.421010862427522e-20,
+              "time_at_maximum_absolute": 109.55000000000001
+            },
+            "field_energy_diagonal_minus_gradient": {
+              "initial": 0.0,
+              "endpoint": 0.0,
+              "maximum_absolute": 2.0328790734103208e-20,
+              "signed_value_at_maximum_absolute": -2.0328790734103208e-20,
+              "time_at_maximum_absolute": 115.15
+            },
+            "stationary_work_diagonal_minus_gradient": {
+              "initial": 0.0,
+              "endpoint": 0.0,
+              "maximum_absolute": 0.0,
+              "signed_value_at_maximum_absolute": 0.0,
+              "time_at_maximum_absolute": 0.0
+            }
+          },
+          "negative_Poisson_norms": {
+            "projection": {
+              "initial": 0.0,
+              "endpoint": 1.0942719448683208e-08,
+              "maximum_absolute": 2.9570768059440225e-08,
+              "signed_value_at_maximum_absolute": 2.9570768059440225e-08,
+              "time_at_maximum_absolute": 117.375
+            },
+            "projection_current": {
+              "initial": 0.0,
+              "endpoint": 1.3684757595664349e-07,
+              "maximum_absolute": 3.935583081293738e-07,
+              "signed_value_at_maximum_absolute": 3.935583081293738e-07,
+              "time_at_maximum_absolute": 118.42500000000001
+            },
+            "stationary_response": {
+              "initial": 0.0,
+              "endpoint": 1.479850495249534e-06,
+              "maximum_absolute": 1.4821332004243742e-06,
+              "signed_value_at_maximum_absolute": 1.4821332004243742e-06,
+              "time_at_maximum_absolute": 119.95
+            },
+            "simultaneous_minus_stationary_projection": {
+              "initial": 0.0,
+              "endpoint": 1.4794860406774427e-06,
+              "maximum_absolute": 1.4819020941339722e-06,
+              "signed_value_at_maximum_absolute": 1.4819020941339722e-06,
+              "time_at_maximum_absolute": 119.95
+            },
+            "stage_projection_minus_measurement": {
+              "initial": 0.0,
+              "endpoint": 0.0,
+              "maximum_absolute": 0.0,
+              "signed_value_at_maximum_absolute": 0.0,
+              "time_at_maximum_absolute": 0.0
+            }
+          }
+        },
+        "A": {
+          "scalars": {
+            "work_direct": {
+              "initial": 0.0,
+              "endpoint": 7.880904926587697e-13,
+              "maximum_absolute": 4.130025024298473e-10,
+              "signed_value_at_maximum_absolute": 4.130025024298473e-10,
+              "time_at_maximum_absolute": 113.22500000000001
+            },
+            "stationary_work_diagonal": {
+              "initial": 0.0,
+              "endpoint": -1.4767197888975229e-10,
+              "maximum_absolute": 2.959485407439053e-09,
+              "signed_value_at_maximum_absolute": 2.959485407439053e-09,
+              "time_at_maximum_absolute": 113.17500000000001
+            },
+            "simultaneous_minus_stationary_work": {
+              "initial": 0.0,
+              "endpoint": 1.4846006938241106e-10,
+              "maximum_absolute": 2.641154748947994e-09,
+              "signed_value_at_maximum_absolute": -2.641154748947994e-09,
+              "time_at_maximum_absolute": 112.85000000000001
+            },
+            "raw_energy_minus_work": {
+              "initial": 0.0,
+              "endpoint": -3.0175211293429274e-10,
+              "maximum_absolute": 5.416303382633093e-10,
+              "signed_value_at_maximum_absolute": -5.416303382633093e-10,
+              "time_at_maximum_absolute": 112.25
+            },
+            "raw_energy_minus_work_gradient_field": {
+              "initial": 0.0,
+              "endpoint": -3.0175211293429274e-10,
+              "maximum_absolute": 5.416303382362042e-10,
+              "signed_value_at_maximum_absolute": -5.416303382362042e-10,
+              "time_at_maximum_absolute": 112.25
+            },
+            "canonical_energy": {
+              "initial": 0.0,
+              "endpoint": -3.009640224755153e-10,
+              "maximum_absolute": 4.1488061613579805e-10,
+              "signed_value_at_maximum_absolute": -4.1488061613579805e-10,
+              "time_at_maximum_absolute": 118.325
+            },
+            "orbital_energy": {
+              "initial": 0.0,
+              "endpoint": -4.1376346457139973e-10,
+              "maximum_absolute": 4.1376346457139973e-10,
+              "signed_value_at_maximum_absolute": -4.1376346457139973e-10,
+              "time_at_maximum_absolute": 120.0
+            },
+            "self_energy_diagonal": {
+              "initial": 0.0,
+              "endpoint": 1.1279944210943697e-10,
+              "maximum_absolute": 2.475398041792065e-10,
+              "signed_value_at_maximum_absolute": 2.475398041792065e-10,
+              "time_at_maximum_absolute": 117.42500000000001
+            },
+            "self_energy_gradient_integral": {
+              "initial": 0.0,
+              "endpoint": 1.1279944215009455e-10,
+              "maximum_absolute": 2.4753980420631153e-10,
+              "signed_value_at_maximum_absolute": 2.4753980420631153e-10,
+              "time_at_maximum_absolute": 117.42500000000001
+            },
+            "interaction": {
+              "initial": 0.0,
+              "endpoint": 0.0,
+              "maximum_absolute": 1.5673237203526688e-11,
+              "signed_value_at_maximum_absolute": -1.5673237203526688e-11,
+              "time_at_maximum_absolute": 110.125
+            },
+            "direct_minus_dual_power": {
+              "initial": 0.0,
+              "endpoint": 0.0,
+              "maximum_absolute": 2.371692252312041e-20,
+              "signed_value_at_maximum_absolute": 2.371692252312041e-20,
+              "time_at_maximum_absolute": 110.85000000000001
+            },
+            "direct_minus_dual_interaction": {
+              "initial": 0.0,
+              "endpoint": 0.0,
+              "maximum_absolute": 7.453889935837843e-20,
+              "signed_value_at_maximum_absolute": -7.453889935837843e-20,
+              "time_at_maximum_absolute": 110.125
+            },
+            "field_energy_diagonal_minus_gradient": {
+              "initial": 0.0,
+              "endpoint": -4.0657581468206416e-20,
+              "maximum_absolute": 4.0657581468206416e-20,
+              "signed_value_at_maximum_absolute": 4.0657581468206416e-20,
+              "time_at_maximum_absolute": 117.17500000000001
+            },
+            "stationary_work_diagonal_minus_gradient": {
+              "initial": 0.0,
+              "endpoint": 5.082197683525802e-21,
+              "maximum_absolute": 5.082197683525802e-21,
+              "signed_value_at_maximum_absolute": 5.082197683525802e-21,
+              "time_at_maximum_absolute": 117.10000000000001
+            }
+          },
+          "negative_Poisson_norms": {
+            "projection": {
+              "initial": 0.0,
+              "endpoint": 2.0666226069942165e-08,
+              "maximum_absolute": 3.541256309041504e-08,
+              "signed_value_at_maximum_absolute": 3.541256309041504e-08,
+              "time_at_maximum_absolute": 117.375
+            },
+            "projection_current": {
+              "initial": 0.0,
+              "endpoint": 2.094126788236075e-07,
+              "maximum_absolute": 4.5990913713879645e-07,
+              "signed_value_at_maximum_absolute": 4.5990913713879645e-07,
+              "time_at_maximum_absolute": 117.47500000000001
+            },
+            "stationary_response": {
+              "initial": 0.0,
+              "endpoint": 3.861028739434327e-06,
+              "maximum_absolute": 3.861028739434327e-06,
+              "signed_value_at_maximum_absolute": 3.861028739434327e-06,
+              "time_at_maximum_absolute": 120.0
+            },
+            "simultaneous_minus_stationary_projection": {
+              "initial": 0.0,
+              "endpoint": 3.8622447131744404e-06,
+              "maximum_absolute": 3.8622447131744404e-06,
+              "signed_value_at_maximum_absolute": 3.8622447131744404e-06,
+              "time_at_maximum_absolute": 120.0
+            },
+            "stage_projection_minus_measurement": {
+              "initial": 0.0,
+              "endpoint": 0.0,
+              "maximum_absolute": 0.0,
+              "signed_value_at_maximum_absolute": 0.0,
+              "time_at_maximum_absolute": 0.0
+            }
+          }
+        }
+      }
+    }
+  },
+  "scalar_convention": "Sum m=-2,+2 within each population BEFORE extrema, endpoints and comparisons; populations remain separate.",
+  "field_norm_definition": "sqrt(sum over m=-2,+2 and n=0..6 of (-D_n)*abs(c_mn)^2); no half factor, no summing coefficients across m. For a projected field this norm squared equals -2 times its summed diagonal field energy.",
+  "field_norm_scope": "Wake and stage/current residual norms use the same negative-Poisson metric. They are not work/energy allowances; current norms have an additional inverse-time unit. Cross-case norms apply to coefficient differences, not differences of norms; scalar field-energy differences are not the energy of the coefficient difference.",
+  "units": "G=M_total=b=1; work/energy are quadratic coefficients in perturbation amplitude epsilon; wake coefficients are first-order responses.",
+  "empirical_work_energy_reporting_scale": 1e-06,
+  "reporting_scale_is_acceptance_threshold": false,
+  "numerical_or_physical_pass": null,
+  "continuum_qualified": false,
+  "stability_qualified": false,
+  "stellar_qualified": false,
+  "work_sign_qualified": false,
+  "independent_physics_validation": false,
+  "limits": [
+    "All three original complete histories remain at their native clocks; halfdt differences select only exact common clocks without interpolation.",
+    "Raw budgets, individual signed sectors, all seven field coefficients and phase/time differences are retained; no caller subtraction, fitting, renormalization or endpoint selection.",
+    "Phase refinement and timestep refinement are separate finite comparisons, not an error bound or proof of stationarity. No energy/eta action refinement is performed.",
+    "Stationary kernel and simultaneous path share DF, nodes, profiles, background, angular contraction and energy formula; agreement is not independent continuum validation.",
+    "Only the projected seven-field self-energy is measured; omitted channels and finite quadrature integration-by-parts errors remain.",
+    "The three matched parents must be successful original owners. No recovery exception, pilot substitution, missing-case fallback or automatic continuation is supported."
+  ],
+  "public_projection": {
+    "original_selected_record_sha256": "d050eed91b19eb034db15376f805ab8e4d5a5d1e9e233632736ee526357f763f",
+    "operational_paths_omitted": true,
+    "numerical_values_changed": false,
+    "not_new_simulation": true
+  }
+}
